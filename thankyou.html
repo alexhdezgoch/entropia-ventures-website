@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>We're on it. | Entropia Ventures</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#00130d",
+          "primary-container": "#0f2921",
+          "on-primary": "#ffffff",
+          "on-primary-container": "#769287",
+          "secondary": "#C9A84C",
+          "surface": "#f9f9f8",
+          "surface-container-low": "#f3f4f3",
+          "surface-container": "#eeeeed",
+          "on-surface": "#1a1c1c",
+          "on-surface-variant": "#424845",
+          "outline-variant": "#c2c8c4",
+        },
+        fontFamily: {
+          "headline": ["Noto Serif"],
+          "body": ["Inter"],
+        },
+      },
+    },
+  }
+</script>
+<style>
+  body { font-family: 'Inter', sans-serif; background-color: #f9f9f8; color: #1a1c1c; }
+  .font-serif { font-family: 'Noto Serif', serif; }
+</style>
+</head>
+<body class="bg-surface min-h-screen flex flex-col">
+<!-- Minimal Nav -->
+<nav class="w-full px-8 py-6">
+  <a href="/" class="text-2xl font-serif italic text-[#0F2921] tracking-tighter">ENTROPIA</a>
+</nav>
+
+<!-- Main Content -->
+<main class="flex-grow flex items-center justify-center px-8 py-24">
+  <div class="max-w-2xl text-center">
+
+    <!-- Indicator -->
+    <div class="flex items-center justify-center gap-3 mb-16">
+      <div class="w-2 h-2 rounded-full bg-secondary relative">
+        <div class="absolute inset-0 w-2 h-2 rounded-full bg-secondary animate-ping opacity-40"></div>
+      </div>
+      <span class="text-[10px] font-bold tracking-[0.25em] uppercase text-on-surface-variant">Audit Request Received</span>
+    </div>
+
+    <!-- Headline -->
+    <h1 class="font-serif text-6xl md:text-8xl text-on-surface leading-tight mb-8">
+      We're on it<span class="text-secondary">.</span>
+    </h1>
+
+    <!-- Subtext -->
+    <p class="text-xl text-on-surface-variant font-light leading-relaxed mb-6 max-w-lg mx-auto">
+      Your audit request is in. Alex will research your visibility infrastructure and send a full breakdown within <span class="font-medium text-on-surface">48 hours</span>.
+    </p>
+    <p class="text-base text-on-surface-variant/70 font-light mb-16 max-w-md mx-auto">
+      No sales call scheduled. No commitment implied. Just real data about where you stand.
+    </p>
+
+    <!-- What happens next -->
+    <div class="bg-surface-container-low p-10 text-left mb-16 max-w-lg mx-auto">
+      <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-on-surface-variant mb-8">What happens next</p>
+      <div class="space-y-8">
+        <div class="flex gap-5">
+          <div class="flex-none w-7 h-7 rounded-full border border-secondary/30 flex items-center justify-center font-serif italic text-secondary text-sm">1</div>
+          <div>
+            <p class="font-medium text-on-surface text-sm mb-1">Research begins now</p>
+            <p class="text-xs text-on-surface-variant font-light">Rankings, GBP status, content gaps, competitor positioning — all mapped.</p>
+          </div>
+        </div>
+        <div class="flex gap-5">
+          <div class="flex-none w-7 h-7 rounded-full border border-secondary/30 flex items-center justify-center font-serif italic text-secondary text-sm">2</div>
+          <div>
+            <p class="font-medium text-on-surface text-sm mb-1">Audit lands in your inbox within 48 hours</p>
+            <p class="text-xs text-on-surface-variant font-light">A clear, honest breakdown of your visibility infrastructure. Yours to keep.</p>
+          </div>
+        </div>
+        <div class="flex gap-5">
+          <div class="flex-none w-7 h-7 rounded-full border border-secondary/30 flex items-center justify-center font-serif italic text-secondary text-sm">3</div>
+          <div>
+            <p class="font-medium text-on-surface text-sm mb-1">Your call — no pressure</p>
+            <p class="text-xs text-on-surface-variant font-light">If the audit makes the case, we can talk. If not, the report is still useful.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTAs -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/" class="bg-primary-container text-on-primary px-8 py-4 text-[11px] font-bold tracking-widest uppercase hover:bg-primary transition-all">
+        Back to home
+      </a>
+      <a href="/blog/" class="border border-outline-variant text-on-surface-variant px-8 py-4 text-[11px] font-bold tracking-widest uppercase hover:bg-surface-container transition-all">
+        Read the blog while you wait →
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="w-full border-t border-outline-variant/15 px-8 py-8">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <span class="font-serif italic text-[#0F2921] text-sm">Entropia</span>
+    <span class="text-xs text-on-surface-variant/50">© 2026 Entropia Ventures. Visibility Infrastructure.</span>
+  </div>
+</footer>
+</body></html>

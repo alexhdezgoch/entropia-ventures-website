@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline": "#727975",
+              "secondary-container": "#fed977",
+              "on-primary": "#ffffff",
+              "surface-tint": "#4a645a",
+              "error-container": "#ffdad6",
+              "tertiary": "#03120e",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-fixed": "#052018",
+              "secondary": "#755b00",
+              "on-secondary-fixed": "#241a00",
+              "on-secondary-container": "#785d00",
+              "primary-container": "#0f2921",
+              "on-surface": "#1a1c1c",
+              "tertiary-fixed-dim": "#b8cbc2",
+              "on-error-container": "#93000a",
+              "background": "#f9f9f8",
+              "on-tertiary-fixed": "#0e1f19",
+              "on-error": "#ffffff",
+              "on-surface-variant": "#424845",
+              "inverse-surface": "#2f3130",
+              "error": "#ba1a1a",
+              "surface-dim": "#dadad9",
+              "surface-container": "#eeeeed",
+              "tertiary-fixed": "#d3e7de",
+              "primary-fixed-dim": "#b0cdc1",
+              "on-secondary": "#ffffff",
+              "surface-container-low": "#f3f4f3",
+              "secondary-fixed": "#ffe08f",
+              "on-tertiary-container": "#7d9088",
+              "on-primary-fixed-variant": "#324c43",
+              "outline-variant": "#c2c8c4",
+              "tertiary-container": "#172822",
+              "inverse-primary": "#b0cdc1",
+              "primary-fixed": "#cce9dc",
+              "on-secondary-fixed-variant": "#584400",
+              "surface-variant": "#e2e2e2",
+              "primary": "#00130d",
+              "on-background": "#1a1c1c",
+              "on-tertiary": "#ffffff",
+              "inverse-on-surface": "#f1f1f0",
+              "secondary-fixed-dim": "#e6c364",
+              "on-tertiary-fixed-variant": "#394a44",
+              "surface-bright": "#f9f9f8",
+              "on-primary-container": "#769287",
+              "surface-container-highest": "#e2e2e2",
+              "surface-container-high": "#e8e8e7",
+              "surface": "#f9f9f8"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        background-color: #f9f9f8;
+        color: #1a1c1c;
+        font-family: 'Inter', sans-serif;
+      }
+      .noto-italic { font-style: italic; }
+      .transition-custom { transition: all 400ms cubic-bezier(0.2, 0, 0, 1); }
+    </style>
+</head>
+<body class="bg-background selection:bg-primary-container selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f9f9f8]/80 dark:bg-[#1a1c1c]/80 backdrop-blur-xl">
+<div class="flex justify-between items-center w-full px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif italic text-[#0F2921] dark:text-[#C9A84C]">ENTROPIA</div>
+<div class="hidden md:flex items-center gap-12">
+<a class="text-[#1a1c1c]/60 dark:text-[#f3f4f3]/60 hover:text-[#0F2921] transition-colors Inter all-caps tracking-widest text-[0.75rem]" href="/services.html">SERVICES</a>
+<a class="text-[#1a1c1c]/60 dark:text-[#f3f4f3]/60 hover:text-[#0F2921] transition-colors Inter all-caps tracking-widest text-[0.75rem]" href="/process.html">PROCESS</a>
+<a class="text-[#1a1c1c]/60 dark:text-[#f3f4f3]/60 hover:text-[#0F2921] transition-colors Inter all-caps tracking-widest text-[0.75rem]" href="/audits/">AUDITS</a>
+<a class="text-[#0F2921] dark:text-[#C9A84C] border-b border-[#C9A84C]/30 pb-1 Inter all-caps tracking-widest text-[0.75rem]" href="/blog/">BLOG</a>
+<a class="text-[#1a1c1c]/60 dark:text-[#f3f4f3]/60 hover:text-[#0F2921] transition-colors Inter all-caps tracking-widest text-[0.75rem]" href="/index.html#pricing">PRICING</a>
+</div>
+<a href="/contact.html" class="bg-primary-container text-on-primary px-6 py-2.5 rounded-lg text-[0.75rem] font-bold tracking-widest transition-custom hover:translate-y-[-1px] hover:bg-primary uppercase">Get free audit →</a>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<header class="max-w-screen-2xl mx-auto px-12 mb-32">
+<div class="max-w-3xl">
+<span class="inline-block h-[1px] w-12 bg-secondary mb-8"></span>
+<h1 class="text-[5rem] font-headline font-normal leading-[1.1] text-on-background mb-8">
+                    The Narrative <span class="noto-italic">Layer.</span>
+</h1>
+<p class="text-xl font-body font-light text-on-surface-variant leading-relaxed max-w-xl">
+                    Thinking aloud about visibility, infrastructure, and the art of being found in an automated world.
+                </p>
+</div>
+</header>
+<!-- Blog Feed -->
+<section class="max-w-screen-2xl mx-auto px-12 space-y-32">
+<!-- Article 1 (Featured) -->
+<article class="group relative grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7 overflow-hidden rounded-lg bg-surface-container-low transition-custom">
+<img alt="Architectural abstraction" class="w-full h-[600px] object-cover transition-custom group-hover:scale-105 opacity-90 grayscale hover:grayscale-0" data-alt="Monolithic dark brutalist concrete building against a moody gray sky with sharp shadows and geometric precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpFqLA9F02UPeGODbDX7i64BeOaNBhDCbOFTlaX-lBozVJFLATXQnEg-ldqNKVZJsZWCVn2ZkbMMeOw8mj8Wpc1ag4Q8fjKD0eAMgs_04TDPJTNFkFFblM0g6c2SNXCPgeqgDa2nrrs3fvPVzcxel2naf5mKsM9LQB0sa_qGfijhf-FM4vRNpG7aLdFHwAIEeHW_1KHZ9mc7wofzDABzsvIxivDMmbeGC96RpRsU2lNlvvECKhsAbuZ0-9aqqUFYTVVtoPeWHZVLA"/>
+</div>
+<div class="md:col-span-5 pr-12">
+<div class="flex items-center gap-4 mb-6">
+<span class="text-[0.7rem] font-bold font-label tracking-widest text-secondary uppercase">Featured Analysis</span>
+<span class="text-[0.7rem] font-label text-on-surface-variant/60 uppercase tracking-wider">Oct 24, 2024 — 8 min read</span>
+</div>
+<h2 class="text-4xl font-headline leading-tight mb-6 group-hover:text-primary transition-colors">
+                        The Death of <span class="noto-italic">the Keyword.</span>
+</h2>
+<p class="text-lg font-body text-on-surface-variant leading-relaxed mb-8">
+                        Why semantic search and large language models changed the fundamental nature of visibility infrastructure forever. We explore the transition from matching words to understanding intent.
+                    </p>
+<a class="inline-flex items-center gap-2 text-primary-container font-semibold font-label tracking-wide group/link transition-custom" href="/blog/death-of-the-keyword/">
+                        Read Article 
+                        <span class="material-symbols-outlined transition-transform group-hover/link:translate-x-1">arrow_right_alt</span>
+</a>
+</div>
+</article>
+<!-- Grid for smaller entries -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24">
+<!-- Article 2 -->
+<article class="group">
+<div class="aspect-[16/10] overflow-hidden rounded-lg bg-surface-container-low mb-8 transition-custom">
+<img alt="Data streams" class="w-full h-full object-cover grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-custom" data-alt="Abstract macro shot of glass and light reflections creating blurred linear patterns in deep forest green and obsidian tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKieSJZjFjlX6IPIKkYdbYI3TSJbA0yV3mgYnDBqzNelzjDkacWcKXYjNQ9gsBklDojWP1kKaRvoXCY-Al4U-dbbftIqFK19k-JmdeszL9svtO-z20pOGrH59ZhPCewOPwRjc1AOTQNOAwI2h6AqN0GA4ER2WxSz-K9jBUh9mqLrGcgB8zLZHDxxnaNZjMn6MchohPDjqOSC4dAlP8pzW8Oxhls0LG_-9Hku7BRPt4cLpeb-izHkwhN27qnug1wMPoTtG0C3iOTLU"/>
+</div>
+<div class="flex items-center gap-4 mb-4">
+<span class="text-[0.7rem] font-label text-on-surface-variant/60 uppercase tracking-wider">Oct 18, 2024 — 4 min read</span>
+</div>
+<h3 class="text-3xl font-headline mb-4 leading-snug transition-colors group-hover:text-primary">
+                        The Invisible Cost of <span class="noto-italic">Slow Load Times.</span>
+</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6 font-body">
+                        Beyond user experience: How technical latency degrades your visibility infrastructure's authority and ranking potential in the modern ecosystem.
+                    </p>
+<a class="inline-flex items-center gap-2 text-primary-container font-semibold font-label tracking-wide group/link transition-custom" href="/blog/invisible-cost-of-slow-load-times/">
+                        Read Article 
+                        <span class="material-symbols-outlined transition-transform group-hover/link:translate-x-1">arrow_right_alt</span>
+</a>
+</article>
+<!-- Article 3 -->
+<article class="group">
+<div class="aspect-[16/10] overflow-hidden rounded-lg bg-surface-container-low mb-8 transition-custom">
+<img alt="Office architecture" class="w-full h-full object-cover grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 transition-custom" data-alt="Minimalist interior of a glass-walled office building with clean lines, soft natural lighting, and deep green indoor plants." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGf0OQ2cSUGZmLdxHat5K7tyYZKE7IFpKSmzy9IcjKD0vd3AIF9xp6shtWwOC7lWJuqHluh7ppzh1evrv1ohmGDPVAEnRjgfLb29-bGrxDui1Y4KHVS4Ym_ddikEbN0q-1cy4J1mIaHuCRxqSIl8pnYmxNZdQPBcU_zAm_pTqcRxuxgBGCTnNbxiz1MxZVRKMihRIEEYRu9UqPGgjHCbxqBqWqPQcFN-JnD6vagRKBWdRHV3rHcpmzCkVFMeMpayzY484gpYk7hlw"/>
+</div>
+<div class="flex items-center gap-4 mb-4">
+<span class="text-[0.7rem] font-label text-on-surface-variant/60 uppercase tracking-wider">Oct 12, 2024 — 6 min read</span>
+</div>
+<h3 class="text-3xl font-headline mb-4 leading-snug transition-colors group-hover:text-primary">
+                        Why SEO is Infrastructure, <span class="noto-italic">Not Marketing.</span>
+</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6 font-body">
+                        Moving away from tactical tricks toward the foundational architecture of digital discoverability. A perspective shift for the new luxury brand.
+                    </p>
+<a class="inline-flex items-center gap-2 text-primary-container font-semibold font-label tracking-wide group/link transition-custom" href="/blog/seo-is-infrastructure/">
+                        Read Article 
+                        <span class="material-symbols-outlined transition-transform group-hover/link:translate-x-1">arrow_right_alt</span>
+</a>
+</article>
+</div>
+</section>
+<!-- Newsletter Subscription (Tonal Shift) -->
+<section class="mt-48 bg-surface-container-low py-32 px-12 border-y border-outline-variant/10">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-4xl font-headline mb-6">Stay <span class="noto-italic">Visible.</span></h2>
+<p class="text-on-surface-variant max-w-md font-body">Get bi-weekly insights on visibility infrastructure and semantic search delivered directly to your desk.</p>
+</div>
+<div class="flex gap-4">
+<input class="flex-1 bg-surface-container-highest border-none px-6 py-4 text-on-surface focus:ring-0 rounded-lg font-body text-sm placeholder:text-on-surface-variant/40 transition-custom" placeholder="Email address" type="email"/>
+<button class="bg-primary-container text-on-primary px-8 py-4 rounded-lg font-bold font-label tracking-widest text-xs uppercase hover:bg-primary transition-custom">
+                        Subscribe
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-[#f3f4f3] dark:bg-[#00130d] border-t border-[#1a1c1c]/5">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-screen-2xl mx-auto">
+<div class="flex flex-col gap-4 mb-8 md:mb-0">
+<div class="text-xl font-serif italic text-[#0F2921] dark:text-[#C9A84C]">ENTROPIA</div>
+<p class="text-[0.75rem] font-body text-[#1a1c1c]/50 dark:text-[#f3f4f3]/50">
+                    © 2026 ENTROPIA Visibility Infrastructure. All rights reserved.
+                </p>
+</div>
+<div class="flex gap-12">
+<a class="text-[0.75rem] font-body text-[#1a1c1c]/50 dark:text-[#f3f4f3]/50 hover:text-[#C9A84C] transition-colors duration-400" href="#">Privacy Policy</a>
+<a class="text-[0.75rem] font-body text-[#1a1c1c]/50 dark:text-[#f3f4f3]/50 hover:text-[#C9A84C] transition-colors duration-400" href="#">Terms of Service</a>
+<a class="text-[0.75rem] font-body text-[#1a1c1c]/50 dark:text-[#f3f4f3]/50 hover:text-[#C9A84C] transition-colors duration-400" href="/contact.html">Contact</a>
+<a class="text-[0.75rem] font-body text-[#1a1c1c]/50 dark:text-[#f3f4f3]/50 hover:text-[#C9A84C] transition-colors duration-400" href="https://linkedin.com/company/entropia-ventures" target="_blank">LinkedIn</a>
+</div>
+</div>
+</footer>
+</body></html>

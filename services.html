@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline": "#727975",
+              "on-tertiary-fixed-variant": "#394a44",
+              "primary-fixed-dim": "#b0cdc1",
+              "on-tertiary": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "surface-dim": "#dadad9",
+              "secondary": "#755b00",
+              "surface-variant": "#e2e2e2",
+              "on-primary-fixed-variant": "#324c43",
+              "tertiary": "#03120e",
+              "on-surface-variant": "#424845",
+              "inverse-on-surface": "#f1f1f0",
+              "surface": "#f9f9f8",
+              "primary": "#00130d",
+              "on-surface": "#1a1c1c",
+              "secondary-fixed": "#ffe08f",
+              "on-error-container": "#93000a",
+              "inverse-surface": "#2f3130",
+              "surface-container-highest": "#e2e2e2",
+              "error": "#ba1a1a",
+              "secondary-fixed-dim": "#e6c364",
+              "on-tertiary-container": "#7d9088",
+              "surface-tint": "#4a645a",
+              "surface-container-low": "#f3f4f3",
+              "on-secondary-fixed": "#241a00",
+              "tertiary-fixed": "#d3e7de",
+              "secondary-container": "#fed977",
+              "on-error": "#ffffff",
+              "on-secondary-container": "#785d00",
+              "inverse-primary": "#b0cdc1",
+              "on-primary": "#ffffff",
+              "surface-container": "#eeeeed",
+              "on-tertiary-fixed": "#0e1f19",
+              "on-secondary": "#ffffff",
+              "primary-fixed": "#cce9dc",
+              "on-background": "#1a1c1c",
+              "on-primary-container": "#769287",
+              "error-container": "#ffdad6",
+              "background": "#f9f9f8",
+              "primary-container": "#0f2921",
+              "outline-variant": "#c2c8c4",
+              "surface-container-high": "#e8e8e7",
+              "tertiary-fixed-dim": "#b8cbc2",
+              "on-primary-fixed": "#052018",
+              "on-secondary-fixed-variant": "#584400",
+              "surface-bright": "#f9f9f8",
+              "tertiary-container": "#172822"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-line {
+            height: 1px;
+            background: linear-gradient(to right, rgba(26, 28, 28, 0.2), transparent);
+        }
+        .shadow-bespoke {
+            box-shadow: 0 20px 40px rgba(26, 28, 28, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl">
+<div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4 w-full">
+<a href="/" class="text-2xl font-headline italic text-[#0F2921] tracking-tighter">ENTROPIA</a>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-medium tracking-wide uppercase text-[11px] text-[#0F2921] border-b border-[#C9A84C] pb-1 transition-all duration-400 ease-[cubic-bezier(0.2,0,0,1)]" href="/services.html">SERVICES</a>
+<a class="font-medium tracking-wide uppercase text-[11px] text-[#1a1c1c]/70 pb-1 hover:text-[#0F2921] transition-all duration-400 ease-[cubic-bezier(0.2,0,0,1)]" href="/process.html">PROCESS</a>
+<a class="font-medium tracking-wide uppercase text-[11px] text-[#1a1c1c]/70 pb-1 hover:text-[#0F2921] transition-all duration-400 ease-[cubic-bezier(0.2,0,0,1)]" href="/audits/">AUDITS</a>
+<a class="font-medium tracking-wide uppercase text-[11px] text-[#1a1c1c]/70 pb-1 hover:text-[#0F2921] transition-all duration-400 ease-[cubic-bezier(0.2,0,0,1)]" href="/blog/">BLOG</a>
+<a class="font-medium tracking-wide uppercase text-[11px] text-[#1a1c1c]/70 pb-1 hover:text-[#0F2921] transition-all duration-400 ease-[cubic-bezier(0.2,0,0,1)]" href="/#pricing">PRICING</a>
+</div>
+<a href="/contact.html" class="bg-primary-container text-on-primary px-6 py-2.5 text-[11px] font-medium uppercase tracking-widest rounded-sm active:scale-95 transition-all duration-200">Get free audit →</a>
+</div>
+<div class="bg-surface_container_low h-[1px] w-full absolute bottom-0 opacity-50"></div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative bg-primary-container py-32 md:py-48 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="max-w-3xl">
+<span class="inline-block px-4 py-1.5 bg-white/5 text-primary-fixed text-[10px] font-bold tracking-[0.2em] uppercase mb-8">Service Catalog 2024</span>
+<h1 class="text-5xl md:text-8xl font-headline text-white leading-[1.1] mb-12">
+                        The Visibility <br/>
+<span class="italic text-secondary-fixed-dim">Machine.</span>
+</h1>
+<p class="text-on-primary-container text-lg md:text-xl max-w-xl leading-relaxed mb-12">
+                        Architectural SEO infrastructure for high-growth brands. We don't just find keywords; we build the pipes that channel intent directly to your doorstep.
+                    </p>
+<div class="flex items-center gap-8">
+<div class="w-12 h-px bg-secondary opacity-50"></div>
+<span class="text-on-primary-container text-[11px] uppercase tracking-widest font-medium">Engineered for Performance</span>
+</div>
+</div>
+</div>
+<!-- Decorative Background Element -->
+<div class="absolute right-0 top-0 w-1/2 h-full bg-gradient-to-l from-black/20 to-transparent pointer-events-none"></div>
+</section>
+<!-- Section 01: SEO & Local Visibility -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+<div>
+<h2 class="text-4xl font-headline mb-8 text-on-surface">SEO &amp; Local <br/>Visibility</h2>
+<p class="text-on-surface-variant mb-12 max-w-md leading-relaxed">
+                        Dominate the geographical nexus where your customers live. Our local visibility framework ensures you are the first and only logical choice.
+                    </p>
+<div class="space-y-10">
+<div class="pl-6 border-l-2 border-primary-container">
+<h4 class="text-[12px] font-bold tracking-widest uppercase mb-2 text-primary-container">Hyper-Local Optimization</h4>
+<p class="text-sm text-on-surface-variant">Radius-based search dominance for multi-location enterprises.</p>
+</div>
+<div class="pl-6 border-l-2 border-outline-variant">
+<h4 class="text-[12px] font-bold tracking-widest uppercase mb-2 text-primary-container">Technical Architecture</h4>
+<p class="text-sm text-on-surface-variant">Schema injection and speed metrics tuned for the latest core vitals.</p>
+</div>
+<div class="pl-6 border-l-2 border-outline-variant">
+<h4 class="text-[12px] font-bold tracking-widest uppercase mb-2 text-primary-container">Authority Mapping</h4>
+<p class="text-sm text-on-surface-variant">Proprietary backlink ecosystems that signal institutional trust.</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 gap-8">
+<div class="bg-surface-container-low p-12 aspect-square flex flex-col justify-between">
+<div class="text-6xl md:text-8xl font-headline text-on-surface/50">84%</div>
+<div>
+<div class="editorial-line mb-4"></div>
+<p class="text-[11px] font-bold uppercase tracking-[0.2em] text-on-surface-variant">Avg. Increase in Local Intent Traffic</p>
+</div>
+</div>
+<div class="bg-surface-container p-12 aspect-[2/1] flex flex-col justify-between">
+<div class="text-4xl md:text-5xl font-headline text-on-surface/50">Top 3</div>
+<div>
+<div class="editorial-line mb-4"></div>
+<p class="text-[11px] font-bold uppercase tracking-[0.2em] text-on-surface-variant">Placement for 90% of Core Terms</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 02: Content Engine -->
+<section class="py-32 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="mb-20 text-center">
+<span class="text-[10px] font-bold uppercase tracking-[0.3em] text-secondary mb-4 block">The Narrative Layer</span>
+<h2 class="text-4xl md:text-5xl font-headline italic">Content Engine</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-1">
+<!-- Card 01 -->
+<div class="group relative bg-surface p-12 h-[450px] transition-all duration-500 hover:bg-primary-container hover:-translate-y-2 flex flex-col justify-between">
+<span class="text-6xl font-headline text-on-surface-variant/10 group-hover:text-white/10 transition-colors">01</span>
+<div>
+<h3 class="text-2xl font-headline mb-4 group-hover:text-white transition-colors">Monthly SEO Articles</h3>
+<p class="text-sm text-on-surface-variant group-hover:text-on-primary-container transition-colors leading-relaxed">
+                                Deep-dive editorial pieces that establish your brand as a primary source of industry intelligence.
+                            </p>
+</div>
+<div class="pt-8 flex items-center gap-2 group-hover:text-secondary-fixed transition-colors">
+<span class="text-[10px] font-bold uppercase tracking-widest">Explore Methodology</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Card 02 -->
+<div class="group relative bg-surface p-12 h-[450px] transition-all duration-500 hover:bg-primary-container hover:-translate-y-2 flex flex-col justify-between">
+<span class="text-6xl font-headline text-on-surface-variant/10 group-hover:text-white/10 transition-colors">02</span>
+<div>
+<h3 class="text-2xl font-headline mb-4 group-hover:text-white transition-colors">Service Page Optimization</h3>
+<p class="text-sm text-on-surface-variant group-hover:text-on-primary-container transition-colors leading-relaxed">
+                                Conversion-focused landing pages that bridge the gap between discovery and transaction.
+                            </p>
+</div>
+<div class="pt-8 flex items-center gap-2 group-hover:text-secondary-fixed transition-colors">
+<span class="text-[10px] font-bold uppercase tracking-widest">View Framework</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Card 03 -->
+<div class="group relative bg-surface p-12 h-[450px] transition-all duration-500 hover:bg-primary-container hover:-translate-y-2 flex flex-col justify-between">
+<span class="text-6xl font-headline text-on-surface-variant/10 group-hover:text-white/10 transition-colors">03</span>
+<div>
+<h3 class="text-2xl font-headline mb-4 group-hover:text-white transition-colors">Monthly Report</h3>
+<p class="text-sm text-on-surface-variant group-hover:text-on-primary-container transition-colors leading-relaxed">
+                                Transparent data visualization showing exactly how visibility translates into your bottom line.
+                            </p>
+</div>
+<div class="pt-8 flex items-center gap-2 group-hover:text-secondary-fixed transition-colors">
+<span class="text-[10px] font-bold uppercase tracking-widest">Sample Data</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 03: The Conversion Layer (Pipeline Plan) -->
+<section class="py-32 px-8 bg-surface overflow-hidden">
+<div class="max-w-7xl mx-auto grid lg:grid-cols-5 gap-16">
+<div class="lg:col-span-3">
+<div class="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-secondary-container/30 mb-8">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-secondary-container">Pipeline Plan Only</span>
+</div>
+<h2 class="text-5xl font-headline mb-12 italic">The Conversion Layer</h2>
+<div class="space-y-16">
+<div class="flex gap-8">
+<span class="font-headline text-2xl text-secondary">01</span>
+<div>
+<h4 class="text-xl font-headline mb-3">Behavioral Auditing</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed max-w-lg">We analyze how users interact with your visibility infrastructure to remove friction points before they exist.</p>
+</div>
+</div>
+<div class="flex gap-8">
+<span class="font-headline text-2xl text-secondary">02</span>
+<div>
+<h4 class="text-xl font-headline mb-3">Intent Matching</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed max-w-lg">Aligning search intent with immediate tactical solutions to shorten the sales cycle by up to 40%.</p>
+</div>
+</div>
+<div class="flex gap-8">
+<span class="font-headline text-2xl text-secondary">03</span>
+<div>
+<h4 class="text-xl font-headline mb-3">Velocity Scaling</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed max-w-lg">Continuous refinement and expansion of the "Visibility Machine" to capture new market verticals.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-2">
+<div class="bg-primary-container p-12 text-white shadow-bespoke sticky top-32">
+<h3 class="text-2xl font-headline mb-2 text-secondary-fixed">Pipeline Plan</h3>
+<p class="text-on-primary-container text-sm mb-12">Total visibility dominance managed end-to-end by our infrastructure team.</p>
+<div class="text-4xl font-headline mb-12">
+                            $4,500 <span class="text-sm font-body uppercase tracking-widest opacity-60">/ Month</span>
+</div>
+<ul class="space-y-6 mb-12 border-t border-white/10 pt-12">
+<li class="flex items-center gap-4 text-xs font-medium uppercase tracking-widest">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle" data-weight="fill">check_circle</span>
+                                Bi-Weekly Strategy Sprints
+                            </li>
+<li class="flex items-center gap-4 text-xs font-medium uppercase tracking-widest">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle" data-weight="fill">check_circle</span>
+                                Unlimited Content Iterations
+                            </li>
+<li class="flex items-center gap-4 text-xs font-medium uppercase tracking-widest">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle" data-weight="fill">check_circle</span>
+                                Dedicated Growth Architect
+                            </li>
+</ul>
+<a href="/contact.html" class="block w-full text-center bg-on-primary text-primary-container py-4 font-bold uppercase text-[11px] tracking-[0.2em] hover:bg-surface-container-low transition-colors">Commence Integration</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Dark CTA Section -->
+<section class="bg-primary py-32 px-8 text-center">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-4xl md:text-6xl font-headline text-white mb-12">Ready to be found?</h2>
+<p class="text-on-primary-container text-lg mb-12 max-w-xl mx-auto">
+                    The difference between being seen and being chosen is the quality of your infrastructure. Let's build yours today.
+                </p>
+<div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+<a href="/contact.html" class="inline-block bg-surface text-primary px-10 py-4 font-bold uppercase text-[11px] tracking-[0.2em] rounded-sm">Schedule an Audit</a>
+<a href="/audits/" class="text-white border-b border-white/20 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.2em] hover:border-secondary transition-colors">View Case Studies</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-outline-variant/15 bg-surface">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full gap-6">
+<div class="font-headline italic text-[#0F2921] text-xl">Entropia Ventures.</div>
+<div class="flex gap-10">
+<a class="text-sm text-[#1a1c1c]/60 hover:text-[#0F2921] underline underline-offset-4 decoration-outline-variant/20 transition-all" href="/contact.html">Contact</a>
+<a class="text-sm text-[#1a1c1c]/60 hover:text-[#0F2921] underline underline-offset-4 decoration-outline-variant/20 transition-all" href="#">Privacy</a>
+<a class="text-sm text-[#1a1c1c]/60 hover:text-[#0F2921] underline underline-offset-4 decoration-outline-variant/20 transition-all" href="https://linkedin.com/company/entropia-ventures" target="_blank">LinkedIn</a>
+</div>
+<div class="text-sm text-[#1a1c1c]/60">© 2026 Entropia Ventures. Visibility Infrastructure.</div>
+</div>
+</footer>
+</body></html>

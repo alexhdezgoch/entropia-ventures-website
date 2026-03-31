@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline": "#727975",
+              "on-tertiary-fixed-variant": "#394a44",
+              "primary-fixed-dim": "#b0cdc1",
+              "on-tertiary": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "surface-dim": "#dadad9",
+              "secondary": "#755b00",
+              "surface-variant": "#e2e2e2",
+              "on-primary-fixed-variant": "#324c43",
+              "tertiary": "#03120e",
+              "on-surface-variant": "#424845",
+              "inverse-on-surface": "#f1f1f0",
+              "surface": "#f9f9f8",
+              "primary": "#00130d",
+              "on-surface": "#1a1c1c",
+              "secondary-fixed": "#ffe08f",
+              "on-error-container": "#93000a",
+              "inverse-surface": "#2f3130",
+              "surface-container-highest": "#e2e2e2",
+              "error": "#ba1a1a",
+              "secondary-fixed-dim": "#e6c364",
+              "on-tertiary-container": "#7d9088",
+              "surface-tint": "#4a645a",
+              "surface-container-low": "#f3f4f3",
+              "on-secondary-fixed": "#241a00",
+              "tertiary-fixed": "#d3e7de",
+              "secondary-container": "#fed977",
+              "on-error": "#ffffff",
+              "on-secondary-container": "#785d00",
+              "inverse-primary": "#b0cdc1",
+              "on-primary": "#ffffff",
+              "surface-container": "#eeeeed",
+              "on-tertiary-fixed": "#0e1f19",
+              "on-secondary": "#ffffff",
+              "primary-fixed": "#cce9dc",
+              "on-background": "#1a1c1c",
+              "on-primary-container": "#769287",
+              "error-container": "#ffdad6",
+              "background": "#f9f9f8",
+              "primary-container": "#0f2921",
+              "outline-variant": "#c2c8c4",
+              "surface-container-high": "#e8e8e7",
+              "tertiary-fixed-dim": "#b8cbc2",
+              "on-primary-fixed": "#052018",
+              "on-secondary-fixed-variant": "#584400",
+              "surface-bright": "#f9f9f8",
+              "tertiary-container": "#172822"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .luxury-gradient {
+            background: linear-gradient(135deg, #0F2921 0%, #00130d 100%);
+        }
+        .glass-header {
+            background: rgba(249, 249, 248, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 glass-header">
+<div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4 w-full">
+<a href="/" class="text-2xl font-serif italic text-[#0F2921] tracking-tighter">ENTROPIA</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[#1a1c1c]/70 pb-1 Inter font-medium tracking-wide uppercase text-[11px] hover:text-[#0F2921] transition-all duration-400 ease-[cubic-bezier(0.2,0,0,1)]" href="/services.html">SERVICES</a>
+<a class="text-[#0F2921] border-b border-[#C9A84C] pb-1 Inter font-medium tracking-wide uppercase text-[11px]" href="/process.html">PROCESS</a>
+<a class="text-[#1a1c1c]/70 pb-1 Inter font-medium tracking-wide uppercase text-[11px] hover:text-[#0F2921] transition-all duration-400 ease-[cubic-bezier(0.2,0,0,1)]" href="/audits/">AUDITS</a>
+<a class="text-[#1a1c1c]/70 pb-1 Inter font-medium tracking-wide uppercase text-[11px] hover:text-[#0F2921] transition-all duration-400 ease-[cubic-bezier(0.2,0,0,1)]" href="/blog/">BLOG</a>
+<a class="text-[#1a1c1c]/70 pb-1 Inter font-medium tracking-wide uppercase text-[11px] hover:text-[#0F2921] transition-all duration-400 ease-[cubic-bezier(0.2,0,0,1)]" href="/#pricing">PRICING</a>
+</nav>
+<a href="/contact.html" class="bg-primary-container text-on-primary px-6 py-2.5 rounded-md text-[11px] font-medium tracking-widest uppercase hover:bg-primary transition-all duration-300 active:scale-95">Get free audit →</a>
+</div>
+<div class="bg-surface-container-low h-[1px] w-full absolute bottom-0 opacity-50"></div>
+</header>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 mb-32">
+<div class="flex flex-col items-start gap-6">
+<span class="inline-block px-3 py-1 bg-surface-container-high text-primary-container text-[10px] font-bold tracking-[0.2em] uppercase rounded-full">
+                    The Method
+                </span>
+<h1 class="font-headline text-6xl md:text-8xl text-primary-container leading-tight tracking-tighter">
+                    We research — <br/>
+<span class="italic font-normal">before we pitch.</span>
+</h1>
+<p class="max-w-xl text-lg text-on-surface-variant leading-relaxed">
+                    Most agencies sell first, figure it out later. We invert the model. We treat your visibility as critical infrastructure, not a campaign variable.
+                </p>
+</div>
+</section>
+<!-- Convictions Section -->
+<section class="max-w-7xl mx-auto px-8 mb-48">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Sticky Column -->
+<div class="lg:col-span-4 lg:sticky lg:top-40">
+<h2 class="font-headline text-4xl text-primary-container mb-6 italic">Why this way works</h2>
+<p class="text-on-surface-variant leading-relaxed mb-8">
+                        The architecture of a successful presence requires more than just activity—it requires precision alignment with market realities.
+                    </p>
+<div class="w-12 h-[1px] bg-secondary mb-4 opacity-40"></div>
+<p class="text-[11px] font-bold tracking-widest uppercase text-outline">Philosophy 01</p>
+</div>
+<!-- Staggered Grid -->
+<div class="lg:col-span-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container-low p-10 flex flex-col gap-6 md:mt-12 group hover:bg-surface-container transition-colors duration-500">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="troubleshoot">troubleshoot</span>
+<h3 class="font-headline text-2xl text-primary-container">Research First</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">We don't speculate. Every strategy is built on a foundation of raw data and competitive intelligence gathered over 30 days.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-low p-10 flex flex-col gap-6 group hover:bg-surface-container transition-colors duration-500">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="visibility">visibility</span>
+<h3 class="font-headline text-2xl text-primary-container">Radical Transparency</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">View your metrics in real-time through our visibility dashboard. No obscured data, no vanity metrics, just truth.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-low p-10 flex flex-col gap-6 md:mt-12 group hover:bg-surface-container transition-colors duration-500">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="hub">hub</span>
+<h3 class="font-headline text-2xl text-primary-container">Direct Access</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Skip the account managers. You work directly with the infrastructure architects building your growth engines.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-low p-10 flex flex-col gap-6 group hover:bg-surface-container transition-colors duration-500">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="key">key</span>
+<h3 class="font-headline text-2xl text-primary-container">No Lock-in</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Our performance is the only contract we need. Month-to-month engagements that prioritize results over paperwork.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Image Interstitial -->
+<section class="w-full h-[614px] relative mb-48 overflow-hidden">
+<img alt="Professional workspace" class="w-full h-full object-cover" data-alt="Modern minimalist high-end office interior with clean lines, architectural lighting, and deep forest green accents, editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVE3rl0SZyD4D_uZZr0uuesRYoSjvzYlebZMZtBvcSTlETlP9hIbXTRRR-kvQQq8zStbxe3kW5SeTMjytbLn18La7lsj8asboTpq69qtYL1TuWDj5j5MVjL6LjINoInBYy5G7Ljiz2cYcsqBgbgAW5UauuV8TDouj8cN7122o0cgO5kh9haiOFtpiAhUwNxLds6z4GGgFpT33KIcQ9Kds6rbsOGX6ptlIug7uDJaruR_TTxgr13kd-OyJdK9_vyPjEVsgQ8cpfhfc"/>
+<div class="absolute inset-0 bg-primary/20"></div>
+</section>
+<!-- Four Phases Section -->
+<section class="max-w-7xl mx-auto px-8 mb-48">
+<div class="flex flex-col gap-4 mb-20">
+<p class="text-secondary font-medium tracking-[0.3em] uppercase text-[10px]">The Implementation</p>
+<h2 class="font-headline text-5xl text-primary-container">Four Stages of Visibility</h2>
+</div>
+<div class="flex flex-col">
+<!-- Phase 01 -->
+<div class="group border-t border-outline-variant/15 py-16 flex flex-col md:flex-row gap-8 md:items-center transition-all duration-700 hover:bg-surface-container-low px-4 md:-mx-4">
+<div class="md:w-1/4">
+<span class="font-headline text-5xl text-outline-variant group-hover:text-secondary transition-colors duration-500">01</span>
+</div>
+<div class="md:w-1/2">
+<h3 class="font-headline text-3xl text-primary-container mb-4">Cold Audit</h3>
+<p class="text-on-surface-variant leading-relaxed">A deep-dive investigation into your current digital footprint. We identify leakages in your funnel and quantify your competitors' advantages.</p>
+</div>
+<div class="md:w-1/4 flex justify-end">
+<span class="material-symbols-outlined text-outline-variant group-hover:translate-x-2 transition-transform duration-500" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Phase 02 -->
+<div class="group border-t border-outline-variant/15 py-16 flex flex-col md:flex-row gap-8 md:items-center transition-all duration-700 hover:bg-surface-container-low px-4 md:-mx-4">
+<div class="md:w-1/4">
+<span class="font-headline text-5xl text-outline-variant group-hover:text-secondary transition-colors duration-500">02</span>
+</div>
+<div class="md:w-1/2">
+<h3 class="font-headline text-3xl text-primary-container mb-4">Custom Visibility Roadmap</h3>
+<p class="text-on-surface-variant leading-relaxed">Not a generic plan. A bespoke structural blueprint mapping every touchpoint, platform, and content pillar required for market dominance.</p>
+</div>
+<div class="md:w-1/4 flex justify-end">
+<span class="material-symbols-outlined text-outline-variant group-hover:translate-x-2 transition-transform duration-500" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Phase 03 -->
+<div class="group border-t border-outline-variant/15 py-16 flex flex-col md:flex-row gap-8 md:items-center transition-all duration-700 hover:bg-surface-container-low px-4 md:-mx-4">
+<div class="md:w-1/4">
+<span class="font-headline text-5xl text-outline-variant group-hover:text-secondary transition-colors duration-500">03</span>
+</div>
+<div class="md:w-1/2">
+<h3 class="font-headline text-3xl text-primary-container mb-4">Monthly Execution</h3>
+<p class="text-on-surface-variant leading-relaxed">Our core engine starts. We handle the production, technical SEO, and visibility management while you focus on scaling your operations.</p>
+</div>
+<div class="md:w-1/4 flex justify-end">
+<span class="material-symbols-outlined text-outline-variant group-hover:translate-x-2 transition-transform duration-500" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Phase 04 -->
+<div class="group border-t border-b border-outline-variant/15 py-16 flex flex-col md:flex-row gap-8 md:items-center transition-all duration-700 hover:bg-surface-container-low px-4 md:-mx-4">
+<div class="md:w-1/4">
+<span class="font-headline text-5xl text-outline-variant group-hover:text-secondary transition-colors duration-500">04</span>
+</div>
+<div class="md:w-1/2">
+<h3 class="font-headline text-3xl text-primary-container mb-4">Monthly Report + Iteration</h3>
+<p class="text-on-surface-variant leading-relaxed">Monthly alignment meetings where we review performance, adjust for algorithmic shifts, and refine the roadmap for the following 30 days.</p>
+</div>
+<div class="md:w-1/4 flex justify-end">
+<span class="material-symbols-outlined text-outline-variant group-hover:translate-x-2 transition-transform duration-500" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="max-w-5xl mx-auto px-8 mb-48 text-center">
+<div class="bg-primary-container p-16 md:p-24 flex flex-col items-center gap-10">
+<h2 class="font-headline text-4xl md:text-5xl text-on-primary leading-tight">
+                    Ready to build your <br/> <span class="italic text-secondary-fixed-dim">visibility infrastructure?</span>
+</h2>
+<div class="flex flex-col md:flex-row gap-6">
+<a href="/contact.html" class="inline-block bg-[#C9A84C] text-[#0F2921] px-10 py-4 font-bold text-xs tracking-widest uppercase hover:bg-secondary-container transition-all duration-300">Start with the free audit.</a>
+<a href="/audits/" class="inline-block border border-on-primary/20 text-on-primary px-10 py-4 font-bold text-xs tracking-widest uppercase hover:bg-on-primary/10 transition-all duration-300">View Case Studies</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-outline_variant/15 bg-surface">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full gap-6">
+<div class="flex flex-col gap-2 items-center md:items-start">
+<div class="font-serif italic text-xl text-[#0F2921]">Entropia</div>
+<p class="text-sm Inter text-[#1a1c1c]/60">© 2026 Entropia Ventures. Visibility Infrastructure.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-sm Inter text-[#1a1c1c]/60 hover:text-[#0F2921] underline underline-offset-4 decoration-outline_variant/20 transition-all duration-300" href="/contact.html">Contact</a>
+<a class="text-sm Inter text-[#1a1c1c]/60 hover:text-[#0F2921] underline underline-offset-4 decoration-outline_variant/20 transition-all duration-300" href="#">Privacy</a>
+<a class="text-sm Inter text-[#1a1c1c]/60 hover:text-[#0F2921] underline underline-offset-4 decoration-outline_variant/20 transition-all duration-300" href="https://linkedin.com/company/entropia-ventures" target="_blank">LinkedIn</a>
+</div>
+</div>
+</footer>
+</body></html>

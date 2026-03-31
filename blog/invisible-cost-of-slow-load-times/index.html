@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Invisible Cost of Slow Load Times | Entropia Blog</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    "outline": "#727975",
+                    "secondary-container": "#fed977",
+                    "on-primary": "#ffffff",
+                    "surface-tint": "#4a645a",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#03120e",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed": "#052018",
+                    "secondary": "#755b00",
+                    "on-secondary-fixed": "#241a00",
+                    "on-secondary-container": "#785d00",
+                    "primary-container": "#0f2921",
+                    "on-surface": "#1a1c1c",
+                    "on-error-container": "#93000a",
+                    "background": "#f9f9f8",
+                    "on-tertiary-fixed": "#0e1f19",
+                    "on-error": "#ffffff",
+                    "on-surface-variant": "#424845",
+                    "inverse-surface": "#2f3130",
+                    "error": "#ba1a1a",
+                    "surface-dim": "#dadad9",
+                    "surface-container": "#eeeeed",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#f3f4f3",
+                    "secondary-fixed": "#ffe08f",
+                    "outline-variant": "#c2c8c4",
+                    "inverse-primary": "#b0cdc1",
+                    "primary-fixed": "#cce9dc",
+                    "surface-variant": "#e2e2e2",
+                    "primary": "#00130d",
+                    "on-background": "#1a1c1c",
+                    "on-tertiary": "#ffffff",
+                    "inverse-on-surface": "#f1f1f0",
+                    "secondary-fixed-dim": "#e6c364",
+                    "surface-bright": "#f9f9f8",
+                    "on-primary-container": "#769287",
+                    "surface-container-highest": "#e2e2e2",
+                    "surface-container-high": "#e8e8e7",
+                    "surface": "#f9f9f8"
+                },
+                fontFamily: {
+                    "headline": ["Noto Serif"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+                },
+                borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            },
+        },
+    }
+</script>
+<style>
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .drop-cap::first-letter {
+        float: left;
+        font-family: 'Noto Serif', serif;
+        font-size: 5rem;
+        line-height: 4rem;
+        padding-right: 0.75rem;
+        padding-top: 0.5rem;
+        color: #0F2921;
+    }
+</style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased selection:bg-primary-container selection:text-on-primary">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-[#f9f9f8]/80 backdrop-blur-xl transition-all duration-400 ease-out">
+<div class="flex justify-between items-center w-full px-12 py-6 max-w-screen-2xl mx-auto">
+<a class="text-2xl font-serif italic text-[#0F2921]" href="/">ENTROPIA</a>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-[#1a1c1c]/60 hover:text-[#0F2921] transition-colors font-label uppercase tracking-widest text-[0.75rem]" href="/services.html">SERVICES</a>
+<a class="text-[#1a1c1c]/60 hover:text-[#0F2921] transition-colors font-label uppercase tracking-widest text-[0.75rem]" href="/process.html">PROCESS</a>
+<a class="text-[#1a1c1c]/60 hover:text-[#0F2921] transition-colors font-label uppercase tracking-widest text-[0.75rem]" href="/audits/">AUDITS</a>
+<a class="text-[#0F2921] border-b border-[#C9A84C]/30 pb-1 font-label uppercase tracking-widest text-[0.75rem]" href="/blog/">BLOG</a>
+</div>
+<a href="/contact.html" class="bg-primary-container text-on-primary px-6 py-2.5 text-sm font-medium hover:bg-primary transition-all duration-400 hover:translate-y-[-1px]">
+    Get free audit →
+</a>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<header class="max-w-4xl mx-auto px-6 text-center mb-16">
+<div class="inline-flex items-center space-x-2 mb-8">
+<span class="w-12 h-[1px] bg-secondary opacity-30"></span>
+<span class="font-label text-[0.7rem] uppercase tracking-[0.2em] text-on-surface-variant">Infrastructure Insights</span>
+<span class="w-12 h-[1px] bg-secondary opacity-30"></span>
+</div>
+<h1 class="font-headline text-5xl md:text-7xl text-primary-container leading-tight mb-8">
+    The Invisible Cost of <span class="italic font-normal">Slow Load Times.</span>
+</h1>
+<div class="flex flex-col items-center justify-center space-y-2 text-on-surface-variant font-body text-sm tracking-wide">
+<p class="font-medium">By Alex Hernandez · March 18, 2026 · 4 min read</p>
+<div class="flex items-center space-x-4 pt-4">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span class="material-symbols-outlined text-sm">visibility</span>
+<span class="material-symbols-outlined text-sm">share</span>
+</div>
+</div>
+</header>
+<!-- Article Content -->
+<article class="max-w-3xl mx-auto px-6">
+<div class="prose prose-lg prose-slate max-w-none">
+<p class="drop-cap text-on-surface font-body text-xl leading-relaxed mb-12 opacity-90">
+    Every second your website takes to load, roughly 7% of your conversions leave. That's the conversion math. But there's a second accounting that most small businesses never see — the one Google runs silently, and the one that determines whether you appear at all.
+</p>
+
+<h2 class="font-headline text-3xl text-primary-container mt-16 mb-6">Two Audiences. One Page Speed.</h2>
+<p class="font-body text-lg leading-loose text-on-surface-variant mb-8">
+    When we audit a business and find a 4-second load time, we flag it twice. Once for users — because people leave. And once for Google — because Core Web Vitals have been a confirmed ranking factor since 2021. A slow page is paying a double penalty: losing the visitor who arrived, and losing the next visitor who never will.
+</p>
+<p class="font-body text-lg leading-loose text-on-surface-variant mb-8">
+    The businesses we audit most often are running on shared hosting, unoptimized WordPress installations, and images that were uploaded straight from a phone camera. A hero image that's 4MB doesn't feel like a problem until you realize it loads in 6 seconds on mobile — and 62% of local searches happen on mobile.
+</p>
+
+<!-- Pull Quote -->
+<blockquote class="my-20 border-l-0 text-center px-12">
+<p class="font-headline italic text-3xl md:text-4xl text-primary-container leading-relaxed mb-4">
+    "Your website doesn't have to be fast. It just has to be faster than the competitor Google shows instead of you."
+</p>
+<cite class="font-label text-xs uppercase tracking-widest text-secondary not-italic">— Entropia Ventures, 2026</cite>
+</blockquote>
+
+<h2 class="font-headline text-3xl text-primary-container mt-16 mb-6">What We Fix First</h2>
+<p class="font-body text-lg leading-loose text-on-surface-variant mb-8">
+    In Phase 1 of every engagement, we run a technical audit against three categories. The quick wins — image compression, caching headers, font loading strategy — are often enough to drop load time by 40% before we touch a single line of SEO copy.
+</p>
+<div class="bg-surface-container-low p-10 rounded-lg mb-12">
+<p class="font-body italic text-on-surface-variant leading-relaxed">
+    In one recent audit of a Houston event venue, we found a homepage loading at 5.8 seconds. Three technical fixes — image WebP conversion, lazy loading, and removing an abandoned chat widget script — brought it to 1.9 seconds. Rankings improved within 3 weeks without touching a keyword.
+</p>
+</div>
+
+<h2 class="font-headline text-3xl text-primary-container mt-16 mb-6">The Authority Drain</h2>
+<p class="font-body text-lg leading-loose text-on-surface-variant mb-12">
+    Beyond rankings, there's the authority signal. Google's crawl budget is finite. A slow site gets crawled less frequently. That means new pages you publish — a new service, a new location page, a blog article — take longer to enter the index. In local SEO where the difference between rank 1 and rank 4 is the difference between a phone call and nothing, crawl delay is a compounding tax on every piece of content you produce.
+</p>
+<p class="font-body text-lg leading-loose text-on-surface-variant mb-12">
+    The fix isn't complicated. It's methodical. And it's the first technical step we take on every client we bring into the Visible plan.
+</p>
+</div>
+
+<!-- Share Section -->
+<div class="mt-24 pt-12 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center space-x-4">
+<span class="font-label text-[0.75rem] uppercase tracking-widest text-on-surface-variant">Share this insight</span>
+<div class="flex space-x-2">
+<button class="w-10 h-10 bg-surface-container hover:bg-surface-container-high flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[1.2rem]">share</span>
+</button>
+</div>
+</div>
+<div class="flex items-center space-x-2">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<span class="font-label text-[0.7rem] uppercase tracking-[0.15em] text-primary-container">Live infrastructure stream active</span>
+</div>
+</div>
+</article>
+
+<!-- Related Reading -->
+<section class="max-w-6xl mx-auto px-6 mt-32">
+<h3 class="font-headline text-2xl text-primary-container mb-12 text-center">Related Reading</h3>
+<div class="grid md:grid-cols-2 gap-12">
+<a class="group block bg-surface-container-lowest p-8 shadow-sm hover:shadow-xl transition-all duration-700 ease-[cubic-bezier(0.2,0,0,1)]" href="/blog/death-of-the-keyword/">
+<div class="font-label text-[0.65rem] uppercase tracking-widest text-secondary mb-4">Infrastructure · 6 min read</div>
+<h4 class="font-headline text-2xl text-primary-container mb-4 group-hover:text-secondary transition-colors italic">The Death of the Keyword</h4>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Why semantic search changed the fundamental nature of visibility infrastructure forever.</p>
+</a>
+<a class="group block bg-surface-container-lowest p-8 shadow-sm hover:shadow-xl transition-all duration-700 ease-[cubic-bezier(0.2,0,0,1)]" href="/blog/seo-is-infrastructure/">
+<div class="font-label text-[0.65rem] uppercase tracking-widest text-secondary mb-4">Strategy · 6 min read</div>
+<h4 class="font-headline text-2xl text-primary-container mb-4 group-hover:text-secondary transition-colors italic">Why SEO is Infrastructure, Not Marketing</h4>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Moving away from tactical tricks toward foundational architecture of digital discoverability.</p>
+</a>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="max-w-4xl mx-auto px-6 mt-32">
+<div class="bg-primary-container p-12 text-center text-on-primary relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="font-headline text-4xl mb-6 italic">Ready to fix your infrastructure?</h2>
+<p class="font-body text-on-primary-container mb-10 max-w-xl mx-auto opacity-90">
+    We audit your technical foundation before we touch a single keyword. The fixes are usually faster than you think.
+</p>
+<a class="inline-block bg-on-primary text-primary-container px-8 py-4 font-medium text-sm tracking-wide uppercase hover:bg-secondary-fixed transition-colors" href="/contact.html">
+    Get your free audit →
+</a>
+</div>
+<div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-secondary opacity-10 rounded-full blur-3xl"></div>
+<div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-64 h-64 bg-secondary opacity-10 rounded-full blur-3xl"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f3f4f3] w-full border-t border-[#1a1c1c]/5">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-screen-2xl mx-auto">
+<div class="mb-8 md:mb-0">
+<a class="text-xl font-serif italic text-[#0F2921]" href="/">ENTROPIA</a>
+<p class="mt-4 font-body text-sm text-[#1a1c1c]/50">Visibility Infrastructure.</p>
+</div>
+<div class="flex flex-col items-center md:items-end space-y-4">
+<div class="flex space-x-8">
+<a class="text-[#1a1c1c]/50 hover:text-[#C9A84C] transition-colors font-body text-sm" href="/contact.html">Contact</a>
+<a class="text-[#1a1c1c]/50 hover:text-[#C9A84C] transition-colors font-body text-sm" href="/audits/">Audits</a>
+<a class="text-[#1a1c1c]/50 hover:text-[#C9A84C] transition-colors font-body text-sm" href="/blog/">Blog</a>
+</div>
+<p class="font-body text-xs text-[#1a1c1c]/30 uppercase tracking-widest">© 2026 Entropia Ventures. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</body></html>
