@@ -262,10 +262,22 @@ tailwind.config = {
   const params = new URLSearchParams(window.location.search);
   const firm    = params.get('firm') || 'Unknown';
   const cat     = params.get('cat')  || 'venue';
-  const loc     = params.get('loc')  || '';
-  const gap     = parseInt(params.get('gap')) || 70;
-  const badge   = params.get('badge') || '';
-  const desc    = params.get('desc')  || '';
+
+  // Firm-specific overrides — corrects bad URL params from old/cached links
+  const firmOverrides = {
+    'The Mohr Law Firm': {
+      loc: 'San Antonio + DFW, TX',
+      gap: 68,
+      badge: 'Federal Defense',
+      desc: 'Federal criminal defense across San Antonio and Dallas-Fort Worth. Licensed in US Supreme Court and multiple federal courts — specialized reputation not matched by search visibility infrastructure.'
+    }
+  };
+  const override = firmOverrides[firm] || {};
+
+  const loc     = override.loc   || params.get('loc')  || '';
+  const gap     = override.gap   || parseInt(params.get('gap')) || 70;
+  const badge   = override.badge || params.get('badge') || '';
+  const desc    = override.desc  || params.get('desc')  || '';
 
   // Category labels
   const catLabels = {
