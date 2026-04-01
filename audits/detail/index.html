@@ -328,31 +328,40 @@ tailwind.config = {
   document.getElementById('firm-name').textContent = firm + '.';
   document.getElementById('firm-loc').textContent = loc;
   document.getElementById('firm-desc').textContent = (firmData && firmData.primaryFinding) || desc;
-  document.getElementById('gap-display').textContent = gap + '%';
   document.getElementById('property-id').textContent = propId;
 
-  // Stats (use firm override if available)
+  // Stats — derive from firmData.score when available, otherwise from URL gap param
   const fo = firmOverrides[firm] || {};
-  document.getElementById('stat-gap').textContent = gap + '%';
-  const gapSeverity = gap >= 80 ? 'Critical' : gap >= 70 ? 'High' : 'Elevated';
+  const fScore = firmData && firmData.score;
+
+  // Visibility gap: if we have a real score, compute gap as (20 - total) * 5
+  const effectiveGap = fScore ? Math.min(95, Math.max(40, (20 - fScore.total) * 5)) : gap;
+  document.getElementById('stat-gap').textContent = effectiveGap + '%';
+  document.getElementById('gap-display').textContent = effectiveGap + '%';
+  const gapSeverity = effectiveGap >= 80 ? 'Critical' : effectiveGap >= 60 ? 'High' : 'Elevated';
   document.getElementById('stat-gap-label').textContent = gapSeverity;
 
-  const position = fo.position || (gap >= 80 ? 'Page 3+' : gap >= 72 ? 'Page 2' : 'Page 2');
+  // Google position: derive from total score
+  const totalScore = fScore ? fScore.total : (20 - gap / 5);
+  const position = fo.position || (totalScore <= 5 ? 'Page 3+' : totalScore <= 10 ? 'Page 2' : totalScore <= 14 ? 'Bottom Page 1' : 'Page 1');
   document.getElementById('stat-position').textContent = position;
 
-  const contentScore = fo.contentScore || Math.max(5, 40 - Math.round((gap - 60) * 0.6));
-  document.getElementById('stat-content').textContent = fo.contentScore ? contentScore : contentScore;
-  document.getElementById('stat-content-label').textContent = fo.contentLabel || (contentScore < 20 ? 'Critical Failure' : contentScore < 35 ? 'Insufficient' : 'Developing');
+  // Content score: derive from website sub-score (out of 10 → out of 100)
+  const contentScore = fScore ? fScore.website * 10 : (fo.contentScore || Math.max(5, 40 - Math.round((gap - 60) * 0.6)));
+  document.getElementById('stat-content').textContent = contentScore;
+  document.getElementById('stat-content-label').textContent = fo.contentLabel || (contentScore <= 20 ? 'Critical Failure' : contentScore <= 40 ? 'Insufficient' : contentScore <= 60 ? 'Developing' : contentScore <= 80 ? 'Moderate' : 'Strong');
 
-  const schemaStatus = fo.schema || 'Missing';
-  const schemaLabel = fo.schemaLabel || 'Not Implemented';
+  // Schema: check if any issue mentions schema as critical
+  const hasSchemaIssue = firmData && firmData.issues && firmData.issues.some(i => i.label.toLowerCase().includes('schema') && i.status === 'critical');
+  const schemaStatus = fo.schema || (hasSchemaIssue ? 'Missing' : (firmData ? 'Partial' : 'Missing'));
+  const schemaLabel = fo.schemaLabel || (hasSchemaIssue ? 'Not Implemented' : (firmData ? 'Needs Work' : 'Not Implemented'));
   document.getElementById('stat-schema').textContent = schemaStatus;
   document.getElementById('stat-schema-label').textContent = schemaLabel;
 
   // Gap bar
-  document.getElementById('gap-bar-label').textContent = gap + '%';
+  document.getElementById('gap-bar-label').textContent = effectiveGap + '%';
   document.getElementById('gap-bar-label').style.color = '#0f2921';
-  setTimeout(() => { document.getElementById('gap-bar').style.width = gap + '%'; }, 100);
+  setTimeout(() => { document.getElementById('gap-bar').style.width = effectiveGap + '%'; }, 100);
 
   // Finding summary — use firm-specific data if available
   document.getElementById('finding-summary').textContent = (firmData && firmData.primaryFinding) || desc || ('This firm is currently ranked page 2 or lower for its primary search terms. The digital infrastructure does not reflect the quality of the practice or the volume of demand in its market.');
