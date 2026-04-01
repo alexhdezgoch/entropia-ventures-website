@@ -4,6 +4,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title id="page-title">Visibility Audit | Entropia Ventures</title>
+<meta name="robots" content="noindex, nofollow"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
@@ -245,6 +246,19 @@ tailwind.config = {
 
 <script>
 (function() {
+  // Redirect stale/incorrect audit URLs to corrected versions
+  const _redirects = {
+    'The Mohr Law Firm||Denver, CO': { loc: 'San Antonio + DFW, TX', gap: 68, badge: 'Federal Defense', desc: 'Federal criminal defense across San Antonio and Dallas-Fort Worth. Licensed in US Supreme Court and multiple federal courts — specialized reputation not matched by search visibility infrastructure.' }
+  };
+  const _p = new URLSearchParams(window.location.search);
+  const _key = (_p.get('firm')||'') + '||' + (_p.get('loc')||'');
+  if (_redirects[_key]) {
+    const r = _redirects[_key];
+    Object.keys(r).forEach(k => _p.set(k, r[k]));
+    window.location.replace(window.location.pathname + '?' + _p.toString());
+    return;
+  }
+
   const params = new URLSearchParams(window.location.search);
   const firm    = params.get('firm') || 'Unknown';
   const cat     = params.get('cat')  || 'venue';
