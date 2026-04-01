@@ -8,6 +8,7 @@ window.__firmAuditData = {
   // ═══════════════════════════════════════════════
 
   'Banks & Banks': {
+    searchQuery: 'criminal defense attorney Denver CO',
     score: { website: 0, seo: 3, total: 3 },
     primaryFinding: 'No website exists — this Denver criminal defense firm has zero digital presence in a metro of 700,000+ people actively searching for defense attorneys.',
     issues: [
@@ -30,6 +31,7 @@ window.__firmAuditData = {
   },
 
   'Datz Law Firm': {
+    searchQuery: 'criminal defense attorney Louisville CO',
     score: { website: 6, seo: 4, total: 10 },
     primaryFinding: 'Boutique firm in Louisville, CO with a polished brand and empathetic messaging, but no charge-type landing pages, no blog content, and no schema — invisible for specific criminal defense searches across Boulder County.',
     issues: [
@@ -52,6 +54,7 @@ window.__firmAuditData = {
   },
 
   'Goddard & Hoing': {
+    searchQuery: 'criminal defense attorney Georgetown TX',
     score: { website: 5, seo: 3, total: 8 },
     primaryFinding: 'Over 50 years of combined experience and US Supreme Court Bar membership, but the website lacks dedicated charge-type pages — all criminal defense is on a single page, losing rankings for specific searches like "Georgetown TX DUI lawyer."',
     issues: [
@@ -74,6 +77,7 @@ window.__firmAuditData = {
   },
 
   'Geman Criminal Defense': {
+    searchQuery: 'DUI attorney Denver CO',
     score: { website: 2, seo: 1, total: 3 },
     primaryFinding: 'Website returns a title tag ("Denver DUI Attorney | Denver DUI Lawyer") but renders almost no crawlable content — the site appears to rely entirely on JavaScript rendering, making it nearly invisible to search engines.',
     issues: [
@@ -96,6 +100,7 @@ window.__firmAuditData = {
   },
 
   'Kyle Whitaker Law': {
+    searchQuery: 'criminal defense attorney Fort Worth TX',
     score: { website: 6, seo: 5, total: 11 },
     primaryFinding: 'Former prosecutor with strong criminal defense and family law credentials in Fort Worth, but practice areas are presented as summaries rather than dedicated ranking pages — missing specific charge-type and case-type content that drives organic traffic.',
     issues: [
@@ -118,6 +123,7 @@ window.__firmAuditData = {
   },
 
   'Sarah Fox Law': {
+    searchQuery: 'criminal defense attorney McKinney TX',
     score: { website: 5, seo: 3, total: 8 },
     primaryFinding: 'Board-certified criminal law attorney in McKinney, TX with over a decade of experience, but practice area pages lack depth — the site leans heavily on emotional messaging without the specific content Google needs to rank for charge-type searches in Collin County.',
     issues: [
@@ -140,6 +146,7 @@ window.__firmAuditData = {
   },
 
   'Liberty Law Center': {
+    searchQuery: 'criminal defense attorney Pueblo CO',
     score: { website: 8, seo: 6, total: 14 },
     primaryFinding: 'Strong Colorado Springs criminal defense site with case dismissal results, practice area pages, and good content depth — but listed as serving Pueblo with no Pueblo-specific content, ceding that entire market to local competitors.',
     issues: [
@@ -162,6 +169,7 @@ window.__firmAuditData = {
   },
 
   'The Mohr Law Firm': {
+    searchQuery: 'federal criminal defense attorney San Antonio TX',
     score: { website: 3, seo: 2, total: 5 },
     primaryFinding: 'Licensed to practice in multiple federal courts and the US Supreme Court, but the website is a single page with no practice area content, no attorney bios, and no case-type pages — a brochure site in a market that demands depth.',
     issues: [
@@ -184,6 +192,7 @@ window.__firmAuditData = {
   },
 
   'Lawrence Law Firm': {
+    searchQuery: 'criminal defense attorney Aurora CO',
     score: { website: 7, seo: 6, total: 13 },
     primaryFinding: 'Operating as Colorado Defenders with strong content on DUI, domestic violence, and criminal defense in Aurora/Denver — but the dual-brand identity (Lawrence Law Firm vs. Colorado Defenders) may be confusing Google\'s entity recognition and diluting search authority.',
     issues: [
@@ -210,6 +219,7 @@ window.__firmAuditData = {
   // ═══════════════════════════════════════════════
 
   'Seigman, Sinkfield & Libersky': {
+    searchQuery: 'personal injury attorney',
     score: { website: 5, seo: 4, total: 9 },
     primaryFinding: 'Website could not be reached via common domain patterns — if a site exists, it is not discoverable through standard URL guessing, meaning potential clients searching for the firm by name may not find it either.',
     issues: [
@@ -232,6 +242,7 @@ window.__firmAuditData = {
   },
 
   'Zen Law Firm': {
+    searchQuery: 'personal injury attorney',
     score: { website: 6, seo: 6, total: 12 },
     primaryFinding: 'Website blocked our crawler (WAF/request rejection) — indicates the site exists and likely has security infrastructure, but overly aggressive blocking may also prevent legitimate search engine crawlers from indexing content.',
     issues: [
@@ -254,6 +265,7 @@ window.__firmAuditData = {
   },
 
   'W. Shane Jennings': {
+    searchQuery: 'personal injury attorney Llano TX',
     score: { website: 3, seo: 2, total: 5 },
     primaryFinding: 'Serves Texas and New Mexico from offices in Llano, Hobbs, and Las Cruces — but the site has thin content, no dedicated accident-type pages, and the multi-state presence dilutes geographic authority instead of strengthening it.',
     issues: [
@@ -276,6 +288,7 @@ window.__firmAuditData = {
   },
 
   'Tylka Law Firm': {
+    searchQuery: 'personal injury attorney League City TX',
     score: { website: 7, seo: 4, total: 11 },
     primaryFinding: 'Over 30 years of experience and Multi-Million Dollar Advocates Forum membership (top 1% of trial lawyers) — the content is strong but concentrated on League City/Galveston rather than Fort Worth, and the site lacks schema markup to surface these elite credentials in search results.',
     issues: [
@@ -302,6 +315,7 @@ window.__firmAuditData = {
   // ═══════════════════════════════════════════════
 
   'Turner-Monahan': {
+    searchQuery: 'family law attorney Fort Worth TX',
     score: { website: 6, seo: 5, total: 11 },
     primaryFinding: 'Website could not be reached at common domain patterns — if the firm operates under a different URL, potential clients searching for "Turner-Monahan Fort Worth" are likely not finding the actual website.',
     issues: [
@@ -324,6 +338,7 @@ window.__firmAuditData = {
   },
 
   'Horak Law': {
+    searchQuery: 'attorney Jefferson Iowa',
     score: { website: 3, seo: 4, total: 7 },
     primaryFinding: 'Located in Jefferson and Perry, Iowa (not Fort Worth TX as listed) — a small-town general practice with a barebones website listing 10+ practice areas but no content depth on any of them.',
     issues: [
@@ -346,6 +361,7 @@ window.__firmAuditData = {
   },
 
   'Scroggins Law Group': {
+    searchQuery: 'family law attorney Fort Worth TX',
     score: { website: 4, seo: 2, total: 6 },
     primaryFinding: 'North Texas family law firm with service area pages but extremely thin content — practice area descriptions are one sentence each, with no substantive legal content that would rank for any family law search.',
     issues: [
@@ -368,6 +384,7 @@ window.__firmAuditData = {
   },
 
   'DTX Family Law': {
+    searchQuery: 'divorce attorney Denton TX',
     score: { website: 6, seo: 4, total: 10 },
     primaryFinding: 'Attorney Chrysandra Bowen has personal experience with divorce and brings genuine empathy — the site has good emotional content serving Denton, Collin, Wise, Tarrant, and Cooke counties, but lacks structured content depth per practice area and schema markup.',
     issues: [
@@ -390,6 +407,7 @@ window.__firmAuditData = {
   },
 
   'JulianJohnson PC': {
+    searchQuery: 'CPS defense attorney Denton TX',
     score: { website: 4, seo: 2, total: 6 },
     primaryFinding: 'William Johnson is dual board-certified in Child Welfare Law and Family Law — one of fewer than 50 attorneys in Texas with this distinction — but the website buries this extraordinary credential in dense text with no schema markup to surface it in search results.',
     issues: [
@@ -416,6 +434,7 @@ window.__firmAuditData = {
   // ═══════════════════════════════════════════════
 
   'SPB Law Firm': {
+    searchQuery: 'immigration attorney Lewisville TX',
     score: { website: 3, seo: 2, total: 5 },
     primaryFinding: 'Sim, Parvathaneni and Brown serve the DFW area with immigration, business, criminal, and personal injury law — but the website is a single-page brochure with a Hamilton quote and no practice area content that could rank for any immigration search.',
     issues: [
@@ -442,6 +461,7 @@ window.__firmAuditData = {
   // ═══════════════════════════════════════════════
 
   'Zupp and Zupp': {
+    searchQuery: 'attorney Denison Iowa',
     score: { website: 2, seo: 1, total: 3 },
     primaryFinding: 'Two-office Iowa firm (Denison + service area) with a website that is essentially a service area list — no practice area content, no attorney bios, no schema, and no content that could rank for any legal search in western Iowa.',
     issues: [
@@ -468,6 +488,7 @@ window.__firmAuditData = {
   // ═══════════════════════════════════════════════
 
   'Flanagan Law': {
+    searchQuery: 'real estate attorney Plainfield IL',
     score: { website: 5, seo: 3, total: 8 },
     primaryFinding: 'James Flanagan focuses exclusively on residential real estate transactions in Plainfield/Will County, Illinois — not personal injury as categorized. The site is a minimal single-practice brochure with no SEO infrastructure.',
     issues: [

@@ -120,7 +120,7 @@ tailwind.config = {
         <div>
           <span id="stat-position" class="text-4xl font-serif text-primary-container"></span>
         </div>
-        <p class="text-[10px] uppercase tracking-widest font-semibold text-on-surface-variant">Organic Search</p>
+        <p id="stat-position-query" class="text-[10px] uppercase tracking-widest font-semibold text-on-surface-variant">Organic Search</p>
       </div>
       <div class="bg-surface-container-low p-8 flex flex-col justify-between h-48">
         <p class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant">Content Score</p>
@@ -353,6 +353,11 @@ tailwind.config = {
   };
   const position = fo.position || positionMap[Math.min(20, Math.max(0, Math.round(totalScore)))] || 'Page 2+';
   document.getElementById('stat-position').textContent = position;
+  // Show the actual search query this position refers to
+  const searchQuery = (firmData && firmData.searchQuery) || '';
+  if (searchQuery) {
+    document.getElementById('stat-position-query').textContent = '"' + searchQuery + '"';
+  }
 
   // Content score: derive from website sub-score (out of 10 → out of 100)
   const contentScore = fScore ? fScore.website * 10 : (fo.contentScore || Math.max(5, 40 - Math.round((gap - 60) * 0.6)));
