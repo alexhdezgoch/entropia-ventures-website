@@ -260,7 +260,12 @@ tailwind.config = {
   }
 
   const params = new URLSearchParams(window.location.search);
-  const firm    = params.get('firm') || 'Unknown';
+  // Convert slug-format names (e.g. "serrano-law") to title case ("Serrano Law")
+  let rawFirm = params.get('firm') || 'Unknown';
+  if (rawFirm.includes('-') && !rawFirm.includes(' ')) {
+    rawFirm = rawFirm.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  }
+  const firm    = rawFirm;
   const cat     = params.get('cat')  || 'venue';
 
   // Firm-specific overrides — corrects bad URL params from old/cached links
