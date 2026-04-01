@@ -341,9 +341,17 @@ tailwind.config = {
   const gapSeverity = effectiveGap >= 80 ? 'Critical' : effectiveGap >= 60 ? 'High' : 'Elevated';
   document.getElementById('stat-gap-label').textContent = gapSeverity;
 
-  // Google position: derive from total score
+  // Google position: derive from total score with more granularity
   const totalScore = fScore ? fScore.total : (20 - gap / 5);
-  const position = fo.position || (totalScore <= 5 ? 'Page 3+' : totalScore <= 10 ? 'Page 2' : totalScore <= 14 ? 'Bottom Page 1' : 'Page 1');
+  // Map score 0-20 to realistic position ranges
+  const positionMap = {
+    0: 'Not Indexed', 1: 'Not Indexed', 2: 'Page 5+', 3: 'Page 4+',
+    4: 'Page 3–4', 5: 'Page 3', 6: '#25–30', 7: '#20–25',
+    8: '#15–20', 9: '#12–15', 10: '#10–12', 11: '#8–10',
+    12: '#6–8', 13: '#5–7', 14: '#4–6', 15: '#3–5',
+    16: '#2–4', 17: '#2–3', 18: 'Top 3', 19: 'Top 3', 20: '#1'
+  };
+  const position = fo.position || positionMap[Math.min(20, Math.max(0, Math.round(totalScore)))] || 'Page 2+';
   document.getElementById('stat-position').textContent = position;
 
   // Content score: derive from website sub-score (out of 10 → out of 100)
