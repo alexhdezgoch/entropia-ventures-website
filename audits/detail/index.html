@@ -244,6 +244,7 @@ tailwind.config = {
   </div>
 </footer>
 
+<script src="/audits/detail/firm-data.js"></script>
 <script>
 (function() {
   // Redirect stale/incorrect audit URLs to corrected versions
@@ -313,32 +314,35 @@ tailwind.config = {
   document.getElementById('hero-category').textContent = 'Visibility Audit · ' + catLabel;
   document.getElementById('firm-name').textContent = firm + '.';
   document.getElementById('firm-loc').textContent = loc;
-  document.getElementById('firm-desc').textContent = desc;
+  document.getElementById('firm-desc').textContent = (firmData && firmData.primaryFinding) || desc;
   document.getElementById('gap-display').textContent = gap + '%';
   document.getElementById('property-id').textContent = propId;
 
-  // Stats
+  // Stats (use firm override if available)
+  const fo = firmOverrides[firm] || {};
   document.getElementById('stat-gap').textContent = gap + '%';
   const gapSeverity = gap >= 80 ? 'Critical' : gap >= 70 ? 'High' : 'Elevated';
   document.getElementById('stat-gap-label').textContent = gapSeverity;
 
-  const position = gap >= 80 ? 'Page 3+' : gap >= 72 ? 'Page 2' : 'Page 2';
+  const position = fo.position || (gap >= 80 ? 'Page 3+' : gap >= 72 ? 'Page 2' : 'Page 2');
   document.getElementById('stat-position').textContent = position;
 
-  const contentScore = Math.max(5, 40 - Math.round((gap - 60) * 0.6));
-  document.getElementById('stat-content').textContent = contentScore;
-  document.getElementById('stat-content-label').textContent = contentScore < 20 ? 'Critical Failure' : contentScore < 35 ? 'Insufficient' : 'Developing';
+  const contentScore = fo.contentScore || Math.max(5, 40 - Math.round((gap - 60) * 0.6));
+  document.getElementById('stat-content').textContent = fo.contentScore ? contentScore : contentScore;
+  document.getElementById('stat-content-label').textContent = fo.contentLabel || (contentScore < 20 ? 'Critical Failure' : contentScore < 35 ? 'Insufficient' : 'Developing');
 
-  document.getElementById('stat-schema').textContent = 'Missing';
-  document.getElementById('stat-schema-label').textContent = 'Not Implemented';
+  const schemaStatus = fo.schema || 'Missing';
+  const schemaLabel = fo.schemaLabel || 'Not Implemented';
+  document.getElementById('stat-schema').textContent = schemaStatus;
+  document.getElementById('stat-schema-label').textContent = schemaLabel;
 
   // Gap bar
   document.getElementById('gap-bar-label').textContent = gap + '%';
   document.getElementById('gap-bar-label').style.color = '#0f2921';
   setTimeout(() => { document.getElementById('gap-bar').style.width = gap + '%'; }, 100);
 
-  // Finding summary
-  document.getElementById('finding-summary').textContent = desc || ('This firm is currently ranked page 2 or lower for its primary search terms. The digital infrastructure does not reflect the quality of the practice or the volume of demand in its market.');
+  // Finding summary — use firm-specific data if available
+  document.getElementById('finding-summary').textContent = (firmData && firmData.primaryFinding) || desc || ('This firm is currently ranked page 2 or lower for its primary search terms. The digital infrastructure does not reflect the quality of the practice or the volume of demand in its market.');
 
   // Category-specific issue rows
   const issuesByCategory = {
@@ -380,7 +384,21 @@ tailwind.config = {
     ],
   };
 
-  const issues = issuesByCategory[cat] || issuesByCategory['personal-injury'];
+  // Per-firm full overrides (researched individually)
+  // Normalize lookup: try exact match first, then case-insensitive + ampersand-agnostic
+  const fullOverrides = window.__firmAuditData || {};
+  function findFirmData(name) {
+    if (fullOverrides[name]) return fullOverrides[name];
+    const norm = n => n.toLowerCase().replace(/&amp;/g, 'and').replace(/&/g, 'and').replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim();
+    const key = norm(name);
+    for (const [k, v] of Object.entries(fullOverrides)) {
+      if (norm(k) === key) return v;
+    }
+    return null;
+  }
+  const firmData = findFirmData(firm);
+
+  const issues = (firmData && firmData.issues) || issuesByCategory[cat] || issuesByCategory['personal-injury'];
   const issuesList = document.getElementById('issues-list');
   issues.forEach(issue => {
     const row = document.createElement('div');
@@ -432,7 +450,7 @@ tailwind.config = {
       timeline: '45–60 days', timelineNote: 'Estimated time to page 1 with family law content and local schema',
     },
   };
-  const impact = impactData[cat] || impactData['personal-injury'];
+  const impact = (firmData && firmData.impact) || impactData[cat] || impactData['personal-injury'];
   document.getElementById('impact-intro').textContent = impact.intro;
   document.getElementById('impact-volume').textContent = impact.volume;
   document.getElementById('impact-volume-note').textContent = impact.volumeNote;
@@ -476,7 +494,7 @@ tailwind.config = {
       { letter: 'C', title: 'Implement LegalService + Attorney schema', body: 'Schema markup establishes the firm\'s authority in family law, its jurisdiction, and its attorneys. It is the fastest technical path from page 2 to page 1 in this vertical.' },
     ],
   };
-  const fixes = fixesByCategory[cat] || fixesByCategory['personal-injury'];
+  const fixes = (firmData && firmData.fixes) || fixesByCategory[cat] || fixesByCategory['personal-injury'];
   const fixesList = document.getElementById('fixes-list');
   fixes.forEach(fix => {
     const el = document.createElement('div');
