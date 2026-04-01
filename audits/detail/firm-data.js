@@ -219,25 +219,25 @@ window.__firmAuditData = {
   // ═══════════════════════════════════════════════
 
   'Seigman, Sinkfield & Libersky': {
-    searchQuery: 'personal injury attorney',
-    score: { website: 5, seo: 4, total: 9 },
-    primaryFinding: 'Website could not be reached via common domain patterns — if a site exists, it is not discoverable through standard URL guessing, meaning potential clients searching for the firm by name may not find it either.',
+    searchQuery: 'personal injury attorney Killeen TX',
+    score: { website: 6, seo: 3, total: 9 },
+    primaryFinding: '60+ years combined experience in Killeen/Fort Hood but the website (killeenattorneys.com) uses a generic domain name with no schema markup — in a military community with high legal demand, the firm is invisible to soldiers and families searching for local attorneys.',
     issues: [
-      { label: 'Domain discoverability', value: 'Not findable via standard patterns', status: 'critical' },
-      { label: 'Search presence', value: 'Firm name searches may return competitors', status: 'critical' },
-      { label: 'Practice area content', value: 'Unknown — site not accessible', status: 'warning' },
-      { label: 'Schema markup', value: 'Unknown — site not accessible', status: 'warning' },
+      { label: 'Schema markup', value: 'Not implemented across any practice area', status: 'critical' },
+      { label: 'Domain branding', value: 'Generic killeenattorneys.com — no firm identity in URL', status: 'critical' },
+      { label: 'Practice area page depth', value: 'Pages exist but content is thin', status: 'warning' },
+      { label: 'Military-specific content', value: 'No Fort Hood or military family content', status: 'warning' },
     ],
     impact: {
-      intro: 'When a law firm\'s website cannot be found through common naming patterns, every potential client who searches for the firm by name is at risk of clicking on a competitor instead. Even branded searches — where intent is highest — are being lost.',
-      volume: '400+', volumeNote: 'Monthly searches for personal injury attorneys in this firm\'s market',
-      leads: '8–15', leadsNote: 'Estimated client inquiries lost monthly including branded searches',
-      timeline: '45–60 days', timelineNote: 'Domain setup, content build, and initial indexing needed',
+      intro: 'Killeen is home to Fort Cavazos (formerly Fort Hood), one of the largest military installations in the world. The constant rotation of soldiers and military families creates ongoing demand for personal injury, family law, and criminal defense attorneys. Seigman, Sinkfield & Libersky has 60+ years of combined experience and deep community roots, but no schema markup means Google cannot distinguish them from any generic result.',
+      volume: '350+', volumeNote: 'Monthly searches for attorneys in Killeen / Bell County / Fort Hood area',
+      leads: '8–15', leadsNote: 'Estimated case inquiries lost monthly to firms with better SEO infrastructure',
+      timeline: '30–45 days', timelineNote: 'Site has content foundation — schema and military content would rank quickly',
     },
     fixes: [
-      { letter: 'A', title: 'Establish a clear, findable web domain', body: 'The firm needs a domain that matches its name (e.g., sslawyers.com or seigmanlaw.com) with proper DNS, SSL, and indexing. This is the most fundamental requirement for digital visibility.' },
-      { letter: 'B', title: 'Build accident-type landing pages for the service area', body: 'Car accidents, truck accidents, slip and fall, workplace injuries, and wrongful death each need dedicated pages targeting the firm\'s geographic market with specific content.' },
-      { letter: 'C', title: 'Implement Attorney schema and claim Google Business Profile', body: 'Schema markup and a verified GBP would immediately establish the firm\'s presence for branded and practice-area searches in its local market.' },
+      { letter: 'A', title: 'Implement LegalService + Attorney schema on all practice area pages', body: 'Schema markup would tell Google exactly what services are offered (PI, family law, criminal defense), who the attorneys are (60+ years combined experience), and where they serve (Killeen, Fort Hood, Harker Heights, Bell County).' },
+      { letter: 'B', title: 'Build Fort Hood and military-specific content', body: 'Military divorce, UCMJ defense, on-base accident claims, and military family law are high-demand searches unique to this market. No competitor is serving this content well — it would be an immediate differentiator.' },
+      { letter: 'C', title: 'Deepen practice area pages with accident-type specifics', body: 'Auto accidents, truck accidents, workplace injuries, and wrongful death each need detailed pages with Bell County court information, local statistics, and the firm\'s specific experience handling these cases.' },
     ],
   },
 
@@ -507,6 +507,263 @@ window.__firmAuditData = {
       { letter: 'A', title: 'Build detailed real estate closing process pages', body: 'Buyer closings, seller closings, title review, and contract negotiation each need a page explaining the process, costs, and timeline. First-time buyers especially research extensively — detailed content captures this high-intent search traffic.' },
       { letter: 'B', title: 'Add Will County and Chicagoland geo-specific pages', body: 'Plainfield, Joliet, Naperville, Bolingbrook, and Romeoville each need location pages targeting "[city] real estate attorney" and "[city] closing lawyer" — the primary searches for this practice area.' },
       { letter: 'C', title: 'Implement Attorney + LocalBusiness schema', body: 'Schema markup with attorney credentials, practice areas (real estate), and the Plainfield service area would immediately improve visibility for both branded and practice-area searches in Will County.' },
+    ],
+  },
+
+  // ═══════════════════════════════════════════════
+  // BATCH 2 — Apollo April 1 (Florida + Texas)
+  // ═══════════════════════════════════════════════
+
+  'Bundza & Rodriguez': {
+    searchQuery: 'estate planning attorney Daytona Beach FL',
+    score: { website: 7, seo: 5, total: 12 },
+    primaryFinding: 'Deep estate planning content with dedicated pages for wills, trusts, probate, and guardianships — but no Attorney or LegalService schema means Google cannot surface their Volusia County expertise in rich results.',
+    issues: [
+      { label: 'Attorney schema markup', value: 'Not implemented', status: 'critical' },
+      { label: 'LegalService schema', value: 'Not implemented across practice pages', status: 'critical' },
+      { label: 'Personal injury content depth', value: 'Mentioned but secondary to estate focus', status: 'warning' },
+      { label: 'Local geo pages', value: 'Daytona Beach only — no Volusia County pages', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Daytona Beach and Volusia County have a significant retiree population driving high demand for estate planning, wills, and probate services. Bundza & Rodriguez has strong content depth in this area — dedicated pages for wills, trusts, probate, guardianships — but no structured data means Google treats them the same as firms with a single generic page.',
+      volume: '600+', volumeNote: 'Monthly searches for estate planning + probate attorneys in Volusia County',
+      leads: '8–15', leadsNote: 'Estimated client inquiries lost monthly to firms with schema markup',
+      timeline: '30–45 days', timelineNote: 'Strong content foundation — schema would rank quickly',
+    },
+    fixes: [
+      { letter: 'A', title: 'Implement Attorney + LegalService schema across all estate planning pages', body: 'The site has dedicated pages for wills, trusts, probate, and guardianships — schema markup on each would tell Google exactly what services are offered and significantly improve rankings for estate planning searches in Volusia County.' },
+      { letter: 'B', title: 'Build geo-specific pages for Volusia County communities', body: 'Port Orange, Ormond Beach, New Smyrna Beach, DeLand — each community generates its own estate planning search volume. Dedicated pages would capture these long-tail searches the Daytona Beach homepage misses.' },
+      { letter: 'C', title: 'Expand personal injury content to match estate planning depth', body: 'PI is listed as a service but has far less content than estate planning. Accident-type pages (car accidents, slip and fall, wrongful death) would open a second revenue stream from organic search.' },
+    ],
+  },
+
+  'Crutchfield & Wilson': {
+    searchQuery: 'criminal defense attorney Rockledge FL',
+    score: { website: 5, seo: 3, total: 8 },
+    primaryFinding: 'Decades of experience in Brevard County with strong testimonials and former prosecutor credentials, but the website lacks practice area landing pages — all services described on a single page with no schema markup.',
+    issues: [
+      { label: 'Practice area landing pages', value: 'All services on one page — no dedicated pages', status: 'critical' },
+      { label: 'Schema markup', value: 'Not implemented', status: 'critical' },
+      { label: 'Content structure', value: 'Services listed but not search-optimized', status: 'warning' },
+      { label: 'Local geo pages', value: 'No Brevard County or Melbourne pages', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Brevard County (Melbourne, Rockledge, Cocoa Beach, Titusville) has 600,000+ residents and generates significant criminal defense, family law, and PI search volume. Crutchfield & Wilson has former prosecutor experience and strong client testimonials but presents all services on a single page — Google cannot rank one page for criminal defense, family law, PI, juvenile law, and DUI simultaneously.',
+      volume: '500+', volumeNote: 'Monthly searches for attorneys in Brevard County / Space Coast area',
+      leads: '8–14', leadsNote: 'Estimated case inquiries lost monthly across all practice areas',
+      timeline: '30–45 days', timelineNote: 'Testimonials and credentials exist — needs structural SEO work',
+    },
+    fixes: [
+      { letter: 'A', title: 'Build dedicated landing pages for each practice area', body: 'Criminal defense, family law, personal injury, DUI, juvenile law, and DCF cases each need their own page with 800+ words. The current single-page approach cannot rank for any specific search query.' },
+      { letter: 'B', title: 'Implement Attorney schema with former prosecutor credentials', body: 'Former ASA experience is a powerful differentiator. Schema markup surfacing this in search results would increase click-through rates against competitors without prosecutorial background.' },
+      { letter: 'C', title: 'Add Brevard County geo pages', body: 'Melbourne, Cocoa, Titusville, and Palm Bay each generate their own search volume. Pages targeting "[city] criminal defense attorney" would capture the geographic searches the Rockledge homepage misses.' },
+    ],
+  },
+
+  'The DashCam Lawyer': {
+    searchQuery: 'car accident lawyer Palm Beach County FL',
+    score: { website: 7, seo: 5, total: 12 },
+    primaryFinding: '$20M+ recovered and 1,000+ clients served with National Trial Lawyers Top 100 membership — strong social proof and case results, but the branded "DashCam Lawyer" identity may limit discovery for people searching generic "car accident attorney" terms.',
+    issues: [
+      { label: 'Attorney schema markup', value: 'Not implemented despite Top 100 membership', status: 'critical' },
+      { label: 'Case results schema', value: '$20M+ recovered but not structured for SEO', status: 'critical' },
+      { label: 'Practice area page depth', value: 'Car accidents strong but other areas thin', status: 'warning' },
+      { label: 'Geo pages beyond Palm Beach County', value: 'Limited statewide content', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Palm Beach County is one of the most competitive PI markets in Florida with 1.5 million residents. Shannon Sagan has built a distinctive brand (The DashCam Lawyer) with $20M+ recovered, but the website lacks schema markup to surface National Trial Lawyers Top 100 membership and case results directly in search — the two most powerful trust signals in PI.',
+      volume: '2,000+', volumeNote: 'Monthly searches for personal injury + car accident attorneys in Palm Beach County',
+      leads: '15–25', leadsNote: 'Estimated case inquiries lost monthly to firms with schema surfacing credentials',
+      timeline: '30–45 days', timelineNote: 'Strong content and brand — schema implementation would rank quickly',
+    },
+    fixes: [
+      { letter: 'A', title: 'Implement Attorney schema with National Trial Lawyers Top 100', body: 'Top 100 membership and $20M+ recovered are elite credentials. Schema markup would surface these directly in search results, dramatically increasing click-through rates in the hyper-competitive Palm Beach PI market.' },
+      { letter: 'B', title: 'Structure case results with outcome schema', body: 'The $698K auto accident settlement and other results should be in structured data. Case result schema is one of the highest-converting trust signals for PI firms searching for high-value cases.' },
+      { letter: 'C', title: 'Build accident-type pages beyond car accidents', body: 'Truck accidents, motorcycle accidents, pedestrian accidents, and rideshare accidents each capture distinct search intent. The DashCam brand is car-focused — broadening content would capture the full PI search spectrum.' },
+    ],
+  },
+
+  'James M. Burns Law': {
+    searchQuery: 'criminal defense attorney Pensacola FL',
+    score: { website: 5, seo: 4, total: 9 },
+    primaryFinding: '20+ years of experience as a lifelong Gulf Coast attorney serving Florida and Alabama — but the site has thin practice area content and no schema, leaving James Burns invisible in a market where he has deep local court knowledge.',
+    issues: [
+      { label: 'Schema markup', value: 'Not implemented', status: 'critical' },
+      { label: 'Practice area content depth', value: 'Services mentioned but thin detail', status: 'critical' },
+      { label: 'Cross-state content', value: 'FL + AL practice but no Alabama geo pages', status: 'warning' },
+      { label: 'Blog or educational content', value: 'Not visible', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Pensacola and Escambia County straddle the Florida-Alabama border, creating a unique dual-state legal market. James Burns practices in both states — a rare advantage — but the website does not have the content depth to rank for criminal defense, family law, or personal injury searches in either state.',
+      volume: '400+', volumeNote: 'Monthly searches for attorneys in Pensacola / Escambia County + Baldwin County AL',
+      leads: '6–12', leadsNote: 'Estimated case inquiries lost monthly across both states',
+      timeline: '30–45 days', timelineNote: 'Established domain with decent authority — content and schema would rank fast',
+    },
+    fixes: [
+      { letter: 'A', title: 'Build detailed practice area pages for criminal defense charges', body: 'DUI, drug offenses, assault, domestic violence, and federal charges each need their own page. The site mentions criminal defense but has no charge-type content that would rank for specific searches like "Pensacola DUI lawyer."' },
+      { letter: 'B', title: 'Implement Attorney schema with 20+ years and dual-state licensing', body: 'Practicing in both Florida and Alabama courts is a significant differentiator. Schema markup would surface this dual-state capability and 20+ years of experience directly in search results.' },
+      { letter: 'C', title: 'Create Alabama-specific content for Baldwin County', body: 'The firm serves Baldwin County, AL but has zero Alabama-specific content. Pages targeting "Baldwin County criminal defense" and "Gulf Shores attorney" would capture an entirely uncontested market.' },
+    ],
+  },
+
+  'Kaylor Law Group': {
+    searchQuery: 'criminal defense attorney Lakeland FL',
+    score: { website: 6, seo: 4, total: 10 },
+    primaryFinding: 'Two former Polk County prosecutors with 175+ jury trials and 50+ years combined experience — the credentials are exceptional, but no schema markup means Google cannot distinguish Kaylor from generic Lakeland law firms.',
+    issues: [
+      { label: 'Attorney schema markup', value: 'Not implemented despite 175+ jury trials', status: 'critical' },
+      { label: 'LegalService schema', value: 'Not on practice area pages', status: 'critical' },
+      { label: 'Practice area page content', value: 'Pages exist but are image-heavy, text-light', status: 'warning' },
+      { label: 'Case results structure', value: '175+ trials but results not on site', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Polk County has 750,000+ residents and Lakeland is its largest city. Kaylor Law Group has two former prosecutors with 175+ jury trials (including first-degree murder acquittals) — credentials that most competitors cannot match. But without schema markup, Google treats them identically to every other Lakeland criminal defense firm.',
+      volume: '500+', volumeNote: 'Monthly searches for criminal defense + DUI attorneys in Polk County / Lakeland',
+      leads: '8–15', leadsNote: 'Estimated case inquiries lost monthly to firms with better SEO infrastructure',
+      timeline: '30–45 days', timelineNote: 'Strong testimonials and credentials — schema would rank quickly',
+    },
+    fixes: [
+      { letter: 'A', title: 'Implement Attorney schema for both former prosecutors', body: 'Two former Polk County prosecutors with 175+ jury trials is an extraordinary credential. Schema markup for both Matthew and David Kaylor would surface these backgrounds in search results — "Former Prosecutor" appearing in SERP listings dramatically increases clicks.' },
+      { letter: 'B', title: 'Add structured case results page with trial outcomes', body: '175+ jury trials with acquittals from DUI to first-degree murder is the strongest possible social proof. A dedicated case results page with structured data would build authority and convert visitors shopping for the best defense attorney.' },
+      { letter: 'C', title: 'Deepen practice area pages with Polk County court specifics', body: 'Drug crimes, DUI, violent offenses, sex offenses, and white-collar crime pages need more text content with Polk County court procedures, local sentencing patterns, and Florida-specific legal information.' },
+    ],
+  },
+
+  'Armando Personal Injury Law': {
+    searchQuery: 'personal injury lawyer Tampa FL',
+    score: { website: 6, seo: 5, total: 11 },
+    primaryFinding: 'Tampa and St. Petersburg PI firm with good geo-targeted content and internal linking — but no schema markup on practice area pages means Google cannot surface their Tampa Bay specialization in rich results.',
+    issues: [
+      { label: 'Attorney schema markup', value: 'Not implemented', status: 'critical' },
+      { label: 'LegalService schema', value: 'Not on practice area pages', status: 'critical' },
+      { label: 'Case results or verdicts', value: 'Not visible on homepage', status: 'warning' },
+      { label: 'Blog/content marketing', value: 'Not visible', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Tampa Bay (Hillsborough + Pinellas counties) has 3+ million residents and is one of the most competitive PI markets in Florida. Armando Personal Injury Law has offices in both Tampa and St. Petersburg with geo-targeted content — a smart dual-city strategy — but no schema markup means the site cannot fully compete against larger firms with structured data.',
+      volume: '3,000+', volumeNote: 'Monthly searches for personal injury + car accident attorneys in Tampa Bay area',
+      leads: '18–30', leadsNote: 'Estimated case inquiries lost monthly to firms with schema and case results',
+      timeline: '30–45 days', timelineNote: 'Good content foundation with geo pages — schema would rank quickly',
+    },
+    fixes: [
+      { letter: 'A', title: 'Implement Attorney + LegalService schema on all pages', body: 'Schema markup would tell Google the firm serves Tampa and St. Petersburg with specific PI services — car accidents, truck accidents, wrongful death, nursing home neglect — improving rankings across both counties simultaneously.' },
+      { letter: 'B', title: 'Add case results and verdict amounts to the site', body: 'PI clients choose attorneys based on results. A dedicated case results page with settlement/verdict amounts and structured data would be one of the highest-converting pages on the site.' },
+      { letter: 'C', title: 'Build content for accident types beyond car crashes', body: 'Truck accidents, motorcycle crashes, rideshare accidents, and premises liability each capture distinct search intent. Expanding content would capture the full PI search spectrum across Tampa Bay.' },
+    ],
+  },
+
+  'Shelander Law Firm': {
+    searchQuery: 'divorce attorney Beaumont TX',
+    score: { website: 6, seo: 4, total: 10 },
+    primaryFinding: '50 years of combined experience with a three-attorney family firm in Beaumont — strong community reputation and testimonials, but practice area pages use a dated URL structure and no schema markup across family law, PI, criminal defense, estate planning, and business law.',
+    issues: [
+      { label: 'Schema markup', value: 'Not implemented across any practice area', status: 'critical' },
+      { label: 'URL structure', value: 'Dated /shelander/ prefix in all URLs', status: 'critical' },
+      { label: 'Practice area page depth', value: 'Pages exist but content varies', status: 'warning' },
+      { label: 'Local geo pages', value: 'Beaumont only — no Jefferson County or Port Arthur pages', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Beaumont and Jefferson County have 250,000+ residents with significant demand for divorce, family law, and PI attorneys. Shelander Law Firm has a three-attorney team with 50 years combined experience and a strong local reputation, but no schema and a dated URL structure prevent Google from fully indexing and ranking their practice area content.',
+      volume: '350+', volumeNote: 'Monthly searches for family law + PI attorneys in Beaumont / Jefferson County',
+      leads: '6–12', leadsNote: 'Estimated client inquiries lost monthly to firms with modern SEO',
+      timeline: '30–45 days', timelineNote: 'Established domain with testimonials — schema and URL fixes would rank fast',
+    },
+    fixes: [
+      { letter: 'A', title: 'Implement LegalService + Attorney schema for all three attorneys', body: 'Three attorneys (Mel, Tara, Colette Shelander) with distinct practice focuses need individual schema entries. This tells Google the firm has depth across family law, PI, criminal defense, estate planning, and business law.' },
+      { letter: 'B', title: 'Clean up URL structure and redirect old paths', body: 'The /shelander/ prefix in all URLs is unusual and may confuse crawlers. Simplifying to /family-law/, /personal-injury/, etc. with proper redirects would improve crawlability and user experience.' },
+      { letter: 'C', title: 'Build Jefferson County geo pages', body: 'Port Arthur, Nederland, Orange, and Bridge City each generate family law and PI searches. Dedicated city pages would capture geographic long-tail volume the Beaumont homepage misses.' },
+    ],
+  },
+
+  'Diorio Family Law Group': {
+    searchQuery: 'divorce attorney Tampa FL',
+    score: { website: 5, seo: 3, total: 8 },
+    primaryFinding: 'Christine Diorio brings personal divorce experience and former prosecutor/public defender background — but the site runs on HTTP (not HTTPS), has no schema markup, and practice areas are described conversationally without the structured content Google needs to rank.',
+    issues: [
+      { label: 'SSL certificate', value: 'Site runs on HTTP — no HTTPS', status: 'critical' },
+      { label: 'Schema markup', value: 'Not implemented', status: 'critical' },
+      { label: 'Practice area structure', value: 'Conversational but not search-optimized', status: 'warning' },
+      { label: 'Domain authority', value: 'christinediorio.com — personal name vs firm brand', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Tampa Bay has 3+ million residents and intense competition for family law searches. Christine Diorio has a powerful differentiator — personal divorce experience plus nearly a decade as prosecutor and public defender — but the site lacks SSL (a Google ranking factor since 2014), has no schema, and practice area content is emotional rather than search-optimized.',
+      volume: '1,500+', volumeNote: 'Monthly searches for divorce + family law attorneys in Tampa / Hillsborough County',
+      leads: '10–18', leadsNote: 'Estimated client inquiries lost monthly — SSL alone may suppress rankings',
+      timeline: '15–30 days', timelineNote: 'SSL fix is immediate — schema and content restructuring would follow quickly',
+    },
+    fixes: [
+      { letter: 'A', title: 'Install SSL certificate immediately', body: 'The site runs on HTTP in 2026 — Google has used HTTPS as a ranking signal since 2014 and Chrome marks HTTP sites as "Not Secure." This is the single highest-priority fix and can be done in minutes with a free Let\'s Encrypt certificate.' },
+      { letter: 'B', title: 'Implement Attorney schema with dual prosecutor/PD background', body: 'Former prosecutor AND public defender experience is extremely rare — it means Christine understands both sides. Schema markup surfacing this in search results would be a powerful differentiator against Tampa family law competitors.' },
+      { letter: 'C', title: 'Restructure practice area pages for search optimization', body: 'Divorce, custody, estate planning, and mediation each need dedicated pages with Florida-specific legal content, process explanations, and clear CTAs — not just emotional testimonials.' },
+    ],
+  },
+
+  'Hackworth Law': {
+    searchQuery: 'criminal defense attorney Tampa FL',
+    score: { website: 4, seo: 2, total: 6 },
+    primaryFinding: 'Website (bhtampa.com) blocks all crawler access with an aggressive firewall — if Googlebot is also blocked, the entire site may be de-indexed, making the firm invisible regardless of content quality.',
+    issues: [
+      { label: 'Crawler blocking', value: 'WAF returns 403 to all automated access', status: 'critical' },
+      { label: 'Domain name mismatch', value: 'bhtampa.com does not match firm name "Hackworth Law"', status: 'critical' },
+      { label: 'Search indexing', value: 'May be blocked from Google index entirely', status: 'warning' },
+      { label: 'Content not auditable', value: 'Cannot verify practice areas or content', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Tampa is a hyper-competitive legal market with millions of residents. If Hackworth Law\'s firewall is blocking Googlebot the same way it blocks other crawlers, the firm may have zero pages in Google\'s index — making it completely invisible regardless of how good the actual website content is.',
+      volume: '3,000+', volumeNote: 'Monthly searches for criminal defense + PI attorneys in Tampa / Hillsborough County',
+      leads: '20–35', leadsNote: 'Potential inquiries lost if site is de-indexed from blocking crawlers',
+      timeline: '7–14 days', timelineNote: 'WAF fix is configuration only — immediate impact once Googlebot is whitelisted',
+    },
+    fixes: [
+      { letter: 'A', title: 'Audit and fix WAF rules to whitelist search engine crawlers', body: 'The web application firewall is blocking all automated access. If Googlebot is blocked, zero pages are indexed. Check the Defender plugin settings and whitelist Googlebot, Bingbot, and other major crawlers immediately.' },
+      { letter: 'B', title: 'Align domain name with firm branding', body: 'bhtampa.com does not communicate "Hackworth Law" — clients searching for the firm by name will not find this domain. Consider redirecting to hackworthlaw.com or adding the branded domain as the primary.' },
+      { letter: 'C', title: 'Verify Google Search Console indexing status', body: 'Use GSC to check how many pages are actually indexed. If the answer is zero or near-zero, the WAF is the cause. Fix the firewall first, then submit a sitemap to re-index the entire site.' },
+    ],
+  },
+
+  'Hendry & Parker': {
+    searchQuery: 'criminal defense attorney Clearwater FL',
+    score: { website: 5, seo: 3, total: 8 },
+    primaryFinding: 'Nearly 100 jury trials and 35+ years combined experience serving Pinellas, Pasco, and Hillsborough counties — but the website is thin on content, has no schema, and practice areas are described in one paragraph each.',
+    issues: [
+      { label: 'Schema markup', value: 'Not implemented despite 100 jury trials', status: 'critical' },
+      { label: 'Practice area content depth', value: 'One paragraph per service', status: 'critical' },
+      { label: 'Case results', value: '100 trials but no results on site', status: 'warning' },
+      { label: 'Local geo pages', value: 'Dunedin/Clearwater but no county-wide pages', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Pinellas County (Clearwater, St. Petersburg, Dunedin) has 1 million+ residents. Don Hendry personally handles every case with nearly 100 jury trials — a hands-on approach most larger firms cannot match. But one-paragraph practice area descriptions and no schema mean Google cannot rank the site for any specific criminal defense or DUI search.',
+      volume: '1,200+', volumeNote: 'Monthly searches for criminal defense + DUI attorneys in Pinellas County',
+      leads: '10–18', leadsNote: 'Estimated case inquiries lost monthly to firms with deeper content',
+      timeline: '30–45 days', timelineNote: 'Established reputation — content depth and schema would rank quickly',
+    },
+    fixes: [
+      { letter: 'A', title: 'Expand practice area pages to 800+ words each', body: 'Criminal defense, DUI, divorce, family law, and personal injury each need detailed pages with Florida-specific legal information, Pinellas County court procedures, and the firm\'s specific experience. One paragraph cannot rank against competitors with guides.' },
+      { letter: 'B', title: 'Implement Attorney schema with 100 jury trial record', body: 'Nearly 100 jury trials is an elite credential. Schema markup would surface this directly in search results — "100 Jury Trials" appearing in the SERP listing would be one of the strongest differentiators in Pinellas County.' },
+      { letter: 'C', title: 'Add case results and testimonials page with structured data', body: 'Trial verdicts and case outcomes are the most powerful conversion tool for criminal defense. A structured case results page would build authority and convert visitors who are comparing attorneys.' },
+    ],
+  },
+
+  'Hutchinson & Huffman': {
+    searchQuery: 'criminal defense lawyer West Palm Beach FL',
+    score: { website: 6, seo: 4, total: 10 },
+    primaryFinding: 'Award-winning West Palm Beach firm with extraordinary client testimonials (charges reduced from 30-year counts to sealed probation) — but no schema markup means these powerful outcomes are invisible in search results.',
+    issues: [
+      { label: 'Attorney schema markup', value: 'Not implemented despite award-winning record', status: 'critical' },
+      { label: 'Case results schema', value: 'Extraordinary outcomes but not structured', status: 'critical' },
+      { label: 'Practice area organization', value: 'Criminal and civil mixed without clear structure', status: 'warning' },
+      { label: 'Geo pages', value: 'West Palm Beach only — no Palm Beach County pages', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Palm Beach County has 1.5 million residents and intense competition for criminal defense and civil litigation. Hutchinson & Huffman has testimonials describing outcomes like 30-year charges reduced to sealed probation — extraordinary results that would dominate if surfaced in search. But without schema, Google treats them identically to every other West Palm Beach law firm.',
+      volume: '1,500+', volumeNote: 'Monthly searches for criminal defense + civil attorneys in Palm Beach County',
+      leads: '12–20', leadsNote: 'Estimated case inquiries lost monthly to firms with schema and structured results',
+      timeline: '30–45 days', timelineNote: 'Strong testimonials and brand — schema would rank quickly',
+    },
+    fixes: [
+      { letter: 'A', title: 'Implement Attorney schema for both Rick Hutchinson and Kent Huffman', body: 'Two attorneys with distinct specializations (criminal defense and civil/real estate) need individual schema entries. The testimonials about life-changing outcomes should be connected to structured attorney data.' },
+      { letter: 'B', title: 'Build a structured case results page', body: 'The firm has testimonials describing 30-year charges reduced to sealed probation. These outcomes need a dedicated case results page with structured data — it would be the most powerful page on the site for converting visitors.' },
+      { letter: 'C', title: 'Separate criminal and civil practices into clear practice area pages', body: 'Criminal defense, DUI, personal injury, real estate, and civil litigation each need dedicated landing pages. The current mixed presentation prevents ranking for any specific search query.' },
     ],
   },
 
