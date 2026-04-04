@@ -767,4 +767,392 @@ window.__firmAuditData = {
     ],
   },
 
+  // ═══════════════════════════════════════════════
+  // APOLLO APRIL 3 — FLORIDA LAW FIRMS (4)
+  // ═══════════════════════════════════════════════
+
+  'Zweben Law Group, P.A.': {
+    searchQuery: '"personal injury attorney Stuart FL"',
+    googlePage: 'Not Found',
+    score: { website: 7, seo: 6, total: 13 },
+    primaryFinding: 'The firm has an active blog with December 2024 posts and 6+ practice area subpages, yet ranks completely off Google page 1 for its own primary keyword in Stuart — a market with fewer than 40,000 residents.',
+    issues: [
+      { label: 'Google Ranking', value: 'Not in top 30 organic results for "personal injury attorney Stuart FL" — Kibbey Wagner and Philip DeBerard rank above (confirmed: rankings search)', status: 'critical' },
+      { label: 'Schema Markup', value: 'No LegalService or LocalBusiness schema detected in any indexed page — invisible to Google rich results (confirmed: site search, no schema snippets returned)', status: 'critical' },
+      { label: 'Blog Recency', value: 'Blog active through Dec 2024 but no 2025 posts visible — momentum stalling going into a fresh indexing cycle (confirmed: blog search)', status: 'warning' },
+      { label: 'Case Results Page', value: 'Testimonials page exists but no dedicated case results/verdicts/settlements page with dollar figures — competitors use this as a trust anchor (confirmed: site structure search)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Stuart, FL has ~17,500 residents in city limits (Martin County ~170,000). "Personal injury attorney Stuart FL" generates an estimated 200–400 monthly searches. Being off page 1 means zero organic intake from the highest-intent channel.',
+      volume: '280', volumeNote: 'Estimated monthly searches for personal injury attorney Stuart FL + surrounding Treasure Coast variations',
+      leads: '8-15', leadsNote: 'Estimated monthly case inquiries lost to page-1 competitors',
+      timeline: '60-90 days', timelineNote: 'Schema + content refresh can move needle within 2 crawl cycles',
+    },
+    fixes: [
+      { letter: 'A', title: 'Implement LegalService schema with geo markup', body: 'Add JSON-LD LegalService schema to homepage and each practice area subpage with @type: LegalService, areaServed: Stuart FL + Martin County, serviceType for each practice. This is the single highest-leverage technical fix given the site\'s existing content depth.' },
+      { letter: 'B', title: 'Publish monthly geo-targeted blog posts', body: 'Resume consistent 2025 publishing. Target long-tail queries like "car accident attorney Stuart FL" and "slip and fall lawyer Martin County" — the existing subpage structure makes internal linking easy and Google is already crawling the domain.' },
+      { letter: 'C', title: 'Add a case results page with settlement figures', body: 'Even anonymized figures (e.g., "$450,000 — Truck Accident, Martin County") dramatically increase trust and time-on-site. Competitors like Kibbey Wagner lead with "$500M recovered" — Zweben has the history to match this credibility signal.' },
+    ],
+  },
+
+  'Van Riper and Nies Attorneys P.A.': {
+    searchQuery: '"family law attorney Stuart FL"',
+    googlePage: 'Not Found',
+    score: { website: 7, seo: 5, total: 12 },
+    primaryFinding: 'The firm has an active blog, a dedicated geo-targeted family law page, and veteran branding, but ranks off page 1 entirely while Gufford Law and Travis Walker dominate Stuart family law results.',
+    issues: [
+      { label: 'Google Ranking', value: 'Not in top 30 organic results for "family law attorney Stuart FL" — The Gufford Law Firm and Travis Walker rank 1–2 (confirmed: rankings search)', status: 'critical' },
+      { label: 'Schema Markup', value: 'No LegalService or LocalBusiness schema detected — firm appears in zero rich result features despite relevant content (confirmed: site search, no schema snippets returned)', status: 'critical' },
+      { label: 'Brand Dilution', value: 'Site promotes 5+ practice areas across 5 office locations — family law signal is diluted; Google cannot determine primary service or primary geography (confirmed: site index)', status: 'warning' },
+      { label: 'Blog Recency', value: 'Most recent family law blog post found: September 2024 (Florida Divorce Timeline) — no 2025 content indexed, weakening freshness signals (confirmed: blog search)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Stuart, FL (Martin County, ~170,000 residents) generates an estimated 150–300 monthly searches for family law and divorce attorneys. Being absent from page 1 while two well-funded competitors hold the top 2 spots means the firm captures effectively zero organic family law intake from search.',
+      volume: '220', volumeNote: 'Estimated monthly searches for family law + divorce attorney Stuart FL and surrounding Treasure Coast',
+      leads: '6-12', leadsNote: 'Estimated monthly family law inquiries lost to Gufford and Travis Walker',
+      timeline: '60-90 days', timelineNote: 'Schema + geo-focused content can break page 1 within 2–3 crawl cycles in a low-competition local market',
+    },
+    fixes: [
+      { letter: 'A', title: 'Add LegalService schema targeting family law in Stuart', body: 'Implement JSON-LD on homepage and /family-lawyer-in-stuart-fl/ with @type: LegalService, serviceType: Family Law, areaServed: Stuart FL, Martin County. The geo-landing page already exists — schema is the missing link between content and ranking.' },
+      { letter: 'B', title: 'Create a veteran-focused family law landing page', body: 'The 20% veteran discount is a differentiator no competitor in Stuart offers. A dedicated page ("Military Divorce Attorney Stuart FL") targets an underserved search segment and reinforces the firm\'s unique brand story — something Gufford and Travis Walker cannot replicate.' },
+      { letter: 'C', title: 'Resume monthly blog publishing on family law topics', body: 'Restart publishing with a Stuart-specific content calendar: "How Long Does a Florida Divorce Take in Martin County," "Child Custody Modification Stuart FL," etc. The /blog/ infrastructure exists — it just needs consistent 2025 content to signal freshness to Google.' },
+    ],
+  },
+
+  'Friedland & Bocksch, LLC': {
+    searchQuery: '"personal injury attorney Fort Lauderdale FL"',
+    googlePage: 'Not Found',
+    score: { website: 4, seo: 3, total: 7 },
+    primaryFinding: 'The original domain friedlandlaw.com is completely dead (NameBright placeholder) — anyone directed to that URL reaches a blank holding page, while the real site yourfightourbattle.com has no blog, templated geo-pages, and zero organic visibility.',
+    issues: [
+      { label: 'Dead Primary Domain', value: 'friedlandlaw.com returns a NameBright "Coming Soon" placeholder — the firm name routes to a dead end for anyone searching directly (confirmed: site:friedlandlaw.com returns 1 result, "Coming Soon")', status: 'critical' },
+      { label: 'Google Ranking', value: 'yourfightourbattle.com not in top 30 organic results for "personal injury attorney Fort Lauderdale FL" — Workman, Lawlor White, and Ginnis Krathen rank above (confirmed: rankings search)', status: 'critical' },
+      { label: 'No Blog or Content', value: 'No /blog/ or /articles/ section found on yourfightourbattle.com — zero content marketing presence in a market where competitors publish weekly (confirmed: site index search)', status: 'critical' },
+      { label: 'Templated Geo Pages', value: 'Fort Lauderdale, West Palm Beach, Davie, and NYC pages share identical structure with minimal differentiation — Google treats these as thin duplicate content (confirmed: site index shows templated pattern)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Fort Lauderdale has 200,000+ residents (Broward County 1.9M). "Personal injury attorney Fort Lauderdale FL" generates 800–1,500 monthly searches. The firm is invisible in the highest-value market they serve, while operating a non-branded domain and pointing clients to a dead URL.',
+      volume: '1100', volumeNote: 'Estimated monthly searches for personal injury attorney Fort Lauderdale FL and Broward County variations',
+      leads: '20-40', leadsNote: 'Estimated monthly case inquiries lost in Fort Lauderdale market alone',
+      timeline: '90-120 days', timelineNote: 'Domain consolidation + schema + blog foundation needed before ranking movement is realistic',
+    },
+    fixes: [
+      { letter: 'A', title: 'Redirect friedlandlaw.com to yourfightourbattle.com immediately', body: 'The dead domain is an active trust destroyer. Anyone who finds the firm name on a directory, business card, or referral and types friedlandlaw.com hits a blank page. Either reclaim and redirect the domain or consolidate the brand on a single, keyword-rich domain pointing to their real site.' },
+      { letter: 'B', title: 'Build a real Fort Lauderdale personal injury hub with schema', body: 'Replace the templated geo-page with a substantive Fort Lauderdale-specific practice page: local courthouse info, Florida no-fault law specifics, Broward County context. Add LegalService schema. This is what separates rankings from directories in competitive markets like Fort Lauderdale.' },
+      { letter: 'C', title: 'Launch a content blog with Fort Lauderdale case types', body: 'Zero blog in a 200K+ city means surrendering all informational search traffic to competitors. Start with 4 posts: "Car Accident Laws in Fort Lauderdale," "What to Do After a Slip and Fall in Broward County," "Fort Lauderdale Motorcycle Accident Claims," "How Long Does a Personal Injury Case Take in Florida."' },
+    ],
+  },
+
+  'Crutchfield and Pyles PA': {
+    searchQuery: '"personal injury attorney Rockledge FL"',
+    googlePage: 'Page 1',
+    score: { website: 4, seo: 4, total: 8 },
+    primaryFinding: 'The firm ranks on page 1 in Rockledge (a low-competition market) but runs a static .html site with no CMS, no blog, phone-number-stuffed title tags, and single-paragraph practice area pages that offer no differentiation from directory listings.',
+    issues: [
+      { label: 'Static Site Architecture', value: 'crutchfieldlaw.com uses static .html files — no CMS, no ability to add blog posts or dynamic content without developer rebuild (confirmed: site:crutchfieldlaw.com returns .html file URLs)', status: 'critical' },
+      { label: 'Keyword-Dead Title Tag', value: 'Homepage title is "Experienced And Effective Representation | Free Consultation | Crutchfield & Wilson Phone: 321-639-5900" — no city, no practice area keyword, phone number stuffed in title (confirmed: site index snippet)', status: 'critical' },
+      { label: 'No Blog or Content', value: 'Zero content pages indexed — no blog, no articles, no FAQs. Every informational search goes to a competitor (confirmed: site:crutchfieldlaw.com index, no content URLs)', status: 'warning' },
+      { label: 'Schema Markup Absent', value: 'No LegalService or LocalBusiness schema detected — page 1 rank is maintained by low market competition alone, not SEO strength. Any competitor investment threatens this position (confirmed: search snippets, no rich results)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Rockledge, FL has ~27,000 residents in Brevard County (~600,000). Ranking page 1 in a low-competition market is the firm\'s only current asset — but with a static site and no content, any well-funded competitor entering the market will displace them immediately.',
+      volume: '120', volumeNote: 'Estimated monthly searches for personal injury attorney Rockledge FL + Brevard County variations',
+      leads: '4-8', leadsNote: 'Estimated monthly case inquiries currently captured vs. potential with content investment',
+      timeline: '45-60 days', timelineNote: 'New CMS migration + schema + blog can lock in page 1 before competition intensifies',
+    },
+    fixes: [
+      { letter: 'A', title: 'Rebuild on a CMS with geo-keyword title tags', body: 'Migrate from static .html to WordPress or similar. First fix: title tags should read "Personal Injury Attorney Rockledge FL | Crutchfield & Wilson" — this alone would strengthen the existing page 1 position. The static build makes every future improvement a manual developer task.' },
+      { letter: 'B', title: 'Add LegalService schema to defend page 1 position', body: 'The firm ranks page 1 by default in a thin market. Schema markup (LegalService, LocalBusiness, areaServed: Rockledge/Brevard County) will cement that position and activate rich result features before any competitor can add them. This is defensive infrastructure.' },
+      { letter: 'C', title: 'Publish 4 foundational Brevard County content pages', body: '"Car Accident Attorney Brevard County," "Slip and Fall Lawyer Rockledge FL," "What Happens After a Florida Personal Injury Claim," "How Much Is My Car Accident Worth in Florida" — these four posts capture the informational queries competitors are already answering, and the firm\'s existing page 1 domain will rank them fast.' },
+    ],
+  },
+
+  'Sablatura Williams PLLC': {
+    searchQuery: '"criminal defense attorney Round Rock TX"',
+    googlePage: 'Page 1',
+    score: { website: 6, seo: 6, total: 12 },
+    primaryFinding: 'Sablatura Williams ranks Page 1 #8 on austinlegal.net — a domain that carries zero firm-name brand equity, no blog, and no geo pages for Georgetown, Cedar Park, or Pflugerville despite all three cities adding 200,000+ residents to the catchment.',
+    issues: [
+      { label: 'Brand Domain Mismatch', value: 'Firm operates on austinlegal.net — a generic domain that carries no Sablatura/Williams brand equity; anyone searching the firm name cannot easily find the site (confirmed: Step 1b — firm name does not appear in domain)', status: 'critical' },
+      { label: 'No Blog', value: 'Zero blog content found on site — site: search returns only service pages, no articles or educational content despite criminal defense being a high-informational-search category (confirmed: site:austinlegal.net blog returns no blog posts)', status: 'critical' },
+      { label: 'No Geo Pages for Surrounding Markets', value: 'No city-specific landing pages for Georgetown, Cedar Park, or Pflugerville — three fast-growing suburbs that together add 200,000+ residents to the Williamson County catchment (confirmed: site:austinlegal.net showing only Round Rock/Austin pages)', status: 'warning' },
+      { label: 'Page 1 #8 Position Fragile', value: 'Ranking eighth on a high-competition Round Rock/Austin criminal defense keyword with no blog or geo support — position is vulnerable without content reinforcement (confirmed: Step 1a rankings search)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Round Rock has ~133,000 residents and is part of the Austin metro (~2.3M). "Criminal defense attorney Round Rock TX" generates 200–400 monthly searches. Holding Page 1 #8 is a foothold — but the firm\'s generic domain and no blog means positions 1-7 are capturing 90%+ of the clicks.',
+      volume: '280', volumeNote: 'Estimated monthly searches for criminal defense attorney Round Rock TX + Georgetown/Cedar Park variations',
+      leads: '2-4', leadsNote: 'Page 1 #8 at 0.5-1% CTR-to-consult in a competitive market; positions 1-3 generate 8-12 leads/month',
+      timeline: '60-90 days', timelineNote: 'Domain already indexed and ranking — blog + geo pages compound quickly on an established domain',
+    },
+    fixes: [
+      { letter: 'A', title: 'Launch a criminal defense blog targeting Williamson County queries', body: 'The site\'s criminal defense subpage architecture is the strongest element — add a blog publishing "DWI laws in Round Rock," "What to expect at Williamson County court," and "Felony vs. misdemeanor in Texas" to capture informational traffic that converts to consults. Blog is the highest-leverage gap given existing page infrastructure.' },
+      { letter: 'B', title: 'Build geo pages for Georgetown and Cedar Park', body: 'Georgetown (80K) and Cedar Park (75K) are two of the fastest-growing cities in Texas, both in Williamson County and both underserved for criminal defense content. Dedicated /criminal-defense-attorney-georgetown-tx/ and /cedar-park/ pages would capture a market the firm likely already serves with zero competition at the hyper-local level.' },
+      { letter: 'C', title: 'Register a branded domain and redirect austinlegal.net', body: 'The generic domain kills brand-search equity — a potential client who hears "Sablatura Williams" and Googles the name cannot find them on the first page. Registering sablaturalaw.com or sablaturadefense.com and redirecting passes all existing ranking authority while building long-term brand recognition.' },
+    ],
+  },
+
+  'Law Office of Valdez & Monarrez': {
+    searchQuery: '"immigration attorney McAllen TX"',
+    googlePage: 'Not Found',
+    score: { website: 4, seo: 3, total: 7 },
+    primaryFinding: 'The firm has rebranded to VAMOS Law Group but its domain authority is fractured across four subdomains (vamoslawfirm.com, english.vamoslawfirm.com, houston.vamoslawfirm.com, en.vamoslawfirm.com) — zero consolidated signal for McAllen, leaving Page 1 to Ayala & Acosta, Pina Law, and Alonso & Alonso.',
+    issues: [
+      { label: 'Authority Split Across 4 Subdomains', value: 'Site: search returns results across vamoslawfirm.com, english.vamoslawfirm.com, houston.vamoslawfirm.com, and en.vamoslawfirm.com — link authority and crawl budget are fragmented instead of consolidated (confirmed: site:vamoslawfirm.com returning results across 4 subdomains)', status: 'critical' },
+      { label: 'Not Found for Primary Query', value: 'Absent from top 10 for "immigration attorney McAllen TX" — Page 1 held by Ayala & Acosta, Pina Law, and Alonso & Alonso (confirmed: Step 1a rankings search for both legacy and VAMOS name)', status: 'critical' },
+      { label: 'No City-Specific Landing Pages', value: 'No dedicated pages for McAllen, Brownsville, or San Antonio despite active offices in all three — Google cannot determine which geo the domain should rank for (confirmed: site:vamoslawfirm.com search)', status: 'critical' },
+      { label: 'Blog Non-Geo', value: 'Blog exists but posts cover generic immigration topics with no McAllen, Rio Grande Valley, or Texas-specific local context — zero local search signal from content (confirmed: blog search)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'McAllen is the largest city in Hidalgo County (~900,000 residents in the Rio Grande Valley). Immigration search volume in this market is among the highest in Texas. The firm serves multiple cities but is invisible in organic results for all of them.',
+      volume: '600', volumeNote: 'Estimated monthly searches for immigration attorney McAllen TX + RGV variations',
+      leads: '0-2', leadsNote: 'Not Found in top 30 = near-zero organic inbound in primary market despite multi-city footprint',
+      timeline: '90-120 days', timelineNote: 'Subdomain consolidation + geo pages + local blog content needed before ranking movement is realistic',
+    },
+    fixes: [
+      { letter: 'A', title: 'Consolidate all subdomains onto one root domain', body: 'Merge english.vamoslawfirm.com, houston.vamoslawfirm.com, and en.vamoslawfirm.com into vamoslawfirm.com with 301 redirects. Every link and crawl signal currently split across four properties will concentrate into one — this is the prerequisite to any ranking improvement.' },
+      { letter: 'B', title: 'Build McAllen and Brownsville immigration landing pages', body: 'Create /immigration-attorney-mcallen-tx/ and /immigration-attorney-brownsville-tx/ as standalone pages with local court context, RGV-specific case types (DACA, TPS, asylum at the border), and geo-targeted content. These pages do not exist and the market need is real.' },
+      { letter: 'C', title: 'Publish geo-targeted blog content for the Rio Grande Valley', body: 'Replace generic immigration posts with RGV-specific content: "DACA renewal in Hidalgo County," "What happens at the Brownsville immigration court," "TPS updates for McAllen residents." Local content is what separates VAMOS from the generic national content farms that dominate these searches.' },
+    ],
+  },
+
+  'Deere Law LLC': {
+    searchQuery: '"criminal defense attorney Colorado Springs CO"',
+    googlePage: 'Not Found',
+    score: { website: 5, seo: 3, total: 8 },
+    primaryFinding: 'Deere Law LLC does not appear in the top 30 results for "criminal defense attorney Colorado Springs CO" despite its attorney holding an AV Preeminent rating and Top 40 Under 40 credentials — Geoff Heim Law, Liberty Law Center, and Anaya Law Group dominate the visible page.',
+    issues: [
+      { label: 'Not Ranking', value: 'Absent from top 30 results for primary criminal defense query — 10 competitors rank ahead including geoffheimlaw.com, libertylawcenter.com, cospringslawfirm.com (confirmed: rankings search)', status: 'critical' },
+      { label: 'Dead Blog', value: 'Blog exists at deerelaw.com but most recent indexed post dates to March 2019 — 7+ years without new content signals a dormant domain to Google (confirmed: blog search showing 2019 URL slug)', status: 'critical' },
+      { label: 'Diluted SEO Focus', value: 'Site title tags blend criminal defense, immigration, DUI, and personal injury — no single practice area owns enough topical authority to rank competitively (confirmed: homepage title tag from search snippet)', status: 'critical' },
+      { label: 'Thin Index', value: '~10 indexed pages total including image files — no geo pages for Pueblo, Fountain, Monument that together add 150,000+ residents to the metro catchment (confirmed: site: search showing ~10 results)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Colorado Springs has a city population of ~496,000 and a metro of ~709,000. Every month roughly 480 people search criminal defense terms in this market. With no Page 1 presence, Deere Law captures near-zero organic leads.',
+      volume: '480', volumeNote: 'Estimated monthly searches for criminal defense terms in Colorado Springs metro',
+      leads: '0-1', leadsNote: 'Not Found in top 30 = effectively zero organic inbound; Page 1 positions 1-3 generate 3-5 leads/month',
+      timeline: '90-150 days', timelineNote: 'New content and technical fixes take 3-5 months to index and build authority in a mid-competition market',
+    },
+    fixes: [
+      { letter: 'A', title: 'Publish a dedicated Criminal Defense pillar page', body: 'A standalone /criminal-defense/ page with El Paso County court context, case types, and FAQ schema gives Google a clear topical signal and gives Josh\'s AV Preeminent credentials a place to convert. The current site architecture splits authority across four practice areas.' },
+      { letter: 'B', title: 'Reactivate the blog with monthly criminal defense posts', body: 'The blog infrastructure exists but has been dark since 2019. Four posts per year targeting Colorado Springs-specific queries ("DUI checkpoint laws Colorado," "felony sentencing El Paso County") would rebuild crawl frequency and capture long-tail searches that practice area pages cannot rank for.' },
+      { letter: 'C', title: 'Build geo pages for Pueblo and Fountain', body: 'The I-25 corridor south of Colorado Springs — Pueblo (116K), Fountain (30K) — generates criminal defense searches that deerelaw.com cannot capture without city-specific landing pages. Competitors like Right Law Group already have geo pages; this is a low-effort gap with zero hyper-local competition.' },
+    ],
+  },
+
+  'Hillsborough Defense': {
+    searchQuery: '"criminal defense attorney Tampa FL"',
+    googlePage: 'Page 1',
+    score: { website: 7, seo: 6, total: 13 },
+    primaryFinding: 'Hillsborough Defense ranks #5 on Page 1 for Tampa criminal defense under the "Metcalf Falls" brand — creating a disconnect where anyone searching "Hillsborough Defense" cannot easily find the firm, while Matassini Law and Hanlon Law hold stronger positions above them.',
+    issues: [
+      { label: 'Brand-Name Disconnect', value: 'Domain is hillsboroughdefense.com but all Page 1 snippets display "Metcalf Falls" — the firm\'s domain brand is invisible in organic results, so referral traffic searching by firm name leaks (confirmed: Step 1a, title tag in snippet reads "Metcalf Falls | Free Consults")', status: 'critical' },
+      { label: 'No Criminal Defense Pillar Page', value: 'No standalone /criminal-defense/ subpage — homepage carries all criminal defense weight with no dedicated hub to build topical authority against Matassini and Hanlon Law above them (confirmed: site: criminal defense search)', status: 'critical' },
+      { label: 'Schema Signals Absent', value: 'No rich result features (star ratings, FAQ dropdowns, breadcrumbs) in search snippets — competitors using LegalService schema occupy more SERP real estate at the same position (confirmed: snippet shows plain title/description only)', status: 'warning' },
+      { label: 'Page 1 Position Vulnerable', value: 'Ranking #5 in Tampa metro of 3M+ where Matassini (est. 1976) and Hanlon Law (20+ years) hold positions 1-4 with deeper content — without pillar depth and schema, a single algorithm update risks dropping to Page 2 (confirmed: rankings search)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Tampa city has ~430,000 residents; the metro is 3.04 million. Criminal defense search volume in Tampa is among the highest in Florida. Holding Page 1 #5 is meaningful but leaves significant lead volume vs. positions 1-3.',
+      volume: '1200', volumeNote: 'Estimated monthly criminal defense searches in Tampa metro',
+      leads: '4-7', leadsNote: 'Page 1 #5 at ~0.5% CTR-to-consult; positions 1-3 generate 12-18 leads/month — the gap is the opportunity',
+      timeline: '60-90 days', timelineNote: 'Site already indexed and ranking — structural fixes (pillar page, schema) surface faster than new-domain builds',
+    },
+    fixes: [
+      { letter: 'A', title: 'Build a standalone Criminal Defense pillar page', body: 'A dedicated /criminal-defense-tampa/ page with Hillsborough County court context, case type breakdown, and FAQ schema would give Google a clear signal to elevate the firm above #5 — directly targeting the gap between Hillsborough Defense and Matassini/Hanlon Law positions above it.' },
+      { letter: 'B', title: 'Add Attorney and LegalService schema markup', body: 'No rich result features appear in search snippets. Implementing LegalService schema with attorney credentials, review aggregation, and practice area tagging would expand SERP footprint with star ratings and FAQ dropdowns — making the listing visually larger than competing results at the same position.' },
+      { letter: 'C', title: 'Align brand name across domain and title tags', body: 'Every indexed page titles as "Metcalf Falls" while the domain reads "Hillsborough Defense." Updating title tags to lead with "Hillsborough Defense | Metcalf Falls" and adding the domain-brand to the homepage H1 would consolidate brand recognition so referral traffic searching the firm by name converts instead of bouncing.' },
+    ],
+  },
+
+  'Jiles Law, P.A.': {
+    searchQuery: '"personal injury attorney Winter Haven FL"',
+    googlePage: 'Not Found',
+    score: { website: 4, seo: 5, total: 9 },
+    primaryFinding: 'The firm has rebranded to Jiles & Fugate Law Group and operates on gotocourtforme.com — a geo-targeted SEO landing page farm with no LegalService schema and no Page 1 organic presence for its own market.',
+    issues: [
+      { label: 'No Page 1 Rankings', value: 'Absent from "personal injury attorney Winter Haven FL" top 10; outranked by Brooks Law Group, The Florida Law Group, and Morgan & Morgan (confirmed: rankings search)', status: 'critical' },
+      { label: 'No LegalService Schema', value: 'Site has WebSite/WebPage/Article schema via Rank Math but zero LegalService or Attorney structured data (confirmed: homepage source review)', status: 'critical' },
+      { label: 'Generic Title Tag', value: 'Homepage title is "Home - JILES & Fugate Law group" — no city, no practice area, no keyword targeting (confirmed: homepage source)', status: 'warning' },
+      { label: 'Thin Landing Page Content', value: 'Practice area pages are keyword-targeting shells, not substantive legal content; no case results or attorney bio depth visible (confirmed: practice area page review)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Winter Haven has ~40,000 residents in a metro of ~110,000 (Polk County). Personal injury search volume for this market is estimated at 300–500 monthly searches. With no Page 1 presence, the firm captures near-zero organic PI leads.',
+      volume: '320', volumeNote: 'Estimated monthly "personal injury attorney Winter Haven" area searches',
+      leads: '8-15', leadsNote: 'Estimated monthly inquiries lost to Page 1 competitors',
+      timeline: '60-90 days', timelineNote: 'Schema + title tag fixes show impact within 60 days; content depth improvements 90+',
+    },
+    fixes: [
+      { letter: 'A', title: 'Add LegalService schema with attorney markup', body: 'The site runs Rank Math — implement LegalService schema with attorney Person markup, practice areas, geo coordinates, and service area for Polk County. This is a configuration task, not a rebuild.' },
+      { letter: 'B', title: 'Rewrite homepage and key page title tags', body: 'Change "Home - JILES & Fugate Law group" to "Winter Haven Personal Injury Lawyer | Jiles & Fugate Law Group" across all geo-targeted pages. Title tags are the fastest ranking signal available.' },
+      { letter: 'C', title: 'Build one substantive practice area pillar page', body: 'Replace the thin landing page at /personal-injury/ with a 1,500+ word content page covering Florida PI law, statute of limitations, contingency fee structure, and local court context — the signal competitors use to earn Page 1 positions.' },
+    ],
+  },
+
+  'Stevens, Littman, Biddison, Tharp & Weinberg, LLC': {
+    searchQuery: '"family law attorney Boulder CO"',
+    googlePage: 'Not Found',
+    score: { website: 5, seo: 3, total: 8 },
+    primaryFinding: 'A 67-year-old Boulder firm with a completely dead blog (last post May 2018) and a keyword-free homepage title — invisible to the most competitive family law search market in Colorado.',
+    issues: [
+      { label: 'Blog Dead Since 2018', value: 'Last indexed blog post dates to May 2018 ("What the Heck is Replevin?") — 6+ years of zero content output in a market dominated by content-heavy competitors (confirmed: site: search showing only 2016-2018 posts)', status: 'critical' },
+      { label: 'No Page 1 Rankings', value: 'Absent from "family law attorney Boulder CO" Page 1; outranked by Modern Family Law, Dolan + Zimmerman, Bond Family Law (confirmed: rankings search)', status: 'critical' },
+      { label: 'Keyword-Free Title Tag', value: 'Homepage title is firm name + city only — "Stevens, Littman, Biddison, Tharp & Weinberg, LLC | Vail and Boulder, Colorado" — no practice area signal (confirmed: title from search results)', status: 'warning' },
+      { label: 'No LegalService Schema Detected', value: 'No structured data evidence found in any indexed page or search snippet; site blocked direct fetch (confirmed: site search + cache check)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Boulder has ~108,000 residents and is a high-income legal market. Family law searches in Boulder metro generate an estimated 400–600 monthly queries. A firm established in 1957 is losing those leads to firms founded in the last decade.',
+      volume: '480', volumeNote: 'Estimated monthly "family law / divorce attorney Boulder CO" searches',
+      leads: '12-20', leadsNote: 'Estimated monthly inquiries lost to Page 1 firms',
+      timeline: '90-120 days', timelineNote: 'Blog restart + schema + title tags; trust signal accumulation takes 3–4 months',
+    },
+    fixes: [
+      { letter: 'A', title: 'Restart the blog with 4 anchor posts', body: 'Publish on Colorado divorce law, property division in Boulder County, custody in Colorado, and spousal maintenance — the four highest-volume family law queries in this market. One post per week for one month.' },
+      { letter: 'B', title: 'Rewrite the homepage title and add a family law practice page', body: 'Change title to "Boulder Family Law & Divorce Attorneys | Stevens Littman Biddison Tharp & Weinberg." Build a dedicated /family-law/ page with substantive content on Colorado divorce statute and Boulder court process.' },
+      { letter: 'C', title: 'Implement LegalService schema for each attorney', body: 'The firm has multiple attorneys — each needs a Person + LegalService schema with practice area, bar number, and geo data. This is the fastest way to surface in "near me" and AI-sourced legal queries.' },
+    ],
+  },
+
+  'Lauriston Law Firm': {
+    searchQuery: '"family law attorney Fort Lauderdale FL"',
+    googlePage: 'Not Found',
+    score: { website: 6, seo: 5, total: 11 },
+    primaryFinding: 'The strongest-built site in this audit set — active blog (September 2025 posts), real practice area subpages, current content — but zero LegalService schema and no Page 1 presence in the most competitive family law market in Broward County.',
+    issues: [
+      { label: 'No LegalService or Attorney Schema', value: 'Yoast generates WebSite/Organization schema only — no LegalService, no Attorney Person markup, no practice area structured data (confirmed: homepage source review)', status: 'critical' },
+      { label: 'No Page 1 Rankings', value: 'Absent from "family law attorney Fort Lauderdale FL" top 10; outranked by Forrest & Forrest, Cordell & Cordell, and 6 other firms (confirmed: rankings search)', status: 'critical' },
+      { label: 'Immigration Practice Unlisted', value: 'Firm listed in directories as offering immigration services but no /immigration/ page is indexed — potential practice area with zero visibility (confirmed: site index search)', status: 'warning' },
+      { label: 'Blog Not Geo-Targeted', value: 'Most recent post (Sept 2025) targets broad Florida divorce questions rather than Fort Lauderdale / Broward County specific queries (confirmed: blog review)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Fort Lauderdale / Broward County has 1.95 million residents. Family law search volume in this metro is among the highest in Florida. The firm has the content infrastructure but lacks the schema and keyword strategy to convert it into rankings.',
+      volume: '720', volumeNote: 'Estimated monthly "family law / divorce attorney Fort Lauderdale" searches in Broward County metro',
+      leads: '18-28', leadsNote: 'Estimated monthly inquiries lost to Page 1 competitors',
+      timeline: '45-75 days', timelineNote: 'Schema addition is fastest win; title tag and geo-blog content compounds over 2–3 months',
+    },
+    fixes: [
+      { letter: 'A', title: 'Add LegalService + Attorney schema via Yoast', body: 'Yoast SEO Premium supports custom schema — implement LegalService schema with the attorney marked as Person, practice areas, and Broward County service area. This is a 2-hour implementation, not a rebuild.' },
+      { letter: 'B', title: 'Geo-target the blog content strategy', body: 'Shift from broad Florida law topics to Fort Lauderdale and Broward County specific content: "How does Broward County family court handle custody?" and "Fort Lauderdale divorce timeline" — questions with local search intent.' },
+      { letter: 'C', title: 'Build and index an immigration practice area page', body: 'If immigration is an active service, create /practice-areas/immigration/ with substantive content on family-based immigration and Florida removal defense — capturing a high-value, lower-competition keyword cluster.' },
+    ],
+  },
+
+  'Safir Law Group': {
+    searchQuery: '"criminal defense attorney Boca Raton FL"',
+    googlePage: 'Not Found',
+    score: { website: 2, seo: 1, total: 3 },
+    primaryFinding: 'No indexed website found for "Safir Law Group" in Boca Raton — the firm is absent from every search result for criminal defense in Palm Beach, Broward, and Dade counties, with zero discoverable web presence under this name.',
+    issues: [
+      { label: 'No Web Presence Found', value: 'Zero results for "Safir Law Group" across all domain pattern searches (safirlawgroup.com, safir-law-group.com) — no site indexed by Google (confirmed: Step 1b + Step 1f site: searches returned no results)', status: 'critical' },
+      { label: 'Not Ranked for Primary Keyword', value: 'Firm absent from top 30 results for "criminal defense attorney Boca Raton FL" — competitors Meltzer & Bell, Leifert & Leifert, and Rabideau Law hold Page 1 positions (confirmed: Step 1a rankings search)', status: 'critical' },
+      { label: 'No Schema or Structured Data', value: 'No LegalService or Attorney schema detectable — no site pages indexed to inspect (confirmed: site: search returned 0 pages)', status: 'critical' },
+      { label: 'No Local Directory Footprint', value: 'Firm name "Safir Law Group Boca Raton" returns no branded search results in Google — no Yelp, Avvo, Justia, or Super Lawyers listing under this name for Boca Raton/Broward/Dade (confirmed: Step 1b search across multiple queries)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Boca Raton anchors a tri-county metro (Palm Beach, Broward, Dade) with over 6.4 million residents. Criminal defense is one of the highest-intent search categories in law — someone searching "criminal defense attorney Boca Raton" is typically in active need, not researching. With zero web presence, Safir Law Group captures none of the estimated 800–1,200 monthly searches for criminal defense attorneys in the Palm Beach/Broward corridor, ceding every high-intent click to Meltzer & Bell, Leifert & Leifert, and the Rudman Law Group.',
+      volume: '900', volumeNote: 'Estimated monthly searches for criminal defense attorney across Palm Beach + Broward corridor — mid-range estimate for a metro of 3M+ combined population',
+      leads: '4-9', leadsNote: 'Estimated monthly inquiries lost assuming 0.5–1% conversion on missing organic traffic',
+      timeline: '90-120 days', timelineNote: 'New site build required before any ranking signal can develop — no existing domain authority to leverage',
+    },
+    fixes: [
+      { letter: 'A', title: 'Build a Discoverable Web Presence', body: 'No other fix matters without a live, indexed website. Safir Law Group needs a domain under their firm name with a homepage targeting "criminal defense attorney Boca Raton FL," attorney bio, and practice area pages for Palm Beach, Broward, and Dade counties. Without this, every other optimization is moot.' },
+      { letter: 'B', title: 'Claim and Unify Local Directory Listings', body: 'Before the site is live, Avvo, Justia, Super Lawyers, and Google Business Profile listings under "Safir Law Group" in Boca Raton should be claimed and populated. Directory citations build early authority and provide the first layer of discoverability even before the website ranks.' },
+      { letter: 'C', title: 'Target Three-County Geo Pages from Day One', body: 'Boca Raton sits at the junction of Palm Beach, Broward, and Dade — all large criminal defense markets. Building dedicated county-level pages (Palm Beach criminal defense, Broward criminal defense, Dade criminal defense) from launch captures three overlapping keyword clusters that competitors who focus only on one county miss.' },
+    ],
+  },
+
+  'Butash Law Group': {
+    searchQuery: '"personal injury attorney St. Petersburg FL"',
+    googlePage: 'Not Found',
+    score: { website: 6, seo: 5, total: 11 },
+    primaryFinding: 'Butash Law Group has built a real content infrastructure — 7-page blog, geo-targeted location subpages for six cities, and case results — but the firm\'s physical address in Lutz (Pasco County) means it does not appear in St. Petersburg personal injury results, leaving the firm invisible in Pinellas County despite serving it.',
+    issues: [
+      { label: 'Absent from St. Petersburg Search Results', value: 'Firm does not appear in top 30 results for "personal injury attorney St. Petersburg FL" — Page 1 is dominated by Justin C. Johnson, Mathias Law, McQuaid & Douglas, and Lopez Accident Injury Attorneys (confirmed: Step 1a rankings search)', status: 'critical' },
+      { label: 'No St. Petersburg Geo Page', value: 'site: search returns geo pages for Zephyrhills, Dade City, Land O\' Lakes, Lutz, and Brooksville — no dedicated St. Petersburg personal injury page found, despite the city being a top Pinellas County target (confirmed: Step 1f site:butashlawgroup.com search)', status: 'critical' },
+      { label: 'Blog Categorization Unclear', value: 'Blog URL structure uses /practice-areas/page/N/ rather than a /blog/ path — this non-standard architecture may dilute SEO value and makes the blog harder to surface for content searches (confirmed: Step 1d blog search, URL pattern visible in snippets)', status: 'warning' },
+      { label: 'Schema Status Unverified', value: 'No schema evidence confirmed or denied via search-only protocol — no application/ld+json visible in any snippet (unverified — direct fetch blocked)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'St. Petersburg has a population of approximately 265,000 and is Pinellas County\'s largest city — a prime personal injury market. Butash Law Group has the content infrastructure to compete here but is geographically anchored in Pasco County in Google\'s eyes. Firms like McQuaid & Douglas (727injury.com) and Emerson Straw hold strong St. Petersburg rankings, capturing leads that Butash\'s experience and case results ($3.55M recovered) would otherwise win.',
+      volume: '600', volumeNote: 'Estimated monthly searches for personal injury attorney in St. Petersburg / Pinellas County metro — based on city population of 265K and high-intent PI search volume benchmarks',
+      leads: '3-7', leadsNote: 'Conservative estimate: firm currently captures ~0 St. Petersburg organic leads; adding one geo page targeting the city could add 3–7 qualified inquiries/month',
+      timeline: '60-90 days', timelineNote: 'Existing domain authority and content depth means a geo page can rank relatively quickly — faster than a new site build',
+    },
+    fixes: [
+      { letter: 'A', title: 'Build a Dedicated St. Petersburg Personal Injury Page', body: 'Butash already has the location-page playbook working in Pasco County — replicate it for St. Petersburg and Clearwater. A /location/st-petersburg/personal-injury-lawyer/ page with geo-specific copy, local case context, and the city name in the title tag directly targets the market the firm is currently invisible in.' },
+      { letter: 'B', title: 'Fix Blog URL Structure', body: 'The blog lives at /practice-areas/page/N/ — this conflates blog content with practice area pages and creates navigation confusion for both users and Google. Migrating to a /blog/ or /resources/ path with proper categorization will help blog content rank independently and build topical authority in personal injury.' },
+      { letter: 'C', title: 'Confirm and Add LegalService Schema', body: 'No schema evidence is visible in any search snippet. Adding LegalService schema with serviceArea pointing to both Pasco and Pinellas counties, along with attorney schema on the bio page, would help Google correctly attribute the firm\'s service geography beyond just its physical Lutz address.' },
+    ],
+  },
+
+  'Orner & Orner': {
+    searchQuery: '"personal injury attorney Boca Raton FL"',
+    googlePage: 'Not Found',
+    score: { website: 1, seo: 1, total: 2 },
+    primaryFinding: 'theornerfirm.com returns a "site not found" result in Google — the domain is either offline or de-indexed, meaning Orner & Orner has effectively zero web presence in the Boca Raton personal injury market despite being listed in Avvo, FindLaw, and Yelp directories.',
+    issues: [
+      { label: 'Website De-indexed or Offline', value: 'site:theornerfirm.com returns "no site found" in Google search — the domain appears offline or has been de-indexed entirely (confirmed: Step 1f site: search returned 0 indexed pages)', status: 'critical' },
+      { label: 'Absent from Boca Raton Personal Injury Rankings', value: 'Firm does not appear in top 30 results for "personal injury attorney Boca Raton FL" — Page 1 is held by Leifer & Ramirez, Silver Injury Law, Bernstein Polsky, and Your Injury Firm (confirmed: Step 1a rankings search)', status: 'critical' },
+      { label: 'No Blog Content Discoverable', value: 'No blog or article content from theornerfirm.com appears in any Google search — no posts, no snippet previews, consistent with a de-indexed or absent website (confirmed: Step 1d blog search returned zero results from domain)', status: 'critical' },
+      { label: 'Directory Presence Only', value: 'Firm\'s digital footprint is entirely third-party: Avvo (Eric S. Orner listing), FindLaw, Yelp at 5355 Town Center Rd, and BBB — none of these directory listings link to a live, indexed website (confirmed: Step 1b search across multiple queries)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Boca Raton\'s personal injury market is one of the most competitive in South Florida — the city and surrounding Palm Beach County generate significant PI search volume from a population of over 1.5 million in the metro area. With a fully offline or de-indexed website, Orner & Orner is invisible to every prospect who searches before calling. Firms like Leifer & Ramirez and Silver Injury Law (30+ years in market) hold Page 1 spots and capture all organic demand. Every month the site remains down is a month of zero inbound digital leads.',
+      volume: '750', volumeNote: 'Estimated monthly searches for personal injury attorney in Boca Raton and Palm Beach County — based on metro population of 1.5M and PI keyword benchmarks',
+      leads: '4-8', leadsNote: 'Estimated monthly inquiries recoverable with a live, ranked site — conservative given competitive market',
+      timeline: '90-150 days', timelineNote: 'Site rebuild or reactivation required first; Palm Beach PI market is competitive, so ranking timeline is longer than a less-contested market',
+    },
+    fixes: [
+      { letter: 'A', title: 'Restore or Rebuild the Website Immediately', body: 'The most urgent issue is that theornerfirm.com appears to be offline or de-indexed — this is a complete visibility blackout. Before any SEO work, the site must be live, properly indexed (confirmed via Google Search Console), and loading cleanly. Every other improvement depends on this.' },
+      { letter: 'B', title: 'Build Practice Area Pages with Real Content', body: 'Directories like FindLaw describe Orner & Orner as handling personal injury, criminal defense, family law, and business litigation — four distinct practice areas. Each needs its own dedicated page with substantive content (500+ words), Boca Raton geo language, and attorney-specific credentials. Thin or absent practice area pages will not rank in a competitive Palm Beach PI market.' },
+      { letter: 'C', title: 'Add LegalService Schema and Geo Signals', body: 'Once the site is live, implementing LegalService structured data with attorney names (S. Howard Orner, Eric S. Orner), practice area, and Boca Raton/Palm Beach County service area will help Google correctly categorize and surface the firm for local searches — currently there is no structured data signal of any kind.' },
+    ],
+  },
+
+  'Rickman Enterprise Law': {
+    searchQuery: '"business attorney Tampa FL"',
+    googlePage: 'Not Found',
+    score: { website: 1, seo: 1, total: 2 },
+    primaryFinding: 'No website for "Rickman Enterprise Law" is indexed by Google under any discoverable domain pattern — the firm does not appear in Tampa business/general practice attorney results, and its digital footprint is limited to whatever directory listings may exist under alternative names.',
+    issues: [
+      { label: 'No Indexed Website Found', value: 'Multiple domain pattern searches (rickmanenterpriselaw.com, rickman-enterprise-law.com) returned zero results — firm is not indexed in Google under this business name (confirmed: Step 1b and Step 1f site: searches returned no results)', status: 'critical' },
+      { label: 'Absent from Tampa Business Attorney Rankings', value: 'Firm does not appear in top 30 results for "business attorney Tampa FL" — Page 1 is held by Harbour Business Law, Brick Business Law, Cantrell Schuette, and Hoyer Law Group (confirmed: Step 1a rankings search)', status: 'critical' },
+      { label: 'No Schema, Blog, or Content Detectable', value: 'With no indexed domain found, no schema, blog content, or practice area pages are detectable — entire SEO infrastructure is absent (confirmed: Step 1c, 1d, 1e all returned zero results for any matching domain)', status: 'critical' },
+      { label: 'Tampa Business Law Market Highly Competitive', value: 'Tampa\'s business/corporate attorney market features 237+ Super Lawyers-listed attorneys and multiple established firms — entering this market without a website means competing for zero organic share against well-entrenched incumbents (confirmed: Step 1a rankings search + Super Lawyers data in snippet)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Tampa is the anchor of a metro area of 3.2 million people and one of Florida\'s top business formation markets — Tampa Bay added over 60,000 new business entities in 2023 alone. Searches for business attorneys, corporate lawyers, and LLC/contract attorneys generate substantial monthly volume. With no indexed website, Rickman Enterprise Law captures zero organic search leads in a market where firms like Harbour Business Law, Brick Business Law, and Cantrell Schuette dominate the first page. Every small business owner, startup, or entrepreneur searching for a Tampa business attorney sees only those competitors.',
+      volume: '800', volumeNote: 'Estimated monthly searches across business attorney, corporate lawyer, and LLC attorney keyword clusters in Tampa metro — based on population of 3.2M and business formation activity',
+      leads: '4-9', leadsNote: 'Conservative estimate of monthly inquiries recoverable with a live, ranked site targeting small business and corporate formation keywords',
+      timeline: '90-120 days', timelineNote: 'New site build required — no existing domain authority; competitive Tampa business law market extends timeline',
+    },
+    fixes: [
+      { letter: 'A', title: 'Launch a Keyword-Targeted Website Under the Firm Name', body: 'Rickman Enterprise Law needs a live website at a consistent domain that appears in Google for Tampa business law searches. The homepage title tag should target "business attorney Tampa FL" or "Tampa corporate law attorney," with clear practice area coverage (business formation, contracts, corporate law) and attorney credentials prominently featured.' },
+      { letter: 'B', title: 'Target Underserved Business Law Niches', body: 'The competitive Tampa business attorney market is dominated by generalists. Rickman Enterprise Law can differentiate by targeting specific high-intent niches — "LLC formation attorney Tampa," "business contract lawyer Tampa," or "small business attorney Tampa" — where dedicated pages can rank faster than broad "business attorney" terms dominated by large firms.' },
+      { letter: 'C', title: 'Build LegalService Schema and Google Business Profile', body: 'With no web presence, the fastest path to visibility is a complete Google Business Profile (attorney category, Tampa address, practice areas) combined with LegalService schema on the website. Together these create the local pack presence that drives calls before organic rankings fully develop.' },
+    ],
+  },
+
+  'Frank P. Bianco, P.A.': {
+    searchQuery: '"personal injury attorney New Port Richey FL"',
+    googlePage: 'Not Found',
+    score: { website: 4, seo: 4, total: 8 },
+    primaryFinding: 'Frank Bianco announced retirement from active practice as of January 1, 2025 on LinkedIn — the site continues operating without disclosing succession, creating a credibility gap that undermines every other potential fix.',
+    issues: [
+      { label: 'Attorney Retired January 2025', value: 'Frank Bianco publicly announced retirement 01-01-2025 on LinkedIn; website continues to operate without disclosing new attorney or succession plan (confirmed: LinkedIn search)', status: 'critical' },
+      { label: 'No Page 1 Rankings', value: 'frankbiancolaw.com absent from "personal injury attorney New Port Richey FL" top 10; outranked by Roman Austin, Doran Beam & Farrell, The Florida Law Group (confirmed: rankings search)', status: 'critical' },
+      { label: 'Homepage Title Misaligned', value: 'Title tag is "Home - Frank Bianco Law" — no city, no practice area; meta description leads with criminal defense on a PI-focused site (confirmed: homepage source review)', status: 'warning' },
+      { label: 'Blog Content Generic', value: 'FAQ posts on PI topics exist but are broad national content, not New Port Richey / Pasco County geo-specific — no local search signal (confirmed: blog review)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'New Port Richey is in Pasco County (~580,000 residents). Personal injury search volume in this market is estimated at 300–500 monthly searches. The firm currently captures near-zero organic leads, and the undisclosed retirement situation amplifies every technical gap.',
+      volume: '350', volumeNote: 'Estimated monthly "personal injury attorney New Port Richey" area searches',
+      leads: '8-14', leadsNote: 'Estimated monthly inquiries lost to Page 1 competitors',
+      timeline: '45-60 days', timelineNote: 'Schema + title tag + geo content; succession disclosure needed as precondition',
+    },
+    fixes: [
+      { letter: 'A', title: 'Disclose succession or transition before any SEO investment', body: 'If a new attorney has taken over the practice, the site must be updated to reflect it. Roman Austin and other competitors in New Port Richey have active attorneys prominently featured. An unexplained name on an old bio will cost conversions even if rankings improve.' },
+      { letter: 'B', title: 'Rewrite title tags with city + practice area keywords', body: 'Change "Home - Frank Bianco Law" to "New Port Richey Personal Injury Lawyer | Frank Bianco Law" and update the meta description to lead with PI, not criminal defense. Title tags are the fastest-impact ranking signal available.' },
+      { letter: 'C', title: 'Build Pasco County geo-targeted blog posts', body: 'Replace generic national PI FAQ content with Pasco County specific posts: "Car Accident Claims in New Port Richey," "Slip and Fall Laws in Pasco County," "What to Do After an Accident on US-19." Local signal converts informational traffic into PI inquiries.' },
+    ],
+  },
+
 };
