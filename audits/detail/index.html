@@ -244,7 +244,7 @@ tailwind.config = {
   </div>
 </footer>
 
-<script src="/audits/detail/firm-data.js"></script>
+<script src="/audits/detail/firm-data.js?v=5"></script>
 <script>
 (function() {
   // Redirect stale/incorrect audit URLs to corrected versions
@@ -295,11 +295,19 @@ tailwind.config = {
   const fullOverrides = window.__firmAuditData || {};
   function findFirmData(name) {
     if (fullOverrides[name]) return fullOverrides[name];
-    const norm = n => n.toLowerCase().replace(/&amp;/g, ' ').replace(/&/g, ' ').replace(/\band\b/g, '').replace(/[-_]/g, ' ').replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim();
+    const norm = n => {
+      let s = n.toLowerCase().replace(/&amp;/g, ' ').replace(/&/g, ' ').replace(/\band\b/g, '').replace(/[-_]/g, ' ').replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim();
+      return s.replace(/\b([a-z]) ([a-z])\b/g, '$1$2');
+    };
     const key = norm(name);
+    // Exact normalized match
     for (const [k, v] of Object.entries(fullOverrides)) {
       if (norm(k) === key) return v;
     }
+    // Prefix match: handles abbreviated names like "Zweben Law Group" matching "Zweben Law Group, P.A."
+    // Only returns if exactly one key starts with this prefix (prevents wrong matches)
+    const prefixMatches = Object.entries(fullOverrides).filter(([k]) => norm(k).startsWith(key + ' '));
+    if (prefixMatches.length === 1) return prefixMatches[0][1];
     return null;
   }
   const firmData = findFirmData(firm);
