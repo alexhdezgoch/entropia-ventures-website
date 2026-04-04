@@ -335,10 +335,10 @@ tailwind.config = {
   const fScore = firmData && firmData.score;
 
   // Visibility gap: if we have a real score, compute gap as (20 - total) * 5
-  const effectiveGap = fScore ? Math.min(95, Math.max(40, (20 - fScore.total) * 5)) : gap;
+  const effectiveGap = fScore ? Math.round((1 - fScore.total / 20) * 100) : gap;
   document.getElementById('stat-gap').textContent = effectiveGap + '%';
   document.getElementById('gap-display').textContent = effectiveGap + '%';
-  const gapSeverity = effectiveGap >= 80 ? 'Critical' : effectiveGap >= 60 ? 'High' : 'Elevated';
+  const gapSeverity = effectiveGap >= 80 ? 'Critical' : effectiveGap >= 60 ? 'High' : effectiveGap >= 40 ? 'Moderate' : 'Elevated';
   document.getElementById('stat-gap-label').textContent = gapSeverity;
 
   // Google position: derive from total score with more granularity
