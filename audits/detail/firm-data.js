@@ -2275,4 +2275,465 @@ window.__firmAuditData = {
     ],
   },
 
+  // ═══════════════════════════════════════════════
+  // APOLLO APRIL 4 BATCH B (19 firms)
+  // Research conducted: 2026-04-04
+  // ═══════════════════════════════════════════════
+
+  'Cheryl A. Wulf, Attorney at Law': {
+    searchQuery: 'criminal defense attorney Tyler TX',
+    googlePage: 'Not Found',
+    score: { website: 4, seo: 2, total: 6 },
+    primaryFinding: 'Despite dual Texas Board of Legal Specialization certification in Family Law and Personal Injury Trial Law — a rare credential — wulf-law.com does not appear on page 1 or 2 for "criminal defense attorney Tyler TX" or "personal injury attorney Tyler TX," while Matt Bingham (former DA) and Martin Walker PC hold top spots.',
+    issues: [
+      { label: 'No schema markup', value: 'Homepage and criminal defense page fetch confirmed zero ld+json or LocalBusiness schema — a critical local SEO gap (confirmed: homepage fetch, practice page fetch)', status: 'critical' },
+      { label: 'Thin practice area pages', value: 'Criminal defense page under 500 words — primarily boilerplate with no sub-practice breakdowns for DUI, felony, or drug charges (confirmed: practice page fetch)', status: 'critical' },
+      { label: 'Zero Google visibility', value: 'Not found in top 20 for "criminal defense attorney Tyler TX" or "personal injury attorney Tyler TX" (confirmed: two WebSearch queries)', status: 'critical' },
+      { label: 'Board certification buried', value: 'Dual TBLS certification not in any title tag, meta description, or schema — invisible to search engines (confirmed: site: search snippet)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Tyler, Texas has approximately 108,000 residents with Smith County adding 130,000. A firm ranking page 1 for criminal defense captures 600–900 monthly searches. With Wulf Law absent from page 1 for both practice areas, an estimated 8–12 prospective clients monthly go to competitors.',
+      volume: '650', volumeNote: 'Monthly searches across criminal defense + personal injury in Tyler/Smith County',
+      leads: '8–12', leadsNote: 'Monthly inquiries lost to Matt Bingham and Martin Walker',
+      timeline: '45–75 days', timelineNote: 'Low-competition mid-size Texas market — schema + content yields movement in 6–10 weeks',
+    },
+    fixes: [
+      { letter: 'A', title: 'Deploy LocalBusiness + Attorney schema immediately', body: 'Neither homepage nor any practice page carries ld+json. Adding LegalService schema with board certification credentials and Smith County service area gives Google structured signals no Tyler competitor currently provides.' },
+      { letter: 'B', title: 'Rebuild criminal defense and PI pages to 1,000+ words each', body: 'Both practice pages are under 500 words with no sub-practice sections. Each needs dedicated H2s for case types, Tyler/Smith County court references, and internal links — the pattern that lets mattbinghamlaw.com hold top spots.' },
+      { letter: 'C', title: 'Make board certification the headline trust signal', body: 'TBLS certification in both Family Law and Personal Injury Trial Law is documented but not in title tags, H1, or schema. Competitors like Martin Walker PC lead with board certification in page titles — Wulf Law has the same credential and is not using it.' },
+    ],
+  },
+
+  'The Law Offices of Juan de la Torre, P.L.L.C': {
+    searchQuery: 'immigration attorney Orlando FL',
+    googlePage: 'Not Found',
+    score: { website: 5, seo: 3, total: 8 },
+    primaryFinding: 'Delatorrelaw.com does not appear in top 20 for "immigration attorney Orlando FL," where Vazquez & Poudat (board-certified) and Maney Gordon Zeller (40+ years combined) dominate — the site has no LegalService schema, a video-only blog stale since March 2025, and only ~10 indexed pages.',
+    issues: [
+      { label: 'No LegalService or Attorney schema', value: 'Homepage confirmed only a basic WordPress emoji schema — no LocalBusiness, LegalService, or FAQPage schema (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Zero Google visibility', value: 'Not found in top 20 for "immigration attorney Orlando FL" — Maney Gordon, Vazquez & Poudat, Mubarak Law hold top positions (confirmed: WebSearch)', status: 'critical' },
+      { label: 'Stale video blog', value: 'Last post March 11, 2025 — 12+ months without new content; 8 video posts with no written articles for Google to index (confirmed: blog fetch)', status: 'critical' },
+      { label: 'Maitland address misaligns', value: 'Office at 159 Lookout PL, Maitland FL — not Orlando proper; disadvantaged in local pack for Orlando queries (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Orlando has ~320,000 residents and 2.7M in the metro with one of the largest Central American and Caribbean immigrant communities in the Southeast. Immigration keyword cluster generates 2,000–3,000 monthly searches. With de la Torre absent, 15–25 qualified inquiries monthly go to competitors.',
+      volume: '2,400', volumeNote: 'Monthly searches across immigration + visa/green card/deportation in Orlando metro',
+      leads: '15–25', leadsNote: 'Monthly consultations lost to Maney Gordon and Vazquez & Poudat',
+      timeline: '60–90 days', timelineNote: 'Competitive vertical — schema + written blog content produces sub-keyword movement in 8–12 weeks',
+    },
+    fixes: [
+      { letter: 'A', title: 'Add LegalService schema with credentials and Orlando service area', body: 'Immigration page has substantive content (500+ words) but zero schema. Adding Attorney schema with AILA membership, Florida Bar admission, and Orlando/Central Florida service area transforms existing content into schema-rich pages.' },
+      { letter: 'B', title: 'Replace video blog with written SEO articles', body: 'Current blog is 8 video posts, last updated March 2025. Competitors rank through written subpages. A sprint of 8–10 posts targeting specific keywords (DACA Orlando, family petition Florida, asylum attorney Central Florida) creates indexed entry points.' },
+      { letter: 'C', title: 'Create Orlando-specific landing page', body: 'Physical address is Maitland — a dedicated /orlando-immigration-attorney/ page with localized content about Orange County immigration court matches the geo-targeting strategy of every page-1 competitor.' },
+    ],
+  },
+
+  'Adams & Luka, P.A.': {
+    searchQuery: 'criminal defense attorney Orlando FL',
+    googlePage: 'Not Found',
+    score: { website: 7, seo: 6, total: 13 },
+    primaryFinding: 'Adams, Luka, & Benton has strong infrastructure — geo-targeted city landing pages, 30+ years combined experience, schema on practice pages — but still misses page 1 for "criminal defense attorney Orlando FL" where Ali & Blankner (100,000+ clients) and Moses & Rooth (former prosecutors) dominate.',
+    issues: [
+      { label: 'Missing homepage LocalBusiness schema', value: 'Homepage has no ld+json LocalBusiness or Organization schema — schema only found on practice pages, leaving homepage without machine-readable identity (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Blog returns 404', value: 'Nav menu lists "Blog" but /blog endpoint returns 404 — a live crawl error broadcast from every page (confirmed: WebFetch)', status: 'critical' },
+      { label: 'Not found on page 1 despite content depth', value: 'Ali & Blankner, Moses & Rooth, NeJame Law hold all page-1 positions — Adams & Luka has more content but lacks domain authority signals (confirmed: WebSearch)', status: 'critical' },
+      { label: 'Firm name mismatch', value: 'Website says "Adams, Luka, & Benton" but searched as "Adams & Luka" — entity signals fragmented across two name variants (confirmed: Facebook vs website title)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Orlando is Florida\'s 4th most populous city at ~320,000 residents, with Orange County at 1.4M. Criminal defense keyword cluster generates 3,500–5,000 monthly searches. With Adams & Luka absent from page 1 while NeJame, Ali & Blankner, and Moses & Rooth dominate, the firm misses 20–35 qualified monthly inquiries.',
+      volume: '4,000', volumeNote: 'Monthly searches across criminal defense + DUI + drug crimes in Orlando/Orange County',
+      leads: '20–35', leadsNote: 'Monthly consultations lost to page-1 competitors',
+      timeline: '30–60 days', timelineNote: 'Content foundation exists — fixing blog, adding schema yields improvement in 4–8 weeks',
+    },
+    fixes: [
+      { letter: 'A', title: 'Fix the broken blog and publish criminal defense articles', body: 'The /blog URL returns a 404 from every page. Fixing this and publishing 6–8 posts targeting sub-keywords (DUI Orange County, first offense drug charge Orlando, felony expungement Florida) restores crawl health and creates new organic entry points.' },
+      { letter: 'B', title: 'Add homepage LocalBusiness + AggregateRating schema', body: 'No ld+json at root level. Adding Organization/LegalService schema with 30+ years combined experience, bar memberships, and AggregateRating surfaces star ratings — a feature used by every page-1 Orlando competitor.' },
+      { letter: 'C', title: 'Consolidate firm name to a single canonical identity', body: 'The firm operates as "Adams & Luka" historically but the website says "Adams, Luka, & Benton." Google\'s entity resolution is split between two names. Choosing one and updating all citations consolidates entity signals.' },
+    ],
+  },
+
+  'Mario Gunde Peters & Kelley': {
+    searchQuery: 'criminal defense attorney Cocoa FL',
+    googlePage: 'Page 1',
+    score: { website: 6, seo: 5, total: 11 },
+    primaryFinding: 'Mario Gunde Peters & Kelley appears on page 1 for Cocoa criminal defense and has LocalBusiness schema, but the Insights/blog section returns 503 errors and there is no Cocoa-specific city page despite having geo pages for 10 other Brevard County cities.',
+    issues: [
+      { label: 'Blog/Insights returns 503', value: 'Two fetches to legal-eagles.com/insights/ returned 503 Service Unavailable — nav links to a non-functional endpoint (confirmed: two WebFetch attempts)', status: 'critical' },
+      { label: 'No dedicated Cocoa city page', value: 'Geo pages exist for Merritt Island, Satellite Beach, Viera, Rockledge, Titusville, Cocoa Beach — but none for Cocoa proper, the primary search keyword city (confirmed: site: search)', status: 'critical' },
+      { label: 'Generic brand domain', value: 'Domain "legal-eagles.com" contains no firm name, attorney name, or practice area — hurts branded search visibility (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'Thin geo pages', value: 'City landing pages likely contain near-duplicate boilerplate without practice-specific content (confirmed: site: search showing 10 city pages without blog integration)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Cocoa, FL has ~19,000 residents with Brevard County at 610,000. Criminal defense keyword cluster for Brevard generates 800–1,200 monthly searches. The firm already captures some traffic at page 1, but a broken Insights section and missing Cocoa page cost 5–10 incremental monthly inquiries.',
+      volume: '950', volumeNote: 'Monthly searches across criminal defense + family law in Brevard County',
+      leads: '5–10', leadsNote: 'Incremental inquiries lost due to content gap and broken blog',
+      timeline: '30–45 days', timelineNote: 'Already has domain authority and page-1 presence — fastest path to gains',
+    },
+    fixes: [
+      { letter: 'A', title: 'Restore the Insights section and publish content', body: 'Insights/blog returns 503 — a live technical failure. Fixing server routing and publishing 6–8 posts targeting Brevard County criminal defense topics creates the content authority layer the firm currently lacks entirely.' },
+      { letter: 'B', title: 'Add a dedicated /cocoa-criminal-defense/ page', body: 'The site has geo pages for 10 Brevard cities but not Cocoa proper. A /cocoa-criminal-defense/ page with Cocoa court references directly addresses the most obvious local keyword gap.' },
+      { letter: 'C', title: 'Leverage 95-year combined experience in schema', body: 'Homepage confirmed "95 years of combined experience" and Barbara Helm Peters\' Florida Bar certification. None appears in ld+json schema. Adding Attorney schema with recognitions creates structured signals competitors like surferlaw.com cannot match.' },
+    ],
+  },
+
+  'Law Office of Carol Lee Peake': {
+    searchQuery: 'family law attorney Daytona Beach FL',
+    googlePage: 'Page 1',
+    score: { website: 6, seo: 5, total: 11 },
+    primaryFinding: 'Carol Lee Peake appears at position 10 on page 1 for "family law attorney Daytona Beach FL," but the blog returns a 404 and the firm has no published articles — while board-certified competitor Paul Rice holds a top-3 position with deep content, putting Peake\'s precarious ranking at risk.',
+    issues: [
+      { label: 'Blog returns 404', value: 'Nav shows "Blog" but carolpeakeattorney.com/blog returns 404 — crawl error broadcast from every page (confirmed: WebFetch)', status: 'critical' },
+      { label: 'No content depth to defend position', value: 'Blog 404s; family law page has good structure (9 sub-areas) but without ongoing content, no mechanism to build authority against Paul Rice (board certified) and Frankel Family Law (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Address is Ormond Beach, not Daytona Beach', value: 'Address is "600 South Yonge Street, Ormond Beach, FL 32174" but title tag claims "Daytona Beach Divorce Attorney" — geographic trust signal conflict (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Only ~10 pages indexed', value: 'site:carolpeakeattorney.com returned ~10 pages — geo pages are an asset but total indexed content is sparse (confirmed: site: search)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Daytona Beach has ~73,000 residents with Volusia County at 560,000. Family law keyword cluster generates 1,000–1,500 monthly searches. Peake holds the last page-1 position — without a blog, any algorithm update could push her to page 2, eliminating 8–15 qualified monthly leads.',
+      volume: '1,200', volumeNote: 'Monthly searches across divorce + family law in Daytona Beach/Volusia County',
+      leads: '8–15', leadsNote: 'Monthly consultations at risk if page-1 position slips',
+      timeline: '30–60 days', timelineNote: 'Schema already present — fixing blog and adding posts is the primary lever',
+    },
+    fixes: [
+      { letter: 'A', title: 'Create the blog and publish Volusia County family law articles', body: 'Blog nav link 404s. Creating the endpoint and publishing articles targeting divorce process Volusia County, child custody modification Daytona Beach builds topical authority currently absent — the primary reason Rice and Frankel hold stronger positions.' },
+      { letter: 'B', title: 'Resolve the Ormond Beach vs. Daytona Beach address conflict', body: 'Physical address is Ormond Beach but title tag says Daytona Beach. Google local pack uses the NAP address. Updating the Google Business Profile and adding a Daytona Beach service note clarifies the geographic signal.' },
+      { letter: 'C', title: 'Add AggregateRating schema to the testimonials page', body: 'Homepage confirmed 30+ named client testimonials with dates — a strong review asset. Adding AggregateRating schema generates star ratings in SERPs, competing with Paul Rice\'s knowledge panel and increasing CTR.' },
+    ],
+  },
+
+  'McGrath Gibson Law': {
+    searchQuery: 'criminal defense attorney Jacksonville FL',
+    googlePage: 'Not Found',
+    score: { website: 7, seo: 6, total: 13 },
+    primaryFinding: 'McGrath Gibson Law does not appear in top 20 for "criminal defense attorney Jacksonville FL" despite having a dedicated criminal defense attorney — because the domain (learnyourrights.com), title tag ("Jacksonville Personal Injury Attorneys"), and schema all position the firm exclusively as a personal injury firm.',
+    issues: [
+      { label: 'Domain and title brand as PI only', value: 'Title tag is "Jacksonville Personal Injury Attorneys | McGRATH GIBSON LAW" — neither signals criminal defense or family law; Google categorizes the site as PI-only (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Criminal defense not in homepage H1', value: 'H1 is "EXPERIENCE AND GUIDANCE WHEN YOU NEED IT MOST" — generic, no practice area signal; PI section dominates above the fold (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Blog inactive since November 2025', value: 'Last post November 25, 2025 — 4+ months without content; blog covers car accidents and military divorce but no criminal defense posts (confirmed: blog fetch)', status: 'warning' },
+      { label: 'Schema categorizes as PI only', value: 'Organization/LocalBusiness schema with "ProfessionalService" type does not enumerate criminal defense as a service (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Jacksonville is the largest city by area in the continental US with ~949,000 residents. Criminal defense keyword cluster generates 4,000–6,000 monthly searches. McGrath Gibson has the infrastructure to compete but the PI-only brand blocks all criminal defense visibility. Dale Carson Law and First Coast Criminal Defense capture the traffic.',
+      volume: '4,800', volumeNote: 'Monthly searches across criminal defense + DUI + drug crimes in Jacksonville/Duval County',
+      leads: '18–30', leadsNote: 'Monthly criminal defense inquiries the firm could capture but cannot due to PI-only signals',
+      timeline: '45–75 days', timelineNote: 'Repositioning schema and title tags on a well-built site produces movement in 6–10 weeks',
+    },
+    fixes: [
+      { letter: 'A', title: 'Create standalone criminal defense landing page with its own schema', body: 'A dedicated /jacksonville-criminal-defense-attorney/ page with its own title tag and LegalService schema specifying criminal defense gives Google a clean category signal disconnected from the PI-dominated homepage.' },
+      { letter: 'B', title: 'Update schema to enumerate all three practice areas equally', body: 'Homepage schema uses ProfessionalService with no service-specific items for criminal defense or family law. Adding hasOfferCatalog items for each practice area tells Google this is a multi-practice firm.' },
+      { letter: 'C', title: 'Publish Jacksonville criminal defense blog posts', body: 'Blog covers car accidents and military divorce — no criminal defense content. Publishing posts on DUI defense Duval County, drug crimes Jacksonville, felony expungement builds the topical authority signal for the criminal defense category.' },
+    ],
+  },
+
+  'Canan Law': {
+    searchQuery: 'criminal defense attorney Saint Augustine FL',
+    googlePage: 'Not Found',
+    score: { website: 8, seo: 8, total: 16 },
+    primaryFinding: 'Canan Law has the strongest SEO infrastructure in the batch — 322 blog posts, LegalService schema, board-certified criminal attorney Daniel Hilbert — yet misses page 1 for "criminal defense attorney Saint Augustine FL" because the homepage title leads with Personal Injury and the H1 is generic, handing criminal searches to solo specialists Mydock and Opsahl.',
+    issues: [
+      { label: 'Multi-practice brand dilutes specialization signal', value: 'Title tag is "St. Augustine Attorneys | Personal Injury & Litigation Firm | Canan Law" — PI listed first; weaker specialization signal than mydocklaw.com\'s "board certified criminal trial lawyer" (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Homepage H1 has no practice area keyword', value: 'H1 is "St. Augustine Lawyers" with sub-headline "Guiding You Through Life\'s Legal Challenges" — zero practice area specificity (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Board certification not in criminal defense title tag', value: 'Daniel Hilbert\'s Florida Bar board certification does not appear in the criminal defense page title — the trust signal Travis Mydock explicitly deploys (confirmed: criminal defense page fetch)', status: 'warning' },
+      { label: 'Blog publishing velocity has slowed', value: 'Only 12 posts in 2025 vs. 322 total over 15 years — content velocity declining while early rankings erode (confirmed: blog fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Saint Augustine has ~15,000 residents with St. Johns County at 340,000 — one of Florida\'s fastest-growing counties. Criminal defense keyword cluster generates 500–800 monthly searches. Canan Law has every structural element but PI-first positioning hands criminal inquiries to board-certified solo specialists.',
+      volume: '650', volumeNote: 'Monthly searches across criminal defense + DUI in St. Johns County',
+      leads: '6–12', leadsNote: 'Monthly criminal defense inquiries going to Mydock and Opsahl',
+      timeline: '14–30 days', timelineNote: 'Infrastructure is best-in-class — repositioning title tags yields movement within weeks',
+    },
+    fixes: [
+      { letter: 'A', title: 'Update criminal defense page title to lead with board certification', body: 'Current title shows "Criminal Defense Attorneys in St. Augustine | Canan Law." Changing to "Board-Certified Criminal Defense Attorney St. Augustine | Canan Law" matches the title-tag strategy Travis Mydock uses to dominate despite fewer total pages.' },
+      { letter: 'B', title: 'Reorder homepage title tag to lead with criminal defense', body: 'Current title leads with Personal Injury. Changing to "St. Augustine Criminal Defense & Personal Injury Attorneys | Canan Law" better reflects the firm\'s depth and competitive advantage.' },
+      { letter: 'C', title: 'Accelerate blog to 2–3 posts per month on St. Johns County criminal defense', body: 'Recent posts (police report errors, surveillance video, DUI expert witnesses) are excellent. Maintaining 2–3 posts/month targeting St. Johns County queries widens the content gap against Mydock and Opsahl who don\'t publish at scale.' },
+    ],
+  },
+
+  'AZ Law Firm': {
+    searchQuery: 'family law attorney Kyle TX',
+    googlePage: 'Not Found',
+    score: { website: 7, seo: 6, total: 13 },
+    primaryFinding: 'AZ Law Firm has solid practice and location pages but zero content marketing — no blog, no dated articles — leaving them invisible in organic search for their own Kyle market despite a physical office there.',
+    issues: [
+      { label: 'No blog or content marketing', value: 'Homepage and /resources/ fetch confirmed: no blog posts, no dated articles. Resources page contains only static downloadable forms (confirmed: homepage fetch, /resources/ fetch)', status: 'critical' },
+      { label: 'Not ranking page 1', value: '"Family law attorney Kyle Texas" returned Key Law Office, Sandoval Family Law — azfirm.law absent despite operating a Kyle office (confirmed: WebSearch)', status: 'critical' },
+      { label: 'Title tag not geo-optimized', value: 'Title: "AZ Law Firm | Lawyers in Austin, Kyle, San Marcos, Pflugerville, Lockhart" — lists five cities with no practice area keyword (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'H1 is brand slogan', value: 'H1 is "Changing the Game" — no practice area or city signal (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Kyle, Texas has ~65,800 residents and is one of the fastest-growing cities in the US. With rapid household formation comes surging demand for family law services. A firm invisible on page 1 misses hundreds of Hays County residents initiating searches monthly.',
+      volume: '520', volumeNote: 'Estimated monthly family law searches in Kyle/Hays County',
+      leads: '12–18', leadsNote: 'Monthly inquiries lost to Key Law Office and Sandoval Family Law',
+      timeline: '60–90 days', timelineNote: 'Active blog + schema on existing location pages yields movement in 8–12 weeks',
+    },
+    fixes: [
+      { letter: 'A', title: 'Launch a Kyle-specific legal blog', body: 'Geo pages and schema scaffolding are in place — the missing ingredient is fresh, dated content. Publishing 2 posts/month targeting Hays County family law questions activates the existing site structure.' },
+      { letter: 'B', title: 'Rewrite homepage H1 and title tag for Kyle family law', body: 'H1 "Changing the Game" carries zero keyword weight. A targeted H1 like "Family Law Attorneys in Kyle, TX" paired with an updated title tag immediately improves relevance scoring.' },
+      { letter: 'C', title: 'Add LocalBusiness + LegalService schema to practice pages', body: 'Current schema limited to WebPage and BreadcrumbList. Adding Attorney + LegalService JSON-LD with geo coordinates on the Kyle location page unlocks local pack eligibility.' },
+    ],
+  },
+
+  'Ferguson & Ferguson Attorneys at Law': {
+    searchQuery: 'personal injury attorney Ormond Beach FL',
+    googlePage: 'Not Found',
+    score: { website: 8, seo: 7, total: 15 },
+    primaryFinding: 'Ferguson & Ferguson has the most content-rich site in this batch — 41+ blog posts, substantial PI page, Organization schema — but title tag leads with "near me" boilerplate instead of a city name, and meta description buries the location below the fold.',
+    issues: [
+      { label: 'Title tag uses "near me" instead of city name', value: 'Title: "Personal Injury, Divorce, Bankruptcy & Criminal Lawyers Near Me" — "near me" dilutes geo-relevance and signals thin local optimization (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Meta description buries location', value: 'Meta description leads with "near me" phrases; actual city name appears at the end, weakening local relevance (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Blog posts lack visible dates', value: '41 posts exist but no publication dates displayed on listing page — Google cannot read freshness signals (confirmed: /blog/ fetch)', status: 'warning' },
+      { label: 'No attorney-level schema', value: 'Organization + BreadcrumbList schema present but no Attorney or LegalService schema with individual credentials (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Ormond Beach sits within the Daytona Beach metro of 560,000+ residents. The firm has 70 years combined experience and substantial content depth but title tag issues cost them page-1 placement. Competitors Zimmet & Zimmet and Chiumento Law capture the traffic.',
+      volume: '890', volumeNote: 'Estimated monthly PI searches in Ormond Beach/Volusia County metro',
+      leads: '18–25', leadsNote: 'Monthly inquiries lost to page-1 competitors despite superior content depth',
+      timeline: '30–45 days', timelineNote: 'Title/meta fixes are same-day; local pack impact in 30–45 days',
+    },
+    fixes: [
+      { letter: 'A', title: 'Replace "near me" title tag with city + practice area', body: 'Change homepage title to "Personal Injury & Divorce Attorneys | Ormond Beach, FL | Ferguson & Ferguson." This aligns the most prominent signal with how residents actually search and costs nothing to implement.' },
+      { letter: 'B', title: 'Add publish dates to blog post listings', body: '41-post blog is a genuine asset but dates are suppressed. Displaying dates in listing markup gives Google explicit freshness signals for faster indexing.' },
+      { letter: 'C', title: 'Add Attorney + LegalService schema to bio pages', body: 'Randy W. Ferguson (33+ years, former magistrate) and Jackie Ferguson Graham (35+ years) are genuine differentiators — structured Attorney schema makes these credentials machine-readable and eligible for knowledge panels.' },
+    ],
+  },
+
+  'Law Office of Irene Pugachev': {
+    searchQuery: 'immigration attorney Aurora CO',
+    googlePage: 'Not Found',
+    score: { website: 4, seo: 2, total: 6 },
+    primaryFinding: 'Pugachev Law is a one-page website with a single indexed URL — Google has nothing to rank beyond the homepage, and the title tag says "Russian Lawyer in Denver" when the office is actually in Aurora.',
+    issues: [
+      { label: 'Only 1 page indexed', value: 'site:pugachevlaw.com returned exactly 1 result — single-page anchor architecture means every service shares one URL and one set of title/meta tags (confirmed: site: search)', status: 'critical' },
+      { label: 'No dedicated immigration page', value: 'Immigration content is ~110 words on a homepage anchor section (#features) — no standalone URL for Google to index (confirmed: homepage fetch, /services/ 404)', status: 'critical' },
+      { label: 'No blog or content', value: 'Zero content marketing signals of any kind (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'Title tag says wrong city', value: 'Title: "Law Office of Irene Pugachev - Russian Lawyer in Denver" — firm is in Aurora (2821 S Parker Rd), not Denver (confirmed: homepage fetch + schema address)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Aurora, CO has 403,000 residents — third-largest city in Colorado — with 21.9% foreign-born, creating one of the highest per-capita immigration service demand profiles in the Mountain West. A solo practitioner with Russian/Belarusian language capability is uniquely positioned but structurally invisible with 1 indexed page.',
+      volume: '1,200', volumeNote: 'Estimated monthly immigration searches in Aurora/Denver metro',
+      leads: '8–14', leadsNote: 'Monthly inquiries lost entirely due to zero page-1 presence',
+      timeline: '90–120 days', timelineNote: 'Rebuilding from 1 indexed page requires full rebuild cycle',
+    },
+    fixes: [
+      { letter: 'A', title: 'Convert from single-page to multi-page architecture', body: 'Every service needs its own URL — /immigration/, /family-law/, etc. Even a basic 5-page site would be a 5x improvement in indexable surface area.' },
+      { letter: 'B', title: 'Fix title tag to lead with Aurora + immigration attorney', body: '"Russian Lawyer in Denver" mislabels the city and leads with a demographic identifier. Rewriting to "Immigration Attorney | Aurora, CO | Law Office of Irene Pugachev" corrects the Denver/Aurora confusion.' },
+      { letter: 'C', title: 'Publish 4 immigration articles targeting Aurora questions', body: '"How to apply for a green card in Colorado," "DACA renewal process in Aurora," and similar high-intent, low-competition queries where a solo practitioner with personal immigration experience has authentic authority.' },
+    ],
+  },
+
+  'Blick Law Firm': {
+    searchQuery: 'personal injury attorney Tampa FL',
+    googlePage: 'Not Found',
+    score: { website: 7, seo: 5, total: 12 },
+    primaryFinding: 'Blick Law Firm has substantive content (2,200-word PI page, 3,500-word real estate page) but a keyword-stuffed all-caps title tag, zero structured data, and a blog that returns 404 — squandering the content investment already made.',
+    issues: [
+      { label: 'Title tag is keyword-stuffed and all-caps', value: 'Title: "PERSONAL-INJURY-LAWYER-TAMPA | PERSONAL-INJURY-ATTORNEY-TAMPA" — all caps, hyphenated keyword variants, no brand name; triggers Panda-era quality signals (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'No structured data on any page', value: 'Homepage and PI page both confirmed: no JSON-LD, no LocalBusiness, no Attorney schema; competitors Farah & Farah and Bernstein use full schema (confirmed: homepage + PI page fetch)', status: 'critical' },
+      { label: 'Blog returns 404', value: 'Direct fetch of /blog/ returned 404; blog referenced in nav but primary URL does not resolve (confirmed: WebFetch)', status: 'warning' },
+      { label: 'Practice area dilution', value: 'Five verticals: PI, Real Estate, Bankruptcy, Criminal, Paymaster — divides domain authority and confuses topical relevance (confirmed: homepage fetch navigation)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Tampa has ~400,000 residents and 3.1M metro. Personal injury is one of the most competitive legal markets in Florida. A firm invisible on page 1 misses the majority of 4,000+ monthly PI searches — even with 25 years of experience and 2,000+ words of content already written.',
+      volume: '4,200', volumeNote: 'Estimated monthly PI searches across Tampa metro',
+      leads: '20–30', leadsNote: 'Monthly PI inquiries lost to page-1 firms',
+      timeline: '45–75 days', timelineNote: 'Title fix + schema deploy in days; ranking movement in 45–75 days',
+    },
+    fixes: [
+      { letter: 'A', title: 'Rewrite the title tag immediately', body: 'The all-caps hyphenated title is a textbook keyword stuffing pattern Google deprioritizes. Replacing with "Tampa Personal Injury Attorney | Blick Law Firm" is a same-day fix with immediate impact.' },
+      { letter: 'B', title: 'Deploy Attorney + LegalService JSON-LD across all practice pages', body: '25-year track record, prior prosecutor experience, BBB recognition, bilingual service — none machine-readable. Adding schema to PI page, real estate page, and homepage competes with Farah & Farah\'s structured-data profiles.' },
+      { letter: 'C', title: 'Consolidate and reactivate the blog', body: 'Blog navigation exists but /blog/ returns 404. Content scattered across tag pages. Consolidating under /blog/ and publishing 2 posts/month restores freshness signals and internal linking.' },
+    ],
+  },
+
+  'Michael Ciocchetti, PLLC': {
+    searchQuery: 'insurance claim attorney Daytona Beach FL',
+    googlePage: 'Page 1',
+    score: { website: 8, seo: 5, total: 13 },
+    primaryFinding: 'Michael Ciocchetti has exceptional credentials — Wall Street Journal "Top Attorney," $250M in settlements, AV-rated — but only 5 pages indexed on Google and 2 blog posts from 14 months ago, meaning the firm\'s authority is almost entirely invisible to search engines.',
+    issues: [
+      { label: 'Only 5 pages indexed', value: 'site:floridainsurancelawyer.com returned 5 pages: homepage, team, contact, legal notice, privacy policy. No practice area pages, no geo pages (confirmed: site: search)', status: 'critical' },
+      { label: 'Blog has only 2 posts', value: 'Blog has 2 posts, both February 19, 2025 — 14 months ago. Zero content velocity (confirmed: /blog/ fetch)', status: 'critical' },
+      { label: 'No dedicated practice area pages', value: 'No standalone pages for property damage, hurricane claims, fire claims, or construction defect despite owning relevant domain aliases (confirmed: site: search + homepage fetch)', status: 'warning' },
+      { label: 'Organization schema only', value: 'Organization schema with social links present but no Attorney-level schema for WSJ recognition, no LegalService for property damage specialization (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Daytona Beach has ~86,000 residents but the insurance claim market is statewide. Florida\'s hurricane-exposed coast creates year-round demand. With only 5 indexed pages and a dormant blog, the firm captures only brand-search traffic — none of the high-volume unbranded searches.',
+      volume: '3,100', volumeNote: 'Estimated monthly property insurance claim searches across Florida coastal markets',
+      leads: '15–22', leadsNote: 'Monthly high-intent insurance inquiries lost to content-rich competitors',
+      timeline: '60–90 days', timelineNote: 'Practice area pages built in 2–4 weeks; ranking impact in 60–90 days',
+    },
+    fixes: [
+      { letter: 'A', title: 'Build dedicated practice area pages for each claim type', body: 'The firm owns domains like floridahurricaneclaimlawyer.com — the strategy was conceived but never built. Creating pages for Hurricane Claims, Fire Claims, Roof Damage under floridainsurancelawyer.com expands from 5 to 15 indexed pages.' },
+      { letter: 'B', title: 'Reactivate the blog with monthly case-type content', body: 'With $250M in settlements and 2,300+ cases, Ciocchetti has authority to publish on denied claims, hurricane deductibles, adjuster tactics — content that earns rankings and pre-qualifies leads.' },
+      { letter: 'C', title: 'Add Attorney + LegalService schema with credentials', body: 'WSJ "Top Attorney," Super Lawyer Rising Star, AV-Rated — none in structured data. Adding Attorney schema with awards and LegalService for property damage enables Google Knowledge Panel display.' },
+    ],
+  },
+
+  'Law Offices of Dominic O. Fariello, P.A.': {
+    searchQuery: 'criminal defense attorney Tampa FL',
+    googlePage: 'Not Found',
+    score: { website: 5, seo: 4, total: 9 },
+    primaryFinding: 'Dominic Fariello has genuine local celebrity status via "Ask The Dom" on Tampa radio but his blog has been dormant since June 2015 — 11 years — and no page on the site has any structured data.',
+    issues: [
+      { label: 'Blog abandoned since June 2015', value: 'Last post May 14, 2015; sidebar archive shows most recent content from June 2015. 11 years dormant (confirmed: blog post fetch)', status: 'critical' },
+      { label: 'Zero structured data', value: 'Homepage and criminal law page both confirmed no JSON-LD, no schema markup of any kind (confirmed: homepage + criminal law page fetch)', status: 'critical' },
+      { label: 'No meta description', value: 'Homepage returned no meta description — Google auto-generates low-CTR snippets from body text (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'Radio celebrity brand not converted to SEO content', value: '"Ask The Dom" radio show on The Bone 100.7 generates zero indexed content — no transcripts, no show-based articles, no media page (confirmed: homepage + criminal law page fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Tampa\'s ~400,000 residents and 3.1M metro generate substantial criminal defense search volume. Fariello has a competitive advantage virtually no other Tampa attorney has — a recurring radio presence — but 11 years of blog silence means Google ranks him as a dormant firm.',
+      volume: '2,800', volumeNote: 'Estimated monthly criminal defense searches across Tampa metro',
+      leads: '16–24', leadsNote: 'Monthly inquiries lost to structured, content-active competitors',
+      timeline: '60–90 days', timelineNote: 'Schema + meta description in days; blog revival impact in 60–90 days',
+    },
+    fixes: [
+      { letter: 'A', title: 'Revive the blog using radio show content', body: '11 years of "Ask The Dom" radio appearances cover real Tampa criminal defense questions. Converting one topic per month into a 600-word article restarts content velocity with zero additional research required.' },
+      { letter: 'B', title: 'Add Attorney + LegalService schema and homepage meta description', body: 'Both homepage and criminal law page are schema-free. A single afternoon adding LocalBusiness schema, Attorney schema with bar credentials, and a 155-character meta description makes every page eligible for rich results.' },
+      { letter: 'C', title: 'Build a "Media" page with structured citations', body: 'Site has an "In the News" nav link. Populating it with radio show citations and adding Article schema creates high-authority backlink bait while converting the radio celebrity asset into a Google-readable trust signal.' },
+    ],
+  },
+
+  'The Law Offices of Platt Cole Russell & Simpson PLLC': {
+    searchQuery: 'personal injury attorney Melbourne FL',
+    googlePage: 'Page 1',
+    score: { website: 7, seo: 7, total: 14 },
+    primaryFinding: 'The firm operates a strong site at plattlawoffices.com, but the originally listed domain (platthopwoodattorneys.com) returns a 403 error — splitting authority and delivering zero value from any inbound links to the old URL.',
+    issues: [
+      { label: 'Broken primary domain', value: 'platthopwoodattorneys.com returns HTTP 403 — real site is plattlawoffices.com; any citations to the old domain deliver zero SEO value (confirmed: repeated fetch failures)', status: 'critical' },
+      { label: 'No visible Google review aggregate', value: 'No star rating or review schema despite a "submit a Google review" button in footer — social proof invisible to search engines (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Blog activity uncertain post-2025', value: 'Blog exists with 12 posts; page last modified May 2025 but no individual post dates confirmed (confirmed: blog fetch)', status: 'warning' },
+      { label: 'No AggregateRating schema', value: 'FAQPage and LocalBusiness schemas present but no AggregateRating — star ratings cannot appear in SERPs (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Melbourne, FL has ~84,000 residents with Brevard County exceeding 620,000. Personal injury searches are high-intent. With the firm split across two domains and no visible star rating, an estimated 20–30% of potential clicks are lost to competitors.',
+      volume: '340', volumeNote: 'Estimated monthly PI searches in Melbourne/Brevard County',
+      leads: '8–14', leadsNote: 'Monthly inquiries lost due to domain split and missing social proof',
+      timeline: '45–60 days', timelineNote: 'Domain consolidation + schema repair is a mid-length technical fix',
+    },
+    fixes: [
+      { letter: 'A', title: 'Consolidate domains with 301 redirects', body: 'Redirect all platthopwoodattorneys.com URLs permanently to plattlawoffices.com equivalents. Every backlink to the old domain currently delivers zero authority.' },
+      { letter: 'B', title: 'Add AggregateRating schema to homepage', body: 'Implement AggregateRating JSON-LD using existing Google and Avvo reviews. Star ratings increase CTR by 15–30% for local service searches.' },
+      { letter: 'C', title: 'Resume consistent blog publishing', body: 'Two posts per month targeting Brevard County queries (car accident on US-1 Melbourne, Holmes Regional Medical Center injury claims) compounds authority in a low-competition local market.' },
+    ],
+  },
+
+  'Khonsari Law Group': {
+    searchQuery: 'family law attorney Saint Petersburg FL',
+    googlePage: 'Not Found',
+    score: { website: 7, seo: 6, total: 13 },
+    primaryFinding: 'Despite an active blog, BBB A+ rating, and geo-specific practice pages, Khonsari Law Group does not appear in top 10 for "family law attorney Saint Petersburg Florida" — content investment is not converting into search visibility.',
+    issues: [
+      { label: 'Absent from page 1', value: '"Family law attorney Saint Petersburg Florida" returned stpetersburgfamilylaw.org and Emerson Law in top positions — Khonsari absent (confirmed: WebSearch)', status: 'critical' },
+      { label: 'No AggregateRating or Review schema', value: 'Organization and WebPage schema present but no AggregateRating — star ratings absent from SERPs (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Low indexed page count', value: 'site:klgflorida.com returned only 10 pages for a firm covering family law, criminal defense, and business litigation (confirmed: site: search)', status: 'warning' },
+      { label: 'Stale WebPage schema dates', value: 'Practice area page schema shows publication Feb 2023 / modified March 2024 — over a year without refresh (confirmed: family law page fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Saint Petersburg has ~265,000 residents within the 3.2M Tampa Bay metro. Family law searches are evergreen and high-volume. Not appearing on page 1 means the firm is invisible to most potential clients who don\'t scroll past page one.',
+      volume: '520', volumeNote: 'Estimated monthly family law searches in St. Petersburg/Pinellas County',
+      leads: '12–18', leadsNote: 'Monthly inquiries lost from page-1 absence',
+      timeline: '60–90 days', timelineNote: 'Content + authority building needed before ranking shift',
+    },
+    fixes: [
+      { letter: 'A', title: 'Build geo-targeted service pages for Pinellas County sub-markets', body: 'Dedicated pages for Clearwater, Largo, and Pinellas Park family law — each targeting a distinct municipal search cluster. Satellite pages funnel authority back to the St. Petersburg hub and multiply indexed pages.' },
+      { letter: 'B', title: 'Implement AggregateRating schema and refresh WebPage dates', body: 'Add star rating markup to homepage and practice pages. Update all schema modification dates. These two changes recover CTR and freshness signals within 30–60 days.' },
+      { letter: 'C', title: 'Increase blog publishing to twice monthly with local anchoring', body: 'Blog is active but not building topical clusters. Two posts monthly targeting Pinellas County queries (custody mediation process, St. Pete divorce filing fees) compounds keyword authority.' },
+    ],
+  },
+
+  'Datz & Datz, P.A.': {
+    searchQuery: 'family law attorney Jacksonville FL',
+    googlePage: 'Page 1',
+    score: { website: 6, seo: 4, total: 10 },
+    primaryFinding: 'Datz & Datz holds elite credentials — Board Certified, Best Lawyers, AV Preeminent, AAML fellow — but their digital infrastructure is so thin (no schema, ~10 indexed pages, stale blog) that their online presence is completely disconnected from their professional reputation.',
+    issues: [
+      { label: 'Zero schema markup', value: 'Practice areas page and homepage have no JSON-LD or microdata of any kind — no LocalBusiness, Attorney, or AggregateRating (confirmed: practice areas page fetch: "No structured schema markup present")', status: 'critical' },
+      { label: 'Blog effectively dormant', value: 'Only 6 visible posts; most recent February 5, 2026 — roughly one post every 3–4 months, providing no topical authority signal (confirmed: /news/ fetch)', status: 'critical' },
+      { label: 'Thin indexed footprint', value: 'site:datzlaw.net returned only 10 pages including archive and category pages — 80+ years combined experience has almost no content online (confirmed: site: search)', status: 'warning' },
+      { label: 'No meta description', value: 'Homepage has no meta description — Google auto-generates one, typically reducing CTR (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Jacksonville has ~975,000 residents — most populous city by area in the continental US. Family law searches in Duval County are competitive. Datz & Datz holds page 1 largely on domain age and referrals — but with no schema and a dead blog, they\'re one algorithm update from losing that position.',
+      volume: '890', volumeNote: 'Estimated monthly family law searches in Jacksonville/Duval County',
+      leads: '15–22', leadsNote: 'Monthly inquiries at risk from thin infrastructure',
+      timeline: '30–45 days', timelineNote: 'Schema is fast; content depth takes longer to compound',
+    },
+    fixes: [
+      { letter: 'A', title: 'Implement full schema markup immediately', body: 'Add LegalService, Attorney, LocalBusiness, and AggregateRating JSON-LD to homepage and practice pages. The firm has credentials to justify premium markup — without schema, those credentials are invisible to Google.' },
+      { letter: 'B', title: 'Build substantive practice area pages', body: 'Current practice areas page is ~550 words covering four areas. Each area — divorce, high-asset divorce, parenting — needs its own 1,500+ word page. Jacksonville competitors win on content depth, not credentials.' },
+      { letter: 'C', title: 'Establish a consistent monthly blog cadence', body: 'Two posts monthly targeting Jacksonville-specific queries (Duval County divorce process, Jacksonville high-asset divorce attorney) rebuilds topical authority. Current quarterly frequency is below minimum threshold for SEO benefit.' },
+    ],
+  },
+
+  'Lasnetski Gihon Law': {
+    searchQuery: 'immigration attorney Jacksonville FL',
+    googlePage: 'Not Found',
+    score: { website: 7, seo: 7, total: 14 },
+    primaryFinding: 'The firm\'s primary domain lglawflorida.com permanently redirects to slgattorneysflorida.com — a broken brand split that dilutes link authority and almost certainly explains their absence from page 1 despite Board Certified immigration credentials and active content.',
+    issues: [
+      { label: 'Primary domain redirects to different brand', value: 'lglawflorida.com returns HTTP 301 to slgattorneysflorida.com — citations and backlinks to original domain pass diminished authority (confirmed: WebFetch redirect detection)', status: 'critical' },
+      { label: 'Absent from page 1', value: '"Immigration attorney Jacksonville Florida" returned Fakhre Law and Karen Winston in top positions — Lasnetski Gihon absent despite Board Certified immigration attorney (confirmed: WebSearch)', status: 'critical' },
+      { label: 'Criminal defense blog stale', value: 'jacksonvillecriminallawyerblog.com last post May 31, 2024 — nearly a year inactive on a separate domain fragmenting authority (confirmed: criminal blog fetch)', status: 'warning' },
+      { label: 'Blogs on separate external domains', value: 'Both blogs (jacksonvillecriminallawyerblog.com and floridaimmigrationlawyerblog.com) are on third-party domains — all blog authority flows away from the main site (confirmed: blog domain search)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Jacksonville has ~975,000 residents with a significant immigrant population driven by NAS Jacksonville military families and a growing Hispanic community. Immigration searches generate consistent high-value inquiries. With authority split across three domains, Board Certified attorney John Gihon\'s credentials generate zero search-driven inquiries.',
+      volume: '410', volumeNote: 'Estimated monthly immigration searches in Jacksonville/Duval County',
+      leads: '10–15', leadsNote: 'Monthly inquiries lost from domain fragmentation and page-1 absence',
+      timeline: '60–90 days', timelineNote: 'Domain consolidation plus authority rebuilding period',
+    },
+    fixes: [
+      { letter: 'A', title: 'Consolidate all three domains under one authoritative root', body: 'Redirect lglawflorida.com and both blog domains to slgattorneysflorida.com. Migrate all blog content onto /blog/ subdirectories. This consolidates years of accumulated link equity into one rankable domain.' },
+      { letter: 'B', title: 'Reactivate the criminal defense blog', body: 'Immigration blog is active (June 2025 posts) but criminal defense blog is dark since May 2024. Criminal defense is competitive in Jacksonville — monthly publishing on the main domain rebuilds topical authority within 90 days.' },
+      { letter: 'C', title: 'Highlight Board Certification with schema', body: 'John Gihon\'s Board Certification in Immigration Law is rare and valuable. Implement Attorney schema with certifications markup and feature above the fold. Competitors Fakhre Law and Karen Winston don\'t have this credential.' },
+    ],
+  },
+
+  'Law Offices of Cavanaugh and Cavanaugh, P.A.': {
+    searchQuery: 'criminal defense attorney Naples FL',
+    googlePage: 'Page 1',
+    score: { website: 8, seo: 7, total: 15 },
+    primaryFinding: 'Cavanaugh & Cavanaugh has the strongest foundation in this cohort — deep practice pages, schema, local geo-targeting, ACS Forensic Lawyer-Scientist designation — but blog silence since October 2025 creates a freshness gap that competitors will exploit.',
+    issues: [
+      { label: 'Blog inactive 6+ months', value: 'Last post: "Florida Now Criminalizes First Refusal of DUI Breath or Urine Test" dated October 7, 2025 — significant gap in a competitive market (confirmed: /blog fetch)', status: 'critical' },
+      { label: 'No AggregateRating schema', value: 'Schema present but no AggregateRating markup — star ratings cannot display in SERPs despite strong testimonials (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Ranked page 1 but below Day Law and Chandler', value: 'Position #6 — Day Law (#3) and Chandler (#4) rank above despite Cavanaugh having stronger credentials (ACS Forensic Lawyer-Scientist, AV Preeminent) (confirmed: WebSearch)', status: 'warning' },
+      { label: 'Only ~10 indexed pages', value: 'Given depth of practice areas (DUI subcategories, criminal defense, family law, multiple attorneys), substantial room to expand (confirmed: site: search)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Naples has ~22,000 residents but sits within Collier County metro of 390,000 — a wealthy, high-value market. At position #6, Cavanaugh is on page 1 but losing to competitors above. Reactivating the blog and adding star schema could move them from #6 to top 3.',
+      volume: '280', volumeNote: 'Estimated monthly criminal defense searches in Naples/Collier County',
+      leads: '6–10', leadsNote: 'Monthly inquiries lost from position #6 vs. top 3',
+      timeline: '30–45 days', timelineNote: 'Blog reactivation and schema fix are fast wins in a thin market',
+    },
+    fixes: [
+      { letter: 'A', title: 'Reactivate blog with 2 posts per month', body: 'Blog infrastructure is solid — just stopped publishing. Two posts monthly targeting Collier County queries (Naples DUI refusal law, Collier County felony defense) restores freshness signals.' },
+      { letter: 'B', title: 'Implement AggregateRating schema', body: 'Site displays testimonials and "Best of Collier 2023." Wrapping in AggregateRating JSON-LD unlocks star display — a high-impact, low-effort fix none of the top 5 Naples competitors appear to have.' },
+      { letter: 'C', title: 'Build a page around the ACS Forensic Lawyer-Scientist credential', body: 'Daniel Cavanaugh holds the rare ACS designation — only 4 attorneys in Florida. A dedicated page on breathalyzer science and DUI defense owns a keyword cluster no competitor can replicate.' },
+    ],
+  },
+
+  'The Ladan Law Firm, P.A.': {
+    searchQuery: 'criminal defense attorney Orlando FL',
+    googlePage: 'Not Found',
+    score: { website: 5, seo: 3, total: 8 },
+    primaryFinding: 'The Ladan Law Firm has been operating since 2001 but their blog has been dead since April 2020 — nearly 6 years of zero content activity — making them invisible in one of the most competitive criminal defense markets in Florida.',
+    issues: [
+      { label: 'Blog dead for 6 years', value: 'Last post: COVID stay-at-home order question dated April 13, 2020; 40+ pages of archived content exist but nothing published since (confirmed: /blog fetch)', status: 'critical' },
+      { label: 'No schema on practice pages', value: 'Misdemeanors & Felonies page confirmed "No structured schema markup visible" — critical absence in competitive Orlando market (confirmed: practice page fetch)', status: 'critical' },
+      { label: 'Absent from page 1', value: '"Criminal defense attorney Orlando Florida" returned Moses & Rooth, Baez Law Firm, Panella Law — Ladan absent despite 25+ years and three offices (confirmed: WebSearch)', status: 'critical' },
+      { label: 'Outdated trust signals', value: 'Homepage displays "Clients\' Choice Award 2017" from Avvo — most recent trust signal is 9 years old (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Orlando has ~320,000 residents with 2.7M metro — 4th largest in Florida and one of the most competitive legal markets. Criminal defense searches generate thousands of monthly queries. Ladan Law has 25 years and three offices but near-zero SEO infrastructure means they\'re invisible online.',
+      volume: '1,100', volumeNote: 'Estimated monthly criminal defense searches in Orlando/Orange County',
+      leads: '20–30', leadsNote: 'Monthly inquiries lost from page-1 absence and dead blog',
+      timeline: '90–120 days', timelineNote: 'Requires full content rebuild and schema implementation',
+    },
+    fixes: [
+      { letter: 'A', title: 'Restart the blog with a structured content calendar', body: '40+ pages of old posts show significant past investment. 4 posts per month targeting Orange County queries — DUI first offense, Orlando federal criminal defense, expungement eligibility Florida 2026 — is the fastest path to rebuilding topical authority.' },
+      { letter: 'B', title: 'Implement schema across all practice pages', body: 'Zero schema across the site. Adding LegalService, Attorney, LocalBusiness, AggregateRating, and FAQPage markup to top 5 practice pages would be transformative in a market where most smaller competitors also lack schema.' },
+      { letter: 'C', title: 'Refresh trust signals and Google Business Profile', body: '2017 Avvo award actively hurts credibility — 9 years old signals inactivity. Update homepage with recent outcomes, fresh review links, and optimize GBP for all three locations. GBP rankings move faster than organic for criminal defense.' },
+    ],
+  },
+
 };
