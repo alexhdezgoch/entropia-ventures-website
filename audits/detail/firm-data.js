@@ -2736,4 +2736,441 @@ window.__firmAuditData = {
     ],
   },
 
+
+  // ═══════════════════════════════════════════════
+  // FIRE PROTECTION (18)
+  // ═══════════════════════════════════════════════
+
+  'Omega Fire Protection': {
+    searchQuery: 'fire protection contractor Houston TX',
+    googlePage: 'Not Found',
+    score: { website: 0, seo: 0, total: 0 },
+    primaryFinding: 'omegafpi.com has been hijacked by a 301 redirect to kordfire.com — a Los Angeles fire protection company — meaning any visitor or search bot landing on their domain is immediately sent to a competitor in a different state.',
+    issues: [
+      { label: 'Domain Redirect to Competitor', value: 'omegafpi.com returns a 301 permanent redirect to kordfire.com, a Sherman Oaks, CA fire protection company — the Houston business has no functioning website (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Zero Indexed Pages', value: 'site:omegafpi.com returns only 1 result — the redirected domain page, not a real indexed page (confirmed: site: search)', status: 'critical' },
+      { label: 'No Schema or Content', value: 'Because the domain redirects, there is no title tag, meta description, schema, or any on-site content for the Houston business (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Invisible in Search', value: 'Does not appear anywhere in Google results for \'fire protection contractor Houston TX\' — the primary commercial keyword (confirmed: rankings search)', status: 'critical' },
+    ],
+    impact: {
+      intro: 'Houston has 2.3 million residents and generates thousands of fire protection searches monthly. Omega\'s domain redirects to an LA competitor, meaning every search-driven inquiry goes elsewhere.',
+      volume: '3,200+', volumeNote: 'Monthly fire protection searches in Houston metro',
+      leads: '8-18', leadsNote: 'Estimated monthly leads lost to competitors with websites',
+      timeline: '7-14 days', timelineNote: 'DNS redirect is a same-day fix if they control the registrar',
+    },
+    fixes: [
+      { letter: 'A', title: 'Reclaim the domain from the redirect', body: 'The 301 redirect to kordfire.com is either a DNS misconfiguration or compromised domain. Priority one is confirming registrar access and removing the redirect.' },
+      { letter: 'B', title: 'Build a minimal functioning site', body: 'Even a 3-page site with Houston address, phone, services, and LocalBusiness schema restores search eligibility immediately.' },
+      { letter: 'C', title: 'Align directory listings to the new site', body: 'BlueBook, Yelp, LinkedIn, and Manta already have Omega listings — ensure NAP consistency and point all to the rebuilt URL.' },
+    ],
+  },
+
+  'Action Fire Protection LLC': {
+    searchQuery: 'fire protection contractor Tulsa OK',
+    googlePage: 'Page 1',
+    score: { website: 5, seo: 4, total: 9 },
+    primaryFinding: 'The site has functioning schema and Oklahoma state licenses but only 3 indexed pages — no blog, no geo-landing pages, and service pages with under 250 words each.',
+    issues: [
+      { label: 'Thin Service Pages', value: 'Fire Suppression page contains approximately 200-250 words — well below 500-word competitive threshold (confirmed: service page fetch)', status: 'critical' },
+      { label: 'No Blog', value: '/blog returns 404 — no articles or educational content exists (confirmed: blog fetch)', status: 'critical' },
+      { label: 'Minimal Indexed Pages', value: 'site:actionfireteam.com returns only 3 real content pages — no alarm, extinguisher, or individual service pages indexed (confirmed: site: search)', status: 'critical' },
+      { label: 'Missing Meta Description', value: 'Meta description not confirmed present from homepage fetch despite schema presence (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Tulsa has 400,000+ residents and growing commercial construction. Action Fire holds Page 1 but with only 3 indexed pages — one content competitor could push them off.',
+      volume: '800', volumeNote: 'Monthly fire protection searches in Tulsa metro',
+      leads: '4-10', leadsNote: 'Estimated monthly leads at risk from thin content',
+      timeline: '30-45 days', timelineNote: 'Content expansion on existing infrastructure',
+    },
+    fixes: [
+      { letter: 'A', title: 'Expand service pages to 600+ words each', body: 'Fire Suppression, Fire Alarms, Extinguishers, and Fire Watch each need standalone pages with NFPA code references and Oklahoma-specific language.' },
+      { letter: 'B', title: 'Launch a blog with NFPA and inspection FAQs', body: 'Their Oklahoma state licenses give them authority — they need to publish it. Target \'fire sprinkler inspection requirements Oklahoma\' and similar.' },
+      { letter: 'C', title: 'Add staff certifications page', body: 'No NICET certifications mentioned anywhere. A credentials page with license numbers differentiates them from national chains.' },
+    ],
+  },
+
+  'Kodiak Fire Protection, Inc.': {
+    searchQuery: 'fire protection contractor Allen TX',
+    googlePage: 'Page 1',
+    score: { website: 8, seo: 7, total: 15 },
+    primaryFinding: 'Kodiak has the strongest credential stack — TX state licenses, NICET affiliation, veteran-owned — but the \'Kodiak 411\' blog section returns a 404, leaving them with no content engine to compound rankings.',
+    issues: [
+      { label: 'Blog Returns 404', value: 'The \'Kodiak 411\' section is linked in main navigation but returns a 404 error — broken nav link signals neglect (confirmed: blog fetch)', status: 'critical' },
+      { label: 'Missing Meta Description', value: 'Meta description absent from homepage despite full schema presence (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'Staff Page Missing Certifications', value: 'Staff page lists 13 employees by name and title only — no NICET levels, no individual license numbers (confirmed: staff page fetch)', status: 'warning' },
+      { label: 'No DFW Geo Pages', value: 'site: search shows ~10 indexed pages, none targeting Dallas, Fort Worth, Plano, or Frisco — markets they serve (confirmed: site: search)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Allen sits in the DFW metro of 7.6M people. Kodiak dominates Allen but is invisible in adjacent cities where they do work.',
+      volume: '1,200', volumeNote: 'Monthly fire protection searches across Allen/Plano/DFW',
+      leads: '3-7', leadsNote: 'Leads lost in adjacent DFW markets',
+      timeline: '14-21 days', timelineNote: 'Fix blog, add 3-4 geo pages',
+    },
+    fixes: [
+      { letter: 'A', title: 'Fix the broken Kodiak 411 blog', body: 'A 404 on a nav-linked page is an active credibility and crawl problem. Restore it with DFW fire code content — their credential depth makes this easy.' },
+      { letter: 'B', title: 'Add NICET credentials to staff bios', body: '13 staff listed with no certifications shown. Adding NICET levels and license numbers turns a name list into a proof page.' },
+      { letter: 'C', title: 'Build city-specific landing pages for DFW', body: 'Pages targeting \'fire protection contractor Dallas TX,\' \'fire alarm inspection Plano TX\' would capture demand in adjacent ZIP codes.' },
+    ],
+  },
+
+  'Sonic Inspection Corporation': {
+    searchQuery: 'fire protection contractor Oklahoma City OK',
+    googlePage: 'Not Found',
+    score: { website: 6, seo: 5, total: 11 },
+    primaryFinding: 'Sonic has patented NFPA-approved inspection technology and serves DOD/DOE facilities, but the entire site is geo-agnostic — no Oklahoma City, no state language, no local signals.',
+    issues: [
+      { label: 'Zero Local SEO Signals', value: 'No mention of Oklahoma City or Oklahoma anywhere on the site. Phone uses a 303 (Denver) area code. No geo-targeted pages or local schema (confirmed: homepage fetch, service page fetch)', status: 'critical' },
+      { label: 'No Blog', value: 'Resources section is a single static glossary document — not a blog feed, zero chronological posts (confirmed: resources page fetch)', status: 'critical' },
+      { label: 'Minimal Indexed Pages', value: 'site:sonicinspection.com returns 6 pages total — brochure-tier footprint for a 22-year-old company (confirmed: site: search)', status: 'warning' },
+      { label: 'Invisible for Local Keyword', value: 'Does not appear for \'fire protection contractor Oklahoma City OK\' — RapidFire and Central Fire dominate (confirmed: rankings search)', status: 'critical' },
+    ],
+    impact: {
+      intro: 'Oklahoma City has 700,000+ residents. Sonic\'s patented ultrasonic inspection technology is industry-leading but invisible locally — every OKC search goes to generic competitors.',
+      volume: '700', volumeNote: 'Monthly fire protection searches in OKC metro',
+      leads: '3-8', leadsNote: 'Estimated monthly leads lost to local competitors',
+      timeline: '45-60 days', timelineNote: 'Geo content + local schema + blog infrastructure',
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Oklahoma City geo-signals across all pages', body: 'Update LocalBusiness schema with OKC address, add local phone number, create a geo-targeted landing page. Their patented technology is the story — it just needs a local container.' },
+      { letter: 'B', title: 'Create industry-served hub with case studies', body: 'DOD, hospitals, data centers are named clients. Individual pages per vertical with NFPA 25 citations would generate SEO content and sales tools.' },
+      { letter: 'C', title: 'Convert resources glossary into a blog', body: 'The existing glossary shows real expertise. Split into 8-12 individual posts targeting specific NFPA terms their buyers search.' },
+    ],
+  },
+
+  'FireWise Texas LLC': {
+    searchQuery: 'fire protection contractor Weatherford TX',
+    googlePage: 'Page 1',
+    score: { website: 6, seo: 6, total: 12 },
+    primaryFinding: 'FireWise has LocalBusiness schema and geo-landing pages but every page buries their NICET certifications behind generic language, and no blog exists to capture long-tail DFW searches.',
+    issues: [
+      { label: 'No Blog', value: '/blog returns 404 — no articles, news, or educational content exists (confirmed: blog fetch)', status: 'critical' },
+      { label: 'License Numbers Not Published', value: 'Site mentions \'NICET certified\' but publishes zero Texas state fire protection license numbers (confirmed: about page fetch, service page fetch)', status: 'warning' },
+      { label: 'Title Tag Missing', value: 'Homepage fetch did not return an explicit title tag — only the H1 \'Welcome to FireWise Texas LLC\' (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Meta Description Absent', value: 'No meta description returned from homepage fetch — Google generates its own snippet (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Weatherford sits in the Fort Worth corridor with 600,000+ residents in the immediate service area. FireWise ranks locally but has no content engine to grow.',
+      volume: '400', volumeNote: 'Monthly fire protection searches in Weatherford/Fort Worth corridor',
+      leads: '3-7', leadsNote: 'Estimated monthly leads lost to content-rich competitors',
+      timeline: '21-30 days', timelineNote: 'Fix title/meta immediately, blog infrastructure 30 days',
+    },
+    fixes: [
+      { letter: 'A', title: 'Fix title tag and meta description', body: 'These are 30-minute fixes that control how the site appears in every Google result. A targeted title like \'Fire Sprinkler & Alarm Contractor | Fort Worth, Weatherford, DFW | FireWise Texas\' would improve CTR immediately.' },
+      { letter: 'B', title: 'Publish Texas state license numbers', body: 'NICET is mentioned but zero license numbers published. Texas contractors must hold TDLR licenses — publishing them converts badge claims into verifiable credentials.' },
+      { letter: 'C', title: 'Build content targeting DFW searches', body: 'Geo-landing pages exist but need supporting blog content. Four posts on Texas fire codes and NFPA requirements would double their keyword footprint.' },
+    ],
+  },
+
+  'Reed Fire Protection Engineering, LLC': {
+    searchQuery: 'fire protection contractor Dallas TX',
+    googlePage: 'Not Found',
+    score: { website: 7, seo: 3, total: 10 },
+    primaryFinding: 'Reed has a licensed PE with 47 years of experience, NICET IV staff, and plan review authority for 30+ Texas cities — but the site has only 2 indexed pages, making it invisible in search.',
+    issues: [
+      { label: 'Only 2 Indexed Pages', value: 'site:reedfire.com returns only 2 pages (homepage and meet-us) — a 29-year-old firm with 8+ service categories has the footprint of a new micro-business (confirmed: site: search)', status: 'critical' },
+      { label: 'No Meta Description', value: 'Meta description absent from homepage — combined with 2 indexed pages, the firm is essentially a ghost to Google (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'No Blog', value: '/blog returns 404 — no articles, resources, or educational content (confirmed: blog fetch)', status: 'critical' },
+      { label: 'Not Ranking for Primary Keyword', value: '\'fire protection contractor Dallas TX\' returns zero results for reedfire.com — despite serving 30+ Texas cities with a PE license (confirmed: rankings search)', status: 'critical' },
+    ],
+    impact: {
+      intro: 'Dallas has 1.3M residents and is a massive commercial construction market. Reed\'s PE license and 47-year track record should command premium positioning — instead they have 2 indexed pages.',
+      volume: '2,500', volumeNote: 'Monthly fire protection searches across Dallas/DFW',
+      leads: '6-15', leadsNote: 'Estimated monthly leads lost — engineering engagements are high-value',
+      timeline: '60-90 days', timelineNote: 'Building content depth from near-zero baseline',
+    },
+    fixes: [
+      { letter: 'A', title: 'Build out service pages for each discipline', body: '8 plan review categories and 4 service types listed in nav — none have indexed pages. \'Fire Sprinkler System Design Dallas TX\' and \'Fire Alarm Plan Review Texas\' practically write themselves.' },
+      { letter: 'B', title: 'Create credential and projects showcase', body: 'Albert Reed\'s 47-year PE career and Darren\'s NICET IV are the strongest credentials in this audit. A dedicated team page with bios, license numbers, and project examples would convert visitors.' },
+      { letter: 'C', title: 'Publish technical authority content', body: '\'Fire Protection Engineering vs. Contractor: Which Do You Need?\' and \'Plan Review for Texas High-Rise Buildings\' position Reed as the expert while capturing architect and developer searches.' },
+    ],
+  },
+
+  'United Fire Protection LLC': {
+    searchQuery: 'fire protection contractor Irving TX',
+    googlePage: 'Not Found',
+    score: { website: 5, seo: 3, total: 8 },
+    primaryFinding: 'The site has zero visible trust signals — no NICET certifications, no Texas license numbers, no team bios — despite being BBB accredited since 2017 and women-owned.',
+    issues: [
+      { label: 'No Blog', value: '/blog returns 404 — no content exists (confirmed: blog fetch)', status: 'critical' },
+      { label: 'Invisible in Search', value: 'unitedfiretx.com does not appear in first 30 results for \'fire protection contractor Irving TX\' (confirmed: rankings search)', status: 'critical' },
+      { label: 'No Trust Signals on Website', value: 'About page and homepage show no certifications, license numbers, or team bios (confirmed: homepage fetch, about page fetch)', status: 'critical' },
+      { label: 'Thin Index', value: 'site:unitedfiretx.com returns only 5 pages — brochure-level footprint (confirmed: site: search)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Irving is part of the DFW metro with 7.6M people. United Fire\'s women-owned status and BBB accreditation are competitive differentiators in commercial bidding — but invisible online.',
+      volume: '1,200', volumeNote: 'Monthly fire protection searches in Irving/DFW',
+      leads: '3-7', leadsNote: 'Estimated monthly leads lost',
+      timeline: '60-90 days', timelineNote: 'Requires content build and credential surfacing',
+    },
+    fixes: [
+      { letter: 'A', title: 'Surface WOB and BBB credentials on homepage', body: 'Women-owned business status and BBB accreditation since 2017 are competitive advantages in DFW commercial bidding — every GC looks for these, and they\'re invisible.' },
+      { letter: 'B', title: 'Publish 4 geo-targeted service pages', body: 'With only 5 indexed pages, Google has no reason to rank them. City-specific pages with local schema would dramatically increase crawlable surface.' },
+      { letter: 'C', title: 'Launch a blog targeting buyer-intent queries', body: '\'Fire alarm inspection requirements Texas\' and \'NFPA 72 compliance DFW\' capture commercial property managers actively searching.' },
+    ],
+  },
+
+  'WW Fire & Security': {
+    searchQuery: 'fire protection contractor Dallas TX',
+    googlePage: 'Not Found',
+    score: { website: 7, seo: 6, total: 13 },
+    primaryFinding: 'Despite rich schema, Fortune 500 client logos, and a well-structured service matrix, the site has no blog and the word \'Dallas\' is entirely absent from service pages — headquartered in Royse City with no Dallas geo-targeting.',
+    issues: [
+      { label: 'No Blog', value: '/blog returns 404 — no editorial content exists (confirmed: blog fetch)', status: 'critical' },
+      { label: 'Zero Dallas Geo-Targeting', value: 'The word \'Dallas\' does not appear in service page content. Company address is Royse City, TX — no Dallas-specific landing page exists (confirmed: services page fetch)', status: 'critical' },
+      { label: 'No NICET Certifications Displayed', value: 'Only credential shown is Private Security License B29720001 — no NICET levels for any technician (confirmed: about page fetch)', status: 'warning' },
+      { label: 'Thin Service Hub Page', value: 'Main /services page has single-sentence descriptions per service before \'Learn More\' links — not substantive (confirmed: services page fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Dallas has 1.3M residents. WW Fire protects $3B+ in client assets including UT Southwestern and L3Harris but ranks nowhere for Dallas fire protection searches.',
+      volume: '2,200', volumeNote: 'Monthly fire protection searches in Dallas/DFW',
+      leads: '5-10', leadsNote: 'Estimated monthly leads lost to Page 1 competitors',
+      timeline: '45-75 days', timelineNote: 'Geo page creation + blog launch',
+    },
+    fixes: [
+      { letter: 'A', title: 'Create a Dallas Fire Protection Services landing page', body: 'The firm serves Dallas but the domain reads as Royse City — a geo-targeted page with Dallas address and local schema would unlock the city\'s search volume.' },
+      { letter: 'B', title: 'Display NICET certification levels for technicians', body: 'In commercial fire protection, NICET is the primary trust credential. Competitors who list NICET levels win the click.' },
+      { letter: 'C', title: 'Launch a blog targeting industry verticals', body: 'With clients in healthcare, government, and data centers, WW has material for \'fire suppression requirements for server rooms\' and similar content.' },
+    ],
+  },
+
+  'Spartan Fire Protection': {
+    searchQuery: 'fire protection contractor Houston TX',
+    googlePage: 'Not Found',
+    score: { website: 7, seo: 7, total: 14 },
+    primaryFinding: 'Spartan has the strongest SEO foundation — geo-targeted neighborhood pages, a blog article, rich schema, and NICET-certified technicians — but none of the NICET credentials appear on the website itself.',
+    issues: [
+      { label: 'NICET Certifications Not on Website', value: 'Homepage and service pages show no NICET mention — credentials confirmed only via third-party directories like Yelp (confirmed: homepage fetch; NICET confirmed via Yelp)', status: 'critical' },
+      { label: 'Nascent Blog — 1 Post', value: 'site: search shows one blog article (\'How Do Fire Alarm Systems Actually Work?\') with no publish date confirmed (confirmed: site: search; blog fetch returned 403)', status: 'warning' },
+      { label: 'Contact Info Not on Homepage', value: 'Phone (832-904-9086) and address confirmed only via third-party directories, not in homepage content (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'Not Ranking for Primary Keyword', value: '\'fire protection contractor Houston TX\' returns Impact Fire, Kauffman, WSFP — Spartan not in top 10 organic (confirmed: rankings search)', status: 'critical' },
+    ],
+    impact: {
+      intro: 'Houston has 2.3M residents and is one of the largest fire protection markets in the US. Spartan has the right infrastructure but needs to surface credentials and scale content to compete.',
+      volume: '3,200', volumeNote: 'Monthly fire protection searches in Houston metro',
+      leads: '4-9', leadsNote: 'Estimated monthly leads lost to better-visible competitors',
+      timeline: '30-60 days', timelineNote: 'Strongest foundation — fastest path to improvement',
+    },
+    fixes: [
+      { letter: 'A', title: 'Move NICET certifications to homepage above the fold', body: 'NICET Levels I-III are a tier-one commercial trust signal and completely invisible on the site. This alone differentiates Spartan from most local competitors.' },
+      { letter: 'B', title: 'Scale blog from 1 to 12+ articles with Houston fire code content', body: 'The geo-targeted neighborhood pages show they understand local SEO — a matching content library would compound that investment.' },
+      { letter: 'C', title: 'Add service schema with NICET credential markup', body: 'The schema foundation is there — extending it with credential markup and service-specific structured data accelerates ranking for high-intent queries.' },
+    ],
+  },
+
+  'Chief Facility Defense': {
+    searchQuery: 'fire protection contractor Atlanta GA',
+    googlePage: 'Not Found',
+    score: { website: 6, seo: 5, total: 11 },
+    primaryFinding: 'Chief Facility Defense\'s strongest differentiator — firefighter-owned, Veteran Owned Small Business (VOSB) certified — is buried deep in the about page and absent from the homepage.',
+    issues: [
+      { label: 'No Blog', value: '/blog returns 404 — no content links in any nav (confirmed: blog fetch)', status: 'critical' },
+      { label: 'VOSB Credentials Hidden', value: 'Homepage H1 is generic \'PROFESSIONAL FIRE AND LIFE SAFETY PROTECTION.\' VOSB status confirmed only in search snippet, not homepage content (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Thin Service Pages', value: 'Services page provides only 1-2 sentence descriptions per service — no technical depth, no geo-targeting (confirmed: services page fetch)', status: 'warning' },
+      { label: 'No NICET Certifications Displayed', value: 'Only \'certified technicians\' vaguely stated — no NICET levels or individual credentials shown (confirmed: homepage fetch, services page fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Atlanta has 500,000+ residents and 6M+ metro. CFD\'s firefighter-owned, VOSB story is the only message in this market that cannot be copied by national chains — and it\'s buried.',
+      volume: '1,800', volumeNote: 'Monthly fire protection searches in Atlanta metro',
+      leads: '4-8', leadsNote: 'Estimated monthly leads lost',
+      timeline: '45-75 days', timelineNote: 'Homepage restructure + content build',
+    },
+    fixes: [
+      { letter: 'A', title: 'Restructure homepage around VOSB + firefighter-owned story', body: '\'Firefighter-Owned. Veteran Certified. Atlanta\'s Trusted Fire Protection Partner.\' — this is the only message no competitor can copy, and it\'s buried.' },
+      { letter: 'B', title: 'Add NICET certification levels on service pages', body: 'With 18 employees, CFD almost certainly has NICET-certified staff — publishing levels would convert more commercial RFQ inquiries.' },
+      { letter: 'C', title: 'Build dedicated geo-service pages for Atlanta submarkets', body: 'Zero geo-targeted content — a market the size of metro Atlanta rewards contractors who create neighborhood-level service pages.' },
+    ],
+  },
+
+  'Fire Design Concepts, LLC': {
+    searchQuery: 'fire protection design consultant Atlanta GA',
+    googlePage: 'Not Found',
+    score: { website: 2, seo: 1, total: 3 },
+    primaryFinding: 'The website contains live placeholder contact information — a fake Australian address, non-functional phone number, and example.com email — meaning no prospect can actually contact the company through the website.',
+    issues: [
+      { label: 'Placeholder Contact Info Live', value: 'Phone shows \'+23 345 322 233,\' address shows \'Victoria 8007 Australia,\' email shows \'geral@example.com\' — all non-functional (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Only 1 Page Indexed', value: 'site:firedesignconcepts.com returns exactly 1 result — homepage only (confirmed: site: search)', status: 'critical' },
+      { label: 'No Meta Description', value: 'Meta description absent from homepage (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'No Blog or Content Depth', value: '/blog returns 404. Only 5 nav pages exist. Site is a digital brochure with no indexable content (confirmed: blog fetch, site: search)', status: 'critical' },
+    ],
+    impact: {
+      intro: 'Atlanta\'s fire protection design market serves developers, architects, and GCs across a 6M metro. Ray Vance\'s 38+ years and GFSA board role should command visibility — instead the website has fake contact info.',
+      volume: '400', volumeNote: 'Monthly fire protection design/plan review searches in Atlanta',
+      leads: '5-10', leadsNote: 'High-value consulting engagements lost entirely',
+      timeline: '14-30 days', timelineNote: 'Contact info fix is same-day; SEO build is 90+ days',
+    },
+    fixes: [
+      { letter: 'A', title: 'Replace placeholder contact info immediately', body: 'This is a revenue emergency — every prospect who lands on the site hits a dead end. Real phone (678) 478-2741 and Buford, GA address must go live today.' },
+      { letter: 'B', title: 'Optimize title tags for fire protection design review Atlanta', body: 'Current title has no geo modifier. A 5-minute fix that opens up local search visibility for plan review queries.' },
+      { letter: 'C', title: 'Create 3-4 service pages with schema', body: 'Hydraulic Analysis, 3rd Party Plan Review, and Fire Protection Consulting each need dedicated pages with LocalBusiness schema and Ray Vance\'s credentials.' },
+    ],
+  },
+
+  'Allstar Fire Protection': {
+    searchQuery: 'fire protection contractor Mount Juliet TN',
+    googlePage: 'Not Found',
+    score: { website: 4, seo: 2, total: 6 },
+    primaryFinding: 'The allstarfireprotection.com domain 301 redirects to a Pye-Barker landing page — fully rebranded to the parent company, stripping all original Allstar identity, local numbers, and Mount Juliet content.',
+    issues: [
+      { label: 'Domain Redirects to Parent Company', value: 'allstarfireprotection.com returns a 301 redirect to pyebarkerfs.com/allstar-fire-protection/ — no Allstar-branded content indexed under original domain (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'No Blog or Allstar Content', value: '/blog redirects to Pye-Barker\'s global news section — no Allstar-specific content exists (confirmed: blog fetch)', status: 'critical' },
+      { label: 'Zero Mount Juliet Presence', value: '\'fire protection contractor Mount Juliet TN\' returns Jarrett Fire, Atlas Fire, Servant Fire — Allstar/Pye-Barker does not appear (confirmed: rankings search)', status: 'critical' },
+      { label: 'Only 5 Redirected Pages', value: 'site:allstarfireprotection.com returns 5 pages, all redirecting to Pye-Barker (confirmed: site: search)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Mount Juliet is part of the Nashville metro with 2M+ people. Allstar operated independently since 1990 but the Pye-Barker acquisition eliminated their local web presence.',
+      volume: '250', volumeNote: 'Monthly searches in Mount Juliet; Nashville metro ~1,400/mo',
+      leads: '3-6', leadsNote: 'Leads lost in Mount Juliet; higher in Nashville metro',
+      timeline: '90-120 days', timelineNote: 'Requires rebuilding local presence under Pye-Barker infrastructure',
+    },
+    fixes: [
+      { letter: 'A', title: 'Build a Mount Juliet location page under Pye-Barker', body: 'The Mount Juliet market is unserved — a geo page with local phone, address, and service descriptions would capture zero-competition local searches.' },
+      { letter: 'B', title: 'Establish Google Business Profile for Mount Juliet', body: 'The redirect eliminated local pack visibility. A GBP with 35-year history and Tyco partnership would compete for map pack placement.' },
+      { letter: 'C', title: 'Redirect domain equity to proper Pye-Barker location page', body: 'All 301s should pass to a structured location page — currently feeding a generic landing page with no local signals.' },
+    ],
+  },
+
+  'Fire Protection Systems Incorporated': {
+    searchQuery: 'fire protection contractor Nashville TN',
+    googlePage: 'Page 2',
+    score: { website: 3, seo: 2, total: 5 },
+    primaryFinding: 'The site is a legacy ColdFusion (.cfm) build with ~5 indexed pages, zero schema, no meta description, and ~180 words of service content — structurally invisible to modern search engines despite 50 years in business.',
+    issues: [
+      { label: 'No Schema Markup', value: 'No application/ld+json, no microdata, no LocalBusiness entity found on any page (confirmed: homepage fetch, capabilities page fetch)', status: 'critical' },
+      { label: 'Title Tag is Mailing Address', value: 'Title reads \'Fire Protection Systems >> 22 Industrial Park Drive | Hendersonville, TN 37075 | 615.822.3600 | FAX 615.822.3427 >> Home\' — wastes primary SERP real estate (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'No Blog or Content', value: 'No blog, no articles, no resources section found across any page — zero content marketing (confirmed: homepage fetch, site: search)', status: 'critical' },
+      { label: 'Only 5 Indexed Pages', value: 'site:fireprotectionsys.com returns 5 pages (home, about, portfolio, contacts, contact2) — brochure footprint (confirmed: site: search)', status: 'critical' },
+    ],
+    impact: {
+      intro: 'Nashville has 700,000+ residents and is one of the fastest-growing US metros. A 50-year-old firm with BMW, Nissan, and AT&T in its portfolio should dominate — instead it has 5 indexed pages on a ColdFusion site.',
+      volume: '1,900', volumeNote: 'Monthly fire protection searches in Nashville metro',
+      leads: '8-15', leadsNote: 'Leads lost to Page 1 competitors like Jarrett Fire',
+      timeline: '90-120 days', timelineNote: 'Requires platform migration from ColdFusion + content build',
+    },
+    fixes: [
+      { letter: 'A', title: 'Rebuild site on modern CMS with schema', body: 'The .cfm ColdFusion stack cannot support JSON-LD. Without LocalBusiness schema, Google cannot confirm city, service radius, or category — a direct ranking disqualifier.' },
+      { letter: 'B', title: 'Write 10 keyword-targeted service + location pages', body: '50 years of enterprise clients (BMW, Nissan, AT&T) and 15-state reach — a single 180-word capabilities page cannot compete with Jarrett Fire\'s indexed content.' },
+      { letter: 'C', title: 'Rewrite title tags and add meta descriptions', body: 'Every page uses the company address as the title tag — wasting the SERP element that should contain \'fire sprinkler contractor Nashville TN.\'' },
+    ],
+  },
+
+  'Speedy Fire Protection': {
+    searchQuery: 'fire protection contractor Miami FL',
+    googlePage: 'Page 1',
+    score: { website: 7, seo: 8, total: 15 },
+    primaryFinding: 'Speedy has the strongest digital infrastructure in this cohort — FAQPage schema, active blog updated March 2026, geo-targeted Miami content — but is listed as Tampa in the source data when they are actually a Miami-based firm with zero Tampa presence.',
+    issues: [
+      { label: 'Geographic Data Mismatch', value: 'Apollo CSV lists Tampa, FL but all schema, content, and directories confirm Miami (2385 NW 70th Ave, Miami FL 33122) — firm has no Tampa presence (confirmed: homepage fetch, site: search)', status: 'warning' },
+      { label: 'No Tampa Market Coverage', value: 'Zero Tampa-specific content, pages, or schema geo-targeting — entirely absent from Tampa fire protection searches (confirmed: rankings search for Tampa)', status: 'warning' },
+      { label: 'Meta Description Unconfirmed', value: 'Title confirmed as \'Fire Sprinkler Services in Miami, FL | Speedy Fire Protection\' but meta description not extracted from fetch (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'Single Market Dependency', value: 'All content geo-targets Miami-Dade, Broward, Palm Beach — no Gulf Coast or Tampa expansion content exists (confirmed: blog fetch, service page fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Speedy is well-positioned in Miami but missing the Tampa market entirely. If they want to expand to Tampa (2,400+ monthly searches), they need dedicated geo-content.',
+      volume: '2,400', volumeNote: 'Monthly fire protection searches in Miami + potential Tampa expansion',
+      leads: '2-5', leadsNote: 'Current Miami leads are strong; Tampa leads are 0',
+      timeline: '30-45 days', timelineNote: 'Add Tampa geo pages to existing strong infrastructure',
+    },
+    fixes: [
+      { letter: 'A', title: 'Create Tampa-specific landing pages', body: 'To capture Tampa, Speedy needs /fire-sprinkler-tampa and /fire-sprinkler-inspection-tampa pages with LocalBusiness schema geo-tagged to Tampa.' },
+      { letter: 'B', title: 'Add Tampa to schema service area', body: 'Existing JSON-LD is hardcoded to Miami — expanding schema to include Tampa is the fastest signal for Google\'s local algorithm.' },
+      { letter: 'C', title: 'Publish Tampa-geo blog content', body: 'The active blog (14+ posts, updated March 2026) is a major asset. Redirecting 2-3 posts per quarter to Tampa fire codes would build authority in the new market.' },
+    ],
+  },
+
+  'Jacob-Dietz inc.': {
+    searchQuery: 'fire protection contractor Indianapolis IN',
+    googlePage: 'Page 1',
+    score: { website: 5, seo: 4, total: 9 },
+    primaryFinding: 'Jacob-Dietz holds a Page 1 ranking but every service page is under 400 words with no schema and no blog — making them extremely vulnerable to content-driven competitors pushing them off.',
+    issues: [
+      { label: 'No Schema Markup', value: 'No JSON-LD, no LocalBusiness, no Service schema detected on homepage or service pages (confirmed: homepage fetch, service page fetch)', status: 'critical' },
+      { label: 'Missing Meta Description', value: 'No meta description tag found on homepage (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'No Blog or Content', value: 'No blog, articles, or resources section exists — About page shows \'Coming Soon!\' for team bios (confirmed: homepage fetch, site: search)', status: 'critical' },
+      { label: 'Thin Service Pages', value: 'Primary service page is ~350-400 words — below 500-word competitive threshold, no FAQs or project examples (confirmed: service page fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Indianapolis has 900,000+ residents. Jacob-Dietz\'s Page 1 position is fragile — held without schema or content depth, one competitor investing in content could displace them.',
+      volume: '1,600', volumeNote: 'Monthly fire protection searches in Indianapolis metro',
+      leads: '5-10', leadsNote: 'Leads at risk as competitors build content depth',
+      timeline: '60-90 days', timelineNote: 'Schema + content expansion; ranking protection achievable faster',
+    },
+    fixes: [
+      { letter: 'A', title: 'Deploy LocalBusiness + Service schema immediately', body: 'Page 1 without schema is a fragile advantage. Adding JSON-LD for LocalBusiness and each service solidifies the ranking and activates local pack eligibility.' },
+      { letter: 'B', title: 'Expand service pages past 700 words with Indianapolis content', body: 'Each of 6 service pages reads as a placeholder. Adding Indianapolis compliance references and project examples separates them from thin competitors.' },
+      { letter: 'C', title: 'Launch a blog with Indianapolis fire code articles', body: 'Kidde and Badger distributor authority gives them credibility — publishing inspection guides and code-change articles builds topical authority Koorsen\'s local page can\'t replicate.' },
+    ],
+  },
+
+  'Pass Fire Protection': {
+    searchQuery: 'fire protection contractor Phoenix AZ',
+    googlePage: 'Not Found',
+    score: { website: 2, seo: 1, total: 3 },
+    primaryFinding: 'Built on Wix with fully client-rendered JavaScript, the site is invisible to search crawlers — no extractable title tag, no schema, no readable content, and indexed pages include a Wix template placeholder titled \'I\'m a product.\'',
+    issues: [
+      { label: 'Wix JavaScript Rendering Blocks Crawlers', value: 'All content loads client-side — Google cannot reliably index text, headings, or schema. No readable H1, title, or meta description extractable (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'No Schema Markup', value: 'No application/ld+json detected — site structure prevents any structured data from being crawlable (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Template Placeholder Indexed', value: 'site:passfireprotection.com includes \'/product-page/i-m-a-product-7\' — a Wix template artifact signaling incomplete site (confirmed: site: search)', status: 'critical' },
+      { label: 'No Blog or Content', value: 'No blog, no articles — only pages indexed are home, contact, careers, store, and Wix placeholder (confirmed: site: search)', status: 'critical' },
+    ],
+    impact: {
+      intro: 'Phoenix has 1.6M residents and is the highest-volume fire protection market in this batch at 3,200+ monthly searches. Pass Fire\'s 35+ years of experience are completely invisible behind a broken Wix site.',
+      volume: '3,200', volumeNote: 'Monthly fire protection searches in Phoenix metro — highest in batch',
+      leads: '15-25', leadsNote: 'Leads lost entirely due to non-existent ranking',
+      timeline: '120-150 days', timelineNote: 'Requires platform migration + full content build',
+    },
+    fixes: [
+      { letter: 'A', title: 'Migrate off Wix to a server-rendered CMS', body: 'Wix JavaScript rendering is the root cause of every SEO failure. Schema can\'t deploy, content can\'t index. No amount of content fixes a crawl-blocked foundation.' },
+      { letter: 'B', title: 'Remove Wix store and placeholder pages', body: 'Indexed pages include \'I\'m a product\' — a template artifact signaling to Google this is an incomplete site, potentially triggering quality penalties.' },
+      { letter: 'C', title: 'Build geo-targeted Phoenix service pages with schema', body: 'After migration, 35+ years of experience and AMA membership need to appear in crawlable text. A single well-structured Phoenix page would outperform the current blank-slate index.' },
+    ],
+  },
+
+  'City Fire and Safety, Inc.': {
+    searchQuery: 'fire protection contractor Charlotte NC',
+    googlePage: 'Not Found',
+    score: { website: 7, seo: 7, total: 14 },
+    primaryFinding: 'City Fire has the strongest content foundation — NICET certification, 40 years in business, a 7-page blog, geo pages, and ProfessionalService schema — but its Gastonia, NC headquarters creates a geographic identity conflict suppressing Charlotte local pack eligibility.',
+    issues: [
+      { label: 'Missing Meta Description', value: 'No meta description found on homepage. Title reads \'Fire Protection Products & Services in Southeast U.S.\' — geographically vague (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Address Mismatch for Charlotte Pack', value: 'Business address is Gastonia, NC 28052 — not Charlotte. Google Business Profile likely resolves to Gastonia, creating local pack radius mismatch (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Blog Posts Have No Dates', value: 'Blog exists (~19-21 posts) but no publish dates visible — impossible to verify recency (confirmed: blog fetch)', status: 'warning' },
+      { label: 'Title Tag Too Broad', value: '\'Fire Protection Products & Services in Southeast U.S.\' suppresses Charlotte-specific keyword relevance on the most-weighted SEO element (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Charlotte has 900,000+ residents and 2.7M metro. City Fire has 40 years and NICET certification but the Gastonia address and broad title tag keep them off Charlotte\'s Page 1.',
+      volume: '2,100', volumeNote: 'Monthly fire protection searches in Charlotte metro',
+      leads: '8-14', leadsNote: 'Leads lost to Eagle Fire and Impact Fire who hold Charlotte addresses',
+      timeline: '45-75 days', timelineNote: 'Title tag and meta fixes are fast; local pack recovery depends on GBP',
+    },
+    fixes: [
+      { letter: 'A', title: 'Rewrite homepage title and meta for Charlotte', body: '\'Fire Protection Products & Services in Southeast U.S.\' competes with the entire region. Replace with \'Fire Protection Contractor | Charlotte, NC | City Fire & Safety\' — a 30-minute fix with direct ranking impact.' },
+      { letter: 'B', title: 'Surface NICET and 40-year tenure on homepage', body: 'These are the most trust-differentiating signals in this market and they\'re buried in interior pages. They should appear in the H1 zone and title tag.' },
+      { letter: 'C', title: 'Add publish dates to blog posts', body: 'The blog has 7 pages of content but undated — signals staleness to Google and visitors. Adding dates and publishing monthly on Charlotte fire topics reinforces local authority.' },
+    ],
+  },
+
+  'Oakley Fire, LLC': {
+    searchQuery: 'fire protection contractor Richmond VA',
+    googlePage: 'Not Found',
+    score: { website: 6, seo: 3, total: 9 },
+    primaryFinding: 'Oakley Fire has exceptional credentials — NICET-certified, AFSA/NFPA/NAFED member, 400+ monthly compliance jobs — and a polished site, but only 2 pages are indexed by Google, making them invisible.',
+    issues: [
+      { label: 'Only 2 Pages Indexed', value: 'site:oakleyfire.com returns 2 pages (homepage + sitemap) — with 12+ navigation pages, near-zero indexation is a technical emergency (confirmed: site: search)', status: 'critical' },
+      { label: 'No Blog Content', value: '\'Fire Protection Resources\' section is YouTube Shorts carousel only — no blog posts, no timestamped articles, no blog URLs indexed (confirmed: homepage fetch, site: search)', status: 'critical' },
+      { label: 'Limited Schema', value: 'Organization/Person schema present but no LocalBusiness, no Service schema, no Richmond geo-coordinates or service area data (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'Not Ranking for Primary Keyword', value: '\'fire protection contractor Richmond VA\' returns Veterans Fire Protection and Pye-Barker — Oakley absent despite NICET credentials and 400+ monthly jobs (confirmed: rankings search)', status: 'critical' },
+    ],
+    impact: {
+      intro: 'Richmond has 230,000+ residents and 1.3M metro. Oakley\'s credential stack is the strongest of all 18 firms — NICET, AFSA, NAFED, 400+ monthly NFPA jobs — but only 2 indexed pages means they might as well not have a website.',
+      volume: '1,400', volumeNote: 'Monthly fire protection searches in Richmond metro',
+      leads: '10-18', leadsNote: 'Disproportionately high loss given credential quality vs zero visibility',
+      timeline: '30-45 days', timelineNote: 'Fastest fix if indexation block is resolved; 60-90 days for ranking',
+    },
+    fixes: [
+      { letter: 'A', title: 'Diagnose and fix the indexation block', body: 'With 12+ nav pages and only 2 indexed, there\'s likely a robots.txt block, noindex tag, or crawl error. Google Search Console audit is the urgent first step — highest-leverage action in the entire batch.' },
+      { letter: 'B', title: 'Add LocalBusiness schema with Richmond geo-data', body: 'Existing schema is generic Organization/Person without Richmond coordinates. Full LocalBusiness schema with geo-lat/lon is required for local pack eligibility.' },
+      { letter: 'C', title: 'Convert YouTube resources into crawlable blog content', body: 'The Shorts carousel is not indexed content. Publishing 6-8 Richmond fire safety articles (NFPA 25 guides, Virginia SFM requirements) would immediately differentiate Oakley from thin competitors.' },
+    ],
+  },
+
 };
