@@ -3173,4 +3173,105 @@ window.__firmAuditData = {
     ],
   },
 
+  // ═══════════════════════════════════════════════
+  // COMMERCIAL GENERATOR SERVICE (4)
+  // Source: Apollo April 12
+  // ═══════════════════════════════════════════════
+
+  'Grasten Power Technologies': {
+    searchQuery: 'commercial generator service Conroe TX',
+    googlePage: 'Page 1',
+    score: { website: 7, seo: 4, total: 11 },
+    primaryFinding: 'Collaborative Services ranks #1 for "commercial generator service Conroe TX" with a geo-optimized title and 20+ indexed pages; Grasten has 16 years of history and the same LocalBusiness schema but only 10 indexed pages and a homepage title that drops the city name entirely.',
+    issues: [
+      { label: 'Homepage title tag has no city name', value: 'Title reads "Standby Generator Installation, Repair, and Dealer - Whole Home & Commercial" — Collaborative Services (ranking #1) leads with Conroe TX geo-terms as the first words in their title (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'No blog — zero organic content', value: 'site:grastengenerators.com returns 10 pages with no blog posts. ARK Generators (ranking #2) has generator education content indexed. Both outrank Grasten for informational generator queries. (confirmed: site: search)', status: 'critical' },
+      { label: '18 of 20+ service cities have no dedicated pages', value: 'site: search shows only Conroe and Houston service area pages indexed out of 20+ listed service cities. Every unserved city is a zero-content gap where competitors rank unchallenged. (confirmed: site: search + service areas nav)', status: 'warning' },
+      { label: 'No standalone commercial generator service page', value: 'Services page bundles residential and commercial together. Generators by Wired (ranking #5) has a dedicated /commercial page separating B2B buyer intent from residential. (confirmed: homepage fetch, nav structure)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'The Houston/Conroe metro generates ~300 monthly searches for "commercial generator service" alone. Collaborative Services captures most of that traffic with a geo-optimized title, while Grasten — the 2nd-highest-volume Generac dealer in Texas — gets position 4 with a generic title and no blog. An $21M generator company is leaving dozens of commercial installation inquiries on the table each month.',
+      volume: '300', volumeNote: 'Monthly searches for commercial generator service in Houston/Conroe metro',
+      leads: '15-25', leadsNote: 'Estimated commercial inquiries lost monthly due to title gap and zero blog content',
+      timeline: '30-60 days', timelineNote: 'Title and schema already in place — fastest gains from title fix + 5 blog posts',
+    },
+    fixes: [
+      { letter: 'A', title: 'Add "Conroe TX" to homepage title tag', body: 'The single fastest fix. Collaborative Services at #1 leads with geo-terms Grasten omits entirely. A title like "Commercial Generator Service Conroe TX | Grasten Power Technologies" closes the geo-signal gap in one edit — no new content required.' },
+      { letter: 'B', title: 'Launch a blog with 5 commercial generator articles', body: 'Grasten has zero blog content. ARK Generators and Generators by Wired both publish content that ranks for informational generator queries in the Houston market. Five posts covering generator sizing, maintenance schedules, and commercial installation would immediately enter Grasten into searches where they are currently invisible.' },
+      { letter: 'C', title: 'Build 5 city-specific service area pages', body: 'Only Conroe and Houston have dedicated pages out of 20+ service cities. The Woodlands, Katy, Spring, Pearland, and Sugar Land each generate their own generator searches. Five pages targeting the top-population markets would index within 30 days and open new local pack eligibility.' },
+    ],
+  },
+
+  'Ultimate Service Associates, LLC': {
+    searchQuery: 'generator maintenance service Tulsa OK',
+    googlePage: 'Not Found',
+    score: { website: 3, seo: 1, total: 4 },
+    primaryFinding: 'Clifford Power outranks Ultimate Service Associates for every Tulsa generator maintenance search — Clifford has EGSA-certified branding in their title, LocalBusiness schema on 8+ pages, and an active blog; USA\'s homepage has no title tag at all and zero schema across all 10 of its indexed pages.',
+    issues: [
+      { label: 'Homepage title tag is missing entirely', value: 'The homepage has no <title> element — zero SEO signal for any keyword. Clifford Power (ranking #1 for "generator maintenance service Tulsa OK") leads with the geo-optimized title "Generator Service & Maintenance - Tulsa, OK". (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'No schema on any page', value: 'Zero application/ld+json found on homepage or services page. Clifford Power has LocalBusiness + Service schema on every page of their site. Without schema, Google cannot confirm business type, location, or service categories. (confirmed: homepage fetch, services page fetch)', status: 'critical' },
+      { label: 'H1 reads "WHY CHOOSE USA" — zero keyword signal', value: 'Primary heading is purely promotional. Provides no ranking signal for "generator maintenance," "generator fleet management," or any search term a facility manager would use. Clifford Power\'s H1 is "Generator Service & Maintenance." (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'No blog — most recent newsletter from 2016', value: 'site:usa-svc.com returns 10 pages with no blog posts. The newsletters section shows content from 2016. Competitors publish technical articles that rank for industry searches USA is missing entirely. (confirmed: site: search, newsletters page)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Tulsa generates ~100 monthly searches for generator maintenance services, but Ultimate Service Associates\' real market is nationwide Fortune 500 facility managers — a high-intent, high-value audience that searches for "generator fleet management" and "nationwide generator maintenance service." With no title tag, no schema, and no blog, USA is invisible to both their local Tulsa market and the national enterprise buyers they actually serve. A company tracking 6,800 pieces of equipment for Fortune 500 clients has no digital proof of that credibility anywhere search engines can read.',
+      volume: '100', volumeNote: 'Monthly searches for generator maintenance in Tulsa; enterprise nationwide volume is additional',
+      leads: '8-15', leadsNote: 'Estimated enterprise inquiries lost monthly to competitors with functional SEO infrastructure',
+      timeline: '14-30 days', timelineNote: 'Title tag and schema are purely technical fixes — no new content required for initial gains',
+    },
+    fixes: [
+      { letter: 'A', title: 'Add a homepage title tag immediately', body: 'Missing a title tag is the most foundational SEO failure possible. It takes 15 minutes to add "Nationwide Generator Maintenance & Fleet Management | Ultimate Service Associates | Tulsa, OK" to the homepage. Clifford Power beats USA on this criterion by default today.' },
+      { letter: 'B', title: 'Add LocalBusiness + Service schema to all 10 pages', body: 'Clifford Power has schema across 8+ pages; USA has zero. Implementing schema confirms to Google that USA is a real generator service business with a Tulsa HQ and nationwide coverage. This is a code-only fix — no content writing required.' },
+      { letter: 'C', title: 'Replace the "WHY CHOOSE USA" H1 with a keyword-aligned heading', body: 'Rewrite the primary H1 to "Nationwide Generator Maintenance & Fleet Management Service" and add a subheading with EGSA certification and the 6,800-equipment stat. This surfaces the strongest trust signals immediately while closing the keyword gap.' },
+    ],
+  },
+
+  'Coastline Electric, Inc.': {
+    searchQuery: 'standby generator installation Smithfield RI',
+    googlePage: 'Page 1',
+    score: { website: 6, seo: 5, total: 11 },
+    primaryFinding: 'Coastline Electric ranks #1 for Smithfield RI generator searches (pop. 22K) but has zero city-specific generator pages for Providence, Cranston, or Warwick — the three largest Rhode Island cities that together generate 4x the monthly search volume of Smithfield.',
+    issues: [
+      { label: 'Zero city-specific generator pages outside Smithfield', value: 'site:coastlineelectricri.com returns 10 pages with no generator landing pages for Providence (pop. 180K), Cranston (pop. 82K), Warwick (pop. 82K), or Pawtucket. Eastern Electric has dedicated generator pages for 6+ Rhode Island cities. (confirmed: site: search)', status: 'critical' },
+      { label: 'Generator services positioned as secondary to electrical', value: 'H1 reads "Top Electricians for your Residential or Commercial Electrical Needs" — not a generator headline. Generator installation is under Residential in the nav rather than a top-level service. GEM (ranking for RI generator searches) leads with "Whole Home Generators in RI & MA" as their primary identity. (confirmed: homepage fetch, H1 extraction)', status: 'critical' },
+      { label: 'No generator-specific schema type', value: 'Schema declares Electrician/LocalBusiness — not HomeAndConstructionBusiness or a generator-installer type. Grasten Power (specialist generator company) uses HomeAndConstructionBusiness schema and ranks for commercial generator terms. Missing schema type reduces topical authority for generator-specific searches. (confirmed: homepage fetch, schema extraction)', status: 'warning' },
+      { label: 'Articles section has 5 posts with no visible publication dates', value: 'coastlineelectricri.com/articles/ shows 5 generator articles with no publication dates visible. Undated content is discounted by search engines and cannot signal freshness. All 5 topics are generator-focused, none cover commercial electrical services. (confirmed: articles page fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Rhode Island generates ~200 monthly searches for generator installation in the Providence metro alone. Coastline Electric ranks #1 in Smithfield (pop. 22K) but has zero pages for Providence (pop. 180K), Cranston, or Warwick. Every Rhode Island homeowner or business owner searching "generator installation Providence RI" lands on Eastern Electric, GEM, or RALCO Generator instead — despite Coastline claiming to be RI\'s top Generac dealer. With 3-state coverage claimed and only 10 pages indexed, the gap between Coastline\'s stated service area and their indexed footprint is the core problem.',
+      volume: '50', volumeNote: 'Monthly searches for generator installation in Smithfield specifically; ~200/month for Providence metro',
+      leads: '10-20', leadsNote: 'Estimated monthly generator inquiries lost to competitors across unindexed RI/MA cities',
+      timeline: '30-45 days', timelineNote: 'Schema already present — geo pages and H1 fix would index within 30 days',
+    },
+    fixes: [
+      { letter: 'A', title: 'Build generator landing pages for Providence, Cranston, and Warwick RI', body: 'Three pages targeting the 3 largest Rhode Island cities would close the biggest single gap. Providence alone generates 4x Smithfield\'s monthly searches. Eastern Electric has 6+ city pages; Coastline has one. Each page needs a city-specific H1, local schema with city address, and 500+ words of real installation content.' },
+      { letter: 'B', title: 'Add HomeAndConstructionBusiness schema to generator pages', body: 'Current schema type is Electrician — not the generator-specialist type. Grasten Power uses HomeAndConstructionBusiness schema and ranks for commercial generator terms. Updating schema to include the generator service category explicitly increases topical authority for generator-specific searches.' },
+      { letter: 'C', title: 'Add publication dates to articles and publish 2 more', body: 'All 5 articles lack visible dates, making search engines treat them as potentially old content. Adding dates and publishing 2 new articles in the next 30 days signals an active content program and re-enters the articles into freshness scoring.' },
+    ],
+  },
+
+  'Prime Power Services, Inc.': {
+    searchQuery: 'commercial generator service Atlanta GA',
+    googlePage: 'Not Found',
+    score: { website: 8, seo: 6, total: 14 },
+    primaryFinding: 'Georgia Generator Pro ranks #1 for "commercial generator service Atlanta GA" despite serving residential clients — Prime Power Services, a 40-year-old EGSA-certified firm serving hospitals and data centers, has a dedicated Atlanta page and an active blog but does not appear in the top 30 results for its primary local market keyword.',
+    issues: [
+      { label: 'Not ranking for "commercial generator service Atlanta GA"', value: 'Search returns Georgia Generator Pro, Generator Supercenter, Reliable Heating & Air, and 7 other residential/small-commercial firms before Prime Power — despite Prime Power having an /atlanta-ga-power-services page and an Atlanta-specific blog post. (confirmed: rankings search)', status: 'critical' },
+      { label: 'Homepage title tag has no Atlanta or Georgia mention', value: 'Title reads "Power Services: Emergency Power Systems & Standby Generators | Prime Power" — zero geo-signal for Atlanta. Georgia Generator Pro (ranking #1) leads with Georgia in their domain and title. (confirmed: title from site: search result snippet)', status: 'critical' },
+      { label: 'Atlanta geo page exists but local schema presence unverified', value: 'primepower.com/atlanta-ga-power-services exists (confirmed: site: search). Schema presence on this page is unverified — HTML was not accessible for extraction. Without LocalBusiness schema on the geo page, Google cannot confirm Prime Power as a local Atlanta service provider. (confirmed: page exists; schema: unverified)', status: 'warning' },
+      { label: 'Enterprise buyer intent not surfaced in Atlanta local results', value: 'Healthcare, data center, and utility pages (/industries/healthcare, /industries/data-centers) exist but do not appear in top Atlanta search results. Pages targeting enterprise buyers need stronger internal links from the Atlanta geo page to close the gap between content depth and local visibility. (confirmed: site: search, industry pages visible)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Atlanta generates ~400 monthly searches for commercial generator service — the highest volume in this batch. Prime Power has the deepest credentials (EGSA-certified, 40+ years, training center, healthcare/data center specialization) yet does not appear in the top 30 results. Georgia Generator Pro, which ranks #1, serves residential clients with far less enterprise credibility. The gap between Prime Power\'s actual service capability and their local search visibility is the largest in this batch.',
+      volume: '400', volumeNote: 'Monthly searches for commercial generator service in Atlanta metro',
+      leads: '20-35', leadsNote: 'Estimated commercial and enterprise inquiries lost monthly while absent from top 30',
+      timeline: '45-90 days', timelineNote: 'Existing content depth means gains are possible in 45 days once geo-signals are fixed',
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Atlanta GA to homepage title tag and meta description', body: 'Georgia Generator Pro ranks #1 for Atlanta commercial generator searches with a geo-optimized title. Prime Power\'s homepage title has zero Atlanta or Georgia reference. A single title change to "Emergency Generator Service Atlanta GA | Prime Power Services" closes the primary geo-signal gap without any new content.' },
+      { letter: 'B', title: 'Add LocalBusiness schema with Atlanta geo-coordinates to /atlanta-ga-power-services', body: 'The Atlanta page exists but schema presence is unverified. Adding LocalBusiness schema with Atlanta address, lat/lon, service area, and EGSA certification markup creates the local authority signal that makes Google treat Prime Power as a legitimate Atlanta-area provider — not just a regional company that mentions Atlanta.' },
+      { letter: 'C', title: 'Add internal links from industry pages to the Atlanta geo page', body: '/industries/healthcare, /industries/data-centers, and /industries/utilities match Prime Power\'s actual buyer intent. Internal links from these high-authority industry pages to the Atlanta geo page transfer topical relevance and accelerate local ranking gains without requiring any new content.' },
+    ],
+  },
+
 };
