@@ -244,6 +244,21 @@ tailwind.config = {
   </div>
 </footer>
 
+<script>
+// Redirect old ?firm=&cat= URLs to static audit pages
+(function() {
+  var p = new URLSearchParams(window.location.search);
+  var firm = p.get('firm') || '';
+  var cat  = p.get('cat')  || 'venue';
+  if (!firm) return;
+  // Slugify: matches the same logic used when pages were generated
+  var slug = firm.toLowerCase()
+    .replace(/&amp;/g,'and').replace(/&/g,'and')
+    .replace(/'s\b/gi,'').replace(/[''`']/g,'')
+    .replace(/[.,]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
+  window.location.replace('/audits/' + cat + '/' + slug + '/');
+})();
+</script>
 <script src="/audits/detail/firm-data.js?v=5"></script>
 <script>
 (function() {

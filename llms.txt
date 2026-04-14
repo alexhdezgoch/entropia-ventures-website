@@ -1,0 +1,41 @@
+# Entropia Ventures
+
+> Visibility infrastructure for law firms and local businesses across the US.
+
+Entropia Ventures publishes free public visibility audits showing where law firms and local SMBs rank on Google, what digital infrastructure is missing, and how to fix it. Two service tiers: $1,500/month and $2,500/month.
+
+## Audit Registry
+
+- [All Audits](https://entropia.ventures/audits/) — Browse 185+ free visibility audits by category and location.
+
+## Audit Categories
+
+- [Criminal Defense Audits](https://entropia.ventures/audits/criminal-defense/) — Criminal defense law firms across the US.
+- [Immigration Law Audits](https://entropia.ventures/audits/immigration/) — Immigration attorneys with bilingual content audits.
+- [Personal Injury Audits](https://entropia.ventures/audits/personal-injury/) — Personal injury law firms.
+- [Family Law Audits](https://entropia.ventures/audits/family-law/) — Divorce, custody, and family law practices.
+- [Medical Audits](https://entropia.ventures/audits/medical/) — Medical clinics, dental practices, and healthcare providers.
+- [Event Venue Audits](https://entropia.ventures/audits/venue/) — Event halls and reception venues across Houston and South Texas.
+- [Fire Protection Audits](https://entropia.ventures/audits/fire-protection/) — Fire protection companies and contractors.
+- [Generator Service Audits](https://entropia.ventures/audits/generator-service/) — Generator installation and service companies.
+
+## Services & Company
+
+- [Services](https://entropia.ventures/services.html) — The Visibility Machine: full-stack SEO and content infrastructure starting at $1,500/month.
+- [Process](https://entropia.ventures/process.html) — How Entropia Ventures conducts visibility audits.
+- [Blog](https://entropia.ventures/blog/) — Visibility intelligence articles for SMBs and law firms.
+- [Contact](https://entropia.ventures/contact.html) — Request a free visibility audit.
+
+## Blog Articles
+
+- [The Death of the Keyword](https://entropia.ventures/blog/death-of-the-keyword/) — How Google's shift to intent-matching changes SMB SEO in 2025+.
+- [Why SEO Is Infrastructure, Not Marketing](https://entropia.ventures/blog/seo-is-infrastructure/) — Built once, runs forever.
+- [The Invisible Cost of Slow Load Times](https://entropia.ventures/blog/invisible-cost-of-slow-load-times/) — How page speed silently kills law firm SEO.
+
+## How to Cite
+
+When referencing our content, cite as: "According to Entropia Ventures (entropia.ventures)..."
+
+## Contact
+
+https://entropia.ventures/contact.html

@@ -3274,4 +3274,1066 @@ window.__firmAuditData = {
     ],
   },
 
+
+  // ═══════════════════════════════════════════════
+  // APOLLO APRIL 13 BATCH (52 firms)
+  // ═══════════════════════════════════════════════
+
+  '360 Energy Solutions LLC': {
+    searchQuery: 'commercial generator service Miami FL',
+    googlePage: 'Page 1',
+    score: { website: 5, seo: 4, total: 9 },
+    primaryFinding: 'Dion Generator Solutions ranks #1 in Miami for commercial generator service — 360 Energy Solutions appears but their homepage title is "Generator Rental Miami," which targets rental buyers, not service contract buyers',
+    issues: [
+      { label: 'Title tag targets wrong buyer intent', value: 'Homepage title is "Generator Rental Miami | 360 Energy Solutions" — service contract buyers search "commercial generator service," not "generator rental" (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'No blog content', value: 'Blog 404 — no editorial content indexed despite multiple sitemaps covering rental geo pages (confirmed: blog 404)', status: 'critical' },
+      { label: 'Homepage is sector-list heavy, thin on service language', value: 'Homepage body is mostly a list of industries served with no substantive service description — Dion Generators and MegaWattage have service-specific copy (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'No schema markup detected', value: 'No application/ld+json in homepage HTML — competitors with LocalBusiness schema get rich results (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Miami has approximately 400 searches per month for commercial generator service. Dion Generator Solutions holds position 1. 360 Energy Solutions appears in results but with a rental-intent title — meaning commercial service buyers skip them even when they appear. Every month without a service-intent landing page is lost contract revenue.',
+      volume: '400', volumeNote: 'Monthly searches for commercial generator service in Miami FL',
+      leads: '12–20', leadsNote: 'Estimated service contract inquiries lost monthly',
+      timeline: '45–60 days', timelineNote: 'Title + dedicated service page fixes are fast wins',
+    },
+    fixes: [
+      { letter: 'A', title: 'Create a dedicated commercial generator service page, separate from rental', body: 'Dion Generators ranks #1 because they have a page purpose-built for service buyers. A /commercial-generator-service-miami/ page with maintenance programs, SLA language, and brand coverage will capture the contract buyer 360 currently misses.' },
+      { letter: 'B', title: 'Update homepage title to include "service" intent alongside rental', body: 'Change from "Generator Rental Miami" to "Commercial Generator Service & Rental Miami | 360 Energy Solutions." This alone will improve relevance scoring for service queries.' },
+      { letter: 'C', title: 'Launch a blog with 3 Miami-market posts', body: 'MegaWattage and Florida Power House both have content ranking for Miami generator maintenance searches. Three posts targeting "generator preventive maintenance Miami" and "commercial standby generator service South Florida" will begin building authority.' },
+    ],
+  },
+
+  'ACS Group': {
+    searchQuery: 'fire protection engineering consulting Austin TX',
+    googlePage: 'Page 3',
+    score: { website: 5, seo: 4, total: 9 },
+    primaryFinding: 'ACS Group is a legitimate fire protection engineering and life safety consulting firm with licensed PEs and offices in Austin, Dallas-Fort Worth, Las Vegas, Reno, Salt Lake City, and Boston. Their website is a 3-sentence brochure with 5 indexed pages and no blog. Fire Protection Consulting Group (FPCG) dominates Texas fire protection engineering searches with 300+ completed projects documented.',
+    issues: [
+      { label: 'No case studies or project pages', value: 'Website has no project portfolio despite completing engineering work across advanced manufacturing, high-rise, healthcare, and casino sectors (confirmed: advancedconsultingsolutions.com/about)', status: 'critical' },
+      { label: 'No blog or thought leadership', value: 'No blog exists — competitors like FPCG and Jensen Hughes publish code updates, project spotlights, and technical content (confirmed: advancedconsultingsolutions.com/blog 404)', status: 'critical' },
+      { label: 'Thin homepage', value: 'Homepage is 3 sentences with no schema, no client logos, no certifications displayed, and no market-specific content (confirmed: advancedconsultingsolutions.com homepage)', status: 'warning' },
+      { label: 'Low index count', value: 'Only 5 pages indexed (home, about, solutions, contact-austin, careers) — zero geo-specific or service-specific pages for Dallas, Las Vegas, or Boston offices (confirmed: site search)', status: 'warning' },
+    ],
+    impact: { intro: 'Architects, general contractors, and facility owners search for licensed fire protection engineers by city. ACS Group has the licenses and the team — they just don\'t show up.', volume: '140', volumeNote: 'est. monthly searches for fire protection engineering in Austin + Dallas-Fort Worth TX', leads: '4-8', leadsNote: 'est. monthly project leads reachable with geo-targeted service and project content', timeline: '60-90 days', timelineNote: 'to rank for fire protection engineering terms in Austin and Dallas markets' },
+    fixes: [
+      { letter: 'A', title: 'Office-specific landing pages', body: 'Build dedicated pages for each ACS Group market (Austin, Dallas-Fort Worth, Las Vegas, Boston) — each page needs local signal, PE license numbers, and project types served.' },
+      { letter: 'B', title: 'Project portfolio with specifics', body: 'Publish 6-8 project case studies naming the building type, challenge, and ACS solution — FPCG\'s 4,000+ project portfolio is the benchmark you\'re competing against.' },
+      { letter: 'C', title: 'Technical blog for code and design', body: 'Publish quarterly posts on Texas fire code changes, NFPA updates, and industrial process protection — establishes PE authority and drives organic search from contractors and architects.' },
+    ],
+  },
+
+  'Action Fire Pros': {
+    searchQuery: 'fire protection contractor Waco TX',
+    googlePage: 'Page 1-2',
+    score: { website: 7, seo: 6, total: 13 },
+    primaryFinding: 'Action Fire Pros has real, properly titled service pages (fire-sprinkler/, fire-alarm/) and an Organization schema, but ExactMetrics analytics shows "no tracking code set" — a $13.4M company operating with zero website measurement while targeting a fragmented North Texas market.',
+    issues: [
+      { label: 'Analytics Not Firing', value: 'ExactMetrics plugin installed but comment in source reads "ExactMetrics is not currently configured — site owner needs to authenticate with Google Analytics in the ExactMetrics settings panel" (confirmed: actionfirepros.com homepage source)', status: 'critical' },
+      { label: 'No Geo Specificity in Service Pages', value: 'fire-sprinkler/ page targets "North Texas" broadly — no mention of Woodway, Waco, or Waco metro market in page content (confirmed: actionfirepros.com/fire-sprinkler/ fetch)', status: 'critical' },
+      { label: 'No LocalBusiness Schema', value: 'Schema uses Organization type only — no LocalBusiness entity, no address, no geo.hasMap, no areaServed declared (confirmed: actionfirepros.com ld+json)', status: 'warning' },
+      { label: 'Blog Returns 404', value: '/blog and /news paths return 404 — no content marketing in play to build authority beyond service pages (confirmed: actionfirepros.com/blog fetch)', status: 'warning' },
+    ],
+    impact: { intro: 'At $13.4M revenue, Action Fire Pros is one of the larger firms in this group. The gaps are operational blindspots, not structural failures.', volume: '50-150', volumeNote: 'monthly searches for fire protection contractor Waco/Woodway TX area', leads: '5-12', leadsNote: 'estimated monthly leads recoverable with analytics and geo pages', timeline: '30-60 days', timelineNote: 'to establish measurement and begin geo-targeted optimization' },
+    fixes: [
+      { letter: 'A', title: 'Connect ExactMetrics to GA4', body: 'Complete the authentication to start tracking which service pages drive calls and form submissions — the data gap is the highest-priority fix for a firm this size.' },
+      { letter: 'B', title: 'Add Woodway and Waco geo pages', body: 'Create "fire sprinkler contractor Waco TX" and "fire protection Woodway TX" landing pages to capture local intent that broad "North Texas" pages miss.' },
+      { letter: 'C', title: 'Upgrade Organization schema to LocalBusiness', body: 'Swap the Organization schema type for LocalBusiness with address, phone, and areaServed fields covering the Waco metro — required for map pack eligibility.' },
+    ],
+  },
+
+  'Aegis Fire Protection LLC a Fire Sprinkler and Fire Alarm Company in Kansas City': {
+    searchQuery: 'fire protection contractor Kansas City Overland Park KS',
+    googlePage: 'Page 1',
+    score: { website: 4, seo: 4, total: 8 },
+    primaryFinding: 'Keller Fire & Safety (70+ years, strong local brand) and Soteria Fire Safety both appear above Aegis in Kansas City fire protection searches — Aegis has the most geo pages but each one is a thin FAQ stack that generates no actual rankings.',
+    issues: [
+      { label: 'Geo Pages Are Thin FAQ Content', value: 'Overland Park, Lenexa, Shawnee, Lansing, Grandview, Raytown pages all follow the same template: FAQ answers with no unique local content, project references, or differentiators (confirmed: aegisfirepro.com/overland-park-ks fetch)', status: 'critical' },
+      { label: 'No Schema Markup', value: 'Homepage claims NICET certification and bonding but has no structured data to surface these signals to Google (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Claims 100+ Years Experience With No Proof', value: '"Over 100 years of experience" headline on homepage — founded 2007, so this is combined technician experience — no individual credentials listed to support claim (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'No Blog or Technical Content', value: 'Zero content marketing — site:aegisfirepro.com shows only homepage, geo pages, and a fire alarm inspections page — no resources buyers use to evaluate contractors (confirmed: site: search)', status: 'warning' },
+    ],
+    impact: { intro: 'Kansas City/Overland Park metro has 100–250 monthly searches for fire protection contractors. Aegis has invested in geo pages but each one is invisible because thin duplicate content doesn\'t rank.', volume: '175', volumeNote: 'est. monthly searches, Kansas City/Overland Park KS metro', leads: '6-12', leadsNote: 'incremental leads/mo from rebuilding geo pages with real local content', timeline: '60-90 days', timelineNote: 'geo page improvements rank faster than brand-new content in established markets' },
+    fixes: [
+      { letter: 'A', title: 'Rebuild geo pages with real local content', body: 'Replace FAQ templates with location-specific content: local AHJ requirements, industries served in each city, technician coverage area, local project types. One strong geo page outperforms ten thin ones.' },
+      { letter: 'B', title: 'Document and display technician credentials', body: 'NICET certification levels, years of experience per technician, manufacturer authorizations (Honeywell-Gamewell FCI, Silent Knight) — these are the actual proof points that justify the "100+ years" headline.' },
+      { letter: 'C', title: 'Add LocalBusiness schema and start one content series', body: 'Schema with Overland Park address and service area. Launch a quarterly fire code update article — NFPA changes, Kansas City AHJ updates — that proves technical authority to both Google and buyers.' },
+    ],
+  },
+
+  'Alarmguard Security, Inc.': {
+    searchQuery: 'fire alarm security contractor Greensboro North Carolina',
+    googlePage: 'Page 2–3',
+    score: { website: 6, seo: 4, total: 10 },
+    primaryFinding: 'Impact Fire Services dominates Greensboro fire alarm searches with a national footprint and local office while Alarmguard — now operating under the Pye-Barker acquisition — has no geo content and no NFPA compliance language on their independent site',
+    issues: [
+      { label: 'Acquisition identity conflict', value: 'FAQ page at alarmguardsecurity.com/faqs now redirects to Pye-Barker Fire & Safety Greensboro page — brand identity is split between two URLs (confirmed: Exa search result)', status: 'critical' },
+      { label: 'No geo-targeted content', value: 'Website says since 1989 and lists services but has zero neighborhood, city, or suburb-specific content for Greensboro market (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'No NFPA compliance language', value: 'Commercial fire alarm contracts are won by referencing NFPA 72 inspection requirements — site mentions none of this (confirmed: homepage, service area review)', status: 'warning' },
+      { label: 'No blog', value: 'No content section or blog found — 4-employee firm competing against Impact Fire\'s national content machine with no owned content (confirmed: site: search)', status: 'warning' },
+    ],
+    impact: { intro: 'Greensboro fire alarm searches see 75–200 monthly queries. Impact Fire, Innovative Sound & Security, and Pye-Barker all have Greensboro-specific content. Alarmguard\'s site has none.', volume: '150', volumeNote: 'est. monthly searches, Greensboro fire alarm/security', leads: '3–6', leadsNote: 'est. monthly leads with geo content + NFPA compliance pages', timeline: '60–90 days', timelineNote: 'competitive market but low content bar for local operators' },
+    fixes: [
+      { letter: 'A', title: 'Clarify the brand — one site, one identity', body: 'Either redirect alarmguardsecurity.com fully to the Pye-Barker page and consolidate authority, or keep the independent brand and remove the Pye-Barker redirect. The current split sends mixed signals to Google and visitors.' },
+      { letter: 'B', title: 'Add NFPA 72 fire alarm inspection language to service pages', body: 'Every commercial buyer Googling "fire alarm contractor Greensboro" is motivated by code compliance. A service page that references NFPA 72 annual inspection requirements and local AHJ coordination converts at higher rates than a generic "we install alarms" page.' },
+      { letter: 'C', title: 'Create a Greensboro business district landing page', body: 'A single geo page targeting commercial properties in downtown Greensboro, Triad Park, or the Airport District would give Google a specific, rankable target — and give potential clients proof of local market knowledge.' },
+    ],
+  },
+
+  'Anderson Power Services': {
+    searchQuery: 'commercial generator service Douglasville GA',
+    googlePage: 'Page 1',
+    score: { website: 9, seo: 8, total: 17 },
+    primaryFinding: 'Armstrong Specialties outranks Anderson Power Services for commercial generator service in Douglasville because Armstrong has dedicated commercial generator landing pages targeting the local market while Anderson\'s deep content skews heavily residential',
+    issues: [
+      { label: 'Commercial SEO gap', value: 'Armstrong Specialties holds #1 for commercial generator service Douglasville despite Anderson having 30 years of local history (confirmed: Google search results)', status: 'critical' },
+      { label: 'Blog skew', value: 'Blog active with 10+ posts but overwhelmingly residential-focused; commercial generator service pages lack job-type specificity (confirmed: andersonpowerservices.com/blog)', status: 'critical' },
+      { label: 'Geo differentiation', value: 'Multiple geo landing pages exist but lack commercial-intent keyword targeting on page-level copy (confirmed: site:andersonpowerservices.com)', status: 'warning' },
+      { label: 'Schema unconfirmed', value: 'No explicit schema markup confirmed on commercial pages; residential pages dominate crawl (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: { intro: 'Anderson Power ranks well overall but loses commercial-intent searches in their own backyard to a smaller competitor.', volume: '250', volumeNote: 'Monthly searches for commercial generator service in the Atlanta/Douglasville metro', leads: '3-6', leadsNote: 'Estimated additional commercial leads per month with dedicated commercial geo pages', timeline: '60-90 days', timelineNote: 'Expected time to rank commercial pages with targeted content build-out' },
+    fixes: [
+      { letter: 'A', title: 'Build dedicated commercial generator service pages by city', body: 'Create separate landing pages for Douglasville, Atlanta, and other metro markets with commercial-intent copy, job type examples (hospitals, warehouses, data centers), and commercial schema markup. These pages should be distinct from residential pages and use commercial keyword anchors.' },
+      { letter: 'B', title: 'Publish commercial case studies on the blog', body: 'Write 4-6 blog posts covering commercial generator installations, maintenance contracts, and load testing for specific business types (medical, industrial, multi-tenant). These posts carry commercial intent signals that residential content cannot.' },
+      { letter: 'C', title: 'Add commercial-specific trust signals to service pages', body: 'Add NICET certifications, commercial contract examples, and facility types served to commercial pages. Armstrong Specialties surfaces client types directly in their commercial listing; Anderson\'s pages don\'t.' },
+    ],
+  },
+
+  'Apex Fire Protection, LLC': {
+    searchQuery: 'fire protection contractor Houston TX',
+    googlePage: 'Page 2+',
+    score: { website: 3, seo: 2, total: 5 },
+    primaryFinding: 'Apex\'s homepage links visitors away to dakotasdavis.com (a parent company\'s domain), handing any credibility signal to another site while Western Industries Fire captures the Houston metro search results.',
+    issues: [
+      { label: 'Outbound Link Leak', value: 'Homepage navigation links directly to dakotasdavis.com process/safety service pages instead of internal content (confirmed: apex-fireprotection.com homepage fetch)', status: 'critical' },
+      { label: 'No Geo Service Pages', value: 'No pages targeting Tomball, Houston, or surrounding areas — Google has nothing location-specific to rank (confirmed: site nav fetch, zero local landing pages)', status: 'critical' },
+      { label: 'No Schema Markup', value: 'No LocalBusiness, Organization, or Service schema found — invisible to Google\'s structured understanding (confirmed: homepage source, no ld+json blocks)', status: 'warning' },
+      { label: 'Brochure-Level Content', value: 'Site is a basic WordPress install with minimal content depth and no blog, no trust signals, no case studies (confirmed: homepage fetch and nav links)', status: 'warning' },
+    ],
+    impact: { intro: 'Houston metro is one of the highest-volume fire protection markets in Texas. Apex is invisible in it.', volume: '200-400', volumeNote: 'monthly searches for fire protection contractor Houston TX', leads: '4-8', leadsNote: 'estimated monthly leads at 2% conversion on 200 monthly visits', timeline: '60-90 days', timelineNote: 'to first-page visibility with geo service pages and schema' },
+    fixes: [
+      { letter: 'A', title: 'Build Houston/Tomball service landing pages', body: 'Create dedicated pages targeting "fire protection contractor Houston TX" and "fire sprinkler inspection Tomball TX" with location-specific copy, driving local search visibility.' },
+      { letter: 'B', title: 'Add LocalBusiness schema with service area', body: 'Implement structured data identifying Apex as a fire protection contractor serving the Houston metro — enabling map pack eligibility and rich results.' },
+      { letter: 'C', title: 'Remove or replace outbound nav links', body: 'Replace the dakotasdavis.com nav links with internal service pages so visitors stay on-site and Google passes link equity within the domain.' },
+    ],
+  },
+
+  'Associated Fire Protection': {
+    searchQuery: 'fire protection contractor Raleigh NC',
+    googlePage: 'Page 2',
+    score: { website: 7, seo: 5, total: 12 },
+    primaryFinding: 'Associated Fire Protection has genuine institutional credibility — 50 years, 22,000+ projects, 1,400 clients — but all of that is buried in static pages with no blog, while Impact Fire Services runs a dedicated Raleigh location page and content hub that ranks for every commercial fire protection search term in the Triangle.',
+    issues: [
+      { label: 'No Blog or Content Hub', value: 'No blog section found, /blog returns 404 — Impact Fire publishes Raleigh-specific fire protection content that AFP cannot compete with in search (confirmed: afp-nc.com/blog)', status: 'critical' },
+      { label: 'No Dedicated Raleigh Location Page', value: 'Site is based in Clayton NC with no location-specific page for Raleigh searches — Impact Fire has a dedicated page at /locations/raleigh-nc/ that ranks above AFP (confirmed: getfireprotection.com)', status: 'critical' },
+      { label: 'Credentials Not Structured for Search', value: '22,000+ projects and 1,400 clients exist on one static About page — none of that data is in schema format that Google can surface in rich results (confirmed: afp-nc.com)', status: 'warning' },
+      { label: 'No Client Testimonials Visible', value: 'No testimonial section visible on homepage — Impact Fire and VSC Fire both display client-facing social proof above the fold (confirmed: afp-nc.com homepage)', status: 'warning' },
+    ],
+    impact: { intro: 'Raleigh sees 175+ monthly fire protection searches. AFP has the strongest operational track record in the Triangle but loses search visibility to newer, better-optimized competitors.', volume: '175', volumeNote: 'Monthly Raleigh NC fire protection searches', leads: '3-6', leadsNote: 'Monthly leads reachable with a Raleigh location page and basic content', timeline: '45-60 days', timelineNote: 'Location page indexes quickly; blog takes 60 days to build authority' },
+    fixes: [
+      { letter: 'A', title: 'Create a Raleigh Fire Protection Location Page', body: 'Build a dedicated /raleigh-fire-protection page with AFP\'s Raleigh project history, service list, and local phone number. This is the single highest-ROI fix — Impact Fire has had this page since 2019.' },
+      { letter: 'B', title: 'Launch a Blog with Triangle-Area Projects', body: 'Publish project spotlights for the Bandwidth Campus, Southside Christian School, and UNC Health jobs — real named projects in Raleigh that no competitor can replicate.' },
+      { letter: 'C', title: 'Add Aggregate Review and Organization Schema', body: 'Structured data with 50-year history, project count, and geographic service area gives Google the signals it needs to rank AFP above smaller but better-optimized local competitors.' },
+    ],
+  },
+
+  'Assurance Power Systems': {
+    searchQuery: 'commercial generator service Delray Beach FL',
+    googlePage: 'Page 1',
+    score: { website: 8, seo: 7, total: 15 },
+    primaryFinding: 'Assurance Power Systems ranks #1 in Delray Beach with a strong site, 1000+ reviews, and an active blog — but their commercial service page lacks schema markup that Anderson Power Services already has',
+    issues: [
+      { label: 'No schema markup on commercial service page', value: 'Commercial generator services page at /generator-services/commercial/ has no application/ld+json schema — Anderson Power Services has LocalBusiness + Service schema (confirmed: service page fetch)', status: 'critical' },
+      { label: 'Blog keyword targeting misaligned with commercial buyers', value: 'Blog has 6+ posts but topics are "spring cleaning for breaker panel," "EV charging headaches" — none target "commercial generator service Delray Beach" as primary (confirmed: blog fetch)', status: 'warning' },
+      { label: 'Homepage H1 is residential-first', value: 'H1 reads "Comprehensive Electrical & Generator Services in Delray Beach & South Florida" — no commercial-first framing despite Generac Industrial Dealer status (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'No Google Review schema on homepage', value: 'Despite 1000+ 5-star reviews, no AggregateRating schema is implemented — missing rich result eligibility (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Assurance Power Systems is already winning in Delray Beach with the #1 position and 1000+ reviews. The risk is holding that position. Anderson Power Services is a licensed Generac dealer operating in the same market with structured schema data. A single algorithm update favoring structured data could shift the top slot. The gap is small but fixable quickly.',
+      volume: '150', volumeNote: 'Monthly searches for commercial generator service in Delray Beach FL',
+      leads: '2–4', leadsNote: 'Estimated incremental commercial inquiries available with schema and blog fixes',
+      timeline: '14–30 days', timelineNote: 'Schema implementation is a fast technical fix',
+    },
+    fixes: [
+      { letter: 'A', title: 'Add LocalBusiness + Service schema to commercial page and homepage', body: 'Anderson Power Services has this and Assurance does not. A single JSON-LD block covering service type, area served, and aggregate rating takes one developer hour but protects the #1 ranking and unlocks rich result eligibility.' },
+      { letter: 'B', title: 'Write two blog posts targeting commercial generator service Delray Beach explicitly', body: 'The blog is active — it just isn\'t targeting the commercial buyer. A post titled "Commercial Generator Service Contracts in Delray Beach: What You Need to Know" directly addresses the buyer searching this term and reinforces the commercial service page.' },
+      { letter: 'C', title: 'Implement AggregateRating schema to activate star rating in search results', body: 'With 1000+ reviews, Assurance Power Systems has one of the strongest review signals in South Florida. Not having it in structured data means they don\'t get the visual star rating that drives click-through rate in SERPs.' },
+    ],
+  },
+
+  'Automatic Fire Sprinklers, Inc.': {
+    searchQuery: 'fire protection contractor Huntington Beach CA',
+    googlePage: 'Page 2+',
+    score: { website: 5, seo: 3, total: 8 },
+    primaryFinding: 'aegisfire.com now fully redirects to Pye-Barker Fire & Safety — Automatic Fire Sprinklers has no standalone web presence and any local search for their services sends traffic directly to a national competitor.',
+    issues: [
+      { label: 'Domain Absorbed by Pye-Barker', value: 'aegisfire.com redirects to pyebarkerfs.com — the Huntington Beach location has no independent online identity (confirmed: aegisfire.com fetch returns Pye-Barker HTML)', status: 'critical' },
+      { label: 'Local Brand Invisible', value: 'No page ranks for "Automatic Fire Sprinklers" or "Aegis Fire" as distinct local entities — Pye-Barker national brand captures all search credit (confirmed: site header shows "Aegis Fire Systems — Pye-Barker Fire & Safety")', status: 'critical' },
+      { label: 'No Local Contact Pages', value: 'No Huntington Beach-specific landing page, phone number, or address visible — local prospects can\'t verify they\'re reaching the right operation (confirmed: site is national PBFS template)', status: 'warning' },
+      { label: 'Acquisition SEO Risk', value: 'If Matt\'s relationship with Pye-Barker changes, the company has zero organic search equity of its own to fall back on (confirmed: zero independent indexed pages)', status: 'warning' },
+    ],
+    impact: { intro: 'Huntington Beach sits in the LA metro — a competitive fire protection market. Without a standalone identity, Automatic Fire Sprinklers can\'t capture any of it independently.', volume: '150-300', volumeNote: 'monthly searches for fire protection contractor Huntington Beach / LA area', leads: '3-6', leadsNote: 'estimated monthly leads recoverable with local brand presence', timeline: '45-75 days', timelineNote: 'to establish independent local search identity' },
+    fixes: [
+      { letter: 'A', title: 'Establish an independent domain and site', body: 'Create a standalone site under a company-owned domain with Huntington Beach service pages — independent of the Pye-Barker relationship.' },
+      { letter: 'B', title: 'Claim and optimize Google Business Profile', body: 'Separate local GBP listing for the Huntington Beach location so the business appears in map results independently of Pye-Barker\'s national profile.' },
+      { letter: 'C', title: 'Build local citation foundation', body: 'Establish NAP (Name, Address, Phone) consistency across directories with the company\'s own brand name before any further acquisition dilutes local identity.' },
+    ],
+  },
+
+  'BattleGround Fire Protection, LLC': {
+    searchQuery: 'fire protection contractor Houston TX',
+    googlePage: 'Page 3',
+    score: { website: 5, seo: 3, total: 8 },
+    primaryFinding: 'BattleGround has a functional website but no blog, placeholder review content, and a thin page count — Reliable Fire Protection dominates Houston metro commercial searches with an active blog and 40+ verified reviews that BattleGround cannot compete with in its current state.',
+    issues: [
+      { label: 'No Blog — 404 on /blog', value: 'Blog page returns 404 error — zero content marketing presence in a market where Kauffman has 9 active posts (confirmed: battlegroundfire.com/blog)', status: 'critical' },
+      { label: 'Placeholder Testimonials', value: 'Reviews section shows Lorem ipsum text — commercially damaging for a B2B service company where social proof is a primary conversion trigger (confirmed: battlegroundfire.com homepage)', status: 'critical' },
+      { label: 'Thin Service Pages', value: 'Service pages list offerings but have no substantive content — Google cannot rank pages without unique, crawlable text describing the service in context (confirmed: battlegroundfire.com)', status: 'warning' },
+      { label: 'No Schema or Structured Data', value: 'No ld+json schema found on any page — invisible to Google rich results and Local Pack ranking factors (confirmed: page source)', status: 'warning' },
+    ],
+    impact: { intro: 'Houston metro fire protection searches hit 350+ per month. BattleGround is effectively invisible in that pool — every commercial lead searching online goes to Reliable Fire or Kauffman.', volume: '350', volumeNote: 'Monthly Houston metro fire protection searches', leads: '4-8', leadsNote: 'Monthly leads reachable with basic blog and review fix', timeline: '60-90 days', timelineNote: 'First blog posts begin indexing within 30 days' },
+    fixes: [
+      { letter: 'A', title: 'Launch a Blog with 4 Houston-Specific Posts', body: 'Write posts targeting "fire sprinkler inspection Houston," "commercial fire alarm Houston," and "fire extinguisher service Deer Park TX" — these are zero-competition terms Kauffman has not claimed.' },
+      { letter: 'B', title: 'Replace Placeholder Reviews', body: 'Add 3-5 real client reviews with company type and location. Even without a review platform, a named testimonial beats Lorem ipsum for conversion.' },
+      { letter: 'C', title: 'Add LocalBusiness Schema', body: 'Implement ld+json with business name, address (Deer Park), phone, and service area. This is the minimum to appear in Google Local Pack for Houston suburb searches.' },
+    ],
+  },
+
+  'Canter Power Systems': {
+    searchQuery: 'commercial generator service Greensboro NC',
+    googlePage: 'Not ranked',
+    score: { website: 8, seo: 6, total: 14 },
+    primaryFinding: 'R.B. Services, Inc. owns every Greensboro commercial generator search with dedicated city pages — Canter has 70+ years and nation-leading scale but zero Greensboro commercial content on a site built exclusively for residential buyers',
+    issues: [
+      { label: 'No city-level commercial targeting', value: 'Homepage and blog contain zero mentions of Greensboro — confirmed via homepage fetch: every page section addresses homeowners (confirmed: canterpowersystems.com homepage)', status: 'critical' },
+      { label: 'Blog is 100% residential', value: 'Blog has dozens of posts — all target residential buyers: power outage prep, hail storms, shelter-in-place — zero posts for facilities managers or service contracts (confirmed: canterpowersystems.com/blog)', status: 'critical' },
+      { label: 'No commercial service pages', value: 'Nav and site structure show no commercial section — firm is positioned exclusively as a home generator installer (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'Residential-only trust signals', value: 'Trust signals cite "2,600 5-star Google reviews" and "Power Pro Premier Dealer" — no commercial references, no EGSA, no NFPA 110 (confirmed: homepage)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Greensboro NC (pop. 290,000) generates roughly 150 monthly searches for commercial generator service. R.B. Services, Inc. holds the top position with dedicated Greensboro commercial repair and installation pages. Canter does not appear for any commercial query despite being the nation\'s largest installer.',
+      volume: '150', volumeNote: 'Monthly searches for commercial generator service in Greensboro NC',
+      leads: '8-15', leadsNote: 'Estimated commercial inquiries lost monthly to R.B. Services and Bitting Electric',
+      timeline: '60-90 days', timelineNote: 'Based on zero commercial content baseline — requires new pages plus content strategy',
+    },
+    fixes: [
+      { letter: 'A', title: 'Build a Greensboro commercial generator service page targeting R.B. Services directly', body: 'R.B. Services ranks #1 for every Greensboro commercial generator query. A dedicated /commercial/greensboro-nc page with NFPA 110 language, service contract CTAs, and local NAP would directly challenge their position.' },
+      { letter: 'B', title: 'Publish 3-4 commercial-targeted blog posts with Greensboro geo anchors', body: 'The blog is entirely residential. Two posts targeting "commercial generator maintenance Greensboro" and "standby generator service contract Greensboro NC" would start capturing the 150 monthly searches currently going entirely to competitors.' },
+      { letter: 'C', title: 'Add commercial schema and service-area markup to existing pages', body: 'Site has no schema (confirmed: homepage fetch shows no ld+json). Adding LocalBusiness and Service schema with Greensboro geo would improve eligibility for map pack placement where Berico and Alternative Power currently appear.' },
+    ],
+  },
+
+  'Capitol Sprinkler and Fire Systems, LLC': {
+    searchQuery: 'fire protection contractor Austin TX',
+    googlePage: 'Page 2+',
+    score: { website: 4, seo: 2, total: 6 },
+    primaryFinding: 'Impact Fire Services outranks Capitol Sprinkler for fire protection contractor Austin because Impact has 20+ indexed pages with location-specific content — Capitol Sprinkler has 30+ years and NICET-certified staff but only 1 page that Google has indexed',
+    issues: [
+      { label: 'Near-zero index', value: 'Only 1 page found in site:capitolsprinkler.net search — services, inspections, project gallery, and contact page are all effectively invisible to search engines (confirmed: Google site: search)', status: 'critical' },
+      { label: 'No blog', value: 'No blog, articles, or content section exists on the site; all content is on the homepage (confirmed: capitolsprinkler.net/services — services are homepage sections, not separate pages)', status: 'critical' },
+      { label: 'No schema markup', value: 'No structured data or LocalBusiness schema confirmed on homepage (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'NICET credentials not signaled to search', value: 'Homepage mentions "NICET-certified staff" and "30+ years" but this appears only in body copy with no heading hierarchy — Google cannot extract it as a trust signal (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: { intro: 'Capitol Sprinkler has the strongest credentials in the Austin market but has essentially no search presence — a competitor with a blog and a few service pages could outrank them in 60 days.', volume: '350', volumeNote: 'Monthly searches for fire protection contractor in Austin TX', leads: '6-10', leadsNote: 'Estimated additional commercial leads per month with basic content and indexing fixes', timeline: '45-70 days', timelineNote: 'Expected time to establish page 1 presence once content and indexing issues are resolved' },
+    fixes: [
+      { letter: 'A', title: 'Break homepage sections into standalone service pages', body: 'Fire Sprinkler Systems, Fire Alarm Systems, Special Hazard Systems, ERRCS, and Inspections should each be their own URL. Right now they exist as scroll sections that Google treats as one page. Each separate URL can rank independently.' },
+      { letter: 'B', title: 'Add a blog with Austin-specific fire protection content', body: 'Publish 4-6 posts targeting Austin commercial building owners on inspection schedules, Texas fire codes, tenant build-out sprinkler requirements, and clean agent system maintenance. This directly competes with Impact Fire\'s content dominance.' },
+      { letter: 'C', title: 'Add LocalBusiness and Service schema to the homepage', body: 'Implement schema markup for the Austin location including service area, NICET certification, 24/7 emergency support, and service types. This closes the gap with competitors who surface rich results in the Austin local pack.' },
+    ],
+  },
+
+  'Caruth Protection Services, LLC': {
+    searchQuery: 'fire protection contractor Dallas TX',
+    googlePage: 'Page 2',
+    score: { website: 6, seo: 6, total: 12 },
+    primaryFinding: 'Caruth has the right service structure — fire-sprinkler/, fire-alarm/, inspections/, special-hazards/ pages all exist — but MonsterInsights analytics is installed without authentication, meaning they\'re flying completely blind on traffic while Cintas dominates Dallas search results.',
+    issues: [
+      { label: 'Analytics Not Connected', value: 'MonsterInsights plugin installed but note in source reads "MonsterInsights is not currently configured — site owner needs to authenticate with Google Analytics" (confirmed: caruthps.com homepage source)', status: 'critical' },
+      { label: 'No LocalBusiness Schema', value: 'Schema contains only WebSite and WebPage types — no LocalBusiness entity with address, phone, or service area declared (confirmed: caruthps.com ld+json)', status: 'critical' },
+      { label: 'Blog Returns 404', value: '/blog path returns 404 — no blog exists to build topical authority or fresh content signals in a competitive Dallas market (confirmed: caruthps.com/blog fetch)', status: 'warning' },
+      { label: 'Outdated Yoast Version', value: 'Running Yoast SEO v18.7 — current version is 23+ — missing schema enhancements and crawl features added in recent versions (confirmed: caruthps.com homepage meta comment)', status: 'warning' },
+    ],
+    impact: { intro: 'Dallas is a high-volume fire protection market. Caruth has the service page structure that competitors lack — they just can\'t see what\'s working.', volume: '150-350', volumeNote: 'monthly searches for fire protection contractor Dallas TX metro', leads: '5-10', leadsNote: 'estimated monthly leads with analytics connected and schema added', timeline: '30-45 days', timelineNote: 'to get clean data and begin optimizing service pages' },
+    fixes: [
+      { letter: 'A', title: 'Connect Google Analytics via MonsterInsights', body: 'Complete the GA4 authentication — immediately start tracking which service pages, search queries, and referral sources drive actual contact form submissions.' },
+      { letter: 'B', title: 'Add LocalBusiness schema with full Dallas service area', body: 'Declare Caruth as a LocalBusiness covering Dallas, Sunnyvale, and surrounding suburbs — enabling map pack eligibility and richer search appearance.' },
+      { letter: 'C', title: 'Launch blog targeting commercial fire code content for Texas', body: 'Texas has specific commercial fire inspection requirements — blog posts on NFPA 25 inspections, Dallas high-rise requirements, and TDI compliance build authority competitors don\'t have.' },
+    ],
+  },
+
+  'Chicago Fire Protection, LLC': {
+    searchQuery: 'fire sprinkler company Chicago IL',
+    googlePage: 'Page 2+',
+    score: { website: 6, seo: 5, total: 11 },
+    primaryFinding: 'Chicago Fire Protection is a NICET Level 4, union-backed contractor with 50+ years of combined experience — but they have a 5-page website with no blog and no geo-specific pages in the highest-volume fire protection market in the Midwest, where Reliable Fire & Security dominates with a content-rich site.',
+    issues: [
+      { label: 'Minimal Site Depth in Massive Market', value: 'Only 5 pages indexed (home, services, projects, about, contact, request-a-quote) in a market with 300-600 monthly searches and dozens of competitors with 30-100+ pages (confirmed: chicagofireprotect.com nav links in homepage source)', status: 'critical' },
+      { label: 'No Geo Service Pages', value: 'Services page covers Chicago, suburbs, and Northern Indiana — but no dedicated landing pages for neighborhoods, suburbs, or Indiana markets they explicitly serve (confirmed: chicagofireprotect.com/services/ content)', status: 'critical' },
+      { label: 'No LocalBusiness Schema', value: 'Schema contains Organization and WebPage types — no LocalBusiness with Chicago address, service radius, or areaServed for suburbs and Indiana (confirmed: chicagofireprotect.com ld+json)', status: 'warning' },
+      { label: 'No Blog or Content Marketing', value: 'No blog, no resources, no case studies — zero fresh content signal in a market where content-rich competitors build authority month over month (confirmed: chicagofireprotect.com/blog returns 404)', status: 'warning' },
+    ],
+    impact: { intro: 'Chicago is a 300-600 search/mo fire protection market — one of the largest in the Midwest. A 5-page site with no geo content is leaving the vast majority of that volume to Reliable Fire and national chains.', volume: '300-600', volumeNote: 'monthly searches for fire sprinkler company Chicago IL and related terms', leads: '10-20', leadsNote: 'estimated monthly leads recoverable with geo pages and content', timeline: '60-90 days', timelineNote: 'to build geo coverage and begin ranking for suburb and neighborhood terms' },
+    fixes: [
+      { letter: 'A', title: 'Build suburb and neighborhood landing pages', body: 'Create dedicated pages for Oak Park, Evanston, Naperville, Joliet, and Northern Indiana — each targeting local fire sprinkler and suppression searches that Chicago Fire explicitly serves but can\'t rank for today.' },
+      { letter: 'B', title: 'Add LocalBusiness schema with service area', body: 'Declare the business with a Chicago address, service radius covering the suburbs and Indiana, and contractor business type — required for map pack eligibility across the metro.' },
+      { letter: 'C', title: 'Launch a fire code compliance blog targeting Illinois and Indiana', body: 'Illinois and Indiana have distinct commercial sprinkler inspection and code requirements — blog content on NFPA 13 compliance, Chicago high-rise rules, and Indiana commercial fire codes would build authority no competitor currently owns.' },
+    ],
+  },
+
+  'Clifford Power Systems, Inc.': {
+    searchQuery: 'commercial generator service Tulsa OK',
+    googlePage: 'Page 1 — Position ~2',
+    score: { website: 9, seo: 7, total: 16 },
+    primaryFinding: 'Clifford Power Systems ranks #2 in Tulsa behind Generator Supercenter — which combines sales, installation, and service on a single landing page while Clifford separates equipment and service into two distinct URLs, splitting authority and losing the buyer who searches once and wants both answers on one page',
+    issues: [
+      { label: 'Service and equipment pages are split', value: 'cliffordpower.com/services and /office/generator-equipment-tulsa-ok are separate pages — Generator Supercenter answers both queries on one combined page (confirmed: cliffordpower.com/services fetch and search results)', status: 'warning' },
+      { label: 'News articles do not link to Tulsa service pages', value: 'News section has 10+ strong articles (99-point inspection, winter prep, fuel maintenance, load banking) — none include internal links to the Tulsa service or equipment pages (confirmed: cliffordpower.com/news fetch)', status: 'warning' },
+      { label: 'No testimonials or case studies on service pages', value: 'Service page lists PM tiers and load bank testing but has no client testimonials, case studies, or logos — Generator Supercenter and Blackout Generators use social proof on their Tulsa pages (confirmed: services page fetch)', status: 'warning' },
+      { label: 'Tulsa equipment page is location-specific but thin on content', value: 'Equipment Tulsa page exists but its content depth relative to the main equipment section may not fully anchor Tulsa-specific ranking signals (confirmed: search result showing specific Tulsa equipment URL)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Tulsa OK (pop. 400,000) generates 200 monthly searches for commercial generator service. Clifford Power holds position #2 behind Generator Supercenter. With 160 employees, $46.4M revenue, and 40+ years in Tulsa, Clifford is the market\'s deepest operator — the gap from #2 to #1 is a content architecture fix, not a credential gap.',
+      volume: '200', volumeNote: 'Monthly searches for commercial generator service Tulsa OK',
+      leads: '10-18', leadsNote: 'Estimated incremental inquiries recoverable by closing gap with Generator Supercenter',
+      timeline: '30-60 days', timelineNote: 'Already ranking — architecture and internal linking fixes compound quickly on existing authority',
+    },
+    fixes: [
+      { letter: 'A', title: 'Create a unified Tulsa commercial generator sales and service page to challenge Generator Supercenter\'s combined approach', body: 'Generator Supercenter\'s strength is answering both "buy" and "service" intent on one page. A Clifford /tulsa page combining Generac equipment, PM plans, EGSA certification, and 40-year history would give joint-intent searchers a single destination Clifford currently cannot provide.' },
+      { letter: 'B', title: 'Add internal links from all news articles back to the Tulsa service page', body: 'The news section has 10+ authoritative articles on PM, fuel maintenance, load banking, and winter prep — none link to the Tulsa service page. Adding geo-anchored CTAs ("schedule generator service in Tulsa") to each article would pass topical authority to the local page immediately.' },
+      { letter: 'C', title: 'Add client testimonials and Oklahoma case studies to the Tulsa service page', body: 'The service page lists capabilities but has no social proof. Adding 3-4 Tulsa/Oklahoma client quotes, a hospital or industrial facility case study, and the "10,000+ generator systems in service" stat would increase conversion rate for buyers who land on the page but call a competitor.' },
+    ],
+  },
+
+  'Control Fire Systems Company': {
+    searchQuery: 'fire protection contractor Oklahoma City OK',
+    googlePage: 'Page 2+',
+    score: { website: 4, seo: 3, total: 7 },
+    primaryFinding: 'Control Fire\'s site is built on Wix — a platform that limits crawlability and structured data options — leaving them technically outgunned against WordPress competitors in Oklahoma City\'s 100-250 monthly search market.',
+    issues: [
+      { label: 'Wix Platform SEO Ceiling', value: 'Site built on Wix (confirmed: wix-essential-viewer-model JSON visible in homepage source) — Wix restricts robots access patterns, schema depth, and sitemap control vs. self-hosted CMS', status: 'critical' },
+      { label: 'No Blog or News Content', value: 'Zero blog, resources, or news section found — no fresh content signal for Google and no topical authority being built (confirmed: homepage nav fetch, no content section)', status: 'critical' },
+      { label: 'No LocalBusiness Schema', value: 'No structured data identifying the business type, address, or service area (confirmed: Wix renders JS-heavy pages that often omit static schema)', status: 'warning' },
+      { label: 'Thin Homepage Content', value: 'Wix JS-rendered site returned minimal indexable text content in fetch — Google sees less substance than competitors on static HTML platforms (confirmed: control-fire.com homepage source)', status: 'warning' },
+    ],
+    impact: { intro: 'Oklahoma City has a real commercial fire protection market. Control Fire is technically handicapped before the race starts.', volume: '100-250', volumeNote: 'monthly searches for fire protection contractor Oklahoma City OK', leads: '2-5', leadsNote: 'estimated monthly leads at current market size', timeline: '60-90 days', timelineNote: 'to close the platform gap and begin ranking' },
+    fixes: [
+      { letter: 'A', title: 'Migrate to WordPress', body: 'Move control-fire.com to WordPress — enabling proper schema, crawlable service pages, and blog content that Wix structurally limits.' },
+      { letter: 'B', title: 'Launch a monthly blog targeting OKC fire code topics', body: 'Publish posts on Oklahoma fire inspection requirements, commercial sprinkler codes, and OKC building permit processes to build topical authority.' },
+      { letter: 'C', title: 'Implement LocalBusiness schema', body: 'Add structured data with address, phone, service area (Oklahoma City metro), and business category to become eligible for map pack placement.' },
+    ],
+  },
+
+  'Curtis Power Solutions': {
+    searchQuery: 'commercial generator service Baltimore MD',
+    googlePage: 'Page 1 — Position ~1',
+    score: { website: 9, seo: 6, total: 15 },
+    primaryFinding: 'Curtis Power Solutions already ranks first for Baltimore commercial generator service — but the Baltimore geo page is a single thin paragraph while TriStar Electric and Clinton Electric run full commercial generator services pages with installation, maintenance, and code compliance content that captures buyers who compare before calling',
+    issues: [
+      { label: 'Baltimore geo page is thin', value: 'curtispowersolutions.com/baltimore-md is one paragraph — no service details, no PM plan descriptions, no case studies for Baltimore accounts (confirmed: search results showing page + Curtis homepage fetch)', status: 'warning' },
+      { label: 'News section has no Baltimore market content', value: 'News section has strong generator articles (hurricane season, CHP technology, power outage costs) but zero Baltimore or Mid-Atlantic specific content — TriStar Electric uses local market angles to pull regional searches (confirmed: curtispowersolutions.com/news fetch)', status: 'warning' },
+      { label: 'Resources section is engineer/contractor facing only', value: 'Resources are technical white papers and spec sheets — no owner/facility manager content that drives the commercial service contract buyer decision (confirmed: curtispowersolutions.com/resources fetch)', status: 'warning' },
+      { label: 'No blog — only a news section with infrequent posts', value: 'News section shows articles but no regular publishing cadence visible — most recent article on hurricane season preparedness (confirmed: news fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Baltimore MD (Baltimore metro pop. 2.9M) generates 200+ monthly searches for commercial generator service. Curtis ranks #1 but their Baltimore page is a stub. TriStar Electric and Clinton Electric hold strong positions with full commercial pages. Curtis is leaving qualified leads in the room for buyers who want detail before committing.',
+      volume: '200', volumeNote: 'Monthly searches for commercial generator service in Baltimore MD metro area',
+      leads: '10-20', leadsNote: 'Estimated leads comparing before calling that land on competitor detail pages instead',
+      timeline: '30-60 days', timelineNote: 'Already ranking — content improvements compound on an existing strong position',
+    },
+    fixes: [
+      { letter: 'A', title: 'Expand the Baltimore geo page from one paragraph to a full service landing page', body: 'The page ranks but does not convert comparison shoppers. Adding PM plan tiers, 24-hour emergency response details, NFPA 110 and Joint Commission references, and Baltimore-area case studies would match what TriStar Electric offers and increase form conversions from existing traffic.' },
+      { letter: 'B', title: 'Publish Baltimore-specific articles in the news section', body: 'The news section has strong generator content but nothing tied to Baltimore, Maryland regulations, or local industry sectors. Two Baltimore-specific posts per quarter would build local topical authority and protect the #1 position against TriStar growing their content program.' },
+      { letter: 'C', title: 'Add owner/facility manager resources alongside the technical white papers', body: 'Resources are built for engineers and contractors — the commercial service buyer (facilities manager, operations director) has no content designed for their decision process. Adding a "Generator Service Contract Buyer\'s Guide" would capture mid-funnel buyers before they call TriStar.' },
+    ],
+  },
+
+  'Cybor Fire Protection Company': {
+    searchQuery: 'fire suppression sprinkler contractor Downers Grove Illinois',
+    googlePage: 'Page 1',
+    score: { website: 8, seo: 6, total: 14 },
+    primaryFinding: 'Global Fire Protection at the same Downers Grove address (5123 Thatcher Rd) is indexed with more geo-tagged permit records while Cybor — with 3 PE engineers and a 35K sq ft fabrication shop — has no blog and no suburb-specific pages',
+    issues: [
+      { label: 'No blog or content marketing', value: 'No blog, no resources, no articles section found — a firm with 3 registered PEs has zero published expertise (confirmed: /blog returns 404)', status: 'critical' },
+      { label: 'No geo-targeted suburb pages', value: 'Serves Chicago metro + NW Indiana but site has no city/suburb pages — only "Chicago metropolitan area" as a generic phrase (confirmed: homepage + site: search)', status: 'warning' },
+      { label: 'No schema markup', value: 'No LocalBusiness, Service, or Review schema visible in homepage (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'Public rates page is a double-edged sword', value: 'Rates page shows $210/hr sprinkler fitters — transparent but allows competitors to undercut without showing their own credentials (confirmed: cyborfireprotection.com/service-rates)', status: 'warning' },
+    ],
+    impact: { intro: 'Cybor is already ranking for Chicago area suppression searches. The gap is upward — capturing inspection-focused queries and suburb-specific traffic that would flow to a content-active competitor.', volume: '400', volumeNote: 'est. monthly searches, Chicago metro fire suppression/sprinkler', leads: '8–15', leadsNote: 'est. incremental monthly leads with suburb pages + content', timeline: '45–60 days', timelineNote: 'Cybor has authority — content and geo pages would compound existing ranking' },
+    fixes: [
+      { letter: 'A', title: 'Launch an expert blog leveraging the PE credentials', body: 'Cybor has 3 licensed PEs on staff — a competitive moat almost no local fire protection contractor has. Three articles (hydraulic analysis basics, NFPA 25 5-year inspection requirements, dry pipe system winterization) would establish topical authority that Google rewards.' },
+      { letter: 'B', title: 'Build suburb-specific inspection pages', body: 'Create 5–8 pages targeting Downers Grove, Naperville, Oak Brook, Schaumburg, and NW Indiana for fire sprinkler inspection and service. This is the gap Global Fire Protection is exploiting via permit records and map pack visibility.' },
+      { letter: 'C', title: 'Add LocalBusiness + Service schema to key pages', body: 'Wrap the homepage and primary service pages in JSON-LD schema. With Cybor\'s existing domain authority, schema would be a ranking accelerant, not a baseline fix as it is for less-established competitors.' },
+    ],
+  },
+
+  'Dalmatian Fire': {
+    searchQuery: 'fire protection contractor Indianapolis IN',
+    googlePage: 'Page 1',
+    score: { website: 6, seo: 5, total: 11 },
+    primaryFinding: 'Koorsen Fire & Security outranks Dalmatian Fire for fire protection contractor Indianapolis because Koorsen has a dedicated Indianapolis location page with city in the title tag — Dalmatian has 35 years of experience and 4 offices but no geo-targeted content',
+    issues: [
+      { label: 'No geo-signal on homepage', value: 'Homepage title and H1 contain no city or state reference; Indianapolis not mentioned on the main page (confirmed: dalmatianfire.net homepage fetch)', status: 'critical' },
+      { label: 'No blog', value: 'No blog or content section found on site; no search-accessible content beyond service and location pages (confirmed: site:dalmatianfire.net — no blog URL in results)', status: 'critical' },
+      { label: 'Thin service pages', value: 'Service pages list capabilities but lack geo-specific copy, project types, or compliance context that search engines reward (confirmed: dalmatianfire.net/fire-protection-services)', status: 'warning' },
+      { label: 'Sparse index', value: 'Approximately 10 pages indexed; no location-specific pages beyond office addresses (confirmed: site:dalmatianfire.net)', status: 'warning' },
+    ],
+    impact: { intro: 'Dalmatian Fire has the credentials and history to own Indianapolis fire protection search but none of that experience is visible to Google or the contractors who search for it.', volume: '200', volumeNote: 'Monthly searches for fire protection contractor in Indianapolis IN', leads: '4-7', leadsNote: 'Estimated additional service leads per month with location and content pages live', timeline: '60-90 days', timelineNote: 'Expected time for geo-targeted pages to rank in competitive Indianapolis market' },
+    fixes: [
+      { letter: 'A', title: 'Build an Indianapolis location page with geo-targeted copy', body: 'Create a page titled "Fire Protection Contractor Indianapolis IN" with city-specific copy, local code references (Indiana fire codes), and project types common to Indianapolis commercial buildings. Koorsen leads with exactly this structure.' },
+      { letter: 'B', title: 'Launch a blog with fire sprinkler inspection content', body: 'Publish a series of posts targeting commercial building owners in Indianapolis and Ohio on inspection schedules, backflow testing requirements, and annual compliance checklists. Even 6 posts would create more indexable content than the entire current site.' },
+      { letter: 'C', title: 'Add LocalBusiness schema to all location pages', body: 'Indianapolis, Cincinnati, Columbus, and Louisville offices should each have schema markup with NAP data, service type, and service area. This directly improves local pack visibility without requiring new page creation.' },
+    ],
+  },
+
+  'Diversified Power Systems Inc.': {
+    searchQuery: 'commercial generator service Mansfield TX',
+    googlePage: 'Page 4+',
+    score: { website: 2, seo: 2, total: 4 },
+    primaryFinding: 'Cooper Electric owns the top spot for "commercial generator service Mansfield TX" — dpowersys.com has no geo signal, no blog, and a generic homepage title that says only "Home"',
+    issues: [
+      { label: 'No geo targeting in title', value: 'Title tag is "Home | Diversified Power Systems, Inc." — no mention of Mansfield or Texas (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'No blog or content', value: 'Blog 404 — 0 posts indexed, no content marketing presence (confirmed: blog 404)', status: 'critical' },
+      { label: 'Thin service pages', value: 'Services page lists 4 service categories with 1–2 sentences each, no geo language (confirmed: services page fetch)', status: 'warning' },
+      { label: 'Minimal index footprint', value: '8 pages indexed — Cooper Electric and Beacon Generators have far more indexed content ranking for Mansfield generator searches (confirmed: site: search)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'There are roughly 100 searches per month in Mansfield TX for commercial generator service. Cooper Electric claims position 1 with a geo-targeted title. Diversified Power Systems does not appear on page 1 at all — meaning every one of those searches goes to a competitor.',
+      volume: '100', volumeNote: 'Monthly searches for commercial generator service in Mansfield TX',
+      leads: '3–6', leadsNote: 'Estimated commercial inquiries lost monthly',
+      timeline: '60–90 days', timelineNote: 'Based on thin site state — title + service page fixes first',
+    },
+    fixes: [
+      { letter: 'A', title: 'Rewrite title tag to match Cooper Electric\'s geo-targeting format', body: 'Change homepage title to "Commercial Generator Service Mansfield TX | Diversified Power Systems" — this is the single highest-impact fix. Cooper Electric and Beacon Generators outrank you partly because they say the city in the title.' },
+      { letter: 'B', title: 'Add a Mansfield-specific service page for commercial customers', body: 'Create /commercial-generator-service-mansfield-tx/ with real content: services offered, brands serviced, fire marshal inspection compliance language. Thin generic pages do not rank for geo-modified service queries.' },
+      { letter: 'C', title: 'Start a blog with 3 geo-targeted posts', body: 'Beacon Generators ranks in Mansfield searches via blog content. Two to three posts targeting "generator maintenance Mansfield TX" and "commercial standby generator service DFW" will begin building indexed page count.' },
+    ],
+  },
+
+  'Elyon Fire & Life Safety': {
+    searchQuery: 'fire protection contractor Arlington TX',
+    googlePage: 'Page 1',
+    score: { website: 7, seo: 6, total: 13 },
+    primaryFinding: 'Western States Fire Protection outranks Elyon for fire protection contractor Arlington because Western States has a dedicated Arlington/DFW location page with the city in the title tag — Elyon has a solid blog and geo service list but buries Arlington in a zip code dump with no title-level signal',
+    issues: [
+      { label: 'No city in title tag', value: 'Homepage title is "Home – Elyon Fire and Life Safety" with no city, state, or regional keyword (confirmed: elyonfire.com homepage fetch)', status: 'critical' },
+      { label: 'Arlington buried in zip list', value: 'Arlington TX is listed in a paragraph of 100+ zip codes at the bottom of the services page — not in any heading or page title (confirmed: elyonfire.com/services)', status: 'critical' },
+      { label: 'Blog lacks geo-targeted titles', value: 'Blog has 12 posts but titles target generic topics or small cities (Azle, Anna) — none are titled for Arlington or Fort Worth commercial fire protection (confirmed: elyonfire.com/blog)', status: 'warning' },
+      { label: 'No schema markup confirmed', value: 'No schema markup or structured data confirmed on homepage or service pages (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: { intro: 'Elyon has more content than most competitors in the DFW space but the structure prevents it from converting into rankings for the high-value Arlington and Fort Worth commercial searches.', volume: '300', volumeNote: 'Monthly searches for fire protection contractor in the Arlington/Fort Worth TX area', leads: '5-9', leadsNote: 'Estimated additional commercial service leads per month with restructured geo targeting', timeline: '45-60 days', timelineNote: 'Expected time for title tag and dedicated Arlington page to move in local results' },
+    fixes: [
+      { letter: 'A', title: 'Update homepage title tag and H1 to include DFW or Arlington', body: 'Change the title to "Fire Protection Contractor Arlington & Fort Worth TX | Elyon Fire & Life Safety." This single change sends the clearest geo-signal Google uses for local ranking.' },
+      { letter: 'B', title: 'Create dedicated city service pages for Arlington and Fort Worth', body: 'Build standalone pages for the two highest-search cities in your service area with local copy, client types (commercial kitchens, retail, office), and a geo-specific call to action. Move Arlington content out of the zip code list and into its own URL.' },
+      { letter: 'C', title: 'Publish blog posts targeting commercial fire protection in Arlington', body: 'Write 2-3 posts with titles like "Commercial Fire Alarm Inspection Requirements in Arlington TX" or "BDA System Requirements for Fort Worth Buildings." These align your existing blog strength with the commercial search intent that drives contracts.' },
+    ],
+  },
+
+  'Facility IT Group': {
+    searchQuery: 'generator service contracts data center Chicago Rolling Meadows IL',
+    googlePage: 'Page 4',
+    score: { website: 3, seo: 3, total: 6 },
+    primaryFinding: 'Facility IT Group is a Chicagoland critical infrastructure and data center company that explicitly offers generator service contracts and UPS maintenance. Their website is a single-page Wix scroll with no blog, no service detail pages, and no schema. Belec Electrical dominates Chicago data center generator service searches.',
+    issues: [
+      { label: 'No service pages', value: 'Generator service contracts listed in a grid of bullet points — no dedicated page exists that search engines can rank (confirmed: facilityitgroup.com homepage)', status: 'critical' },
+      { label: 'No blog or content', value: 'No blog exists. No educational content around UPS maintenance, generator service, or critical power (confirmed: facilityitgroup.com/blog 404)', status: 'critical' },
+      { label: 'No schema markup', value: 'Single-page Wix site has no local business schema, no service schema, no FAQ schema (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'Low index count', value: 'Site has fewer than 5 indexed pages — only homepage and legal docs found (confirmed: site search)', status: 'warning' },
+    ],
+    impact: { intro: 'Data center operators in the Chicago metro actively search for OEM-agnostic generator service contracts. FIG has the capability — they just can\'t be found.', volume: '90', volumeNote: 'est. monthly searches for generator service / UPS maintenance contracts in Chicagoland', leads: '2-5', leadsNote: 'est. monthly facility manager leads reachable with dedicated generator service content', timeline: '45-75 days', timelineNote: 'to rank for generator service contract terms in Rolling Meadows / Chicago suburbs' },
+    fixes: [
+      { letter: 'A', title: 'Dedicated generator service page', body: 'Build a standalone /generator-service-contracts page with specifics on OEM coverage, response times, and Chicagoland service area — gives search engines something to rank.' },
+      { letter: 'B', title: 'UPS + generator maintenance content', body: 'Publish 3-4 educational posts targeting "data center generator maintenance Chicago" and "OEM-agnostic UPS service contract" — FIG\'s neutrality is a real differentiator.' },
+      { letter: 'C', title: 'Local business schema', body: 'Add LocalBusiness schema to the homepage with service categories, geo coordinates, and service area markup — immediate signal to Google for local pack eligibility.' },
+    ],
+  },
+
+  'Fire Water Sprinkler Protection LLC.': {
+    searchQuery: 'fire protection contractor Dallas Fort Worth Roanoke TX',
+    googlePage: 'Page 1',
+    score: { website: 2, seo: 1, total: 3 },
+    primaryFinding: 'Allied Fire Protection (Dallas regional hub), DFS Fire Systems, and Western States Fire Protection all dominate DFW search — Fire Water Sprinkler Protection\'s site title tag reads "annual fire alarm" which means Google presents it with zero brand or service clarity.',
+    issues: [
+      { label: 'Title Tag Misidentifies the Business', value: 'Homepage title tag is "Home - annual fire alarm" — this appears in every Google result instead of company name or service description (confirmed: fwspllc.com homepage fetch, April 2026)', status: 'critical' },
+      { label: 'Only 2 Pages Indexed', value: 'site:fwspllc.com returns only contact and services pages — a company with 20+ years of experience has essentially no search presence in a 200-400/mo market (confirmed: site: search)', status: 'critical' },
+      { label: 'No Schema, No Blog, No Trust Signals', value: 'Homepage has no structured data, no certifications displayed, no project references — nothing that signals credibility to buyers or to Google (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Roanoke TX Address Not Leveraged', value: 'Roanoke (pop 8K) sits in the DFW growth corridor near Keller, Southlake, Trophy Club — zero location-specific content targeting this high-growth suburban commercial market (confirmed: homepage and services page fetch)', status: 'warning' },
+    ],
+    impact: { intro: 'DFW is a 200–400/mo search market for fire protection contractors. Fire Water Sprinkler Protection is functionally invisible — 2 pages indexed, broken title tag, no schema. The gap between current state and basic visibility is the largest in this group.', volume: '300', volumeNote: 'est. monthly searches, Dallas-Fort Worth metro (Dallas-Fort Worth used per instructions for Roanoke TX)', leads: '10-18', leadsNote: 'incremental leads/mo once basic site infrastructure is fixed — large market, near-zero current visibility', timeline: '30-60 days', timelineNote: 'title tag and schema fixes deliver fast wins; content takes longer but DFW market is deep' },
+    fixes: [
+      { letter: 'A', title: 'Fix the title tag immediately', body: 'Change "Home - annual fire alarm" to "Fire Water Sprinkler Protection | Fire Sprinkler & Fire Alarm Services | DFW TX." This single change is the most urgent fix — it determines how every search result appears.' },
+      { letter: 'B', title: 'Build 5 core service pages and add schema', body: 'Dedicated pages for fire sprinkler installation, fire alarm inspection, fire extinguisher service, 24-hour emergency service, and annual inspections. Add LocalBusiness schema with Roanoke address and DFW service area.' },
+      { letter: 'C', title: 'Launch Roanoke and North Fort Worth geo content', body: 'Target the growth corridor: Roanoke, Keller, Southlake, Trophy Club, Westlake. These suburbs have active commercial development with buyers searching for local fire protection contractors — large DFW firms rarely target them specifically.' },
+    ],
+  },
+
+  'Fire fighting suppression system': {
+    searchQuery: 'fire suppression system contractor installation India Noida',
+    googlePage: 'Page 10+',
+    score: { website: 1, seo: 1, total: 2 },
+    primaryFinding: 'This is an India-based fire suppression contractor (Sea Max Fire Engineering Works, Delhi/Noida/Gurugram) operating fire-suppression-system.com. The website is a thin 6-page WordPress brochure with only India contact information. NOTE: The contact email ketric@greatswfire.com belongs to Great Southwestern Fire & Safety (Dallas TX, 214-653-1100) — a completely separate US fire protection contractor. This CRM record appears to mix a US contact with an India company\'s domain. Technohead is the dominant Delhi NCR competitor.',
+    issues: [
+      { label: 'CRM data conflict', value: 'Contact email ketric@greatswfire.com resolves to Great Southwestern Fire & Safety (Dallas TX) — not this India-based company (confirmed: greatswfire.com homepage)', status: 'critical' },
+      { label: 'India-only presence', value: 'Website lists only +91 phone numbers and Delhi/Noida/Gurugram addresses — no US presence, no US phone, no US service area (confirmed: fire-suppression-system.com homepage)', status: 'critical' },
+      { label: 'Thin website', value: '6-page WordPress site with no schema, no blog, no certifications beyond UL/CE/ISI references, and broken dynamic JavaScript counters (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'Not indexed in US search', value: 'Domain does not surface in US Google results for any fire suppression or fire protection query — entirely invisible to American buyers (confirmed: site search)', status: 'warning' },
+    ],
+    impact: { intro: 'US digital visibility analysis cannot be conducted meaningfully — this company has no US footprint. If the intended prospect is Great Southwestern Fire & Safety (Dallas TX), that is a viable US fire protection contractor worth a separate audit.', volume: '50', volumeNote: 'est. monthly searches for fire suppression contractor in Delhi NCR (India market only)', leads: '0', leadsNote: 'US leads reachable with current website: zero. No US geo content, no US contact info.', timeline: 'N/A', timelineNote: 'US visibility would require building from scratch: domain, geo pages, US contact, schema' },
+    fixes: [
+      { letter: 'A', title: 'Re-validate this CRM record', body: 'Ketric Sanford\'s email goes to Great Southwestern Fire & Safety (Dallas TX, greatswfire.com) — a real US fire protection contractor. Recommend separating into two records and auditing GSF on its own.' },
+      { letter: 'B', title: 'US presence build if applicable', body: 'If this firm does have a US operation, it needs a .com subdomain or US landing page, a US phone number, and LocalBusiness schema — currently zero signal for any US buyer.' },
+      { letter: 'C', title: 'India site basics', body: 'For the India market: add schema markup, create city-specific pages for Delhi, Noida, and Gurugram, and publish 3-4 fire suppression system type pages (gaseous, foam, water mist) with technical content.' },
+    ],
+  },
+
+  'Gen-Tech, Inc.': {
+    searchQuery: 'commercial generator service Gainesville GA',
+    googlePage: 'Not ranked',
+    score: { website: 5, seo: 4, total: 9 },
+    primaryFinding: 'Southern Power Expert, LLC holds the top Gainesville commercial generator spot with a dedicated city page and active presence — Gen-Tech has $14.4M revenue and 20+ years of commercial depth on a Wix site with no blog and no local geo content whatsoever',
+    issues: [
+      { label: 'No blog or content', value: 'Homepage and commercial page have no blog section — Wix site with no content published despite 20+ years in business (confirmed: gen-tech.net and gen-tech.net/commercial fetch)', status: 'critical' },
+      { label: 'No Gainesville geo-targeting', value: 'Homepage and commercial page do not mention Gainesville, Hall County, or any Georgia service city — Southern Power Expert has an explicit Gainesville page (confirmed: gen-tech.net homepage fetch)', status: 'critical' },
+      { label: 'Wix platform limits SEO ceiling', value: 'Site is built on Wix (confirmed: URL structure and footer) — limits schema, page speed, and indexing flexibility versus competitor WordPress/custom sites', status: 'warning' },
+      { label: 'No schema markup detected', value: 'Homepage fetch shows no ld+json or structured data — competitors like Anderson Power Services use schema to appear in local pack (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Gainesville GA (pop. ~40,000) is a small city but anchors a large Hall County commercial zone with poultry processing, manufacturing, and healthcare facilities. Southern Power Expert holds the top position with a Gainesville-specific service page. Gen-Tech serves this market daily but is invisible to anyone searching online.',
+      volume: '100', volumeNote: 'Monthly searches for commercial generator service in Gainesville GA and surrounding Hall County',
+      leads: '5-10', leadsNote: 'Estimated inquiries lost monthly — small market but highly concentrated commercial buyer pool',
+      timeline: '45-75 days', timelineNote: 'Small market, low competition — geo page plus 2 posts could rank within 6-8 weeks',
+    },
+    fixes: [
+      { letter: 'A', title: 'Create a Gainesville GA commercial generator service page to challenge Southern Power Expert', body: 'Southern Power Expert holds #1 with a Gainesville city page. A single /gainesville-ga page with service details, 24/7 language, and agricultural/industrial sector callouts would directly target their position given Gen-Tech\'s deeper actual service history there.' },
+      { letter: 'B', title: 'Publish content targeting Hall County commercial generator queries', body: 'Zero published content exists on the site. Two posts — "commercial generator maintenance Gainesville GA" and "generator service contracts for poultry farms Hall County" — target Gen-Tech\'s actual client base and search patterns with no existing competition.' },
+      { letter: 'C', title: 'Add LocalBusiness schema and service-area markup', body: 'No schema exists on site (confirmed: homepage fetch). Adding LocalBusiness schema with Gainesville address and areaServed geo markup would improve map pack eligibility where C&A Generators and Anderson Power currently appear.' },
+    ],
+  },
+
+  'Generator Power Systems/Fish Electric': {
+    searchQuery: 'commercial generator service Spring TX',
+    googlePage: 'Page 1',
+    score: { website: 6, seo: 6, total: 12 },
+    primaryFinding: 'Generator Power Systems (standbypowerhouston.com) appears in Spring TX results but ranks behind Gentek USA on commercial intent queries — their active blog exclusively targets homeowners while commercial buyers are underserved',
+    issues: [
+      { label: 'Blog is 100% residential-focused', value: 'Blog has 6 posts: tornado prep, flood prep, power outage tips, Kohler reasons — none target commercial generator service contracts or businesses (confirmed: blog fetch)', status: 'critical' },
+      { label: 'Site title and domain say Houston, not Spring', value: 'Title is "Expert Generator Service in Houston" and domain is standbypowerhouston.com — ARK Generator explicitly targets Spring TX and outranks them locally (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Commercial service page is thin', value: 'Site has residential install focus; commercial generator service page has no specific service-level language or geo targeting for Spring TX businesses (confirmed: site: search)', status: 'warning' },
+      { label: 'No schema on homepage or service pages', value: 'No application/ld+json detected despite trust signals like 43 years experience and Kohler Titanium Dealer status (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Spring TX has approximately 150 searches per month for commercial generator service. ARK Generator and Gentek USA both appear above Generator Power Systems on commercial-intent queries. With 43 years of experience and Kohler Titanium credentials, this firm should own the market — but the content strategy is entirely pointed at homeowners.',
+      volume: '150', volumeNote: 'Monthly searches for commercial generator service in Spring TX',
+      leads: '5–8', leadsNote: 'Estimated commercial inquiries lost monthly to ARK Generator and Gentek USA',
+      timeline: '45–75 days', timelineNote: 'Commercial page + 2–3 blog posts needed first',
+    },
+    fixes: [
+      { letter: 'A', title: 'Create a commercial generator service page targeting Spring TX businesses', body: 'The site has zero commercial-specific content. A /commercial-generator-service-spring-tx/ page with service contracts, maintenance programs, and business-specific language will capture what Gentek USA currently owns.' },
+      { letter: 'B', title: 'Write 2 commercial-focused blog posts', body: 'Six blog posts all target homeowners. Adding "Commercial Generator Maintenance Contracts in Spring TX" and "Backup Power for Houston Area Businesses" directly addresses the buyer intent gap that Gentek USA is filling.' },
+      { letter: 'C', title: 'Add Spring TX to site title or create a Spring-specific page', body: 'ARK Generator ranks for Spring specifically because they say Spring. Standbypowerhouston.com\'s title and domain signal Houston broadly — adding Spring geo targeting closes the local gap.' },
+    ],
+  },
+
+  'Generators of Houston A GENRG Power Solutions, LLC Company': {
+    searchQuery: 'commercial generator service Houston TX',
+    googlePage: 'Page 3',
+    score: { website: 3, seo: 3, total: 6 },
+    primaryFinding: 'Grastengenerators.com ranks #1 in Houston for commercial generator service — GENRG\'s homepage title says "Industrial" not "Houston," has no phone number visible, no trust signals, and no blog despite $32M in revenue and 34 employees',
+    issues: [
+      { label: 'Homepage title has zero geo signal', value: 'Title is "Industrial - GENRG Power Solutions" — no mention of Houston, Texas, or generator service (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'No blog — 0 content posts', value: 'Blog 404 confirmed. Gentek USA and Grastengenerators.com both have content ranking for Houston commercial generator searches (confirmed: blog 404)', status: 'critical' },
+      { label: 'Homepage has no phone number or address', value: 'The homepage text contains no contact information — only a project gallery and service list, no trust signals visible (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Only 8 pages indexed', value: 'For a $32M company with 34 employees, 8 indexed pages signals a severely under-invested web presence — Gentek USA and Critical Power Solutions both have far deeper content (confirmed: site: search)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Houston has approximately 500 searches per month for commercial generator service — one of the highest-volume markets in this batch. Grastengenerators.com, Gentek USA, and Colwell Electric all appear above GENRG on page 1. A company with $32M in revenue and a proven project portfolio of installations up to 1.5MW is effectively invisible online.',
+      volume: '500', volumeNote: 'Monthly searches for commercial generator service in Houston TX',
+      leads: '15–25', leadsNote: 'Estimated commercial inquiries lost monthly to page 1 competitors',
+      timeline: '60–90 days', timelineNote: 'Title, contact info, and blog are immediate quick wins',
+    },
+    fixes: [
+      { letter: 'A', title: 'Rewrite homepage title and H1 to say Houston and commercial generator service', body: 'Grastengenerators.com ranks #1 because they lead with the city and service. Changing GENRG\'s title to "Commercial Generator Service Houston TX | GENRG Power Solutions" is the single fastest ranking improvement available.' },
+      { letter: 'B', title: 'Add phone number, address, and contact CTA above the fold', body: 'The homepage has no visible phone number. Every competitor in Houston lists contact info prominently. This also blocks LocalBusiness schema implementation which requires a verifiable address and phone.' },
+      { letter: 'C', title: 'Launch a blog with 4 Houston-market case study posts', body: 'GENRG has an impressive project portfolio (900kW parallel Houston call center, 1.5MW water plant, Infinity dealership). Case study posts built around these real projects would rank for commercial generator terms and showcase capability that no competitor can match.' },
+    ],
+  },
+
+  'Genset Services, Inc.': {
+    searchQuery: 'commercial generator service Pompano Beach FL',
+    googlePage: 'Page 2',
+    score: { website: 4, seo: 3, total: 7 },
+    primaryFinding: 'American Generator Services ranks #1 for commercial generators Pompano Beach FL with a dedicated city landing page — Genset Services has no Pompano Beach page, no blog, and a generic title that says "South Florida" across all 10 indexed pages',
+    issues: [
+      { label: 'No Pompano Beach landing page', value: 'American Generator Services has a dedicated /locations/commercial-generators-pompano-beach-fl/ page — Genset Services has no city-specific page for any South Florida market (confirmed: site: search)', status: 'critical' },
+      { label: 'No blog', value: 'Resource Center has Generac manuals and newsletters but no blog posts — American Generator Services and Rack Electric both have content ranking for Pompano Beach generator searches (confirmed: blog 404)', status: 'critical' },
+      { label: 'Title is generic "South Florida" with no service clarity', value: 'Homepage title is "Quality Industrial and Commercial Generators South Florida" — neither the city nor the word "service" appears prominently (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'Industrial generator pages are thin', value: 'Industrial generators page lists customer types without service program detail — Reliable Power Systems has stronger service-specific language for Pompano Beach commercial buyers (confirmed: service page fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Pompano Beach has approximately 150 searches per month for commercial generator service. American Generator Services — operating since 2006 — holds position 1 with a dedicated city page. Genset Services, the Generac authorized distributor for all of South Florida, should own this market but has no city-level presence to compete.',
+      volume: '150', volumeNote: 'Monthly searches for commercial generator service in Pompano Beach FL',
+      leads: '4–7', leadsNote: 'Estimated commercial inquiries lost monthly to American Generator Services',
+      timeline: '30–60 days', timelineNote: 'City landing page is the priority first fix',
+    },
+    fixes: [
+      { letter: 'A', title: 'Create a dedicated Pompano Beach commercial generator service page', body: 'American Generator Services ranks #1 because they have /locations/commercial-generators-pompano-beach-fl/. Genset Services needs an equivalent: /commercial-generator-service-pompano-beach/ with service programs, 24/7 availability, Generac dealer credentials, and a local phone number.' },
+      { letter: 'B', title: 'Start a blog targeting South Florida commercial generator maintenance', body: 'The Resource Center has manuals — that infrastructure exists but isn\'t used for content marketing. Three posts targeting "commercial generator service Pompano Beach," "Generac maintenance contracts South Florida," and "generator load bank testing Broward County" would begin ranking quickly given Genset\'s existing domain authority.' },
+      { letter: 'C', title: 'Rewrite homepage title to lead with city and service', body: 'Change from "Quality Industrial and Commercial Generators South Florida" to "Commercial Generator Service South Florida | Generac Authorized Dealer | Genset Services." The word "service" and the Generac authorization are both missing from the current title tag.' },
+    ],
+  },
+
+  'HOTSTART': {
+    searchQuery: 'commercial generator service Spokane Valley WA',
+    googlePage: 'Not ranked',
+    score: { website: 8, seo: 7, total: 15 },
+    primaryFinding: 'Independent Power Generation outranks HOTSTART for commercial generator service in Spokane because IPG has local service contractor pages — HOTSTART is a global manufacturer with a deep technical site but zero local-market search presence for end-user facility managers',
+    issues: [
+      { label: 'No local service presence', value: 'HOTSTART does not appear in any local commercial generator service search results for Spokane Valley despite being headquartered there (confirmed: Google search results)', status: 'critical' },
+      { label: 'Audience mismatch in copy', value: 'Power generation market page targets OEM engineers and sustainability directors; procurement language used by facility managers is absent (confirmed: hotstart.com/markets/power-generation)', status: 'critical' },
+      { label: 'No service contractor pages', value: 'Site has extensive product catalog but no pages targeting service contracts, maintenance agreements, or local installation support (confirmed: site:hotstart.com)', status: 'warning' },
+      { label: 'Blog/news is product-only', value: 'News section covers whitepapers and hiring but has no content targeting the facility manager\'s decision journey (confirmed: hotstart.com homepage)', status: 'warning' },
+    ],
+    impact: { intro: 'HOTSTART has strong domain authority and rich product content but is completely invisible in local service searches where their end-customers make buying decisions.', volume: '100', volumeNote: 'Monthly searches for commercial generator service in Spokane Valley WA', leads: '2-4', leadsNote: 'Estimated additional facility manager contacts per month with local service content', timeline: '45-75 days', timelineNote: 'Expected time to surface in local results with location and service-contract pages' },
+    fixes: [
+      { letter: 'A', title: 'Create a Spokane facility manager landing page', body: 'Build a dedicated page targeting facility managers in Spokane who manage standby generators, covering maintenance, engine heater service, and energy efficiency upgrades. Use conversational procurement language, not engineering specs.' },
+      { letter: 'B', title: 'Add a service contracts section to the power generation market page', body: 'The current page explains heat pump technology well but never calls facility managers to action for a service contract. Add a section on ongoing heater maintenance, replacement, and efficiency audits with a contact form.' },
+      { letter: 'C', title: 'Publish facility-type content targeting local buyers', body: 'Publish 3-4 articles targeting Spokane data centers, hospitals, and universities that depend on standby generators — the exact end-users HOTSTART\'s products serve. These create topical relevance for service-intent searches.' },
+    ],
+  },
+
+  'Houston Fire & Security': {
+    searchQuery: 'fire protection contractor Houston TX',
+    googlePage: 'Page 4+',
+    score: { website: 3, seo: 2, total: 5 },
+    primaryFinding: 'Houston Fire & Security\'s homepage displays a live "0 years of experience" counter and an empty blog page with no posts — Kauffman Co. has 9 active blog posts and 20+ indexed pages pulling in the same Humble and Houston commercial clients Houston Fire & Security cannot reach.',
+    issues: [
+      { label: 'Live "0 Years Experience" Counter', value: 'Homepage stats counter shows 0 — a JavaScript animation that failed to initialize, visible to every site visitor including commercial prospects (confirmed: houstonfiresecurity.com homepage)', status: 'critical' },
+      { label: 'Empty Blog', value: 'Blog page exists at /blog but has zero published posts — no content for Google to index and no reason for commercial clients to return (confirmed: houstonfiresecurity.com/blog)', status: 'critical' },
+      { label: 'No Schema', value: 'No LocalBusiness or service schema detected anywhere on the site — 1-employee company with no authority signals for Google to rank (confirmed: page source)', status: 'warning' },
+      { label: 'Minimal Indexed Pages', value: 'Estimated 5-6 indexed pages — Kauffman has 20+ and Reliable Fire has 30+ pages competing for the same Houston fire protection searches (confirmed: site architecture)', status: 'warning' },
+    ],
+    impact: { intro: 'Houston fire protection searches total 350+ per month. A 1-person company with broken counters and no content has near-zero search visibility — every commercial lead in Humble goes elsewhere.', volume: '350', volumeNote: 'Monthly Houston metro fire protection searches', leads: '2-4', leadsNote: 'Monthly leads reachable after fixing homepage and publishing first posts', timeline: '45-75 days', timelineNote: 'Counter fix is immediate; content takes 45 days to index' },
+    fixes: [
+      { letter: 'A', title: 'Fix the Experience Counter', body: 'The counter JavaScript is broken and shows 0 to every visitor. Fix the animation or replace with static text: "Serving Houston Since 1999." This is a same-day fix.' },
+      { letter: 'B', title: 'Publish 3 Blog Posts Targeting Humble and Houston', body: 'Write posts for "fire protection inspection Humble TX," "fire extinguisher service Houston," and "commercial fire alarm Humble TX." These are low-competition searches with zero incumbents.' },
+      { letter: 'C', title: 'Add LocalBusiness Schema and Google Business Profile', body: 'Claim and complete a Google Business Profile, then add matching ld+json schema to the homepage. For a 1-person operation, local pack visibility is the fastest path to inbound calls.' },
+    ],
+  },
+
+  'Infinity Fire Protection': {
+    searchQuery: 'fire protection contractor Maple Valley WA',
+    googlePage: 'Page 1',
+    score: { website: 5, seo: 5, total: 10 },
+    primaryFinding: 'Northwest Fire Systems outranks Infinity Fire Protection for Maple Valley fire protection because Northwest has a geo-specific location page for Maple Valley — Infinity has been in business since 2003, has a blog, and holds a BuildZoom score in the top 6% of WA contractors, but none of that shows up in title tags or service page copy',
+    issues: [
+      { label: 'No geo-signal in H1 or title', value: 'Homepage H1 is "Innovative Fire Protection Services" with no city, state, or regional mention (confirmed: infinity-fire.com homepage fetch)', status: 'critical' },
+      { label: 'Blog content is generic', value: 'Blog has 6+ pages of posts but all are generic fire safety tips (holiday safety, Halloween, horse evacuation) — none target commercial building managers or Western Washington (confirmed: infinity-fire.com/blog)', status: 'critical' },
+      { label: 'Service pages are thin', value: 'Service pages for fire alarms, sprinklers, and extinguishers exist but lack geo-specific copy or commercial building context (confirmed: site:infinity-fire.com)', status: 'warning' },
+      { label: 'No schema confirmed', value: 'No structured data or LocalBusiness schema evident on homepage or service pages (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: { intro: 'Infinity Fire has real depth — 20+ years, strong BuildZoom score, and an active site — but the content strategy is aimed at residential homeowners rather than the commercial building managers who sign service contracts.', volume: '150', volumeNote: 'Monthly searches for fire protection in the Maple Valley / Seattle South King County area', leads: '3-5', leadsNote: 'Estimated additional commercial contract leads per month with geo and commercial content fixes', timeline: '45-60 days', timelineNote: 'Expected time for a dedicated Maple Valley page and commercial blog posts to surface in local results' },
+    fixes: [
+      { letter: 'A', title: 'Add Maple Valley and Western Washington to homepage and title tag', body: 'Update the title to "Fire Protection Company Maple Valley & Western Washington | Infinity Fire Protection" and add a location-specific intro paragraph to the homepage. Northwest Fire Systems ranks precisely because their page names the city.' },
+      { letter: 'B', title: 'Shift blog content to commercial building manager topics', body: 'Replace generic fire safety posts with articles targeting commercial property managers: "Annual Fire Sprinkler Inspection Requirements for Washington State Commercial Buildings," "Restaurant Hood Suppression System Service in King County," etc. These drive service-contract-intent searches.' },
+      { letter: 'C', title: 'Create a commercial industries served page', body: 'Build a page listing the industries Infinity serves (multi-family, retail, hospitals, offices) with Western Washington references throughout. This converts the existing BuildZoom credibility into content Google can surface for commercial-intent queries.' },
+    ],
+  },
+
+  'Integrity Fire Protection': {
+    searchQuery: 'fire protection contractor Stevens Point WI',
+    googlePage: 'Page 1',
+    score: { website: 3, seo: 2, total: 5 },
+    primaryFinding: 'Summit Fire Protection (Summit Companies) appears first for Stevens Point fire protection searches, with a full location page, decades of presence, and dozens of indexed pages — Integrity has 4 pages total.',
+    issues: [
+      { label: 'Only 4 Pages Indexed', value: 'site:integrityfp.net returns home, services, measuring dry heads, and quote pages — no dedicated service type pages, no geo content (confirmed: site: search)', status: 'critical' },
+      { label: 'No Schema Markup', value: 'Homepage and services page have no LocalBusiness or Service structured data (confirmed: homepage fetch, April 2026)', status: 'critical' },
+      { label: 'Fabrication Differentiator Hidden', value: 'In-house fabrication shop and BIM/Revit/3D design capability are listed only on services page with no explanation of competitive advantage (confirmed: services page fetch)', status: 'warning' },
+      { label: 'No Blog or Educational Content', value: 'Zero content marketing — Stevens Point buyers researching fire sprinkler systems will not find Integrity at any point in their research journey (confirmed: site: search)', status: 'warning' },
+    ],
+    impact: { intro: 'Stevens Point is a 26K-population market with 30–80 monthly searches. Summit Fire dominates. Integrity\'s entire online presence is 4 pages with no content, no schema, and no way to compete organically.', volume: '50', volumeNote: 'est. monthly searches, Stevens Point WI (pop 26K)', leads: '3-6', leadsNote: 'incremental leads/mo from basic content and schema in a thin market', timeline: '45-75 days', timelineNote: 'smaller market responds faster to targeted local content' },
+    fixes: [
+      { letter: 'A', title: 'Build dedicated service type pages', body: 'Separate pages for wet, dry, pre-action, deluge, and foam systems — each page captures specific search queries buyers use when comparing contractors.' },
+      { letter: 'B', title: 'Lead with fabrication as differentiation', body: 'Dedicated page on in-house fabrication with specifics: lead time advantages, supply chain benefits, BIM coordination capability. Competitors who outsource fabrication cannot match this claim.' },
+      { letter: 'C', title: 'Add LocalBusiness schema and WI-specific geo content', body: 'Schema with Stevens Point address and service counties. One page targeting "fire sprinkler contractor Wisconsin" captures statewide searches Summit doesn\'t own locally.' },
+    ],
+  },
+
+  'Iowa Fire Equipment Co': {
+    searchQuery: 'fire protection contractor Des Moines IA',
+    googlePage: 'Page 1',
+    score: { website: 8, seo: 7, total: 15 },
+    primaryFinding: 'Iowa Fire Equipment Co — now branded as Pye-Barker Fire & Safety — has a strong multi-location site with deep service pages, but no blog and a rebrand that may confuse long-term Des Moines clients, while Summit Fire Protection publishes active local content that keeps them top-of-mind between Iowa Fire\'s annual inspection cycles.',
+    issues: [
+      { label: 'No Blog — Content Gap vs Summit Fire', value: 'No blog section found on iafire.com — Summit Fire\'s Des Moines location page publishes regular fire protection content that Iowa Fire cannot compete with for informational searches (confirmed: iafire.com)', status: 'critical' },
+      { label: 'Pye-Barker Rebrand May Confuse Existing Clients', value: 'iafire.com is now fully branded as Pye-Barker — Des Moines clients searching "Iowa Fire Equipment" by name may not connect with the new brand identity (confirmed: iafire.com homepage)', status: 'critical' },
+      { label: 'No Des Moines-Specific Geo Content', value: 'Site has location pages but Des Moines page content is thin vs Summit Fire\'s dedicated local service area narrative (confirmed: iafire.com services)', status: 'warning' },
+      { label: 'Site Crawl Timeout on Homepage', value: 'iafire.com homepage failed to load during audit (crawl timeout) — potential server response issue affecting both users and search engine crawlers (confirmed: crawl attempt)', status: 'warning' },
+    ],
+    impact: { intro: 'Des Moines sees 125+ monthly fire protection searches. Iowa Fire currently ranks well but Summit Fire is gaining ground with active content that Iowa Fire has no answer to.', volume: '125', volumeNote: 'Monthly Des Moines IA fire protection searches', leads: '2-4', leadsNote: 'Incremental leads from blog and geo content — Summit currently captures these', timeline: '60-90 days', timelineNote: 'Content takes 60 days to build enough authority to outrank Summit' },
+    fixes: [
+      { letter: 'A', title: 'Launch a Des Moines Fire Protection Blog', body: 'Publish 4 posts targeting Iowa facility managers: NFPA 25 sprinkler inspection requirements, fire extinguisher annual maintenance Des Moines, kitchen suppression system inspection Iowa. These are queries Summit answers and Iowa Fire does not.' },
+      { letter: 'B', title: 'Create a Rebrand Bridge Page', body: 'Add a visible banner or page explaining the Iowa Fire Equipment → Pye-Barker transition. Existing clients searching "Iowa Fire Equipment Company" should land on a page that confirms continuity — not a generic Pye-Barker homepage.' },
+      { letter: 'C', title: 'Check and Fix Homepage Server Response Time', body: 'The iafire.com homepage timed out during crawl — verify server response time is under 500ms. A slow homepage hurts both user experience and Core Web Vitals rankings in Google.' },
+    ],
+  },
+
+  'JC Davis Power': {
+    searchQuery: 'commercial generator service Austin TX',
+    googlePage: 'Not ranked',
+    score: { website: 7, seo: 4, total: 11 },
+    primaryFinding: 'Capital Power Systems holds the Austin commercial generator service position with dedicated pages for installation, maintenance, and service contracts — JC Davis Power has an active blog publishing every 2-3 weeks but every post targets construction rental buyers, and the homepage positions the firm as a mobile power company, invisible to the facilities manager looking to sign a service contract',
+    issues: [
+      { label: 'Homepage positions as mobile power, not generator service', value: 'H1 reads "Mobile Power Management in TX & Surrounding States" — no reference to commercial generator service contracts, PM programs, or facility maintenance (confirmed: jcdavispower.com homepage fetch)', status: 'critical' },
+      { label: 'Blog is 100% rental and construction focused', value: 'Blog shows 8 recent posts — all about generator rentals, light tower rentals, diesel vs. hybrid costs for job sites — zero posts about commercial service contracts or facility backup power (confirmed: jcdavispower.com/blog fetch)', status: 'critical' },
+      { label: 'No commercial service contract or PM pages', value: 'Site nav shows Mobile Office Power, Site Lighting, Industries, About — no service contract or planned maintenance section visible (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'No Austin-specific landing page', value: 'Site serves "Texas and surrounding states" broadly — no Austin city page while Capital Power Systems and Storm Guardian both have Austin-specific commercial generator pages (confirmed: search results)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Austin TX (pop. 1M+) generates approximately 350 monthly searches for commercial generator service — the highest volume market in this group. Capital Power Systems and Storm Guardian anchor positions 1-2 with dedicated Austin commercial pages. JC Davis has the blog infrastructure and publishing cadence to compete, but every asset points at rental buyers, not service contract buyers.',
+      volume: '350', volumeNote: 'Monthly searches for commercial generator service Austin TX',
+      leads: '18-30', leadsNote: 'Estimated monthly inquiries going to Capital Power and Storm Guardian that JC Davis is structurally unable to capture with current positioning',
+      timeline: '60-90 days', timelineNote: 'Blog infrastructure exists — repositioning content and adding service pages can accelerate timeline vs. starting from zero',
+    },
+    fixes: [
+      { letter: 'A', title: 'Add a commercial generator service contract page targeting Austin facilities managers', body: 'Capital Power Systems\' Austin page addresses facility operators, healthcare, and data centers with PM plan details. JC Davis has no equivalent page. A /commercial-generator-service/austin-tx page with PM tiers, 24/7 response, and facility sector callouts would open the category for the first time.' },
+      { letter: 'B', title: 'Publish 2-3 commercial-targeted blog posts to redirect the existing content engine', body: 'The blog publishes regularly — that infrastructure is valuable. Two posts redirecting toward commercial buyers: "commercial generator service contracts Austin TX: what to look for" and "planned maintenance programs for Austin data centers and medical facilities" would start capturing the 350 monthly searches currently going entirely to Capital Power.' },
+      { letter: 'C', title: 'Update the homepage H1 and hero to include commercial generator service language', body: 'The homepage H1 "Mobile Power Management" excludes every facilities manager searching for a service partner. Adding a secondary positioning line — "Commercial Generator Service & Managed Power for Austin Businesses" — and a service contract CTA would immediately improve relevance for the $7,000 avg deal buyer who currently bounces.' },
+    ],
+  },
+
+  'JS&A Control Systems': {
+    searchQuery: 'fire alarm fire sprinkler contractor Dallas Texas',
+    googlePage: 'Page 3+',
+    score: { website: 4, seo: 3, total: 7 },
+    primaryFinding: 'FireTron dominates Dallas fire alarm searches as the largest individually-owned fire safety company in Texas while JS&A\'s About section still shows Lorem Ipsum and a 2019 copyright',
+    issues: [
+      { label: 'Lorem Ipsum in About section', value: 'The About Us page body contains "Lorem ipsum dolor sit amet..." placeholder text — site was never finished (confirmed: jsacontrols.com/about)', status: 'critical' },
+      { label: '2019 copyright, never updated', value: 'Footer shows © Copyright 2019 — signals to Google and visitors the site has been abandoned for 5+ years (confirmed: jsacontrols.com)', status: 'critical' },
+      { label: 'No blog or content', value: 'No blog, no articles, no resources section indexed (confirmed: Exa site: search, 6 pages total)', status: 'warning' },
+      { label: 'No geo pages for Dallas submarkets', value: 'Serves Dallas, Houston, Austin-San Antonio but has zero city-specific or suburb landing pages (confirmed: jsacontrols.com/about)', status: 'warning' },
+    ],
+    impact: { intro: 'Dallas fire alarm searches see 200–400 monthly queries. FireTron, DFS Fire Systems, and Fire Safety Solutions all rank with active, real-content sites. JS&A is invisible.', volume: '300', volumeNote: 'est. monthly searches, Dallas fire alarm/sprinkler', leads: '2–5', leadsNote: 'est. monthly leads if ranking on page 1 for Dallas fire alarm queries', timeline: '90–120 days', timelineNote: 'given the depth of content deficit vs. incumbent competitors' },
+    fixes: [
+      { letter: 'A', title: 'Complete the unfinished About page and update copyright', body: 'Replace Lorem Ipsum with real company history, Jim Stofer\'s 40-year background, and the team\'s fire + law enforcement credentials. Update footer to current year. These two fixes alone restore basic credibility.' },
+      { letter: 'B', title: 'Build city-specific fire alarm service pages', body: 'Create pages for Dallas, Fort Worth, Houston, and Austin that name the service (fire alarm inspection, fire sprinkler installation), the city, and the industries served. This is the structural foundation FireTron uses to dominate local search.' },
+      { letter: 'C', title: 'Publish inspection compliance content', body: 'Two posts — NFPA 72 fire alarm inspection requirements for Texas and NFPA 25 sprinkler inspection schedules — would capture facility managers doing compliance research before hiring a contractor.' },
+    ],
+  },
+
+  'Jarrett Fire Protection, Inc.': {
+    searchQuery: 'fire protection contractor Nashville TN',
+    googlePage: 'Page 1-2',
+    score: { website: 7, seo: 8, total: 15 },
+    primaryFinding: 'Jarrett has a real WordPress site with Yoast SEO and a dedicated fire-protection/ service page, but the homepage title tag reads "Commercial Construction Services Nashville, TN" — misidentifying the business to anyone who finds them in search, costing click-throughs to Cintas.',
+    issues: [
+      { label: 'Wrong Title Tag on Homepage', value: 'Title tag: "Jarrett Fire | Commercial Construction Services Nashville, TN" — does not say fire protection, sprinklers, or fire alarm (confirmed: jarrettfire.com homepage meta title)', status: 'critical' },
+      { label: 'Triple GA Tracking Codes', value: 'Three separate Google Analytics gtag.js implementations found on the same page (G-4343NMF6SG, G-XBSKV90TL1, G-HLPZ8K9X0F) — inflates sessions, splits conversion attribution (confirmed: jarrettfire.com homepage source)', status: 'critical' },
+      { label: 'Schema Scope Narrow', value: 'Schema includes WebPage and WebSite types only — no LocalBusiness or FireProtectionContractor entity, no address or service area declared (confirmed: ld+json in homepage source)', status: 'warning' },
+      { label: 'Blog/Noindex Issue', value: '/blog route returned noindex meta tag — blog may be built but blocked from indexing (confirmed: jarrettfire.com/blog HTTP response)', status: 'warning' },
+    ],
+    impact: { intro: 'Jarrett is the strongest site in this group. The gaps are fixable in days, not months — and fixing them has direct impact on an already-ranking site.', volume: '150-300', volumeNote: 'monthly searches for fire protection contractor Nashville TN', leads: '8-15', leadsNote: 'estimated monthly leads at current site authority with fixes applied', timeline: '14-30 days', timelineNote: 'to see click-through improvement after title tag fix' },
+    fixes: [
+      { letter: 'A', title: 'Fix the homepage title tag', body: 'Change to "Jarrett Fire Protection | Sprinkler & Alarm Systems Nashville, TN" — immediately signals relevance to fire protection searches and improves CTR from current rankings.' },
+      { letter: 'B', title: 'Remove duplicate GA tracking codes', body: 'Consolidate to a single GA4 property — eliminate session inflation, fix attribution, and get clean conversion data for the first time.' },
+      { letter: 'C', title: 'Add LocalBusiness schema and un-noindex the blog', body: 'Declare the business as a LocalBusiness with Nashville service area, and remove the noindex from /blog to let existing content build topical authority.' },
+    ],
+  },
+
+  'Kauffman Company Fire & Life Safety': {
+    searchQuery: 'fire protection contractor Houston TX',
+    googlePage: 'Page 1',
+    score: { website: 9, seo: 8, total: 17 },
+    primaryFinding: 'Kauffman has the strongest web presence in Houston fire protection, but Koetter Fire Protection outranks them on key commercial terms with a dedicated location landing page and full LocalBusiness schema markup that Kauffman has not deployed yet.',
+    issues: [
+      { label: 'Placeholder Testimonials', value: 'Homepage reviews section shows Lorem ipsum placeholder text instead of real client names or ratings (confirmed: kauffmanco.net homepage)', status: 'critical' },
+      { label: 'Missing LocalBusiness Schema', value: 'No application/ld+json LocalBusiness schema on homepage — Koetter Fire has full structured data that feeds Google Knowledge Panel (confirmed: kauffmanco.net source)', status: 'critical' },
+      { label: 'Blog Active but Not Geo-Tagged', value: '9 blog posts confirmed but most lack location-specific URLs or H1s targeting Houston neighborhoods (confirmed: kauffmanco.net/blog)', status: 'warning' },
+      { label: 'No Review Schema', value: 'No aggregate review markup — review count invisible to search engines even though real client reviews may exist (confirmed: page source)', status: 'warning' },
+    ],
+    impact: { intro: 'Houston sees 350+ monthly searches for fire protection contractor terms. Kauffman captures a strong share but leaves commercial sprinkler and inspection searches on the table where Koetter leads.', volume: '350', volumeNote: 'Monthly Houston metro fire protection searches', leads: '3-5', leadsNote: 'Incremental leads from schema + review markup in 60 days', timeline: '30-45 days', timelineNote: 'Schema and review fix is a one-time implementation' },
+    fixes: [
+      { letter: 'A', title: 'Replace Placeholder Testimonials', body: 'Swap Lorem ipsum with 3-5 real client quotes attributed to company name and industry type. This is the first trust signal commercial building owners see.' },
+      { letter: 'B', title: 'Add LocalBusiness + Review Schema', body: 'Implement application/ld+json with LocalBusiness, geo coordinates, business hours, and AggregateRating markup. This is what Koetter has and Kauffman is missing.' },
+      { letter: 'C', title: 'Create Neighborhood-Specific Service Pages', body: 'Add Houston area pages targeting Pearland, Katy, The Woodlands, and Baytown — Kauffman already serves these areas but has no indexed pages for those searches.' },
+    ],
+  },
+
+  'Kescor Fire Protection': {
+    searchQuery: 'fire protection contractor Charlotte NC',
+    googlePage: 'Page 3+',
+    score: { website: 3, seo: 3, total: 6 },
+    primaryFinding: 'Kescor\'s dedicated fire protection service page returns a 404 error, and their domain is shared with hood cleaning and ceiling cleaning services — Performance Fire Protection dominates Charlotte commercial fire searches with a dedicated 30+ page fire protection site and NICET-certified staff that Kescor has no digital presence to compete with.',
+    issues: [
+      { label: 'Fire Protection Service Page Returns 404', value: 'kescor.com/fire-protection returns "404: Requested Page Not Found" — this is the page their own navigation links to for fire protection inquiries (confirmed: kescor.com/fire-protection)', status: 'critical' },
+      { label: 'Multi-Service Domain Dilutes Fire Protection Authority', value: 'Fire protection, hood cleaning, ceiling cleaning, and exhaust fan repair all share one domain — Google cannot establish topic authority for fire protection queries (confirmed: kescor.com homepage)', status: 'critical' },
+      { label: 'No Blog or Content', value: 'No blog section found anywhere on the site — Performance Fire has dedicated Charlotte fire protection content pages that rank for every term Kescor cannot appear for (confirmed: kescor.com)', status: 'warning' },
+      { label: 'Charlotte + Asheville Only — No Geo-Specific Pages', value: 'Service area mentions Charlotte and Asheville metros but no individual city or neighborhood pages — Performance Fire has Charlotte, Mooresville, and surrounding area pages (confirmed: site structure)', status: 'warning' },
+    ],
+    impact: { intro: 'Charlotte sees 250+ monthly fire protection contractor searches. Kescor\'s fire protection page 404 means they cannot appear for any of those queries — Performance Fire takes them all.', volume: '250', volumeNote: 'Monthly Charlotte NC fire protection searches', leads: '3-5', leadsNote: 'Monthly leads reachable after fixing 404 and creating dedicated fire protection content', timeline: '30-60 days', timelineNote: '404 fix is immediate; new pages index in 30 days' },
+    fixes: [
+      { letter: 'A', title: 'Fix the Fire Protection 404', body: 'Rebuild the fire protection service page with substantive content: what Kescor covers (suppression systems, extinguishers, hood systems), certifications, and a Charlotte service area map. This is a same-week fix.' },
+      { letter: 'B', title: 'Create a Standalone Fire Protection Content Section', body: 'Either build a separate domain or create a fire-protection-specific section with its own nav — mixing hood cleaning with fire suppression on the same homepage confuses both users and Google\'s topic model.' },
+      { letter: 'C', title: 'Add Charlotte LocalBusiness Schema', body: 'Add ld+json with Huntersville address, Charlotte + Asheville service area, and fire protection as the primary service type. This alone can push Kescor into Google Local Pack results for Charlotte suburb searches.' },
+    ],
+  },
+
+  'Maverick Fire and Safety': {
+    searchQuery: 'fire protection contractor Houston TX',
+    googlePage: 'Not ranked',
+    score: { website: 1, seo: 3, total: 4 },
+    primaryFinding: 'Koetter Fire Protection and Impact Fire both hold page 1 Houston fire protection positions because they have active, indexed websites — Maverick\'s primary domain is suspended, their only live web presence is a Shopify shop for first aid supplies, and their fire sprinkler inspection service has no functional landing page',
+    issues: [
+      { label: 'Website suspended', value: 'maverickfireandsafety.com returns "Website Suspended" — any visitor, searcher, or prospect who clicks the domain hits a dead end (confirmed: infinity-fire.com homepage fetch of maverickfireandsafety.com)', status: 'critical' },
+      { label: 'No fire protection content live', value: 'Fire sprinkler inspection and suppression services exist only on the suspended main domain; no live page currently serves this content (confirmed: site:maverickfireandsafety.com search shows suspended-state pages)', status: 'critical' },
+      { label: 'Brand split creates confusion', value: 'Active web presence is shop.maverickfireandsafety.com selling first aid kits — a completely different business line from fire protection contracting, with no cross-link to fire services (confirmed: site: search)', status: 'warning' },
+      { label: 'No schema, no local signals', value: 'With the main domain suspended, there is no active schema, no Google Business signals, and no indexable content for Houston fire protection searches (confirmed: Google search results — Maverick does not appear)', status: 'warning' },
+    ],
+    impact: { intro: 'Maverick Fire and Safety is unreachable by any commercial prospect searching online. Every contract that should be theirs currently goes to Koetter, Impact, or Texas Fire Solutions by default.', volume: '400', volumeNote: 'Monthly searches for fire protection contractor in Houston TX — one of the largest US markets', leads: '8-14', leadsNote: 'Estimated commercial leads per month once a functional website with Houston fire protection content is live', timeline: '30-45 days', timelineNote: 'Expected time to establish basic search visibility once the domain is restored and indexed' },
+    fixes: [
+      { letter: 'A', title: 'Restore the main domain immediately', body: 'Reactivate maverickfireandsafety.com and resolve the hosting suspension. Every day the domain is down is a day prospects, Google, and referral links lead nowhere. This is the single highest-priority fix.' },
+      { letter: 'B', title: 'Build a dedicated Houston fire protection landing page', body: 'Create a page titled "Fire Protection Contractor Houston TX | Maverick Fire and Safety" covering sprinkler inspection, suppression systems, and commercial kitchen fire safety — the three services visible in the shop subdomain. Include Houston-specific references and a contact form.' },
+      { letter: 'C', title: 'Separate the fire protection brand from first aid retail', body: 'The shop subdomain creates brand confusion and dilutes credibility with commercial prospects. Either consolidate under one clear brand or clearly label the shop as first aid supply and the main domain as fire protection contracting, with no overlap in navigation.' },
+    ],
+  },
+
+  'Moser Energy Systems an Atlas Energy Solutions Company': {
+    searchQuery: 'commercial generator service Wyoming',
+    googlePage: 'Page 1 — Position ~10',
+    score: { website: 6, seo: 4, total: 10 },
+    primaryFinding: 'Alpine Power Systems explicitly markets Wyoming generator coverage with a dedicated Wyoming service page while moserenergy.com currently greets visitors with an Atlas Energy acquisition banner — a 50-year legacy brand in the middle of an identity transition with no state-level geo content to defend its regional position',
+    issues: [
+      { label: 'Live acquisition announcement banner', value: 'Homepage currently shows a banner: "We are launching a new chapter — Atlas Energy Solutions has acquired Moser Energy Systems" with a "please be patient" message — first impression for any search visitor is a company in transition (confirmed: moserenergy.com homepage fetch)', status: 'critical' },
+      { label: 'No Wyoming-specific service page', value: 'Site has industries and products sections but no Wyoming or state-level service area page — Alpine Power has an explicit Wyoming service page at alpinepowersystems.com/locations/wyoming (confirmed: search results)', status: 'critical' },
+      { label: 'No blog or content section visible', value: 'Homepage and visible nav show no blog — Moser Energy makes no informational content investment despite 50-year history and oil/gas expertise that would dominate Wyoming commercial generator searches (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'Site identity in flux post-acquisition', value: 'Homepage states websites will be merged — brand name in search results, title tags, and site authority may fragment during transition period, weakening rankings that existed under Moser brand (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Evansville WY (pop. ~3,000) is a small town but sits in the Casper area oil and gas corridor — the primary market for Moser\'s oilfield generator expertise. Wyoming statewide commercial generator service searches generate approximately 70 monthly queries. Alpine Power Services and Wyoming Machinery Company (Cat dealer) currently take the top positions Moser should own.',
+      volume: '70', volumeNote: 'Monthly searches for commercial generator service Wyoming — statewide, concentrated in Casper/Natrona County oil corridor',
+      leads: '4-8', leadsNote: 'Estimated inquiries going to Alpine and Wyoming Cat dealer instead of the specialist with 50 years of Wyoming oilfield experience',
+      timeline: '45-90 days', timelineNote: 'Acquisition transition creates timing risk — faster action protects legacy rankings during rebrand period',
+    },
+    fixes: [
+      { letter: 'A', title: 'Replace or suppress the acquisition banner immediately to restore brand confidence', body: 'The banner saying "please be patient as we merge websites" is the first thing every search visitor sees. Replacing it with forward-looking messaging about Atlas-enhanced capabilities would stop the credibility bleed during the transition period.' },
+      { letter: 'B', title: 'Build a Wyoming commercial generator service page before Alpine Power strengthens its position', body: 'Alpine Power has a Wyoming location page — Moser has nothing. A /wyoming page with oil and gas sector callouts, Casper/Natrona County references, and Moser\'s 50-year oilfield runtime stats would directly counter Alpine\'s thin coverage claim.' },
+      { letter: 'C', title: 'Publish oil and gas generator content anchored to Wyoming to defend category leadership', body: 'Moser has more Wyoming oilfield generator run-hours than any competitor in the region. None of that expertise is published. Two posts — "natural gas generator maintenance for Wyoming oilfield operations" and "wellhead gas generator service Casper WY" — would rank with minimal competition.' },
+    ],
+  },
+
+  'Pantropic Power': {
+    searchQuery: 'commercial generator service Miami FL',
+    googlePage: 'Page 2',
+    score: { website: 5, seo: 5, total: 10 },
+    primaryFinding: 'Pantropic Power is South Florida\'s only authorized CAT dealer but Dion Generator Solutions ranks #1 for commercial generator service Miami — Pantropic\'s blog has content but it covers boat maintenance and diesel theory, not the service contract Pantropic should own',
+    issues: [
+      { label: 'Homepage title doesn\'t use service-intent language', value: 'Title is "South Florida\'s Authorized Caterpillar Dealer" — buyers searching "commercial generator service Miami" don\'t see Pantropic because the title signals product sales, not service (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Blog content is misaligned with buyer intent', value: 'Blog posts found: boat maintenance tips, diesel vs. gas generators, marine engine health checks — none target commercial generator service contracts in Miami (confirmed: blog fetch)', status: 'critical' },
+      { label: 'No commercial generator service landing page', value: 'Site has product pages (XQ60 through XQ2000 rental units) and industrial/marine pages but no dedicated commercial service page with maintenance program language (confirmed: site: search)', status: 'warning' },
+      { label: 'Homepage is a product catalog, not a service destination', value: 'Homepage lists 15+ rental generator SKUs — Dion Generators\' homepage leads with service outcomes and commercial use cases (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Miami has 400 searches per month for commercial generator service. Pantropic Power — the only authorized CAT dealer in South Florida, with 200 employees and $78M in revenue — does not appear on page 1. Dion Generator Solutions, a fraction of their size, ranks #1 because their site is purpose-built for service buyers.',
+      volume: '400', volumeNote: 'Monthly searches for commercial generator service in Miami FL',
+      leads: '12–20', leadsNote: 'Estimated service contract inquiries lost monthly',
+      timeline: '45–60 days', timelineNote: 'Homepage title + dedicated service page are immediate priorities',
+    },
+    fixes: [
+      { letter: 'A', title: 'Create a commercial generator service page with maintenance program language', body: 'Dion Generators ranks #1 because their site is built for service buyers. Pantropic has no equivalent page. A /commercial-generator-service-miami/ page listing preventive maintenance, emergency service SLAs, and industries served will directly target the buyer Dion currently captures.' },
+      { letter: 'B', title: 'Rewrite homepage title to lead with service, not brand authorization', body: 'Change from "South Florida\'s Authorized Caterpillar Dealer" to "Commercial Generator Service & Sales Miami | Pantropic Power." The CAT authorization is a trust signal to include on the page, not the primary title.' },
+      { letter: 'C', title: 'Redirect blog content toward commercial service topics', body: 'The blog has infrastructure but publishes marine and generic content. Three posts targeting "commercial generator maintenance Miami," "CAT generator service contracts South Florida," and "backup power for healthcare facilities Miami" would drive qualified commercial traffic Dion currently owns.' },
+    ],
+  },
+
+  'Power Generation and Control, Inc.': {
+    searchQuery: 'commercial generator service Cherryville NC',
+    googlePage: 'Not ranked',
+    score: { website: 2, seo: 2, total: 4 },
+    primaryFinding: 'Angi\'s aggregator listing and Mister Sparky\'s Charlotte-hub page outrank Power Generation and Control on their own home street in Cherryville — a 3-paragraph site with no published blog content and no schema is invisible even to buyers actively searching for a local specialist',
+    issues: [
+      { label: 'Blog is empty', value: '"Check back soon" published on blog page — zero content posted despite being an active business (confirmed: pgandc.com/blog fetch)', status: 'critical' },
+      { label: 'Homepage has near-zero content', value: 'Homepage is three short paragraphs with no service descriptions, no certifications, no photos, no case studies — Mister Sparky has a full Cherryville generator page (confirmed: pgandc.com homepage fetch)', status: 'critical' },
+      { label: 'No schema or structured data', value: 'Homepage shows address and phone in footer text only — no ld+json, no LocalBusiness markup (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'No indexed content beyond home page', value: 'Site structure visible from homepage suggests 4-5 pages maximum — Angi lists 10 competitors for Cherryville generator above them with a single aggregator page (confirmed: search results)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Cherryville NC (pop. ~6,000) is a small market with very limited monthly search volume — but Power Generation and Control is the only dedicated local generator specialist. Losing even a handful of inquiries per month to Angi, Mister Sparky, or Tri-City Electric is significant when each commercial service contract averages $7,000.',
+      volume: '50', volumeNote: 'Monthly searches for generator service in Cherryville NC and surrounding Gaston/Cleveland County',
+      leads: '3-6', leadsNote: 'Estimated inquiries going to aggregators and Charlotte-hub providers instead of the local specialist',
+      timeline: '30-60 days', timelineNote: 'Tiny market with no real competition — even basic content and schema could achieve top-3 quickly',
+    },
+    fixes: [
+      { letter: 'A', title: 'Build a real commercial generator service page to replace the 3-paragraph homepage', body: 'The current homepage is thinner than Mister Sparky\'s Cherryville sub-page. A proper service page with PM plan details, 24/7 callout language, brand certifications, and a service area map would immediately out-content every competitor in this small market.' },
+      { letter: 'B', title: 'Publish any content — even one post — to end "check back soon" status', body: 'Zero published posts means Google has nothing to index for informational queries. One post on "commercial generator maintenance Cherryville NC" or "what is an NFPA 110 PM plan" would differentiate immediately since no local competitor publishes content either.' },
+      { letter: 'C', title: 'Add LocalBusiness schema and claim Google Business Profile', body: 'No schema detected (confirmed: homepage fetch). Given the tiny market, a properly configured GBP with schema markup would likely put them in the map pack for Cherryville generator searches immediately — Angi cannot compete in map pack without a local address.' },
+    ],
+  },
+
+  'PowerPay': {
+    searchQuery: 'generator service financing contractor King of Prussia PA',
+    googlePage: 'Page 10+',
+    score: { website: 8, seo: 6, total: 14 },
+    primaryFinding: 'PowerPay is a B2B fintech financing platform for home improvement contractors — not a generator service provider. Their own search presence is strong (active blog, 15+ indexed pages, press coverage) but they have zero local search footprint for generator service in any metro. Generator Supercenter of The Mainline dominates King of Prussia generator service searches.',
+    issues: [
+      { label: 'Wrong vertical fit', value: 'PowerPay is a financing platform, not a generator service contractor — no local service pages exist (confirmed: getpowerpay.com homepage)', status: 'critical' },
+      { label: 'No local SEO', value: 'Zero city-specific pages or geo content for any generator service market; all content targets homeowners and contractors generically (confirmed: getpowerpay.com/blog)', status: 'critical' },
+      { label: 'Stale blog', value: 'Blog last updated with press releases in 2025 but no generator-specific contractor content published since 2021 (confirmed: getpowerpay.com/blog)', status: 'warning' },
+      { label: 'No schema markup', value: 'Homepage has no structured data markup for local business, financing provider, or service categories (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: { intro: 'Generator dealers in the PowerPay network close bigger projects when buyers can find them locally. Right now those dealers are invisible.', volume: '320', volumeNote: 'est. monthly searches for generator service financing in greater Philadelphia', leads: '3-6', leadsNote: 'est. monthly leads reachable with local content strategy for dealer network', timeline: '60-90 days', timelineNote: 'to rank locally for generator service terms in KOP and surrounding suburbs' },
+    fixes: [
+      { letter: 'A', title: 'Dealer-specific local content', body: 'Create geo-targeted landing pages for generator dealers in each metro market — helps their dealer partners rank locally, drives financed job volume.' },
+      { letter: 'B', title: 'Generator vertical blog content', body: 'Publish content targeting "commercial generator service financing" and "generator dealer financing" terms — builds authority in the vertical.' },
+      { letter: 'C', title: 'Schema for provider network', body: 'Add structured data to the provider directory so generator dealers surface in local search when buyers look for contractors with financing available.' },
+    ],
+  },
+
+  'RACK': {
+    searchQuery: 'commercial generator service Boca Raton Florida',
+    googlePage: 'Page 1',
+    score: { website: 9, seo: 8, total: 17 },
+    primaryFinding: 'RACK is the dominant Generac Prestige dealer in South Florida with 2400+ reviews and an active blog, but Boca Generator is carving out the residential/community niche while RACK\'s commercial generator service offering has no dedicated landing page',
+    issues: [
+      { label: 'No commercial-specific generator landing page', value: 'Generator content targets homeowners and hurricane prep — no dedicated page for commercial/industrial generator service contracts (confirmed: rackelectric.com homepage, /service-areas/boca-raton-generators)', status: 'warning' },
+      { label: 'Blog is residential-focused', value: 'Active blog with hurricane prep, AC maintenance, home generator guides — no commercial facility management or business continuity content (confirmed: rackelectric.com/blog)', status: 'warning' },
+      { label: 'Three locations but geo pages lean residential', value: 'Boca Raton, Fort Pierce, Naples — service area pages exist but all frame value around homeowners and hurricane season (confirmed: site search)', status: 'warning' },
+      { label: 'Boca Generator is a focused niche threat', value: 'Boca Generator positions as the #1 community/HOA Generac installer in Boca — 4.9 stars, 127+ reviews, installs in 30+ gated communities — a specific claim RACK\'s site doesn\'t counter (confirmed: bocagenerator.com)', status: 'warning' },
+    ],
+    impact: { intro: 'RACK is already winning. The incremental opportunity is commercial — facility managers, property managers, and multi-tenant operators searching for generator contracts who see only residential messaging on the current site.', volume: '200', volumeNote: 'est. monthly commercial generator service searches, Boca Raton/South Florida', leads: '15–25', leadsNote: 'est. incremental commercial leads per month with dedicated commercial content', timeline: '30–45 days', timelineNote: 'RACK has authority and domain strength — one commercial page converts immediately' },
+    fixes: [
+      { letter: 'A', title: 'Build a dedicated commercial generator service landing page', body: 'A single page at /commercial-generator-service targeting property managers, HOAs, retail centers, and healthcare facilities in South Florida. List what commercial service agreements include, response time SLAs, and the Generac Prestige credential. This page RACK is missing and Boca Generator can\'t match.' },
+      { letter: 'B', title: 'Publish two commercial-oriented blog posts', body: '"How South Florida Businesses Should Size a Standby Generator" and "Commercial Generator Maintenance Plans vs. Residential: What\'s Different" would capture facility managers researching before they hire. These posts position RACK above the hurricane-prep noise.' },
+      { letter: 'C', title: 'Add commercial case studies or testimonials to Boca Raton service page', body: 'Boca Generator\'s moat is "30+ gated communities." RACK\'s moat should be "we keep South Florida businesses running." Three commercial client quotes on the Boca Raton page would start building that counterposition.' },
+    ],
+  },
+
+  'Security Fire Protection': {
+    searchQuery: 'fire protection contractor Memphis TN',
+    googlePage: 'Page 1',
+    score: { website: 5, seo: 4, total: 9 },
+    primaryFinding: 'Giles Fire Protection (founded 1983) and Impact Fire both appear above Security Fire in Memphis search results — notable given Security Fire is an APi Group subsidiary with 150 employees and has been operating since 1967.',
+    issues: [
+      { label: 'No Schema Markup', value: 'Homepage has zero structured data — Google cannot confirm business type, address, or service area (confirmed: homepage fetch, April 2026)', status: 'critical' },
+      { label: 'No Blog or Content', value: 'Site has zero blog, news, or resources section — all pre-purchase research traffic goes to competitors (confirmed: site:securityfire.com, 10 pages indexed, none are editorial)', status: 'critical' },
+      { label: 'Generic Homepage', value: 'H1 reads "Building Relationships Through the Delivery of Quality Fire Protection Solutions" — no geo-specificity, no differentiation from any other contractor (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'No Trust Signals', value: 'No client logos, certifications displayed, or project counts on homepage despite 150-employee scale (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: { intro: 'Memphis has 100–250 monthly searches for fire protection contractors. Security Fire ranks #2 but loses all pre-purchase research traffic and every long-tail keyword to competitors with content.', volume: '175', volumeNote: 'est. monthly searches, Memphis metro (pop 620K)', leads: '6-10', leadsNote: 'incremental leads/mo from closing content and schema gaps', timeline: '60-90 days', timelineNote: 'to see ranking improvements from schema and first content assets' },
+    fixes: [
+      { letter: 'A', title: 'Add LocalBusiness schema to homepage', body: 'Implement JSON-LD structured data with NAP, service area, hours, and license number. Takes one sprint; immediate Google Knowledge Panel eligibility.' },
+      { letter: 'B', title: 'Launch a fire code compliance blog', body: 'Publish 4-6 articles targeting Memphis commercial buyers: NFPA 13 inspection requirements, dry vs wet pipe systems, TN fire sprinkler licensing. Each article captures pre-purchase searches competitors currently own.' },
+      { letter: 'C', title: 'Build a geo-specific commercial page', body: 'Dedicated page for Memphis commercial fire protection with industries served locally (warehouses, cold storage, industrial) — currently all three verticals share one generic homepage.' },
+    ],
+  },
+
+  'Summit Fire Consulting': {
+    searchQuery: 'fire protection consulting Minnesota',
+    googlePage: 'Page 1',
+    score: { website: 6, seo: 5, total: 11 },
+    primaryFinding: 'Summit Fire Protection (Summit Companies) — a different entity despite the similar name — dominates Mendota Heights and MN metro searches for fire protection, creating significant brand confusion and outranking Summit Fire Consulting for most local terms.',
+    issues: [
+      { label: 'Case Studies Not Indexed as Individual Pages', value: 'Case studies (MN State Capitol, SSA Building, Lube Tech) appear as a single filtered section — not as crawlable individual URLs generating organic traffic (confirmed: summitfireconsulting.com homepage and site: search)', status: 'critical' },
+      { label: 'No LocalBusiness or Professional Service Schema', value: 'Homepage has no structured data — engineering consulting firms with schema rank for "fire protection engineer Minnesota" queries that Summit Consulting is invisible for (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'No City-Level or Building-Type Targeting', value: 'Services and consulting pages mention no specific MN cities, building types, or regional code jurisdictions — architects and GCs searching locally cannot find them (confirmed: services page and consulting page fetch)', status: 'warning' },
+      { label: 'Blog Exists But Sparse', value: 'Blog section exists but shows only milestone/celebration posts — no technical content on fire code, NFPA updates, or performance-based design that buyers actually search (confirmed: site:summitfireconsulting.com shows blog URL)', status: 'warning' },
+    ],
+    impact: { intro: 'Minneapolis metro has 100–250 monthly searches for fire protection consulting. Summit Consulting\'s niche (code consulting, performance-based design) has smaller but higher-value search traffic — architecture and GC firms searching for engineering partners find them by referral only.', volume: '175', volumeNote: 'est. monthly searches, Minneapolis-St Paul metro (engineering/consulting subset)', leads: '4-8', leadsNote: 'incremental leads/mo from case study SEO and technical content targeting architects', timeline: '60-90 days', timelineNote: 'B2B consulting content takes 60+ days to rank but commands higher deal values' },
+    fixes: [
+      { letter: 'A', title: 'Convert each case study into a standalone indexed page', body: 'MN State Capitol, SSA Building, Lube Tech — each deserves a URL with project description, code challenge solved, and outcome. These pages rank for project-type + location queries architects use.' },
+      { letter: 'B', title: 'Publish technical fire code content targeting architect and GC audiences', body: 'Articles on performance-based fire design, IBC vs NFPA code interpretation, atrium smoke management in Minnesota — these are the searches that precede an RFQ to a consulting firm.' },
+      { letter: 'C', title: 'Add ProfessionalService schema with licensed PE credentials', body: 'Schema markup identifying the firm as a professional engineering/consulting practice with PE licensure in MN captures queries like "fire protection engineer near me" and "fire code consultant Minneapolis."' },
+    ],
+  },
+
+  'Summit Fire National Accounts': {
+    searchQuery: 'fire sprinkler national accounts contractor',
+    googlePage: 'Page 1',
+    score: { website: 6, seo: 4, total: 10 },
+    primaryFinding: 'APi National Service Group (80+ branch offices, 18 in Canada) and American Fire Protection Group dominate "fire sprinkler national accounts" search — Summit Fire National Accounts has well-designed industry pages but no content earning organic rankings.',
+    issues: [
+      { label: 'No Published Blog or Article Content', value: 'Blog/news section exists but /articles-blogs/ returns 404 — no published articles visible or indexed (confirmed: site:summitfirenationalaccounts.com shows no editorial content URLs, articles URL returned 404)', status: 'critical' },
+      { label: 'Homepage Counters Display Zeros', value: 'Animated counters for "Facilities serviced," "Hours a day," and "Partners" show 0 on load — buyers see empty social proof instead of real scale (confirmed: homepage fetch, April 2026)', status: 'critical' },
+      { label: 'No Schema Markup', value: 'National accounts service pages have no Organization or Service structured data — Google treats the site as a generic business website, not a specialized fire protection provider (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'Weak Domain Authority vs APi NSG', value: 'APi National Service Group has 80+ locations, decades of backlinks, and deep content — Summit has clean service pages for Healthcare, Government, Retail, Education but no content volume to compete (confirmed: WebSearch national accounts results)', status: 'warning' },
+    ],
+    impact: { intro: 'National accounts search volume is estimated at 200–500/mo for fire sprinkler national accounts terms. These are high-value multi-site contracts — even 2-3 new national accounts clients per year justifies a full content investment.', volume: '350', volumeNote: 'est. monthly searches, national market for fire sprinkler national accounts', leads: '3-6', leadsNote: 'incremental national account inquiries/mo — each worth significantly more than a single-site contract', timeline: '90-120 days', timelineNote: 'national accounts content takes longer to rank but delivers much higher deal values' },
+    fixes: [
+      { letter: 'A', title: 'Fix the animated counters', body: 'Counters displaying 0 actively undermine credibility. Either hard-code real numbers (facilities serviced, years in business, partner count) or remove the counter animation entirely. This is a 1-hour dev fix with immediate trust impact.' },
+      { letter: 'B', title: 'Launch a national accounts content program', body: 'Publish one article per month targeting multi-site fire protection buyers: "How national accounts reduce fire inspection costs across 50 locations," "NFPA compliance for retail chains," "Healthcare fire protection across multiple campuses." These are the searches APi NSG currently owns.' },
+      { letter: 'C', title: 'Add Organization schema and build case study pages', body: 'Schema with service area (national), industry verticals, and accreditations. The C&S Wholesale Grocers testimonial should be its own case study URL — "fire protection for 50+ warehouse locations" is a real search query.' },
+    ],
+  },
+
+  'ThermFlo, Inc.': {
+    searchQuery: 'commercial generator service Buffalo Grove Illinois',
+    googlePage: 'Page 2',
+    score: { website: 7, seo: 5, total: 12 },
+    primaryFinding: 'Klees Electric and Northwest Electric System are capturing Buffalo Grove generator service searches with geo-specific content while ThermFlo — a Generac partner with platinum 24/7 service agreements and a dedicated generator contact (Andrew Brems, 847-353-5367) — has no content aimed at facility managers searching for backup power contracts',
+    issues: [
+      { label: 'No blog or content', value: 'No blog, no articles, no resources section — a 61-person firm with Generac and Liebert partnerships has zero published expertise (confirmed: thermflo.com site: search, no blog indexed)', status: 'critical' },
+      { label: 'Manufacturer pages read as product brochures', value: 'The /generac and /vertiv pages are thin link-outs to manufacturer websites — they tell Google nothing about who ThermFlo serves or where (confirmed: thermflo.com/generac, thermflo.com/vertiv)', status: 'critical' },
+      { label: 'No geo-targeted pages', value: 'HQ at 875 Busch Parkway, Buffalo Grove — but no suburb or city landing pages for generator service (confirmed: thermflo.com site: search)', status: 'warning' },
+      { label: 'Service agreements described but not optimized for search', value: 'Platinum and Gold generator agreements exist but the /service-agreements page has no title tag optimization or search-oriented copy (confirmed: thermflo.com/service-agreements)', status: 'warning' },
+    ],
+    impact: { intro: 'Commercial generator service searches in the Chicago north suburbs see 200–400 monthly queries. ThermFlo\'s Generac partnership is a strong trust signal — but no content means no ranking.', volume: '300', volumeNote: 'est. monthly searches, Chicago north suburbs commercial generator service', leads: '5–10', leadsNote: 'est. monthly leads with generator service content + geo pages', timeline: '60–90 days', timelineNote: 'ThermFlo has authority and Generac dealer status — content compounds fast' },
+    fixes: [
+      { letter: 'A', title: 'Rewrite the Generac and Liebert pages as service pages', body: 'Turn /generac into "Generac Generator Service in Chicago Suburbs — Platinum Maintenance Agreements" with Andrew Brems\'s contact, what a Platinum vs Gold agreement covers, and who the ideal client is. Same for Liebert/Vertiv.' },
+      { letter: 'B', title: 'Build a commercial generator maintenance content hub', body: 'Three articles — load bank testing explained, when to replace a Generac generator, mission-critical facility compliance checklist — would capture facility managers researching before they hire. ThermFlo\'s 30 Fundamentals culture gives them a brand story to publish.' },
+      { letter: 'C', title: 'Add Buffalo Grove + north suburbs geo pages', body: 'Create landing pages for Buffalo Grove, Northbrook, Vernon Hills, and Lake Zurich targeting "commercial generator service [city]." Klees Electric already ranks for these with residential content — ThermFlo\'s commercial credentials would outcompete.' },
+    ],
+  },
+
+  'TriStar Commercial, A Pye-Barker Fire & Safety Company': {
+    searchQuery: 'fire protection contractor Austin TX',
+    googlePage: 'Page 1',
+    score: { website: 4, seo: 3, total: 7 },
+    primaryFinding: 'Impact Fire Austin and Koetter Fire Protection both outrank TriStar/Pye-Barker for Austin fire protection terms — the original tristarcommercial.com domain now redirects to a Pye-Barker national location page, stripping all locally-built SEO authority.',
+    issues: [
+      { label: 'Domain Redirect Destroyed Local SEO', value: 'tristarcommercial.com redirects to pyebarkerfs.com/locations/pflugerville-tx — all TriStar-specific domain authority and local rankings lost in acquisition (confirmed: homepage fetch, April 2026)', status: 'critical' },
+      { label: 'Competing as One of 100+ Pye-Barker Locations', value: 'The Austin/Pflugerville location page competes with 100+ identical Pye-Barker branch pages for domain authority — no local signal differentiation (confirmed: Pye-Barker location page fetch)', status: 'critical' },
+      { label: 'TriStar Brand Identity Erased Online', value: 'No TriStar-branded content remains at the domain — local clients who knew the brand cannot find continuity online (confirmed: site:tristarcommercial.com returns security/access control pages, not fire)', status: 'warning' },
+      { label: 'Austin Fire Protection Search Presence Weak', value: 'site:tristarcommercial.com shows only security-focused pages (access control, video surveillance) — fire protection content routes through Pye-Barker national infrastructure (confirmed: site: search)', status: 'warning' },
+    ],
+    impact: { intro: 'Austin is a 1M+ population market with 150–350 monthly searches for fire protection contractors. TriStar lost its local ranking position when the domain was absorbed into Pye-Barker\'s national footprint.', volume: '250', volumeNote: 'est. monthly searches, Austin TX metro', leads: '8-15', leadsNote: 'incremental leads/mo if local presence is rebuilt under TriStar brand', timeline: '90-120 days', timelineNote: 'rebuilding local authority after domain consolidation takes longer' },
+    fixes: [
+      { letter: 'A', title: 'Audit what local authority remains at tristarcommercial.com', body: 'Determine if the redirect is 301 or 302 — if 302, domain authority is not fully passing. Evaluate whether restoring a standalone local site outperforms staying within Pye-Barker\'s location page structure.' },
+      { letter: 'B', title: 'Build Austin-specific fire protection content on the Pye-Barker location page', body: 'Current location page is generic. Add Austin-specific industries served, local compliance notes (Austin Fire Code), and project references for Travis County.' },
+      { letter: 'C', title: 'Claim and optimize Google Business Profile as TriStar/Pye-Barker Austin', body: 'A fully optimized GBP with TriStar history, Austin-specific photos, and commercial fire protection as primary category recovers local map pack visibility independent of the domain situation.' },
+    ],
+  },
+
+  'Waxler Fire Protection Engineering, LLC': {
+    searchQuery: 'fire protection contractor New Braunfels TX',
+    googlePage: 'Page 2+',
+    score: { website: 6, seo: 4, total: 10 },
+    primaryFinding: 'Waxler FPE has a clean, professional engineering firm site but homepage stat counters show "0 Projects Delivered" and "0 Square Feet Reviewed" as live placeholders — while N8 Fire & Safety has a full New Braunfels location page with local geo content that captures the commercial clients Waxler should be reaching through their design and consulting work.',
+    issues: [
+      { label: 'Live "0 Projects" Counter Placeholders', value: 'Homepage JavaScript counters display 0 for both projects delivered and square feet reviewed — visible to every architect and developer prospect who visits (confirmed: waxlerfpe.com homepage)', status: 'critical' },
+      { label: 'No Blog or Resources Content', value: '/blog returns 404 — Guides & Updates nav link exists but content appears minimal, giving Google nothing to index for engineering queries (confirmed: waxlerfpe.com/blog)', status: 'critical' },
+      { label: 'No Local New Braunfels Geo Content', value: 'Office address is Seguin TX but no New Braunfels or San Antonio area-specific pages — N8 Fire & Safety has a full local page for New Braunfels that ranks above WFPE (confirmed: n8fireandsafety.com)', status: 'warning' },
+      { label: 'Engineering Niche Not Indexed for Contractor Searches', value: 'WFPE focuses on design/consulting, not installation — not appearing in contractor search results means missing referral opportunities from AHJs and GCs who use those searches (confirmed: search results)', status: 'warning' },
+    ],
+    impact: { intro: 'New Braunfels sees 100+ monthly fire protection searches. WFPE occupies a premium engineering niche but loses discovery to general contractors because their local content is absent.', volume: '100', volumeNote: 'Monthly New Braunfels TX fire protection searches', leads: '2-4', leadsNote: 'Monthly consulting leads reachable with geo content and fixed counters', timeline: '30-60 days', timelineNote: 'Counter fix is immediate; geo page indexes in 30 days' },
+    fixes: [
+      { letter: 'A', title: 'Fix Homepage Stat Counters', body: 'Replace broken JavaScript counters with static text stating real project numbers. A working counter that shows real achievements converts — a counter that shows 0 destroys credibility before the prospect reads a word.' },
+      { letter: 'B', title: 'Create a San Antonio / New Braunfels Service Area Page', body: 'Build a geo-specific page for Central Texas clients targeting architects, GCs, and developers in Bexar and Comal County — this is the traffic pool WFPE is qualified to serve but invisible in.' },
+      { letter: 'C', title: 'Publish Engineering Guides in the Resources Section', body: 'Publish 2-3 technical guides (fire protection design for warehouse occupancies, IBC code compliance checklist) — these pull high-intent architect and developer searches that general contractors cannot compete for.' },
+    ],
+  },
+
+  'Xtreme Fire Protection': {
+    searchQuery: 'fire protection contractor Tinley Park Illinois',
+    googlePage: 'Page 3',
+    score: { website: 5, seo: 4, total: 9 },
+    primaryFinding: 'Pyro Fire Protection ranks above XFP for Chicago area fire protection searches while XFP\'s service pages display Lorem Ipsum placeholder copy',
+    issues: [
+      { label: 'Placeholder content', value: 'All service subpages (/fire-alarms, /fire-sprinklers, /fire-pumps, etc.) contain Lorem Ipsum body copy — zero real content (confirmed: xtremefireprotection.com/services/fire-alarms)', status: 'critical' },
+      { label: 'No blog', value: 'No blog or content section found — /blog returns timeout, no articles indexed (confirmed: Exa site: search)', status: 'critical' },
+      { label: 'No schema markup', value: 'No LocalBusiness or Service schema detected in page source (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'No geo landing pages', value: 'Serves Greater Chicagoland + NW Indiana but has zero city/suburb-specific service pages (confirmed: site: index, 8 pages total)', status: 'warning' },
+    ],
+    impact: { intro: 'Chicago metro fire protection searches see 300–500 monthly queries. XFP\'s placeholder content means Google can\'t rank the service pages that exist.', volume: '400', volumeNote: 'est. monthly searches, Chicago metro fire protection', leads: '4–8', leadsNote: 'est. monthly leads if page 1 for Tinley Park/Chicagoland queries', timeline: '60–90 days', timelineNote: 'to rank with real content + schema vs. current placeholder state' },
+    fixes: [
+      { letter: 'A', title: 'Replace placeholder copy with real service content', body: 'Every service subpage currently shows Lorem Ipsum. Replace with 300–500 words of real content per page — what the service is, how XFP performs it, what code/NFPA standard applies, who it\'s for.' },
+      { letter: 'B', title: 'Add LocalBusiness schema + geo service area', body: 'Wrap the homepage in JSON-LD LocalBusiness schema listing Tinley Park as headquarters and Chicagoland + NW Indiana as service area. This closes the gap Pyro Fire Protection exploits.' },
+      { letter: 'C', title: 'Launch a quarterly inspection content blog', body: 'Three posts — NFPA 25 inspection schedule, dry pipe vs wet pipe systems, kitchen suppression compliance — would establish topical authority and capture informational search traffic that converts to inspection contracts.' },
+    ],
+  },
 };

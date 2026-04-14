@@ -1,9 +1,3 @@
 {
-  "redirects": [
-    { "source": "/audits/immigration/:slug", "destination": "/audits/detail/?firm=:slug&cat=immigration", "permanent": false },
-    { "source": "/audits/family-law/:slug", "destination": "/audits/detail/?firm=:slug&cat=family-law", "permanent": false },
-    { "source": "/audits/criminal-defense/:slug", "destination": "/audits/detail/?firm=:slug&cat=criminal-defense", "permanent": false },
-    { "source": "/audits/personal-injury/:slug", "destination": "/audits/detail/?firm=:slug&cat=personal-injury", "permanent": false },
-    { "source": "/audits/general/:slug", "destination": "/audits/detail/?firm=:slug&cat=general", "permanent": false }
-  ]
+  "redirects": []
 }
