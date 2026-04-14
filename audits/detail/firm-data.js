@@ -4336,4 +4336,28 @@ window.__firmAuditData = {
       { letter: 'C', title: 'Launch a quarterly inspection content blog', body: 'Three posts — NFPA 25 inspection schedule, dry pipe vs wet pipe systems, kitchen suppression compliance — would establish topical authority and capture informational search traffic that converts to inspection contracts.' },
     ],
   },
+
+  'Gibson\'s Electrical & Lighting': {
+    searchQuery: 'commercial generator service Statesville NC',
+    googlePage: 'Page 1',
+    score: { website: 5, seo: 3, total: 8 },
+    primaryFinding: 'Your homepage title and headline both say "Lake Norman" — but your address is Statesville, NC, so Google is splitting your location signal between two cities and you\'re losing local ranking power for the market you actually serve.',
+    issues: [
+      { label: 'Homepage targets the wrong city', value: 'Title tag says "Gibson\'s Electrical - Electrical Services in Lake Norman, NC" and H1 says "Lake Norman\'s Trusted Partner" — your business address is Statesville, 772 Washington Ave (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'No structured data on the site', value: 'No LocalBusiness or service information in machine-readable format found on the homepage or the generator page — Google has to guess what you do and where you do it (confirmed: homepage + generator page fetch)', status: 'critical' },
+      { label: 'Generator page doesn\'t separate commercial from residential', value: 'The /generators-statesville-nc/ page mixes home, business, and event language equally — a commercial buyer looking for a service partner sees the same page as someone shopping for a home standby unit (confirmed: generator page fetch)', status: 'warning' },
+      { label: 'No blog or fresh content', value: 'No blog found anywhere on the site — Taylor Power Services is building content presence for Statesville generator searches while your site stays static (confirmed: homepage + site structure)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Statesville has 33,000 residents and sits at the center of Iredell County (180,000 people). Commercial generator searches in this market pull 200–400 monthly queries. Taylor Power Services holds the top spot for this search while your own site lands lower — the split location signal between Lake Norman and Statesville is the main thing holding you back.',
+      volume: '300', volumeNote: 'Monthly searches across commercial generator service + generator installation in Iredell County',
+      leads: '4–8', leadsNote: 'Monthly commercial generator inquiries you could capture by fixing the geo and content gaps',
+      timeline: '30–60 days', timelineNote: 'Location and structured data fixes move quickly; a dedicated commercial page takes 6–8 weeks to rank',
+    },
+    fixes: [
+      { letter: 'A', title: 'Change "Lake Norman" to "Statesville" on your homepage', body: 'Your title tag and H1 both say Lake Norman while your address is Statesville. Updating both to say Statesville, NC gives Google a clean location signal for the market you actually operate in — this is the single fastest win available.' },
+      { letter: 'B', title: 'Add your business info in a format Google can read', body: 'Adding your name, address, phone, and services in structured code on the homepage tells Google exactly what you do and where. You don\'t need new content for this — it wraps what\'s already there and closes the gap Taylor Power Services has on you in local results.' },
+      { letter: 'C', title: 'Build a page just for commercial generator customers', body: 'One page targeting Iredell County businesses — covering service contracts, preventive maintenance, and emergency response — separates you from residential listings and captures the commercial buyer who has very different needs than a homeowner shopping for a standby unit.' },
+    ],
+  },
 };
