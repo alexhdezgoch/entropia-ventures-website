@@ -4360,4 +4360,701 @@ window.__firmAuditData = {
       { letter: 'C', title: 'Build a page just for commercial generator customers', body: 'One page targeting Iredell County businesses — covering service contracts, preventive maintenance, and emergency response — separates you from residential listings and captures the commercial buyer who has very different needs than a homeowner shopping for a standby unit.' },
     ],
   },
+
+  'Fire Shield Fire Protection, Inc.': {
+    searchQuery: 'fire protection contractor Lake Dallas TX',
+    googlePage: 'Page 1',
+    score: { website: 8, seo: 7, total: 15 },
+    primaryFinding: 'Fire Shield owns Lake Dallas as the only contractor headquartered there but loses Dallas-Fort Worth searches to Crisp-LaDew and Impact Fire because their site is branded around Lake Dallas instead of building dedicated city landing pages for Dallas, Fort Worth, Plano, and Frisco where they actually serve customers.',
+    issues: [
+      { label: 'No dedicated city pages for DFW metro', value: 'Homepage names Dallas, Fort Worth, Plano, Frisco as service areas but no page exists for any of them (confirmed: site: search returns 10 service pages, zero city pages)', status: 'critical' },
+      { label: 'New Houston market has zero local pages', value: 'Recently expanded to Houston per blog post but no Houston service or location page exists (confirmed: site: search)', status: 'critical' },
+      { label: 'Blog reads like community newsletter', value: 'Active blog publishes pickleball tournaments and VR app launches instead of fire safety guides that answer customer search questions (confirmed: homepage fetch shows 3 most recent posts)', status: 'warning' },
+      { label: 'No structured data telling Google service area', value: 'Search engines cannot read business location signals from the site (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: '180 people search "fire protection contractor Lake Dallas TX" and related DFW terms every month. Crisp-LaDew and Impact Fire get most of that traffic because they have dedicated Dallas pages. Here is what Fire Shield is leaving on the table.',
+      volume: '180', volumeNote: 'monthly searches across Lake Dallas + DFW fire protection terms',
+      leads: '8-14', leadsNote: 'estimated monthly inquiries lost across DFW and Houston',
+      timeline: '60-90 days', timelineNote: 'site is healthy, just needs city pages',
+    },
+    fixes: [
+      { letter: 'A', title: 'Build a page for every DFW city you serve', body: 'Dallas, Fort Worth, Plano, Frisco, Denton — one page each with the services you offer in that city. You already mention them on the homepage, just give each one its own home so Google can rank you for those searches.' },
+      { letter: 'B', title: 'Launch the Houston service area before Crisp-LaDew does', body: 'You expanded to Houston this year but there is no Houston page on your site. A 600-word Houston page with a phone number and a few customer logos will get you ranking for Houston in 60 days.' },
+      { letter: 'C', title: 'Write articles that match what buyers actually Google', body: 'Replace pickleball recap posts with guides like "fire extinguisher inspection requirements for Texas restaurants" or "how often does a sprinkler system need to be inspected in DFW." Those rank.' },
+    ],
+  },
+
+  'Shipman Fire Protection': {
+    searchQuery: 'fire protection contractor Rockwall TX',
+    googlePage: 'Not Found',
+    score: { website: 3, seo: 2, total: 5 },
+    primaryFinding: 'Rockwall Fire Protection ranks #1 for Rockwall fire protection searches because they have a real website with service detail and a Rockwall address, while Shipman runs a placeholder template with lorem ipsum text on the team section and does not appear in the top 10 for its own city.',
+    issues: [
+      { label: 'Site has unfinished placeholder text', value: 'Team section displays "Lorem ipsum dolor sit amet" four times instead of real bios (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Does not rank for its home city', value: 'Search for fire protection contractor Rockwall TX returns 7+ competitors before finding Shipman (confirmed: Google search)', status: 'critical' },
+      { label: 'Tiny site, almost nothing indexed', value: 'Only About, Services, and Contact pages exist (confirmed: site: search returns 3 results)', status: 'critical' },
+      { label: 'No blog, no articles, no city pages', value: 'Says "Proudly Serving All of Texas" with DFW Austin San Antonio Houston regions but zero pages for any of them (confirmed: site: search)', status: 'critical' },
+    ],
+    impact: {
+      intro: '120 people search "fire protection contractor Rockwall TX" every month. Rockwall Fire Protection gets nearly all of that traffic because they show up at #1 with a real, indexed website. Here is what Shipman is leaving on the table.',
+      volume: '120', volumeNote: 'monthly searches for fire protection contractor Rockwall TX',
+      leads: '12-18', leadsNote: 'estimated monthly inquiries lost',
+      timeline: '90-120 days', timelineNote: 'site needs to be rebuilt before ranking work can start',
+    },
+    fixes: [
+      { letter: 'A', title: 'Replace the lorem ipsum placeholders with real team bios', body: 'A buyer who sees "Lorem ipsum dolor sit amet" four times on your About page will not call you. Add Clay Shipman and his team with real photos and credentials before anything else.' },
+      { letter: 'B', title: 'Build a page for each region you serve', body: 'Your contact form lists DFW, Austin, San Antonio, Houston as regions but you have no page for any of them. Create one page per region so Google has something to rank.' },
+      { letter: 'C', title: 'Lead with the patented VS-1 sprinkler head', body: 'You mention a patented dry sprinkler head and award-winning design once on the homepage. That is your differentiator versus Rockwall Fire and Advanced Fire, it deserves its own page with case studies.' },
+    ],
+  },
+
+  'Lonestar Fire Protection': {
+    searchQuery: 'fire protection contractor Temple TX',
+    googlePage: 'Page 1',
+    score: { website: 6, seo: 5, total: 11 },
+    primaryFinding: 'Lonestar shows up on page 1 for Temple TX but Firetrol Protection Systems outranks them because Firetrol has a dedicated Temple location page while Lonestar lumps Austin, Temple, and Waco onto one homepage and never built a Temple-specific page.',
+    issues: [
+      { label: 'No city-specific pages for Austin, Temple, or Waco', value: 'Homepage names all three cities as service areas but every link points back to the same homepage (confirmed: site: search returns only 5 pages — home, services, projects, contact, safety)', status: 'critical' },
+      { label: 'Firetrol Temple has a real Temple page, Lonestar does not', value: 'Search for fire protection contractor Temple TX shows Firetrol Temple location page above Lonestar (confirmed: Google search results)', status: 'critical' },
+      { label: 'No blog or fire safety articles published', value: 'Safety and Education page exists but no ongoing content (confirmed: site: search)', status: 'warning' },
+      { label: 'Office is in Georgetown but markets Temple/Waco', value: 'Address is Georgetown TX, no proof-of-presence content for the cities they target (confirmed: site: search shows zero city pages)', status: 'warning' },
+    ],
+    impact: {
+      intro: '160 people search "fire protection contractor Temple TX" and related Central Texas terms every month. Firetrol gets the click because they have a Temple page, Lonestar does not. Here is what Lonestar is leaving on the table.',
+      volume: '160', volumeNote: 'monthly searches across Austin + Temple + Waco fire protection terms',
+      leads: '8-12', leadsNote: 'estimated monthly inquiries lost',
+      timeline: '60-90 days', timelineNote: 'site has good bones, just needs city-level depth',
+    },
+    fixes: [
+      { letter: 'A', title: 'Build separate pages for Austin, Temple, and Waco', body: 'You name three cities on your homepage but Google cannot rank you in three cities with one page. Each city needs its own page with local proof — projects you completed there, drive time, local code references.' },
+      { letter: 'B', title: 'Show off the Austin skyline projects you mention', body: 'You say you have worked on almost every major Austin project since the mid-2000s but the projects page is thin. A real project showcase with photos and project names beats Firetrol\u0027s generic services list.' },
+      { letter: 'C', title: 'Write 3 short guides that prospects actually search', body: 'NFPA inspection cadence for Texas, backflow testing TCEQ rules, what triggers a sprinkler retrofit. Each one captures search traffic Firetrol is not even competing for.' },
+    ],
+  },
+
+  'Cherokey Fire Protection': {
+    searchQuery: 'fire protection contractor Houston TX',
+    googlePage: 'Not Found',
+    score: { website: 6, seo: 4, total: 10 },
+    primaryFinding: 'Koetter Fire Protection and Impact Fire dominate Houston search because they have dedicated Houston location pages, while Cherokey has 7 deep vertical pages (apartments, hotels, student housing, assisted living) but no city page for Houston where they are headquartered.',
+    issues: [
+      { label: 'No Houston city page even though HQ is Houston', value: 'Address is 1800 Sherwood Forest St Houston but no /houston page on the site (confirmed: site: search returns 5 vertical pages, zero city pages)', status: 'critical' },
+      { label: 'Does not appear in top 10 for Houston fire protection', value: 'Search for fire protection contractor Houston TX returns Koetter, Impact Fire, Texas Fire Solutions, FPS, Kauffman, Capital, WSFP, Advantage before Cherokey appears (confirmed: Google search)', status: 'critical' },
+      { label: 'Strong vertical content but invisible to local search', value: 'Apartments, hotels, student housing, assisted living pages exist with real expertise but Google has no signal that Cherokey serves Houston specifically (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'No blog or industry articles', value: 'No /blog or /resources section (confirmed: site: search)', status: 'warning' },
+    ],
+    impact: {
+      intro: '550 people search "fire protection contractor Houston TX" every month. Koetter and Impact Fire get most of that traffic because they have Houston pages. Here is what Cherokey is leaving on the table.',
+      volume: '550', volumeNote: 'monthly searches for fire protection contractor Houston TX',
+      leads: '20-35', leadsNote: 'estimated monthly inquiries lost',
+      timeline: '90-120 days', timelineNote: 'needs city-page rebuild plus content for verticals',
+    },
+    fixes: [
+      { letter: 'A', title: 'Build city pages for Houston Dallas Austin and San Antonio', body: 'You have 40+ years of Texas multifamily projects but Google sees you as a generic site. One page per major Texas city with local apartment projects you completed will outrank Koetter on apartment-specific Houston searches.' },
+      { letter: 'B', title: 'Pair each vertical page with a Houston case study', body: 'Your apartments and student housing pages are strong on expertise but vague on location. Add real Houston projects with photos and the apartment names — buyers searching "apartment fire sprinkler Houston" will find you.' },
+      { letter: 'C', title: 'Lead with Marriott qualification on the hotels page', body: 'You buried the Marriott Fire Life Safety qualification in the middle of a paragraph. That is the strongest credential on the site and deserves its own callout — hoteliers Google for that exact phrase.' },
+    ],
+  },
+
+  'Mid South Fire Solutions': {
+    searchQuery: 'fire protection contractor Shreveport LA',
+    googlePage: 'Page 1',
+    score: { website: 7, seo: 6, total: 13 },
+    primaryFinding: 'Mid South ranks page 1 for Shreveport but Fire Tech Systems sits above them because Fire Tech publishes a deeper local-focused site for the Ark-La-Tex area while Mid South scatters attention across Shreveport, Dallas, and Diboll without city-level depth on either page.',
+    issues: [
+      { label: 'City pages exist but are thin', value: 'Shreveport and Dallas pages exist but read as boilerplate with no local projects, customer logos, or city-specific code references (confirmed: site: search)', status: 'critical' },
+      { label: 'No blog or knowledge content', value: 'No /blog /articles or /resources section anywhere on the site (confirmed: site: search returns 10+ pages, all service or location)', status: 'warning' },
+      { label: 'Fire Tech Systems outranks for Shreveport', value: 'Fire Tech ranks above Mid South on most Shreveport fire protection searches and uses Ark-La-Tex regional language (confirmed: Google search)', status: 'warning' },
+      { label: 'Texas expansion not reflected in search visibility', value: 'Site says they serve Arkansas Texas Mississippi Louisiana but only Shreveport and Dallas have city pages, no Arkansas or Mississippi pages (confirmed: site: search)', status: 'warning' },
+    ],
+    impact: {
+      intro: '140 people search "fire protection contractor Shreveport LA" every month. Fire Tech Systems gets the top click because their site goes deeper on the Ark-La-Tex region. Here is what Mid South is leaving on the table.',
+      volume: '140', volumeNote: 'monthly searches for fire protection contractor Shreveport LA',
+      leads: '7-12', leadsNote: 'estimated monthly inquiries lost',
+      timeline: '60-90 days', timelineNote: 'real city pages exist, just need depth',
+    },
+    fixes: [
+      { letter: 'A', title: 'Add real local proof to the Shreveport and Dallas pages', body: 'Your city pages read as boilerplate. Add named Shreveport refineries, Dallas apartment complexes, or Diboll mills you have protected. Fire Tech wins because they sound local — Mid South sounds like a template.' },
+      { letter: 'B', title: 'Publish Ark-La-Tex fire code articles every month', body: 'Buyers Google "Louisiana fire alarm inspection requirements" and "Texas backflow testing rules." A short monthly post answering one of those captures search traffic neither Fire Tech nor U.S. Fire Protection competes for.' },
+      { letter: 'C', title: 'Build pages for Arkansas and Mississippi to match the four-state claim', body: 'You market all four states but only show up in two. A Little Rock and Jackson page each (with local code notes and a phone number) opens two new geographic markets in 90 days.' },
+    ],
+  },
+
+  'Fire Protection, Inc': {
+    searchQuery: 'fire protection contractor Lynnwood WA',
+    googlePage: 'Page 1',
+    score: { website: 9, seo: 8, total: 17 },
+    primaryFinding: 'FPI has the strongest site of any firm in this batch — NICET certifications, 7 property-type pages, deep service detail, 4000 clients, since 1968 — but Northwest Fire Systems still gets cited above them in Lynnwood searches because Northwest published a dedicated Lynnwood service-area page while FPI uses one shared service-area page for all of Western Washington.',
+    issues: [
+      { label: 'No dedicated Lynnwood page despite being headquartered there', value: 'Address is 17410 Ash Way Lynnwood but service-area page lumps Lynnwood with Seattle Bellevue Everett Tacoma (confirmed: site: search shows one /service-area page covering all cities)', status: 'critical' },
+      { label: 'Northwest Fire Systems has a Lynnwood-specific page, FPI does not', value: 'Search for fire protection services Lynnwood WA shows Northwest Fire Systems Lynnwood landing page above FPI (confirmed: Google search)', status: 'warning' },
+      { label: 'No blog or knowledge hub on a strong site', value: 'Site has 10+ service pages and 7 property-type pages but no /blog or /resources section (confirmed: site: search)', status: 'warning' },
+      { label: 'Domain name says Seattle but business is in Lynnwood', value: 'Domain fpiseattle.com competes for Seattle when the actual office serves the Puget Sound region — Lynnwood traffic is being left on the table (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: '110 people search "fire protection contractor Lynnwood WA" every month. Northwest Fire Systems gets the top click because they built a Lynnwood page and FPI did not. Here is what FPI is leaving on the table.',
+      volume: '110', volumeNote: 'monthly searches for fire protection contractor Lynnwood WA',
+      leads: '6-10', leadsNote: 'estimated monthly inquiries lost in Lynnwood alone',
+      timeline: '45-60 days', timelineNote: 'site is already strong, just needs city pages',
+    },
+    fixes: [
+      { letter: 'A', title: 'Build a real Lynnwood page since the office sits there', body: 'You are headquartered in Lynnwood but your only Lynnwood mention is a single line on the service-area page. A real Lynnwood page (with the address, response time, local property managers you serve) takes Northwest Fire out of the top spot in 45 days.' },
+      { letter: 'B', title: 'Spin out Bellevue Everett Tacoma and Redmond pages', body: 'The site already serves all five cities but treats them as one page. Each city deserves its own — your competitors in Bellevue and Tacoma do not have FPI-level credibility, so a single page each will outrank them.' },
+      { letter: 'C', title: 'Start a property-manager knowledge hub', body: 'Your property-type pages are best-in-class but your buyer is a property manager Googling things like "what does Seattle ERRC code require" or "how often does a multi-family fire alarm need to be tested." A short monthly guide makes you the default answer.' },
+    ],
+  },
+
+  'Deesco Fire Protection': {
+    searchQuery: 'fire protection contractor Atlanta GA',
+    googlePage: 'Page 1',
+    score: { website: 5, seo: 4, total: 9 },
+    primaryFinding: 'Fire Protection Services LLC outranks Deesco for "fire protection contractor Atlanta GA" because their site has dedicated city landing pages (/atlanta/) and 30+ years of brand client logos (Walmart, Chick-fil-A, Tyson) on the homepage, while Deesco only lists service categories with no city pages or named clients.',
+    issues: [
+      { label: 'No city or county landing pages', value: 'Homepage mentions metro Atlanta and 20+ counties but only has /locations as a single bucket page (confirmed: homepage fetch + /locations review)', status: 'critical' },
+      { label: 'No blog or article content', value: 'Site nav has Services, About, Locations, Contact only — no blog, articles, or resources section (confirmed: homepage fetch, no blog link in nav)', status: 'critical' },
+      { label: 'No named client logos or proof', value: 'Three generic testimonials with first names only — no recognizable brand logos like competitors show (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'Service pages are thin', value: 'Each service page is one short paragraph with no FAQs, no code references, no project examples (confirmed: /fire-sprinkler-systems fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: '450 people search "fire protection contractor Atlanta GA" in metro Atlanta every month. Fire Protection Services LLC gets that traffic because they show 30+ years, 4,500+ buildings serviced, and brand-name client logos right on the homepage. Here is what Deesco is leaving on the table.',
+      volume: '450', volumeNote: 'monthly searches for fire protection contractor Atlanta GA',
+      leads: '8-15', leadsNote: 'estimated monthly inquiries lost',
+      timeline: '60-90 days', timelineNote: 'based on current site state',
+    },
+    fixes: [
+      { letter: 'A', title: 'Build a page for every Atlanta county Deesco serves', body: 'Deesco mentions DeKalb, Cobb, Gwinnett — turn each into its own page so the site can rank for "fire protection Cobb County" and similar searches that Fire Protection Services already wins.' },
+      { letter: 'B', title: 'Add named commercial client logos to the homepage', body: 'Deesco says 600+ buildings and 300+ inspections per year but shows zero brand names. Fire Protection Services lists Walmart, Chick-fil-A, Tyson — that is what makes a property manager call.' },
+      { letter: 'C', title: 'Launch a code and compliance article section', body: 'Property managers Google "fire pump testing requirements Georgia" or "annual sprinkler inspection cost Atlanta" — Deesco currently captures none of that intent because there is no article content.' },
+    ],
+  },
+
+  'Fire Protection Services, LLC': {
+    searchQuery: 'fire protection contractor Atlanta GA',
+    googlePage: 'Page 1',
+    score: { website: 7, seo: 6, total: 13 },
+    primaryFinding: 'Fire Protection Services LLC already ranks #1 for "fire protection contractor Atlanta GA" because of their /atlanta/ city page, 30+ year tenure, and recognizable brand client showcase, but Impact Fire Atlanta is closing fast with deeper service pages and a richer national content library.',
+    issues: [
+      { label: 'No active blog or articles', value: 'Site has Services, About, Industries, Contact — no blog, news, or insight section to defend rankings against Impact Fire (confirmed: homepage fetch, no /blog or /resources link)', status: 'critical' },
+      { label: 'Industry pages exist but are shallow', value: 'Industries menu lists Retail, Hospitality, Education, etc. but each is logo-grid only with no copy or case studies (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'Only one city landing page', value: '/atlanta/ exists but no pages for Macon, Warner Robins, or surrounding cities they explicitly say they serve (confirmed: homepage mentions 3 cities, only 1 has a page)', status: 'warning' },
+      { label: 'Customer testimonials lack last names or businesses', value: 'Quotes attributed to "Roger - Athens Church" and "Louis S - Restaurant Owner" — weakens trust vs. naming the actual venue (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: '450 people search "fire protection contractor Atlanta GA" every month and FPS already wins most of them. The risk is Impact Fire and Pye-Barker — both PE-backed national rollups — building out richer Atlanta content. Here is what FPS needs to lock in their lead.',
+      volume: '450', volumeNote: 'monthly searches for fire protection contractor Atlanta GA',
+      leads: '5-10', leadsNote: 'estimated monthly inquiries at risk if rankings slip',
+      timeline: '90-120 days', timelineNote: 'defensive content build',
+    },
+    fixes: [
+      { letter: 'A', title: 'Add city pages for Macon, Warner Robins, and Athens', body: 'FPS already serves these cities and says so on the homepage — turn each into a real page so they rank for "fire alarm inspection Macon GA" before Impact Fire builds those pages.' },
+      { letter: 'B', title: 'Launch a quarterly article section on code changes', body: 'Property managers search "Georgia annual sprinkler inspection requirements" — FPS has 30 years of expertise and zero articles. This is the cheapest moat against PE-funded national entrants.' },
+      { letter: 'C', title: 'Convert industry logo grids into real case studies', body: 'Walmart and Tyson are on the homepage as logos only — turn one into a written project story with square footage, scope, and outcome. That single page would outrank generic competitor service pages.' },
+    ],
+  },
+
+  'Fire Systems': {
+    searchQuery: 'fire protection contractor Atlanta GA',
+    googlePage: 'Page 1',
+    score: { website: 6, seo: 5, total: 11 },
+    primaryFinding: 'Fire Protection Services LLC outranks Fire Systems for "fire protection contractor Atlanta GA" because FPS has named brand clients (Walmart, Chick-fil-A) and a city-specific /atlanta/ landing page, while Fire Systems shows three identical hero blocks repeated down the homepage and no client names.',
+    issues: [
+      { label: 'Homepage content is duplicated three times', value: 'The same "Rapid Reaction. Right Response." block, the same Inspections/Installation/Industrial sections, and the same "What We Stand For" all repeat three times verbatim (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Smyrna location is invisible in copy', value: 'Despite being Smyrna-based, the homepage headline says "businesses across Georgia" — not "Smyrna and metro Atlanta" — so they miss local intent (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Blog exists but is stale', value: '"Latest News and Stories" section shows only two articles, both repeated three times in the same page (confirmed: homepage fetch shows 2 unique posts duplicated)', status: 'warning' },
+      { label: 'No NICET or certification badges visible', value: 'Family-owned since 1986 is the only trust signal — no NICET certification, BBB rating, or industry affiliations shown in nav or hero (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: '450 people search "fire protection contractor Atlanta GA" every month, plus another 100-150 for "fire protection Smyrna GA". Fire Protection Services LLC takes the Atlanta term and nobody owns the Smyrna term clearly. Here is what Fire Systems is leaving on the table.',
+      volume: '450', volumeNote: 'monthly searches for fire protection contractor Atlanta GA',
+      leads: '6-12', leadsNote: 'estimated monthly inquiries lost',
+      timeline: '60-90 days', timelineNote: 'starts with fixing the duplicated homepage',
+    },
+    fixes: [
+      { letter: 'A', title: 'Fix the duplicated homepage blocks immediately', body: 'The same three sections repeat three times — this looks broken to any property manager who scrolls. It also tanks SEO because Google sees thin, repeated content.' },
+      { letter: 'B', title: 'Own "Smyrna fire protection" as a homepage angle', body: 'Fire Systems is the most established fire contractor in Smyrna (since 1986) but the homepage headline buries Smyrna entirely. Lead with it.' },
+      { letter: 'C', title: 'Publish one new article every two weeks', body: 'The blog has two posts and both appear duplicated — Impact Fire and Pye-Barker publish weekly. Without a real cadence, Fire Systems will lose page-1 ranking within 18 months.' },
+    ],
+  },
+
+  'Altus Fire & Life Safety': {
+    searchQuery: 'fire protection contractor Atlanta GA',
+    googlePage: 'Not Found',
+    score: { website: 7, seo: 3, total: 10 },
+    primaryFinding: 'Despite being headquartered in Atlanta and PE-backed by Apax, Altus Fire does not appear on page 1, 2, or 3 for "fire protection contractor Atlanta GA" because their entire site is positioned for "Northeastern region" enterprise buyers — the homepage never says Atlanta, never lists Georgia services, and reads like a holding company pitch deck.',
+    issues: [
+      { label: 'Homepage never mentions Atlanta or Georgia', value: 'Hero copy says "industry leader in the Northeastern region" — Atlanta HQ buried on contact page only (confirmed: homepage fetch, no city mention in body)', status: 'critical' },
+      { label: 'No local SEO signals at all', value: 'Site reads as a national/multi-state platform with no city pages, no service area page, no Atlanta-specific content (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'No blog, no articles, no resources', value: 'Nav: Home, About, Services, Markets, Careers, Contact — zero content marketing surface (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Markets list is generic, not vertical-deep', value: 'Property Management, Hospitals, Restaurants, etc. are tile labels with no underlying pages (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: '450 people search "fire protection contractor Atlanta GA" each month. Altus is the only Atlanta-HQ fire contractor with PE backing (Apax + AE Industrial) — and they capture zero of that traffic because the website is positioned for the Northeast and ignores Atlanta entirely. Here is what Altus is leaving on the table.',
+      volume: '450', volumeNote: 'monthly searches for fire protection contractor Atlanta GA',
+      leads: '12-20', leadsNote: 'estimated monthly inquiries lost on home market alone',
+      timeline: '90-120 days', timelineNote: 'requires repositioning, not just SEO fixes',
+    },
+    fixes: [
+      { letter: 'A', title: 'Add an Atlanta hub page that owns the home market', body: 'Altus is HQ here. The homepage should say so. A dedicated /atlanta page with services, team, and case studies would rank within 90 days given the brand authority.' },
+      { letter: 'B', title: 'Build location pages for every Altus holding company city', body: 'Apax acquired multiple regional firms — each city those firms operated in needs its own page so Altus can consolidate ranking equity instead of orphaning it.' },
+      { letter: 'C', title: 'Launch a thought-leadership content engine for facilities buyers', body: 'PE-backed competitors Pye-Barker and Impact Fire are publishing weekly. Altus has the budget but no content surface — ceding the high-intent enterprise search traffic to slower-moving competitors.' },
+    ],
+  },
+
+  'Allied Fire Protection, Inc.': {
+    searchQuery: 'fire sprinkler company Raleigh NC',
+    googlePage: 'Page 1',
+    score: { website: 4, seo: 3, total: 7 },
+    primaryFinding: 'Crawford Sprinkler outranks Allied for "fire sprinkler company Raleigh NC" because Crawford clearly says "Raleigh, NC" in their site title and headline, while Allied buries Raleigh entirely — homepage has no city, no headline, just service paragraphs.',
+    issues: [
+      { label: 'Homepage has no real headline', value: 'Page opens directly with "Services" — no hero, no city, no value proposition, no "Allied Fire Protection of Raleigh" anywhere above the fold (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'No service pages, just one long page', value: 'All services (estimating, design, fabrication, installation) are one page sections — no /fire-sprinkler-installation, /design-build, etc. (confirmed: homepage fetch shows everything in one /index style page)', status: 'critical' },
+      { label: 'Project list buried, no images, no SEO value', value: 'Has 10+ named projects (UNC-G, Campbell U, Raleigh Union Station) but they are text snippets at page bottom with no project pages (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'No blog or content', value: 'Nav is Home, About, Services, Projects, Contact — no blog, news, or resources (confirmed: homepage fetch, no content section)', status: 'warning' },
+    ],
+    impact: {
+      intro: '225 people search "fire sprinkler company Raleigh NC" every month. Crawford Sprinkler wins because they put Raleigh and 100 years right in the title. Allied has bigger projects (Dillon Tower, Raleigh Union Station) but the website never says Raleigh once on the homepage. Here is what Allied is leaving on the table.',
+      volume: '225', volumeNote: 'monthly searches for fire sprinkler company Raleigh NC',
+      leads: '6-10', leadsNote: 'estimated monthly inquiries lost',
+      timeline: '60-90 days', timelineNote: 'starts with rebuilding the homepage',
+    },
+    fixes: [
+      { letter: 'A', title: 'Rewrite the homepage to lead with Raleigh and 40 years', body: 'Allied is celebrating 31+ years in Raleigh and worked on Raleigh Union Station and Dillon Tower — the homepage needs to say so above the fold instead of opening with a generic "Services" header.' },
+      { letter: 'B', title: 'Turn each named project into its own page with photos', body: 'UNC-G Rec Center, Campbell University, Raleigh Union Station are landmark Raleigh-area projects — each deserves a real page so Allied can rank for "fire sprinkler installation [project type] NC".' },
+      { letter: 'C', title: 'Split the giant services page into individual service pages', body: 'Right now estimating, design, fabrication, and installation are sections of one page — split into four pages so each can rank for its own keyword and Allied stops cannibalizing itself.' },
+    ],
+  },
+
+  'Crawford Sprinkler Company of Raleigh': {
+    searchQuery: 'fire sprinkler company Raleigh NC',
+    googlePage: 'Page 1',
+    score: { website: 6, seo: 5, total: 11 },
+    primaryFinding: 'Crawford Sprinkler ranks #1 for "fire sprinkler company Raleigh NC" because the page title literally says "Raleigh, NC" and the headline leads with "100 years protecting lives and property" — but Impact Fire and Hiller Fire are PE-backed national rollups building deeper Raleigh content libraries that will erode that lead within 18 months.',
+    issues: [
+      { label: 'No blog or article content', value: 'Site nav is Home, Services, Projects, History, Contact — no blog, news, or resources tab (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'No team or staff bios', value: 'Says "trained and professional installation technicians" but never names a single person — no leadership, no NICET-certified estimators by name (confirmed: homepage fetch)', status: 'warning' },
+      { label: 'Service descriptions are paragraphs, not pages', value: 'BDA, Fire Alarm, Backflow, Underground are tab-style snippets on the homepage rather than dedicated /backflow-testing or /bi-directional-amplification pages (confirmed: homepage fetch shows tabbed inline content)', status: 'warning' },
+      { label: 'No project portfolio with photos', value: 'Mentions "developers, engineers, architects" partnerships but shows zero named projects — competitor Allied lists 10+ landmark builds (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: '225 people search "fire sprinkler company Raleigh NC" every month and Crawford already wins them. The risk is Impact Fire (200+ years industry combined experience, multi-state) and Hiller Fire (national rollup) building richer Raleigh content. Here is what Crawford needs to lock in their lead.',
+      volume: '225', volumeNote: 'monthly searches for fire sprinkler company Raleigh NC',
+      leads: '4-8', leadsNote: 'estimated monthly inquiries at risk if rankings slip',
+      timeline: '90-120 days', timelineNote: 'defensive content build',
+    },
+    fixes: [
+      { letter: 'A', title: 'Launch a content section about NC fire code and inspections', body: 'Property managers and GCs Google "NC fire sprinkler inspection requirements" — Crawford has 100 years of expertise and zero articles. This is the cheapest moat against Impact Fire and Hiller.' },
+      { letter: 'B', title: 'Build a real project portfolio with photos and write-ups', body: 'Crawford works with major developers and architects but shows zero named projects on the site. Even five labeled projects with square footage and scope would outrank competitor service pages.' },
+      { letter: 'C', title: 'Split inline service tabs into separate ranking pages', body: 'BDA, backflow, underground, and fire alarm currently live as inline tabs on the homepage — split each into its own page so Crawford can rank for "BDA system Raleigh NC" and similar long-tail terms competitors are not targeting yet.' },
+    ],
+  },
+
+  'Allegiant Fire Protection, LLC': {
+    searchQuery: 'fire protection contractor Aurora IL',
+    googlePage: 'Page 1',
+    score: { website: 7, seo: 7, total: 14 },
+    primaryFinding: 'Allegiant ranks #1 for Aurora but only #8 for the broader Chicago metro where most commercial fire-alarm RFPs originate, because Allegiant has only one /locations/aurora-illinois/ page and no dedicated suburb pages for Naperville, Schaumburg, Joliet, or Rockford.',
+    issues: [
+      { label: 'Chicago metro visibility', value: 'Outranked by Alpha, Chicago Fire Protection, C&E, Nova, and Monarch on the Chicago search (confirmed: Chicago IL search, position 8)', status: 'critical' },
+      { label: 'Service-area page coverage', value: 'Single /locations/aurora-illinois/ page exists; no dedicated pages for Naperville, Schaumburg, Joliet, Rockford, NW Indiana, Milwaukee (confirmed: site: search, ~25 pages indexed)', status: 'critical' },
+      { label: 'Editorial cadence', value: 'News/blog section has only press release plus a few evergreen items, last meaningful update years old (confirmed: site: search returned only one news URL)', status: 'warning' },
+      { label: 'Service depth', value: 'Services page lists fire alarm focus only; sprinkler, suppression, extinguisher pages thin or missing (confirmed: services page fetch via site: index)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Allegiant already wins Aurora searches; the gap is the Chicago metro where the bigger commercial accounts live.',
+      volume: '450', volumeNote: 'Combined Chicago metro fire-protection-contractor demand per month',
+      leads: '12-20', leadsNote: 'Net-new commercial inquiries from broader Chicagoland geo pages',
+      timeline: '60-90 days', timelineNote: 'For city-level pages and service deepening to start ranking',
+    },
+    fixes: [
+      { letter: 'A', title: 'Build a page for every Illinois city you actually serve', body: 'Spin up dedicated pages for Naperville, Schaumburg, Joliet, Rockford, Elgin, plus NW Indiana and Southern Wisconsin hubs you already cover, each with local proof points and contact info.' },
+      { letter: 'B', title: 'Split the services hub into real, individual pages', body: 'Give fire alarm, sprinkler, suppression, extinguishers, and inspections their own deep pages with photos, code references, and use cases instead of one overview list.' },
+      { letter: 'C', title: 'Publish one operator-grade article a month', body: 'Topics like Cook County inspection schedules, NICET certification updates, and how to budget a retrofit will pull buyers searching beyond your name.' },
+    ],
+  },
+
+  'Fortis Fire & Safety': {
+    searchQuery: 'fire protection contractor Schaumburg IL',
+    googlePage: 'Page 1',
+    score: { website: 8, seo: 6, total: 14 },
+    primaryFinding: 'Fortis has a polished national-account site and HQ in Schaumburg, but the local Schaumburg search is owned by Nova Fire Protection while Fortis is invisible for Chicago metro intent searches because the entire site is organized by brand and industry instead of by metro.',
+    issues: [
+      { label: 'Local Schaumburg ranking', value: 'Nova Fire Protection holds #1 for Schaumburg search; Fortis appears around #4 despite HQ being in Schaumburg (confirmed: Schaumburg IL search)', status: 'critical' },
+      { label: 'No geo pages for served regions', value: 'Site organized by brand and industry, not by metros; no Schaumburg, Tampa, Raleigh, Orange County landing pages (confirmed: site: search, ~30 pages indexed)', status: 'critical' },
+      { label: 'No blog or insights hub', value: 'No /blog, /insights, /resources path; only corporate marketing pages and brand bios (confirmed: site: search returned no editorial URLs)', status: 'warning' },
+      { label: 'Industries pages thin', value: 'Industries-we-serve page lists verticals but each gets one paragraph rather than a full proof-driven page (confirmed: industries-we-serve URL via site: index)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'For a national rollup, Fortis is leaving organic pipeline on the table in every metro it operates.',
+      volume: '600', volumeNote: 'Combined Chicago metro plus Tampa, Raleigh, Orange County local demand',
+      leads: '15-25', leadsNote: 'Multi-region commercial inquiries from geo and vertical pages',
+      timeline: '90-120 days', timelineNote: 'Multi-metro buildout takes longer than single-city work',
+    },
+    fixes: [
+      { letter: 'A', title: 'Build a real page for every metro you operate in', body: 'Schaumburg, Tampa, Raleigh, and Orange County each need their own page with the local team, projects, certifications, and contact, not just a brand-family bio.' },
+      { letter: 'B', title: 'Turn Industries We Serve into deep proof pages', body: 'Healthcare, marine and ports, data centers, and Fortune 500 verticals each deserve a full page with case studies, code expertise, and named projects.' },
+      { letter: 'C', title: 'Launch a national-accounts insights hub', body: 'Publish quarterly content on multi-site fire-protection programs, AHJ coordination, and acquisitions integration to capture national-account search intent.' },
+    ],
+  },
+
+  'Alliance Fire Protection, Inc.': {
+    searchQuery: 'fire protection contractor Vernon Hills IL',
+    googlePage: 'Not Found',
+    score: { website: 4, seo: 3, total: 7 },
+    primaryFinding: 'Despite Fortune-class clients like American Airlines, GE Healthcare, and Amazon, Alliance Fire does not appear on page one for Vernon Hills or Chicago fire protection searches because the website is branded as "USAFP / USA Fire Protection" while every directory lists them as Alliance Fire Protection — a brand mismatch that splits search authority.',
+    issues: [
+      { label: 'Missing from local search', value: 'Site does not rank in top 10 for Vernon Hills or Chicago fire protection contractor; BBB directory and competitors fill page one (confirmed: Vernon Hills IL search, position not found)', status: 'critical' },
+      { label: 'Brand confusion across domains', value: 'Site is branded USAFP / USA Fire Protection at alliancefirepro.com while the company name on every directory is Alliance Fire Protection, Inc. (confirmed: site: search returned only USAFP-titled pages)', status: 'critical' },
+      { label: 'No blog or fresh content', value: 'Most indexed pages are dated 2020-2021 case studies; no recent articles, news, or updates (confirmed: site: search showed dates clustered in 2020)', status: 'warning' },
+      { label: 'Thin services page', value: 'Single services page lists offerings without depth, no schema, no geo pages for Lake County, Cook County, or specific suburbs (confirmed: services page in site: index)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'You have referenceable Fortune 500 clients but the website is hiding them and the brand from search.',
+      volume: '450', volumeNote: 'Chicago metro fire-protection-contractor demand per month',
+      leads: '15-25', leadsNote: 'Mid-market and enterprise inquiries from properly positioned site',
+      timeline: '60-90 days', timelineNote: 'Brand alignment plus baseline geo and schema work',
+    },
+    fixes: [
+      { letter: 'A', title: 'Match the website name to the company name', body: 'Pick one name (Alliance Fire Protection or USAFP) and align the domain, page titles, footer, and Google profile so buyers and search engines stop bouncing between identities.' },
+      { letter: 'B', title: 'Turn American Airlines, GE, and Amazon into front-page proof', body: 'Promote the case studies to the homepage with photos, scope, and named outcomes instead of burying them three clicks deep.' },
+      { letter: 'C', title: 'Add a page for every county and suburb you cover', body: 'Lake County, Cook County, Vernon Hills, Lake Forest, Buffalo Grove, Libertyville each need their own page describing the work and the local team.' },
+    ],
+  },
+
+  'Nova Fire Protection': {
+    searchQuery: 'fire protection contractor Schaumburg IL',
+    googlePage: 'Page 1',
+    score: { website: 6, seo: 7, total: 13 },
+    primaryFinding: 'Nova owns the Schaumburg search and ranks for Chicago, but the site reads like a 2010 sprinkler shop with a single-service focus, no team page, and no project gallery — leaving conversion and content money on the table while Alpha Fire Sprinkler ranks above them for the broader Chicago metro.',
+    issues: [
+      { label: 'Old-school site design', value: 'Homepage is sprinkler-only focused with thin layout and dated UI; no team page, no project gallery, no certifications block (confirmed: homepage indexed via site: search)', status: 'critical' },
+      { label: 'Geo pages exist but are thin', value: 'Has commercial-fire-sprinklers-chicago and home-fire-sprinklers-schaumburg pages but no Aurora, Naperville, Arlington Heights, Oak Park pages despite serving them (confirmed: site: search, ~10 pages indexed)', status: 'warning' },
+      { label: 'No blog or articles section', value: 'No /blog, /news, or /resources path on the site (confirmed: site: search returned no editorial URLs)', status: 'warning' },
+      { label: 'Service offering looks narrow', value: 'Site reads sprinkler-only; no fire alarm, suppression, or extinguisher pages even if the firm offers adjacent work (confirmed: services pages limited to sprinkler in site: index)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Nova ranks well already; modernizing the site and broadening the content footprint converts more of that traffic into booked work.',
+      volume: '450', volumeNote: 'Chicago metro fire-protection demand per month',
+      leads: '10-18', leadsNote: 'Additional booked walk-throughs from a refreshed site and new geo pages',
+      timeline: '60-90 days', timelineNote: 'Geo expansion and a redesign sprint',
+    },
+    fixes: [
+      { letter: 'A', title: 'Modernize the homepage and add real proof', body: 'Add a team page, recent project photos, NICET and union credentials, and customer logos so a property manager arriving from Google sees a credible 35-year operator instead of a static page.' },
+      { letter: 'B', title: 'Add a page for every suburb you list as a service area', body: 'Aurora, Naperville, Arlington Heights, Oak Brook, and Oak Park each need their own page since you already serve them.' },
+      { letter: 'C', title: 'Start a fire-protection learning section', body: 'Short articles on sprinkler inspection cadence, retrofit budgeting, and Illinois fire code updates will pull buyers researching before they call.' },
+    ],
+  },
+
+  'Capital Fire Protection Co.': {
+    searchQuery: 'fire protection contractor Columbus OH',
+    googlePage: 'Page 1',
+    score: { website: 7, seo: 6, total: 13 },
+    primaryFinding: 'Capital Fire ranks #1 for Columbus but is missing the surrounding Ohio metros (Dublin, Westerville, Worthington, Gahanna, Hilliard) and the search-driving content that would feed steadier inbound demand because the site has 12 indexed pages and zero suburb landing pages.',
+    issues: [
+      { label: 'No metro expansion pages', value: 'No pages for Dublin, Westerville, Worthington, Gahanna, Hilliard, Pickerington, Newark, or surrounding central Ohio cities even though service area covers them (confirmed: site: search, ~12 pages indexed)', status: 'critical' },
+      { label: 'No blog or insights', value: 'No /blog, /news, or /resources section on the site, only service category pages (confirmed: site: search returned no editorial URLs)', status: 'warning' },
+      { label: 'Trust signals not surfaced', value: '60-plus years in business and large private status not reinforced with team page, certifications block, or named client roster on the homepage (confirmed: about-us URL only)', status: 'warning' },
+      { label: 'Service pages stop at category', value: 'Sprinkler, suppression, extinguishers each have one page but no sub-pages on wet vs dry, clean agent, kitchen hood code requirements (confirmed: fire-services subpages in site: index)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Capital already wins Columbus searches; the lift is converting that authority into the surrounding metros and into editorial demand.',
+      volume: '300', volumeNote: 'Columbus metro plus surrounding cities fire-protection demand',
+      leads: '10-15', leadsNote: 'Inquiries from suburb pages and educational content',
+      timeline: '60-90 days', timelineNote: 'Local pages and content sprint',
+    },
+    fixes: [
+      { letter: 'A', title: 'Build a page for every Central Ohio city you serve', body: 'Dublin, Westerville, Worthington, Hilliard, Gahanna, Newark each need a dedicated page with local proof and contact info.' },
+      { letter: 'B', title: 'Lean on 60-plus years of history on the homepage', body: 'Add a founder timeline, named team, NICET counts, and a client logo wall so first-time visitors instantly grasp the firm is the senior operator in town.' },
+      { letter: 'C', title: 'Publish a Central Ohio fire-code article each month', body: 'Restaurant hood compliance, warehouse sprinkler retrofits, and Columbus AHJ inspection windows will pull buyers searching before they call.' },
+    ],
+  },
+
+  'Hard Fire Suppression Systems Inc.': {
+    searchQuery: 'fire protection contractor Columbus OH',
+    googlePage: 'Page 1',
+    score: { website: 6, seo: 5, total: 11 },
+    primaryFinding: 'Hard Fire ranks page one for Columbus thanks to specialty positioning (clean agent, mission-critical), but the website undersells 80 years of work and skips obvious suburb targeting — the homepage title says "Ohio Commercial Fire Protection" instead of Columbus, weakening relevance for the highest-volume local query.',
+    issues: [
+      { label: 'Headline does not mention Columbus', value: 'Site title says "Ohio Commercial Fire Protection" not Columbus, weakening relevance for the highest-volume local query (confirmed: homepage title via site: search)', status: 'critical' },
+      { label: 'Single Canton page, no other city coverage', value: 'Only fire-protection-canton page exists; no Worthington, Dublin, Cincinnati, Cleveland, Akron pages despite "Across Ohio" positioning (confirmed: site: search, ~15 pages indexed)', status: 'critical' },
+      { label: 'No blog or industry content', value: 'No /blog, /news, /resources, or articles section indexed despite mission-critical and clean-agent specialty (confirmed: site: search returned no editorial URLs)', status: 'warning' },
+      { label: '80-year history hidden', value: '1945 founding date, mission-critical credentials, and clean-agent expertise referenced briefly on About page rather than woven across the site (confirmed: about-us URL only)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Hard Fire is already the specialty pick in Columbus; the missing layer is multi-city coverage and a content moat for clean-agent buyers.',
+      volume: '250', volumeNote: 'Columbus metro plus statewide special-hazards demand',
+      leads: '8-14', leadsNote: 'Inquiries from city pages and clean-agent buyer guides',
+      timeline: '60-90 days', timelineNote: 'Geo and content buildout',
+    },
+    fixes: [
+      { letter: 'A', title: 'Put Columbus OH in the homepage headline', body: 'The current Ohio Commercial Fire Protection headline misses the highest-volume city query; lead with Columbus and reinforce statewide coverage underneath.' },
+      { letter: 'B', title: 'Add a page for every Ohio city you serve', body: 'Worthington, Dublin, Cincinnati, Cleveland, Akron, Toledo each deserve their own page with local proof points and clean-agent capability called out.' },
+      { letter: 'C', title: 'Build a clean-agent buyers section', body: 'FM-200, NOVEC 1230, CO2 system selection guides, data center sprinkler vs clean agent comparisons, and chemical plant special-hazard playbooks will capture the high-intent specialty buyer.' },
+    ],
+  },
+
+  'Piper Fire Protection, A Fortis Brand': {
+    searchQuery: 'fire protection contractor Clearwater FL',
+    googlePage: 'Page 1',
+    score: { website: 6, seo: 5, total: 11 },
+    primaryFinding: 'Strong regional brand with 6 Florida offices but the homepage hides the cities buyers actually search — only ~10 pages are indexed for a 200+ employee operation, and the bulletins/news section is blocked behind a verification challenge so Google cannot read the content.',
+    issues: [
+      { label: 'No location pages for the 6 FL offices', value: 'Homepage lists St. Petersburg, Clearwater, Largo, Tampa, Sarasota, Orlando in body copy only, no dedicated city pages found in site: search (confirmed: site: search, ~10 indexed pages)', status: 'critical' },
+      { label: 'Thin indexed footprint vs Fortis-scale operation', value: '~10 pages indexed for a 200+ employee, 6-office contractor (confirmed: site: search)', status: 'critical' },
+      { label: 'Blog/news section blocked behind verification wall', value: 'Bulletins and News teased on homepage but /blog returns a verification challenge, not real content (confirmed: blog fetch)', status: 'warning' },
+      { label: 'No JSON-LD LocalBusiness schema visible', value: 'Homepage markup returned no structured data block in fetch (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Six Florida offices and zero pages dedicated to the cities they serve.',
+      volume: '450', volumeNote: 'Tampa Bay monthly searches across fire protection terms',
+      leads: '15-25', leadsNote: 'estimated lift from city-level pages plus indexed news',
+      timeline: '60-90 days', timelineNote: 'standard timeframe for new geo pages to rank',
+    },
+    fixes: [
+      { letter: 'A', title: 'Build a page for each of your 6 Florida offices', body: 'Clearwater, St. Petersburg, Largo, Tampa, Sarasota, Orlando each get their own page with phone, address, services, and a local project example.' },
+      { letter: 'B', title: 'Open up the bulletins archive', body: 'Move the news section out from behind the verification wall so Google can read 35 years of company updates.' },
+      { letter: 'C', title: 'Add a clear Fortis explainer above the fold', body: 'Two sentences saying who Fortis is and why a Florida buyer should care. Right now the brand transition is invisible.' },
+    ],
+  },
+
+  'United Fire Protection, Inc.': {
+    searchQuery: 'fire protection contractor Saint Petersburg FL',
+    googlePage: 'Not Found',
+    score: { website: 5, seo: 3, total: 8 },
+    primaryFinding: 'United has real services and a NICET-certified team backed by Pye-Barker, but the homepage timed out twice on independent crawls and they do not appear in the top 10 for "fire protection contractor Saint Petersburg FL" — page one is owned by Pye-Barker parent listing, St. Pete Fire Protection, Cintas, and Precision.',
+    issues: [
+      { label: 'Does not rank for Saint Petersburg fire protection', value: 'Top 10 dominated by Pye-Barker parent listing, St. Pete Fire Protection, Cintas, Precision (confirmed: SERP fetch — United not present)', status: 'critical' },
+      { label: 'Homepage timed out on multiple fetch attempts', value: 'Two crawl attempts to united-fire.com both returned CRAWL_LIVECRAWL_TIMEOUT, suggesting slow server or aggressive bot blocking (confirmed: 2x homepage fetch)', status: 'critical' },
+      { label: 'No blog or articles section in indexed pages', value: 'site: search returned only service and contact pages, no /blog or /resources (confirmed: site: search, ~10 pages)', status: 'warning' },
+      { label: 'No dedicated St. Petersburg, Fort Lauderdale, or Orlando location pages', value: 'Branches mentioned only in About copy, no city-level URLs in indexed results (confirmed: site: search)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Pye-Barker brought scale, but United is invisible on local search.',
+      volume: '300', volumeNote: 'monthly Saint Petersburg fire protection searches',
+      leads: '10-18', leadsNote: 'estimated from ranking on home-city term plus speed fix',
+      timeline: '60-90 days', timelineNote: 'time to fix performance, add geo pages, see ranking lift',
+    },
+    fixes: [
+      { letter: 'A', title: 'Fix the homepage load problem', body: 'Two outside crawls timed out — get the site back to a 2 second load before anything else, or new SEO work will not stick.' },
+      { letter: 'B', title: 'Build location pages for St. Pete, Fort Lauderdale, Orlando', body: 'Each branch gets its own page with phone, technicians, and a project from that market.' },
+      { letter: 'C', title: 'Publish 6 articles answering inspection questions', body: 'NFPA 25 testing, fire pump weekly checks, sprinkler obstruction rules — the questions facilities managers actually search.' },
+    ],
+  },
+
+  'National Fire & Life Safety': {
+    searchQuery: 'fire protection contractor Nashville TN',
+    googlePage: 'Not Found',
+    score: { website: 4, seo: 2, total: 6 },
+    primaryFinding: 'The brand says "National" and homepage copy claims "entire United States" but offices are in Tennessee and Alabama only — leadership page lists only Nashville, Birmingham, and Huntsville district managers, and they do not rank for Nashville fire protection where Jarrett Fire, Servant Fire, Century Fire, and Pye-Barker dominate.',
+    issues: [
+      { label: 'Does not rank for Nashville fire protection', value: 'Page 1 owned by Jarrett Fire, Servant Fire, Century Fire, Grand Fire, Pye-Barker, Koorsen — National not present (confirmed: SERP fetch)', status: 'critical' },
+      { label: 'Brand promises national coverage, footprint is two states', value: 'Homepage repeatedly says "entire United States" but leadership page lists only Nashville, Birmingham, and Huntsville district managers (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'Blog returns 404', value: 'nationalfire.us/blog returned CRAWL_NOT_FOUND, no articles section anywhere on site (confirmed: blog fetch)', status: 'warning' },
+      { label: 'Only 7 indexed pages for a multi-state contractor', value: 'site: search returned 7 results: home, 4 service pages, projects, thank-you (confirmed: site: search)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'A name built for national accounts but a website built for nobody specifically.',
+      volume: '250', volumeNote: 'Nashville monthly fire protection searches',
+      leads: '12-20', leadsNote: 'estimated from local ranking plus second-state pages',
+      timeline: '60-90 days', timelineNote: 'enough time for geo pages and content to index',
+    },
+    fixes: [
+      { letter: 'A', title: 'Pick one positioning and commit to it', body: 'Either be the Nashville-Birmingham-Huntsville regional expert or actually build national account capability. The current message confuses both buyers.' },
+      { letter: 'B', title: 'Build 3 city pages: Nashville, Birmingham, Huntsville', body: 'Each with the local district manager, phone, address, and recent project. Right now those cities only appear in tiny leadership bios.' },
+      { letter: 'C', title: 'Start a monthly newsletter on industrial fire protection', body: 'Their leadership has 35-40 years of experience. Put it on the page in the form of practical answers buyers search.' },
+    ],
+  },
+
+  'Chattanooga Fire Protection': {
+    searchQuery: 'fire protection contractor Chattanooga TN',
+    googlePage: 'Page 1',
+    score: { website: 3, seo: 3, total: 6 },
+    primaryFinding: 'Chattanooga Fire Protection has been in business since 1945 and the services page still has placeholder Lorem Ipsum copy ("Lorem ipsum dolor sit amet" with bullets reading "Cool thing, neat-o") — three secondary cities (Knoxville, Woodstock, Calhoun) have no city-level pages at all.',
+    issues: [
+      { label: 'Lorem Ipsum placeholder copy on the services page', value: 'chattanoogafire.com/services has the literal "Lorem ipsum dolor sit amet..." text and bullet points reading "Cool thing, neat-o" (confirmed: service page fetch)', status: 'critical' },
+      { label: 'No content written for Knoxville, Woodstock, Calhoun offices', value: 'Three secondary cities listed on homepage but no city-level pages indexed (confirmed: site: search, ~10 pages)', status: 'critical' },
+      { label: 'No blog, articles, or resources section', value: 'site: search shows only home, about, features, fire suppression, fire alarms, fire sprinklers, fire extinguishers, careers, contact (confirmed: site: search)', status: 'warning' },
+      { label: '80 years of history barely visible', value: 'Founded 1945 mentioned in headline but no history page, no past project details, no NICET or certification badges shown (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'The oldest fire protection name in the city is invisible to anyone Googling for help.',
+      volume: '120', volumeNote: 'Chattanooga monthly fire protection searches',
+      leads: '5-10', leadsNote: 'estimated from ranking + content lift in a smaller market',
+      timeline: '60-90 days', timelineNote: 'enough for content cleanup and city pages to index',
+    },
+    fixes: [
+      { letter: 'A', title: 'Replace the Lorem Ipsum on the services page', body: 'Eighty years of inspections, suppression, sprinkler work — write what you actually do. This is the single most embarrassing fix on the site.' },
+      { letter: 'B', title: 'Build a page for each of the 4 office cities', body: 'Chattanooga, Knoxville, Woodstock, Calhoun each deserve their own page with services and local proof.' },
+      { letter: 'C', title: 'Tell the 1945 story properly', body: 'Add a history page with founders, milestones, and a few project photos from the past decade. Eighty years is the moat, use it.' },
+    ],
+  },
+
+  'American Fire Protection, Inc.': {
+    searchQuery: 'fire protection contractor Greenville SC',
+    googlePage: 'Page 1',
+    score: { website: 5, seo: 4, total: 9 },
+    primaryFinding: 'A 50-year-old NICET-certified shop licensed in 4 states (SC, NC, GA, TN), but the website only sells Greenville — site: search shows no Charlotte, Atlanta, Nashville, or Charleston pages, and 2,000+ projects are referenced but never broken out as case studies.',
+    issues: [
+      { label: 'Licensed in 4 states, no pages for any of the other 3', value: 'Homepage names SC, NC, GA, TN coverage but site: search shows no Charlotte, Atlanta, Nashville, Charleston pages (confirmed: site: search, ~10 pages)', status: 'critical' },
+      { label: 'No blog or articles to explain 2,000+ projects', value: 'site: search returned only home, contact, sales, installation, inspection, projects, design, history, careers — no /blog (confirmed: site: search)', status: 'critical' },
+      { label: 'Projects page exists but is not detailed', value: 'Single projects URL with no individual case studies for the 2,000+ jobs they cite (confirmed: site: search)', status: 'warning' },
+      { label: 'No structured data on homepage', value: 'Homepage fetch returned no JSON-LD LocalBusiness or Organization schema (confirmed: homepage fetch)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Half a century of work, four-state license, and a website that only sells Greenville.',
+      volume: '150', volumeNote: 'Greenville monthly fire protection searches',
+      leads: '8-15', leadsNote: 'estimated from regional pages plus project case studies',
+      timeline: '60-90 days', timelineNote: 'enough to publish multi-state pages and case studies',
+    },
+    fixes: [
+      { letter: 'A', title: 'Build a state page for NC, GA, and TN', body: 'You are licensed there. Show buyers in Charlotte, Atlanta, and Nashville that you can serve them. Right now nothing on the site says so.' },
+      { letter: 'B', title: 'Turn 10 of the 2,000 projects into case studies', body: 'One page per project with industry, square footage, system installed, and a photo. This is the strongest proof you have and it is hidden.' },
+      { letter: 'C', title: 'Add NICET badges and 50-year story above the fold', body: 'NICET certification, 1973 founding, 4-state license — these are buying signals. Currently they are in body copy.' },
+    ],
+  },
+
+  'Quick Response Fire Protection Inc.': {
+    searchQuery: 'fire protection contractor Freehold NJ',
+    googlePage: 'Page 1',
+    score: { website: 6, seo: 4, total: 10 },
+    primaryFinding: 'Quick Response is a Davis-Ulmer/APi Group subsidiary with blue-chip clients (Merck, Unilever, L\u0027Oreal, Toll Brothers, Rutgers) shown as logo images on the homepage but no case studies — and only 4 pages indexed total: home, contact, careers, references. No service pages, no project pages, no blog.',
+    issues: [
+      { label: 'Only 4 pages indexed for largest NJ fire protection contractor', value: 'site: search returned home, contact, careers, references — no service pages, no project pages, no blog (confirmed: site: search)', status: 'critical' },
+      { label: 'Merck, Unilever, L\u0027Oreal, Rutgers logos shown as images with no case studies', value: 'Homepage displays 13 client logos as image files only, no clickable case studies or project narratives (confirmed: homepage fetch)', status: 'critical' },
+      { label: 'No blog, no articles, no resources section', value: 'site: search returned 4 URLs total, none under /blog or /resources or /news (confirmed: site: search)', status: 'warning' },
+      { label: 'No mention of Atlanta GA office despite CSV reference', value: 'Homepage and contact page show only Freehold NJ address, no GA presence visible (confirmed: homepage fetch + site: search)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'Largest NJ fire protection contractor, smallest digital footprint of any peer.',
+      volume: '180', volumeNote: 'Freehold/Central NJ monthly fire protection searches',
+      leads: '12-22', leadsNote: 'estimated from case studies + service pages + tri-state geo',
+      timeline: '60-90 days', timelineNote: 'time to publish service pages, project stories, and indexed content',
+    },
+    fixes: [
+      { letter: 'A', title: 'Build dedicated service pages for sprinklers, alarms, and special hazards', body: 'Right now everything is buried inside the Services dropdown. One page per service with descriptions, code references, and photos.' },
+      { letter: 'B', title: 'Turn the 13 client logos into 13 case studies', body: 'Merck, Unilever, L\u0027Oreal, Toll Brothers, Rutgers — each deserves a project page with system installed, sq ft, and outcome.' },
+      { letter: 'C', title: 'Add a NJ-NY-PA tri-state coverage page', body: 'You serve the tri-state but the site reads as Freehold-only. Show buyers across the region that you can travel.' },
+    ],
+  },
+
+  'MERIDIAN FIRE AND SECURITY LLC': {
+    searchQuery: 'fire protection contractor Centennial CO',
+    googlePage: 'Not Found',
+    score: { website: 6, seo: 4, total: 10 },
+    primaryFinding: 'Acquired by Summit Fire Protection in December 2024 yet the homepage and brand identity are still split between Meridian and Summit, while page 1 of "fire protection contractor Centennial CO" is owned by Western States, Integrity, and Central Fire — Meridian itself does not appear in page 1 organic results.',
+    issues: [
+      { label: 'Brand identity split mid-transition', value: 'homepage announces "Meridian Fire is now Summit Fire Protection" with no clear path for either brand (confirmed: site: search returned Meridian-branded pages plus Summit redirect on homepage)', status: 'critical' },
+      { label: 'Invisible for the home market', value: 'Page 1 for Centennial fire protection lists Western States, Integrity, MtyBee, Central Fire, but no Meridian listing (confirmed: Centennial CO ranking search)', status: 'critical' },
+      { label: 'No content engine', value: 'no blog, news, or resources section appears in indexed pages, only About, Careers, and a few city pages (confirmed: site:meridianfire.com returned ~4 results)', status: 'warning' },
+      { label: 'Geo coverage stops short', value: 'Highlands Ranch and Pueblo pages exist but no Aurora, Lakewood, Boulder, Fort Collins, or Colorado Springs pages (confirmed: site: search)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'A $68M Colorado fire and security company that just got swallowed by a national rollup is invisible on Page 1 of its own home metro.',
+      volume: '300', volumeNote: 'monthly searches across "fire protection contractor Denver" and Centennial cluster',
+      leads: '8-15', leadsNote: 'monthly inbound from a Page 1 visible site once brand transition is resolved',
+      timeline: '60-90 days', timelineNote: 'to land Page 1 with proper Denver suburb pages and a unified brand',
+    },
+    fixes: [
+      { letter: 'A', title: 'Pick one brand and own it', body: 'commit to either Meridian, Summit, or "Meridian, a Summit company" and rebuild the homepage around that single identity so Google stops seeing two brands fighting on one domain' },
+      { letter: 'B', title: 'Build a Denver suburb network', body: 'add a real service page for every Denver metro suburb worth winning, mirror the Highlands Ranch and Pueblo template, and link them from the homepage and footer' },
+      { letter: 'C', title: 'Start a fire and life safety newsroom', body: 'publish two short articles a month on Colorado code updates, NFPA inspection deadlines, and project case studies so Google sees an active site' },
+    ],
+  },
+
+  'American Fire Sprinkler Corp': {
+    searchQuery: 'fire sprinkler company Mission KS Kansas City',
+    googlePage: 'Page 1',
+    score: { website: 4, seo: 3, total: 7 },
+    primaryFinding: 'A 57-year-old Kansas City fire sprinkler institution with marquee projects like Union Station and Sprint Center is running a brochure site so thin that Google is indexing a public test subdomain (test.americanfiresprinkler.com) alongside the live one — case studies live on the wrong subdomain so prospects never see them.',
+    issues: [
+      { label: 'Test subdomain leaking into search', value: 'test.americanfiresprinkler.com pages outrank the production site for project case studies (confirmed: site:americanfiresprinkler.com returned 8 of 10 results from test subdomain)', status: 'critical' },
+      { label: 'Brochure site, no depth', value: 'production site shows only homepage and contact, with no real service or project pages indexed (confirmed: site: search)', status: 'critical' },
+      { label: 'Marquee projects buried', value: 'Kansas City Union Station, Sprint Center, and Kansas State Capitol case studies live on the wrong subdomain so prospects never see them (confirmed: site: search)', status: 'warning' },
+      { label: 'No blog or content', value: 'no articles, news, or resources section exists on either subdomain (confirmed: site: search)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'A 1968-founded Kansas City sprinkler company with stadium-grade portfolio is hiding it on a test subdomain Google should never have indexed.',
+      volume: '220', volumeNote: 'monthly searches across Mission and Kansas City fire sprinkler keywords',
+      leads: '6-12', leadsNote: 'monthly inbound once project portfolio is on the live domain and indexed',
+      timeline: '60-90 days', timelineNote: 'to consolidate the two subdomains and surface the marquee work',
+    },
+    fixes: [
+      { letter: 'A', title: 'Kill the test subdomain', body: 'block Google from indexing test.americanfiresprinkler.com and 301 every test page to the matching live URL so Union Station and Sprint Center belong to the production site' },
+      { letter: 'B', title: 'Put the trophies on the homepage', body: 'feature Union Station, Sprint Center, and Kansas State Capitol as a portfolio strip on the live homepage with a dedicated case study page for each' },
+      { letter: 'C', title: 'Build out service pages', body: 'add real pages for design build, in-house fabrication, NFPA inspections, 24-hour service, and tenant finish so Kansas City property managers can actually find what AFS sells' },
+    ],
+  },
+
+  'A P Fire Protection': {
+    searchQuery: 'fire protection contractor Glendale AZ Phoenix',
+    googlePage: 'Page 1',
+    score: { website: 5, seo: 5, total: 10 },
+    primaryFinding: 'AFP ranks #1 for Glendale fire protection but the listing points to a duplicate domain (afpfireprotectionllcaz.com), splitting authority away from the main apfireprotection.com brand — and there are no dedicated pages for Phoenix, Peoria, Scottsdale, Mesa, Tempe, or Surprise even though AFP claims to serve them.',
+    issues: [
+      { label: 'Two domains competing for the same brand', value: 'afpfireprotectionllcaz.com appears in Page 1 search above apfireprotection.com, dividing link equity and confusing Google (confirmed: Glendale ranking search)', status: 'critical' },
+      { label: 'No geo pages for Phoenix metro', value: 'no dedicated pages for Phoenix, Peoria, Scottsdale, Mesa, Tempe, or Surprise even though AFP claims to serve them (confirmed: site:apfireprotection.com)', status: 'critical' },
+      { label: 'No blog or articles', value: 'only a "ap fire protection" tag archive exists, no real published content (confirmed: site: search returned tag URL but no posts)', status: 'warning' },
+      { label: 'Industry pages are stubs', value: 'municipalities, schools, hospitals are mentioned as specialties but each industry page is a single short paragraph (confirmed: site: search)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'AFP is on Page 1 for Glendale but two competing domains are splitting its authority and the Phoenix metro is unclaimed.',
+      volume: '350', volumeNote: 'monthly searches across Glendale, Peoria, and Phoenix fire protection keywords',
+      leads: '10-18', leadsNote: 'monthly inbound once domains are consolidated and Phoenix metro pages exist',
+      timeline: '60-90 days', timelineNote: 'to merge the two sites and roll out metro coverage',
+    },
+    fixes: [
+      { letter: 'A', title: 'Pick one domain and 301 the other', body: 'choose apfireprotection.com or afpfireprotectionllcaz.com as the canonical site, then redirect every page on the loser to the matching page on the winner so Google stops splitting authority' },
+      { letter: 'B', title: 'Build a Phoenix metro page set', body: 'add a real service page for Phoenix, Peoria, Scottsdale, Mesa, Tempe, and Surprise with local landmarks, projects done in each city, and the relevant building inspector contacts' },
+      { letter: 'C', title: 'Turn industry stubs into real pages', body: 'expand the schools, hospitals, and municipalities pages into 800-word case-study driven pages with named projects, photos, and the specific code requirements each industry faces' },
+    ],
+  },
+
+  'Associated Fire Protection (AFP Corp)': {
+    searchQuery: 'fire protection contractor Omaha NE',
+    googlePage: 'Page 1',
+    score: { website: 5, seo: 4, total: 9 },
+    primaryFinding: 'AFP ranks Page 1 for Omaha but JF Ahern, Viking, and Stanek sit above with deeper sites, while AFPs Olathe and Wichita expansion offices have zero dedicated pages and clean-agent specialty (CO2, FM-200, Argonite, explosion suppression) is buried in PDFs instead of on indexable pages.',
+    issues: [
+      { label: 'Outranked on home turf', value: 'JF Ahern, Viking Sprinkler, and Stanek all appear above Associated Fire Protection in the Omaha search results (confirmed: Omaha NE ranking search)', status: 'critical' },
+      { label: 'Olathe and Wichita offices invisible', value: 'AFP claims locations in Olathe KS and Wichita KS but neither has a dedicated page on the site (confirmed: site:associatedfire.net returned only Omaha-centric pages)', status: 'critical' },
+      { label: 'No blog or news', value: 'no articles, case studies, or industry insights section indexed on the entire domain (confirmed: site: search)', status: 'warning' },
+      { label: 'Specialty depth not surfaced', value: 'clean agent, CO2, FM-200, Argonite, and explosion suppression are real differentiators buried in PDFs instead of dedicated pages (confirmed: site: search returned wp-content PDF as a top result)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'A 1993-founded industrial fire specialist with three offices and a clean-agent niche is losing the Omaha search to competitors with thinner expertise but better sites.',
+      volume: '130', volumeNote: 'monthly searches across Omaha NE fire protection keywords',
+      leads: '4-9', leadsNote: 'monthly industrial-grade inbound once offices and specialties have real pages',
+      timeline: '60-90 days', timelineNote: 'to build the office and specialty pages and start outranking JF Ahern',
+    },
+    fixes: [
+      { letter: 'A', title: 'Give Olathe and Wichita real pages', body: 'each office needs its own page with address, phone, photo, named local industrial projects, and the metro it serves so Google can rank you for Kansas City and Wichita searches' },
+      { letter: 'B', title: 'Turn each specialty into a page', body: 'pull clean agent, CO2, FM-200, explosion suppression, and Halon alternatives out of the capabilities PDF and give each one a dedicated page targeting the industrial buyer who searches for it' },
+      { letter: 'C', title: 'Publish industrial fire case studies', body: 'AFP works on power, manufacturing, and special hazard projects, write up six anonymized case studies a year so prospects can see proof and Google sees an active site' },
+    ],
+  },
+
+  'Reacton Fire Suppression': {
+    searchQuery: 'automatic vehicle fire suppression system manufacturer',
+    googlePage: 'Page 1',
+    score: { website: 8, seo: 7, total: 15 },
+    primaryFinding: 'Reacton is a UK-headquartered (Chelmsford) international manufacturer with offices in UK / Phoenix AZ / Dubai UAE — they rank Page 1 globally for vehicle fire suppression but lose the broader category to Amerex, Firetrace, AFEX, and Johnson Controls because their US-side surface is thin and distributor Fireward outranks them on some product searches.',
+    issues: [
+      { label: 'Outranked by larger OEMs in the category', value: 'Amerex, Firetrace, AFEX, Johnson Controls, and Lifeline appear alongside Reacton in vehicle suppression results, with Reacton at #2 not #1 (confirmed: vehicle fire suppression manufacturer ranking search)', status: 'critical' },
+      { label: 'US footprint understated', value: 'Phoenix AZ office exists but no US-specific pages, no US distributor map, no US-side certifications page for a US buyer searching from Texas, Pennsylvania, or California (confirmed: site:reactonfire.com)', status: 'warning' },
+      { label: 'News section under-leveraged', value: 'news page exists but cadence is irregular and posts are not optimized for the application keywords buyers search (confirmed: site: search returned /news index)', status: 'warning' },
+      { label: 'Distributor branding outranks manufacturer', value: 'in some application searches, distributor Fireward and partner case studies outrank Reactons own pages for the same products (confirmed: ranking search mentioned Fireward as key distributor for the Byrne project)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'A UK OEM with global distribution and Phoenix presence is winning some product keywords but losing the broader category to four larger US-based competitors.',
+      volume: '200', volumeNote: 'monthly searches across vehicle fire suppression and related product keywords (US + UK + global)',
+      leads: '12-25', leadsNote: 'monthly OEM and fleet inquiries possible with proper US-side content and application landing pages',
+      timeline: '90-120 days', timelineNote: 'to build the US application pages, application case studies, and distributor map',
+    },
+    fixes: [
+      { letter: 'A', title: 'Build a real US-side site section', body: 'add a US landing page anchored on the Phoenix office, a US distributor map, US certifications and approvals (UL, FM, NFPA references), and US case studies so a Texas mining buyer does not have to figure out you serve them' },
+      { letter: 'B', title: 'Own each application as a page cluster', body: 'turn mining, bus and coach, wind turbine, CNC, marine, and residential kitchen into deep page clusters with installation videos, fleet customer logos, and an inquiry form per application' },
+      { letter: 'C', title: 'Publish a real category newsroom', body: 'commit to two posts a month on fleet fire incidents, regulation updates (UNECE R107, AS 5062, NFPA 17A), and head-to-head application guidance to compound authority against Amerex and Firetrace' },
+    ],
+  },
+
 };
