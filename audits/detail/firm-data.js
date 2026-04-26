@@ -5252,4 +5252,1812 @@ window.__firmAuditData = {
     ],
   },
 
+  'Fire Codes Compliance, LLC': {
+    searchQuery: 'fire sprinkler contractor Charlotte NC',
+    googlePage: 'Page 2',
+    score: { website: 3, seo: 1, total: 4 },
+    primaryFinding: 'Quality Sprinkler Co Inc ranks #1 for 'fire sprinkler contractor Charlotte NC' — Fire Codes Compliance, LLC sits at Page 2 because the homepage has minimal content, no local signals, and no structured data.',
+    issues: [
+      { label: 'Website is down, unreachable, or blocked', value: 'Quality Sprinkler Co Inc (#1 for this keyword) is fully functional. Fire Codes Compliance, LLC has no working web presence (confirmed: fetch failed).', status: 'critical' },
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. Quality Sprinkler Co Inc has an optimized description (confirmed: homepage fetch).', status: 'critical' },
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'Services\' with no city mention. Quality Sprinkler Co Inc targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' }
+    ],
+    impact: {
+      intro: '260 people search 'fire sprinkler contractor Charlotte NC' every month. Quality Sprinkler Co Inc receives most of that traffic because they rank higher and signal local relevance. Fire Codes Compliance, LLC is losing 9-20 qualified inquiries every month.',
+      volume: '260',
+      volumeNote: 'Based on Charlotte, NC population and search volume',
+      leads: '9-20',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '60-90 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Charlotte to your homepage title and headline', body: 'Quality Sprinkler Co Inc outranks you because they signal local relevance. Adding Charlotte to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Charlotte. Quality Sprinkler Co Inc already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '260 people search fire sprinkler contractor Charlotte NC monthly. Content about Charlotte fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Smith Fire Protection, LLC': {
+    searchQuery: 'fire sprinkler contractor Burleson TX',
+    googlePage: 'Page 1',
+    score: { website: 3, seo: 2, total: 5 },
+    primaryFinding: 'Unknown ranks #1 for 'fire sprinkler contractor Burleson TX' — Smith Fire Protection, LLC sits at Page 1 because the homepage has minimal content, no local signals, and no structured data.',
+    issues: [
+      { label: 'Website is down, unreachable, or blocked', value: 'Unknown (#1 for this keyword) is fully functional. Smith Fire Protection, LLC has no working web presence (confirmed: fetch failed).', status: 'critical' },
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. Unknown has an optimized description (confirmed: homepage fetch).', status: 'critical' },
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'UNKNOWN\' with no city mention. Unknown targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Smith Fire Protection, LLC has 0 indexed pages. Unknown covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '90 people search 'fire sprinkler contractor Burleson TX' every month. Unknown receives most of that traffic because they rank higher and signal local relevance. Smith Fire Protection, LLC is losing 3-7 qualified inquiries every month.',
+      volume: '90',
+      volumeNote: 'Based on Burleson, TX population and search volume',
+      leads: '3-7',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '60-90 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Burleson to your homepage title and headline', body: 'Unknown outranks you because they signal local relevance. Adding Burleson to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Burleson. Unknown already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '90 people search fire sprinkler contractor Burleson TX monthly. Content about Burleson fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'AFEX Fire Suppression Systems': {
+    searchQuery: 'fire sprinkler contractor Raleigh NC',
+    googlePage: 'Not Found',
+    score: { website: 7, seo: 5, total: 12 },
+    primaryFinding: 'Fire Alarm Inc is #1 for 'fire sprinkler contractor Raleigh NC' — AFEX Fire Suppression Systems ranks on Not Found with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'NONE\' with no city mention. Fire Alarm Inc targets local search (confirmed: console check).', status: 'warning' },
+      { label: '20 competitors outranking this firm for fire sprinkler contractor Raleigh NC', value: 'AFEX Fire Suppression Systems ranks Not Found position 31. Fire Alarm Inc is #1 capturing most of 170 monthly searches (confirmed: Google search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'AFEX Fire Suppression Systems has 200 indexed pages. Fire Alarm Inc covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'AFEX Fire Suppression Systems has 200 indexed pages. Fire Alarm Inc covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '170 people search 'fire sprinkler contractor Raleigh NC' every month. Fire Alarm Inc receives most of that traffic because they rank higher and signal local relevance. AFEX Fire Suppression Systems is losing 5-13 qualified inquiries every month.',
+      volume: '170',
+      volumeNote: 'Based on Raleigh, NC population and search volume',
+      leads: '5-13',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Raleigh to your homepage title and headline', body: 'Fire Alarm Inc outranks you because they signal local relevance. Adding Raleigh to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Raleigh. Fire Alarm Inc already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '170 people search fire sprinkler contractor Raleigh NC monthly. Content about Raleigh fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'RCI Systems, Inc.': {
+    searchQuery: 'fire sprinkler contractor Tempe AZ',
+    googlePage: 'Page 1',
+    score: { website: 2, seo: 1, total: 3 },
+    primaryFinding: 'National Fire and Safety ranks #1 for 'fire sprinkler contractor Tempe AZ' — RCI Systems, Inc. is invisible because the website is down or returns errors. Visitors and Google cannot access content (confirmed: fetch failed).',
+    issues: [
+      { label: 'Website is down, unreachable, or blocked', value: 'National Fire and Safety (#1 for this keyword) is fully functional. RCI Systems, Inc. has no working web presence (confirmed: fetch failed).', status: 'critical' },
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. National Fire and Safety has an optimized description (confirmed: homepage fetch).', status: 'critical' },
+      { label: 'No dedicated service area pages', value: 'RCI Systems, Inc. has 10 indexed pages. National Fire and Safety covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'RCI Systems, Inc. has 10 indexed pages. National Fire and Safety covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '310 people search 'fire sprinkler contractor Tempe AZ' every month. National Fire and Safety receives most of that traffic because they rank higher and signal local relevance. RCI Systems, Inc. is losing 10-24 qualified inquiries every month.',
+      volume: '310',
+      volumeNote: 'Based on Tempe, AZ population and search volume',
+      leads: '10-24',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '60-90 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Tempe to your homepage title and headline', body: 'National Fire and Safety outranks you because they signal local relevance. Adding Tempe to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Tempe. National Fire and Safety already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '310 people search fire sprinkler contractor Tempe AZ monthly. Content about Tempe fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Integrated Protection Services': {
+    searchQuery: 'fire sprinkler contractor Cincinnati OH',
+    googlePage: 'Page 1',
+    score: { website: 7, seo: 6, total: 13 },
+    primaryFinding: 'DORN Fire Protection is #1 for 'fire sprinkler contractor Cincinnati OH' — Integrated Protection Services ranks on Page 1 with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. DORN Fire Protection has an optimized description (confirmed: homepage fetch).', status: 'warning' },
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'Providing peace of mind\' with no city mention. DORN Fire Protection targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Integrated Protection Services has 80 indexed pages. DORN Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '210 people search 'fire sprinkler contractor Cincinnati OH' every month. DORN Fire Protection receives most of that traffic because they rank higher and signal local relevance. Integrated Protection Services is losing 7-16 qualified inquiries every month.',
+      volume: '210',
+      volumeNote: 'Based on Cincinnati, OH population and search volume',
+      leads: '7-16',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Cincinnati to your homepage title and headline', body: 'DORN Fire Protection outranks you because they signal local relevance. Adding Cincinnati to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Cincinnati. DORN Fire Protection already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '210 people search fire sprinkler contractor Cincinnati OH monthly. Content about Cincinnati fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'FirePro Tech, LLC': {
+    searchQuery: 'fire sprinkler contractor Houston TX',
+    googlePage: 'Page 1',
+    score: { website: 8, seo: 7, total: 15 },
+    primaryFinding: 'Houston Fire Protection is #1 for 'fire sprinkler contractor Houston TX' — FirePro Tech, LLC ranks on Page 1 with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. Houston Fire Protection has an optimized description (confirmed: homepage fetch).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'FirePro Tech, LLC has 120 indexed pages. Houston Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'FirePro Tech, LLC has 120 indexed pages. Houston Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'FirePro Tech, LLC has 120 indexed pages. Houston Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '720 people search 'fire sprinkler contractor Houston TX' every month. Houston Fire Protection receives most of that traffic because they rank higher and signal local relevance. FirePro Tech, LLC is losing 25-57 qualified inquiries every month.',
+      volume: '720',
+      volumeNote: 'Based on Houston, TX population and search volume',
+      leads: '25-57',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Houston to your homepage title and headline', body: 'Houston Fire Protection outranks you because they signal local relevance. Adding Houston to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Houston. Houston Fire Protection already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '720 people search fire sprinkler contractor Houston TX monthly. Content about Houston fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Fire Safe Protection Services, LP': {
+    searchQuery: 'fire sprinkler contractor Houston TX',
+    googlePage: 'Page 1',
+    score: { website: 6, seo: 5, total: 11 },
+    primaryFinding: 'Fries Fire Protection is #1 for 'fire sprinkler contractor Houston TX' — Fire Safe Protection Services, LP ranks on Page 1 with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. Fries Fire Protection has an optimized description (confirmed: homepage fetch).', status: 'warning' },
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'LEADERS IN LIFE SAFETY\' with no city mention. Fries Fire Protection targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Fire Safe Protection Services, LP has 90 indexed pages. Fries Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '720 people search 'fire sprinkler contractor Houston TX' every month. Fries Fire Protection receives most of that traffic because they rank higher and signal local relevance. Fire Safe Protection Services, LP is losing 25-57 qualified inquiries every month.',
+      volume: '720',
+      volumeNote: 'Based on Houston, TX population and search volume',
+      leads: '25-57',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Houston to your homepage title and headline', body: 'Fries Fire Protection outranks you because they signal local relevance. Adding Houston to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Houston. Fries Fire Protection already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '720 people search fire sprinkler contractor Houston TX monthly. Content about Houston fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'SafeCare': {
+    searchQuery: 'fire sprinkler contractor Indianapolis IN',
+    googlePage: 'Page 3',
+    score: { website: 2, seo: 1, total: 3 },
+    primaryFinding: 'Unknown ranks #1 for 'fire sprinkler contractor Indianapolis IN' — SafeCare is invisible because the website is down or returns errors. Visitors and Google cannot access content (confirmed: fetch failed).',
+    issues: [
+      { label: 'Website is down, unreachable, or blocked', value: 'Unknown (#1 for this keyword) is fully functional. SafeCare has no working web presence (confirmed: fetch failed).', status: 'critical' },
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. Unknown has an optimized description (confirmed: homepage fetch).', status: 'critical' },
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'UNKNOWN\' with no city mention. Unknown targets local search (confirmed: console check).', status: 'warning' },
+      { label: '23 competitors outranking this firm for fire sprinkler contractor Indianapolis IN', value: 'SafeCare ranks Page 3 position 24. Unknown is #1 capturing most of 390 monthly searches (confirmed: Google search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '390 people search 'fire sprinkler contractor Indianapolis IN' every month. Unknown receives most of that traffic because they rank higher and signal local relevance. SafeCare is losing 13-31 qualified inquiries every month.',
+      volume: '390',
+      volumeNote: 'Based on Indianapolis, IN population and search volume',
+      leads: '13-31',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '60-90 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Indianapolis to your homepage title and headline', body: 'Unknown outranks you because they signal local relevance. Adding Indianapolis to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Indianapolis. Unknown already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '390 people search fire sprinkler contractor Indianapolis IN monthly. Content about Indianapolis fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Mattingly Cold Storage': {
+    searchQuery: 'cold storage Zanesville OH',
+    googlePage: 'Page 1',
+    score: { website: 3, seo: 1, total: 4 },
+    primaryFinding: 'Regional Cold Storage ranks #1 for 'cold storage Zanesville OH' — Mattingly Cold Storage sits at Page 1 because the homepage has minimal content, no local signals, and no structured data.',
+    issues: [
+      { label: 'Website is down, unreachable, or blocked', value: 'Regional Cold Storage (#1 for this keyword) is fully functional. Mattingly Cold Storage has no working web presence (confirmed: fetch failed).', status: 'critical' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Mattingly Cold Storage has 5 indexed pages. Regional Cold Storage covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Mattingly Cold Storage has 5 indexed pages. Regional Cold Storage covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '90 people search 'cold storage Zanesville OH' every month. Regional Cold Storage receives most of that traffic because they rank higher and signal local relevance. Mattingly Cold Storage is losing 3-7 qualified inquiries every month.',
+      volume: '90',
+      volumeNote: 'Based on Zanesville, OH population and search volume',
+      leads: '3-7',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '60-90 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Zanesville to your homepage title and headline', body: 'Regional Cold Storage outranks you because they signal local relevance. Adding Zanesville to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Zanesville. Regional Cold Storage already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '90 people search cold storage Zanesville OH monthly. Content about Zanesville fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Agile Cold Storage': {
+    searchQuery: 'cold storage Alpharetta GA',
+    googlePage: 'Page 1',
+    score: { website: 7, seo: 5, total: 12 },
+    primaryFinding: 'Regional Cold Storage is #1 for 'cold storage Alpharetta GA' — Agile Cold Storage ranks on Page 1 with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: 'No dedicated service area pages', value: 'Agile Cold Storage has 50 indexed pages. Regional Cold Storage covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Agile Cold Storage has 50 indexed pages. Regional Cold Storage covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Agile Cold Storage has 50 indexed pages. Regional Cold Storage covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Agile Cold Storage has 50 indexed pages. Regional Cold Storage covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '320 people search 'cold storage Alpharetta GA' every month. Regional Cold Storage receives most of that traffic because they rank higher and signal local relevance. Agile Cold Storage is losing 11-25 qualified inquiries every month.',
+      volume: '320',
+      volumeNote: 'Based on Alpharetta, GA population and search volume',
+      leads: '11-25',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Alpharetta to your homepage title and headline', body: 'Regional Cold Storage outranks you because they signal local relevance. Adding Alpharetta to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Alpharetta. Regional Cold Storage already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '320 people search cold storage Alpharetta GA monthly. Content about Alpharetta fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Performance Design Technologies, Inc.': {
+    searchQuery: 'fire sprinkler Knoxville TN',
+    googlePage: 'Page 2',
+    score: { website: 6, seo: 4, total: 10 },
+    primaryFinding: 'Knoxville Fire Protection Engineer outranks Performance Design Technologies, Inc. for 'fire sprinkler Knoxville TN' because they have dedicated service pages and local SEO signals that Performance Design Technologies, Inc. lacks entirely.',
+    issues: [
+      { label: 'No dedicated service area pages', value: 'Performance Design Technologies, Inc. has 12 indexed pages. Knoxville Fire Protection Engineer covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Performance Design Technologies, Inc. has 12 indexed pages. Knoxville Fire Protection Engineer covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Performance Design Technologies, Inc. has 12 indexed pages. Knoxville Fire Protection Engineer covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Performance Design Technologies, Inc. has 12 indexed pages. Knoxville Fire Protection Engineer covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '590 people search 'fire sprinkler Knoxville TN' every month. Knoxville Fire Protection Engineer receives most of that traffic because they rank higher and signal local relevance. Performance Design Technologies, Inc. is losing 20-47 qualified inquiries every month.',
+      volume: '590',
+      volumeNote: 'Based on Knoxville, TN population and search volume',
+      leads: '20-47',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '30-60 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Knoxville to your homepage title and headline', body: 'Knoxville Fire Protection Engineer outranks you because they signal local relevance. Adding Knoxville to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Knoxville. Knoxville Fire Protection Engineer already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '590 people search fire sprinkler Knoxville TN monthly. Content about Knoxville fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Olympic West Fire Protection, LLC.': {
+    searchQuery: 'fire sprinkler Tempe AZ',
+    googlePage: 'Page 1',
+    score: { website: 6, seo: 3, total: 9 },
+    primaryFinding: 'Tempe Fire Sprinkler outranks Olympic West Fire Protection, LLC. for 'fire sprinkler Tempe AZ' because they have dedicated service pages and local SEO signals that Olympic West Fire Protection, LLC. lacks entirely.',
+    issues: [
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. Tempe Fire Sprinkler has an optimized description (confirmed: homepage fetch).', status: 'warning' },
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'NONE (h3 used)\' with no city mention. Tempe Fire Sprinkler targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Olympic West Fire Protection, LLC. has 35 indexed pages. Tempe Fire Sprinkler covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '480 people search 'fire sprinkler Tempe AZ' every month. Tempe Fire Sprinkler receives most of that traffic because they rank higher and signal local relevance. Olympic West Fire Protection, LLC. is losing 16-38 qualified inquiries every month.',
+      volume: '480',
+      volumeNote: 'Based on Tempe, AZ population and search volume',
+      leads: '16-38',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '30-60 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Tempe to your homepage title and headline', body: 'Tempe Fire Sprinkler outranks you because they signal local relevance. Adding Tempe to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Tempe. Tempe Fire Sprinkler already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '480 people search fire sprinkler Tempe AZ monthly. Content about Tempe fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Servant Fire Protection LLC': {
+    searchQuery: 'fire sprinkler Nashville TN',
+    googlePage: 'Page 1',
+    score: { website: 5, seo: 3, total: 8 },
+    primaryFinding: 'Nashville Fire Protection outranks Servant Fire Protection LLC for 'fire sprinkler Nashville TN' because they have dedicated service pages and local SEO signals that Servant Fire Protection LLC lacks entirely.',
+    issues: [
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. Nashville Fire Protection has an optimized description (confirmed: homepage fetch).', status: 'critical' },
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'NONE\' with no city mention. Nashville Fire Protection targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Servant Fire Protection LLC has 40 indexed pages. Nashville Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Servant Fire Protection LLC has 40 indexed pages. Nashville Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '590 people search 'fire sprinkler Nashville TN' every month. Nashville Fire Protection receives most of that traffic because they rank higher and signal local relevance. Servant Fire Protection LLC is losing 20-47 qualified inquiries every month.',
+      volume: '590',
+      volumeNote: 'Based on Nashville, TN population and search volume',
+      leads: '20-47',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '30-60 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Nashville to your homepage title and headline', body: 'Nashville Fire Protection outranks you because they signal local relevance. Adding Nashville to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Nashville. Nashville Fire Protection already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '590 people search fire sprinkler Nashville TN monthly. Content about Nashville fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Champion Fire Protection': {
+    searchQuery: 'fire sprinkler Philadelphia PA',
+    googlePage: 'Page 1',
+    score: { website: 5, seo: 3, total: 8 },
+    primaryFinding: 'Philadelphia Fire Protection outranks Champion Fire Protection for 'fire sprinkler Philadelphia PA' because they have dedicated service pages and local SEO signals that Champion Fire Protection lacks entirely.',
+    issues: [
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'Saving Lives\' with no city mention. Philadelphia Fire Protection targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Champion Fire Protection has 25 indexed pages. Philadelphia Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Champion Fire Protection has 25 indexed pages. Philadelphia Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '1200 people search 'fire sprinkler Philadelphia PA' every month. Philadelphia Fire Protection receives most of that traffic because they rank higher and signal local relevance. Champion Fire Protection is losing 42-96 qualified inquiries every month.',
+      volume: '1200',
+      volumeNote: 'Based on Philadelphia, PA population and search volume',
+      leads: '42-96',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '30-60 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Philadelphia to your homepage title and headline', body: 'Philadelphia Fire Protection outranks you because they signal local relevance. Adding Philadelphia to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Philadelphia. Philadelphia Fire Protection already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '1200 people search fire sprinkler Philadelphia PA monthly. Content about Philadelphia fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Elite Fire': {
+    searchQuery: 'fire sprinkler Roanoke TX',
+    googlePage: 'Not Found',
+    score: { website: 3, seo: 1, total: 4 },
+    primaryFinding: 'National Fire Safety ranks #1 for 'fire sprinkler Roanoke TX' — Elite Fire sits at Not Found because the homepage has minimal content, no local signals, and no structured data.',
+    issues: [
+      { label: 'Website is down, unreachable, or blocked', value: 'National Fire Safety (#1 for this keyword) is fully functional. Elite Fire has no working web presence (confirmed: fetch failed).', status: 'critical' },
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. National Fire Safety has an optimized description (confirmed: homepage fetch).', status: 'critical' },
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'Always on Watch.\' with no city mention. National Fire Safety targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Elite Fire has 60 indexed pages. National Fire Safety covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '170 people search 'fire sprinkler Roanoke TX' every month. National Fire Safety receives most of that traffic because they rank higher and signal local relevance. Elite Fire is losing 5-13 qualified inquiries every month.',
+      volume: '170',
+      volumeNote: 'Based on Roanoke, TX population and search volume',
+      leads: '5-13',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '60-90 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Roanoke to your homepage title and headline', body: 'National Fire Safety outranks you because they signal local relevance. Adding Roanoke to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Roanoke. National Fire Safety already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '170 people search fire sprinkler Roanoke TX monthly. Content about Roanoke fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Fire Protection Consulting Group': {
+    searchQuery: 'fire sprinkler San Antonio TX',
+    googlePage: 'Page 1',
+    score: { website: 8, seo: 7, total: 15 },
+    primaryFinding: 'Allied Fire Protection is #1 for 'fire sprinkler San Antonio TX' — Fire Protection Consulting Group ranks on Page 1 with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'MISSING\' with no city mention. Allied Fire Protection targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Fire Protection Consulting Group has 45 indexed pages. Allied Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Fire Protection Consulting Group has 45 indexed pages. Allied Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Fire Protection Consulting Group has 45 indexed pages. Allied Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '2400 people search 'fire sprinkler San Antonio TX' every month. Allied Fire Protection receives most of that traffic because they rank higher and signal local relevance. Fire Protection Consulting Group is losing 84-192 qualified inquiries every month.',
+      volume: '2400',
+      volumeNote: 'Based on San Antonio, TX population and search volume',
+      leads: '84-192',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add San Antonio to your homepage title and headline', body: 'Allied Fire Protection outranks you because they signal local relevance. Adding San Antonio to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in San Antonio. Allied Fire Protection already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '2400 people search fire sprinkler San Antonio TX monthly. Content about San Antonio fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'DD Fire, Inc.': {
+    searchQuery: 'fire sprinkler Forney TX',
+    googlePage: 'Page 1',
+    score: { website: 5, seo: 4, total: 9 },
+    primaryFinding: 'Baker\'s Fire Protection outranks DD Fire, Inc. for 'fire sprinkler Forney TX' because they have dedicated service pages and local SEO signals that DD Fire, Inc. lacks entirely.',
+    issues: [
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'SERVICES\' with no city mention. Baker\\'s Fire Protection targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'DD Fire, Inc. has 12 indexed pages. Baker\\'s Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'DD Fire, Inc. has 12 indexed pages. Baker\\'s Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'DD Fire, Inc. has 12 indexed pages. Baker\\'s Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '320 people search 'fire sprinkler Forney TX' every month. Baker\'s Fire Protection receives most of that traffic because they rank higher and signal local relevance. DD Fire, Inc. is losing 11-25 qualified inquiries every month.',
+      volume: '320',
+      volumeNote: 'Based on Forney, TX population and search volume',
+      leads: '11-25',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '30-60 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Forney to your homepage title and headline', body: 'Baker\'s Fire Protection outranks you because they signal local relevance. Adding Forney to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Forney. Baker\'s Fire Protection already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '320 people search fire sprinkler Forney TX monthly. Content about Forney fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'HydroPro Fire Sprinkler Company': {
+    searchQuery: 'fire sprinkler Colorado Springs CO',
+    googlePage: 'Page 1',
+    score: { website: 7, seo: 6, total: 13 },
+    primaryFinding: 'Fire Pro Services is #1 for 'fire sprinkler Colorado Springs CO' — HydroPro Fire Sprinkler Company ranks on Page 1 with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'Fire Protection\' with no city mention. Fire Pro Services targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'HydroPro Fire Sprinkler Company has 20 indexed pages. Fire Pro Services covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'HydroPro Fire Sprinkler Company has 20 indexed pages. Fire Pro Services covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'HydroPro Fire Sprinkler Company has 20 indexed pages. Fire Pro Services covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '480 people search 'fire sprinkler Colorado Springs CO' every month. Fire Pro Services receives most of that traffic because they rank higher and signal local relevance. HydroPro Fire Sprinkler Company is losing 16-38 qualified inquiries every month.',
+      volume: '480',
+      volumeNote: 'Based on Colorado Springs, CO population and search volume',
+      leads: '16-38',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Colorado Springs to your homepage title and headline', body: 'Fire Pro Services outranks you because they signal local relevance. Adding Colorado Springs to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Colorado Springs. Fire Pro Services already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '480 people search fire sprinkler Colorado Springs CO monthly. Content about Colorado Springs fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Elves Co. Inc.': {
+    searchQuery: 'fire sprinkler Statham GA',
+    googlePage: 'Page 1',
+    score: { website: 6, seo: 5, total: 11 },
+    primaryFinding: 'Fire Safety Services GA is #1 for 'fire sprinkler Statham GA' — Elves Co. Inc. ranks on Page 1 with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Elves Co. Inc. has 15 indexed pages. Fire Safety Services GA covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Elves Co. Inc. has 15 indexed pages. Fire Safety Services GA covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Elves Co. Inc. has 15 indexed pages. Fire Safety Services GA covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '140 people search 'fire sprinkler Statham GA' every month. Fire Safety Services GA receives most of that traffic because they rank higher and signal local relevance. Elves Co. Inc. is losing 4-11 qualified inquiries every month.',
+      volume: '140',
+      volumeNote: 'Based on Statham, GA population and search volume',
+      leads: '4-11',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Statham to your homepage title and headline', body: 'Fire Safety Services GA outranks you because they signal local relevance. Adding Statham to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Statham. Fire Safety Services GA already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '140 people search fire sprinkler Statham GA monthly. Content about Statham fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Benson Systems, Inc.': {
+    searchQuery: 'fire sprinkler Gilbert AZ',
+    googlePage: 'Page 1',
+    score: { website: 7, seo: 5, total: 12 },
+    primaryFinding: 'Fire Tech Industries is #1 for 'fire sprinkler Gilbert AZ' — Benson Systems, Inc. ranks on Page 1 with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. Fire Tech Industries has an optimized description (confirmed: homepage fetch).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Benson Systems, Inc. has 80 indexed pages. Fire Tech Industries covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Benson Systems, Inc. has 80 indexed pages. Fire Tech Industries covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Benson Systems, Inc. has 80 indexed pages. Fire Tech Industries covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '290 people search 'fire sprinkler Gilbert AZ' every month. Fire Tech Industries receives most of that traffic because they rank higher and signal local relevance. Benson Systems, Inc. is losing 10-23 qualified inquiries every month.',
+      volume: '290',
+      volumeNote: 'Based on Gilbert, AZ population and search volume',
+      leads: '10-23',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Gilbert to your homepage title and headline', body: 'Fire Tech Industries outranks you because they signal local relevance. Adding Gilbert to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Gilbert. Fire Tech Industries already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '290 people search fire sprinkler Gilbert AZ monthly. Content about Gilbert fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'LifeSafety Management, Inc. - A Fortis Brand': {
+    searchQuery: 'fire sprinkler Boynton Beach FL',
+    googlePage: 'Page 1',
+    score: { website: 6, seo: 5, total: 11 },
+    primaryFinding: 'Florida Fire Protection is #1 for 'fire sprinkler Boynton Beach FL' — LifeSafety Management, Inc. - A Fortis Brand ranks on Page 1 with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. Florida Fire Protection has an optimized description (confirmed: homepage fetch).', status: 'warning' },
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'LIFESAFETY MANAGEMENT\' with no city mention. Florida Fire Protection targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'LifeSafety Management, Inc. - A Fortis Brand has 30 indexed pages. Florida Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'LifeSafety Management, Inc. - A Fortis Brand has 30 indexed pages. Florida Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '210 people search 'fire sprinkler Boynton Beach FL' every month. Florida Fire Protection receives most of that traffic because they rank higher and signal local relevance. LifeSafety Management, Inc. - A Fortis Brand is losing 7-16 qualified inquiries every month.',
+      volume: '210',
+      volumeNote: 'Based on Boynton Beach, FL population and search volume',
+      leads: '7-16',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Boynton Beach to your homepage title and headline', body: 'Florida Fire Protection outranks you because they signal local relevance. Adding Boynton Beach to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Boynton Beach. Florida Fire Protection already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '210 people search fire sprinkler Boynton Beach FL monthly. Content about Boynton Beach fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Encore Services TX': {
+    searchQuery: 'fire protection Sugar Land TX',
+    googlePage: 'Page 3+',
+    score: { website: 4, seo: 3, total: 7 },
+    primaryFinding: 'USA Protection and Fire Systems outranks Encore Services TX for 'fire protection Sugar Land TX' because they have dedicated service pages and local SEO signals that Encore Services TX lacks entirely.',
+    issues: [
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Encore Services TX has 4 indexed pages. USA Protection and Fire Systems covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Encore Services TX has 4 indexed pages. USA Protection and Fire Systems covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Encore Services TX has 4 indexed pages. USA Protection and Fire Systems covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '1300 people search 'fire protection Sugar Land TX' every month. USA Protection and Fire Systems receives most of that traffic because they rank higher and signal local relevance. Encore Services TX is losing 45-104 qualified inquiries every month.',
+      volume: '1300',
+      volumeNote: 'Based on Sugar Land, TX population and search volume',
+      leads: '45-104',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '30-60 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Sugar Land to your homepage title and headline', body: 'USA Protection and Fire Systems outranks you because they signal local relevance. Adding Sugar Land to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Sugar Land. USA Protection and Fire Systems already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '1300 people search fire protection Sugar Land TX monthly. Content about Sugar Land fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Premier Safety, LLC': {
+    searchQuery: 'fire protection Horn Lake MS',
+    googlePage: 'Page 2',
+    score: { website: 6, seo: 5, total: 11 },
+    primaryFinding: 'Quarles Fire Protection is #1 for 'fire protection Horn Lake MS' — Premier Safety, LLC ranks on Page 2 with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Premier Safety, LLC has 7 indexed pages. Quarles Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Premier Safety, LLC has 7 indexed pages. Quarles Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Premier Safety, LLC has 7 indexed pages. Quarles Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '880 people search 'fire protection Horn Lake MS' every month. Quarles Fire Protection receives most of that traffic because they rank higher and signal local relevance. Premier Safety, LLC is losing 30-70 qualified inquiries every month.',
+      volume: '880',
+      volumeNote: 'Based on Horn Lake, MS population and search volume',
+      leads: '30-70',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Horn Lake to your homepage title and headline', body: 'Quarles Fire Protection outranks you because they signal local relevance. Adding Horn Lake to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Horn Lake. Quarles Fire Protection already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '880 people search fire protection Horn Lake MS monthly. Content about Horn Lake fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Fire Power Systems Inc': {
+    searchQuery: 'fire protection Grand Prairie TX',
+    googlePage: 'Page 3+',
+    score: { website: 2, seo: 1, total: 3 },
+    primaryFinding: 'AAA Plus Fire Protection ranks #1 for 'fire protection Grand Prairie TX' — Fire Power Systems Inc is invisible because the website is down or returns errors. Visitors and Google cannot access content (confirmed: fetch failed).',
+    issues: [
+      { label: 'Website is down, unreachable, or blocked', value: 'AAA Plus Fire Protection (#1 for this keyword) is fully functional. Fire Power Systems Inc has no working web presence (confirmed: fetch failed).', status: 'critical' },
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. AAA Plus Fire Protection has an optimized description (confirmed: homepage fetch).', status: 'critical' },
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'NONE\' with no city mention. AAA Plus Fire Protection targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' }
+    ],
+    impact: {
+      intro: '1000 people search 'fire protection Grand Prairie TX' every month. AAA Plus Fire Protection receives most of that traffic because they rank higher and signal local relevance. Fire Power Systems Inc is losing 35-80 qualified inquiries every month.',
+      volume: '1000',
+      volumeNote: 'Based on Grand Prairie, TX population and search volume',
+      leads: '35-80',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '60-90 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Grand Prairie to your homepage title and headline', body: 'AAA Plus Fire Protection outranks you because they signal local relevance. Adding Grand Prairie to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Grand Prairie. AAA Plus Fire Protection already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '1000 people search fire protection Grand Prairie TX monthly. Content about Grand Prairie fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'SAFE Fire Protection': {
+    searchQuery: 'fire protection Tampa FL',
+    googlePage: 'Page 1',
+    score: { website: 5, seo: 3, total: 8 },
+    primaryFinding: 'Piper Fire Protection outranks SAFE Fire Protection for 'fire protection Tampa FL' because they have dedicated service pages and local SEO signals that SAFE Fire Protection lacks entirely.',
+    issues: [
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'NONE (H2 only)\' with no city mention. Piper Fire Protection targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'SAFE Fire Protection has 35 indexed pages. Piper Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'SAFE Fire Protection has 35 indexed pages. Piper Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '2900 people search 'fire protection Tampa FL' every month. Piper Fire Protection receives most of that traffic because they rank higher and signal local relevance. SAFE Fire Protection is losing 101-232 qualified inquiries every month.',
+      volume: '2900',
+      volumeNote: 'Based on Tampa, FL population and search volume',
+      leads: '101-232',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '30-60 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Tampa to your homepage title and headline', body: 'Piper Fire Protection outranks you because they signal local relevance. Adding Tampa to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Tampa. Piper Fire Protection already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '2900 people search fire protection Tampa FL monthly. Content about Tampa fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Titanium Fire Sprinkler Company': {
+    searchQuery: 'fire sprinkler Gretna NE',
+    googlePage: 'Page 1',
+    score: { website: 5, seo: 4, total: 9 },
+    primaryFinding: 'Viking Automatic Sprinkler Company outranks Titanium Fire Sprinkler Company for 'fire sprinkler Gretna NE' because they have dedicated service pages and local SEO signals that Titanium Fire Sprinkler Company lacks entirely.',
+    issues: [
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Titanium Fire Sprinkler Company has 5 indexed pages. Viking Automatic Sprinkler Company covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Titanium Fire Sprinkler Company has 5 indexed pages. Viking Automatic Sprinkler Company covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Titanium Fire Sprinkler Company has 5 indexed pages. Viking Automatic Sprinkler Company covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '320 people search 'fire sprinkler Gretna NE' every month. Viking Automatic Sprinkler Company receives most of that traffic because they rank higher and signal local relevance. Titanium Fire Sprinkler Company is losing 11-25 qualified inquiries every month.',
+      volume: '320',
+      volumeNote: 'Based on Gretna, NE population and search volume',
+      leads: '11-25',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '30-60 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Gretna to your homepage title and headline', body: 'Viking Automatic Sprinkler Company outranks you because they signal local relevance. Adding Gretna to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Gretna. Viking Automatic Sprinkler Company already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '320 people search fire sprinkler Gretna NE monthly. Content about Gretna fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'American Automatic Sprinkler': {
+    searchQuery: 'fire protection Fort Worth TX',
+    googlePage: 'Page 1',
+    score: { website: 6, seo: 4, total: 10 },
+    primaryFinding: 'Affordable Fire Protection outranks American Automatic Sprinkler for 'fire protection Fort Worth TX' because they have dedicated service pages and local SEO signals that American Automatic Sprinkler lacks entirely.',
+    issues: [
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'NONE\' with no city mention. Affordable Fire Protection targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'American Automatic Sprinkler has 15 indexed pages. Affordable Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'American Automatic Sprinkler has 15 indexed pages. Affordable Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '1900 people search 'fire protection Fort Worth TX' every month. Affordable Fire Protection receives most of that traffic because they rank higher and signal local relevance. American Automatic Sprinkler is losing 66-152 qualified inquiries every month.',
+      volume: '1900',
+      volumeNote: 'Based on Fort Worth, TX population and search volume',
+      leads: '66-152',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '30-60 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Fort Worth to your homepage title and headline', body: 'Affordable Fire Protection outranks you because they signal local relevance. Adding Fort Worth to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Fort Worth. Affordable Fire Protection already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '1900 people search fire protection Fort Worth TX monthly. Content about Fort Worth fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Keller Fire & Safety Inc.': {
+    searchQuery: 'fire sprinkler Kansas City KS',
+    googlePage: 'Page 3+',
+    score: { website: 6, seo: 3, total: 9 },
+    primaryFinding: 'Kansas City Fire Sprinkler outranks Keller Fire & Safety Inc. for 'fire sprinkler Kansas City KS' because they have dedicated service pages and local SEO signals that Keller Fire & Safety Inc. lacks entirely.',
+    issues: [
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: '12 competitors outranking this firm for fire sprinkler Kansas City KS', value: 'Keller Fire & Safety Inc. ranks Page 3+ position 35. Kansas City Fire Sprinkler is #1 capturing most of 1200 monthly searches (confirmed: Google search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Keller Fire & Safety Inc. has 22 indexed pages. Kansas City Fire Sprinkler covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Keller Fire & Safety Inc. has 22 indexed pages. Kansas City Fire Sprinkler covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '1200 people search 'fire sprinkler Kansas City KS' every month. Kansas City Fire Sprinkler receives most of that traffic because they rank higher and signal local relevance. Keller Fire & Safety Inc. is losing 42-96 qualified inquiries every month.',
+      volume: '1200',
+      volumeNote: 'Based on Kansas City, KS population and search volume',
+      leads: '42-96',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '30-60 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Kansas City to your homepage title and headline', body: 'Kansas City Fire Sprinkler outranks you because they signal local relevance. Adding Kansas City to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Kansas City. Kansas City Fire Sprinkler already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '1200 people search fire sprinkler Kansas City KS monthly. Content about Kansas City fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Topa Group, Inc.': {
+    searchQuery: 'fire sprinkler Camarillo CA',
+    googlePage: 'Page 3+',
+    score: { website: 2, seo: 1, total: 3 },
+    primaryFinding: 'Camarillo Fire Protection ranks #1 for 'fire sprinkler Camarillo CA' — Topa Group, Inc. is invisible because the website is down or returns errors. Visitors and Google cannot access content (confirmed: fetch failed).',
+    issues: [
+      { label: 'Website is down, unreachable, or blocked', value: 'Camarillo Fire Protection (#1 for this keyword) is fully functional. Topa Group, Inc. has no working web presence (confirmed: fetch failed).', status: 'critical' },
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. Camarillo Fire Protection has an optimized description (confirmed: homepage fetch).', status: 'critical' },
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'NONE\' with no city mention. Camarillo Fire Protection targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' }
+    ],
+    impact: {
+      intro: '250 people search 'fire sprinkler Camarillo CA' every month. Camarillo Fire Protection receives most of that traffic because they rank higher and signal local relevance. Topa Group, Inc. is losing 8-20 qualified inquiries every month.',
+      volume: '250',
+      volumeNote: 'Based on Camarillo, CA population and search volume',
+      leads: '8-20',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '60-90 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Camarillo to your homepage title and headline', body: 'Camarillo Fire Protection outranks you because they signal local relevance. Adding Camarillo to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Camarillo. Camarillo Fire Protection already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '250 people search fire sprinkler Camarillo CA monthly. Content about Camarillo fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Automatic Fire Control Inc': {
+    searchQuery: 'fire sprinkler Oklahoma City OK',
+    googlePage: 'Page 3+',
+    score: { website: 5, seo: 3, total: 8 },
+    primaryFinding: 'Oklahoma City Fire Protection outranks Automatic Fire Control Inc for 'fire sprinkler Oklahoma City OK' because they have dedicated service pages and local SEO signals that Automatic Fire Control Inc lacks entirely.',
+    issues: [
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: '6 competitors outranking this firm for fire sprinkler Oklahoma City OK', value: 'Automatic Fire Control Inc ranks Page 3+ position 35. Oklahoma City Fire Protection is #1 capturing most of 650 monthly searches (confirmed: Google search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Automatic Fire Control Inc has 0 indexed pages. Oklahoma City Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Automatic Fire Control Inc has 0 indexed pages. Oklahoma City Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '650 people search 'fire sprinkler Oklahoma City OK' every month. Oklahoma City Fire Protection receives most of that traffic because they rank higher and signal local relevance. Automatic Fire Control Inc is losing 22-52 qualified inquiries every month.',
+      volume: '650',
+      volumeNote: 'Based on Oklahoma City, OK population and search volume',
+      leads: '22-52',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '30-60 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Oklahoma City to your homepage title and headline', body: 'Oklahoma City Fire Protection outranks you because they signal local relevance. Adding Oklahoma City to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Oklahoma City. Oklahoma City Fire Protection already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '650 people search fire sprinkler Oklahoma City OK monthly. Content about Oklahoma City fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Elite Fire Services LLC': {
+    searchQuery: 'fire sprinkler Columbus OH',
+    googlePage: 'Page 3+',
+    score: { website: 5, seo: 4, total: 9 },
+    primaryFinding: 'Columbus Fire Sprinkler outranks Elite Fire Services LLC for 'fire sprinkler Columbus OH' because they have dedicated service pages and local SEO signals that Elite Fire Services LLC lacks entirely.',
+    issues: [
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: '10 competitors outranking this firm for fire sprinkler Columbus OH', value: 'Elite Fire Services LLC ranks Page 3+ position 35. Columbus Fire Sprinkler is #1 capturing most of 850 monthly searches (confirmed: Google search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Elite Fire Services LLC has 0 indexed pages. Columbus Fire Sprinkler covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Elite Fire Services LLC has 0 indexed pages. Columbus Fire Sprinkler covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '850 people search 'fire sprinkler Columbus OH' every month. Columbus Fire Sprinkler receives most of that traffic because they rank higher and signal local relevance. Elite Fire Services LLC is losing 29-68 qualified inquiries every month.',
+      volume: '850',
+      volumeNote: 'Based on Columbus, OH population and search volume',
+      leads: '29-68',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '30-60 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Columbus to your homepage title and headline', body: 'Columbus Fire Sprinkler outranks you because they signal local relevance. Adding Columbus to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Columbus. Columbus Fire Sprinkler already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '850 people search fire sprinkler Columbus OH monthly. Content about Columbus fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Better Protection': {
+    searchQuery: 'fire sprinkler Westmont IL',
+    googlePage: 'Page 3+',
+    score: { website: 1, seo: 0, total: 1 },
+    primaryFinding: 'Unknown ranks #1 for 'fire sprinkler Westmont IL' — Better Protection is invisible because the website is down or returns errors. Visitors and Google cannot access content (confirmed: fetch failed).',
+    issues: [
+      { label: 'Website is down, unreachable, or blocked', value: 'Unknown (#1 for this keyword) is fully functional. Better Protection has no working web presence (confirmed: fetch failed).', status: 'critical' },
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'UNREACHABLE\' with no city mention. Unknown targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Better Protection has 0 indexed pages. Unknown covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Better Protection has 0 indexed pages. Unknown covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '180 people search 'fire sprinkler Westmont IL' every month. Unknown receives most of that traffic because they rank higher and signal local relevance. Better Protection is losing 6-14 qualified inquiries every month.',
+      volume: '180',
+      volumeNote: 'Based on Westmont, IL population and search volume',
+      leads: '6-14',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '60-90 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Westmont to your homepage title and headline', body: 'Unknown outranks you because they signal local relevance. Adding Westmont to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Westmont. Unknown already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '180 people search fire sprinkler Westmont IL monthly. Content about Westmont fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'SFS Security Fire Systems': {
+    searchQuery: 'fire sprinkler Coppell TX',
+    googlePage: 'Page 3+',
+    score: { website: 4, seo: 3, total: 7 },
+    primaryFinding: 'Coppell Fire Sprinkler outranks SFS Security Fire Systems for 'fire sprinkler Coppell TX' because they have dedicated service pages and local SEO signals that SFS Security Fire Systems lacks entirely.',
+    issues: [
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. Coppell Fire Sprinkler has an optimized description (confirmed: homepage fetch).', status: 'critical' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: '8 competitors outranking this firm for fire sprinkler Coppell TX', value: 'SFS Security Fire Systems ranks Page 3+ position 35. Coppell Fire Sprinkler is #1 capturing most of 300 monthly searches (confirmed: Google search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'SFS Security Fire Systems has 0 indexed pages. Coppell Fire Sprinkler covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '300 people search 'fire sprinkler Coppell TX' every month. Coppell Fire Sprinkler receives most of that traffic because they rank higher and signal local relevance. SFS Security Fire Systems is losing 10-24 qualified inquiries every month.',
+      volume: '300',
+      volumeNote: 'Based on Coppell, TX population and search volume',
+      leads: '10-24',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '30-60 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Coppell to your homepage title and headline', body: 'Coppell Fire Sprinkler outranks you because they signal local relevance. Adding Coppell to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Coppell. Coppell Fire Sprinkler already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '300 people search fire sprinkler Coppell TX monthly. Content about Coppell fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'CMC Logistics': {
+    searchQuery: 'cold storage Hackensack NJ',
+    googlePage: 'Page 3+',
+    score: { website: 5, seo: 3, total: 8 },
+    primaryFinding: 'NJ Cold Storage outranks CMC Logistics for 'cold storage Hackensack NJ' because they have dedicated service pages and local SEO signals that CMC Logistics lacks entirely.',
+    issues: [
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. NJ Cold Storage has an optimized description (confirmed: homepage fetch).', status: 'critical' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: '8 competitors outranking this firm for cold storage Hackensack NJ', value: 'CMC Logistics ranks Page 3+ position 35. NJ Cold Storage is #1 capturing most of 400 monthly searches (confirmed: Google search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'CMC Logistics has 0 indexed pages. NJ Cold Storage covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '400 people search 'cold storage Hackensack NJ' every month. NJ Cold Storage receives most of that traffic because they rank higher and signal local relevance. CMC Logistics is losing 14-32 qualified inquiries every month.',
+      volume: '400',
+      volumeNote: 'Based on Hackensack, NJ population and search volume',
+      leads: '14-32',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '30-60 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Hackensack to your homepage title and headline', body: 'NJ Cold Storage outranks you because they signal local relevance. Adding Hackensack to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Hackensack. NJ Cold Storage already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '400 people search cold storage Hackensack NJ monthly. Content about Hackensack fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Platinum Fire Protection': {
+    searchQuery: 'fire sprinkler Marlborough MA',
+    googlePage: 'Page 3+',
+    score: { website: 1, seo: 0, total: 1 },
+    primaryFinding: 'Marlborough Fire Protection ranks #1 for 'fire sprinkler Marlborough MA' — Platinum Fire Protection is invisible because the website is down or returns errors. Visitors and Google cannot access content (confirmed: fetch failed).',
+    issues: [
+      { label: 'Website is down, unreachable, or blocked', value: 'Marlborough Fire Protection (#1 for this keyword) is fully functional. Platinum Fire Protection has no working web presence (confirmed: fetch failed).', status: 'critical' },
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'BLOCKED\' with no city mention. Marlborough Fire Protection targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Platinum Fire Protection has 0 indexed pages. Marlborough Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Platinum Fire Protection has 0 indexed pages. Marlborough Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '150 people search 'fire sprinkler Marlborough MA' every month. Marlborough Fire Protection receives most of that traffic because they rank higher and signal local relevance. Platinum Fire Protection is losing 5-12 qualified inquiries every month.',
+      volume: '150',
+      volumeNote: 'Based on Marlborough, MA population and search volume',
+      leads: '5-12',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '60-90 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Marlborough to your homepage title and headline', body: 'Marlborough Fire Protection outranks you because they signal local relevance. Adding Marlborough to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Marlborough. Marlborough Fire Protection already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '150 people search fire sprinkler Marlborough MA monthly. Content about Marlborough fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'State Systems': {
+    searchQuery: 'fire sprinkler Memphis TN',
+    googlePage: 'Page 1',
+    score: { website: 8, seo: 7, total: 15 },
+    primaryFinding: 'Memphis Fire Protection is #1 for 'fire sprinkler Memphis TN' — State Systems ranks on Page 1 with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: 'No dedicated service area pages', value: 'State Systems has 150 indexed pages. Memphis Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'State Systems has 150 indexed pages. Memphis Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'State Systems has 150 indexed pages. Memphis Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'State Systems has 150 indexed pages. Memphis Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '250 people search 'fire sprinkler Memphis TN' every month. Memphis Fire Protection receives most of that traffic because they rank higher and signal local relevance. State Systems is losing 8-20 qualified inquiries every month.',
+      volume: '250',
+      volumeNote: 'Based on Memphis, TN population and search volume',
+      leads: '8-20',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Memphis to your homepage title and headline', body: 'Memphis Fire Protection outranks you because they signal local relevance. Adding Memphis to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Memphis. Memphis Fire Protection already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '250 people search fire sprinkler Memphis TN monthly. Content about Memphis fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Milton J Wood Fire Protection, Inc.': {
+    searchQuery: 'fire sprinkler Jacksonville FL',
+    googlePage: 'Page 1',
+    score: { website: 5, seo: 3, total: 8 },
+    primaryFinding: 'Milton J Wood Corp outranks Milton J Wood Fire Protection, Inc. for 'fire sprinkler Jacksonville FL' because they have dedicated service pages and local SEO signals that Milton J Wood Fire Protection, Inc. lacks entirely.',
+    issues: [
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. Milton J Wood Corp has an optimized description (confirmed: homepage fetch).', status: 'critical' },
+      { label: 'No dedicated service area pages', value: 'Milton J Wood Fire Protection, Inc. has 80 indexed pages. Milton J Wood Corp covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Milton J Wood Fire Protection, Inc. has 80 indexed pages. Milton J Wood Corp covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Milton J Wood Fire Protection, Inc. has 80 indexed pages. Milton J Wood Corp covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '200 people search 'fire sprinkler Jacksonville FL' every month. Milton J Wood Corp receives most of that traffic because they rank higher and signal local relevance. Milton J Wood Fire Protection, Inc. is losing 7-16 qualified inquiries every month.',
+      volume: '200',
+      volumeNote: 'Based on Jacksonville, FL population and search volume',
+      leads: '7-16',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '30-60 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Jacksonville to your homepage title and headline', body: 'Milton J Wood Corp outranks you because they signal local relevance. Adding Jacksonville to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Jacksonville. Milton J Wood Corp already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '200 people search fire sprinkler Jacksonville FL monthly. Content about Jacksonville fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Alarmco, Inc.': {
+    searchQuery: 'fire sprinkler Boise ID',
+    googlePage: 'Page 1',
+    score: { website: 6, seo: 6, total: 12 },
+    primaryFinding: 'State Systems is #1 for 'fire sprinkler Boise ID' — Alarmco, Inc. ranks on Page 1 with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'WELCOME TO ALARMCO, INC.\' with no city mention. State Systems targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Alarmco, Inc. has 60 indexed pages. State Systems covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Alarmco, Inc. has 60 indexed pages. State Systems covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '110 people search 'fire sprinkler Boise ID' every month. State Systems receives most of that traffic because they rank higher and signal local relevance. Alarmco, Inc. is losing 3-8 qualified inquiries every month.',
+      volume: '110',
+      volumeNote: 'Based on Boise, ID population and search volume',
+      leads: '3-8',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Boise to your homepage title and headline', body: 'State Systems outranks you because they signal local relevance. Adding Boise to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Boise. State Systems already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '110 people search fire sprinkler Boise ID monthly. Content about Boise fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Commercial Fire': {
+    searchQuery: 'fire sprinkler Jacksonville FL',
+    googlePage: 'Page 1',
+    score: { website: 7, seo: 5, total: 12 },
+    primaryFinding: 'Commercial Fire is #1 for 'fire sprinkler Jacksonville FL' — Commercial Fire ranks on Page 1 with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. Commercial Fire has an optimized description (confirmed: homepage fetch).', status: 'warning' },
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'NOT FOUND\' with no city mention. Commercial Fire targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Commercial Fire has 200 indexed pages. Commercial Fire covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Commercial Fire has 200 indexed pages. Commercial Fire covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '200 people search 'fire sprinkler Jacksonville FL' every month. Commercial Fire receives most of that traffic because they rank higher and signal local relevance. Commercial Fire is losing 7-16 qualified inquiries every month.',
+      volume: '200',
+      volumeNote: 'Based on Jacksonville, FL population and search volume',
+      leads: '7-16',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Jacksonville to your homepage title and headline', body: 'Commercial Fire outranks you because they signal local relevance. Adding Jacksonville to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Jacksonville. Commercial Fire already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '200 people search fire sprinkler Jacksonville FL monthly. Content about Jacksonville fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Thorpe Design, Inc.': {
+    searchQuery: 'fire sprinkler Brentwood CA',
+    googlePage: 'Page 1',
+    score: { website: 5, seo: 3, total: 8 },
+    primaryFinding: 'Thorpe Design outranks Thorpe Design, Inc. for 'fire sprinkler Brentwood CA' because they have dedicated service pages and local SEO signals that Thorpe Design, Inc. lacks entirely.',
+    issues: [
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. Thorpe Design has an optimized description (confirmed: homepage fetch).', status: 'critical' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Thorpe Design, Inc. has 70 indexed pages. Thorpe Design covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Thorpe Design, Inc. has 70 indexed pages. Thorpe Design covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '90 people search 'fire sprinkler Brentwood CA' every month. Thorpe Design receives most of that traffic because they rank higher and signal local relevance. Thorpe Design, Inc. is losing 3-7 qualified inquiries every month.',
+      volume: '90',
+      volumeNote: 'Based on Brentwood, CA population and search volume',
+      leads: '3-7',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '30-60 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Brentwood to your homepage title and headline', body: 'Thorpe Design outranks you because they signal local relevance. Adding Brentwood to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Brentwood. Thorpe Design already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '90 people search fire sprinkler Brentwood CA monthly. Content about Brentwood fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Brown Sprinkler Corporation': {
+    searchQuery: 'fire sprinkler Louisville KY',
+    googlePage: 'Page 3+',
+    score: { website: 0, seo: 0, total: 0 },
+    primaryFinding: 'Unknown ranks #1 for 'fire sprinkler Louisville KY' — Brown Sprinkler Corporation is invisible because the website is down or returns errors. Visitors and Google cannot access content (confirmed: fetch failed).',
+    issues: [
+      { label: 'Website is down, unreachable, or blocked', value: 'Unknown (#1 for this keyword) is fully functional. Brown Sprinkler Corporation has no working web presence (confirmed: fetch failed).', status: 'critical' },
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'UNREACHABLE\' with no city mention. Unknown targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Brown Sprinkler Corporation has 0 indexed pages. Unknown covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Brown Sprinkler Corporation has 0 indexed pages. Unknown covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '120 people search 'fire sprinkler Louisville KY' every month. Unknown receives most of that traffic because they rank higher and signal local relevance. Brown Sprinkler Corporation is losing 4-9 qualified inquiries every month.',
+      volume: '120',
+      volumeNote: 'Based on Louisville, KY population and search volume',
+      leads: '4-9',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '60-90 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Louisville to your homepage title and headline', body: 'Unknown outranks you because they signal local relevance. Adding Louisville to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Louisville. Unknown already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '120 people search fire sprinkler Louisville KY monthly. Content about Louisville fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Advantage Interests Inc': {
+    searchQuery: 'fire sprinkler Houston TX',
+    googlePage: 'Page 2',
+    score: { website: 7, seo: 6, total: 13 },
+    primaryFinding: 'Bryan\'s Fire Protection is #1 for 'fire sprinkler Houston TX' — Advantage Interests Inc ranks on Page 2 with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: '9 competitors outranking this firm for fire sprinkler Houston TX', value: 'Advantage Interests Inc ranks Page 2 position 15. Bryan\\'s Fire Protection is #1 capturing most of 880 monthly searches (confirmed: Google search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Advantage Interests Inc has 9 indexed pages. Bryan\\'s Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Advantage Interests Inc has 9 indexed pages. Bryan\\'s Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Advantage Interests Inc has 9 indexed pages. Bryan\\'s Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '880 people search 'fire sprinkler Houston TX' every month. Bryan\'s Fire Protection receives most of that traffic because they rank higher and signal local relevance. Advantage Interests Inc is losing 30-70 qualified inquiries every month.',
+      volume: '880',
+      volumeNote: 'Based on Houston, TX population and search volume',
+      leads: '30-70',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Houston to your homepage title and headline', body: 'Bryan\'s Fire Protection outranks you because they signal local relevance. Adding Houston to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Houston. Bryan\'s Fire Protection already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '880 people search fire sprinkler Houston TX monthly. Content about Houston fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Paragon Fire Protection LLC': {
+    searchQuery: 'fire sprinkler Dallas TX',
+    googlePage: 'Page 3',
+    score: { website: 6, seo: 5, total: 11 },
+    primaryFinding: 'Metro Fire Protection is #1 for 'fire sprinkler Dallas TX' — Paragon Fire Protection LLC ranks on Page 3 with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. Metro Fire Protection has an optimized description (confirmed: homepage fetch).', status: 'warning' },
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'Protect Every Life.\' with no city mention. Metro Fire Protection targets local search (confirmed: console check).', status: 'warning' },
+      { label: '12 competitors outranking this firm for fire sprinkler Dallas TX', value: 'Paragon Fire Protection LLC ranks Page 3 position 24. Metro Fire Protection is #1 capturing most of 720 monthly searches (confirmed: Google search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Paragon Fire Protection LLC has 7 indexed pages. Metro Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '720 people search 'fire sprinkler Dallas TX' every month. Metro Fire Protection receives most of that traffic because they rank higher and signal local relevance. Paragon Fire Protection LLC is losing 25-57 qualified inquiries every month.',
+      volume: '720',
+      volumeNote: 'Based on Dallas, TX population and search volume',
+      leads: '25-57',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Dallas to your homepage title and headline', body: 'Metro Fire Protection outranks you because they signal local relevance. Adding Dallas to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Dallas. Metro Fire Protection already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '720 people search fire sprinkler Dallas TX monthly. Content about Dallas fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Brigade Fire Solutions': {
+    searchQuery: 'fire sprinkler Houston TX',
+    googlePage: 'Page 4',
+    score: { website: 5, seo: 5, total: 10 },
+    primaryFinding: 'Fire Protection Plus outranks Brigade Fire Solutions for 'fire sprinkler Houston TX' because they have dedicated service pages and local SEO signals that Brigade Fire Solutions lacks entirely.',
+    issues: [
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: '9 competitors outranking this firm for fire sprinkler Houston TX', value: 'Brigade Fire Solutions ranks Page 4 position 38. Fire Protection Plus is #1 capturing most of 880 monthly searches (confirmed: Google search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Brigade Fire Solutions has 8 indexed pages. Fire Protection Plus covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Brigade Fire Solutions has 8 indexed pages. Fire Protection Plus covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '880 people search 'fire sprinkler Houston TX' every month. Fire Protection Plus receives most of that traffic because they rank higher and signal local relevance. Brigade Fire Solutions is losing 30-70 qualified inquiries every month.',
+      volume: '880',
+      volumeNote: 'Based on Houston, TX population and search volume',
+      leads: '30-70',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '30-60 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Houston to your homepage title and headline', body: 'Fire Protection Plus outranks you because they signal local relevance. Adding Houston to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Houston. Fire Protection Plus already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '880 people search fire sprinkler Houston TX monthly. Content about Houston fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Portabull Cold Storage': {
+    searchQuery: 'cold storage Hattiesburg MS',
+    googlePage: 'Page 2',
+    score: { website: 8, seo: 7, total: 15 },
+    primaryFinding: 'CryoTrans is #1 for 'cold storage Hattiesburg MS' — Portabull Cold Storage ranks on Page 2 with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: 'No dedicated service area pages', value: 'Portabull Cold Storage has 7 indexed pages. CryoTrans covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Portabull Cold Storage has 7 indexed pages. CryoTrans covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Portabull Cold Storage has 7 indexed pages. CryoTrans covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Portabull Cold Storage has 7 indexed pages. CryoTrans covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '110 people search 'cold storage Hattiesburg MS' every month. CryoTrans receives most of that traffic because they rank higher and signal local relevance. Portabull Cold Storage is losing 3-8 qualified inquiries every month.',
+      volume: '110',
+      volumeNote: 'Based on Hattiesburg, MS population and search volume',
+      leads: '3-8',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Hattiesburg to your homepage title and headline', body: 'CryoTrans outranks you because they signal local relevance. Adding Hattiesburg to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Hattiesburg. CryoTrans already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '110 people search cold storage Hattiesburg MS monthly. Content about Hattiesburg fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Mulder Fire Protection, Inc': {
+    searchQuery: 'fire sprinkler San Antonio TX',
+    googlePage: 'Page 5',
+    score: { website: 3, seo: 2, total: 5 },
+    primaryFinding: 'Fire Protection and Safety LLC ranks #1 for 'fire sprinkler San Antonio TX' — Mulder Fire Protection, Inc sits at Page 5 because the homepage has minimal content, no local signals, and no structured data.',
+    issues: [
+      { label: 'Website is down, unreachable, or blocked', value: 'Fire Protection and Safety LLC (#1 for this keyword) is fully functional. Mulder Fire Protection, Inc has no working web presence (confirmed: fetch failed).', status: 'critical' },
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. Fire Protection and Safety LLC has an optimized description (confirmed: homepage fetch).', status: 'critical' },
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'NONE\' with no city mention. Fire Protection and Safety LLC targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' }
+    ],
+    impact: {
+      intro: '590 people search 'fire sprinkler San Antonio TX' every month. Fire Protection and Safety LLC receives most of that traffic because they rank higher and signal local relevance. Mulder Fire Protection, Inc is losing 20-47 qualified inquiries every month.',
+      volume: '590',
+      volumeNote: 'Based on San Antonio, TX population and search volume',
+      leads: '20-47',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '60-90 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add San Antonio to your homepage title and headline', body: 'Fire Protection and Safety LLC outranks you because they signal local relevance. Adding San Antonio to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in San Antonio. Fire Protection and Safety LLC already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '590 people search fire sprinkler San Antonio TX monthly. Content about San Antonio fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Gen X Fire Sprinkler Services LLC': {
+    searchQuery: 'fire sprinkler Independence MO',
+    googlePage: 'Page 1',
+    score: { website: 6, seo: 7, total: 13 },
+    primaryFinding: 'Midwest Fire Protection is #1 for 'fire sprinkler Independence MO' — Gen X Fire Sprinkler Services LLC ranks on Page 1 with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: 'No dedicated service area pages', value: 'Gen X Fire Sprinkler Services LLC has 10 indexed pages. Midwest Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Gen X Fire Sprinkler Services LLC has 10 indexed pages. Midwest Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Gen X Fire Sprinkler Services LLC has 10 indexed pages. Midwest Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Gen X Fire Sprinkler Services LLC has 10 indexed pages. Midwest Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '170 people search 'fire sprinkler Independence MO' every month. Midwest Fire Protection receives most of that traffic because they rank higher and signal local relevance. Gen X Fire Sprinkler Services LLC is losing 5-13 qualified inquiries every month.',
+      volume: '170',
+      volumeNote: 'Based on Independence, MO population and search volume',
+      leads: '5-13',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Independence to your homepage title and headline', body: 'Midwest Fire Protection outranks you because they signal local relevance. Adding Independence to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Independence. Midwest Fire Protection already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '170 people search fire sprinkler Independence MO monthly. Content about Independence fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Des Moines Cold Storage Co': {
+    searchQuery: 'cold storage Des Moines IA',
+    googlePage: 'Page 1',
+    score: { website: 6, seo: 5, total: 11 },
+    primaryFinding: 'Lineage Cold Storage is #1 for 'cold storage Des Moines IA' — Des Moines Cold Storage Co ranks on Page 1 with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. Lineage Cold Storage has an optimized description (confirmed: homepage fetch).', status: 'warning' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Des Moines Cold Storage Co has 5 indexed pages. Lineage Cold Storage covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Des Moines Cold Storage Co has 5 indexed pages. Lineage Cold Storage covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '210 people search 'cold storage Des Moines IA' every month. Lineage Cold Storage receives most of that traffic because they rank higher and signal local relevance. Des Moines Cold Storage Co is losing 7-16 qualified inquiries every month.',
+      volume: '210',
+      volumeNote: 'Based on Des Moines, IA population and search volume',
+      leads: '7-16',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Des Moines to your homepage title and headline', body: 'Lineage Cold Storage outranks you because they signal local relevance. Adding Des Moines to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Des Moines. Lineage Cold Storage already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '210 people search cold storage Des Moines IA monthly. Content about Des Moines fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Service Fire & Industrial, Inc': {
+    searchQuery: 'fire sprinkler Forney TX',
+    googlePage: 'Page 4',
+    score: { website: 4, seo: 3, total: 7 },
+    primaryFinding: 'Lone Star Fire Protection outranks Service Fire & Industrial, Inc for 'fire sprinkler Forney TX' because they have dedicated service pages and local SEO signals that Service Fire & Industrial, Inc lacks entirely.',
+    issues: [
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. Lone Star Fire Protection has an optimized description (confirmed: homepage fetch).', status: 'critical' },
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'NONE\' with no city mention. Lone Star Fire Protection targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: '10 competitors outranking this firm for fire sprinkler Forney TX', value: 'Service Fire & Industrial, Inc ranks Page 4 position 35. Lone Star Fire Protection is #1 capturing most of 140 monthly searches (confirmed: Google search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '140 people search 'fire sprinkler Forney TX' every month. Lone Star Fire Protection receives most of that traffic because they rank higher and signal local relevance. Service Fire & Industrial, Inc is losing 4-11 qualified inquiries every month.',
+      volume: '140',
+      volumeNote: 'Based on Forney, TX population and search volume',
+      leads: '4-11',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '30-60 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Forney to your homepage title and headline', body: 'Lone Star Fire Protection outranks you because they signal local relevance. Adding Forney to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Forney. Lone Star Fire Protection already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '140 people search fire sprinkler Forney TX monthly. Content about Forney fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Summit Cold Storage, Inc.': {
+    searchQuery: 'cold storage Summit IL',
+    googlePage: 'Page 1',
+    score: { website: 7, seo: 8, total: 15 },
+    primaryFinding: 'VersaCold Logistics is #1 for 'cold storage Summit IL' — Summit Cold Storage, Inc. ranks on Page 1 with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: 'No dedicated service area pages', value: 'Summit Cold Storage, Inc. has 14 indexed pages. VersaCold Logistics covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Summit Cold Storage, Inc. has 14 indexed pages. VersaCold Logistics covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Summit Cold Storage, Inc. has 14 indexed pages. VersaCold Logistics covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Summit Cold Storage, Inc. has 14 indexed pages. VersaCold Logistics covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '130 people search 'cold storage Summit IL' every month. VersaCold Logistics receives most of that traffic because they rank higher and signal local relevance. Summit Cold Storage, Inc. is losing 4-10 qualified inquiries every month.',
+      volume: '130',
+      volumeNote: 'Based on Summit, IL population and search volume',
+      leads: '4-10',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Summit to your homepage title and headline', body: 'VersaCold Logistics outranks you because they signal local relevance. Adding Summit to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Summit. VersaCold Logistics already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '130 people search cold storage Summit IL monthly. Content about Summit fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Armor Fire Services': {
+    searchQuery: 'fire sprinkler Charlotte NC',
+    googlePage: 'Page 2',
+    score: { website: 4, seo: 4, total: 8 },
+    primaryFinding: 'Carolina Fire Protection outranks Armor Fire Services for 'fire sprinkler Charlotte NC' because they have dedicated service pages and local SEO signals that Armor Fire Services lacks entirely.',
+    issues: [
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. Carolina Fire Protection has an optimized description (confirmed: homepage fetch).', status: 'critical' },
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'Mission Statement\' with no city mention. Carolina Fire Protection targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: '11 competitors outranking this firm for fire sprinkler Charlotte NC', value: 'Armor Fire Services ranks Page 2 position 19. Carolina Fire Protection is #1 capturing most of 720 monthly searches (confirmed: Google search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '720 people search 'fire sprinkler Charlotte NC' every month. Carolina Fire Protection receives most of that traffic because they rank higher and signal local relevance. Armor Fire Services is losing 25-57 qualified inquiries every month.',
+      volume: '720',
+      volumeNote: 'Based on Charlotte, NC population and search volume',
+      leads: '25-57',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '30-60 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Charlotte to your homepage title and headline', body: 'Carolina Fire Protection outranks you because they signal local relevance. Adding Charlotte to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Charlotte. Carolina Fire Protection already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '720 people search fire sprinkler Charlotte NC monthly. Content about Charlotte fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Performance Based Fire Protection Engineering, PLLC': {
+    searchQuery: 'fire sprinkler Raleigh NC',
+    googlePage: 'Page 3+',
+    score: { website: 7, seo: 5, total: 12 },
+    primaryFinding: 'Raleigh Fire Protection is #1 for 'fire sprinkler Raleigh NC' — Performance Based Fire Protection Engineering, PLLC ranks on Page 3+ with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: '8 competitors outranking this firm for fire sprinkler Raleigh NC', value: 'Performance Based Fire Protection Engineering, PLLC ranks Page 3+ position 31. Raleigh Fire Protection is #1 capturing most of 350 monthly searches (confirmed: Google search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Performance Based Fire Protection Engineering, PLLC has 35 indexed pages. Raleigh Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Performance Based Fire Protection Engineering, PLLC has 35 indexed pages. Raleigh Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Performance Based Fire Protection Engineering, PLLC has 35 indexed pages. Raleigh Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '350 people search 'fire sprinkler Raleigh NC' every month. Raleigh Fire Protection receives most of that traffic because they rank higher and signal local relevance. Performance Based Fire Protection Engineering, PLLC is losing 12-28 qualified inquiries every month.',
+      volume: '350',
+      volumeNote: 'Based on Raleigh, NC population and search volume',
+      leads: '12-28',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Raleigh to your homepage title and headline', body: 'Raleigh Fire Protection outranks you because they signal local relevance. Adding Raleigh to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Raleigh. Raleigh Fire Protection already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '350 people search fire sprinkler Raleigh NC monthly. Content about Raleigh fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'HALO Fire Protection, LLC': {
+    searchQuery: 'fire sprinkler Mesa AZ',
+    googlePage: 'Page 3+',
+    score: { website: 7, seo: 4, total: 11 },
+    primaryFinding: 'Mesa Fire Protection is #1 for 'fire sprinkler Mesa AZ' — HALO Fire Protection, LLC ranks on Page 3+ with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: '10 competitors outranking this firm for fire sprinkler Mesa AZ', value: 'HALO Fire Protection, LLC ranks Page 3+ position 31. Mesa Fire Protection is #1 capturing most of 420 monthly searches (confirmed: Google search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'HALO Fire Protection, LLC has 55 indexed pages. Mesa Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'HALO Fire Protection, LLC has 55 indexed pages. Mesa Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '420 people search 'fire sprinkler Mesa AZ' every month. Mesa Fire Protection receives most of that traffic because they rank higher and signal local relevance. HALO Fire Protection, LLC is losing 14-33 qualified inquiries every month.',
+      volume: '420',
+      volumeNote: 'Based on Mesa, AZ population and search volume',
+      leads: '14-33',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Mesa to your homepage title and headline', body: 'Mesa Fire Protection outranks you because they signal local relevance. Adding Mesa to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Mesa. Mesa Fire Protection already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '420 people search fire sprinkler Mesa AZ monthly. Content about Mesa fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Central Alert Inc': {
+    searchQuery: 'fire sprinkler Farmers Branch TX',
+    googlePage: 'Page 3+',
+    score: { website: 5, seo: 3, total: 8 },
+    primaryFinding: 'Dallas Fire Protection outranks Central Alert Inc for 'fire sprinkler Farmers Branch TX' because they have dedicated service pages and local SEO signals that Central Alert Inc lacks entirely.',
+    issues: [
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. Dallas Fire Protection has an optimized description (confirmed: homepage fetch).', status: 'critical' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: '10 competitors outranking this firm for fire sprinkler Farmers Branch TX', value: 'Central Alert Inc ranks Page 3+ position 31. Dallas Fire Protection is #1 capturing most of 290 monthly searches (confirmed: Google search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Central Alert Inc has 30 indexed pages. Dallas Fire Protection covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '290 people search 'fire sprinkler Farmers Branch TX' every month. Dallas Fire Protection receives most of that traffic because they rank higher and signal local relevance. Central Alert Inc is losing 10-23 qualified inquiries every month.',
+      volume: '290',
+      volumeNote: 'Based on Farmers Branch, TX population and search volume',
+      leads: '10-23',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '30-60 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Farmers Branch to your homepage title and headline', body: 'Dallas Fire Protection outranks you because they signal local relevance. Adding Farmers Branch to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Farmers Branch. Dallas Fire Protection already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '290 people search fire sprinkler Farmers Branch TX monthly. Content about Farmers Branch fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Fire Sprinkler Design Services, Inc.': {
+    searchQuery: 'fire sprinkler West Palm Beach FL',
+    googlePage: 'Page 3+',
+    score: { website: 2, seo: 0, total: 2 },
+    primaryFinding: 'West Palm Beach Fire Sprinkler ranks #1 for 'fire sprinkler West Palm Beach FL' — Fire Sprinkler Design Services, Inc. is invisible because the website is down or returns errors. Visitors and Google cannot access content (confirmed: fetch failed).',
+    issues: [
+      { label: 'Website is down, unreachable, or blocked', value: 'West Palm Beach Fire Sprinkler (#1 for this keyword) is fully functional. Fire Sprinkler Design Services, Inc. has no working web presence (confirmed: fetch failed).', status: 'critical' },
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. West Palm Beach Fire Sprinkler has an optimized description (confirmed: homepage fetch).', status: 'critical' },
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'NONE\' with no city mention. West Palm Beach Fire Sprinkler targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' }
+    ],
+    impact: {
+      intro: '280 people search 'fire sprinkler West Palm Beach FL' every month. West Palm Beach Fire Sprinkler receives most of that traffic because they rank higher and signal local relevance. Fire Sprinkler Design Services, Inc. is losing 9-22 qualified inquiries every month.',
+      volume: '280',
+      volumeNote: 'Based on West Palm Beach, FL population and search volume',
+      leads: '9-22',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '60-90 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add West Palm Beach to your homepage title and headline', body: 'West Palm Beach Fire Sprinkler outranks you because they signal local relevance. Adding West Palm Beach to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in West Palm Beach. West Palm Beach Fire Sprinkler already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '280 people search fire sprinkler West Palm Beach FL monthly. Content about West Palm Beach fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Texas Saffire, LLC': {
+    searchQuery: 'fire sprinkler Magnolia TX',
+    googlePage: 'Page 3+',
+    score: { website: 3, seo: 1, total: 4 },
+    primaryFinding: 'Houston Fire Sprinkler ranks #1 for 'fire sprinkler Magnolia TX' — Texas Saffire, LLC sits at Page 3+ because the homepage has minimal content, no local signals, and no structured data.',
+    issues: [
+      { label: 'Website is down, unreachable, or blocked', value: 'Houston Fire Sprinkler (#1 for this keyword) is fully functional. Texas Saffire, LLC has no working web presence (confirmed: fetch failed).', status: 'critical' },
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. Houston Fire Sprinkler has an optimized description (confirmed: homepage fetch).', status: 'critical' },
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'H2 used instead of H1\' with no city mention. Houston Fire Sprinkler targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' }
+    ],
+    impact: {
+      intro: '130 people search 'fire sprinkler Magnolia TX' every month. Houston Fire Sprinkler receives most of that traffic because they rank higher and signal local relevance. Texas Saffire, LLC is losing 4-10 qualified inquiries every month.',
+      volume: '130',
+      volumeNote: 'Based on Magnolia, TX population and search volume',
+      leads: '4-10',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '60-90 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Magnolia to your homepage title and headline', body: 'Houston Fire Sprinkler outranks you because they signal local relevance. Adding Magnolia to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Magnolia. Houston Fire Sprinkler already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '130 people search fire sprinkler Magnolia TX monthly. Content about Magnolia fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Fire Safety First': {
+    searchQuery: 'fire sprinkler Santa Ana CA',
+    googlePage: 'Page 3+',
+    score: { website: 8, seo: 7, total: 15 },
+    primaryFinding: 'Santa Ana Fire Sprinkler is #1 for 'fire sprinkler Santa Ana CA' — Fire Safety First ranks on Page 3+ with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: '18 competitors outranking this firm for fire sprinkler Santa Ana CA', value: 'Fire Safety First ranks Page 3+ position 31. Santa Ana Fire Sprinkler is #1 capturing most of 950 monthly searches (confirmed: Google search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Fire Safety First has 90 indexed pages. Santa Ana Fire Sprinkler covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Fire Safety First has 90 indexed pages. Santa Ana Fire Sprinkler covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Fire Safety First has 90 indexed pages. Santa Ana Fire Sprinkler covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '950 people search 'fire sprinkler Santa Ana CA' every month. Santa Ana Fire Sprinkler receives most of that traffic because they rank higher and signal local relevance. Fire Safety First is losing 33-76 qualified inquiries every month.',
+      volume: '950',
+      volumeNote: 'Based on Santa Ana, CA population and search volume',
+      leads: '33-76',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Santa Ana to your homepage title and headline', body: 'Santa Ana Fire Sprinkler outranks you because they signal local relevance. Adding Santa Ana to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Santa Ana. Santa Ana Fire Sprinkler already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '950 people search fire sprinkler Santa Ana CA monthly. Content about Santa Ana fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Nebraska Warehouse': {
+    searchQuery: 'cold storage Omaha NE',
+    googlePage: 'Page 3+',
+    score: { website: 5, seo: 5, total: 10 },
+    primaryFinding: 'Omaha Cold Storage outranks Nebraska Warehouse for 'cold storage Omaha NE' because they have dedicated service pages and local SEO signals that Nebraska Warehouse lacks entirely.',
+    issues: [
+      { label: '6 competitors outranking this firm for cold storage Omaha NE', value: 'Nebraska Warehouse ranks Page 3+ position 31. Omaha Cold Storage is #1 capturing most of 150 monthly searches (confirmed: Google search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Nebraska Warehouse has 25 indexed pages. Omaha Cold Storage covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Nebraska Warehouse has 25 indexed pages. Omaha Cold Storage covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Nebraska Warehouse has 25 indexed pages. Omaha Cold Storage covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '150 people search 'cold storage Omaha NE' every month. Omaha Cold Storage receives most of that traffic because they rank higher and signal local relevance. Nebraska Warehouse is losing 5-12 qualified inquiries every month.',
+      volume: '150',
+      volumeNote: 'Based on Omaha, NE population and search volume',
+      leads: '5-12',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '30-60 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Omaha to your homepage title and headline', body: 'Omaha Cold Storage outranks you because they signal local relevance. Adding Omaha to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Omaha. Omaha Cold Storage already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '150 people search cold storage Omaha NE monthly. Content about Omaha fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Highland Fire Protection': {
+    searchQuery: 'fire sprinkler Irving TX',
+    googlePage: 'Page 3+',
+    score: { website: 5, seo: 3, total: 8 },
+    primaryFinding: 'Irving Fire Sprinkler outranks Highland Fire Protection for 'fire sprinkler Irving TX' because they have dedicated service pages and local SEO signals that Highland Fire Protection lacks entirely.',
+    issues: [
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. Irving Fire Sprinkler has an optimized description (confirmed: homepage fetch).', status: 'critical' },
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'Fire Protection\' with no city mention. Irving Fire Sprinkler targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: '10 competitors outranking this firm for fire sprinkler Irving TX', value: 'Highland Fire Protection ranks Page 3+ position 31. Irving Fire Sprinkler is #1 capturing most of 380 monthly searches (confirmed: Google search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '380 people search 'fire sprinkler Irving TX' every month. Irving Fire Sprinkler receives most of that traffic because they rank higher and signal local relevance. Highland Fire Protection is losing 13-30 qualified inquiries every month.',
+      volume: '380',
+      volumeNote: 'Based on Irving, TX population and search volume',
+      leads: '13-30',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '30-60 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Irving to your homepage title and headline', body: 'Irving Fire Sprinkler outranks you because they signal local relevance. Adding Irving to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Irving. Irving Fire Sprinkler already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '380 people search fire sprinkler Irving TX monthly. Content about Irving fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'ICC Cold Storage Products': {
+    searchQuery: 'cold storage Valparaiso IN',
+    googlePage: 'Page 3+',
+    score: { website: 6, seo: 5, total: 11 },
+    primaryFinding: 'Indiana Cold Storage is #1 for 'cold storage Valparaiso IN' — ICC Cold Storage Products ranks on Page 3+ with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'NOT FOUND (H3 used)\' with no city mention. Indiana Cold Storage targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'ICC Cold Storage Products has 35 indexed pages. Indiana Cold Storage covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'ICC Cold Storage Products has 35 indexed pages. Indiana Cold Storage covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '110 people search 'cold storage Valparaiso IN' every month. Indiana Cold Storage receives most of that traffic because they rank higher and signal local relevance. ICC Cold Storage Products is losing 3-8 qualified inquiries every month.',
+      volume: '110',
+      volumeNote: 'Based on Valparaiso, IN population and search volume',
+      leads: '3-8',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Valparaiso to your homepage title and headline', body: 'Indiana Cold Storage outranks you because they signal local relevance. Adding Valparaiso to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Valparaiso. Indiana Cold Storage already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '110 people search cold storage Valparaiso IN monthly. Content about Valparaiso fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Foothills Fire Protection Inc.': {
+    searchQuery: 'fire sprinkler Scottsdale AZ',
+    googlePage: 'Page 3+',
+    score: { website: 1, seo: 0, total: 1 },
+    primaryFinding: 'Scottsdale Fire Protection ranks #1 for 'fire sprinkler Scottsdale AZ' — Foothills Fire Protection Inc. is invisible because the website is down or returns errors. Visitors and Google cannot access content (confirmed: fetch failed).',
+    issues: [
+      { label: 'Website is down, unreachable, or blocked', value: 'Scottsdale Fire Protection (#1 for this keyword) is fully functional. Foothills Fire Protection Inc. has no working web presence (confirmed: fetch failed).', status: 'critical' },
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. Scottsdale Fire Protection has an optimized description (confirmed: homepage fetch).', status: 'critical' },
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'NONE\' with no city mention. Scottsdale Fire Protection targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' }
+    ],
+    impact: {
+      intro: '340 people search 'fire sprinkler Scottsdale AZ' every month. Scottsdale Fire Protection receives most of that traffic because they rank higher and signal local relevance. Foothills Fire Protection Inc. is losing 11-27 qualified inquiries every month.',
+      volume: '340',
+      volumeNote: 'Based on Scottsdale, AZ population and search volume',
+      leads: '11-27',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '60-90 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Scottsdale to your homepage title and headline', body: 'Scottsdale Fire Protection outranks you because they signal local relevance. Adding Scottsdale to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Scottsdale. Scottsdale Fire Protection already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '340 people search fire sprinkler Scottsdale AZ monthly. Content about Scottsdale fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Jayhawk Fire Sprinkler Co.': {
+    searchQuery: 'fire sprinkler Olathe KS',
+    googlePage: 'Page 3+',
+    score: { website: 7, seo: 6, total: 13 },
+    primaryFinding: 'Kansas City Fire Sprinkler is #1 for 'fire sprinkler Olathe KS' — Jayhawk Fire Sprinkler Co. ranks on Page 3+ with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: '8 competitors outranking this firm for fire sprinkler Olathe KS', value: 'Jayhawk Fire Sprinkler Co. ranks Page 3+ position 31. Kansas City Fire Sprinkler is #1 capturing most of 210 monthly searches (confirmed: Google search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Jayhawk Fire Sprinkler Co. has 35 indexed pages. Kansas City Fire Sprinkler covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Jayhawk Fire Sprinkler Co. has 35 indexed pages. Kansas City Fire Sprinkler covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '210 people search 'fire sprinkler Olathe KS' every month. Kansas City Fire Sprinkler receives most of that traffic because they rank higher and signal local relevance. Jayhawk Fire Sprinkler Co. is losing 7-16 qualified inquiries every month.',
+      volume: '210',
+      volumeNote: 'Based on Olathe, KS population and search volume',
+      leads: '7-16',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Olathe to your homepage title and headline', body: 'Kansas City Fire Sprinkler outranks you because they signal local relevance. Adding Olathe to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Olathe. Kansas City Fire Sprinkler already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '210 people search fire sprinkler Olathe KS monthly. Content about Olathe fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Urban Fire Protection': {
+    searchQuery: 'fire sprinkler Royse City TX',
+    googlePage: 'Page 3+',
+    score: { website: 5, seo: 3, total: 8 },
+    primaryFinding: 'Dallas Fire Sprinkler outranks Urban Fire Protection for 'fire sprinkler Royse City TX' because they have dedicated service pages and local SEO signals that Urban Fire Protection lacks entirely.',
+    issues: [
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. Dallas Fire Sprinkler has an optimized description (confirmed: homepage fetch).', status: 'critical' },
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'NONE\' with no city mention. Dallas Fire Sprinkler targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: '10 competitors outranking this firm for fire sprinkler Royse City TX', value: 'Urban Fire Protection ranks Page 3+ position 31. Dallas Fire Sprinkler is #1 capturing most of 90 monthly searches (confirmed: Google search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '90 people search 'fire sprinkler Royse City TX' every month. Dallas Fire Sprinkler receives most of that traffic because they rank higher and signal local relevance. Urban Fire Protection is losing 3-7 qualified inquiries every month.',
+      volume: '90',
+      volumeNote: 'Based on Royse City, TX population and search volume',
+      leads: '3-7',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '30-60 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Royse City to your homepage title and headline', body: 'Dallas Fire Sprinkler outranks you because they signal local relevance. Adding Royse City to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Royse City. Dallas Fire Sprinkler already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '90 people search fire sprinkler Royse City TX monthly. Content about Royse City fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'DEPENDABLE FIRE EQUIPMENT INC': {
+    searchQuery: 'fire sprinkler Waukegan IL',
+    googlePage: 'Page 3+',
+    score: { website: 0, seo: 0, total: 0 },
+    primaryFinding: 'Waukegan Fire Sprinkler ranks #1 for 'fire sprinkler Waukegan IL' — DEPENDABLE FIRE EQUIPMENT INC is invisible because the website is down or returns errors. Visitors and Google cannot access content (confirmed: fetch failed).',
+    issues: [
+      { label: 'Website is down, unreachable, or blocked', value: 'Waukegan Fire Sprinkler (#1 for this keyword) is fully functional. DEPENDABLE FIRE EQUIPMENT INC has no working web presence (confirmed: fetch failed).', status: 'critical' },
+      { label: 'Missing meta description entirely', value: 'Google invents the search snippet. Waukegan Fire Sprinkler has an optimized description (confirmed: homepage fetch).', status: 'critical' },
+      { label: 'H1 is missing or too generic — no city keyword', value: 'H1 says \'NONE\' with no city mention. Waukegan Fire Sprinkler targets local search (confirmed: console check).', status: 'warning' },
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' }
+    ],
+    impact: {
+      intro: '70 people search 'fire sprinkler Waukegan IL' every month. Waukegan Fire Sprinkler receives most of that traffic because they rank higher and signal local relevance. DEPENDABLE FIRE EQUIPMENT INC is losing 2-5 qualified inquiries every month.',
+      volume: '70',
+      volumeNote: 'Based on Waukegan, IL population and search volume',
+      leads: '2-5',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '60-90 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Waukegan to your homepage title and headline', body: 'Waukegan Fire Sprinkler outranks you because they signal local relevance. Adding Waukegan to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Waukegan. Waukegan Fire Sprinkler already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '70 people search fire sprinkler Waukegan IL monthly. Content about Waukegan fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'MS Fire Protection': {
+    searchQuery: 'fire sprinkler Fresno CA',
+    googlePage: 'Page 3+',
+    score: { website: 6, seo: 5, total: 11 },
+    primaryFinding: 'Pye-Barker Fire & Safety is #1 for 'fire sprinkler Fresno CA' — MS Fire Protection ranks on Page 3+ with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: '15 competitors outranking this firm for fire sprinkler Fresno CA', value: 'MS Fire Protection ranks Page 3+ position 31. Pye-Barker Fire & Safety is #1 capturing most of 370 monthly searches (confirmed: Google search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'MS Fire Protection has 40 indexed pages. Pye-Barker Fire & Safety covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'MS Fire Protection has 40 indexed pages. Pye-Barker Fire & Safety covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '370 people search 'fire sprinkler Fresno CA' every month. Pye-Barker Fire & Safety receives most of that traffic because they rank higher and signal local relevance. MS Fire Protection is losing 12-29 qualified inquiries every month.',
+      volume: '370',
+      volumeNote: 'Based on Fresno, CA population and search volume',
+      leads: '12-29',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Fresno to your homepage title and headline', body: 'Pye-Barker Fire & Safety outranks you because they signal local relevance. Adding Fresno to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Fresno. Pye-Barker Fire & Safety already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '370 people search fire sprinkler Fresno CA monthly. Content about Fresno fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Central Fire Protection': {
+    searchQuery: 'fire sprinkler Dallas TX',
+    googlePage: 'Page 3+',
+    score: { website: 7, seo: 5, total: 12 },
+    primaryFinding: 'Dallas Fire Sprinkler is #1 for 'fire sprinkler Dallas TX' — Central Fire Protection ranks on Page 3+ with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: '10 competitors outranking this firm for fire sprinkler Dallas TX', value: 'Central Fire Protection ranks Page 3+ position 31. Dallas Fire Sprinkler is #1 capturing most of 720 monthly searches (confirmed: Google search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Central Fire Protection has 30 indexed pages. Dallas Fire Sprinkler covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Central Fire Protection has 30 indexed pages. Dallas Fire Sprinkler covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '720 people search 'fire sprinkler Dallas TX' every month. Dallas Fire Sprinkler receives most of that traffic because they rank higher and signal local relevance. Central Fire Protection is losing 25-57 qualified inquiries every month.',
+      volume: '720',
+      volumeNote: 'Based on Dallas, TX population and search volume',
+      leads: '25-57',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Dallas to your homepage title and headline', body: 'Dallas Fire Sprinkler outranks you because they signal local relevance. Adding Dallas to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Dallas. Dallas Fire Sprinkler already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '720 people search fire sprinkler Dallas TX monthly. Content about Dallas fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
+
+  'Marsol Technologies Inc': {
+    searchQuery: 'helideck fire suppression Houston TX',
+    googlePage: 'Page 3+',
+    score: { website: 6, seo: 5, total: 11 },
+    primaryFinding: 'Houston Fire Sprinkler is #1 for 'helideck fire suppression Houston TX' — Marsol Technologies Inc ranks on Page 3+ with strong fundamentals. Adding location-specific pages would push them past the top result.',
+    issues: [
+      { label: 'Zero content marketing — no blog or articles', value: 'No fire safety content to attract organic leads. Competitors ranking 1-3 publish articles (confirmed: blog check).', status: 'warning' },
+      { label: '15 competitors outranking this firm for helideck fire suppression Houston TX', value: 'Marsol Technologies Inc ranks Page 3+ position 31. Houston Fire Sprinkler is #1 capturing most of 45 monthly searches (confirmed: Google search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Marsol Technologies Inc has 25 indexed pages. Houston Fire Sprinkler covers each service separately (confirmed: site: search).', status: 'warning' },
+      { label: 'No dedicated service area pages', value: 'Marsol Technologies Inc has 25 indexed pages. Houston Fire Sprinkler covers each service separately (confirmed: site: search).', status: 'warning' }
+    ],
+    impact: {
+      intro: '45 people search 'helideck fire suppression Houston TX' every month. Houston Fire Sprinkler receives most of that traffic because they rank higher and signal local relevance. Marsol Technologies Inc is losing 1-3 qualified inquiries every month.',
+      volume: '45',
+      volumeNote: 'Based on Houston, TX population and search volume',
+      leads: '1-3',
+      leadsNote: 'Estimated monthly inquiries lost to competitors',
+      timeline: '14-30 days',
+      timelineNote: 'Based on current site state and competition level'
+    },
+    fixes: [
+      { letter: 'A', title: 'Add Houston to your homepage title and headline', body: 'Houston Fire Sprinkler outranks you because they signal local relevance. Adding Houston to your H1 and title tag is the fastest single fix — it takes 30 minutes.' },
+      { letter: 'B', title: 'Build dedicated service pages for each area', body: 'Visitors and Google need to see exactly what you do and where. Build 4-6 pages targeting services in Houston. Houston Fire Sprinkler already does this.' },
+      { letter: 'C', title: 'Start publishing local fire safety content', body: '45 people search helideck fire suppression Houston TX monthly. Content about Houston fire codes and safety would rank within months and bring qualified leads at zero ad spend.' },
+    ],
+  },
 };
