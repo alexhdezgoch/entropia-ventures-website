@@ -6545,11 +6545,7 @@
 </div>
 </div>
 
-<div class="group relative bg-primary-container p-10 flex flex-col justify-center items-center text-center h-full transition-bezier duration-500 hover:shadow-[0_20px_40px_rgba(15,41,33,0.2)]">
-<span class="material-symbols-outlined text-secondary text-5xl mb-6" data-icon="troubleshoot">troubleshoot</span>
-<h3 class="text-2xl font-serif text-on-primary mb-4 leading-tight">Request an unlisted audit</h3>
-<p class="text-on-primary/70 text-sm mb-8 max-w-[240px]">We perform custom infrastructure analysis for established entities in any jurisdiction.</p>
-<a href="/contact.html" class="bg-secondary text-on-secondary px-8 py-3 text-[11px] font-bold tracking-[0.2em] uppercase transition-bezier hover:bg-secondary-fixed-dim">Contact Registry</a>
+>
 </div>
 </div>
 </div>
@@ -8473,90 +8469,16 @@
 </div>
 </div>
 
+
+
+
+
+<div class="group relative bg-primary-container p-10 flex flex-col justify-center items-center text-center h-full transition-bezier duration-500 hover:shadow-[0_20px_40px_rgba(15,41,33,0.2)]">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6" data-icon="troubleshoot">troubleshoot</span>
+<h3 class="text-2xl font-serif text-on-primary mb-4 leading-tight">Request an unlisted audit</h3>
+<p class="text-on-primary/70 text-sm mb-8 max-w-[240px]">We perform custom infrastructure analysis for established entities in any jurisdiction.</p>
+<a href="/contact.html" class="bg-secondary text-on-secondary px-8 py-3 text-[11px] font-bold tracking-[0.2em] uppercase transition-bezier hover:bg-secondary-fixed-dim">Contact Registry</a>
+</div>
+</div>
+</div>
 </section>
-<footer class="w-full border-t border-outline-variant/15 bg-surface dark:bg-slate-950">
-<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full gap-6">
-<div class="font-serif italic text-[#0F2921] dark:text-emerald-400 text-xl">
-                Entropia
-            </div>
-<div class="flex items-center gap-10">
-<a class="Inter text-sm text-[#1a1c1c]/60 dark:text-slate-500 hover:text-[#0F2921] dark:hover:text-emerald-300 underline underline-offset-4 decoration-outline_variant/20 transition-all" href="/contact.html">Contact</a>
-<a class="Inter text-sm text-[#1a1c1c]/60 dark:text-slate-500 hover:text-[#0F2921] dark:hover:text-emerald-300 underline underline-offset-4 decoration-outline_variant/20 transition-all" href="#">Privacy</a>
-<a class="Inter text-sm text-[#1a1c1c]/60 dark:text-slate-500 hover:text-[#0F2921] dark:hover:text-emerald-300 underline underline-offset-4 decoration-outline_variant/20 transition-all" href="https://linkedin.com/company/entropia-ventures" target="_blank">LinkedIn</a>
-</div>
-<div class="Inter text-sm text-[#1a1c1c]/60 dark:text-slate-500">
-                © 2026 Entropia Ventures. Visibility Infrastructure.
-            </div>
-</div>
-</footer>
-
-<script>
-(function() {
-  const grid = document.getElementById('audit-grid');
-  const cards = Array.from(grid.querySelectorAll('[data-cat]'));
-  const filterBtns = document.querySelectorAll('[data-filter]');
-  const searchInput = document.getElementById('audit-search');
-  const countEl = document.getElementById('audit-count');
-  let activeFilter = 'all';
-  let searchQuery = '';
-
-  function update() {
-    let visible = 0;
-    cards.forEach(card => {
-      const catMatch = activeFilter === 'all' || card.dataset.cat === activeFilter;
-      const q = searchQuery.toLowerCase();
-      const textMatch = !q || card.dataset.name.includes(q) || card.dataset.loc.includes(q);
-      if (catMatch && textMatch) {
-        card.style.display = '';
-        visible++;
-      } else {
-        card.style.display = 'none';
-      }
-    });
-    if (countEl) countEl.textContent = visible;
-  }
-
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => {
-        b.classList.remove('bg-primary-container', 'text-on-primary');
-        b.classList.add('text-on-surface-variant');
-      });
-      btn.classList.add('bg-primary-container', 'text-on-primary');
-      btn.classList.remove('text-on-surface-variant');
-      activeFilter = btn.dataset.filter;
-      update();
-    });
-  });
-
-  if (searchInput) {
-    searchInput.addEventListener('input', e => {
-      searchQuery = e.target.value;
-      update();
-    });
-  }
-
-  // Make cards clickable — navigate to full audit detail page
-  cards.forEach(card => {
-    card.style.cursor = 'pointer';
-
-    const indicator = document.createElement('p');
-    indicator.textContent = 'View audit →';
-    indicator.style.cssText = 'font-size:10px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#316948;margin-top:12px;opacity:0;transition:opacity 0.3s cubic-bezier(0.2,0,0,1);font-family:Inter,sans-serif;';
-    card.appendChild(indicator);
-    card.addEventListener('mouseenter', () => indicator.style.opacity = '1');
-    card.addEventListener('mouseleave', () => indicator.style.opacity = '0');
-
-    card.addEventListener('click', () => {
-      function slugifyName(s) {
-        return s.toLowerCase()
-          .replace(/&/g,'and').replace(/'s\b/gi,'').replace(/['''`]/g,'')
-          .replace(/[.,]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
-      }
-      const firmN = card.querySelector('h3') ? card.querySelector('h3').textContent.trim() : card.dataset.name;
-      window.location.href = '/audits/' + card.dataset.cat + '/' + slugifyName(firmN) + '/';
-    });
-  });
-})();
-</script>
-</body></html>
