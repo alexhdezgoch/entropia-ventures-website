@@ -5057,4 +5057,199 @@ window.__firmAuditData = {
     ],
   },
 
+  // ═══════════════════════════════════════════════
+  // FIRE PROTECTION — APOLLO APRIL 16 (8)
+  // ═══════════════════════════════════════════════
+
+  'Pass Fire Protection': {
+    searchQuery: 'fire protection Phoenix AZ',
+    googlePage: 'Not Found',
+    score: { website: 5, seo: 4, total: 9 },
+    primaryFinding: '35-year Phoenix fire protection company on Wix with LocalBusiness schema and 15+ indexed pages — but the blog is a 404, the H1 reads "Hours of Operation," and the phone is not in a tel: link, so they are invisible for "fire protection Phoenix AZ."',
+    issues: [
+      { label: 'Blog 404s', value: '/blog returns a 404 error page instead of content (confirmed: browser visit)', status: 'critical' },
+      { label: 'H1 is "Hours of Operation"', value: 'the h1 tag on the homepage says "Hours of Operation" — not fire protection (confirmed: browser console)', status: 'critical' },
+      { label: 'Phone not linked as tel:', value: 'phone 602-833-9117 appears in footer text but not in an anchor tag (confirmed: browser console)', status: 'warning' },
+      { label: 'LocalBusiness schema has NAP', value: 'schema JSON-LD includes 1522 E Victory St, Phoenix AZ 85040 and phone (confirmed: browser console)', status: 'info' },
+    ],
+    impact: {
+      intro: 'A 35-year Phoenix fire protection firm with LocalBusiness schema and 15 indexed pages is invisible for its own geo keyword because the blog is a 404 and the h1 says "Hours of Operation."',
+      volume: '380', volumeNote: 'monthly searches for fire protection Phoenix AZ cluster',
+      leads: '8-14', leadsNote: 'estimated once blog content and geo pages are live',
+      timeline: '45-60 days', timelineNote: 'enough to rebuild the blog and add Phoenix suburb pages',
+    },
+    fixes: [
+      { letter: 'A', title: 'Launch a blog with Phoenix fire code articles', body: 'Two posts a month on NFPA 25 inspections, Phoenix FD requirements, and commercial kitchen suppression would give the site crawlable content it currently lacks.' },
+      { letter: 'B', title: 'Fix the H1 and add geo-specific pages', body: 'Replace the "Hours of Operation" h1 with "Phoenix Fire Protection Services" and add pages for Scottsdale, Tempe, Mesa, and Glendale.' },
+      { letter: 'C', title: 'Link the phone and email as click-to-call', body: 'Phone and email should be tel: and mailto: anchors. Right now they are plain text in the footer, which hurts mobile UX and local signal.' },
+    ],
+  },
+
+  'IGH Health, Fire, & Safety': {
+    searchQuery: 'fire protection Dallas TX',
+    googlePage: 'Not Found',
+    score: { website: 6, seo: 3, total: 9 },
+    primaryFinding: 'IGH has a well-structured WordPress site with 6+ blog pages and strong service menus across health, fire, and safety — but the h1 targets "CPR Training" instead of fire protection, and the last blog post is from September 2023, so Google sees a stale site for the fire keyword.',
+    issues: [
+      { label: 'H1 targets CPR not fire', value: 'homepage h1 reads "Dallas/Fort Worth Onsite CPR Training" — the primary fire protection keyword is absent from the h1 (confirmed: browser console)', status: 'critical' },
+      { label: 'Blog posts stopped in September 2023', value: 'six pages of posts exist but the newest is from Sep 2023 — over two years of inactivity (confirmed: browser snapshot)', status: 'critical' },
+      { label: 'LocalBusiness schema minimal', value: 'only one schema entry found — likely Organization or WebSite, not full LocalBusiness with service area (confirmed: browser console)', status: 'warning' },
+      { label: 'Phone visible and linked', value: '(817) 809-8677 appears in nav and footer as tel: link (confirmed: browser console)', status: 'info' },
+    ],
+    impact: {
+      intro: 'A fire protection company with a real content engine that has gone dark for 2+ years — and the h1 is selling CPR, not fire services.',
+      volume: '520', volumeNote: 'monthly searches for fire protection Dallas TX metro',
+      leads: '10-18', leadsNote: 'once blog cadence resumes and h1 targets fire',
+      timeline: '30-45 days', timelineNote: 'strong existing content base — reactivate and optimize',
+    },
+    fixes: [
+      { letter: 'A', title: 'Change the homepage h1 to fire protection', body: 'Swap "Dallas/Fort Worth Onsite CPR Training" for a fire-focused headline. The h1 is the strongest on-page signal Google uses for the hero keyword.' },
+      { letter: 'B', title: 'Restart the blog with monthly fire code content', body: 'One post every two weeks on NFPA inspections, Texas fire marshal updates, and kitchen suppression would restore the crawl frequency Google once gave this site.' },
+      { letter: 'C', title: 'Add LocalBusiness schema with fire service types', body: 'The schema entry currently found is thin. A full LocalBusiness with FireExtinguisher, FireSprinkler, and FireAlarm service types would differentiate IGH from general CPR competitors in the SERP.' },
+    ],
+  },
+
+  'Atlas Fire and Security': {
+    searchQuery: 'fire protection Charlotte NC',
+    googlePage: 'Not Found',
+    score: { website: 5, seo: 3, total: 8 },
+    primaryFinding: 'Charlotte fire and security firm with 21 years of experience and a services page covering alarms, sprinklers, and inspections — but the meta description is just the domain name, the schema is WebSite only, and the blog is a 404.',
+    issues: [
+      { label: 'Meta description is the domain name', value: 'meta description reads "Fire and Security Protection Company www.atlasfireandsecurity.com" — no call to action, no keyword, no location (confirmed: browser console)', status: 'critical' },
+      { label: 'Only WebSite schema, no LocalBusiness', value: 'the single JSON-LD entry is type "WebSite" with truncated name "Atlas Fire And Secur" (confirmed: browser console)', status: 'critical' },
+      { label: 'Blog 404s', value: '/blog returns a 404 error page (confirmed: browser visit)', status: 'warning' },
+      { label: 'Phone visible in header', value: '704-675-0252 appears in the site header (confirmed: browser snapshot)', status: 'info' },
+    ],
+    impact: {
+      intro: 'A 21-year Charlotte fire protection company with a decent services structure but a meta description that just says its own URL — and the wrong schema type.',
+      volume: '320', volumeNote: 'monthly searches for fire protection Charlotte NC metro',
+      leads: '6-12', leadsNote: 'estimated once meta and schema are fixed and blog launches',
+      timeline: '45-60 days', timelineNote: 'content foundation needs to be built from scratch',
+    },
+    fixes: [
+      { letter: 'A', title: 'Write a real meta description under 160 characters', body: 'The current meta description is just the URL. It needs fire protection keywords, Charlotte geo, and a CTA to get clicks from search results.' },
+      { letter: 'B', title: 'Replace WebSite schema with LocalBusiness', body: 'Atlas needs a full LocalBusiness schema with address, phone, service area (NC and SC), and service types for fire alarm, sprinkler, and security.' },
+      { letter: 'C', title: 'Build a service area page network for NC and SC cities', body: 'The site lists Charlotte, Winston-Salem, Greensboro, Raleigh, and more — but none have dedicated pages. Geo pages would capture long-tail searches Atlas currently misses.' },
+    ],
+  },
+
+  'Oakley Fire, LLC': {
+    searchQuery: 'fire protection Richmond VA',
+    googlePage: 'Not Found',
+    score: { website: 7, seo: 3, total: 10 },
+    primaryFinding: 'Oakley Fire has a clean site with strong service pages and FAQ content — but the blog page is a blank template with Lorem Ipsum placeholder text, and the company serves 10 states with no geo-specific pages for any of them.',
+    issues: [
+      { label: 'Blog page has placeholder text', value: '/blog/ shows "Have a Question?" CTA banner and Lorem Ipsum body — no real posts (confirmed: browser visit + vision)', status: 'critical' },
+      { label: 'No geo pages for 10-state service area', value: 'homepage states "10 states across the Mid-Atlantic" but no individual state or city pages exist (confirmed: browser snapshot)', status: 'critical' },
+      { label: 'LocalBusiness schema present', value: '1 schema JSON-LD entry found (confirmed: browser console)', status: 'info' },
+      { label: 'Phone visible and linked', value: '(804) 859-2000 appears in hero section as tel: link (confirmed: browser console)', status: 'info' },
+    ],
+    impact: {
+      intro: 'Mid-Atlantic fire protection firm with 65+ years combined experience and 10-state coverage — but the blog is Lorem Ipsum and no state page exists for any of the 10 markets they serve.',
+      volume: '280', volumeNote: 'monthly searches for fire protection Richmond VA metro',
+      leads: '5-10', leadsNote: 'from geo pages alone once 10 states are mapped',
+      timeline: '45-60 days', timelineNote: 'strong homepage — needs geo expansion and real content',
+    },
+    fixes: [
+      { letter: 'A', title: 'Write 10 state service pages', body: 'Virginia, Maryland, West Virginia, North Carolina, South Carolina, Delaware, Pennsylvania, New Jersey, Ohio, and Kentucky each need a dedicated page with local code references and project examples.' },
+      { letter: 'B', title: 'Replace the Lorem Ipsum blog with real fire code content', body: 'The blog page is a blank template. Even 4 short posts on NFPA inspections and Virginia fire code would give Google something to index and rank.' },
+      { letter: 'C', title: 'Add 400+ jobs per month stat to homepage h1', body: 'Oakley drives 400+ jobs to NFPA 25/72 monthly — this is strong proof that should appear above the fold, not buried in a stats counter section.' },
+    ],
+  },
+
+  'Fire Design Concepts, LLC': {
+    searchQuery: 'fire protection Atlanta GA',
+    googlePage: 'Not Found',
+    score: { website: 2, seo: 1, total: 3 },
+    primaryFinding: 'Fire Design Concepts is running a WordPress template site with dummy content — "PO Box 16122 Collins Street West Victoria 8007 Australia" and "geral@example.com" as the contact info. The site has not been customized for the Atlanta market at all.',
+    issues: [
+      { label: 'Dummy Australian address on an Atlanta site', value: 'contact section shows "Victoria 8007 Australia" and "geral@example.com" — template defaults not replaced (confirmed: browser snapshot)', status: 'critical' },
+      { label: 'No phone, email, or real contact info', value: 'no tel: link or mailto: anchor found anywhere on the homepage (confirmed: browser console)', status: 'critical' },
+      { label: 'No LocalBusiness schema', value: 'zero JSON-LD entries found (confirmed: browser console)', status: 'critical' },
+      { label: 'Site is a design firm, not full fire protection', value: 'services are 3rd party plan review and hydraulic analysis — not installation or maintenance (confirmed: browser snapshot)', status: 'warning' },
+    ],
+    impact: {
+      intro: 'An Atlanta fire sprinkler review firm running a template with Australian placeholder data. Google sees no legitimate business entity.',
+      volume: '200', volumeNote: 'monthly searches for fire protection Atlanta GA metro',
+      leads: '3-6', leadsNote: 'estimated once the site is customized with real contact info and Atlanta keywords',
+      timeline: '30-45 days', timelineNote: 'site structure exists — needs real content and contact info',
+    },
+    fixes: [
+      { letter: 'A', title: 'Replace all template placeholder content', body: 'Australian address, generic email, and Lorem Ipsum must be replaced with real Georgia contact info. Right now the site cannot function as a business page.' },
+      { letter: 'B', title: 'Add LocalBusiness schema with Georgia address and phone', body: 'Once real contact info is added, schema markup would tell Google this is a legitimate Georgia business, not a template.' },
+      { letter: 'C', title: 'Clarify that this is 3rd party review, not installation', body: 'The services are plan review and hydraulic analysis — the site should make this the primary offering rather than burying it behind a generic fire protection template.' },
+    ],
+  },
+
+  'Spartan Fire Protection': {
+    searchQuery: 'fire protection Houston TX',
+    googlePage: 'Not Found',
+    score: { website: 1, seo: 1, total: 2 },
+    primaryFinding: 'Spartan Fire Protection returns a 403 Forbidden error — the server is blocking all crawlers. Nothing can be audited, and Google likely cannot crawl the site either.',
+    issues: [
+      { label: '403 Forbidden server response', value: 'homepage returns 403 — no content accessible to any crawler (confirmed: browser visit)', status: 'critical' },
+      { label: 'Cannot verify any SEO elements', value: 'title, meta, schema, H1, content — all unverifiable due to server block (confirmed: browser visit)', status: 'critical' },
+      { label: 'May be invisible to Google entirely', value: 'if the server blocks our crawler, it likely blocks Googlebot too (confirmed: browser visit)', status: 'critical' },
+    ],
+    impact: {
+      intro: 'A Houston fire protection company whose server blocks all traffic. If Googlebot is blocked, this business has zero search visibility regardless of what the site contains.',
+      volume: '680', volumeNote: 'monthly searches for fire protection Houston TX metro',
+      leads: '15-25', leadsNote: 'estimated once the site is unblocked and indexed',
+      timeline: '30-60 days', timelineNote: 'depends on why the site is blocked — hosting issue, WAF, or intentional',
+    },
+    fixes: [
+      { letter: 'A', title: 'Unblock Googlebot in the server or WAF configuration', body: 'The 403 error means the server is rejecting all requests. Find the root cause — IP block, Cloudflare WAF, or htaccess rule — and whitelist Googlebot immediately.' },
+      { letter: 'B', title: 'Verify the site is crawlable and indexed', body: 'After unblocking, submit the sitemap to Google Search Console and verify that pages are being crawled and indexed.' },
+      { letter: 'C', title: 'Audit the site content once accessible', body: 'Once the site is unblockable, run a full audit to identify content gaps, schema needs, and geo-targeting opportunities for the massive Houston market.' },
+    ],
+  },
+
+  'Capitol Sprinkler and Fire Systems, LLC': {
+    searchQuery: 'fire sprinkler Austin TX',
+    googlePage: 'Not Found',
+    score: { website: 6, seo: 3, total: 9 },
+    primaryFinding: 'Capitol Sprinkler has a well-structured site with 6 detailed service pages (sprinklers, alarms, inspections, special hazards, consulting, ERRCS) and a testimonial slider — but zero schema markup, a meta description that is 450+ characters of keyword stuffing, and no blog.',
+    issues: [
+      { label: 'Zero schema markup', value: 'no JSON-LD entries found on the homepage (confirmed: browser console)', status: 'critical' },
+      { label: 'Meta description is a keyword dump', value: 'the meta description is 450+ characters containing every service keyword without a CTA or natural sentence structure (confirmed: browser console)', status: 'critical' },
+      { label: 'No blog or content marketing', value: 'no blog, resources, or articles section exists on the site (confirmed: browser snapshot)', status: 'warning' },
+      { label: 'Good service page depth', value: 'each of the 6 services has bullet-point detail with code references (confirmed: browser snapshot)', status: 'info' },
+    ],
+    impact: {
+      intro: 'A 30+ year Austin fire sprinkler contractor with NICET-certified staff and strong service content — but Google gets no schema signal and the meta description looks like a keyword dump.',
+      volume: '260', volumeNote: 'monthly searches for fire sprinkler Austin TX metro',
+      leads: '5-10', leadsNote: 'estimated once schema and geo coverage improve',
+      timeline: '30-45 days', timelineNote: 'content depth is strong — schema and meta fixes are quick wins',
+    },
+    fixes: [
+      { letter: 'A', title: 'Add LocalBusiness + Service schema markup', body: 'Capitol has real service content that schema could amplify. FireSprinkler, FireAlarm, and ERRCS service types would make Google understand exactly what this business does.' },
+      { letter: 'B', title: 'Rewrite the meta description in a natural sentence', body: 'The current meta is a keyword list. A 155-character sentence highlighting 30+ years, NICET staff, and Austin coverage would improve CTR.' },
+      { letter: 'C', title: 'Add 2-3 geo pages for surrounding Texas cities', body: 'San Marcos, Round Rock, and Georgetown are major suburbs of Austin with their own search volume. Dedicated pages would capture searches the main Austin page misses.' },
+    ],
+  },
+
+  '360 Energy Solutions LLC': {
+    searchQuery: 'commercial generator service Fort Lauderdale FL',
+    googlePage: 'Not Found',
+    score: { website: 3, seo: 2, total: 5 },
+    primaryFinding: 'A Fort Lauderdale generator company whose homepage says "GENERATOR RENTAL MIAMI" — the title, h1, and meta all target Miami, not Fort Lauderdale, so they are invisible for their own city while competing in a saturated Miami rental market.',
+    issues: [
+      { label: 'H1 targets Miami not Fort Lauderdale', value: 'homepage h1 reads "GENERATOR RENTAL MIAMI" — the target city is wrong (confirmed: browser snapshot)', status: 'critical' },
+      { label: 'Title tag says Miami', value: 'page title is "Generator Rental Miami | 360 Energy Solutions" — no Fort Lauderdale signal (confirmed: browser console)', status: 'critical' },
+      { label: 'Rental-focused, not service-focused', value: 'homepage emphasizes rentals and hurricane prep, not commercial generator maintenance contracts (confirmed: browser snapshot)', status: 'warning' },
+      { label: 'Schema and phone present', value: '1 schema entry found and (786) 348-2156 is visible (confirmed: browser console)', status: 'info' },
+    ],
+    impact: {
+      intro: 'A South Florida generator company accidentally competing in the wrong city. Every page on the site says Miami while the business serves Broward County and Fort Lauderdale.',
+      volume: '180', volumeNote: 'monthly searches for commercial generator service Fort Lauderdale FL',
+      leads: '4-8', leadsNote: 'estimated once Fort Lauderdale geo targeting is in place',
+      timeline: '30-45 days', timelineNote: 'quick fix — swap Miami for Fort Lauderdale in title, h1, and meta',
+    },
+    fixes: [
+      { letter: 'A', title: 'Change every homepage reference from Miami to Fort Lauderdale', body: 'The title tag, h1, meta description, and hero text all say Miami. Replacing these with Fort Lauderdale and Broward County instantly fixes the geographic mismatch.' },
+      { letter: 'B', title: 'Pivot copy from rentals to service contracts', body: 'The homepage is heavy on rentals. Commercial generator maintenance contracts are higher-LTV — add a dedicated service page with load banking, NFPA testing, and compliance language.' },
+      { letter: 'C', title: 'Add LocalBusiness schema with Fort Lauderdale service area', body: 'The current schema exists but target location is misaligned. Updating it with Fort Lauderdale address and Broward County service area would fix the Google business entity.' },
+    ],
+  },
+
 };
