@@ -1,8 +1,8 @@
 # Entropia Ventures
 
-> Visibility infrastructure for law firms and local businesses across the US.
+> Visibility infrastructure for SMBs across the US and Mexico.
 
-Entropia Ventures publishes free public visibility audits showing where law firms and local SMBs rank on Google, what digital infrastructure is missing, and how to fix it. Two service tiers: $1,500/month and $2,500/month.
+Entropia Ventures publishes free public visibility audits showing where law firms, clinics, venues, and local SMBs rank on Google, what digital infrastructure is missing, and how to fix it. Two service tiers: $1,500/month (Visible) and $2,500/month (Pipeline).
 
 ## Audit Registry
 

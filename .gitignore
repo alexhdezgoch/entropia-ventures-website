@@ -1,1 +1,5 @@
 .vercel
+*.bak
+*.backup
+audits/new-cards-html.txt
+audits/new-entries-js.txt
