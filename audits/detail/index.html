@@ -2,46 +2,35 @@
 <html class="light" lang="en">
 <head>
 <meta charset="utf-8"/>
+<script>
+(function() {
+  // Fast-path redirect for old outbound links of the form ?firm=slug&cat=slug —
+  // the static page for every such firm already exists at this exact path.
+  // Runs before any stylesheet/render so old links never see this page at all.
+  var qp = new URLSearchParams(window.location.search);
+  var firm = qp.get('firm') || '';
+  var cat = qp.get('cat') || '';
+  var slugRe = /^[a-z0-9-]+$/;
+  if (firm && cat && slugRe.test(firm) && slugRe.test(cat)) {
+    location.replace('/audits/' + encodeURIComponent(cat) + '/' + encodeURIComponent(firm) + '/');
+  }
+})();
+</script>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title id="page-title">Visibility Audit | Entropia Ventures</title>
 <meta name="robots" content="noindex, nofollow"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        "primary": "#00130d",
-        "primary-container": "#0f2921",
-        "on-primary": "#ffffff",
-        "on-primary-container": "#769287",
-        "secondary": "#C9A84C",
-        "secondary-dark": "#316948",
-        "surface": "#f9f9f8",
-        "surface-container-low": "#f3f4f3",
-        "surface-container": "#eeeeed",
-        "surface-container-high": "#e8e8e7",
-        "surface-container-highest": "#e2e2e2",
-        "on-surface": "#1a1c1c",
-        "on-surface-variant": "#424845",
-        "outline": "#727975",
-        "outline-variant": "#c2c8c4",
-        "error": "#ba1a1a",
-        "error-container": "#ffdad6",
-        "on-error-container": "#93000a",
-      },
-      fontFamily: {
-        "headline": ["Noto Serif"],
-        "body": ["Inter"],
-      },
-    },
-  },
-}
-</script>
+<link rel="stylesheet" href="/assets/css/site.css"/>
 <style>
+  /* Legacy light-theme fallback (fallback/no-redirect path only): this page's
+     original config defined "surface" as #f9f9f8. The shared site-wide
+     tailwind.config now defines "surface" as the dark-canon #0a1a13, which
+     leaves this page's dark-on-dark text unreadable. Restore the light value
+     for the two selectors on this page that actually resolve to "surface". */
+  .bg-surface{background-color:#f9f9f8!important}
+  .bg-surface\/90{background-color:rgba(249,249,248,.9)!important}
   body { font-family: 'Inter', sans-serif; }
   .font-serif { font-family: 'Noto Serif', serif; }
   .bezier { transition-timing-function: cubic-bezier(0.2, 0, 0, 1); }

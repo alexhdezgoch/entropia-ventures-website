@@ -1456,7 +1456,6 @@ function generateHTML(card, firmEntry, slug) {
 <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link rel="preconnect" href="https://cdn.tailwindcss.com"/>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -1473,33 +1472,7 @@ function generateHTML(card, firmEntry, slug) {
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-tailwind.config = {
-  darkMode: "class",
-  theme: {
-    extend: {
-      colors: {
-        "base": "#050f0b",
-        "base-deep": "#00130d",
-        "surface": "#0a1a13",
-        "surface-2": "#10231a",
-        "line": "#1d332a",
-        "ink": "#f9f9f8",
-        "ink-dim": "#9fb3aa",
-        "ink-faint": "#8fa39a",
-        "gold": "#C9A84C",
-        "gold-bright": "#ffe08f",
-        "gold-dim": "#8a7434"
-      },
-      fontFamily: {
-        serif: ["Noto Serif", "serif"],
-        sans: ["Inter", "sans-serif"]
-      }
-    }
-  }
-}
-</script>
+<link rel="stylesheet" href="/assets/css/site.css"/>
 <style>
   body { font-family: 'Inter', sans-serif; }
   .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
@@ -1805,20 +1778,27 @@ function updateIndexHTML(html) {
 }
 
 // ─── Update robots.txt ─────────────────────────────────────────────────────────
+// robots.txt is hand-maintained (it carries Disallow: /thankyou.html and
+// Disallow: /audits/detail/, which this script must never remove). Return the
+// committed content unchanged so re-running the generator is a no-op here.
 function updateRobotsTxt(content) {
-  return content
-    .split('\n')
-    .filter(line => line.trim() !== 'Disallow: /audits/detail/')
-    .join('\n');
+  return content;
 }
 
 // ─── Update vercel.json ────────────────────────────────────────────────────────
 function updateVercelJson(content) {
   const config = JSON.parse(content);
+  const originalCount = (config.redirects || []).length;
   config.redirects = (config.redirects || []).filter(
     r => !String(r.destination || '').includes('/audits/detail/')
   );
-  return JSON.stringify(config, null, 2);
+  if (config.redirects.length === originalCount) {
+    // Nothing to remove — return the file byte-identical so re-running the
+    // generator doesn't introduce a spurious formatting diff (e.g. dropping
+    // the trailing newline via JSON.stringify).
+    return content;
+  }
+  return JSON.stringify(config, null, 2) + '\n';
 }
 
 // ─── Update sitemap.xml ────────────────────────────────────────────────────────

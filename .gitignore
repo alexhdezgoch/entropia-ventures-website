@@ -7,3 +7,4 @@ audits/*research*.json
 audits/batch*.json
 audits/firm-list*.json
 .gstack/
+node_modules/
