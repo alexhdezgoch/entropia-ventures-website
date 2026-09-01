@@ -6,18 +6,11 @@ Entropia Ventures installs a lead conversion system in service businesses: insta
 
 ## Audit Registry
 
-- [All Audits](https://entropia.ventures/audits/) — Browse 185+ free visibility audits by category and location.
+- [All Audits](https://entropia.ventures/audits/) — Browse 440+ free visibility audits by category and location.
 
 ## Audit Categories
 
-- [Criminal Defense Audits](https://entropia.ventures/audits/criminal-defense/) — Criminal defense law firms across the US.
-- [Immigration Law Audits](https://entropia.ventures/audits/immigration/) — Immigration attorneys with bilingual content audits.
-- [Personal Injury Audits](https://entropia.ventures/audits/personal-injury/) — Personal injury law firms.
-- [Family Law Audits](https://entropia.ventures/audits/family-law/) — Divorce, custody, and family law practices.
-- [Medical Audits](https://entropia.ventures/audits/medical/) — Medical clinics, dental practices, and healthcare providers.
-- [Event Venue Audits](https://entropia.ventures/audits/venue/) — Event halls and reception venues across Houston and South Texas.
-- [Fire Protection Audits](https://entropia.ventures/audits/fire-protection/) — Fire protection companies and contractors.
-- [Generator Service Audits](https://entropia.ventures/audits/generator-service/) — Generator installation and service companies.
+The audit registry covers these categories: Criminal Defense, Immigration Law, Personal Injury, Family Law, Medical, Event Venue, Fire Protection, and Generator Service. Browse all categories and locations at [entropia.ventures/audits/](https://entropia.ventures/audits/).
 
 ## Services & Company
 

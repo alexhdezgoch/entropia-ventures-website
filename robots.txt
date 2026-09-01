@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 
-Disallow: /thankyou
+Disallow: /thankyou.html
+Disallow: /audits/detail/
 
 Sitemap: https://entropia.ventures/sitemap.xml
