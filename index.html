@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
 <title>Lead Conversion System for Service Businesses | Entropia Ventures</title>
 <meta name="description" content="Entropia Ventures installs a lead conversion system in your service business: instant response, qualification, booking, and follow-up — so paid-for leads stop dying in your inbox."/>
 <link rel="canonical" href="https://entropia.ventures/"/>
@@ -17,6 +18,9 @@
 <meta name="twitter:description" content="Entropia Ventures installs a lead conversion system in your service business: instant response, qualification, booking, and follow-up — so paid-for leads stop dying in your inbox."/>
 <meta name="twitter:image" content="https://entropia.ventures/assets/media/hero-poster.jpg"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Entropia Ventures","url":"https://entropia.ventures","description":"Entropia Ventures installs lead conversion systems for service businesses in the US and Mexico.","sameAs":["https://linkedin.com/company/entropia-ventures"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+<link rel="preconnect" href="https://cdn.tailwindcss.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -33,7 +37,7 @@
           "line": "#1d332a",
           "ink": "#f9f9f8",
           "ink-dim": "#9fb3aa",
-          "ink-faint": "#5f736a",
+          "ink-faint": "#8fa39a",
           "gold": "#C9A84C",
           "gold-bright": "#ffe08f",
           "gold-dim": "#8a7434"
@@ -233,23 +237,34 @@
   #mobile-menu { transition: opacity 0.25s ease; }
   #mobile-menu.is-open { display: flex !important; }
 
-  input:focus, textarea:focus { outline: none; }
+  input:focus, textarea:focus { outline: none; box-shadow: 0 0 0 2px rgba(201,168,76,0.6); }
+
+  :focus-visible { outline: 2px solid #C9A84C; outline-offset: 2px; }
+
+  .skip-link {
+    position: absolute; top: -40px; left: 0; z-index: 100;
+    background: #C9A84C; color: #00130d; padding: 0.75rem 1.25rem;
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 500;
+    transition: top 0.2s ease;
+  }
+  .skip-link:focus { top: 0; }
 </style>
 </head>
 <body class="bg-base text-ink font-sans selection:bg-gold/30">
+<a href="#main" class="skip-link">Skip to content</a>
 
 <!-- Nav -->
 <nav class="fixed top-0 inset-x-0 z-50 bg-base/80 backdrop-blur-xl border-b border-line">
   <div class="max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
     <a href="/" class="font-serif italic text-2xl text-ink tracking-tight">ENTROPIA</a>
     <div class="hidden md:flex items-center gap-10">
-      <a href="/services.html" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">The System</a>
-      <a href="/process.html" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">How It Works</a>
+      <a href="/services" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">The System</a>
+      <a href="/process" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">How It Works</a>
       <a href="/audits/" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Audits</a>
       <a href="/blog/" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Blog</a>
     </div>
     <div class="hidden md:block">
-      <a href="/contact.html" class="btn-primary">Get your free audit</a>
+      <a href="/contact" class="btn-primary">Get your free audit</a>
     </div>
     <button id="menu-toggle" class="md:hidden text-ink" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
       <span class="material-symbols-outlined text-3xl">menu</span>
@@ -266,20 +281,20 @@
     </button>
   </div>
   <div class="flex flex-col items-start gap-8 px-8 py-16">
-    <a href="/services.html" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">The System</a>
-    <a href="/process.html" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">How It Works</a>
+    <a href="/services" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">The System</a>
+    <a href="/process" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">How It Works</a>
     <a href="/audits/" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">Audits</a>
     <a href="/blog/" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">Blog</a>
-    <a href="/contact.html" class="mobile-link btn-primary mt-4">Get your free audit</a>
+    <a href="/contact" class="mobile-link btn-primary mt-4">Get your free audit</a>
   </div>
 </div>
 
-<main class="pt-0">
+<main class="pt-0" id="main">
 
   <!-- 1. HERO -->
   <section id="hero" class="relative min-h-[100svh] flex items-end overflow-hidden hero-bg">
     <div class="absolute inset-0 hero-grain pointer-events-none"></div>
-    <video id="hero-video" class="absolute inset-0 w-full h-full object-cover opacity-0" muted autoplay loop playsinline preload="none" poster="/assets/media/hero-poster.jpg" onerror="this.classList.add('is-hidden')">
+    <video id="hero-video" class="absolute inset-0 w-full h-full object-cover opacity-0" muted autoplay loop playsinline preload="metadata" poster="/assets/media/hero-poster.jpg" aria-hidden="true" onerror="this.classList.add('is-hidden')">
       <source src="/assets/media/hero-loop-web.mp4" type="video/mp4" onerror="this.parentElement.classList.add('is-hidden')"/>
     </video>
     <noscript><style>#hero-video{opacity:1 !important;}</style></noscript>
@@ -300,7 +315,7 @@
           You pay for leads. Then they wait, go cold, and die in an inbox. We install a system in your service business that answers in seconds, books the job, and follows up until it's won or lost.
         </p>
         <div class="reveal mt-10 flex flex-wrap items-center gap-4">
-          <a href="/contact.html" class="btn-primary">Get your free audit</a>
+          <a href="/contact" class="btn-primary">Get your free audit</a>
           <a href="#system" class="btn-secondary">See how it works</a>
         </div>
         <div class="reveal mt-16 flex flex-wrap gap-x-10 gap-y-3 border-t border-line pt-8 max-w-3xl">
@@ -554,7 +569,7 @@
         <h3 class="font-serif text-2xl md:text-3xl text-ink mb-2">Need more leads, not just better conversion?</h3>
         <p class="text-ink-dim max-w-2xl leading-relaxed">We also run visibility: local SEO, Google Business Profile, content, and local ads. It's separate, it's optional, and it works best once your conversion system stops the leaks.</p>
       </div>
-      <a href="/services.html#track-b" class="reveal text-gold text-[11px] uppercase tracking-[0.2em] font-medium hover:text-gold-bright transition-colors whitespace-nowrap">Explore visibility work →</a>
+      <a href="/services#track-b" class="reveal text-gold text-[11px] uppercase tracking-[0.2em] font-medium hover:text-gold-bright transition-colors whitespace-nowrap">Explore visibility work →</a>
     </div>
   </section>
 
@@ -590,27 +605,27 @@
           <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="space-y-2">
-              <label class="block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim">Name</label>
-              <input class="w-full bg-surface border border-line text-ink placeholder:text-ink-faint focus:border-gold px-4 py-3" name="name" placeholder="Your full name" type="text" required/>
+              <label for="index-name" class="block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim">Name</label>
+              <input id="index-name" class="w-full bg-surface border border-line text-ink placeholder:text-ink-faint focus:border-gold px-4 py-3" name="name" placeholder="Your full name" type="text" required/>
             </div>
             <div class="space-y-2">
-              <label class="block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim">Business name</label>
-              <input class="w-full bg-surface border border-line text-ink placeholder:text-ink-faint focus:border-gold px-4 py-3" name="business" placeholder="Company name" type="text" required/>
+              <label for="index-business" class="block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim">Business name</label>
+              <input id="index-business" class="w-full bg-surface border border-line text-ink placeholder:text-ink-faint focus:border-gold px-4 py-3" name="business" placeholder="Company name" type="text" required/>
             </div>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="space-y-2">
-              <label class="block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim">Email</label>
-              <input class="w-full bg-surface border border-line text-ink placeholder:text-ink-faint focus:border-gold px-4 py-3" name="email" placeholder="name@company.com" type="email" required/>
+              <label for="index-email" class="block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim">Email</label>
+              <input id="index-email" class="w-full bg-surface border border-line text-ink placeholder:text-ink-faint focus:border-gold px-4 py-3" name="email" placeholder="name@company.com" type="email" required/>
             </div>
             <div class="space-y-2">
-              <label class="block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim">Phone / WhatsApp</label>
-              <input class="w-full bg-surface border border-line text-ink placeholder:text-ink-faint focus:border-gold px-4 py-3" name="phone" placeholder="+1 (555) 000-0000" type="tel"/>
+              <label for="index-phone" class="block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim">Phone / WhatsApp</label>
+              <input id="index-phone" class="w-full bg-surface border border-line text-ink placeholder:text-ink-faint focus:border-gold px-4 py-3" name="phone" placeholder="+1 (555) 000-0000" type="tel"/>
             </div>
           </div>
           <div class="space-y-2">
-            <label class="block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim">What happens when a lead calls or fills your form today?</label>
-            <textarea class="w-full bg-surface border border-line text-ink placeholder:text-ink-faint focus:border-gold px-4 py-3 resize-none" name="message" rows="4" placeholder="Walk us through it"></textarea>
+            <label for="index-message" class="block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim">What happens when a lead calls or fills your form today?</label>
+            <textarea id="index-message" class="w-full bg-surface border border-line text-ink placeholder:text-ink-faint focus:border-gold px-4 py-3 resize-none" name="message" rows="4" placeholder="Walk us through it"></textarea>
           </div>
           <button class="btn-primary w-full" type="submit">Send it — we reply within one business day</button>
         </form>
@@ -628,11 +643,11 @@
       <p class="mt-4 text-ink-dim text-sm leading-relaxed max-w-xs">We help service businesses turn leads into revenue.</p>
     </div>
     <div class="flex flex-col gap-3">
-      <a href="/services.html" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">The System</a>
-      <a href="/process.html" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">How It Works</a>
+      <a href="/services" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">The System</a>
+      <a href="/process" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">How It Works</a>
       <a href="/audits/" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Audits</a>
       <a href="/blog/" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Blog</a>
-      <a href="/contact.html" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Contact</a>
+      <a href="/contact" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Contact</a>
     </div>
     <div class="flex flex-col gap-3 md:items-end">
       <a href="https://linkedin.com/company/entropia-ventures" target="_blank" rel="noopener" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">LinkedIn</a>
@@ -654,18 +669,25 @@
     menu.classList.add('is-open', 'flex');
     toggle.setAttribute('aria-expanded', 'true');
     document.body.style.overflow = 'hidden';
+    if (closeBtn) { closeBtn.focus(); }
   }
   function closeMenu() {
     menu.classList.add('hidden');
     menu.classList.remove('is-open', 'flex');
     toggle.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
+    if (toggle) { toggle.focus(); }
   }
   if (toggle && closeBtn && menu) {
     toggle.addEventListener('click', openMenu);
     closeBtn.addEventListener('click', closeMenu);
     menu.querySelectorAll('a').forEach(function (a) {
       a.addEventListener('click', closeMenu);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && menu.classList.contains('is-open')) {
+        closeMenu();
+      }
     });
   }
 

@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
 <title>Why SEO is Infrastructure, Not Marketing | Entropia Blog</title>
 <meta name="description" content="Most businesses treat SEO like a campaign. That's why they keep losing. The firms that win treat it like plumbing — built once, runs forever."/>
 <link rel="canonical" href="https://entropia.ventures/blog/seo-is-infrastructure/"/>
@@ -13,6 +14,9 @@
 <meta property="og:site_name" content="Entropia Ventures"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Why SEO is Infrastructure, Not Marketing","description":"Most businesses treat SEO like a campaign. That's why they keep losing. The firms that win treat it like plumbing — built once, runs forever.","url":"https://entropia.ventures/blog/seo-is-infrastructure/","publisher":{"@type":"Organization","name":"Entropia Ventures","url":"https://entropia.ventures"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+<link rel="preconnect" href="https://cdn.tailwindcss.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -29,7 +33,7 @@
           "line": "#1d332a",
           "ink": "#f9f9f8",
           "ink-dim": "#9fb3aa",
-          "ink-faint": "#5f736a",
+          "ink-faint": "#8fa39a",
           "gold": "#C9A84C",
           "gold-bright": "#ffe08f",
           "gold-dim": "#8a7434"
@@ -60,6 +64,16 @@
   #mobile-menu { transition: opacity 0.25s ease; }
   #mobile-menu.is-open { display: flex !important; }
 
+  :focus-visible { outline: 2px solid #C9A84C; outline-offset: 2px; }
+
+  .skip-link {
+    position: absolute; top: -40px; left: 0; z-index: 100;
+    background: #C9A84C; color: #00130d; padding: 0.75rem 1.25rem;
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 500;
+    transition: top 0.2s ease;
+  }
+  .skip-link:focus { top: 0; }
+
   /* Long-form reading measure */
   .article-body { max-width: 65ch; margin-left: auto; margin-right: auto; }
   .article-body p { font-size: 1.125rem; line-height: 1.9; color: #9fb3aa; margin-bottom: 1.75rem; }
@@ -79,19 +93,20 @@
 </style>
 </head>
 <body class="bg-base text-ink font-sans antialiased selection:bg-gold/30">
+<a href="#main" class="skip-link">Skip to content</a>
 
 <!-- Nav -->
 <nav class="fixed top-0 inset-x-0 z-50 bg-base/80 backdrop-blur-xl border-b border-line">
   <div class="max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
     <a href="/" class="font-serif italic text-2xl text-ink tracking-tight">ENTROPIA</a>
     <div class="hidden md:flex items-center gap-10">
-      <a href="/services.html" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">The System</a>
-      <a href="/process.html" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">How It Works</a>
+      <a href="/services" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">The System</a>
+      <a href="/process" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">How It Works</a>
       <a href="/audits/" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Audits</a>
       <a href="/blog/" class="text-[11px] uppercase tracking-[0.2em] font-medium text-gold">Blog</a>
     </div>
     <div class="hidden md:block">
-      <a href="/contact.html" class="btn-primary">Get your free audit</a>
+      <a href="/contact" class="btn-primary">Get your free audit</a>
     </div>
     <button id="menu-toggle" class="md:hidden text-ink" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
       <span class="material-symbols-outlined text-3xl">menu</span>
@@ -108,15 +123,15 @@
     </button>
   </div>
   <div class="flex flex-col items-start gap-8 px-8 py-16">
-    <a href="/services.html" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">The System</a>
-    <a href="/process.html" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">How It Works</a>
+    <a href="/services" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">The System</a>
+    <a href="/process" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">How It Works</a>
     <a href="/audits/" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">Audits</a>
     <a href="/blog/" class="mobile-link text-3xl font-serif text-gold-bright">Blog</a>
-    <a href="/contact.html" class="mobile-link btn-primary mt-4">Get your free audit</a>
+    <a href="/contact" class="mobile-link btn-primary mt-4">Get your free audit</a>
   </div>
 </div>
 
-<main class="pt-32 pb-24">
+<main class="pt-32 pb-24" id="main">
 
   <!-- Hero -->
   <header class="max-w-4xl mx-auto px-6 text-center mb-16">
@@ -200,7 +215,7 @@
     <div class="bg-surface border border-gold/40 p-12 text-center">
       <h2 class="font-serif text-3xl md:text-4xl text-ink mb-6">Ready to build <em class="italic text-gold">infrastructure?</em></h2>
       <p class="text-ink-dim mb-10 max-w-xl mx-auto leading-relaxed">We start with an audit of what you have. Then we build the system that compounds.</p>
-      <a class="btn-primary" href="/contact.html">Get your free audit</a>
+      <a class="btn-primary" href="/contact">Get your free audit</a>
     </div>
   </section>
 
@@ -214,11 +229,11 @@
       <p class="mt-4 text-ink-dim text-sm leading-relaxed max-w-xs">We help service businesses turn leads into revenue.</p>
     </div>
     <div class="flex flex-col gap-3">
-      <a href="/services.html" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">The System</a>
-      <a href="/process.html" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">How It Works</a>
+      <a href="/services" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">The System</a>
+      <a href="/process" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">How It Works</a>
       <a href="/audits/" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Audits</a>
       <a href="/blog/" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Blog</a>
-      <a href="/contact.html" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Contact</a>
+      <a href="/contact" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Contact</a>
     </div>
     <div class="flex flex-col gap-3 md:items-end">
       <a href="https://linkedin.com/company/entropia-ventures" target="_blank" rel="noopener" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">LinkedIn</a>
@@ -237,18 +252,25 @@
     menu.classList.add('is-open', 'flex');
     toggle.setAttribute('aria-expanded', 'true');
     document.body.style.overflow = 'hidden';
+    if (closeBtn) { closeBtn.focus(); }
   }
   function closeMenu() {
     menu.classList.add('hidden');
     menu.classList.remove('is-open', 'flex');
     toggle.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
+    if (toggle) { toggle.focus(); }
   }
   if (toggle && closeBtn && menu) {
     toggle.addEventListener('click', openMenu);
     closeBtn.addEventListener('click', closeMenu);
     menu.querySelectorAll('a').forEach(function (a) {
       a.addEventListener('click', closeMenu);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && menu.classList.contains('is-open')) {
+        closeMenu();
+      }
     });
   }
 })();

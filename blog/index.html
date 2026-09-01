@@ -3,15 +3,19 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Visibility Intelligence Blog | Entropia Ventures</title>
-<meta name="description" content="Insights on SEO, local search, and content strategy for law firms and SMBs. Written by Entropia Ventures — visibility infrastructure specialists."/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<title>Blog | Entropia Ventures</title>
+<meta name="description" content="Plain-language writing on lead conversion, response speed, and being found — for service businesses tired of watching leads go cold."/>
 <link rel="canonical" href="https://entropia.ventures/blog/"/>
-<meta property="og:title" content="Visibility Intelligence Blog | Entropia Ventures"/>
-<meta property="og:description" content="Insights on SEO, local search, and content strategy for law firms and SMBs."/>
+<meta property="og:title" content="Blog | Entropia Ventures"/>
+<meta property="og:description" content="Plain-language writing on lead conversion, response speed, and being found — for service businesses tired of watching leads go cold."/>
 <meta property="og:url" content="https://entropia.ventures/blog/"/>
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="Entropia Ventures"/>
 <meta name="twitter:card" content="summary_large_image"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+<link rel="preconnect" href="https://cdn.tailwindcss.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -28,7 +32,7 @@
           "line": "#1d332a",
           "ink": "#f9f9f8",
           "ink-dim": "#9fb3aa",
-          "ink-faint": "#5f736a",
+          "ink-faint": "#8fa39a",
           "gold": "#C9A84C",
           "gold-bright": "#ffe08f",
           "gold-dim": "#8a7434"
@@ -75,23 +79,34 @@
   #mobile-menu { transition: opacity 0.25s ease; }
   #mobile-menu.is-open { display: flex !important; }
 
-  input:focus { outline: none; }
+  input:focus { outline: none; box-shadow: 0 0 0 2px rgba(201,168,76,0.6); }
+
+  :focus-visible { outline: 2px solid #C9A84C; outline-offset: 2px; }
+
+  .skip-link {
+    position: absolute; top: -40px; left: 0; z-index: 100;
+    background: #C9A84C; color: #00130d; padding: 0.75rem 1.25rem;
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 500;
+    transition: top 0.2s ease;
+  }
+  .skip-link:focus { top: 0; }
 </style>
 </head>
 <body class="bg-base text-ink font-sans selection:bg-gold/30">
+<a href="#main" class="skip-link">Skip to content</a>
 
 <!-- Nav -->
 <nav class="fixed top-0 inset-x-0 z-50 bg-base/80 backdrop-blur-xl border-b border-line">
   <div class="max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
     <a href="/" class="font-serif italic text-2xl text-ink tracking-tight">ENTROPIA</a>
     <div class="hidden md:flex items-center gap-10">
-      <a href="/services.html" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">The System</a>
-      <a href="/process.html" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">How It Works</a>
+      <a href="/services" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">The System</a>
+      <a href="/process" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">How It Works</a>
       <a href="/audits/" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Audits</a>
       <a href="/blog/" class="text-[11px] uppercase tracking-[0.2em] font-medium text-gold">Blog</a>
     </div>
     <div class="hidden md:block">
-      <a href="/contact.html" class="btn-primary">Get your free audit</a>
+      <a href="/contact" class="btn-primary">Get your free audit</a>
     </div>
     <button id="menu-toggle" class="md:hidden text-ink" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
       <span class="material-symbols-outlined text-3xl">menu</span>
@@ -108,15 +123,15 @@
     </button>
   </div>
   <div class="flex flex-col items-start gap-8 px-8 py-16">
-    <a href="/services.html" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">The System</a>
-    <a href="/process.html" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">How It Works</a>
+    <a href="/services" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">The System</a>
+    <a href="/process" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">How It Works</a>
     <a href="/audits/" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">Audits</a>
     <a href="/blog/" class="mobile-link text-3xl font-serif text-gold-bright">Blog</a>
-    <a href="/contact.html" class="mobile-link btn-primary mt-4">Get your free audit</a>
+    <a href="/contact" class="mobile-link btn-primary mt-4">Get your free audit</a>
   </div>
 </div>
 
-<main class="pt-0">
+<main class="pt-0" id="main">
 
   <!-- Hero -->
   <header class="max-w-7xl mx-auto px-8 pt-40 pb-20 md:pt-48 md:pb-28">
@@ -135,7 +150,7 @@
     <a href="/blog/death-of-the-keyword/" class="group block bg-surface border border-line transition-all duration-300 hover:border-gold/40 hover:-translate-y-1">
       <div class="grid grid-cols-1 lg:grid-cols-2">
         <div class="relative aspect-[16/10] lg:aspect-auto overflow-hidden border-b lg:border-b-0 lg:border-r border-line">
-          <img alt="Monolithic dark brutalist concrete building against a moody gray sky with sharp shadows and geometric precision." class="w-full h-full object-cover grayscale opacity-60 group-hover:opacity-80 transition-opacity duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpFqLA9F02UPeGODbDX7i64BeOaNBhDCbOFTlaX-lBozVJFLATXQnEg-ldqNKVZJsZWCVn2ZkbMMeOw8mj8Wpc1ag4Q8fjKD0eAMgs_04TDPJTNFkFFblM0g6c2SNXCPgeqgDa2nrrs3fvPVzcxel2naf5mKsM9LQB0sa_qGfijhf-FM4vRNpG7aLdFHwAIEeHW_1KHZ9mc7wofzDABzsvIxivDMmbeGC96RpRsU2lNlvvECKhsAbuZ0-9aqqUFYTVVtoPeWHZVLA"/>
+          <img alt="Monolithic dark brutalist concrete building against a moody gray sky with sharp shadows and geometric precision." class="w-full h-full object-cover grayscale opacity-60 group-hover:opacity-80 transition-opacity duration-500" src="/assets/media/blog/keyword-featured.jpg" width="512" height="512" loading="lazy"/>
           <div class="absolute inset-0 bg-gradient-to-t from-base via-base/10 to-transparent lg:bg-gradient-to-r"></div>
         </div>
         <div class="p-8 md:p-12 flex flex-col justify-center">
@@ -157,7 +172,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <a href="/blog/invisible-cost-of-slow-load-times/" class="group block bg-surface border border-line transition-all duration-300 hover:border-gold/40 hover:-translate-y-1">
         <div class="relative aspect-[16/10] overflow-hidden border-b border-line">
-          <img alt="Abstract macro shot of glass and light reflections creating blurred linear patterns in deep forest green and obsidian tones." class="w-full h-full object-cover grayscale opacity-60 group-hover:opacity-80 transition-opacity duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKieSJZjFjlX6IPIKkYdbYI3TSJbA0yV3mgYnDBqzNelzjDkacWcKXYjNQ9gsBklDojWP1kKaRvoXCY-Al4U-dbbftIqFK19k-JmdeszL9svtO-z20pOGrH59ZhPCewOPwRjc1AOTQNOAwI2h6AqN0GA4ER2WxSz-K9jBUh9mqLrGcgB8zLZHDxxnaNZjMn6MchohPDjqOSC4dAlP8pzW8Oxhls0LG_-9Hku7BRPt4cLpeb-izHkwhN27qnug1wMPoTtG0C3iOTLU"/>
+          <img alt="Abstract macro shot of glass and light reflections creating blurred linear patterns in deep forest green and obsidian tones." class="w-full h-full object-cover grayscale opacity-60 group-hover:opacity-80 transition-opacity duration-500" src="/assets/media/blog/slow-load.jpg" width="512" height="512" loading="lazy"/>
           <div class="absolute inset-0 bg-gradient-to-t from-base via-base/10 to-transparent"></div>
         </div>
         <div class="p-8">
@@ -173,7 +188,7 @@
 
       <a href="/blog/seo-is-infrastructure/" class="group block bg-surface border border-line transition-all duration-300 hover:border-gold/40 hover:-translate-y-1">
         <div class="relative aspect-[16/10] overflow-hidden border-b border-line">
-          <img alt="Minimalist interior of a glass-walled office building with clean lines, soft natural lighting, and deep green indoor plants." class="w-full h-full object-cover grayscale opacity-60 group-hover:opacity-80 transition-opacity duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGf0OQ2cSUGZmLdxHat5K7tyYZKE7IFpKSmzy9IcjKD0vd3AIF9xp6shtWwOC7lWJuqHluh7ppzh1evrv1ohmGDPVAEnRjgfLb29-bGrxDui1Y4KHVS4Ym_ddikEbN0q-1cy4J1mIaHuCRxqSIl8pnYmxNZdQPBcU_zAm_pTqcRxuxgBGCTnNbxiz1MxZVRKMihRIEEYRu9UqPGgjHCbxqBqWqPQcFN-JnD6vagRKBWdRHV3rHcpmzCkVFMeMpayzY484gpYk7hlw"/>
+          <img alt="Minimalist interior of a glass-walled office building with clean lines, soft natural lighting, and deep green indoor plants." class="w-full h-full object-cover grayscale opacity-60 group-hover:opacity-80 transition-opacity duration-500" src="/assets/media/blog/seo-infrastructure.jpg" width="512" height="512" loading="lazy"/>
           <div class="absolute inset-0 bg-gradient-to-t from-base via-base/10 to-transparent"></div>
         </div>
         <div class="p-8">
@@ -197,7 +212,7 @@
         <p class="text-ink-dim max-w-md leading-relaxed">Get bi-weekly insights on visibility infrastructure and semantic search delivered directly to your desk.</p>
       </div>
       <form class="flex flex-col sm:flex-row gap-4">
-        <input class="flex-1 bg-surface border border-line text-ink placeholder:text-ink-faint focus:border-gold px-5 py-3.5" placeholder="Email address" type="email"/>
+        <input class="flex-1 bg-surface border border-line text-ink placeholder:text-ink-faint focus:border-gold px-5 py-3.5" placeholder="Email address" type="email" aria-label="Email address"/>
         <button class="btn-primary" type="submit">Subscribe</button>
       </form>
     </div>
@@ -213,11 +228,11 @@
       <p class="mt-4 text-ink-dim text-sm leading-relaxed max-w-xs">We help service businesses turn leads into revenue.</p>
     </div>
     <div class="flex flex-col gap-3">
-      <a href="/services.html" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">The System</a>
-      <a href="/process.html" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">How It Works</a>
+      <a href="/services" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">The System</a>
+      <a href="/process" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">How It Works</a>
       <a href="/audits/" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Audits</a>
       <a href="/blog/" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Blog</a>
-      <a href="/contact.html" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Contact</a>
+      <a href="/contact" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Contact</a>
     </div>
     <div class="flex flex-col gap-3 md:items-end">
       <a href="https://linkedin.com/company/entropia-ventures" target="_blank" rel="noopener" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">LinkedIn</a>
@@ -236,18 +251,25 @@
     menu.classList.add('is-open', 'flex');
     toggle.setAttribute('aria-expanded', 'true');
     document.body.style.overflow = 'hidden';
+    if (closeBtn) { closeBtn.focus(); }
   }
   function closeMenu() {
     menu.classList.add('hidden');
     menu.classList.remove('is-open', 'flex');
     toggle.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
+    if (toggle) { toggle.focus(); }
   }
   if (toggle && closeBtn && menu) {
     toggle.addEventListener('click', openMenu);
     closeBtn.addEventListener('click', closeMenu);
     menu.querySelectorAll('a').forEach(function (a) {
       a.addEventListener('click', closeMenu);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && menu.classList.contains('is-open')) {
+        closeMenu();
+      }
     });
   }
 })();
