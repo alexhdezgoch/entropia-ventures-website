@@ -3,3 +3,6 @@
 *.backup
 audits/new-cards-html.txt
 audits/new-entries-js.txt
+audits/*research*.json
+audits/batch*.json
+audits/firm-list*.json
