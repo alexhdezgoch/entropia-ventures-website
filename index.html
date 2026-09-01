@@ -99,27 +99,115 @@
   .vertical-card-3 { background-image: url('/assets/media/vertical-clinic.jpg'), radial-gradient(circle at bottom right, rgba(201,168,76,0.13), transparent 55%), linear-gradient(160deg, #0d2318 0%, #00130d 100%); background-size: cover; background-position: center; }
   .vertical-card-4 { background-image: url('/assets/media/vertical-hospitality.jpg'), radial-gradient(circle at bottom left, rgba(201,168,76,0.12), transparent 55%), linear-gradient(200deg, #10231a 0%, #050f0b 100%); background-size: cover; background-position: center; }
 
-  .pipeline-chip {
-    padding: 0.7rem 1.1rem;
-    background: #0a1a13;
-    border: 1px solid #1d332a;
-    color: #9fb3aa;
-    font-size: 0.8125rem;
+  /* ---- Living pipeline (#system) ---- */
+  .pipeline-track { position: relative; height: 104px; }
+  .pipeline-hairline { position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: #1d332a; }
+  .pipeline-pulse {
+    position: absolute; top: 50%; left: 0; width: 10px; height: 10px; border-radius: 50%;
+    background: #ffe08f;
+    box-shadow: 0 0 12px 2px rgba(201,168,76,.8), 0 0 30px 10px rgba(201,168,76,.28);
+    pointer-events: none; will-change: transform; display: none;
+  }
+  .pipeline-trail {
+    position: absolute; top: 50%; left: 0; width: 0; height: 2px;
+    background: linear-gradient(to right, transparent, #C9A84C 90%);
+    transform-origin: left center;
+    opacity: 0; pointer-events: none; will-change: transform; display: none;
+  }
+  .pipeline-node-item { position: absolute; top: 50%; width: 0; height: 0; }
+  .pipeline-node {
+    position: absolute; top: 0; left: 0; transform: translate(-50%, -50%);
+    display: block; width: 8px; height: 8px; border-radius: 50%;
+    background: #C9A84C; border: 1px solid #C9A84C;
+    transition: background-color .6s cubic-bezier(0.16,1,0.3,1), border-color .6s cubic-bezier(0.16,1,0.3,1), box-shadow .6s ease;
+  }
+  .pipeline-ring {
+    position: absolute; top: 0; left: 0; transform: translate(-50%, -50%);
+    width: 8px; height: 8px; border-radius: 50%; border: 1px solid #C9A84C;
+    opacity: 0; pointer-events: none; display: none;
+  }
+  .pipeline-label {
+    position: absolute; left: 0; transform: translateX(-50%);
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 500;
+    color: #f9f9f8; white-space: nowrap; transition: color .15s ease;
+  }
+  .pipeline-label-above { bottom: 16px; }
+  .pipeline-label-below { top: 16px; }
+  .pipeline-return { position: relative; margin-top: 2.25rem; height: 76px; display: flex; align-items: flex-end; justify-content: center; }
+  .pipeline-return-svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .pipeline-return-path { stroke: #1d332a; stroke-width: 1; fill: none; transition: stroke .5s ease; }
+  .pipeline-return-path.pipeline-return-path-active { stroke: rgba(201,168,76,.55); }
+  .pipeline-loop-chip, .pipeline-loop-chip-v {
+    position: relative; z-index: 1;
+    padding: 0.7rem 1.4rem; font-size: 0.8125rem; font-weight: 500;
+    color: #ffe08f; background: #0a1a13; border: 1px solid #C9A84C;
     white-space: nowrap;
-    position: relative;
-    z-index: 1;
-    transition: border-color 0.4s ease, color 0.4s ease, background 0.4s ease;
+    transition: color .4s ease, border-color .4s ease, box-shadow .4s ease;
   }
-  .pipeline-chip-active {
-    border-color: rgba(201,168,76,0.5);
-    color: #f9f9f8;
-    background: #10231a;
+  .pipeline-loop-chip.is-active, .pipeline-loop-chip-v.is-active {
+    border-color: #ffe08f; box-shadow: 0 0 20px 4px rgba(201,168,76,.25);
   }
-  .pipeline-chip-gold {
-    border-color: rgba(201,168,76,0.55);
-    background: rgba(201,168,76,0.08);
-    color: #ffe08f;
-    font-weight: 500;
+
+  /* Mobile vertical variant */
+  .pipeline-track-v { position: relative; height: 460px; }
+  .pipeline-hairline-v { position: absolute; left: 8px; top: 0; bottom: 0; width: 1px; background: #1d332a; transform: translateX(-50%); }
+  .pipeline-pulse-v {
+    position: absolute; top: 0; left: 8px; width: 10px; height: 10px; border-radius: 50%;
+    background: #ffe08f;
+    box-shadow: 0 0 12px 2px rgba(201,168,76,.8), 0 0 30px 10px rgba(201,168,76,.28);
+    pointer-events: none; will-change: transform; display: none;
+  }
+  .pipeline-trail-v {
+    position: absolute; top: 0; left: 8px; width: 2px; height: 0;
+    background: linear-gradient(to bottom, transparent, #C9A84C 90%);
+    transform-origin: top center;
+    opacity: 0; pointer-events: none; will-change: transform; display: none;
+  }
+  .pipeline-node-item-v { position: absolute; left: 8px; width: 0; height: 0; }
+  .pipeline-node-v {
+    position: absolute; top: 0; left: 0; transform: translate(-50%, -50%);
+    display: block; width: 8px; height: 8px; border-radius: 50%;
+    background: #C9A84C; border: 1px solid #C9A84C;
+    transition: background-color .6s cubic-bezier(0.16,1,0.3,1), border-color .6s cubic-bezier(0.16,1,0.3,1), box-shadow .6s ease;
+  }
+  .pipeline-ring-v {
+    position: absolute; top: 0; left: 0; transform: translate(-50%, -50%);
+    width: 8px; height: 8px; border-radius: 50%; border: 1px solid #C9A84C;
+    opacity: 0; pointer-events: none; display: none;
+  }
+  .pipeline-label-v {
+    position: absolute; top: 0; left: 22px; transform: translateY(-50%);
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 500;
+    color: #f9f9f8; white-space: nowrap; transition: color .15s ease;
+  }
+
+  /* JS enables the live animation: dim everything to resting baseline first */
+  #pipeline.pipeline-live .pipeline-node,
+  #pipeline.pipeline-live .pipeline-node-v { background: #050f0b; border-color: #1d332a; box-shadow: none; }
+  #pipeline.pipeline-live .pipeline-label,
+  #pipeline.pipeline-live .pipeline-label-v { color: #5f736a; }
+  #pipeline.pipeline-live .pipeline-loop-chip,
+  #pipeline.pipeline-live .pipeline-loop-chip-v { color: #8a7434; border-color: #8a7434; }
+  #pipeline.pipeline-live .pipeline-pulse,
+  #pipeline.pipeline-live .pipeline-pulse-v,
+  #pipeline.pipeline-live .pipeline-trail,
+  #pipeline.pipeline-live .pipeline-trail-v,
+  #pipeline.pipeline-live .pipeline-ring,
+  #pipeline.pipeline-live .pipeline-ring-v { display: block; }
+
+  #pipeline.pipeline-live .pipeline-node-item.is-lit .pipeline-node,
+  #pipeline.pipeline-live .pipeline-node-item-v.is-lit .pipeline-node-v {
+    background: #C9A84C; border-color: #C9A84C; box-shadow: 0 0 10px 2px rgba(201,168,76,.55);
+  }
+  #pipeline.pipeline-live .pipeline-node-item.is-lit .pipeline-label,
+  #pipeline.pipeline-live .pipeline-node-item-v.is-lit .pipeline-label-v { color: #f9f9f8; }
+  #pipeline.pipeline-live .pipeline-node-item.is-igniting .pipeline-ring,
+  #pipeline.pipeline-live .pipeline-node-item-v.is-igniting .pipeline-ring-v {
+    animation: pipeline-ring-pop .6s ease-out forwards;
+  }
+  @keyframes pipeline-ring-pop {
+    0% { width: 8px; height: 8px; opacity: .6; }
+    100% { width: 36px; height: 36px; opacity: 0; }
   }
 
   .btn-primary {
@@ -266,21 +354,92 @@
       <h2 class="reveal font-serif text-4xl md:text-6xl leading-tight text-ink max-w-3xl">From first touch to won or lost.</h2>
       <p class="reveal mt-6 max-w-2xl text-lg text-ink-dim font-light leading-relaxed">One system watches every lead from the moment it arrives to the moment it closes. Nothing depends on someone remembering.</p>
 
-      <div id="pipeline" class="reveal mt-16 relative flex flex-wrap items-center gap-3 justify-center md:justify-start">
-        <div class="pipeline-chip">Lead arrives</div>
-        <span class="text-ink-faint hidden md:inline" aria-hidden="true">→</span>
-        <div class="pipeline-chip">Instant response</div>
-        <span class="text-ink-faint hidden md:inline" aria-hidden="true">→</span>
-        <div class="pipeline-chip">Qualified</div>
-        <span class="text-ink-faint hidden md:inline" aria-hidden="true">→</span>
-        <div class="pipeline-chip">Owner assigned</div>
-        <span class="text-ink-faint hidden md:inline" aria-hidden="true">→</span>
-        <div class="pipeline-chip">Booked</div>
-        <span class="text-ink-faint hidden md:inline" aria-hidden="true">→</span>
-        <div class="pipeline-chip">Quote sent</div>
-        <span class="text-ink-faint hidden md:inline" aria-hidden="true">→</span>
-        <div class="pipeline-chip">Won / Lost / Nurture</div>
-        <div class="pipeline-chip pipeline-chip-gold">→ Find the leak, fix it, repeat</div>
+      <div id="pipeline" class="reveal mt-16 relative">
+        <!-- Desktop / large screens: horizontal track -->
+        <div class="pipeline-desktop hidden lg:block relative">
+          <div class="pipeline-track">
+            <span class="pipeline-hairline" aria-hidden="true"></span>
+            <span class="pipeline-trail" aria-hidden="true"></span>
+            <span class="pipeline-pulse" aria-hidden="true"></span>
+
+            <div class="pipeline-node-item" style="left:0%">
+              <span class="pipeline-label pipeline-label-above">Lead arrives</span>
+              <span class="pipeline-node"><span class="pipeline-ring" aria-hidden="true"></span></span>
+            </div>
+            <div class="pipeline-node-item" style="left:16.6667%">
+              <span class="pipeline-label pipeline-label-below">Instant response</span>
+              <span class="pipeline-node"><span class="pipeline-ring" aria-hidden="true"></span></span>
+            </div>
+            <div class="pipeline-node-item" style="left:33.3333%">
+              <span class="pipeline-label pipeline-label-above">Qualified</span>
+              <span class="pipeline-node"><span class="pipeline-ring" aria-hidden="true"></span></span>
+            </div>
+            <div class="pipeline-node-item" style="left:50%">
+              <span class="pipeline-label pipeline-label-below">Owner assigned</span>
+              <span class="pipeline-node"><span class="pipeline-ring" aria-hidden="true"></span></span>
+            </div>
+            <div class="pipeline-node-item" style="left:66.6667%">
+              <span class="pipeline-label pipeline-label-above">Booked</span>
+              <span class="pipeline-node"><span class="pipeline-ring" aria-hidden="true"></span></span>
+            </div>
+            <div class="pipeline-node-item" style="left:83.3333%">
+              <span class="pipeline-label pipeline-label-below">Quote sent</span>
+              <span class="pipeline-node"><span class="pipeline-ring" aria-hidden="true"></span></span>
+            </div>
+            <div class="pipeline-node-item" style="left:100%">
+              <span class="pipeline-label pipeline-label-above">Won / Lost / Nurture</span>
+              <span class="pipeline-node"><span class="pipeline-ring" aria-hidden="true"></span></span>
+            </div>
+          </div>
+
+          <div class="pipeline-return">
+            <svg class="pipeline-return-svg" viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true">
+              <path class="pipeline-return-path" d="M 1000 0 C 1000 52 0 52 0 0"></path>
+            </svg>
+            <div class="pipeline-loop-chip">→ Find the leak, fix it, repeat</div>
+          </div>
+        </div>
+
+        <!-- Mobile / tablet: vertical track -->
+        <div class="pipeline-mobile lg:hidden relative">
+          <div class="pipeline-track-v">
+            <span class="pipeline-hairline-v" aria-hidden="true"></span>
+            <span class="pipeline-trail-v" aria-hidden="true"></span>
+            <span class="pipeline-pulse-v" aria-hidden="true"></span>
+
+            <div class="pipeline-node-item-v" style="top:0%">
+              <span class="pipeline-node-v"><span class="pipeline-ring-v" aria-hidden="true"></span></span>
+              <span class="pipeline-label-v">Lead arrives</span>
+            </div>
+            <div class="pipeline-node-item-v" style="top:16.6667%">
+              <span class="pipeline-node-v"><span class="pipeline-ring-v" aria-hidden="true"></span></span>
+              <span class="pipeline-label-v">Instant response</span>
+            </div>
+            <div class="pipeline-node-item-v" style="top:33.3333%">
+              <span class="pipeline-node-v"><span class="pipeline-ring-v" aria-hidden="true"></span></span>
+              <span class="pipeline-label-v">Qualified</span>
+            </div>
+            <div class="pipeline-node-item-v" style="top:50%">
+              <span class="pipeline-node-v"><span class="pipeline-ring-v" aria-hidden="true"></span></span>
+              <span class="pipeline-label-v">Owner assigned</span>
+            </div>
+            <div class="pipeline-node-item-v" style="top:66.6667%">
+              <span class="pipeline-node-v"><span class="pipeline-ring-v" aria-hidden="true"></span></span>
+              <span class="pipeline-label-v">Booked</span>
+            </div>
+            <div class="pipeline-node-item-v" style="top:83.3333%">
+              <span class="pipeline-node-v"><span class="pipeline-ring-v" aria-hidden="true"></span></span>
+              <span class="pipeline-label-v">Quote sent</span>
+            </div>
+            <div class="pipeline-node-item-v" style="top:100%">
+              <span class="pipeline-node-v"><span class="pipeline-ring-v" aria-hidden="true"></span></span>
+              <span class="pipeline-label-v">Won / Lost / Nurture</span>
+            </div>
+          </div>
+          <div class="mt-12 flex justify-center">
+            <div class="pipeline-loop-chip-v">→ Find the leak, fix it, repeat</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -575,20 +734,147 @@
     });
   }
 
-  // Pipeline chips light up sequentially on scroll
-  var chips = document.querySelectorAll('#pipeline .pipeline-chip');
-  if (chips.length) {
-    ScrollTrigger.create({
-      trigger: '#pipeline',
-      start: 'top 75%',
-      once: true,
-      onEnter: function () {
-        chips.forEach(function (chip, i) {
-          gsap.delayedCall(i * 0.12, function () {
-            chip.classList.add('pipeline-chip-active');
-          });
+  // Living pipeline animation (#system)
+  var pipeline = document.getElementById('pipeline');
+  if (pipeline) {
+    pipeline.classList.add('pipeline-live');
+
+    var setupPipeline = function (isDesktop) {
+      var suffix = isDesktop ? '' : '-v';
+      var scope = pipeline.querySelector(isDesktop ? '.pipeline-desktop' : '.pipeline-mobile');
+      if (!scope) { return { cleanup: function () {} }; }
+
+      var track = scope.querySelector(isDesktop ? '.pipeline-track' : '.pipeline-track-v');
+      var items = Array.prototype.slice.call(scope.querySelectorAll('.pipeline-node-item' + suffix));
+      var pulseEl = scope.querySelector('.pipeline-pulse' + suffix);
+      var trailEl = scope.querySelector('.pipeline-trail' + suffix);
+      var chipEl = scope.querySelector(isDesktop ? '.pipeline-loop-chip' : '.pipeline-loop-chip-v');
+      var returnPathEl = scope.querySelector('.pipeline-return-path');
+      var axis = isDesktop ? 'x' : 'y';
+      var TRAVEL = 1.4, DWELL = 0.35;
+
+      function resetVisuals() {
+        items.forEach(function (item) {
+          item.classList.remove('is-lit', 'is-igniting');
+          var dot = item.querySelector('.pipeline-node' + suffix);
+          if (dot) { gsap.set(dot, { scale: 1 }); }
+        });
+        if (chipEl) { chipEl.classList.remove('is-active'); }
+        if (returnPathEl) { returnPathEl.classList.remove('pipeline-return-path-active'); }
+        var base = { xPercent: -50, yPercent: -50, opacity: 1 };
+        base[axis] = 0;
+        gsap.set(pulseEl, base);
+        var trailReset = { opacity: 0 };
+        if (isDesktop) { trailReset.yPercent = -50; trailReset.scaleX = 0; }
+        else { trailReset.xPercent = -50; trailReset.scaleY = 0; }
+        gsap.set(trailEl, trailReset);
+      }
+      resetVisuals();
+
+      function measure(frac) {
+        var size = isDesktop ? track.offsetWidth : track.offsetHeight;
+        return frac * size;
+      }
+
+      function igniteNode(item, isLast) {
+        item.classList.add('is-lit', 'is-igniting');
+        if (isLast) {
+          var dot = item.querySelector('.pipeline-node' + suffix);
+          if (dot) {
+            gsap.timeline()
+              .to(dot, { scale: 1.6, duration: 0.25, ease: 'expo.out' })
+              .to(dot, { scale: 1, duration: 0.35, ease: 'power2.inOut' });
+          }
+        }
+      }
+
+      function buildTimeline() {
+        resetVisuals();
+        var tl = gsap.timeline();
+        items.forEach(function (item, i) {
+          if (i > 0) {
+            var prevPx = measure((i - 1) / (items.length - 1));
+            var px = measure(i / (items.length - 1));
+            var segLen = px - prevPx;
+            var trailLen = Math.min(120, segLen);
+
+            var setVars = { opacity: .9 };
+            if (isDesktop) { setVars.left = prevPx; setVars.width = trailLen; setVars.scaleX = 0; }
+            else { setVars.top = prevPx; setVars.height = trailLen; setVars.scaleY = 0; }
+            tl.set(trailEl, setVars);
+
+            var pv = { duration: TRAVEL, ease: 'power2.inOut' };
+            pv[axis] = px;
+            tl.to(pulseEl, pv);
+
+            var tv = { duration: TRAVEL, ease: 'power2.inOut' };
+            tv[isDesktop ? 'scaleX' : 'scaleY'] = 1;
+            tl.to(trailEl, tv, '<');
+            tl.to(trailEl, { opacity: 0, duration: 0.2, ease: 'power1.out' });
+          }
+          tl.call(igniteNode, [item, i === items.length - 1]);
+          tl.to({}, { duration: DWELL });
+        });
+
+        tl.call(function () {
+          if (returnPathEl) { returnPathEl.classList.add('pipeline-return-path-active'); }
+          gsap.to(pulseEl, { opacity: 0, duration: 0.35, ease: 'power2.inOut' });
+          gsap.to(trailEl, { opacity: 0, duration: 0.35, ease: 'power2.inOut' });
+        });
+        tl.to({}, { duration: 0.35 });
+        tl.call(function () { if (chipEl) { chipEl.classList.add('is-active'); } });
+        tl.to({}, { duration: 0.8 });
+        tl.call(function () {
+          if (chipEl) { chipEl.classList.remove('is-active'); }
+          if (returnPathEl) { returnPathEl.classList.remove('pipeline-return-path-active'); }
+        });
+        tl.to({}, { duration: 0.4 });
+        tl.call(function () {
+          items.forEach(function (item) { item.classList.remove('is-lit', 'is-igniting'); });
+        });
+        tl.to({}, { duration: 0.6 });
+        return tl;
+      }
+
+      var current = null;
+      function schedule() {
+        var tl = buildTimeline();
+        current = tl;
+        tl.eventCallback('onComplete', function () {
+          current = gsap.delayedCall(gsap.utils.random(0.3, 1), schedule);
         });
       }
+      function enter() { if (!current) { schedule(); } else { current.play(); } }
+      function leave() { if (current) { current.pause(); } }
+
+      var st = ScrollTrigger.create({
+        trigger: '#system',
+        start: 'top 70%',
+        end: 'bottom top',
+        onEnter: enter,
+        onEnterBack: enter,
+        onLeave: leave,
+        onLeaveBack: leave
+      });
+
+      return {
+        cleanup: function () {
+          st.kill();
+          if (current) { current.kill(); }
+          items.forEach(function (item) { item.classList.remove('is-lit', 'is-igniting'); });
+          current = null;
+        }
+      };
+    };
+
+    var pipelineMM = gsap.matchMedia();
+    pipelineMM.add('(min-width: 1024px)', function () {
+      var ctx = setupPipeline(true);
+      return function () { ctx.cleanup(); };
+    });
+    pipelineMM.add('(max-width: 1023px)', function () {
+      var ctx = setupPipeline(false);
+      return function () { ctx.cleanup(); };
     });
   }
 })();
