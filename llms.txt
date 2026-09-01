@@ -1,8 +1,8 @@
 # Entropia Ventures
 
-> Visibility infrastructure for SMBs across the US and Mexico.
+> Lead conversion systems for service businesses in the US and Mexico.
 
-Entropia Ventures publishes free public visibility audits showing where law firms, clinics, venues, and local SMBs rank on Google, what digital infrastructure is missing, and how to fix it. Two service tiers: $1,500/month (Visible) and $2,500/month (Pipeline).
+Entropia Ventures installs a lead conversion system in service businesses: instant response, qualification, routing, booking, follow-up, deal tracking, and monthly improvement (Track A). Visibility work — SEO, Google Business Profile, content, and local ads — is a separate, optional add-on (Track B). Entropia Ventures also publishes free public audits showing how businesses currently handle inbound leads and where they leak.
 
 ## Audit Registry
 
@@ -21,10 +21,10 @@ Entropia Ventures publishes free public visibility audits showing where law firm
 
 ## Services & Company
 
-- [Services](https://entropia.ventures/services.html) — The Visibility Machine: full-stack SEO and content infrastructure starting at $1,500/month.
-- [Process](https://entropia.ventures/process.html) — How Entropia Ventures conducts visibility audits.
-- [Blog](https://entropia.ventures/blog/) — Visibility intelligence articles for SMBs and law firms.
-- [Contact](https://entropia.ventures/contact.html) — Request a free visibility audit.
+- [Services](https://entropia.ventures/services.html) — The lead conversion system: instant response, qualification, routing, booking, follow-up, and deal tracking, plus visibility work as a separate add-on.
+- [Process](https://entropia.ventures/process.html) — How Entropia Ventures audits, installs, and improves a lead conversion system.
+- [Blog](https://entropia.ventures/blog/) — Articles on lead conversion and visibility for service businesses.
+- [Contact](https://entropia.ventures/contact.html) — Request a free lead conversion audit.
 
 ## Blog Articles
 
