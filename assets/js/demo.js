@@ -24,6 +24,7 @@
   var sourceChipsEl = document.getElementById('demo-source-chips');
   var nameInput = document.getElementById('demo-name-input');
   var startBtn = document.getElementById('demo-start-btn');
+  var phoneCompanyEl = document.getElementById('demo-phone-company');
   var railList = document.getElementById('demo-rail-list');
   var mobileSteps = document.getElementById('demo-mobile-steps');
   var timerWrap = document.getElementById('demo-timer-wrap');
@@ -45,7 +46,7 @@
 
   var required = [
     setupEl, shellEl, tradeChipsEl, sourceChipsEl, nameInput, startBtn,
-    railList, mobileSteps, timerWrap, timerValue, messagesEl, chipRowEl,
+    phoneCompanyEl, railList, mobileSteps, timerWrap, timerValue, messagesEl, chipRowEl,
     leadCardEl, checklistEl, qualifiedStampEl, assignmentEl, statusBadgeEl,
     calendarEl, followupEl, pipelineEl, reportEl, endingEl, endingLinesEl,
     endingAgainBtn
@@ -220,24 +221,31 @@
   }
 
   // ---- dashboard ----
+  function showPlaceholder(container) {
+    clear(container);
+    var label = container.getAttribute('data-placeholder');
+    container.classList.add('demo-slot-empty');
+    if (label) { container.appendChild(el('p', 'demo-slot-empty-text', label)); }
+  }
+  function clearPlaceholder(container) {
+    container.classList.remove('demo-slot-empty');
+  }
+
   function resetDashboard() {
-    clear(leadCardEl);
+    showPlaceholder(leadCardEl);
     clear(checklistEl);
     qualifiedStampEl.hidden = true;
-    assignmentEl.hidden = true;
-    clear(assignmentEl);
+    showPlaceholder(assignmentEl);
     statusBadgeEl.hidden = true;
-    calendarEl.hidden = true;
-    clear(calendarEl);
+    showPlaceholder(calendarEl);
     followupEl.hidden = true;
     clear(followupEl);
-    pipelineEl.hidden = true;
-    clear(pipelineEl);
-    reportEl.hidden = true;
-    clear(reportEl);
+    showPlaceholder(pipelineEl);
+    showPlaceholder(reportEl);
   }
 
   function showLeadCard(name, source) {
+    clearPlaceholder(leadCardEl);
     clear(leadCardEl);
     var title = el('p', 'demo-lead-name');
     title.appendChild(document.createTextNode('New lead — '));
@@ -280,6 +288,7 @@
   }
 
   function showAssignment(trade) {
+    clearPlaceholder(assignmentEl);
     clear(assignmentEl);
     assignmentEl.appendChild(el('p', null, 'Assigned: ' + trade.teamMember + ' · responded in 0:07'));
     assignmentEl.hidden = false;
@@ -288,12 +297,14 @@
   }
 
   function showCalendarPending(trade) {
+    clearPlaceholder(calendarEl);
     clear(calendarEl);
     var label = el('p', 'demo-calendar-label', trade.slotType);
     calendarEl.appendChild(label);
     calendarEl.hidden = false;
   }
   function showCalendarBooked(trade, slot) {
+    clearPlaceholder(calendarEl);
     clear(calendarEl);
     var label = el('p', 'demo-calendar-label', trade.slotType);
     var value = el('p', 'demo-calendar-slot');
@@ -326,6 +337,7 @@
   }
 
   function showPipeline(trade, name) {
+    clearPlaceholder(pipelineEl);
     clear(pipelineEl);
     var board = el('div', 'demo-pipeline-board');
     trade.pipelineColumns.forEach(function (col) {
@@ -350,6 +362,7 @@
   }
 
   function showNurturePipeline(trade, name) {
+    clearPlaceholder(pipelineEl);
     clear(pipelineEl);
     var board = el('div', 'demo-pipeline-board demo-pipeline-board-nurture');
     var newCol = el('div', 'demo-pipeline-col');
@@ -370,6 +383,7 @@
   }
 
   function showReport(trade) {
+    clearPlaceholder(reportEl);
     clear(reportEl);
     reportEl.appendChild(el('p', 'demo-report-line', trade.reportLine));
     var chart = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
@@ -417,6 +431,7 @@
     clearPending();
     session = newSession(tradeId, sourceId, name);
     writeLastTrade(tradeId);
+    phoneCompanyEl.textContent = session.trade.company;
 
     setupEl.hidden = true;
     shellEl.hidden = false;

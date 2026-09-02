@@ -30,9 +30,9 @@
   .demo-rail-item { @apply border-l-2 border-line pl-4 py-1 transition-colors; }
   .demo-rail-item.is-active { @apply border-gold; }
   .demo-rail-item.is-complete { @apply border-gold/40; }
-  .demo-rail-num { @apply block font-serif text-lg text-gold/70 leading-none mb-1; }
-  .demo-rail-item.is-active .demo-rail-num,
-  .demo-rail-item.is-complete .demo-rail-num { @apply text-gold; }
+  .demo-rail-num { @apply block font-serif text-lg text-ink-faint leading-none mb-1; }
+  .demo-rail-item.is-complete .demo-rail-num { @apply text-ink-dim; }
+  .demo-rail-item.is-active .demo-rail-num { @apply text-gold; }
   .demo-rail-heading { @apply text-sm text-ink-faint leading-snug; }
   .demo-rail-item.is-active .demo-rail-heading,
   .demo-rail-item.is-complete .demo-rail-heading { @apply text-ink-dim; }
@@ -47,14 +47,21 @@
 
   /* ---- Phone frame ---- */
   .demo-phone-frame {
-    @apply bg-surface border border-line mx-auto w-full max-w-sm flex flex-col overflow-hidden;
-    aspect-ratio: 9 / 17;
+    @apply border border-line mx-auto w-full flex flex-col overflow-hidden;
+    max-width: 420px;
+    min-height: 520px;
   }
+  @media (min-width: 1024px) {
+    .demo-phone-frame { width: 360px; max-width: 360px; min-height: 640px; }
+  }
+  .demo-phone-bezel { @apply bg-base-deep flex flex-col flex-1 overflow-hidden; margin: 6px; }
+  .demo-phone-status { @apply px-4 py-3 border-b border-line text-center flex-shrink-0; }
+  .demo-phone-company { @apply text-[11px] uppercase tracking-[0.15em] text-ink-faint font-medium; }
   .demo-timer-wrap { @apply px-6 pt-8 text-center; }
-  .demo-messages { @apply flex-1 overflow-y-auto px-4 py-4 flex flex-col gap-3 min-h-0; }
-  .demo-bubble { @apply max-w-[80%] px-4 py-2.5 text-sm leading-relaxed; }
+  .demo-messages { @apply flex-1 overflow-y-auto px-4 py-4 flex flex-col gap-4 min-h-0; }
+  .demo-bubble { @apply max-w-[80%] px-4 py-2.5 text-[15px] leading-relaxed; }
   .demo-bubble-system { @apply self-start bg-surface-2 text-ink; }
-  .demo-bubble-customer { @apply self-end border border-gold/40 text-ink; }
+  .demo-bubble-customer { @apply self-end border border-gold/50 bg-gold/5 text-ink; }
   .demo-typing { @apply flex items-center gap-1 py-3 px-4 self-start; }
   .demo-typing-dot {
     @apply w-1.5 h-1.5 rounded-full bg-ink-faint inline-block;
@@ -66,16 +73,26 @@
     0%, 80%, 100% { opacity: 0.3; }
     40% { opacity: 1; }
   }
-  .demo-chip-row { @apply flex flex-wrap gap-2 px-4 py-4 border-t border-line; }
+  .demo-chip-row { @apply flex flex-wrap gap-2 px-4 py-4 border-t border-line flex-shrink-0; }
   .demo-chip {
-    @apply border border-line bg-base-deep text-ink text-[11px] uppercase tracking-[0.15em] font-medium px-3 py-2 transition-colors;
+    @apply inline-flex items-center min-h-[40px] border border-line bg-base-deep text-ink text-[11px] uppercase tracking-[0.15em] font-medium px-3 py-2 transition-colors;
   }
-  .demo-chip:hover { @apply border-gold text-gold-bright; }
+  .demo-chip:hover { @apply border-gold text-gold-bright bg-gold/10; }
   .demo-chip:focus-visible { outline: 2px solid #C9A84C; outline-offset: 2px; }
+  .demo-setup-chip { @apply min-h-[40px]; }
+  .demo-setup-chip:hover { @apply bg-gold/10; }
 
   /* ---- Owner dashboard ---- */
-  .demo-dashboard { @apply bg-surface border border-line p-6 md:p-8 flex flex-col gap-5; }
-  .demo-lead-card { @apply border border-gold/40 bg-base-deep px-4 py-3; }
+  .demo-dashboard { @apply bg-surface border border-line p-6 md:p-8 flex flex-col gap-5; min-height: 520px; }
+  @media (min-width: 1024px) {
+    .demo-dashboard { min-height: 640px; }
+  }
+  .demo-slot { @apply border border-line p-5; }
+  .demo-slot-label { @apply text-[11px] uppercase tracking-[0.15em] text-ink-faint font-medium mb-3; }
+  .demo-slot-empty { @apply border-dashed; }
+  .demo-slot-empty-text { @apply text-sm text-ink-faint italic; }
+
+  .demo-lead-card-inner { @apply border border-gold/40 bg-base-deep px-4 py-3; }
   .demo-lead-name { @apply text-sm text-ink font-medium; }
   .demo-lead-meta { @apply text-xs text-ink-faint mt-1; }
   .demo-consent { @apply text-gold; }
@@ -90,24 +107,24 @@
   .demo-checklist-weak .demo-check { @apply text-ink-faint; }
 
   .demo-qualified-stamp {
-    @apply inline-block self-start border border-gold bg-gold/10 text-gold text-[11px] uppercase tracking-[0.2em] font-medium px-4 py-2;
+    @apply inline-block self-start border border-gold bg-gold/10 text-gold text-[11px] uppercase tracking-[0.2em] font-medium px-4 py-2 mt-3;
   }
 
-  .demo-assignment { @apply text-sm text-ink; }
+  .demo-assignment-inner { @apply text-sm text-ink; }
   .demo-status-badge {
-    @apply inline-flex self-start items-center gap-1.5 text-[11px] uppercase tracking-[0.15em] font-medium text-emerald-400;
+    @apply inline-flex self-start items-center gap-1.5 text-[11px] uppercase tracking-[0.15em] font-medium text-emerald-400 mt-3;
   }
   .demo-status-badge::before {
     content: '';
     @apply w-1.5 h-1.5 rounded-full bg-emerald-400;
   }
 
-  .demo-calendar { @apply border border-line bg-base-deep px-4 py-3; }
+  .demo-calendar-inner { @apply border border-line bg-base-deep px-4 py-3; }
   .demo-calendar-label { @apply text-xs text-ink-faint uppercase tracking-[0.1em]; }
   .demo-calendar-slot { @apply text-sm text-ink mt-1; }
   .demo-gold { @apply text-gold; }
 
-  .demo-followup { @apply border border-line bg-base-deep px-4 py-3 flex flex-col gap-2; }
+  .demo-followup { @apply border border-line bg-base-deep px-4 py-3 flex flex-col gap-2 mt-3; }
   .demo-followup-heading { @apply text-xs uppercase tracking-[0.1em] text-ink-faint mb-1; }
   .demo-followup-row { @apply text-sm text-ink-dim; }
   .demo-followup-timing { @apply text-ink-faint; }

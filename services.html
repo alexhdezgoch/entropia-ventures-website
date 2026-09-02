@@ -175,24 +175,47 @@
           <div id="demo-mobile-steps" class="demo-mobile-steps flex lg:hidden gap-1 mb-8 overflow-x-auto" aria-hidden="true"></div>
 
           <div class="demo-phone-frame">
-            <div id="demo-timer-wrap" class="demo-timer-wrap" hidden>
-              <p class="text-[11px] uppercase tracking-[0.15em] text-ink-faint mb-1">Time to first reply</p>
-              <p id="demo-timer-value" class="font-serif text-4xl text-gold">0:00</p>
+            <div class="demo-phone-bezel">
+              <div class="demo-phone-status">
+                <span id="demo-phone-company" class="demo-phone-company"></span>
+              </div>
+              <div id="demo-timer-wrap" class="demo-timer-wrap" hidden>
+                <p class="text-[11px] uppercase tracking-[0.15em] text-ink-faint mb-1">Time to first reply</p>
+                <p id="demo-timer-value" class="font-serif text-4xl text-gold">0:00</p>
+              </div>
+              <div id="demo-messages" class="demo-messages" aria-live="polite"></div>
+              <div id="demo-chip-row" class="demo-chip-row"></div>
             </div>
-            <div id="demo-messages" class="demo-messages" aria-live="polite"></div>
-            <div id="demo-chip-row" class="demo-chip-row"></div>
           </div>
 
           <div class="demo-dashboard" aria-live="polite">
-            <div id="demo-lead-card" class="demo-lead-card" hidden></div>
-            <ul id="demo-checklist" class="demo-checklist"></ul>
-            <p id="demo-qualified-stamp" class="demo-qualified-stamp" hidden>Qualified</p>
-            <div id="demo-assignment" class="demo-assignment" hidden></div>
-            <p id="demo-status-badge" class="demo-status-badge" hidden></p>
-            <div id="demo-calendar" class="demo-calendar" hidden></div>
-            <div id="demo-followup" class="demo-followup" hidden></div>
-            <div id="demo-pipeline" class="demo-pipeline" hidden></div>
-            <div id="demo-report" class="demo-report" hidden></div>
+            <div class="demo-slot">
+              <p class="demo-slot-label">Lead</p>
+              <div id="demo-lead-card" class="demo-lead-card-inner" data-placeholder="New lead"></div>
+            </div>
+            <div class="demo-slot">
+              <p class="demo-slot-label">Qualifying</p>
+              <ul id="demo-checklist" class="demo-checklist"></ul>
+              <p id="demo-qualified-stamp" class="demo-qualified-stamp" hidden>Qualified</p>
+            </div>
+            <div class="demo-slot">
+              <p class="demo-slot-label">Assigned</p>
+              <div id="demo-assignment" class="demo-assignment-inner" data-placeholder="Routed to your team"></div>
+              <p id="demo-status-badge" class="demo-status-badge" hidden></p>
+            </div>
+            <div class="demo-slot">
+              <p class="demo-slot-label">Calendar</p>
+              <div id="demo-calendar" class="demo-calendar-inner" data-placeholder="Calendar"></div>
+              <div id="demo-followup" class="demo-followup" hidden></div>
+            </div>
+            <div class="demo-slot">
+              <p class="demo-slot-label">Pipeline</p>
+              <div id="demo-pipeline" class="demo-pipeline-inner" data-placeholder="Pipeline board"></div>
+            </div>
+            <div class="demo-slot">
+              <p class="demo-slot-label">Report</p>
+              <div id="demo-report" class="demo-report-inner" data-placeholder="Monthly report"></div>
+            </div>
           </div>
         </div>
 
