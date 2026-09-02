@@ -1,3 +1,138 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* The [hidden] attribute must always win over any display utility/component
+   class toggled by demo.js (grid/flex/inline-block classes otherwise outrank
+   the UA [hidden] rule by specificity). */
+[hidden] { display: none !important; }
+
+@layer components {
+
+  /* ---- Boot visibility gate: no-JS fallback shown until demo.js confirms boot ---- */
+  #journey #journey-demo { display: none; }
+  #journey #demo-static-fallback { display: block; }
+  #journey.js-demo-ready #journey-demo { display: block; }
+  #journey.js-demo-ready #demo-static-fallback { display: none; }
+
+  /* ---- Setup card ---- */
+  .demo-setup-chip {
+    @apply inline-flex items-center border border-line bg-surface-2 text-ink-dim text-[11px] uppercase tracking-[0.15em] font-medium px-4 py-2 transition-colors;
+  }
+  .demo-setup-chip:hover { @apply border-gold/60 text-ink; }
+  .demo-setup-chip.is-selected { @apply border-gold bg-gold/10 text-gold; }
+  .demo-setup-chip:focus-visible { outline: 2px solid #C9A84C; outline-offset: 2px; }
+
+  .demo-name-input:focus { @apply outline-none border-gold; }
+
+  /* ---- Stage rail (desktop) ---- */
+  .demo-rail-list { @apply flex flex-col gap-8 sticky top-28; }
+  .demo-rail-item { @apply border-l-2 border-line pl-4 py-1 transition-colors; }
+  .demo-rail-item.is-active { @apply border-gold; }
+  .demo-rail-item.is-complete { @apply border-gold/40; }
+  .demo-rail-num { @apply block font-serif text-lg text-gold/70 leading-none mb-1; }
+  .demo-rail-item.is-active .demo-rail-num,
+  .demo-rail-item.is-complete .demo-rail-num { @apply text-gold; }
+  .demo-rail-heading { @apply text-sm text-ink-faint leading-snug; }
+  .demo-rail-item.is-active .demo-rail-heading,
+  .demo-rail-item.is-complete .demo-rail-heading { @apply text-ink-dim; }
+  .demo-rail-item.is-active .demo-rail-heading { @apply text-ink; }
+  .demo-rail-replaces { @apply text-xs text-ink-faint italic mt-2 leading-relaxed max-w-[200px]; }
+
+  /* ---- Mobile horizontal step strip (<lg) ---- */
+  .demo-mobile-steps { @apply border-b border-line pb-4; }
+  .demo-step { @apply flex-shrink-0 w-8 h-8 flex items-center justify-center text-[10px] uppercase border border-line text-ink-faint; }
+  .demo-step.is-active { @apply border-gold bg-gold text-base-deep font-medium; }
+  .demo-step.is-complete { @apply border-gold/40 text-gold; }
+
+  /* ---- Phone frame ---- */
+  .demo-phone-frame {
+    @apply bg-surface border border-line mx-auto w-full max-w-sm flex flex-col overflow-hidden;
+    aspect-ratio: 9 / 17;
+  }
+  .demo-timer-wrap { @apply px-6 pt-8 text-center; }
+  .demo-messages { @apply flex-1 overflow-y-auto px-4 py-4 flex flex-col gap-3 min-h-0; }
+  .demo-bubble { @apply max-w-[80%] px-4 py-2.5 text-sm leading-relaxed; }
+  .demo-bubble-system { @apply self-start bg-surface-2 text-ink; }
+  .demo-bubble-customer { @apply self-end border border-gold/40 text-ink; }
+  .demo-typing { @apply flex items-center gap-1 py-3 px-4 self-start; }
+  .demo-typing-dot {
+    @apply w-1.5 h-1.5 rounded-full bg-ink-faint inline-block;
+    animation: demo-typing-bounce 1.2s infinite ease-in-out;
+  }
+  .demo-typing-dot:nth-child(2) { animation-delay: 0.15s; }
+  .demo-typing-dot:nth-child(3) { animation-delay: 0.3s; }
+  @keyframes demo-typing-bounce {
+    0%, 80%, 100% { opacity: 0.3; }
+    40% { opacity: 1; }
+  }
+  .demo-chip-row { @apply flex flex-wrap gap-2 px-4 py-4 border-t border-line; }
+  .demo-chip {
+    @apply border border-line bg-base-deep text-ink text-[11px] uppercase tracking-[0.15em] font-medium px-3 py-2 transition-colors;
+  }
+  .demo-chip:hover { @apply border-gold text-gold-bright; }
+  .demo-chip:focus-visible { outline: 2px solid #C9A84C; outline-offset: 2px; }
+
+  /* ---- Owner dashboard ---- */
+  .demo-dashboard { @apply bg-surface border border-line p-6 md:p-8 flex flex-col gap-5; }
+  .demo-lead-card { @apply border border-gold/40 bg-base-deep px-4 py-3; }
+  .demo-lead-name { @apply text-sm text-ink font-medium; }
+  .demo-lead-meta { @apply text-xs text-ink-faint mt-1; }
+  .demo-consent { @apply text-gold; }
+
+  .demo-checklist { @apply flex flex-col gap-2; }
+  .demo-checklist-row { @apply flex items-center gap-3 text-sm; }
+  .demo-checklist-pending { @apply text-ink-faint; }
+  .demo-checklist-done { @apply text-ink-dim; }
+  .demo-checklist-weak { @apply text-ink-dim; }
+  .demo-check { @apply w-4 text-center flex-shrink-0; }
+  .demo-checklist-done .demo-check { @apply text-gold; }
+  .demo-checklist-weak .demo-check { @apply text-ink-faint; }
+
+  .demo-qualified-stamp {
+    @apply inline-block self-start border border-gold bg-gold/10 text-gold text-[11px] uppercase tracking-[0.2em] font-medium px-4 py-2;
+  }
+
+  .demo-assignment { @apply text-sm text-ink; }
+  .demo-status-badge {
+    @apply inline-flex self-start items-center gap-1.5 text-[11px] uppercase tracking-[0.15em] font-medium text-emerald-400;
+  }
+  .demo-status-badge::before {
+    content: '';
+    @apply w-1.5 h-1.5 rounded-full bg-emerald-400;
+  }
+
+  .demo-calendar { @apply border border-line bg-base-deep px-4 py-3; }
+  .demo-calendar-label { @apply text-xs text-ink-faint uppercase tracking-[0.1em]; }
+  .demo-calendar-slot { @apply text-sm text-ink mt-1; }
+  .demo-gold { @apply text-gold; }
+
+  .demo-followup { @apply border border-line bg-base-deep px-4 py-3 flex flex-col gap-2; }
+  .demo-followup-heading { @apply text-xs uppercase tracking-[0.1em] text-ink-faint mb-1; }
+  .demo-followup-row { @apply text-sm text-ink-dim; }
+  .demo-followup-timing { @apply text-ink-faint; }
+
+  .demo-pipeline-board {
+    @apply grid gap-2 overflow-x-auto;
+    grid-template-columns: repeat(auto-fit, minmax(76px, 1fr));
+  }
+  .demo-pipeline-col { @apply border border-line bg-base-deep p-2 min-h-[64px] relative; }
+  .demo-pipeline-col[data-col="Won"],
+  .demo-pipeline-col[data-col="Nurture"] { @apply border-gold/30; }
+  .demo-pipeline-col-label { @apply text-[9px] uppercase tracking-[0.1em] text-ink-faint mb-2 block leading-tight; }
+  .demo-pipeline-card {
+    @apply border border-gold/40 bg-surface-2 text-[10px] text-ink px-2 py-1.5 transition-all duration-500 break-words;
+  }
+
+  .demo-report-line { @apply text-sm text-ink-dim leading-relaxed mb-4; }
+  .demo-report-chart { @apply w-full h-auto max-w-[200px]; }
+  .demo-chart-bar { @apply fill-line; transform-box: fill-box; transform-origin: bottom; }
+  .demo-chart-bar-weak { fill: #C9A84C; stroke: #ffe08f; stroke-width: 2; }
+  .demo-report-chart-labels {
+    @apply flex justify-between text-[9px] uppercase tracking-[0.05em] text-ink-faint max-w-[200px] mt-2;
+  }
+
+  /* ---- Ending card ---- */
+  .demo-ending { @apply bg-surface border border-line p-8 md:p-12 mt-16 md:mt-20 max-w-2xl; }
+  .demo-ending-line { @apply font-serif text-2xl md:text-3xl text-ink leading-snug; }
+}

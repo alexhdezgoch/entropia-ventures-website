@@ -6,6 +6,7 @@ module.exports = {
     './blog/**/*.html',
     './audits/**/*.html',
     './scripts/prerender-audits.js',
+    './assets/js/*.js',
   ],
   theme: {
     extend: {

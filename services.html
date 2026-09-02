@@ -51,19 +51,6 @@
     background-position: center;
   }
 
-  /* Journey rail: default (no-JS / reduced-motion) state is fully drawn */
-  .journey-rail-fill {
-    background: #C9A84C;
-    transform-origin: top;
-    transform: scaleY(1);
-  }
-
-  /* SVG bar chart bars scale from the baseline, not the center */
-  .chip-08-bar {
-    transform-box: fill-box;
-    transform-origin: bottom;
-  }
-
   .btn-primary {
     display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
     background: #C9A84C; color: #00130d;
@@ -155,238 +142,183 @@
 
   <!-- 2. THE JOURNEY -->
   <section id="journey" class="relative bg-base py-24 md:py-40 overflow-hidden">
-    <div class="max-w-7xl mx-auto px-8 reveal-group mb-20 md:mb-28">
+    <div class="max-w-7xl mx-auto px-8 reveal-group mb-16 md:mb-20">
       <p class="reveal text-[11px] uppercase tracking-[0.2em] font-medium text-gold flex items-center gap-3 mb-6">
         <span class="w-1.5 h-1.5 rounded-full bg-gold pulse-dot"></span>
-        Follow One Lead
+        Try it yourself
       </p>
       <h2 class="reveal font-serif text-4xl md:text-6xl leading-tight text-ink max-w-3xl">Follow one lead through <em class="italic text-gold">the system</em>.</h2>
     </div>
 
     <div class="relative max-w-7xl mx-auto px-8">
-      <div class="journey-rail hidden lg:block absolute left-8 top-2 bottom-2 w-px bg-line" aria-hidden="true">
-        <div class="journey-rail-fill absolute inset-x-0 top-0 h-full"></div>
+
+      <!-- Interactive demo (hidden until JS confirms boot; CSS-gated by #journey.js-demo-ready) -->
+      <div id="journey-demo">
+
+        <div id="demo-setup" class="bg-surface border border-line p-6 md:p-10 mb-16 md:mb-20">
+          <p class="text-[11px] uppercase tracking-[0.15em] text-ink-faint font-medium mb-3">Pick a trade</p>
+          <div id="demo-trade-chips" class="flex flex-wrap gap-2 mb-8"></div>
+          <p class="text-[11px] uppercase tracking-[0.15em] text-ink-faint font-medium mb-3">Pick how the lead came in</p>
+          <div id="demo-source-chips" class="flex flex-wrap gap-2 mb-8"></div>
+          <label for="demo-name-input" class="block text-[11px] uppercase tracking-[0.15em] text-ink-faint font-medium mb-3">Your name</label>
+          <input id="demo-name-input" type="text" placeholder="Miguel" maxlength="40" class="demo-name-input bg-base-deep border border-line text-ink px-4 py-3 mb-6 w-full max-w-xs" />
+          <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+            <button id="demo-start-btn" type="button" class="btn-primary">Start the demo</button>
+            <p class="text-ink-faint text-sm">Play the customer. Watch the dashboard respond live.</p>
+          </div>
+        </div>
+
+        <div id="demo-shell" class="grid grid-cols-1 lg:grid-cols-[220px_minmax(0,1fr)_minmax(0,1fr)] gap-10" hidden>
+          <div class="hidden lg:block">
+            <ol id="demo-rail-list" class="demo-rail-list"></ol>
+          </div>
+          <div id="demo-mobile-steps" class="demo-mobile-steps flex lg:hidden gap-1 mb-8 overflow-x-auto" aria-hidden="true"></div>
+
+          <div class="demo-phone-frame">
+            <div id="demo-timer-wrap" class="demo-timer-wrap" hidden>
+              <p class="text-[11px] uppercase tracking-[0.15em] text-ink-faint mb-1">Time to first reply</p>
+              <p id="demo-timer-value" class="font-serif text-4xl text-gold">0:00</p>
+            </div>
+            <div id="demo-messages" class="demo-messages" aria-live="polite"></div>
+            <div id="demo-chip-row" class="demo-chip-row"></div>
+          </div>
+
+          <div class="demo-dashboard" aria-live="polite">
+            <div id="demo-lead-card" class="demo-lead-card" hidden></div>
+            <ul id="demo-checklist" class="demo-checklist"></ul>
+            <p id="demo-qualified-stamp" class="demo-qualified-stamp" hidden>Qualified</p>
+            <div id="demo-assignment" class="demo-assignment" hidden></div>
+            <p id="demo-status-badge" class="demo-status-badge" hidden></p>
+            <div id="demo-calendar" class="demo-calendar" hidden></div>
+            <div id="demo-followup" class="demo-followup" hidden></div>
+            <div id="demo-pipeline" class="demo-pipeline" hidden></div>
+            <div id="demo-report" class="demo-report" hidden></div>
+          </div>
+        </div>
+
+        <div id="demo-ending" class="demo-ending" hidden>
+          <div id="demo-ending-lines"></div>
+          <div class="flex flex-col sm:flex-row gap-4 mt-8">
+            <a href="/contact" class="btn-primary">Get your free audit</a>
+            <button id="demo-ending-again" type="button" class="btn-secondary">Run it again as a different trade</button>
+          </div>
+        </div>
+
       </div>
 
-      <div id="journey-stages" class="flex flex-col gap-24 md:gap-32">
+      <!-- No-JS / JS-failure static fallback: full 8-stage content always in the HTML -->
+      <div id="demo-static-fallback">
+        <p class="text-ink-dim leading-relaxed max-w-2xl mb-16 md:mb-20">Here&rsquo;s how one lead moves through the system, start to finish.</p>
 
-        <!-- STAGE 01 — Capture -->
-        <article class="journey-stage reveal-group relative flex flex-col lg:flex-row gap-8 lg:gap-12">
-          <div class="hidden lg:flex w-16 flex-shrink-0 items-start justify-center pt-1">
-            <span class="font-serif text-5xl xl:text-6xl text-gold/70 leading-none">01</span>
-          </div>
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center flex-1">
-            <div class="reveal">
+        <div id="journey-stages" class="flex flex-col gap-24 md:gap-32">
+
+          <!-- STAGE 01 — Capture -->
+          <article class="journey-stage relative flex flex-col lg:flex-row gap-8 lg:gap-12">
+            <div class="hidden lg:flex w-16 flex-shrink-0 items-start justify-center pt-1">
+              <span class="font-serif text-5xl xl:text-6xl text-gold/70 leading-none">01</span>
+            </div>
+            <div>
               <span class="lg:hidden font-serif text-4xl text-gold leading-none block mb-4" aria-hidden="true">01</span>
               <h3 class="font-serif text-2xl md:text-3xl text-ink leading-snug mb-4">Capture. Every lead lands in one place.</h3>
               <p class="text-ink-dim leading-relaxed mb-4">Calls, missed calls, website forms, texts, WhatsApp, Facebook — today they scatter across phones, inboxes, and sticky notes. The system catches every one in a single queue the moment it arrives, and records where it came from and whether you have permission to text or email back.</p>
               <p class="text-ink-faint text-sm italic">What this replaces: &ldquo;Did anyone see that form from Tuesday?&rdquo;</p>
             </div>
-            <div class="reveal">
-              <div class="bg-surface border border-line p-6 md:p-8">
-                <div class="flex flex-wrap gap-2 mb-6" id="chip-01-pills">
-                  <span class="inline-flex items-center bg-surface-2 border border-line text-[11px] uppercase tracking-[0.15em] text-ink-dim px-3 py-1.5">Call</span>
-                  <span class="inline-flex items-center bg-surface-2 border border-line text-[11px] uppercase tracking-[0.15em] text-ink-dim px-3 py-1.5">Form</span>
-                  <span class="inline-flex items-center bg-surface-2 border border-line text-[11px] uppercase tracking-[0.15em] text-ink-dim px-3 py-1.5">WhatsApp</span>
-                  <span class="inline-flex items-center bg-surface-2 border border-line text-[11px] uppercase tracking-[0.15em] text-ink-dim px-3 py-1.5">Facebook</span>
-                </div>
-                <div class="border border-gold/40 bg-base-deep px-4 py-3" id="chip-01-card">
-                  <p class="text-sm text-ink font-medium">New lead — Miguel R.</p>
-                  <p class="text-xs text-ink-faint mt-1">Source: Google &middot; OK to text <span class="text-gold">&check;</span></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- STAGE 02 — Respond -->
-        <article class="journey-stage reveal-group relative flex flex-col lg:flex-row gap-8 lg:gap-12">
-          <div class="hidden lg:flex w-16 flex-shrink-0 items-start justify-center pt-1">
-            <span class="font-serif text-5xl xl:text-6xl text-gold/70 leading-none">02</span>
-          </div>
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center flex-1">
-            <div class="reveal lg:order-2">
+          <!-- STAGE 02 — Respond -->
+          <article class="journey-stage relative flex flex-col lg:flex-row gap-8 lg:gap-12">
+            <div class="hidden lg:flex w-16 flex-shrink-0 items-start justify-center pt-1">
+              <span class="font-serif text-5xl xl:text-6xl text-gold/70 leading-none">02</span>
+            </div>
+            <div>
               <span class="lg:hidden font-serif text-4xl text-gold leading-none block mb-4" aria-hidden="true">02</span>
               <h3 class="font-serif text-2xl md:text-3xl text-ink leading-snug mb-4">Respond. In seconds, every time.</h3>
               <p class="text-ink-dim leading-relaxed mb-4">The moment a lead arrives, the system answers — a text back to a missed call, an instant reply to a form, at 2 pm or 9 pm. It sounds human, it uses your words, and it opens the conversation while your competitor's voicemail is still talking.</p>
               <p class="text-ink-faint text-sm italic">What this replaces: the voicemail nobody checks until Thursday.</p>
             </div>
-            <div class="reveal lg:order-1" id="chip-02">
-              <div class="bg-surface border border-line p-6 md:p-8">
-                <p class="font-serif text-4xl text-gold mb-6" id="chip-02-timer">0:00</p>
-                <div class="border-l-2 border-gold bg-base-deep px-4 py-3 max-w-xs" id="chip-02-bubble">
-                  <p class="text-sm text-ink leading-relaxed">&ldquo;Thanks for reaching out — are you looking for maintenance or a new install?&rdquo;</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- STAGE 03 — Qualify -->
-        <article class="journey-stage reveal-group relative flex flex-col lg:flex-row gap-8 lg:gap-12">
-          <div class="hidden lg:flex w-16 flex-shrink-0 items-start justify-center pt-1">
-            <span class="font-serif text-5xl xl:text-6xl text-gold/70 leading-none">03</span>
-          </div>
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center flex-1">
-            <div class="reveal">
+          <!-- STAGE 03 — Qualify -->
+          <article class="journey-stage relative flex flex-col lg:flex-row gap-8 lg:gap-12">
+            <div class="hidden lg:flex w-16 flex-shrink-0 items-start justify-center pt-1">
+              <span class="font-serif text-5xl xl:text-6xl text-gold/70 leading-none">03</span>
+            </div>
+            <div>
               <span class="lg:hidden font-serif text-4xl text-gold leading-none block mb-4" aria-hidden="true">03</span>
               <h3 class="font-serif text-2xl md:text-3xl text-ink leading-snug mb-4">Qualify. A few useful questions.</h3>
               <p class="text-ink-dim leading-relaxed mb-4">The system asks what you'd ask: what do they need, where are they, when do they want it. Answers are scored against rules built for your trade — so a real prospect in your territory is treated differently than a price-shopper three counties away.</p>
               <p class="text-ink-faint text-sm italic">What this replaces: driving forty minutes to quote a job that was never real.</p>
             </div>
-            <div class="reveal" id="chip-03">
-              <div class="bg-surface border border-line p-6 md:p-8">
-                <ul class="space-y-3 mb-6" id="chip-03-list">
-                  <li class="flex items-center gap-3 text-sm text-ink-dim chip-03-row"><span class="text-gold">&check;</span> Service: lawn care</li>
-                  <li class="flex items-center gap-3 text-sm text-ink-dim chip-03-row"><span class="text-gold">&check;</span> Area: in territory</li>
-                  <li class="flex items-center gap-3 text-sm text-ink-dim chip-03-row"><span class="text-gold">&check;</span> Timeline: this month</li>
-                </ul>
-                <div class="inline-block border border-gold bg-gold/10 text-gold text-[11px] uppercase tracking-[0.2em] font-medium px-4 py-2" id="chip-03-badge">Qualified</div>
-              </div>
-            </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- STAGE 04 — Route -->
-        <article class="journey-stage reveal-group relative flex flex-col lg:flex-row gap-8 lg:gap-12">
-          <div class="hidden lg:flex w-16 flex-shrink-0 items-start justify-center pt-1">
-            <span class="font-serif text-5xl xl:text-6xl text-gold/70 leading-none">04</span>
-          </div>
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center flex-1">
-            <div class="reveal lg:order-2">
+          <!-- STAGE 04 — Route -->
+          <article class="journey-stage relative flex flex-col lg:flex-row gap-8 lg:gap-12">
+            <div class="hidden lg:flex w-16 flex-shrink-0 items-start justify-center pt-1">
+              <span class="font-serif text-5xl xl:text-6xl text-gold/70 leading-none">04</span>
+            </div>
+            <div>
               <span class="lg:hidden font-serif text-4xl text-gold leading-none block mb-4" aria-hidden="true">04</span>
               <h3 class="font-serif text-2xl md:text-3xl text-ink leading-snug mb-4">Route. A named owner, every time.</h3>
               <p class="text-ink-dim leading-relaxed mb-4">Every qualified lead is assigned to a specific person on your team — not a shared inbox, not "whoever sees it first." If it sits untouched too long, the system notices and raises a flag before the lead goes cold.</p>
               <p class="text-ink-faint text-sm italic">What this replaces: &ldquo;I thought you were handling that one.&rdquo;</p>
             </div>
-            <div class="reveal lg:order-1" id="chip-04">
-              <div class="bg-surface border border-line p-6 md:p-8 space-y-4">
-                <div class="border border-line bg-base-deep px-4 py-3 text-sm text-ink">New lead — Miguel R.</div>
-                <div class="flex items-center gap-3" id="chip-04-owner">
-                  <span class="w-7 h-7 flex items-center justify-center bg-gold text-base-deep text-xs font-medium flex-shrink-0">S</span>
-                  <span class="text-sm text-ink">Owner: Sarah</span>
-                </div>
-                <div class="border border-amber-500/40 bg-amber-500/10 text-amber-300 text-xs px-4 py-2" id="chip-04-alert">No touch in 4h — nudge sent</div>
-              </div>
-            </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- STAGE 05 — Book -->
-        <article class="journey-stage reveal-group relative flex flex-col lg:flex-row gap-8 lg:gap-12">
-          <div class="hidden lg:flex w-16 flex-shrink-0 items-start justify-center pt-1">
-            <span class="font-serif text-5xl xl:text-6xl text-gold/70 leading-none">05</span>
-          </div>
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center flex-1">
-            <div class="reveal">
+          <!-- STAGE 05 — Book -->
+          <article class="journey-stage relative flex flex-col lg:flex-row gap-8 lg:gap-12">
+            <div class="hidden lg:flex w-16 flex-shrink-0 items-start justify-center pt-1">
+              <span class="font-serif text-5xl xl:text-6xl text-gold/70 leading-none">05</span>
+            </div>
+            <div>
               <span class="lg:hidden font-serif text-4xl text-gold leading-none block mb-4" aria-hidden="true">05</span>
               <h3 class="font-serif text-2xl md:text-3xl text-ink leading-snug mb-4">Book. A real slot on a real calendar.</h3>
               <p class="text-ink-dim leading-relaxed mb-4">Good leads don't get "we'll be in touch." They get offered an actual time — a call, a visit, an estimate — on your team's live calendar. Confirmations and reminders go out automatically so booked doesn't quietly turn into no-show.</p>
               <p class="text-ink-faint text-sm italic">What this replaces: three days of phone tag to schedule one estimate.</p>
             </div>
-            <div class="reveal" id="chip-05">
-              <div class="bg-surface border border-line p-6 md:p-8">
-                <div class="flex gap-2 mb-6">
-                  <span class="w-9 h-9 flex items-center justify-center text-[10px] uppercase text-ink-faint border border-line">Mon</span>
-                  <span class="w-9 h-9 flex items-center justify-center text-[10px] uppercase text-ink-faint border border-line">Tue</span>
-                  <span class="w-9 h-9 flex items-center justify-center text-[10px] uppercase text-ink-faint border border-line">Wed</span>
-                  <span class="w-9 h-9 flex items-center justify-center text-[10px] uppercase bg-gold text-base-deep border border-gold font-medium" id="chip-05-thu">Thu</span>
-                  <span class="w-9 h-9 flex items-center justify-center text-[10px] uppercase text-ink-faint border border-line">Fri</span>
-                </div>
-                <div class="border border-gold/40 bg-base-deep px-4 py-3" id="chip-05-slot">
-                  <p class="text-sm text-ink">Thu 10:30 — Site visit <span class="text-gold">&check;</span></p>
-                  <p class="text-xs text-ink-faint mt-1">Reminder set</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- STAGE 06 — Follow up -->
-        <article class="journey-stage reveal-group relative flex flex-col lg:flex-row gap-8 lg:gap-12">
-          <div class="hidden lg:flex w-16 flex-shrink-0 items-start justify-center pt-1">
-            <span class="font-serif text-5xl xl:text-6xl text-gold/70 leading-none">06</span>
-          </div>
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center flex-1">
-            <div class="reveal lg:order-2">
+          <!-- STAGE 06 — Follow up -->
+          <article class="journey-stage relative flex flex-col lg:flex-row gap-8 lg:gap-12">
+            <div class="hidden lg:flex w-16 flex-shrink-0 items-start justify-center pt-1">
+              <span class="font-serif text-5xl xl:text-6xl text-gold/70 leading-none">06</span>
+            </div>
+            <div>
               <span class="lg:hidden font-serif text-4xl text-gold leading-none block mb-4" aria-hidden="true">06</span>
               <h3 class="font-serif text-2xl md:text-3xl text-ink leading-snug mb-4">Follow up. Politely. Relentlessly.</h3>
               <p class="text-ink-dim leading-relaxed mb-4">Most jobs aren't lost on the first call — they're lost in the silence after the quote. The system follows up on every open conversation and every sent quote until there's an answer: booked, won, lost, or "not now." Leads that go quiet get parked, then re-approached when the timing makes sense. And when a job wraps, it asks the happy customer for the review.</p>
               <p class="text-ink-faint text-sm italic">What this replaces: the quote you meant to chase and never did.</p>
             </div>
-            <div class="reveal lg:order-1" id="chip-06">
-              <div class="bg-surface border border-line p-6 md:p-8 space-y-3">
-                <p class="text-sm text-ink-dim chip-06-row">Day 1 — quote sent</p>
-                <p class="text-sm text-ink-dim chip-06-row">Day 3 — friendly check-in</p>
-                <p class="text-sm text-ink-dim chip-06-row">Day 7 — &ldquo;still interested?&rdquo;</p>
-                <p class="text-sm text-gold font-medium" id="chip-06-status">Reply received</p>
-              </div>
-            </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- STAGE 07 — Track -->
-        <article class="journey-stage reveal-group relative flex flex-col lg:flex-row gap-8 lg:gap-12">
-          <div class="hidden lg:flex w-16 flex-shrink-0 items-start justify-center pt-1">
-            <span class="font-serif text-5xl xl:text-6xl text-gold/70 leading-none">07</span>
-          </div>
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center flex-1">
-            <div class="reveal">
+          <!-- STAGE 07 — Track -->
+          <article class="journey-stage relative flex flex-col lg:flex-row gap-8 lg:gap-12">
+            <div class="hidden lg:flex w-16 flex-shrink-0 items-start justify-center pt-1">
+              <span class="font-serif text-5xl xl:text-6xl text-gold/70 leading-none">07</span>
+            </div>
+            <div>
               <span class="lg:hidden font-serif text-4xl text-gold leading-none block mb-4" aria-hidden="true">07</span>
               <h3 class="font-serif text-2xl md:text-3xl text-ink leading-snug mb-4">Track. One board, the whole truth.</h3>
               <p class="text-ink-dim leading-relaxed mb-4">Every lead sits at a named stage — from New to Won, Lost, or Nurture — on one board you can read in ten seconds. What's waiting on a quote. What's stalled. What closed this week. No more reconstructing reality from three inboxes and someone's memory.</p>
               <p class="text-ink-faint text-sm italic">What this replaces: finding out a lead died three weeks after it happened.</p>
             </div>
-            <div class="reveal" id="chip-07">
-              <div class="bg-surface border border-line p-6 md:p-8">
-                <div class="grid grid-cols-3 gap-2 mb-6" id="chip-07-board">
-                  <div class="border border-line bg-base-deep p-3">
-                    <p class="text-[9px] uppercase tracking-[0.1em] text-ink-faint">Engaged <span class="text-ink-dim">(2)</span></p>
-                  </div>
-                  <div class="border border-line bg-base-deep p-3 relative min-h-[76px]">
-                    <p class="text-[9px] uppercase tracking-[0.1em] text-ink-faint mb-2">Quote sent <span id="chip-07-qs-count" class="text-ink-dim">(3)</span></p>
-                    <div class="border border-line bg-surface-2 text-[10px] text-ink px-2 py-1.5" id="chip-07-card">Job #214</div>
-                  </div>
-                  <div class="border border-gold/30 bg-base-deep p-3">
-                    <p class="text-[9px] uppercase tracking-[0.1em] text-gold">Won <span id="chip-07-won-count" class="text-gold">(4)</span></p>
-                  </div>
-                </div>
-                <p class="text-[10px] text-ink-faint leading-relaxed">New &rarr; Contacted &rarr; Engaged &rarr; Qualified &rarr; Booked &rarr; Appointment &rarr; Quote sent &rarr; Won &middot; Lost &middot; Nurture</p>
-              </div>
-            </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- STAGE 08 — Improve -->
-        <article class="journey-stage reveal-group relative flex flex-col lg:flex-row gap-8 lg:gap-12">
-          <div class="hidden lg:flex w-16 flex-shrink-0 items-start justify-center pt-1">
-            <span class="font-serif text-5xl xl:text-6xl text-gold/70 leading-none">08</span>
-          </div>
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center flex-1">
-            <div class="reveal lg:order-2">
+          <!-- STAGE 08 — Improve -->
+          <article class="journey-stage relative flex flex-col lg:flex-row gap-8 lg:gap-12">
+            <div class="hidden lg:flex w-16 flex-shrink-0 items-start justify-center pt-1">
+              <span class="font-serif text-5xl xl:text-6xl text-gold/70 leading-none">08</span>
+            </div>
+            <div>
               <span class="lg:hidden font-serif text-4xl text-gold leading-none block mb-4" aria-hidden="true">08</span>
               <h3 class="font-serif text-2xl md:text-3xl text-ink leading-snug mb-4">Improve. One leak at a time, every month.</h3>
               <p class="text-ink-dim leading-relaxed mb-4">Once a month you get a plain-language report: where leads came in, where they dropped, and the single biggest leak in the pipe. We fix that one, measure it, then move to the next. The system also watches itself — if anything stops working, we know before you do.</p>
               <p class="text-ink-faint text-sm italic">What this replaces: &ldquo;marketing feels like it's working&hellip; I think?&rdquo;</p>
             </div>
-            <div class="reveal lg:order-1" id="chip-08">
-              <div class="bg-surface border border-line p-6 md:p-8">
-                <svg viewBox="0 0 160 70" class="w-full h-auto mb-4" id="chip-08-chart" aria-hidden="true">
-                  <rect x="6" y="30" width="18" height="34" fill="#1d332a" class="chip-08-bar"></rect>
-                  <rect x="34" y="18" width="18" height="46" fill="#1d332a" class="chip-08-bar"></rect>
-                  <rect x="62" y="42" width="18" height="22" fill="#C9A84C" stroke="#ffe08f" stroke-width="2" class="chip-08-bar chip-08-bar-weak"></rect>
-                  <rect x="90" y="10" width="18" height="54" fill="#1d332a" class="chip-08-bar"></rect>
-                  <rect x="118" y="24" width="18" height="40" fill="#1d332a" class="chip-08-bar"></rect>
-                  <line x1="4" y1="64" x2="140" y2="64" stroke="#1d332a" stroke-width="1"></line>
-                </svg>
-                <p class="text-xs text-gold uppercase tracking-[0.1em] font-medium mb-3" id="chip-08-tag">Biggest leak: follow-up after quote</p>
-                <p class="text-sm text-ink-dim" id="chip-08-footer">This month's fix &rarr; measured next month</p>
-              </div>
-            </div>
-          </div>
-        </article>
+          </article>
 
+        </div>
       </div>
+
     </div>
   </section>
 
@@ -489,6 +421,8 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
+<script src="/assets/js/demo-data.js"></script>
+<script src="/assets/js/demo.js"></script>
 <script>
 (function () {
   // Mobile menu
@@ -563,177 +497,6 @@
     gsap.to(heroItems, { y: 0, opacity: 1, duration: 0.9, ease: 'power2.out', stagger: 0.1, delay: 0.15 });
   }
 
-  // ---- Journey rail: gold fill draws down the spine as the journey scrolls ----
-  var journeyFill = document.querySelector('.journey-rail-fill');
-  var journeyStages = document.getElementById('journey-stages');
-  if (journeyFill && journeyStages) {
-    gsap.set(journeyFill, { scaleY: 0 });
-    gsap.to(journeyFill, {
-      scaleY: 1,
-      ease: 'none',
-      scrollTrigger: { trigger: journeyStages, start: 'top 65%', end: 'bottom 55%', scrub: true }
-    });
-  }
-
-  // ---- Journey stage chips: each animates once, ~75-80% into view ----
-
-  // 01 Capture — source pills converge into a single lead card
-  (function () {
-    var pills = document.querySelectorAll('#chip-01-pills > span');
-    var card = document.getElementById('chip-01-card');
-    if (!pills.length || !card) return;
-    gsap.set(pills, { y: -10, opacity: 0 });
-    gsap.set(card, { y: 14, opacity: 0 });
-    ScrollTrigger.create({
-      trigger: card, start: 'top 80%', once: true,
-      onEnter: function () {
-        gsap.timeline()
-          .to(pills, { y: 0, opacity: 1, duration: 0.45, ease: 'power2.out', stagger: 0.08 })
-          .to(card, { y: 0, opacity: 1, duration: 0.5, ease: 'power2.out' }, '-=0.1');
-      }
-    });
-  })();
-
-  // 02 Respond — timer counts up, then the reply bubble appears
-  (function () {
-    var timer = document.getElementById('chip-02-timer');
-    var bubble = document.getElementById('chip-02-bubble');
-    if (!timer || !bubble) return;
-    gsap.set(bubble, { y: 12, opacity: 0 });
-    ScrollTrigger.create({
-      trigger: '#chip-02', start: 'top 80%', once: true,
-      onEnter: function () {
-        var obj = { v: 0 };
-        timer.textContent = '0:00';
-        gsap.to(obj, {
-          v: 7, duration: 0.8, ease: 'power1.out',
-          onUpdate: function () { timer.textContent = '0:0' + Math.round(obj.v); },
-          onComplete: function () {
-            gsap.to(bubble, { y: 0, opacity: 1, duration: 0.5, ease: 'power2.out' });
-          }
-        });
-      }
-    });
-  })();
-
-  // 03 Qualify — checklist rows tick in, then the badge stamps
-  (function () {
-    var rows = document.querySelectorAll('#chip-03-list .chip-03-row');
-    var badge = document.getElementById('chip-03-badge');
-    if (!rows.length || !badge) return;
-    gsap.set(rows, { x: -8, opacity: 0 });
-    gsap.set(badge, { scale: 0.6, opacity: 0 });
-    ScrollTrigger.create({
-      trigger: '#chip-03', start: 'top 80%', once: true,
-      onEnter: function () {
-        gsap.timeline()
-          .to(rows, { x: 0, opacity: 1, duration: 0.4, ease: 'power2.out', stagger: 0.12 })
-          .to(badge, { scale: 1, opacity: 1, duration: 0.4, ease: 'back.out(2.2)' }, '+=0.1');
-      }
-    });
-  })();
-
-  // 04 Route — owner row slides in, then the amber nudge chip appears
-  (function () {
-    var owner = document.getElementById('chip-04-owner');
-    var alertChip = document.getElementById('chip-04-alert');
-    if (!owner || !alertChip) return;
-    gsap.set(owner, { x: -10, opacity: 0 });
-    gsap.set(alertChip, { y: 8, opacity: 0 });
-    ScrollTrigger.create({
-      trigger: '#chip-04', start: 'top 80%', once: true,
-      onEnter: function () {
-        gsap.timeline()
-          .to(owner, { x: 0, opacity: 1, duration: 0.45, ease: 'power2.out' })
-          .to(alertChip, { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out' }, '+=0.3');
-      }
-    });
-  })();
-
-  // 05 Book — Thursday lights up gold, then the confirmed slot fades in
-  (function () {
-    var thu = document.getElementById('chip-05-thu');
-    var slot = document.getElementById('chip-05-slot');
-    if (!thu || !slot) return;
-    gsap.set(thu, { backgroundColor: 'transparent', color: '#9fb3aa', borderColor: '#1d332a' });
-    gsap.set(slot, { y: 10, opacity: 0 });
-    ScrollTrigger.create({
-      trigger: '#chip-05', start: 'top 80%', once: true,
-      onEnter: function () {
-        gsap.timeline()
-          .to(thu, { backgroundColor: '#C9A84C', color: '#00130d', borderColor: '#C9A84C', duration: 0.4, ease: 'power2.out' })
-          .to(slot, { y: 0, opacity: 1, duration: 0.45, ease: 'power2.out' }, '-=0.05');
-      }
-    });
-  })();
-
-  // 06 Follow up — thread messages appear in sequence, then status flips gold
-  (function () {
-    var rows = document.querySelectorAll('#chip-06 .chip-06-row');
-    var status = document.getElementById('chip-06-status');
-    if (!rows.length || !status) return;
-    gsap.set(rows, { y: 8, opacity: 0 });
-    gsap.set(status, { opacity: 0, scale: 0.9 });
-    ScrollTrigger.create({
-      trigger: '#chip-06', start: 'top 80%', once: true,
-      onEnter: function () {
-        gsap.timeline()
-          .to(rows, { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out', stagger: 0.18 })
-          .to(status, { opacity: 1, scale: 1, duration: 0.4, ease: 'back.out(2)' }, '+=0.15');
-      }
-    });
-  })();
-
-  // 07 Track — a card slides from Quote sent into Won, counts tick
-  (function () {
-    var card = document.getElementById('chip-07-card');
-    var board = document.getElementById('chip-07-board');
-    var wonCol = board ? board.children[2] : null;
-    var qsCount = document.getElementById('chip-07-qs-count');
-    var wonCount = document.getElementById('chip-07-won-count');
-    if (!card || !wonCol) return;
-    ScrollTrigger.create({
-      trigger: '#chip-07', start: 'top 80%', once: true,
-      onEnter: function () {
-        var cardRect = card.getBoundingClientRect();
-        var wonRect = wonCol.getBoundingClientRect();
-        var dx = wonRect.left - cardRect.left + 8;
-        var dy = wonRect.top - cardRect.top + 28;
-        gsap.timeline()
-          .to({}, { duration: 0.3 })
-          .to(card, { x: dx, y: dy, duration: 0.7, ease: 'power2.inOut' })
-          .to(card, { opacity: 0, duration: 0.25 }, '-=0.05')
-          .call(function () {
-            if (qsCount) qsCount.textContent = '(2)';
-            if (wonCount) wonCount.textContent = '(5)';
-          });
-      }
-    });
-  })();
-
-  // 08 Improve — bars draw in, the weakest bar pulses, tag and footer fade in
-  (function () {
-    var bars = document.querySelectorAll('#chip-08-chart .chip-08-bar');
-    var weak = document.querySelector('.chip-08-bar-weak');
-    var tag = document.getElementById('chip-08-tag');
-    var footer = document.getElementById('chip-08-footer');
-    if (!bars.length) return;
-    gsap.set(bars, { scaleY: 0 });
-    gsap.set(tag, { opacity: 0, y: 6 });
-    gsap.set(footer, { opacity: 0 });
-    ScrollTrigger.create({
-      trigger: '#chip-08', start: 'top 80%', once: true,
-      onEnter: function () {
-        var tl = gsap.timeline();
-        tl.to(bars, { scaleY: 1, duration: 0.6, ease: 'power2.out', stagger: 0.08 });
-        if (weak) {
-          tl.to(weak, { attr: { 'stroke-width': 3 }, duration: 0.3, yoyo: true, repeat: 1 }, '-=0.1');
-        }
-        tl.to(tag, { opacity: 1, y: 0, duration: 0.4, ease: 'power2.out' }, '-=0.1')
-          .to(footer, { opacity: 1, duration: 0.4, ease: 'power2.out' }, '-=0.2');
-      }
-    });
-  })();
 })();
 </script>
 </body>
