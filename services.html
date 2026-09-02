@@ -4,18 +4,18 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
-<title>The Lead Conversion System | Entropia Ventures</title>
-<meta name="description" content="How Entropia Ventures installs a lead conversion system: instant response, qualification, booking, follow-up, deal tracking, and a monthly leak report."/>
+<title>What We Install — The Lead Conversion System | Entropia Ventures</title>
+<meta name="description" content="Follow one lead through the system: captured, answered in seconds, qualified, booked, followed up, tracked to won or lost, and improved every month."/>
 <link rel="canonical" href="https://entropia.ventures/services"/>
-<meta property="og:title" content="The Lead Conversion System | Entropia Ventures"/>
-<meta property="og:description" content="How Entropia Ventures installs a lead conversion system: instant response, qualification, booking, follow-up, deal tracking, and a monthly leak report."/>
+<meta property="og:title" content="What We Install — The Lead Conversion System | Entropia Ventures"/>
+<meta property="og:description" content="Follow one lead through the system: captured, answered in seconds, qualified, booked, followed up, tracked to won or lost, and improved every month."/>
 <meta property="og:url" content="https://entropia.ventures/services"/>
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="Entropia Ventures"/>
 <meta property="og:image" content="https://entropia.ventures/assets/media/hero-poster.jpg"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="The Lead Conversion System | Entropia Ventures"/>
-<meta name="twitter:description" content="How Entropia Ventures installs a lead conversion system: instant response, qualification, booking, follow-up, deal tracking, and a monthly leak report."/>
+<meta name="twitter:title" content="What We Install — The Lead Conversion System | Entropia Ventures"/>
+<meta name="twitter:description" content="Follow one lead through the system: captured, answered in seconds, qualified, booked, followed up, tracked to won or lost, and improved every month."/>
 <meta name="twitter:image" content="https://entropia.ventures/assets/media/hero-poster.jpg"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Entropia Ventures","url":"https://entropia.ventures","description":"Entropia Ventures installs lead conversion systems for service businesses in the US and Mexico.","sameAs":["https://linkedin.com/company/entropia-ventures"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -51,11 +51,17 @@
     background-position: center;
   }
 
-  /* Track A section: pipeline-bg backdrop */
-  .pipeline-section-bg {
-    background-image: url('/assets/media/pipeline-bg.jpg'), linear-gradient(180deg, #00130d 0%, #050f0b 100%);
-    background-size: cover;
-    background-position: center;
+  /* Journey rail: default (no-JS / reduced-motion) state is fully drawn */
+  .journey-rail-fill {
+    background: #C9A84C;
+    transform-origin: top;
+    transform: scaleY(1);
+  }
+
+  /* SVG bar chart bars scale from the baseline, not the center */
+  .chip-08-bar {
+    transform-box: fill-box;
+    transform-origin: bottom;
   }
 
   .btn-primary {
@@ -133,114 +139,321 @@
 
 <main class="pt-0" id="main">
 
-  <!-- HERO -->
+  <!-- 1. HERO -->
   <section class="relative min-h-[60vh] flex items-end overflow-hidden hero-bg">
     <div class="absolute inset-0 bg-base/85"></div>
     <div class="relative z-10 max-w-7xl mx-auto w-full px-8 pt-40 pb-20 reveal-group">
       <p class="reveal text-[11px] uppercase tracking-[0.2em] font-medium text-gold flex items-center gap-3 mb-8">
         <span class="w-1.5 h-1.5 rounded-full bg-gold pulse-dot"></span>
-        The System
+        What we install
       </p>
-      <h1 class="reveal font-serif text-5xl md:text-8xl leading-[1.05] text-ink">The <em class="italic text-gold">System</em>.</h1>
-      <p class="reveal mt-8 max-w-2xl text-lg md:text-xl text-ink-dim font-light leading-relaxed">One system watches every lead from the moment it arrives to the moment it closes. It answers in seconds, books the job, and follows up until it's won or lost — so nothing depends on someone remembering.</p>
+      <h1 class="reveal font-serif text-5xl md:text-8xl leading-[1.05] text-ink max-w-4xl">Everything between the first ring and the <em class="italic text-gold">signed job</em>.</h1>
+      <p class="reveal mt-8 max-w-2xl text-lg md:text-xl text-ink-dim font-light leading-relaxed">Not software you have to learn. Not an agency that sends reports. A working system, installed into your business, that owns every lead from the moment it arrives until it's won, lost, or worth another try later.</p>
+      <a href="#journey" class="reveal mt-10 inline-flex items-center gap-2 text-gold text-[11px] uppercase tracking-[0.2em] font-medium hover:text-gold-bright transition-colors">Follow one lead through it ↓</a>
     </div>
   </section>
 
-  <!-- TRACK A DEEP DIVE -->
-  <section id="track-a" class="relative pipeline-section-bg py-24 md:py-40">
-    <div class="absolute inset-0 bg-base/85"></div>
-    <div class="relative max-w-7xl mx-auto px-8 reveal-group">
+  <!-- 2. THE JOURNEY -->
+  <section id="journey" class="relative bg-base py-24 md:py-40 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-8 reveal-group mb-20 md:mb-28">
       <p class="reveal text-[11px] uppercase tracking-[0.2em] font-medium text-gold flex items-center gap-3 mb-6">
         <span class="w-1.5 h-1.5 rounded-full bg-gold pulse-dot"></span>
-        Track A — Conversion
+        Follow One Lead
       </p>
-      <h2 class="reveal font-serif text-4xl md:text-6xl leading-tight text-ink max-w-3xl">What the system does.</h2>
-      <p class="reveal mt-6 max-w-2xl text-lg text-ink-dim font-light leading-relaxed">Six parts, working together, from the first ring to the closed deal.</p>
+      <h2 class="reveal font-serif text-4xl md:text-6xl leading-tight text-ink max-w-3xl">Follow one lead through <em class="italic text-gold">the system</em>.</h2>
+    </div>
 
-      <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="reveal bg-surface border border-line p-8 transition-all duration-300 hover:border-gold/40 hover:-translate-y-1">
-          <span class="material-symbols-outlined text-3xl text-gold mb-6 block">bolt</span>
-          <h3 class="font-serif text-xl text-ink mb-3">Respond in seconds</h3>
-          <p class="text-ink-dim text-sm leading-relaxed">Every call, form, and message gets an instant, human-sounding reply — day or night. The lead never sits in an inbox wondering if anyone is home.</p>
-        </div>
-        <div class="reveal bg-surface border border-line p-8 transition-all duration-300 hover:border-gold/40 hover:-translate-y-1">
-          <span class="material-symbols-outlined text-3xl text-gold mb-6 block">filter_alt</span>
-          <h3 class="font-serif text-xl text-ink mb-3">Qualify and route</h3>
-          <p class="text-ink-dim text-sm leading-relaxed">The system asks the right questions, scores the lead, and sends it to the right person. No lead sits in a shared inbox waiting for whoever notices it first.</p>
-        </div>
-        <div class="reveal bg-surface border border-line p-8 transition-all duration-300 hover:border-gold/40 hover:-translate-y-1">
-          <span class="material-symbols-outlined text-3xl text-gold mb-6 block">event_available</span>
-          <h3 class="font-serif text-xl text-ink mb-3">Book the job</h3>
-          <p class="text-ink-dim text-sm leading-relaxed">Good leads get a clear next step: a booked call or visit on a real calendar. No "we'll follow up" left to chance.</p>
-        </div>
-        <div class="reveal bg-surface border border-line p-8 transition-all duration-300 hover:border-gold/40 hover:-translate-y-1">
-          <span class="material-symbols-outlined text-3xl text-gold mb-6 block">forum</span>
-          <h3 class="font-serif text-xl text-ink mb-3">Follow up until it's done</h3>
-          <p class="text-ink-dim text-sm leading-relaxed">Polite, persistent follow-up runs automatically until the lead books, buys, or says no. It doesn't get busy, forget, or give up after one try.</p>
-        </div>
-        <div class="reveal bg-surface border border-line p-8 transition-all duration-300 hover:border-gold/40 hover:-translate-y-1">
-          <span class="material-symbols-outlined text-3xl text-gold mb-6 block">request_quote</span>
-          <h3 class="font-serif text-xl text-ink mb-3">Track quotes and deals</h3>
-          <p class="text-ink-dim text-sm leading-relaxed">Every appointment, quote, and deal lives on one board. You see exactly what's open, what's stuck, and what needs a nudge today.</p>
-        </div>
-        <div class="reveal bg-surface border border-line p-8 transition-all duration-300 hover:border-gold/40 hover:-translate-y-1">
-          <span class="material-symbols-outlined text-3xl text-gold mb-6 block">monitoring</span>
-          <h3 class="font-serif text-xl text-ink mb-3">Show you the leak</h3>
-          <p class="text-ink-dim text-sm leading-relaxed">A monthly, plain-language report shows exactly where leads drop off. We fix one leak at a time, then move to the next.</p>
-        </div>
+    <div class="relative max-w-7xl mx-auto px-8">
+      <div class="journey-rail hidden lg:block absolute left-8 top-2 bottom-2 w-px bg-line" aria-hidden="true">
+        <div class="journey-rail-fill absolute inset-x-0 top-0 h-full"></div>
+      </div>
+
+      <div id="journey-stages" class="flex flex-col gap-24 md:gap-32">
+
+        <!-- STAGE 01 — Capture -->
+        <article class="journey-stage reveal-group relative flex flex-col lg:flex-row gap-8 lg:gap-12">
+          <div class="hidden lg:flex w-16 flex-shrink-0 items-start justify-center pt-1">
+            <span class="font-serif text-5xl xl:text-6xl text-gold/70 leading-none">01</span>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center flex-1">
+            <div class="reveal">
+              <span class="lg:hidden font-serif text-4xl text-gold leading-none block mb-4" aria-hidden="true">01</span>
+              <h3 class="font-serif text-2xl md:text-3xl text-ink leading-snug mb-4">Capture. Every lead lands in one place.</h3>
+              <p class="text-ink-dim leading-relaxed mb-4">Calls, missed calls, website forms, texts, WhatsApp, Facebook — today they scatter across phones, inboxes, and sticky notes. The system catches every one in a single queue the moment it arrives, and records where it came from and whether you have permission to text or email back.</p>
+              <p class="text-ink-faint text-sm italic">What this replaces: &ldquo;Did anyone see that form from Tuesday?&rdquo;</p>
+            </div>
+            <div class="reveal">
+              <div class="bg-surface border border-line p-6 md:p-8">
+                <div class="flex flex-wrap gap-2 mb-6" id="chip-01-pills">
+                  <span class="inline-flex items-center bg-surface-2 border border-line text-[11px] uppercase tracking-[0.15em] text-ink-dim px-3 py-1.5">Call</span>
+                  <span class="inline-flex items-center bg-surface-2 border border-line text-[11px] uppercase tracking-[0.15em] text-ink-dim px-3 py-1.5">Form</span>
+                  <span class="inline-flex items-center bg-surface-2 border border-line text-[11px] uppercase tracking-[0.15em] text-ink-dim px-3 py-1.5">WhatsApp</span>
+                  <span class="inline-flex items-center bg-surface-2 border border-line text-[11px] uppercase tracking-[0.15em] text-ink-dim px-3 py-1.5">Facebook</span>
+                </div>
+                <div class="border border-gold/40 bg-base-deep px-4 py-3" id="chip-01-card">
+                  <p class="text-sm text-ink font-medium">New lead — Miguel R.</p>
+                  <p class="text-xs text-ink-faint mt-1">Source: Google &middot; OK to text <span class="text-gold">&check;</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- STAGE 02 — Respond -->
+        <article class="journey-stage reveal-group relative flex flex-col lg:flex-row gap-8 lg:gap-12">
+          <div class="hidden lg:flex w-16 flex-shrink-0 items-start justify-center pt-1">
+            <span class="font-serif text-5xl xl:text-6xl text-gold/70 leading-none">02</span>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center flex-1">
+            <div class="reveal lg:order-2">
+              <span class="lg:hidden font-serif text-4xl text-gold leading-none block mb-4" aria-hidden="true">02</span>
+              <h3 class="font-serif text-2xl md:text-3xl text-ink leading-snug mb-4">Respond. In seconds, every time.</h3>
+              <p class="text-ink-dim leading-relaxed mb-4">The moment a lead arrives, the system answers — a text back to a missed call, an instant reply to a form, at 2 pm or 9 pm. It sounds human, it uses your words, and it opens the conversation while your competitor's voicemail is still talking.</p>
+              <p class="text-ink-faint text-sm italic">What this replaces: the voicemail nobody checks until Thursday.</p>
+            </div>
+            <div class="reveal lg:order-1" id="chip-02">
+              <div class="bg-surface border border-line p-6 md:p-8">
+                <p class="font-serif text-4xl text-gold mb-6" id="chip-02-timer">0:00</p>
+                <div class="border-l-2 border-gold bg-base-deep px-4 py-3 max-w-xs" id="chip-02-bubble">
+                  <p class="text-sm text-ink leading-relaxed">&ldquo;Thanks for reaching out — are you looking for maintenance or a new install?&rdquo;</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- STAGE 03 — Qualify -->
+        <article class="journey-stage reveal-group relative flex flex-col lg:flex-row gap-8 lg:gap-12">
+          <div class="hidden lg:flex w-16 flex-shrink-0 items-start justify-center pt-1">
+            <span class="font-serif text-5xl xl:text-6xl text-gold/70 leading-none">03</span>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center flex-1">
+            <div class="reveal">
+              <span class="lg:hidden font-serif text-4xl text-gold leading-none block mb-4" aria-hidden="true">03</span>
+              <h3 class="font-serif text-2xl md:text-3xl text-ink leading-snug mb-4">Qualify. A few useful questions.</h3>
+              <p class="text-ink-dim leading-relaxed mb-4">The system asks what you'd ask: what do they need, where are they, when do they want it. Answers are scored against rules built for your trade — so a real prospect in your territory is treated differently than a price-shopper three counties away.</p>
+              <p class="text-ink-faint text-sm italic">What this replaces: driving forty minutes to quote a job that was never real.</p>
+            </div>
+            <div class="reveal" id="chip-03">
+              <div class="bg-surface border border-line p-6 md:p-8">
+                <ul class="space-y-3 mb-6" id="chip-03-list">
+                  <li class="flex items-center gap-3 text-sm text-ink-dim chip-03-row"><span class="text-gold">&check;</span> Service: lawn care</li>
+                  <li class="flex items-center gap-3 text-sm text-ink-dim chip-03-row"><span class="text-gold">&check;</span> Area: in territory</li>
+                  <li class="flex items-center gap-3 text-sm text-ink-dim chip-03-row"><span class="text-gold">&check;</span> Timeline: this month</li>
+                </ul>
+                <div class="inline-block border border-gold bg-gold/10 text-gold text-[11px] uppercase tracking-[0.2em] font-medium px-4 py-2" id="chip-03-badge">Qualified</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- STAGE 04 — Route -->
+        <article class="journey-stage reveal-group relative flex flex-col lg:flex-row gap-8 lg:gap-12">
+          <div class="hidden lg:flex w-16 flex-shrink-0 items-start justify-center pt-1">
+            <span class="font-serif text-5xl xl:text-6xl text-gold/70 leading-none">04</span>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center flex-1">
+            <div class="reveal lg:order-2">
+              <span class="lg:hidden font-serif text-4xl text-gold leading-none block mb-4" aria-hidden="true">04</span>
+              <h3 class="font-serif text-2xl md:text-3xl text-ink leading-snug mb-4">Route. A named owner, every time.</h3>
+              <p class="text-ink-dim leading-relaxed mb-4">Every qualified lead is assigned to a specific person on your team — not a shared inbox, not "whoever sees it first." If it sits untouched too long, the system notices and raises a flag before the lead goes cold.</p>
+              <p class="text-ink-faint text-sm italic">What this replaces: &ldquo;I thought you were handling that one.&rdquo;</p>
+            </div>
+            <div class="reveal lg:order-1" id="chip-04">
+              <div class="bg-surface border border-line p-6 md:p-8 space-y-4">
+                <div class="border border-line bg-base-deep px-4 py-3 text-sm text-ink">New lead — Miguel R.</div>
+                <div class="flex items-center gap-3" id="chip-04-owner">
+                  <span class="w-7 h-7 flex items-center justify-center bg-gold text-base-deep text-xs font-medium flex-shrink-0">S</span>
+                  <span class="text-sm text-ink">Owner: Sarah</span>
+                </div>
+                <div class="border border-amber-500/40 bg-amber-500/10 text-amber-300 text-xs px-4 py-2" id="chip-04-alert">No touch in 4h — nudge sent</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- STAGE 05 — Book -->
+        <article class="journey-stage reveal-group relative flex flex-col lg:flex-row gap-8 lg:gap-12">
+          <div class="hidden lg:flex w-16 flex-shrink-0 items-start justify-center pt-1">
+            <span class="font-serif text-5xl xl:text-6xl text-gold/70 leading-none">05</span>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center flex-1">
+            <div class="reveal">
+              <span class="lg:hidden font-serif text-4xl text-gold leading-none block mb-4" aria-hidden="true">05</span>
+              <h3 class="font-serif text-2xl md:text-3xl text-ink leading-snug mb-4">Book. A real slot on a real calendar.</h3>
+              <p class="text-ink-dim leading-relaxed mb-4">Good leads don't get "we'll be in touch." They get offered an actual time — a call, a visit, an estimate — on your team's live calendar. Confirmations and reminders go out automatically so booked doesn't quietly turn into no-show.</p>
+              <p class="text-ink-faint text-sm italic">What this replaces: three days of phone tag to schedule one estimate.</p>
+            </div>
+            <div class="reveal" id="chip-05">
+              <div class="bg-surface border border-line p-6 md:p-8">
+                <div class="flex gap-2 mb-6">
+                  <span class="w-9 h-9 flex items-center justify-center text-[10px] uppercase text-ink-faint border border-line">Mon</span>
+                  <span class="w-9 h-9 flex items-center justify-center text-[10px] uppercase text-ink-faint border border-line">Tue</span>
+                  <span class="w-9 h-9 flex items-center justify-center text-[10px] uppercase text-ink-faint border border-line">Wed</span>
+                  <span class="w-9 h-9 flex items-center justify-center text-[10px] uppercase bg-gold text-base-deep border border-gold font-medium" id="chip-05-thu">Thu</span>
+                  <span class="w-9 h-9 flex items-center justify-center text-[10px] uppercase text-ink-faint border border-line">Fri</span>
+                </div>
+                <div class="border border-gold/40 bg-base-deep px-4 py-3" id="chip-05-slot">
+                  <p class="text-sm text-ink">Thu 10:30 — Site visit <span class="text-gold">&check;</span></p>
+                  <p class="text-xs text-ink-faint mt-1">Reminder set</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- STAGE 06 — Follow up -->
+        <article class="journey-stage reveal-group relative flex flex-col lg:flex-row gap-8 lg:gap-12">
+          <div class="hidden lg:flex w-16 flex-shrink-0 items-start justify-center pt-1">
+            <span class="font-serif text-5xl xl:text-6xl text-gold/70 leading-none">06</span>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center flex-1">
+            <div class="reveal lg:order-2">
+              <span class="lg:hidden font-serif text-4xl text-gold leading-none block mb-4" aria-hidden="true">06</span>
+              <h3 class="font-serif text-2xl md:text-3xl text-ink leading-snug mb-4">Follow up. Politely. Relentlessly.</h3>
+              <p class="text-ink-dim leading-relaxed mb-4">Most jobs aren't lost on the first call — they're lost in the silence after the quote. The system follows up on every open conversation and every sent quote until there's an answer: booked, won, lost, or "not now." Leads that go quiet get parked, then re-approached when the timing makes sense. And when a job wraps, it asks the happy customer for the review.</p>
+              <p class="text-ink-faint text-sm italic">What this replaces: the quote you meant to chase and never did.</p>
+            </div>
+            <div class="reveal lg:order-1" id="chip-06">
+              <div class="bg-surface border border-line p-6 md:p-8 space-y-3">
+                <p class="text-sm text-ink-dim chip-06-row">Day 1 — quote sent</p>
+                <p class="text-sm text-ink-dim chip-06-row">Day 3 — friendly check-in</p>
+                <p class="text-sm text-ink-dim chip-06-row">Day 7 — &ldquo;still interested?&rdquo;</p>
+                <p class="text-sm text-gold font-medium" id="chip-06-status">Reply received</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- STAGE 07 — Track -->
+        <article class="journey-stage reveal-group relative flex flex-col lg:flex-row gap-8 lg:gap-12">
+          <div class="hidden lg:flex w-16 flex-shrink-0 items-start justify-center pt-1">
+            <span class="font-serif text-5xl xl:text-6xl text-gold/70 leading-none">07</span>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center flex-1">
+            <div class="reveal">
+              <span class="lg:hidden font-serif text-4xl text-gold leading-none block mb-4" aria-hidden="true">07</span>
+              <h3 class="font-serif text-2xl md:text-3xl text-ink leading-snug mb-4">Track. One board, the whole truth.</h3>
+              <p class="text-ink-dim leading-relaxed mb-4">Every lead sits at a named stage — from New to Won, Lost, or Nurture — on one board you can read in ten seconds. What's waiting on a quote. What's stalled. What closed this week. No more reconstructing reality from three inboxes and someone's memory.</p>
+              <p class="text-ink-faint text-sm italic">What this replaces: finding out a lead died three weeks after it happened.</p>
+            </div>
+            <div class="reveal" id="chip-07">
+              <div class="bg-surface border border-line p-6 md:p-8">
+                <div class="grid grid-cols-3 gap-2 mb-6" id="chip-07-board">
+                  <div class="border border-line bg-base-deep p-3">
+                    <p class="text-[9px] uppercase tracking-[0.1em] text-ink-faint">Engaged <span class="text-ink-dim">(2)</span></p>
+                  </div>
+                  <div class="border border-line bg-base-deep p-3 relative min-h-[76px]">
+                    <p class="text-[9px] uppercase tracking-[0.1em] text-ink-faint mb-2">Quote sent <span id="chip-07-qs-count" class="text-ink-dim">(3)</span></p>
+                    <div class="border border-line bg-surface-2 text-[10px] text-ink px-2 py-1.5" id="chip-07-card">Job #214</div>
+                  </div>
+                  <div class="border border-gold/30 bg-base-deep p-3">
+                    <p class="text-[9px] uppercase tracking-[0.1em] text-gold">Won <span id="chip-07-won-count" class="text-gold">(4)</span></p>
+                  </div>
+                </div>
+                <p class="text-[10px] text-ink-faint leading-relaxed">New &rarr; Contacted &rarr; Engaged &rarr; Qualified &rarr; Booked &rarr; Appointment &rarr; Quote sent &rarr; Won &middot; Lost &middot; Nurture</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- STAGE 08 — Improve -->
+        <article class="journey-stage reveal-group relative flex flex-col lg:flex-row gap-8 lg:gap-12">
+          <div class="hidden lg:flex w-16 flex-shrink-0 items-start justify-center pt-1">
+            <span class="font-serif text-5xl xl:text-6xl text-gold/70 leading-none">08</span>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center flex-1">
+            <div class="reveal lg:order-2">
+              <span class="lg:hidden font-serif text-4xl text-gold leading-none block mb-4" aria-hidden="true">08</span>
+              <h3 class="font-serif text-2xl md:text-3xl text-ink leading-snug mb-4">Improve. One leak at a time, every month.</h3>
+              <p class="text-ink-dim leading-relaxed mb-4">Once a month you get a plain-language report: where leads came in, where they dropped, and the single biggest leak in the pipe. We fix that one, measure it, then move to the next. The system also watches itself — if anything stops working, we know before you do.</p>
+              <p class="text-ink-faint text-sm italic">What this replaces: &ldquo;marketing feels like it's working&hellip; I think?&rdquo;</p>
+            </div>
+            <div class="reveal lg:order-1" id="chip-08">
+              <div class="bg-surface border border-line p-6 md:p-8">
+                <svg viewBox="0 0 160 70" class="w-full h-auto mb-4" id="chip-08-chart" aria-hidden="true">
+                  <rect x="6" y="30" width="18" height="34" fill="#1d332a" class="chip-08-bar"></rect>
+                  <rect x="34" y="18" width="18" height="46" fill="#1d332a" class="chip-08-bar"></rect>
+                  <rect x="62" y="42" width="18" height="22" fill="#C9A84C" stroke="#ffe08f" stroke-width="2" class="chip-08-bar chip-08-bar-weak"></rect>
+                  <rect x="90" y="10" width="18" height="54" fill="#1d332a" class="chip-08-bar"></rect>
+                  <rect x="118" y="24" width="18" height="40" fill="#1d332a" class="chip-08-bar"></rect>
+                  <line x1="4" y1="64" x2="140" y2="64" stroke="#1d332a" stroke-width="1"></line>
+                </svg>
+                <p class="text-xs text-gold uppercase tracking-[0.1em] font-medium mb-3" id="chip-08-tag">Biggest leak: follow-up after quote</p>
+                <p class="text-sm text-ink-dim" id="chip-08-footer">This month's fix &rarr; measured next month</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
 
-  <!-- CRM SECTION -->
+  <!-- 3. CRM SECTION -->
   <section class="relative bg-base-deep py-24 md:py-40">
     <div class="max-w-7xl mx-auto px-8 reveal-group">
       <h2 class="reveal font-serif text-4xl md:text-6xl leading-tight text-ink max-w-3xl mb-16">Your CRM. Or ours.</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="reveal bg-surface border border-line p-10 md:p-12">
           <h3 class="font-serif text-2xl text-ink mb-4">We bring the stack</h3>
-          <p class="text-ink-dim leading-relaxed">No CRM? We install and run a proven one for you. Phones, pipeline, and calendars are set up in days, not months. Your team starts working in it from day one, with nothing left half-configured.</p>
+          <p class="text-ink-dim leading-relaxed">No CRM, or one nobody uses? We install and run a proven setup — phones, pipeline, calendars — configured for your trade in days, not months. Your team starts on it from day one, with nothing left half-configured.</p>
         </div>
         <div class="reveal bg-surface border border-line p-10 md:p-12">
           <h3 class="font-serif text-2xl text-ink mb-4">We plug into yours</h3>
-          <p class="text-ink-dim leading-relaxed">Already on Salesforce, HubSpot, or something else? We connect to it instead of replacing it. Your team keeps working where they already work, with no migration and no retraining.</p>
+          <p class="text-ink-dim leading-relaxed">Already on Salesforce, HubSpot, or something else? The system connects to it instead of replacing it. Same rules, same reports, no migration, no retraining.</p>
         </div>
       </div>
+      <p class="reveal mt-10 text-center text-ink-faint text-sm">Either way, the system runs the same. The CRM is just where it lives.</p>
     </div>
   </section>
 
-  <!-- TRACK B -->
+  <!-- 4. TRACK B -->
   <section id="track-b" class="relative bg-base py-24 md:py-40">
     <div class="max-w-7xl mx-auto px-8 reveal-group">
       <p class="reveal text-[11px] uppercase tracking-[0.2em] font-medium text-gold flex items-center gap-3 mb-6">
         <span class="w-1.5 h-1.5 rounded-full bg-gold pulse-dot"></span>
-        Add-On
+        The add-on
       </p>
-      <h2 class="reveal font-serif text-4xl md:text-6xl leading-tight text-ink max-w-3xl">Track B — Visibility</h2>
-      <p class="reveal mt-6 max-w-2xl text-lg text-ink-dim font-light leading-relaxed">Track B is separate in price and scope. Conversion comes first.</p>
+      <h2 class="reveal font-serif text-4xl md:text-6xl leading-tight text-ink max-w-3xl">More <em class="italic text-gold">good</em> leads into the system.</h2>
+      <p class="reveal mt-6 max-w-3xl text-lg text-ink-dim font-light leading-relaxed">Everything above fixes what happens after a lead shows up. Track B is for when you also want more of them showing up. We keep it separate on purpose: pouring more leads into a leaking pipeline just loses them faster — so conversion gets installed first, and visibility gets added when the system is ready to catch what it brings.</p>
 
       <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="reveal bg-surface-2 border border-line p-8">
-          <h3 class="font-serif text-lg text-ink mb-3">Local SEO</h3>
-          <p class="text-ink-dim text-sm leading-relaxed">We get your site found by the people already searching for what you do, in the areas you serve.</p>
+        <div class="reveal bg-surface-2 border border-line p-8 flex flex-col">
+          <h3 class="font-serif text-lg text-ink mb-4">Local search</h3>
+          <p class="text-[11px] uppercase tracking-[0.15em] text-ink-faint mb-2">What we do</p>
+          <p class="text-ink-dim text-sm leading-relaxed mb-5">We make your website show up when people in your service area search for what you do — fixing the technical problems, building a page for each service and each city you serve, and earning the rankings over time.</p>
+          <p class="text-[11px] uppercase tracking-[0.15em] text-gold-dim mb-2 mt-auto">What changes</p>
+          <p class="text-gold text-sm font-medium">&rarr; You stop being invisible to people already looking for you.</p>
         </div>
-        <div class="reveal bg-surface-2 border border-line p-8">
-          <h3 class="font-serif text-lg text-ink mb-3">Google Business Profile</h3>
-          <p class="text-ink-dim text-sm leading-relaxed">We keep your listing accurate, active, and visible in the local map results people check first.</p>
+        <div class="reveal bg-surface-2 border border-line p-8 flex flex-col">
+          <h3 class="font-serif text-lg text-ink mb-4">Google Business Profile</h3>
+          <p class="text-[11px] uppercase tracking-[0.15em] text-ink-faint mb-2">What we do</p>
+          <p class="text-ink-dim text-sm leading-relaxed mb-5">The map listing is the first thing locals see, and most businesses leave it half-empty. We complete yours, post to it every week, add photos of real work, and respond to every review.</p>
+          <p class="text-[11px] uppercase tracking-[0.15em] text-gold-dim mb-2 mt-auto">What changes</p>
+          <p class="text-gold text-sm font-medium">&rarr; The map result starts working like a storefront.</p>
         </div>
-        <div class="reveal bg-surface-2 border border-line p-8">
-          <h3 class="font-serif text-lg text-ink mb-3">Content</h3>
-          <p class="text-ink-dim text-sm leading-relaxed">We write the pages and articles that answer what your customers are already asking.</p>
+        <div class="reveal bg-surface-2 border border-line p-8 flex flex-col">
+          <h3 class="font-serif text-lg text-ink mb-4">Content that answers real questions</h3>
+          <p class="text-[11px] uppercase tracking-[0.15em] text-ink-faint mb-2">What we do</p>
+          <p class="text-ink-dim text-sm leading-relaxed mb-5">We write the pages and articles that answer what your customers already type into Google — costs, timelines, "how do I choose" — in your voice, for your area.</p>
+          <p class="text-[11px] uppercase tracking-[0.15em] text-gold-dim mb-2 mt-auto">What changes</p>
+          <p class="text-gold text-sm font-medium">&rarr; You show up at the moment they're deciding, not after.</p>
         </div>
-        <div class="reveal bg-surface-2 border border-line p-8">
-          <h3 class="font-serif text-lg text-ink mb-3">Local ads</h3>
-          <p class="text-ink-dim text-sm leading-relaxed">We run targeted local campaigns that bring in leads worth feeding into the system.</p>
+        <div class="reveal bg-surface-2 border border-line p-8 flex flex-col">
+          <h3 class="font-serif text-lg text-ink mb-4">Local ads</h3>
+          <p class="text-[11px] uppercase tracking-[0.15em] text-ink-faint mb-2">What we do</p>
+          <p class="text-ink-dim text-sm leading-relaxed mb-5">Google ads pointed only at your services, inside your territory, tuned toward the jobs you actually want — and every click lands in the conversion system above, so paid leads get the same instant response as everyone else.</p>
+          <p class="text-[11px] uppercase tracking-[0.15em] text-gold-dim mb-2 mt-auto">What changes</p>
+          <p class="text-gold text-sm font-medium">&rarr; Ad spend feeds a system built to catch it.</p>
         </div>
       </div>
+
+      <p class="reveal mt-12 text-ink-faint text-sm max-w-2xl">Track B is separate in scope and price. It's added when it makes sense — never sold as the fix for a conversion problem.</p>
     </div>
   </section>
 
-  <!-- CTA BAND -->
+  <!-- 5. CTA BAND -->
   <section class="relative bg-base-deep border-t border-line py-24 md:py-32">
     <div class="max-w-7xl mx-auto px-8 reveal-group text-center">
       <h2 class="reveal font-serif text-4xl md:text-5xl leading-tight text-ink mb-6">Start with a <em class="italic text-gold">free</em> audit.</h2>
@@ -326,7 +539,8 @@
 
   gsap.registerPlugin(ScrollTrigger);
 
-  // Scroll-triggered fade-ups, staggered per section
+  // Scroll-triggered fade-ups, staggered per section (one reveal-group per stage,
+  // so each stage animates independently as it scrolls into view)
   document.querySelectorAll('.reveal-group').forEach(function (group) {
     var items = group.querySelectorAll('.reveal');
     if (!items.length) return;
@@ -348,6 +562,178 @@
     gsap.set(heroItems, { y: 24, opacity: 0 });
     gsap.to(heroItems, { y: 0, opacity: 1, duration: 0.9, ease: 'power2.out', stagger: 0.1, delay: 0.15 });
   }
+
+  // ---- Journey rail: gold fill draws down the spine as the journey scrolls ----
+  var journeyFill = document.querySelector('.journey-rail-fill');
+  var journeyStages = document.getElementById('journey-stages');
+  if (journeyFill && journeyStages) {
+    gsap.set(journeyFill, { scaleY: 0 });
+    gsap.to(journeyFill, {
+      scaleY: 1,
+      ease: 'none',
+      scrollTrigger: { trigger: journeyStages, start: 'top 65%', end: 'bottom 55%', scrub: true }
+    });
+  }
+
+  // ---- Journey stage chips: each animates once, ~75-80% into view ----
+
+  // 01 Capture — source pills converge into a single lead card
+  (function () {
+    var pills = document.querySelectorAll('#chip-01-pills > span');
+    var card = document.getElementById('chip-01-card');
+    if (!pills.length || !card) return;
+    gsap.set(pills, { y: -10, opacity: 0 });
+    gsap.set(card, { y: 14, opacity: 0 });
+    ScrollTrigger.create({
+      trigger: card, start: 'top 80%', once: true,
+      onEnter: function () {
+        gsap.timeline()
+          .to(pills, { y: 0, opacity: 1, duration: 0.45, ease: 'power2.out', stagger: 0.08 })
+          .to(card, { y: 0, opacity: 1, duration: 0.5, ease: 'power2.out' }, '-=0.1');
+      }
+    });
+  })();
+
+  // 02 Respond — timer counts up, then the reply bubble appears
+  (function () {
+    var timer = document.getElementById('chip-02-timer');
+    var bubble = document.getElementById('chip-02-bubble');
+    if (!timer || !bubble) return;
+    gsap.set(bubble, { y: 12, opacity: 0 });
+    ScrollTrigger.create({
+      trigger: '#chip-02', start: 'top 80%', once: true,
+      onEnter: function () {
+        var obj = { v: 0 };
+        timer.textContent = '0:00';
+        gsap.to(obj, {
+          v: 7, duration: 0.8, ease: 'power1.out',
+          onUpdate: function () { timer.textContent = '0:0' + Math.round(obj.v); },
+          onComplete: function () {
+            gsap.to(bubble, { y: 0, opacity: 1, duration: 0.5, ease: 'power2.out' });
+          }
+        });
+      }
+    });
+  })();
+
+  // 03 Qualify — checklist rows tick in, then the badge stamps
+  (function () {
+    var rows = document.querySelectorAll('#chip-03-list .chip-03-row');
+    var badge = document.getElementById('chip-03-badge');
+    if (!rows.length || !badge) return;
+    gsap.set(rows, { x: -8, opacity: 0 });
+    gsap.set(badge, { scale: 0.6, opacity: 0 });
+    ScrollTrigger.create({
+      trigger: '#chip-03', start: 'top 80%', once: true,
+      onEnter: function () {
+        gsap.timeline()
+          .to(rows, { x: 0, opacity: 1, duration: 0.4, ease: 'power2.out', stagger: 0.12 })
+          .to(badge, { scale: 1, opacity: 1, duration: 0.4, ease: 'back.out(2.2)' }, '+=0.1');
+      }
+    });
+  })();
+
+  // 04 Route — owner row slides in, then the amber nudge chip appears
+  (function () {
+    var owner = document.getElementById('chip-04-owner');
+    var alertChip = document.getElementById('chip-04-alert');
+    if (!owner || !alertChip) return;
+    gsap.set(owner, { x: -10, opacity: 0 });
+    gsap.set(alertChip, { y: 8, opacity: 0 });
+    ScrollTrigger.create({
+      trigger: '#chip-04', start: 'top 80%', once: true,
+      onEnter: function () {
+        gsap.timeline()
+          .to(owner, { x: 0, opacity: 1, duration: 0.45, ease: 'power2.out' })
+          .to(alertChip, { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out' }, '+=0.3');
+      }
+    });
+  })();
+
+  // 05 Book — Thursday lights up gold, then the confirmed slot fades in
+  (function () {
+    var thu = document.getElementById('chip-05-thu');
+    var slot = document.getElementById('chip-05-slot');
+    if (!thu || !slot) return;
+    gsap.set(thu, { backgroundColor: 'transparent', color: '#9fb3aa', borderColor: '#1d332a' });
+    gsap.set(slot, { y: 10, opacity: 0 });
+    ScrollTrigger.create({
+      trigger: '#chip-05', start: 'top 80%', once: true,
+      onEnter: function () {
+        gsap.timeline()
+          .to(thu, { backgroundColor: '#C9A84C', color: '#00130d', borderColor: '#C9A84C', duration: 0.4, ease: 'power2.out' })
+          .to(slot, { y: 0, opacity: 1, duration: 0.45, ease: 'power2.out' }, '-=0.05');
+      }
+    });
+  })();
+
+  // 06 Follow up — thread messages appear in sequence, then status flips gold
+  (function () {
+    var rows = document.querySelectorAll('#chip-06 .chip-06-row');
+    var status = document.getElementById('chip-06-status');
+    if (!rows.length || !status) return;
+    gsap.set(rows, { y: 8, opacity: 0 });
+    gsap.set(status, { opacity: 0, scale: 0.9 });
+    ScrollTrigger.create({
+      trigger: '#chip-06', start: 'top 80%', once: true,
+      onEnter: function () {
+        gsap.timeline()
+          .to(rows, { y: 0, opacity: 1, duration: 0.4, ease: 'power2.out', stagger: 0.18 })
+          .to(status, { opacity: 1, scale: 1, duration: 0.4, ease: 'back.out(2)' }, '+=0.15');
+      }
+    });
+  })();
+
+  // 07 Track — a card slides from Quote sent into Won, counts tick
+  (function () {
+    var card = document.getElementById('chip-07-card');
+    var board = document.getElementById('chip-07-board');
+    var wonCol = board ? board.children[2] : null;
+    var qsCount = document.getElementById('chip-07-qs-count');
+    var wonCount = document.getElementById('chip-07-won-count');
+    if (!card || !wonCol) return;
+    ScrollTrigger.create({
+      trigger: '#chip-07', start: 'top 80%', once: true,
+      onEnter: function () {
+        var cardRect = card.getBoundingClientRect();
+        var wonRect = wonCol.getBoundingClientRect();
+        var dx = wonRect.left - cardRect.left + 8;
+        var dy = wonRect.top - cardRect.top + 28;
+        gsap.timeline()
+          .to({}, { duration: 0.3 })
+          .to(card, { x: dx, y: dy, duration: 0.7, ease: 'power2.inOut' })
+          .to(card, { opacity: 0, duration: 0.25 }, '-=0.05')
+          .call(function () {
+            if (qsCount) qsCount.textContent = '(2)';
+            if (wonCount) wonCount.textContent = '(5)';
+          });
+      }
+    });
+  })();
+
+  // 08 Improve — bars draw in, the weakest bar pulses, tag and footer fade in
+  (function () {
+    var bars = document.querySelectorAll('#chip-08-chart .chip-08-bar');
+    var weak = document.querySelector('.chip-08-bar-weak');
+    var tag = document.getElementById('chip-08-tag');
+    var footer = document.getElementById('chip-08-footer');
+    if (!bars.length) return;
+    gsap.set(bars, { scaleY: 0 });
+    gsap.set(tag, { opacity: 0, y: 6 });
+    gsap.set(footer, { opacity: 0 });
+    ScrollTrigger.create({
+      trigger: '#chip-08', start: 'top 80%', once: true,
+      onEnter: function () {
+        var tl = gsap.timeline();
+        tl.to(bars, { scaleY: 1, duration: 0.6, ease: 'power2.out', stagger: 0.08 });
+        if (weak) {
+          tl.to(weak, { attr: { 'stroke-width': 3 }, duration: 0.3, yoyo: true, repeat: 1 }, '-=0.1');
+        }
+        tl.to(tag, { opacity: 1, y: 0, duration: 0.4, ease: 'power2.out' }, '-=0.1')
+          .to(footer, { opacity: 1, duration: 0.4, ease: 'power2.out' }, '-=0.2');
+      }
+    });
+  })();
 })();
 </script>
 </body>
