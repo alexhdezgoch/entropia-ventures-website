@@ -187,6 +187,54 @@
     100% { width: 36px; height: 36px; opacity: 0; }
   }
 
+  /* ---- Pain scenes (#leak) ---- */
+  .pain-scene { background-size: cover; background-position: center; }
+  .pain-scene-1 { background-image: url('/assets/media/pain-voicemail.jpg'), radial-gradient(ellipse 70% 60% at 25% 15%, rgba(201,168,76,0.16), transparent 60%), linear-gradient(160deg, #0d2318 0%, #00130d 100%); }
+  .pain-scene-2 { background-image: url('/assets/media/pain-ads.jpg'), radial-gradient(ellipse 70% 60% at 75% 15%, rgba(201,168,76,0.13), transparent 60%), linear-gradient(200deg, #10231a 0%, #050f0b 100%); }
+  .pain-scene-3 { background-image: url('/assets/media/pain-quote.jpg'), radial-gradient(ellipse 70% 60% at 25% 85%, rgba(201,168,76,0.12), transparent 60%), linear-gradient(160deg, #0a1a13 0%, #00130d 100%); }
+  .pain-scene-4 { background-image: url('/assets/media/pain-busyseason.jpg'), radial-gradient(ellipse 70% 60% at 75% 85%, rgba(201,168,76,0.15), transparent 60%), linear-gradient(200deg, #0d2318 0%, #050f0b 100%); }
+
+  .pain-chip {
+    position: absolute; z-index: 2;
+    background: rgba(10,26,19,0.95);
+    border: 1px solid #1d332a;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    padding: 0.6rem 0.85rem;
+    transition: top 0.2s ease, bottom 0.2s ease, border-color 0.2s ease;
+  }
+  .pain-chip-1 { top: 0.85rem; left: 0.85rem; transform: rotate(-1deg); }
+  .pain-chip-2 { bottom: 0.85rem; right: 0.85rem; transform: rotate(1deg); }
+  .pain-chip-3 { bottom: 0.85rem; left: 0.85rem; transform: rotate(-1deg); opacity: 0.55; filter: saturate(0.5) brightness(0.92); }
+  .pain-chip-4 { top: 0.85rem; right: 0.85rem; transform: rotate(1deg); }
+
+  .group:hover .pain-chip-1,
+  .group:hover .pain-chip-4 { top: calc(0.85rem - 2px); }
+  .group:hover .pain-chip-2,
+  .group:hover .pain-chip-3 { bottom: calc(0.85rem + 2px); }
+
+  .pain-chip-inner { display: flex; align-items: center; gap: 0.65rem; }
+  .pain-chip-icon-wrap { position: relative; display: flex; flex-shrink: 0; }
+  .pain-chip-icon-wrap .material-symbols-outlined { font-size: 18px; color: #C9A84C; }
+  .pain-chip-badge {
+    position: absolute; top: -3px; right: -4px; width: 8px; height: 8px; border-radius: 50%;
+    background: #e6746a; box-shadow: 0 0 0 2px rgba(10,26,19,0.95);
+  }
+  .pain-chip-text { display: flex; flex-direction: column; line-height: 1.25; }
+  .pain-chip-title { font-size: 12px; font-weight: 500; color: #f9f9f8; white-space: nowrap; }
+  .pain-chip-sub { font-size: 11px; color: #9fb3aa; margin-top: 1px; white-space: nowrap; }
+  .pain-chip-counter { color: #C9A84C; font-weight: 600; }
+
+  .pain-chip-chart { display: block; }
+  .pain-chip-chart-labels { display: flex; flex-direction: column; gap: 3px; }
+  .pain-chip-chart-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; white-space: nowrap; }
+  .pain-chip-chart-label-gold { color: #C9A84C; }
+  .pain-chip-chart-label-dim { color: #5f736a; }
+
+  /* ---- Tried icons (#tried) ---- */
+  .tried-icon-wrap { display: inline-flex; }
+  .tried-icon-svg { display: block; }
+
   .btn-primary {
     display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
     background: #C9A84C; color: #00130d;
@@ -311,25 +359,88 @@
       <h2 class="reveal font-serif text-4xl md:text-6xl leading-tight text-ink max-w-3xl">You're not losing jobs to better companies.<br><em class="italic text-gold">You're losing them to faster ones.</em></h2>
 
       <div class="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div class="reveal bg-surface border border-line p-8 transition-all duration-300 hover:border-gold/40 hover:-translate-y-1">
-          <span class="material-symbols-outlined text-3xl text-gold mb-6 block">voicemail</span>
-          <h3 class="font-serif text-xl text-ink mb-3">The voicemail from Tuesday</h3>
-          <p class="text-ink-dim text-sm leading-relaxed">A customer calls while everyone's working. The voicemail gets heard two days later. They booked someone else within the hour.</p>
+        <div class="reveal group bg-surface border border-line overflow-hidden transition-all duration-300 hover:border-gold/40 hover:-translate-y-1">
+          <div class="pain-scene pain-scene-1 relative aspect-video">
+            <div class="absolute inset-0 bg-base/50"></div>
+            <div class="pain-chip pain-chip-1" aria-hidden="true">
+              <div class="pain-chip-inner">
+                <span class="pain-chip-icon-wrap">
+                  <span class="material-symbols-outlined">voicemail</span>
+                  <span class="pain-chip-badge"></span>
+                </span>
+                <span class="pain-chip-text">
+                  <span class="pain-chip-title">Missed call</span>
+                  <span class="pain-chip-sub">heard 2 days later</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="p-8">
+            <h3 class="font-serif text-xl text-ink mb-3">The voicemail from Tuesday</h3>
+            <p class="text-ink-dim text-sm leading-relaxed">A customer calls while everyone's working. The voicemail gets heard two days later. They booked someone else within the hour.</p>
+          </div>
         </div>
-        <div class="reveal bg-surface border border-line p-8 transition-all duration-300 hover:border-gold/40 hover:-translate-y-1">
-          <span class="material-symbols-outlined text-3xl text-gold mb-6 block">trending_flat</span>
-          <h3 class="font-serif text-xl text-ink mb-3">Ads on, revenue flat</h3>
-          <p class="text-ink-dim text-sm leading-relaxed">You're paying for leads every month. The leads arrive. Revenue doesn't move. And nobody can tell you exactly where they go.</p>
+        <div class="reveal group bg-surface border border-line overflow-hidden transition-all duration-300 hover:border-gold/40 hover:-translate-y-1">
+          <div class="pain-scene pain-scene-2 relative aspect-video">
+            <div class="absolute inset-0 bg-base/50"></div>
+            <div class="pain-chip pain-chip-2" aria-hidden="true">
+              <div class="pain-chip-inner">
+                <svg class="pain-chip-chart" viewBox="0 0 140 70" width="140" height="70" fill="none" aria-hidden="true">
+                  <line x1="4" y1="62" x2="136" y2="62" stroke="#1d332a" stroke-width="1"></line>
+                  <path class="pain-chip-line" d="M4 52 L136 52" stroke="#5f736a" stroke-width="2" stroke-linecap="round"></path>
+                  <path class="pain-chip-line" d="M4 60 C 45 56, 80 34, 136 10" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"></path>
+                </svg>
+                <div class="pain-chip-chart-labels">
+                  <span class="pain-chip-chart-label pain-chip-chart-label-gold">Spend</span>
+                  <span class="pain-chip-chart-label pain-chip-chart-label-dim">Revenue</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-8">
+            <h3 class="font-serif text-xl text-ink mb-3">Ads on, revenue flat</h3>
+            <p class="text-ink-dim text-sm leading-relaxed">You're paying for leads every month. The leads arrive. Revenue doesn't move. And nobody can tell you exactly where they go.</p>
+          </div>
         </div>
-        <div class="reveal bg-surface border border-line p-8 transition-all duration-300 hover:border-gold/40 hover:-translate-y-1">
-          <span class="material-symbols-outlined text-3xl text-gold mb-6 block">request_quote</span>
-          <h3 class="font-serif text-xl text-ink mb-3">The quote nobody chased</h3>
-          <p class="text-ink-dim text-sm leading-relaxed">It went out. Then silence. The deal didn't say no — it just got forgotten.</p>
+        <div class="reveal group bg-surface border border-line overflow-hidden transition-all duration-300 hover:border-gold/40 hover:-translate-y-1">
+          <div class="pain-scene pain-scene-3 relative aspect-video">
+            <div class="absolute inset-0 bg-base/50"></div>
+            <div class="pain-chip pain-chip-3" aria-hidden="true">
+              <div class="pain-chip-inner">
+                <span class="pain-chip-icon-wrap">
+                  <span class="material-symbols-outlined">request_quote</span>
+                </span>
+                <span class="pain-chip-text">
+                  <span class="pain-chip-title">Quote sent</span>
+                  <span class="pain-chip-sub">14 days · no reply</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="p-8">
+            <h3 class="font-serif text-xl text-ink mb-3">The quote nobody chased</h3>
+            <p class="text-ink-dim text-sm leading-relaxed">It went out. Then silence. The deal didn't say no — it just got forgotten.</p>
+          </div>
         </div>
-        <div class="reveal bg-surface border border-line p-8 transition-all duration-300 hover:border-gold/40 hover:-translate-y-1">
-          <span class="material-symbols-outlined text-3xl text-gold mb-6 block">water_drop</span>
-          <h3 class="font-serif text-xl text-ink mb-3">Busy season is when you leak most</h3>
-          <p class="text-ink-dim text-sm leading-relaxed">The more work you have, the more calls you miss. Your best month is also your most expensive one.</p>
+        <div class="reveal group bg-surface border border-line overflow-hidden transition-all duration-300 hover:border-gold/40 hover:-translate-y-1">
+          <div class="pain-scene pain-scene-4 relative aspect-video">
+            <div class="absolute inset-0 bg-base/50"></div>
+            <div class="pain-chip pain-chip-4" aria-hidden="true">
+              <div class="pain-chip-inner">
+                <span class="pain-chip-icon-wrap">
+                  <span class="material-symbols-outlined">voicemail</span>
+                </span>
+                <span class="pain-chip-text">
+                  <span class="pain-chip-title"><span class="pain-chip-counter" data-target="7">7</span> missed calls</span>
+                  <span class="pain-chip-sub">on the busiest week</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="p-8">
+            <h3 class="font-serif text-xl text-ink mb-3">Busy season is when you leak most</h3>
+            <p class="text-ink-dim text-sm leading-relaxed">The more work you have, the more calls you miss. Your best month is also your most expensive one.</p>
+          </div>
         </div>
       </div>
 
@@ -347,23 +458,55 @@
       <h2 class="reveal font-serif text-4xl md:text-6xl leading-tight text-ink max-w-3xl">You've probably <em class="italic text-gold">already</em> tried to fix this.</h2>
 
       <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="reveal bg-surface border border-line p-8 transition-all duration-300 hover:border-gold/40 hover:-translate-y-1">
-          <span class="material-symbols-outlined text-3xl text-gold mb-6 block">dns</span>
+        <div class="reveal group bg-surface border border-line p-8 transition-all duration-300 hover:border-gold/40 hover:-translate-y-1">
+          <span class="tried-icon-wrap mb-6 w-12 h-12 text-gold transition-colors duration-300 group-hover:text-gold-bright">
+            <svg class="tried-icon-svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <rect data-draw x="6" y="9" width="36" height="30" rx="1"></rect>
+              <line data-draw x1="6" y1="16" x2="42" y2="16"></line>
+              <circle cx="10.5" cy="12.5" r="0.9" fill="currentColor" stroke="none"></circle>
+              <circle cx="13.5" cy="12.5" r="0.9" fill="currentColor" stroke="none"></circle>
+              <circle cx="16.5" cy="12.5" r="0.9" fill="currentColor" stroke="none"></circle>
+              <line data-draw x1="12" y1="22" x2="36" y2="22"></line>
+              <line data-draw x1="12" y1="28" x2="36" y2="28"></line>
+              <line data-draw x1="12" y1="34" x2="21" y2="34" stroke-dasharray="2 2" opacity="0.55"></line>
+            </svg>
+          </span>
           <h3 class="font-serif text-xl text-ink mb-3">A CRM</h3>
           <p class="text-ink-dim text-sm leading-relaxed">Software doesn't answer the phone. It became a list of names nobody calls.</p>
         </div>
-        <div class="reveal bg-surface border border-line p-8 transition-all duration-300 hover:border-gold/40 hover:-translate-y-1">
-          <span class="material-symbols-outlined text-3xl text-gold mb-6 block">group_add</span>
+        <div class="reveal group bg-surface border border-line p-8 transition-all duration-300 hover:border-gold/40 hover:-translate-y-1">
+          <span class="tried-icon-wrap mb-6 w-12 h-12 text-gold transition-colors duration-300 group-hover:text-gold-bright">
+            <svg class="tried-icon-svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <circle data-draw cx="17" cy="16" r="5"></circle>
+              <path data-draw d="M8 38c0-6.5 4-10.5 9-10.5s9 4 9 10.5"></path>
+              <circle data-draw cx="31" cy="13" r="4"></circle>
+              <path data-draw d="M24.5 30c1.4-2 3.8-3.2 6.5-3.2 4.6 0 8 3.6 8 9.2"></path>
+              <circle data-draw cx="36" cy="36" r="7"></circle>
+              <path data-draw d="M36 32v4l3 2"></path>
+            </svg>
+          </span>
           <h3 class="font-serif text-xl text-ink mb-3">More people</h3>
           <p class="text-ink-dim text-sm leading-relaxed">Helps, until nights, weekends, and sick days. People get busy. Systems don't.</p>
         </div>
-        <div class="reveal bg-surface border border-line p-8 transition-all duration-300 hover:border-gold/40 hover:-translate-y-1">
-          <span class="material-symbols-outlined text-3xl text-gold mb-6 block">campaign</span>
+        <div class="reveal group bg-surface border border-line p-8 transition-all duration-300 hover:border-gold/40 hover:-translate-y-1">
+          <span class="tried-icon-wrap mb-6 w-12 h-12 text-gold transition-colors duration-300 group-hover:text-gold-bright">
+            <svg class="tried-icon-svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path data-draw d="M10 8h28l-10 18v8l-8 4v-12z"></path>
+              <path data-draw d="M19.5 34l-1.5 2"></path>
+              <path data-draw d="M14 38c0 1.8 1.4 3 3 3s3-1.2 3-4.4c0-1.6-1-3-1.8-4.1-.6 1-1.5 2-1.5 3.3 0-1-1-1.9-1.5-2.8-1 1.4-1.2 2.9-1.2 5z" opacity="0.85"></path>
+              <path data-draw d="M22 42c0 1.3 1 2.2 2.2 2.2s2.2-.9 2.2-3.2c0-1.1-.7-2.2-1.3-3-.4.7-1 1.4-1 2.3 0-.7-.7-1.3-1.1-2-.7 1-1 2-1 3.7z" opacity="0.65"></path>
+              <path data-draw d="M30 39c0 1.1.9 1.8 1.8 1.8s1.8-.7 1.8-2.6c0-.9-.6-1.8-1.1-2.4-.3.6-.8 1.1-.8 1.8 0-.6-.6-1-.9-1.6-.6.8-.8 1.6-.8 2.9z" opacity="0.5"></path>
+            </svg>
+          </span>
           <h3 class="font-serif text-xl text-ink mb-3">More marketing</h3>
           <p class="text-ink-dim text-sm leading-relaxed">Agencies sell you more leads. Nobody fixes what happens after the lead arrives. More water into a leaking bucket.</p>
         </div>
-        <div class="reveal bg-surface border border-line p-8 transition-all duration-300 hover:border-gold/40 hover:-translate-y-1">
-          <span class="material-symbols-outlined text-3xl text-gold mb-6 block">fitness_center</span>
+        <div class="reveal group bg-surface border border-line p-8 transition-all duration-300 hover:border-gold/40 hover:-translate-y-1">
+          <span class="tried-icon-wrap mb-6 w-12 h-12 text-gold transition-colors duration-300 group-hover:text-gold-bright">
+            <svg class="tried-icon-svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path data-draw d="M4 24h6l3-10 5 20 4-16 3 6h5c4 0 4 0 18 0" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </span>
           <h3 class="font-serif text-xl text-ink mb-3">Working harder</h3>
           <p class="text-ink-dim text-sm leading-relaxed">That built the business. But past a certain size, hustle stops scaling and the leaks start compounding.</p>
         </div>
@@ -916,6 +1059,108 @@
       return function () { ctx.cleanup(); };
     });
   }
+
+  // ---- Pain scene chip animations (#leak) ----
+  var painSection = document.getElementById('leak');
+  if (painSection) {
+    // Card 1: voicemail chip slides in from top with a soft shake, then a badge pops in
+    var chip1El = painSection.querySelector('.pain-chip-1');
+    var chip1Inner = chip1El && chip1El.querySelector('.pain-chip-inner');
+    var chip1Badge = chip1El && chip1El.querySelector('.pain-chip-badge');
+    if (chip1El && chip1Inner) {
+      gsap.set(chip1Inner, { y: -30, opacity: 0 });
+      if (chip1Badge) { gsap.set(chip1Badge, { scale: 0, opacity: 0 }); }
+      ScrollTrigger.create({
+        trigger: chip1El,
+        start: 'top 85%',
+        once: true,
+        onEnter: function () {
+          var tl = gsap.timeline();
+          tl.to(chip1Inner, { y: 0, opacity: 1, duration: 0.5, ease: 'power2.out' })
+            .to(chip1Inner, { x: -3, duration: 0.07, ease: 'power1.inOut' })
+            .to(chip1Inner, { x: 3, duration: 0.07, ease: 'power1.inOut' })
+            .to(chip1Inner, { x: -2, duration: 0.07, ease: 'power1.inOut' })
+            .to(chip1Inner, { x: 0, duration: 0.07, ease: 'power1.inOut' });
+          if (chip1Badge) {
+            tl.to(chip1Badge, { scale: 1, opacity: 1, duration: 0.3, ease: 'back.out(2.5)' }, '-=0.1');
+          }
+        }
+      });
+    }
+
+    // Card 2: Spend/Revenue lines draw on scroll
+    var chip2El = painSection.querySelector('.pain-chip-2');
+    var chartLines = chip2El ? chip2El.querySelectorAll('.pain-chip-line') : [];
+    if (chip2El && chartLines.length) {
+      Array.prototype.forEach.call(chartLines, function (line) {
+        var len = 0;
+        try { len = line.getTotalLength(); } catch (e) {}
+        if (len) { gsap.set(line, { strokeDasharray: len, strokeDashoffset: len }); }
+      });
+      ScrollTrigger.create({
+        trigger: chip2El,
+        start: 'top 85%',
+        once: true,
+        onEnter: function () {
+          gsap.to(chartLines, { strokeDashoffset: 0, duration: 1.1, ease: 'power2.out', stagger: 0.15 });
+        }
+      });
+    }
+
+    // Card 3: quote chip appears bright, then fades/desaturates to its resting dimmed state
+    var chip3El = painSection.querySelector('.pain-chip-3');
+    if (chip3El) {
+      gsap.set(chip3El, { opacity: 1, filter: 'saturate(1) brightness(1)' });
+      ScrollTrigger.create({
+        trigger: chip3El,
+        start: 'top 85%',
+        once: true,
+        onEnter: function () {
+          gsap.to(chip3El, { opacity: 0.55, filter: 'saturate(0.5) brightness(0.92)', duration: 1.2, delay: 0.4, ease: 'power1.out' });
+        }
+      });
+    }
+
+    // Card 4: missed-calls counter ticks 0 -> 7
+    var counterEl = painSection.querySelector('.pain-chip-counter');
+    if (counterEl) {
+      var counterTarget = parseInt(counterEl.getAttribute('data-target'), 10) || 7;
+      ScrollTrigger.create({
+        trigger: counterEl,
+        start: 'top 85%',
+        once: true,
+        onEnter: function () {
+          var counterObj = { val: 0 };
+          counterEl.textContent = '0';
+          gsap.to(counterObj, {
+            val: counterTarget,
+            duration: 1.2,
+            ease: 'power1.out',
+            onUpdate: function () { counterEl.textContent = String(Math.round(counterObj.val)); }
+          });
+        }
+      });
+    }
+  }
+
+  // ---- Tried icons (#tried): hand-drawn SVGs draw themselves on scroll ----
+  document.querySelectorAll('.tried-icon-svg').forEach(function (svg) {
+    var parts = svg.querySelectorAll('[data-draw]');
+    if (!parts.length) { return; }
+    Array.prototype.forEach.call(parts, function (p) {
+      var len = 0;
+      try { len = p.getTotalLength(); } catch (e) {}
+      if (len) { gsap.set(p, { strokeDasharray: len, strokeDashoffset: len }); }
+    });
+    ScrollTrigger.create({
+      trigger: svg,
+      start: 'top 88%',
+      once: true,
+      onEnter: function () {
+        gsap.to(parts, { strokeDashoffset: 0, duration: 1, ease: 'power2.out', stagger: 0.08 });
+      }
+    });
+  });
 })();
 </script>
 </body>
