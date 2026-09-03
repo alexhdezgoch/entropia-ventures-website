@@ -1,118 +1,220 @@
 <!DOCTYPE html>
-<html class="light" lang="en"><head>
+<html class="dark" lang="en">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>We're on it. | Entropia Ventures</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<title>Got It — Your Audit Is On the Way | Entropia Ventures</title>
+<meta name="description" content="Your free lead conversion audit request is in. We'll look at how your leads get handled today and send the findings within 48 hours, direct from Alex."/>
 <meta name="robots" content="noindex, nofollow"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          "primary": "#00130d",
-          "primary-container": "#0f2921",
-          "on-primary": "#ffffff",
-          "on-primary-container": "#769287",
-          "secondary": "#C9A84C",
-          "surface": "#f9f9f8",
-          "surface-container-low": "#f3f4f3",
-          "surface-container": "#eeeeed",
-          "on-surface": "#1a1c1c",
-          "on-surface-variant": "#424845",
-          "outline-variant": "#c2c8c4",
-        },
-        fontFamily: {
-          "headline": ["Noto Serif"],
-          "body": ["Inter"],
-        },
-      },
-    },
-  }
-</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/assets/css/site.css"/>
 <style>
-  body { font-family: 'Inter', sans-serif; background-color: #f9f9f8; color: #1a1c1c; }
-  .font-serif { font-family: 'Noto Serif', serif; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+
+  .pulse-dot { position: relative; }
+  .pulse-dot::after {
+    content: '';
+    position: absolute;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    background: #C9A84C;
+    border-radius: 50%;
+    z-index: -1;
+    animation: pulse-ring 3s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  }
+  @keyframes pulse-ring {
+    0% { transform: scale(.33); opacity: 0.8; }
+    80%, 100% { transform: scale(3); opacity: 0; }
+  }
+
+  .hero-bg {
+    background:
+      radial-gradient(ellipse 70% 60% at 15% 100%, rgba(201,168,76,0.20), transparent 60%),
+      linear-gradient(180deg, #050f0b 0%, #00130d 100%);
+  }
+
+  .btn-primary {
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+    background: #C9A84C; color: #00130d;
+    text-transform: uppercase; letter-spacing: 0.15em; font-size: 11px; font-weight: 500;
+    padding: 0.9rem 1.75rem;
+    transition: background 0.2s ease, transform 0.1s ease;
+  }
+  .btn-primary:hover { background: #ffe08f; }
+  .btn-primary:active { transform: scale(0.95); }
+
+  .btn-secondary {
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+    background: transparent; color: #C9A84C; border: 1px solid rgba(201,168,76,0.4);
+    text-transform: uppercase; letter-spacing: 0.15em; font-size: 11px; font-weight: 500;
+    padding: 0.9rem 1.75rem;
+    transition: border-color 0.2s ease, transform 0.1s ease;
+  }
+  .btn-secondary:hover { border-color: #C9A84C; }
+  .btn-secondary:active { transform: scale(0.95); }
+
+  #mobile-menu { transition: opacity 0.25s ease; }
+  #mobile-menu.is-open { display: flex !important; }
+
+  :focus-visible { outline: 2px solid #C9A84C; outline-offset: 2px; }
+
+  .skip-link {
+    position: absolute; top: -40px; left: 0; z-index: 100;
+    background: #C9A84C; color: #00130d; padding: 0.75rem 1.25rem;
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 500;
+    transition: top 0.2s ease;
+  }
+  .skip-link:focus { top: 0; }
 </style>
 </head>
-<body class="bg-surface min-h-screen flex flex-col">
-<!-- Minimal Nav -->
-<nav class="w-full px-8 py-6">
-  <a href="/" class="text-2xl font-serif italic text-[#0F2921] tracking-tighter">ENTROPIA</a>
+<body class="bg-base text-ink font-sans selection:bg-gold/30">
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- Nav -->
+<nav class="fixed top-0 inset-x-0 z-50 bg-base/80 backdrop-blur-xl border-b border-line">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
+    <a href="/" class="font-serif italic text-2xl text-ink tracking-tight">ENTROPIA</a>
+    <div class="hidden md:flex items-center gap-10">
+      <a href="/services" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">The System</a>
+      <a href="/process" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">How It Works</a>
+      <a href="/audits/" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Audits</a>
+      <a href="/blog/" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Blog</a>
+      <a href="/services#journey" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Try the demo</a>
+    </div>
+    <div class="hidden md:block">
+      <a href="/contact" class="btn-primary">Get your free audit</a>
+    </div>
+    <button id="menu-toggle" class="md:hidden text-ink" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+  </div>
 </nav>
 
-<!-- Main Content -->
-<main class="flex-grow flex items-center justify-center px-8 py-24">
-  <div class="max-w-2xl text-center">
-
-    <!-- Indicator -->
-    <div class="flex items-center justify-center gap-3 mb-16">
-      <div class="w-2 h-2 rounded-full bg-secondary relative">
-        <div class="absolute inset-0 w-2 h-2 rounded-full bg-secondary animate-ping opacity-40"></div>
-      </div>
-      <span class="text-[10px] font-bold tracking-[0.25em] uppercase text-on-surface-variant">Audit Request Received</span>
-    </div>
-
-    <!-- Headline -->
-    <h1 class="font-serif text-6xl md:text-8xl text-on-surface leading-tight mb-8">
-      We're on it<span class="text-secondary">.</span>
-    </h1>
-
-    <!-- Subtext -->
-    <p class="text-xl text-on-surface-variant font-light leading-relaxed mb-6 max-w-lg mx-auto">
-      Your audit request is in. Alex will research your visibility infrastructure and send a full breakdown within <span class="font-medium text-on-surface">48 hours</span>.
-    </p>
-    <p class="text-base text-on-surface-variant/70 font-light mb-16 max-w-md mx-auto">
-      No sales call scheduled. No commitment implied. Just real data about where you stand.
-    </p>
-
-    <!-- What happens next -->
-    <div class="bg-surface-container-low p-10 text-left mb-16 max-w-lg mx-auto">
-      <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-on-surface-variant mb-8">What happens next</p>
-      <div class="space-y-8">
-        <div class="flex gap-5">
-          <div class="flex-none w-7 h-7 rounded-full border border-secondary/30 flex items-center justify-center font-serif italic text-secondary text-sm">1</div>
-          <div>
-            <p class="font-medium text-on-surface text-sm mb-1">Research begins now</p>
-            <p class="text-xs text-on-surface-variant font-light">Rankings, GBP status, content gaps, competitor positioning — all mapped.</p>
-          </div>
-        </div>
-        <div class="flex gap-5">
-          <div class="flex-none w-7 h-7 rounded-full border border-secondary/30 flex items-center justify-center font-serif italic text-secondary text-sm">2</div>
-          <div>
-            <p class="font-medium text-on-surface text-sm mb-1">Audit lands in your inbox within 48 hours</p>
-            <p class="text-xs text-on-surface-variant font-light">A clear, honest breakdown of your visibility infrastructure. Yours to keep.</p>
-          </div>
-        </div>
-        <div class="flex gap-5">
-          <div class="flex-none w-7 h-7 rounded-full border border-secondary/30 flex items-center justify-center font-serif italic text-secondary text-sm">3</div>
-          <div>
-            <p class="font-medium text-on-surface text-sm mb-1">Your call — no pressure</p>
-            <p class="text-xs text-on-surface-variant font-light">If the audit makes the case, we can talk. If not, the report is still useful.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CTAs -->
-    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-      <a href="/" class="bg-primary-container text-on-primary px-8 py-4 text-[11px] font-bold tracking-widest uppercase hover:bg-primary transition-all">
-        Back to home
-      </a>
-      <a href="/blog/" class="border border-outline-variant text-on-surface-variant px-8 py-4 text-[11px] font-bold tracking-widest uppercase hover:bg-surface-container transition-all">
-        Read the blog while you wait →
-      </a>
-    </div>
-
+<!-- Mobile menu overlay -->
+<div id="mobile-menu" class="fixed inset-0 z-[60] bg-base-deep hidden flex-col" role="dialog" aria-modal="true">
+  <div class="flex items-center justify-between px-8 py-4 border-b border-line">
+    <a href="/" class="font-serif italic text-2xl text-ink">ENTROPIA</a>
+    <button id="menu-close" class="text-ink" aria-label="Close menu">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
   </div>
+  <div class="flex flex-col items-start gap-8 px-8 py-16">
+    <a href="/services" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">The System</a>
+    <a href="/process" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">How It Works</a>
+    <a href="/audits/" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">Audits</a>
+    <a href="/blog/" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">Blog</a>
+    <a href="/services#journey" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">Try the demo</a>
+    <a href="/contact" class="mobile-link btn-primary mt-4">Get your free audit</a>
+  </div>
+</div>
+
+<main class="pt-0" id="main">
+
+  <!-- CONFIRMATION -->
+  <section class="relative min-h-[100svh] flex items-center overflow-hidden hero-bg">
+    <div class="relative z-10 max-w-3xl mx-auto w-full px-8 pt-40 pb-24 text-center reveal-group">
+      <p class="reveal text-[11px] uppercase tracking-[0.2em] font-medium text-gold flex items-center justify-center gap-3 mb-8">
+        <span class="w-1.5 h-1.5 rounded-full bg-gold pulse-dot"></span>
+        Audit Request Received
+      </p>
+      <h1 class="reveal font-serif text-5xl md:text-7xl leading-[1.05] text-ink">Got it. Your audit is <em class="italic text-gold">on the way.</em></h1>
+      <p class="reveal mt-8 max-w-xl mx-auto text-lg md:text-xl text-ink-dim font-light leading-relaxed">We'll look at how your leads get handled today and send the findings within 48 hours — direct from Alex.</p>
+
+      <div class="reveal mt-16 pt-10 border-t border-line flex flex-col sm:flex-row items-center justify-center gap-x-12 gap-y-4">
+        <span class="text-[11px] uppercase tracking-[0.2em] text-ink-faint">While you wait</span>
+        <a href="/services" class="text-gold text-[11px] uppercase tracking-[0.2em] font-medium hover:text-gold-bright transition-colors">See how the system works →</a>
+        <a href="/blog/" class="text-gold text-[11px] uppercase tracking-[0.2em] font-medium hover:text-gold-bright transition-colors">Read the blog →</a>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <!-- Footer -->
-<footer class="w-full border-t border-outline-variant/15 px-8 py-8">
-  <div class="max-w-7xl mx-auto flex justify-between items-center">
-    <span class="font-serif italic text-[#0F2921] text-sm">Entropia</span>
-    <span class="text-xs text-on-surface-variant/50">© 2026 Entropia Ventures. Visibility Infrastructure.</span>
+<footer class="bg-base-deep border-t border-line">
+  <div class="max-w-7xl mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
+    <div>
+      <a href="/" class="font-serif italic text-2xl text-ink">ENTROPIA</a>
+      <p class="mt-4 text-ink-dim text-sm leading-relaxed max-w-xs">We help service businesses turn leads into revenue.</p>
+    </div>
+    <div class="flex flex-col gap-3">
+      <a href="/services" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">The System</a>
+      <a href="/process" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">How It Works</a>
+      <a href="/audits/" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Audits</a>
+      <a href="/blog/" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Blog</a>
+      <a href="/contact" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Contact</a>
+      <a href="mailto:alex@entropia.ventures" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">alex@entropia.ventures</a>
+    </div>
+    <div class="flex flex-col gap-3 md:items-end">
+      <a href="https://linkedin.com/company/entropia-ventures" target="_blank" rel="noopener" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">LinkedIn</a>
+      <p class="text-ink-faint text-xs mt-6 md:mt-auto">© 2026 Entropia Ventures</p>
+      <p class="text-ink-faint text-xs"><a href="/privacy" class="hover:text-gold-bright transition-colors">Privacy</a> · <a href="/terms" class="hover:text-gold-bright transition-colors">Terms</a></p>
+    </div>
   </div>
 </footer>
-</body></html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
+<script>
+(function () {
+  // Mobile menu
+  var toggle = document.getElementById('menu-toggle');
+  var closeBtn = document.getElementById('menu-close');
+  var menu = document.getElementById('mobile-menu');
+  function openMenu() {
+    menu.classList.remove('hidden');
+    menu.classList.add('is-open', 'flex');
+    toggle.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+    if (closeBtn) { closeBtn.focus(); }
+  }
+  function closeMenu() {
+    menu.classList.add('hidden');
+    menu.classList.remove('is-open', 'flex');
+    toggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+    if (toggle) { toggle.focus(); }
+  }
+  if (toggle && closeBtn && menu) {
+    toggle.addEventListener('click', openMenu);
+    closeBtn.addEventListener('click', closeMenu);
+    menu.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', closeMenu);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && menu.classList.contains('is-open')) {
+        closeMenu();
+      }
+    });
+  }
+
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function showAllStatic() {
+    document.querySelectorAll('.reveal').forEach(function (el) {
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+    });
+  }
+
+  if (!window.gsap || reduceMotion) {
+    showAllStatic();
+    return;
+  }
+
+  var heroGroup = document.querySelector('.reveal-group');
+  if (heroGroup) {
+    var heroItems = heroGroup.querySelectorAll('.reveal');
+    gsap.set(heroItems, { y: 24, opacity: 0 });
+    gsap.to(heroItems, { y: 0, opacity: 1, duration: 0.9, ease: 'power2.out', stagger: 0.1, delay: 0.15 });
+  }
+})();
+</script>
+</body>
+</html>

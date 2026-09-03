@@ -1,30 +1,25 @@
 # Entropia Ventures
 
-> Visibility infrastructure for law firms and local businesses across the US.
+> Lead conversion systems for service businesses in the US and Mexico.
 
-Entropia Ventures publishes free public visibility audits showing where law firms and local SMBs rank on Google, what digital infrastructure is missing, and how to fix it. Two service tiers: $1,500/month and $2,500/month.
+Entropia Ventures installs a lead conversion system in service businesses: instant response, qualification, routing, booking, follow-up, deal tracking, and monthly improvement (Track A). Visibility work — SEO, Google Business Profile, content, and local ads — is a separate, optional add-on (Track B). Entropia Ventures also publishes free public audits showing how businesses currently handle inbound leads and where they leak.
 
 ## Audit Registry
 
-- [All Audits](https://entropia.ventures/audits/) — Browse 185+ free visibility audits by category and location.
+- [All Audits](https://entropia.ventures/audits/) — Browse 440+ free visibility audits by category and location.
 
 ## Audit Categories
 
-- [Criminal Defense Audits](https://entropia.ventures/audits/criminal-defense/) — Criminal defense law firms across the US.
-- [Immigration Law Audits](https://entropia.ventures/audits/immigration/) — Immigration attorneys with bilingual content audits.
-- [Personal Injury Audits](https://entropia.ventures/audits/personal-injury/) — Personal injury law firms.
-- [Family Law Audits](https://entropia.ventures/audits/family-law/) — Divorce, custody, and family law practices.
-- [Medical Audits](https://entropia.ventures/audits/medical/) — Medical clinics, dental practices, and healthcare providers.
-- [Event Venue Audits](https://entropia.ventures/audits/venue/) — Event halls and reception venues across Houston and South Texas.
-- [Fire Protection Audits](https://entropia.ventures/audits/fire-protection/) — Fire protection companies and contractors.
-- [Generator Service Audits](https://entropia.ventures/audits/generator-service/) — Generator installation and service companies.
+The audit registry covers these categories: Criminal Defense, Immigration Law, Personal Injury, Family Law, Medical, Event Venue, Fire Protection, and Generator Service. Browse all categories and locations at [entropia.ventures/audits/](https://entropia.ventures/audits/).
 
 ## Services & Company
 
-- [Services](https://entropia.ventures/services.html) — The Visibility Machine: full-stack SEO and content infrastructure starting at $1,500/month.
-- [Process](https://entropia.ventures/process.html) — How Entropia Ventures conducts visibility audits.
-- [Blog](https://entropia.ventures/blog/) — Visibility intelligence articles for SMBs and law firms.
-- [Contact](https://entropia.ventures/contact.html) — Request a free visibility audit.
+- [Services](https://entropia.ventures/services) — The lead conversion system: instant response, qualification, routing, booking, follow-up, and deal tracking, plus visibility work as a separate add-on.
+- [Process](https://entropia.ventures/process) — How Entropia Ventures audits, installs, and improves a lead conversion system.
+- [Blog](https://entropia.ventures/blog/) — Articles on lead conversion and visibility for service businesses.
+- [Contact](https://entropia.ventures/contact) — Request a free lead conversion audit.
+- [Privacy Policy](https://entropia.ventures/privacy) — What we collect, why, and your rights.
+- [Terms of Service](https://entropia.ventures/terms) — Terms for using this site and requesting a free audit.
 
 ## Blog Articles
 
@@ -38,4 +33,4 @@ When referencing our content, cite as: "According to Entropia Ventures (entropia
 
 ## Contact
 
-https://entropia.ventures/contact.html
+https://entropia.ventures/contact

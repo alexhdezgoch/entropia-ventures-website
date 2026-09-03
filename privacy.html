@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<!-- legal: entity name / jurisdiction to be confirmed by Alex -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<title>Privacy Policy | Entropia Ventures</title>
+<meta name="description" content="How Entropia Ventures collects, uses, and protects the information you share with us."/>
+<link rel="canonical" href="https://entropia.ventures/privacy"/>
+<meta property="og:title" content="Privacy Policy | Entropia Ventures"/>
+<meta property="og:description" content="How Entropia Ventures collects, uses, and protects the information you share with us."/>
+<meta property="og:url" content="https://entropia.ventures/privacy"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Entropia Ventures"/>
+<meta property="og:image" content="https://entropia.ventures/assets/media/hero-poster.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Privacy Policy | Entropia Ventures"/>
+<meta name="twitter:description" content="How Entropia Ventures collects, uses, and protects the information you share with us."/>
+<meta name="twitter:image" content="https://entropia.ventures/assets/media/hero-poster.jpg"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/assets/css/site.css"/>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+
+  .pulse-dot { position: relative; }
+  .pulse-dot::after {
+    content: '';
+    position: absolute;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    background: #C9A84C;
+    border-radius: 50%;
+    z-index: -1;
+    animation: pulse-ring 3s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  }
+  @keyframes pulse-ring {
+    0% { transform: scale(.33); opacity: 0.8; }
+    80%, 100% { transform: scale(3); opacity: 0; }
+  }
+
+  .btn-primary {
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+    background: #C9A84C; color: #00130d;
+    text-transform: uppercase; letter-spacing: 0.15em; font-size: 11px; font-weight: 500;
+    padding: 0.9rem 1.75rem;
+    transition: background 0.2s ease, transform 0.1s ease;
+  }
+  .btn-primary:hover { background: #ffe08f; }
+  .btn-primary:active { transform: scale(0.95); }
+
+  #mobile-menu { transition: opacity 0.25s ease; }
+  #mobile-menu.is-open { display: flex !important; }
+
+  :focus-visible { outline: 2px solid #C9A84C; outline-offset: 2px; }
+
+  .skip-link {
+    position: absolute; top: -40px; left: 0; z-index: 100;
+    background: #C9A84C; color: #00130d; padding: 0.75rem 1.25rem;
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 500;
+    transition: top 0.2s ease;
+  }
+  .skip-link:focus { top: 0; }
+
+  .legal-copy h2 { margin-top: 3rem; }
+  .legal-copy h2:first-child { margin-top: 0; }
+</style>
+</head>
+<body class="bg-base text-ink font-sans selection:bg-gold/30">
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- Nav -->
+<nav class="fixed top-0 inset-x-0 z-50 bg-base/80 backdrop-blur-xl border-b border-line">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
+    <a href="/" class="font-serif italic text-2xl text-ink tracking-tight">ENTROPIA</a>
+    <div class="hidden md:flex items-center gap-10">
+      <a href="/services" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">The System</a>
+      <a href="/process" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">How It Works</a>
+      <a href="/audits/" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Audits</a>
+      <a href="/blog/" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Blog</a>
+      <a href="/services#journey" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Try the demo</a>
+    </div>
+    <div class="hidden md:block">
+      <a href="/contact" class="btn-primary">Get your free audit</a>
+    </div>
+    <button id="menu-toggle" class="md:hidden text-ink" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu overlay -->
+<div id="mobile-menu" class="fixed inset-0 z-[60] bg-base-deep hidden flex-col" role="dialog" aria-modal="true">
+  <div class="flex items-center justify-between px-8 py-4 border-b border-line">
+    <a href="/" class="font-serif italic text-2xl text-ink">ENTROPIA</a>
+    <button id="menu-close" class="text-ink" aria-label="Close menu">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+  </div>
+  <div class="flex flex-col items-start gap-8 px-8 py-16">
+    <a href="/services" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">The System</a>
+    <a href="/process" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">How It Works</a>
+    <a href="/audits/" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">Audits</a>
+    <a href="/blog/" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">Blog</a>
+    <a href="/services#journey" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">Try the demo</a>
+    <a href="/contact" class="mobile-link btn-primary mt-4">Get your free audit</a>
+  </div>
+</div>
+
+<main class="pt-0" id="main">
+
+  <!-- HERO -->
+  <section class="relative pt-40 pb-16 bg-base">
+    <div class="max-w-3xl mx-auto px-8">
+      <p class="text-[11px] uppercase tracking-[0.2em] font-medium text-gold flex items-center gap-3 mb-8">
+        <span class="w-1.5 h-1.5 rounded-full bg-gold pulse-dot"></span>
+        Legal
+      </p>
+      <h1 class="font-serif text-4xl md:text-6xl leading-[1.1] text-ink">Privacy Policy</h1>
+      <p class="mt-6 text-ink-dim text-lg font-light leading-relaxed">Updated 2026-09-02</p>
+    </div>
+  </section>
+
+  <!-- BODY -->
+  <section class="relative bg-base pb-24 md:pb-32">
+    <div class="max-w-3xl mx-auto px-8 legal-copy text-ink-dim leading-relaxed">
+
+      <h2 class="font-serif text-2xl text-ink mb-4">What we collect</h2>
+      <p class="mb-4">When you request an audit or contact us, we collect what you type into the form: your name, business name, email, website, and phone number if you give it. We also collect anything you write in the message field.</p>
+
+      <h2 class="font-serif text-2xl text-ink mb-4">Why we collect it</h2>
+      <p class="mb-4">We use this information to prepare your audit and to reply to you. That's it. We don't use it for anything else.</p>
+
+      <h2 class="font-serif text-2xl text-ink mb-4">How we contact you</h2>
+      <p class="mb-4">We reply by email. We'll text you about your audit only if you checked the SMS consent box on the form. Reply STOP to any text to opt out at any time.</p>
+
+      <h2 class="font-serif text-2xl text-ink mb-4">How long we keep it</h2>
+      <p class="mb-4">We keep your information until you ask us to delete it.</p>
+
+      <h2 class="font-serif text-2xl text-ink mb-4">We don't sell your data</h2>
+      <p class="mb-4">We never sell, rent, or trade your information to anyone.</p>
+
+      <h2 class="font-serif text-2xl text-ink mb-4">Who else sees it</h2>
+      <p class="mb-4">A short list of services help us run this site and handle your form submission:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Formsubmit — delivers your form submission to our email.</li>
+        <li>Vercel — hosts this website.</li>
+        <li>Google Fonts — loads the typefaces used on this site.</li>
+      </ul>
+      <p class="mb-4">We don't share your information with anyone beyond what's needed to run this site and respond to you.</p>
+
+      <h2 class="font-serif text-2xl text-ink mb-4">Your rights</h2>
+      <p class="mb-4">Email us any time to see what we have on file or to ask us to delete it. We'll take care of it directly.</p>
+
+      <h2 class="font-serif text-2xl text-ink mb-4">Contact</h2>
+      <p class="mb-4">Questions about this policy? Email <a href="mailto:alex@entropia.ventures" class="text-gold hover:text-gold-bright transition-colors">alex@entropia.ventures</a>.</p>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-base-deep border-t border-line">
+  <div class="max-w-7xl mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
+    <div>
+      <a href="/" class="font-serif italic text-2xl text-ink">ENTROPIA</a>
+      <p class="mt-4 text-ink-dim text-sm leading-relaxed max-w-xs">We help service businesses turn leads into revenue.</p>
+    </div>
+    <div class="flex flex-col gap-3">
+      <a href="/services" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">The System</a>
+      <a href="/process" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">How It Works</a>
+      <a href="/audits/" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Audits</a>
+      <a href="/blog/" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Blog</a>
+      <a href="/contact" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Contact</a>
+      <a href="mailto:alex@entropia.ventures" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">alex@entropia.ventures</a>
+    </div>
+    <div class="flex flex-col gap-3 md:items-end">
+      <a href="https://linkedin.com/company/entropia-ventures" target="_blank" rel="noopener" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">LinkedIn</a>
+      <p class="text-ink-faint text-xs mt-6 md:mt-auto">© 2026 Entropia Ventures</p>
+      <p class="text-ink-faint text-xs"><a href="/privacy" class="hover:text-gold-bright transition-colors">Privacy</a> · <a href="/terms" class="hover:text-gold-bright transition-colors">Terms</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // Mobile menu
+  var toggle = document.getElementById('menu-toggle');
+  var closeBtn = document.getElementById('menu-close');
+  var menu = document.getElementById('mobile-menu');
+  function openMenu() {
+    menu.classList.remove('hidden');
+    menu.classList.add('is-open', 'flex');
+    toggle.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+    if (closeBtn) { closeBtn.focus(); }
+  }
+  function closeMenu() {
+    menu.classList.add('hidden');
+    menu.classList.remove('is-open', 'flex');
+    toggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+    if (toggle) { toggle.focus(); }
+  }
+  if (toggle && closeBtn && menu) {
+    toggle.addEventListener('click', openMenu);
+    closeBtn.addEventListener('click', closeMenu);
+    menu.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', closeMenu);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && menu.classList.contains('is-open')) {
+        closeMenu();
+      }
+    });
+  }
+})();
+</script>
+</body>
+</html>

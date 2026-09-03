@@ -1,264 +1,498 @@
 <!DOCTYPE html>
-
-<html class="scroll-smooth" lang="en"><head>
+<html class="dark" lang="en">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>How It Works — The Visibility Machine Process | Entropia Ventures</title>
-<meta name="description" content="From audit to execution in weeks, not months. See how Entropia Ventures builds visibility infrastructure that compounds over time for law firms and SMBs."/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<title>How It Works — From Audit to Installed System | Entropia Ventures</title>
+<meta name="description" content="How Entropia Ventures works: audit your lead flow, install the system, run it, and improve it every month. No lock-in, direct access, research first."/>
 <link rel="canonical" href="https://entropia.ventures/process"/>
-<meta property="og:title" content="How It Works — The Visibility Machine Process | Entropia Ventures"/>
-<meta property="og:description" content="From audit to execution in weeks, not months. See how Entropia Ventures builds visibility infrastructure that compounds over time."/>
+<meta property="og:title" content="How It Works — From Audit to Installed System | Entropia Ventures"/>
+<meta property="og:description" content="How Entropia Ventures works: audit your lead flow, install the system, run it, and improve it every month. No lock-in, direct access, research first."/>
 <meta property="og:url" content="https://entropia.ventures/process"/>
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="Entropia Ventures"/>
+<meta property="og:image" content="https://entropia.ventures/assets/media/hero-poster.jpg"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "outline": "#727975",
-              "on-tertiary-fixed-variant": "#394a44",
-              "primary-fixed-dim": "#b0cdc1",
-              "on-tertiary": "#ffffff",
-              "surface-container-lowest": "#ffffff",
-              "surface-dim": "#dadad9",
-              "secondary": "#755b00",
-              "surface-variant": "#e2e2e2",
-              "on-primary-fixed-variant": "#324c43",
-              "tertiary": "#03120e",
-              "on-surface-variant": "#424845",
-              "inverse-on-surface": "#f1f1f0",
-              "surface": "#f9f9f8",
-              "primary": "#00130d",
-              "on-surface": "#1a1c1c",
-              "secondary-fixed": "#ffe08f",
-              "on-error-container": "#93000a",
-              "inverse-surface": "#2f3130",
-              "surface-container-highest": "#e2e2e2",
-              "error": "#ba1a1a",
-              "secondary-fixed-dim": "#e6c364",
-              "on-tertiary-container": "#7d9088",
-              "surface-tint": "#4a645a",
-              "surface-container-low": "#f3f4f3",
-              "on-secondary-fixed": "#241a00",
-              "tertiary-fixed": "#d3e7de",
-              "secondary-container": "#fed977",
-              "on-error": "#ffffff",
-              "on-secondary-container": "#785d00",
-              "inverse-primary": "#b0cdc1",
-              "on-primary": "#ffffff",
-              "surface-container": "#eeeeed",
-              "on-tertiary-fixed": "#0e1f19",
-              "on-secondary": "#ffffff",
-              "primary-fixed": "#cce9dc",
-              "on-background": "#1a1c1c",
-              "on-primary-container": "#769287",
-              "error-container": "#ffdad6",
-              "background": "#f9f9f8",
-              "primary-container": "#0f2921",
-              "outline-variant": "#c2c8c4",
-              "surface-container-high": "#e8e8e7",
-              "tertiary-fixed-dim": "#b8cbc2",
-              "on-primary-fixed": "#052018",
-              "on-secondary-fixed-variant": "#584400",
-              "surface-bright": "#f9f9f8",
-              "tertiary-container": "#172822"
-            },
-            fontFamily: {
-              "headline": ["Noto Serif"],
-              "body": ["Inter"],
-              "label": ["Inter"]
-            },
-            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
-          },
-        },
-      }
-    </script>
+<meta name="twitter:title" content="How It Works — From Audit to Installed System | Entropia Ventures"/>
+<meta name="twitter:description" content="How Entropia Ventures works: audit your lead flow, install the system, run it, and improve it every month. No lock-in, direct access, research first."/>
+<meta name="twitter:image" content="https://entropia.ventures/assets/media/hero-poster.jpg"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Entropia Ventures","url":"https://entropia.ventures","description":"Entropia Ventures installs lead conversion systems for service businesses in the US and Mexico.","sameAs":["https://linkedin.com/company/entropia-ventures"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/assets/css/site.css"/>
 <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-        }
-        .luxury-gradient {
-            background: linear-gradient(135deg, #0F2921 0%, #00130d 100%);
-        }
-        .glass-header {
-            background: rgba(249, 249, 248, 0.8);
-            backdrop-filter: blur(20px);
-        }
-    </style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+
+  .pulse-dot { position: relative; }
+  .pulse-dot::after {
+    content: '';
+    position: absolute;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    background: #C9A84C;
+    border-radius: 50%;
+    z-index: -1;
+    animation: pulse-ring 3s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  }
+  @keyframes pulse-ring {
+    0% { transform: scale(.33); opacity: 0.8; }
+    80%, 100% { transform: scale(3); opacity: 0; }
+  }
+
+  /* Hero: layered CSS backdrop, no video on this page */
+  .hero-bg {
+    background:
+      radial-gradient(ellipse 70% 60% at 15% 100%, rgba(201,168,76,0.20), transparent 60%),
+      linear-gradient(180deg, #050f0b 0%, #00130d 100%);
+  }
+  .hero-grain {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity: 0.06;
+    mix-blend-mode: overlay;
+  }
+
+  /* Texture sections: gradient base, texture image layered on top */
+  .texture-1 {
+    background-image: url('/assets/media/texture-1.jpg'), linear-gradient(180deg, #050f0b 0%, #00130d 100%);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .stage-number {
+    font-variant-numeric: tabular-nums;
+    color: #8a7434;
+    line-height: 1;
+  }
+
+  .btn-primary {
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+    background: #C9A84C; color: #00130d;
+    text-transform: uppercase; letter-spacing: 0.15em; font-size: 11px; font-weight: 500;
+    padding: 0.9rem 1.75rem;
+    transition: background 0.2s ease, transform 0.1s ease;
+  }
+  .btn-primary:hover { background: #ffe08f; }
+  .btn-primary:active { transform: scale(0.95); }
+
+  .btn-secondary {
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+    background: transparent; color: #C9A84C; border: 1px solid rgba(201,168,76,0.4);
+    text-transform: uppercase; letter-spacing: 0.15em; font-size: 11px; font-weight: 500;
+    padding: 0.9rem 1.75rem;
+    transition: border-color 0.2s ease, transform 0.1s ease;
+  }
+  .btn-secondary:hover { border-color: #C9A84C; }
+  .btn-secondary:active { transform: scale(0.95); }
+
+  #mobile-menu { transition: opacity 0.25s ease; }
+  #mobile-menu.is-open { display: flex !important; }
+
+  input:focus, textarea:focus { outline: none; box-shadow: 0 0 0 2px rgba(201,168,76,0.6); }
+
+  :focus-visible { outline: 2px solid #C9A84C; outline-offset: 2px; }
+
+  .skip-link {
+    position: absolute; top: -40px; left: 0; z-index: 100;
+    background: #C9A84C; color: #00130d; padding: 0.75rem 1.25rem;
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 500;
+    transition: top 0.2s ease;
+  }
+  .skip-link:focus { top: 0; }
+</style>
 </head>
-<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
-<!-- TopNavBar -->
-<header class="fixed top-0 w-full z-50 glass-header">
-<div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4 w-full">
-<a href="/" class="text-2xl font-serif italic text-[#0F2921] tracking-tighter">ENTROPIA</a>
-<nav class="hidden md:flex items-center gap-8">
-<a class="text-[#1a1c1c]/70 pb-1 Inter font-medium tracking-wide uppercase text-[11px] hover:text-[#0F2921] transition-all duration-400 ease-[cubic-bezier(0.2,0,0,1)]" href="/services.html">SERVICES</a>
-<a class="text-[#0F2921] border-b border-[#C9A84C] pb-1 Inter font-medium tracking-wide uppercase text-[11px]" href="/process.html">PROCESS</a>
-<a class="text-[#1a1c1c]/70 pb-1 Inter font-medium tracking-wide uppercase text-[11px] hover:text-[#0F2921] transition-all duration-400 ease-[cubic-bezier(0.2,0,0,1)]" href="/audits/">AUDITS</a>
-<a class="text-[#1a1c1c]/70 pb-1 Inter font-medium tracking-wide uppercase text-[11px] hover:text-[#0F2921] transition-all duration-400 ease-[cubic-bezier(0.2,0,0,1)]" href="/blog/">BLOG</a>
-<a class="text-[#1a1c1c]/70 pb-1 Inter font-medium tracking-wide uppercase text-[11px] hover:text-[#0F2921] transition-all duration-400 ease-[cubic-bezier(0.2,0,0,1)]" href="/#pricing">PRICING</a>
+<body class="bg-base text-ink font-sans selection:bg-gold/30">
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- Nav -->
+<nav class="fixed top-0 inset-x-0 z-50 bg-base/80 backdrop-blur-xl border-b border-line">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
+    <a href="/" class="font-serif italic text-2xl text-ink tracking-tight">ENTROPIA</a>
+    <div class="hidden md:flex items-center gap-10">
+      <a href="/services" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">The System</a>
+      <a href="/process" class="text-[11px] uppercase tracking-[0.2em] font-medium text-gold-bright transition-colors">How It Works</a>
+      <a href="/audits/" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Audits</a>
+      <a href="/blog/" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Blog</a>
+      <a href="/services#journey" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Try the demo</a>
+    </div>
+    <div class="hidden md:block">
+      <a href="/contact" class="btn-primary">Get your free audit</a>
+    </div>
+    <button id="menu-toggle" class="md:hidden text-ink" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+  </div>
 </nav>
-<a href="/contact.html" class="bg-primary-container text-on-primary px-6 py-2.5 rounded-md text-[11px] font-medium tracking-widest uppercase hover:bg-primary transition-all duration-300 active:scale-95">Get free audit →</a>
+
+<!-- Mobile menu overlay -->
+<div id="mobile-menu" class="fixed inset-0 z-[60] bg-base-deep hidden flex-col" role="dialog" aria-modal="true">
+  <div class="flex items-center justify-between px-8 py-4 border-b border-line">
+    <a href="/" class="font-serif italic text-2xl text-ink">ENTROPIA</a>
+    <button id="menu-close" class="text-ink" aria-label="Close menu">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+  </div>
+  <div class="flex flex-col items-start gap-8 px-8 py-16">
+    <a href="/services" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">The System</a>
+    <a href="/process" class="mobile-link text-3xl font-serif text-gold-bright">How It Works</a>
+    <a href="/audits/" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">Audits</a>
+    <a href="/blog/" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">Blog</a>
+    <a href="/services#journey" class="mobile-link text-3xl font-serif text-ink hover:text-gold-bright transition-colors">Try the demo</a>
+    <a href="/contact" class="mobile-link btn-primary mt-4">Get your free audit</a>
+  </div>
 </div>
-<div class="bg-surface-container-low h-[1px] w-full absolute bottom-0 opacity-50"></div>
-</header>
-<main class="pt-32">
-<!-- Hero Section -->
-<section class="max-w-7xl mx-auto px-8 mb-32">
-<div class="flex flex-col items-start gap-6">
-<span class="inline-block px-3 py-1 bg-surface-container-high text-primary-container text-[10px] font-bold tracking-[0.2em] uppercase rounded-full">
-                    The Method
-                </span>
-<h1 class="font-headline text-6xl md:text-8xl text-primary-container leading-tight tracking-tighter">
-                    We research — <br/>
-<span class="italic font-normal">before we pitch.</span>
-</h1>
-<p class="max-w-xl text-lg text-on-surface-variant leading-relaxed">
-                    Most agencies sell first, figure it out later. We invert the model. We treat your visibility as critical infrastructure, not a campaign variable.
-                </p>
-</div>
-</section>
-<!-- Convictions Section -->
-<section class="max-w-7xl mx-auto px-8 mb-48">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
-<!-- Sticky Column -->
-<div class="lg:col-span-4 lg:sticky lg:top-40">
-<h2 class="font-headline text-4xl text-primary-container mb-6 italic">Why this way works</h2>
-<p class="text-on-surface-variant leading-relaxed mb-8">
-                        The architecture of a successful presence requires more than just activity—it requires precision alignment with market realities.
-                    </p>
-<div class="w-12 h-[1px] bg-secondary mb-4 opacity-40"></div>
-<p class="text-[11px] font-bold tracking-widest uppercase text-outline">Philosophy 01</p>
-</div>
-<!-- Staggered Grid -->
-<div class="lg:col-span-8">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<!-- Card 1 -->
-<div class="bg-surface-container-low p-10 flex flex-col gap-6 md:mt-12 group hover:bg-surface-container transition-colors duration-500">
-<span class="material-symbols-outlined text-secondary text-3xl" data-icon="troubleshoot">troubleshoot</span>
-<h3 class="font-headline text-2xl text-primary-container">Research First</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed">We don't speculate. Every strategy is built on a foundation of raw data and competitive intelligence gathered over 30 days.</p>
-</div>
-<!-- Card 2 -->
-<div class="bg-surface-container-low p-10 flex flex-col gap-6 group hover:bg-surface-container transition-colors duration-500">
-<span class="material-symbols-outlined text-secondary text-3xl" data-icon="visibility">visibility</span>
-<h3 class="font-headline text-2xl text-primary-container">Radical Transparency</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed">View your metrics in real-time through our visibility dashboard. No obscured data, no vanity metrics, just truth.</p>
-</div>
-<!-- Card 3 -->
-<div class="bg-surface-container-low p-10 flex flex-col gap-6 md:mt-12 group hover:bg-surface-container transition-colors duration-500">
-<span class="material-symbols-outlined text-secondary text-3xl" data-icon="hub">hub</span>
-<h3 class="font-headline text-2xl text-primary-container">Direct Access</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed">Skip the account managers. You work directly with the infrastructure architects building your growth engines.</p>
-</div>
-<!-- Card 4 -->
-<div class="bg-surface-container-low p-10 flex flex-col gap-6 group hover:bg-surface-container transition-colors duration-500">
-<span class="material-symbols-outlined text-secondary text-3xl" data-icon="key">key</span>
-<h3 class="font-headline text-2xl text-primary-container">No Lock-in</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed">Our performance is the only contract we need. Month-to-month engagements that prioritize results over paperwork.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Image Interstitial -->
-<section class="w-full h-[614px] relative mb-48 overflow-hidden">
-<img alt="Professional workspace" class="w-full h-full object-cover" data-alt="Modern minimalist high-end office interior with clean lines, architectural lighting, and deep forest green accents, editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVE3rl0SZyD4D_uZZr0uuesRYoSjvzYlebZMZtBvcSTlETlP9hIbXTRRR-kvQQq8zStbxe3kW5SeTMjytbLn18La7lsj8asboTpq69qtYL1TuWDj5j5MVjL6LjINoInBYy5G7Ljiz2cYcsqBgbgAW5UauuV8TDouj8cN7122o0cgO5kh9haiOFtpiAhUwNxLds6z4GGgFpT33KIcQ9Kds6rbsOGX6ptlIug7uDJaruR_TTxgr13kd-OyJdK9_vyPjEVsgQ8cpfhfc"/>
-<div class="absolute inset-0 bg-primary/20"></div>
-</section>
-<!-- Four Phases Section -->
-<section class="max-w-7xl mx-auto px-8 mb-48">
-<div class="flex flex-col gap-4 mb-20">
-<p class="text-secondary font-medium tracking-[0.3em] uppercase text-[10px]">The Implementation</p>
-<h2 class="font-headline text-5xl text-primary-container">Four Stages of Visibility</h2>
-</div>
-<div class="flex flex-col">
-<!-- Phase 01 -->
-<div class="group border-t border-outline-variant/15 py-16 flex flex-col md:flex-row gap-8 md:items-center transition-all duration-700 hover:bg-surface-container-low px-4 md:-mx-4">
-<div class="md:w-1/4">
-<span class="font-headline text-5xl text-outline-variant group-hover:text-secondary transition-colors duration-500">01</span>
-</div>
-<div class="md:w-1/2">
-<h3 class="font-headline text-3xl text-primary-container mb-4">Cold Audit</h3>
-<p class="text-on-surface-variant leading-relaxed">A deep-dive investigation into your current digital footprint. We identify leakages in your funnel and quantify your competitors' advantages.</p>
-</div>
-<div class="md:w-1/4 flex justify-end">
-<span class="material-symbols-outlined text-outline-variant group-hover:translate-x-2 transition-transform duration-500" data-icon="arrow_forward">arrow_forward</span>
-</div>
-</div>
-<!-- Phase 02 -->
-<div class="group border-t border-outline-variant/15 py-16 flex flex-col md:flex-row gap-8 md:items-center transition-all duration-700 hover:bg-surface-container-low px-4 md:-mx-4">
-<div class="md:w-1/4">
-<span class="font-headline text-5xl text-outline-variant group-hover:text-secondary transition-colors duration-500">02</span>
-</div>
-<div class="md:w-1/2">
-<h3 class="font-headline text-3xl text-primary-container mb-4">Custom Visibility Roadmap</h3>
-<p class="text-on-surface-variant leading-relaxed">Not a generic plan. A bespoke structural blueprint mapping every touchpoint, platform, and content pillar required for market dominance.</p>
-</div>
-<div class="md:w-1/4 flex justify-end">
-<span class="material-symbols-outlined text-outline-variant group-hover:translate-x-2 transition-transform duration-500" data-icon="arrow_forward">arrow_forward</span>
-</div>
-</div>
-<!-- Phase 03 -->
-<div class="group border-t border-outline-variant/15 py-16 flex flex-col md:flex-row gap-8 md:items-center transition-all duration-700 hover:bg-surface-container-low px-4 md:-mx-4">
-<div class="md:w-1/4">
-<span class="font-headline text-5xl text-outline-variant group-hover:text-secondary transition-colors duration-500">03</span>
-</div>
-<div class="md:w-1/2">
-<h3 class="font-headline text-3xl text-primary-container mb-4">Monthly Execution</h3>
-<p class="text-on-surface-variant leading-relaxed">Our core engine starts. We handle the production, technical SEO, and visibility management while you focus on scaling your operations.</p>
-</div>
-<div class="md:w-1/4 flex justify-end">
-<span class="material-symbols-outlined text-outline-variant group-hover:translate-x-2 transition-transform duration-500" data-icon="arrow_forward">arrow_forward</span>
-</div>
-</div>
-<!-- Phase 04 -->
-<div class="group border-t border-b border-outline-variant/15 py-16 flex flex-col md:flex-row gap-8 md:items-center transition-all duration-700 hover:bg-surface-container-low px-4 md:-mx-4">
-<div class="md:w-1/4">
-<span class="font-headline text-5xl text-outline-variant group-hover:text-secondary transition-colors duration-500">04</span>
-</div>
-<div class="md:w-1/2">
-<h3 class="font-headline text-3xl text-primary-container mb-4">Monthly Report + Iteration</h3>
-<p class="text-on-surface-variant leading-relaxed">Monthly alignment meetings where we review performance, adjust for algorithmic shifts, and refine the roadmap for the following 30 days.</p>
-</div>
-<div class="md:w-1/4 flex justify-end">
-<span class="material-symbols-outlined text-outline-variant group-hover:translate-x-2 transition-transform duration-500" data-icon="arrow_forward">arrow_forward</span>
-</div>
-</div>
-</div>
-</section>
-<!-- Final CTA -->
-<section class="max-w-5xl mx-auto px-8 mb-48 text-center">
-<div class="bg-primary-container p-16 md:p-24 flex flex-col items-center gap-10">
-<h2 class="font-headline text-4xl md:text-5xl text-on-primary leading-tight">
-                    Ready to build your <br/> <span class="italic text-secondary-fixed-dim">visibility infrastructure?</span>
-</h2>
-<div class="flex flex-col md:flex-row gap-6">
-<a href="/contact.html" class="inline-block bg-[#C9A84C] text-[#0F2921] px-10 py-4 font-bold text-xs tracking-widest uppercase hover:bg-secondary-container transition-all duration-300">Start with the free audit.</a>
-<a href="/audits/" class="inline-block border border-on-primary/20 text-on-primary px-10 py-4 font-bold text-xs tracking-widest uppercase hover:bg-on-primary/10 transition-all duration-300">View Case Studies</a>
-</div>
-</div>
-</section>
+
+<main class="pt-0" id="main">
+
+  <!-- HERO -->
+  <section id="hero" class="relative min-h-[50vh] flex items-end overflow-hidden hero-bg">
+    <div class="absolute inset-0 hero-grain pointer-events-none"></div>
+    <div class="relative z-10 max-w-7xl mx-auto w-full px-8 pt-40 pb-16">
+      <div class="reveal-group">
+        <p class="reveal text-[11px] uppercase tracking-[0.2em] font-medium text-gold flex items-center gap-3 mb-8">
+          <span class="w-1.5 h-1.5 rounded-full bg-gold pulse-dot"></span>
+          How It Works
+        </p>
+        <h1 class="reveal font-serif text-5xl md:text-8xl leading-[1.05] text-ink">
+          From audit to <em class="italic text-gold">installed.</em>
+        </h1>
+        <p class="reveal mt-8 max-w-2xl text-lg md:text-xl text-ink-dim font-light leading-relaxed">
+          Four stages, start to finish. No long onboarding, no black box — you see exactly what we build and why.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 STAGES -->
+  <section id="stages" class="relative">
+
+    <!-- Section intro -->
+    <div class="relative bg-base-deep border-t border-line py-20 md:py-28">
+      <div class="max-w-7xl mx-auto px-8 reveal-group">
+        <h2 class="reveal font-serif text-3xl md:text-4xl text-ink mb-4">Four stages. No black box.</h2>
+        <p class="reveal max-w-2xl text-lg text-ink-dim font-light leading-relaxed">Here is exactly what happens, from the first look at your business to the monthly loop that keeps making it better.</p>
+      </div>
+    </div>
+
+    <!-- STAGE 01 — Audit -->
+    <div class="stage relative bg-base border-t border-line py-20 md:py-28">
+      <div class="max-w-7xl mx-auto px-8 reveal-group">
+        <div class="reveal flex flex-wrap items-baseline gap-x-6 gap-y-2 mb-6">
+          <span class="stage-number font-serif text-6xl md:text-8xl">01</span>
+          <h3 class="font-serif text-3xl md:text-5xl text-ink">Audit</h3>
+        </div>
+        <p class="reveal text-ink-dim text-lg md:text-xl font-light leading-relaxed max-w-2xl mb-12 md:mb-16">Free, from the outside, delivered in 48 hours.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10 md:gap-x-10">
+          <div class="reveal flex flex-col gap-3">
+            <span class="material-symbols-outlined text-3xl text-gold">call</span>
+            <h4 class="font-semibold text-ink">We test your lines</h4>
+            <p class="text-ink-dim text-sm leading-relaxed">We call your main number, fill your forms, and message your channels — like a real customer would.</p>
+          </div>
+          <div class="reveal flex flex-col gap-3">
+            <span class="material-symbols-outlined text-3xl text-gold">timer</span>
+            <h4 class="font-semibold text-ink">We time everything</h4>
+            <p class="text-ink-dim text-sm leading-relaxed">How long until a real answer? Minutes, hours, or never — we measure it.</p>
+          </div>
+          <div class="reveal flex flex-col gap-3">
+            <span class="material-symbols-outlined text-3xl text-gold">alt_route</span>
+            <h4 class="font-semibold text-ink">We map your lead sources</h4>
+            <p class="text-ink-dim text-sm leading-relaxed">Google, ads, referrals, social, phone — where leads come from and where each one goes.</p>
+          </div>
+          <div class="reveal flex flex-col gap-3">
+            <span class="material-symbols-outlined text-3xl text-gold">description</span>
+            <h4 class="font-semibold text-ink">You get the leak report</h4>
+            <p class="text-ink-dim text-sm leading-relaxed">A plain-language breakdown of where leads die today and what that costs you. Yours to keep either way.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STAGE 02 — Install -->
+    <div class="stage relative bg-base-deep border-t border-line py-20 md:py-28">
+      <div class="max-w-7xl mx-auto px-8 reveal-group">
+        <div class="reveal flex flex-wrap items-baseline gap-x-6 gap-y-2 mb-6">
+          <span class="stage-number font-serif text-6xl md:text-8xl">02</span>
+          <h3 class="font-serif text-3xl md:text-5xl text-ink">Install</h3>
+        </div>
+        <p class="reveal text-ink-dim text-lg md:text-xl font-light leading-relaxed max-w-2xl mb-12 md:mb-16">Days, not months. Your team keeps working while we build around them.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10 md:gap-x-10">
+          <div class="reveal flex flex-col gap-3">
+            <span class="material-symbols-outlined text-3xl text-gold">hub</span>
+            <h4 class="font-semibold text-ink">One place for every lead</h4>
+            <p class="text-ink-dim text-sm leading-relaxed">Every call, form, and message lands in one system — tagged with its source, with consent recorded from the start.</p>
+          </div>
+          <div class="reveal flex flex-col gap-3">
+            <span class="material-symbols-outlined text-3xl text-gold">bolt</span>
+            <h4 class="font-semibold text-ink">Instant response</h4>
+            <p class="text-ink-dim text-sm leading-relaxed">Within seconds, every new lead gets a useful, human-sounding reply on an allowed channel — text, WhatsApp, or email.</p>
+          </div>
+          <div class="reveal flex flex-col gap-3">
+            <span class="material-symbols-outlined text-3xl text-gold">checklist</span>
+            <h4 class="font-semibold text-ink">Smart qualification</h4>
+            <p class="text-ink-dim text-sm leading-relaxed">The system asks a few useful questions — what they need, where they are, when — and scores the lead.</p>
+          </div>
+          <div class="reveal flex flex-col gap-3">
+            <span class="material-symbols-outlined text-3xl text-gold">person_pin_circle</span>
+            <h4 class="font-semibold text-ink">A named owner</h4>
+            <p class="text-ink-dim text-sm leading-relaxed">Qualified leads route to a specific person on your team. Nothing sits in a shared inbox hoping someone notices.</p>
+          </div>
+          <div class="reveal flex flex-col gap-3">
+            <span class="material-symbols-outlined text-3xl text-gold">event_available</span>
+            <h4 class="font-semibold text-ink">Real bookings</h4>
+            <p class="text-ink-dim text-sm leading-relaxed">Good leads get a real slot on a real calendar — a call or a site visit — respecting your hours and territory.</p>
+          </div>
+          <div class="reveal flex flex-col gap-3">
+            <span class="material-symbols-outlined text-3xl text-gold">sync_alt</span>
+            <h4 class="font-semibold text-ink">Your CRM or ours</h4>
+            <p class="text-ink-dim text-sm leading-relaxed">We install and run a proven stack for you, or connect to your Salesforce or HubSpot. No migration, no retraining.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STAGE 03 — Run -->
+    <div class="stage relative bg-base border-t border-line py-20 md:py-28">
+      <div class="max-w-7xl mx-auto px-8 reveal-group">
+        <div class="reveal flex flex-wrap items-baseline gap-x-6 gap-y-2 mb-6">
+          <span class="stage-number font-serif text-6xl md:text-8xl">03</span>
+          <h3 class="font-serif text-3xl md:text-5xl text-ink">Run</h3>
+        </div>
+        <p class="reveal text-ink-dim text-lg md:text-xl font-light leading-relaxed max-w-2xl mb-12 md:mb-16">The system works every lead until it's won, lost, or parked — and tells us when something stalls.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10 md:gap-x-10">
+          <div class="reveal flex flex-col gap-3">
+            <span class="material-symbols-outlined text-3xl text-gold">forum</span>
+            <h4 class="font-semibold text-ink">Follow-up that doesn't quit</h4>
+            <p class="text-ink-dim text-sm leading-relaxed">Polite, persistent sequences run until the lead books, buys, or says no. It never gets busy and never forgets.</p>
+          </div>
+          <div class="reveal flex flex-col gap-3">
+            <span class="material-symbols-outlined text-3xl text-gold">view_kanban</span>
+            <h4 class="font-semibold text-ink">Every deal on one board</h4>
+            <p class="text-ink-dim text-sm leading-relaxed">Appointments, quotes, and deals move through fixed stages — you always know what's open and what's stuck.</p>
+          </div>
+          <div class="reveal flex flex-col gap-3">
+            <span class="material-symbols-outlined text-3xl text-gold">notifications_active</span>
+            <h4 class="font-semibold text-ink">Stall alerts</h4>
+            <p class="text-ink-dim text-sm leading-relaxed">A quote with no follow-up, a lead with no owner, a no-show with no reschedule — the system flags it before it dies.</p>
+          </div>
+          <div class="reveal flex flex-col gap-3">
+            <span class="material-symbols-outlined text-3xl text-gold">monitor_heart</span>
+            <h4 class="font-semibold text-ink">System health, watched</h4>
+            <p class="text-ink-dim text-sm leading-relaxed">Failed messages, opt-outs, and errors are caught and handled. We watch the machine so you don't have to.</p>
+          </div>
+        </div>
+        <div class="reveal mt-14 md:mt-16 pt-10 border-t border-line">
+          <p class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-faint mb-5">The stages every lead moves through</p>
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="border border-line text-[11px] uppercase tracking-[0.15em] text-ink-dim px-3 py-1.5 whitespace-nowrap">New</span>
+            <span class="text-ink-faint text-xs">→</span>
+            <span class="border border-line text-[11px] uppercase tracking-[0.15em] text-ink-dim px-3 py-1.5 whitespace-nowrap">Contacted</span>
+            <span class="text-ink-faint text-xs">→</span>
+            <span class="border border-line text-[11px] uppercase tracking-[0.15em] text-ink-dim px-3 py-1.5 whitespace-nowrap">Engaged</span>
+            <span class="text-ink-faint text-xs">→</span>
+            <span class="border border-line text-[11px] uppercase tracking-[0.15em] text-ink-dim px-3 py-1.5 whitespace-nowrap">Qualified</span>
+            <span class="text-ink-faint text-xs">→</span>
+            <span class="border border-line text-[11px] uppercase tracking-[0.15em] text-ink-dim px-3 py-1.5 whitespace-nowrap">Booked</span>
+            <span class="text-ink-faint text-xs">→</span>
+            <span class="border border-line text-[11px] uppercase tracking-[0.15em] text-ink-dim px-3 py-1.5 whitespace-nowrap">Appointment</span>
+            <span class="text-ink-faint text-xs">→</span>
+            <span class="border border-line text-[11px] uppercase tracking-[0.15em] text-ink-dim px-3 py-1.5 whitespace-nowrap">Quote sent</span>
+            <span class="text-ink-faint text-xs">→</span>
+            <span class="border border-line text-[11px] uppercase tracking-[0.15em] text-ink-dim px-3 py-1.5 whitespace-nowrap">Won / Lost / Nurture</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STAGE 04 — Improve -->
+    <div class="stage relative bg-base-deep border-t border-line py-20 md:py-28">
+      <div class="max-w-7xl mx-auto px-8 reveal-group">
+        <div class="reveal flex flex-wrap items-baseline gap-x-6 gap-y-2 mb-6">
+          <span class="stage-number font-serif text-6xl md:text-8xl">04</span>
+          <h3 class="font-serif text-3xl md:text-5xl text-ink">Improve</h3>
+        </div>
+        <p class="reveal text-ink-dim text-lg md:text-xl font-light leading-relaxed max-w-2xl mb-12 md:mb-16">A monthly loop that finds the biggest leak and fixes one thing at a time.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10 md:gap-x-10">
+          <div class="reveal flex flex-col gap-3">
+            <span class="material-symbols-outlined text-3xl text-gold">insights</span>
+            <h4 class="font-semibold text-ink">The monthly report</h4>
+            <p class="text-ink-dim text-sm leading-relaxed">What came in by source, what booked, what closed, and where the biggest leak is — in plain language, not a dashboard you can't read.</p>
+          </div>
+          <div class="reveal flex flex-col gap-3">
+            <span class="material-symbols-outlined text-3xl text-gold">science</span>
+            <h4 class="font-semibold text-ink">One change at a time</h4>
+            <p class="text-ink-dim text-sm leading-relaxed">We test a single improvement each cycle and measure what it did. No guessing, no ten-changes-at-once chaos.</p>
+          </div>
+          <div class="reveal flex flex-col gap-3">
+            <span class="material-symbols-outlined text-3xl text-gold">history</span>
+            <h4 class="font-semibold text-ink">Old leads, revived</h4>
+            <p class="text-ink-dim text-sm leading-relaxed">Past leads that went quiet get a reactivation pass — often the cheapest revenue you'll find.</p>
+          </div>
+          <div class="reveal flex flex-col gap-3">
+            <span class="material-symbols-outlined text-3xl text-gold">reviews</span>
+            <h4 class="font-semibold text-ink">Wins turn into proof</h4>
+            <p class="text-ink-dim text-sm leading-relaxed">Won jobs trigger review requests, so every good customer makes the next one easier.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- PHILOSOPHY ROW -->
+  <section class="relative bg-base py-24 md:py-40">
+    <div class="max-w-7xl mx-auto px-8 reveal-group">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-6">
+        <div class="reveal border-t border-line pt-6">
+          <h3 class="font-serif text-lg text-ink mb-2">Research first</h3>
+          <p class="text-ink-dim text-sm leading-relaxed">We look at how your leads actually move before we change anything.</p>
+        </div>
+        <div class="reveal border-t border-line pt-6">
+          <h3 class="font-serif text-lg text-ink mb-2">Radical transparency</h3>
+          <p class="text-ink-dim text-sm leading-relaxed">You see the findings, the setup, and the reports. Nothing is hidden behind a dashboard you can't read.</p>
+        </div>
+        <div class="reveal border-t border-line pt-6">
+          <h3 class="font-serif text-lg text-ink mb-2">Direct access</h3>
+          <p class="text-ink-dim text-sm leading-relaxed">You talk to the person doing the work. No account managers, no relay chain.</p>
+        </div>
+        <div class="reveal border-t border-line pt-6">
+          <h3 class="font-serif text-lg text-ink mb-2">No lock-in</h3>
+          <p class="text-ink-dim text-sm leading-relaxed">Your data and your tools stay yours. Leave whenever you want, with everything you came in with.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- END CTA BAND -->
+  <section class="relative texture-1 py-24 md:py-32">
+    <div class="absolute inset-0 bg-base/85"></div>
+    <div class="relative max-w-7xl mx-auto px-8 reveal-group text-center">
+      <h2 class="reveal font-serif text-4xl md:text-6xl leading-tight text-ink max-w-3xl mx-auto">Start with a <em class="italic text-gold">free</em> audit.</h2>
+      <p class="reveal mt-6 max-w-xl mx-auto text-lg text-ink-dim font-light leading-relaxed">See where your leads leak before you spend a dollar with us.</p>
+      <div class="reveal mt-10 flex justify-center">
+        <a href="/contact" class="btn-primary">Get your free audit</a>
+      </div>
+    </div>
+  </section>
+
 </main>
+
 <!-- Footer -->
-<footer class="w-full border-t border-outline_variant/15 bg-surface">
-<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full gap-6">
-<div class="flex flex-col gap-2 items-center md:items-start">
-<div class="font-serif italic text-xl text-[#0F2921]">Entropia</div>
-<p class="text-sm Inter text-[#1a1c1c]/60">© 2026 Entropia Ventures. Visibility Infrastructure.</p>
-</div>
-<div class="flex gap-8">
-<a class="text-sm Inter text-[#1a1c1c]/60 hover:text-[#0F2921] underline underline-offset-4 decoration-outline_variant/20 transition-all duration-300" href="/contact.html">Contact</a>
-<a class="text-sm Inter text-[#1a1c1c]/60 hover:text-[#0F2921] underline underline-offset-4 decoration-outline_variant/20 transition-all duration-300" href="#">Privacy</a>
-<a class="text-sm Inter text-[#1a1c1c]/60 hover:text-[#0F2921] underline underline-offset-4 decoration-outline_variant/20 transition-all duration-300" href="https://linkedin.com/company/entropia-ventures" target="_blank">LinkedIn</a>
-</div>
-</div>
+<footer class="bg-base-deep border-t border-line">
+  <div class="max-w-7xl mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-3 gap-12">
+    <div>
+      <a href="/" class="font-serif italic text-2xl text-ink">ENTROPIA</a>
+      <p class="mt-4 text-ink-dim text-sm leading-relaxed max-w-xs">We help service businesses turn leads into revenue.</p>
+    </div>
+    <div class="flex flex-col gap-3">
+      <a href="/services" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">The System</a>
+      <a href="/process" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">How It Works</a>
+      <a href="/audits/" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Audits</a>
+      <a href="/blog/" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Blog</a>
+      <a href="/contact" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">Contact</a>
+      <a href="mailto:alex@entropia.ventures" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">alex@entropia.ventures</a>
+    </div>
+    <div class="flex flex-col gap-3 md:items-end">
+      <a href="https://linkedin.com/company/entropia-ventures" target="_blank" rel="noopener" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">LinkedIn</a>
+      <p class="text-ink-faint text-xs mt-6 md:mt-auto">© 2026 Entropia Ventures</p>
+      <p class="text-ink-faint text-xs"><a href="/privacy" class="hover:text-gold-bright transition-colors">Privacy</a> · <a href="/terms" class="hover:text-gold-bright transition-colors">Terms</a></p>
+    </div>
+  </div>
 </footer>
-</body></html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
+<script>
+(function () {
+  // Mobile menu
+  var toggle = document.getElementById('menu-toggle');
+  var closeBtn = document.getElementById('menu-close');
+  var menu = document.getElementById('mobile-menu');
+  function openMenu() {
+    menu.classList.remove('hidden');
+    menu.classList.add('is-open', 'flex');
+    toggle.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+    if (closeBtn) { closeBtn.focus(); }
+  }
+  function closeMenu() {
+    menu.classList.add('hidden');
+    menu.classList.remove('is-open', 'flex');
+    toggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+    if (toggle) { toggle.focus(); }
+  }
+  if (toggle && closeBtn && menu) {
+    toggle.addEventListener('click', openMenu);
+    closeBtn.addEventListener('click', closeMenu);
+    menu.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', closeMenu);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && menu.classList.contains('is-open')) {
+        closeMenu();
+      }
+    });
+  }
+
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Fallback / reduced-motion: make sure everything is visible, no animation
+  function showAllStatic() {
+    document.querySelectorAll('.reveal').forEach(function (el) {
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+    });
+  }
+
+  if (!window.gsap || !window.ScrollTrigger || reduceMotion) {
+    showAllStatic();
+    return;
+  }
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Scroll-triggered fade-ups, staggered per section
+  document.querySelectorAll('.reveal-group').forEach(function (group) {
+    var items = group.querySelectorAll('.reveal');
+    if (!items.length) return;
+    gsap.set(items, { y: 24, opacity: 0 });
+    gsap.to(items, {
+      y: 0,
+      opacity: 1,
+      duration: 0.8,
+      ease: 'power2.out',
+      stagger: 0.08,
+      scrollTrigger: { trigger: group, start: 'top 82%' }
+    });
+  });
+
+  // Hero content reveal on load (hero is above the fold, not scroll-gated)
+  var heroGroup = document.querySelector('#hero .reveal-group');
+  if (heroGroup) {
+    var heroItems = heroGroup.querySelectorAll('.reveal');
+    gsap.set(heroItems, { y: 24, opacity: 0 });
+    gsap.to(heroItems, { y: 0, opacity: 1, duration: 0.9, ease: 'power2.out', stagger: 0.1, delay: 0.15 });
+  }
+
+  // Stage numerals: highlight gold as each full-width stage block scrolls into view
+  var stages = document.querySelectorAll('#stages .stage');
+  stages.forEach(function (stage) {
+    var num = stage.querySelector('.stage-number');
+    if (!num) return;
+    ScrollTrigger.create({
+      trigger: stage,
+      start: 'top 75%',
+      once: true,
+      onEnter: function () {
+        gsap.to(num, { color: '#C9A84C', duration: 0.4, ease: 'power2.out' });
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
