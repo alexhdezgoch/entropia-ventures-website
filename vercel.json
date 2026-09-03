@@ -1,5 +1,11 @@
 {
   "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/p/:id",
+      "destination": "https://hook.us2.make.com/kduuoyny784zkc7r58zppxn49uungsrn?event=proposal&lead_id=:id"
+    }
+  ],
   "redirects": [
     {
       "source": "/audits/garza-event-hall",

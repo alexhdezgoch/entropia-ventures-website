@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<title>Bright Smile Dental | A few quick questions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/assets/css/site.css"/>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; }
+  .btn-primary {
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+    background: #C9A84C; color: #00130d;
+    text-transform: uppercase; letter-spacing: 0.15em; font-size: 11px; font-weight: 500;
+    padding: 0.9rem 1.75rem;
+    transition: background 0.2s ease, transform 0.1s ease;
+    border: none; cursor: pointer;
+  }
+  .btn-primary:hover { background: #ffe08f; }
+  .btn-primary:active { transform: scale(0.95); }
+  .btn-primary:disabled { opacity: 0.6; cursor: not-allowed; }
+  :focus-visible { outline: 2px solid #C9A84C; outline-offset: 2px; }
+  .radio-option { display: flex; align-items: center; gap: 0.75rem; padding: 0.9rem 1rem; border: 1px solid var(--line, #2a3b34); cursor: pointer; }
+  .radio-option:hover { border-color: #C9A84C; }
+</style>
+</head>
+<body class="bg-base text-ink font-sans selection:bg-gold/30">
+
+<!-- Nav -->
+<nav class="fixed top-0 inset-x-0 z-50 bg-base/80 backdrop-blur-xl border-b border-line">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
+    <span class="font-serif italic text-2xl text-ink tracking-tight">Bright Smile Dental</span>
+    <span class="hidden md:block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim">Houston, TX</span>
+  </div>
+</nav>
+
+<main class="pt-32 pb-24">
+  <section class="py-8 md:py-16">
+    <div class="max-w-xl mx-auto px-8">
+      <div class="bg-surface border border-line p-8" id="qualify-panel">
+        <div id="missing-lead" class="hidden text-center">
+          <h2 class="font-serif text-2xl text-ink mb-3">This link is missing your lead id.</h2>
+          <p class="text-ink-dim text-sm">Please use the link from your email.</p>
+        </div>
+
+        <form id="qualify-form" class="space-y-8">
+          <div>
+            <h2 class="font-serif text-2xl text-ink mb-2">A few quick questions</h2>
+            <p class="text-ink-dim text-sm mb-8">This helps Dr. Rivera's office prepare your estimate.</p>
+          </div>
+
+          <fieldset class="space-y-3">
+            <legend class="block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim mb-3">How soon do you need this?</legend>
+            <label class="radio-option"><input type="radio" name="urgency" value="today" required/> <span class="text-ink text-sm">Today</span></label>
+            <label class="radio-option"><input type="radio" name="urgency" value="this_week"/> <span class="text-ink text-sm">This week</span></label>
+            <label class="radio-option"><input type="radio" name="urgency" value="this_month"/> <span class="text-ink text-sm">This month</span></label>
+            <label class="radio-option"><input type="radio" name="urgency" value="just_exploring"/> <span class="text-ink text-sm">Just exploring</span></label>
+          </fieldset>
+
+          <fieldset class="space-y-3">
+            <legend class="block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim mb-3">Do you have dental insurance?</legend>
+            <label class="radio-option"><input type="radio" name="insurance" value="yes" required/> <span class="text-ink text-sm">Yes</span></label>
+            <label class="radio-option"><input type="radio" name="insurance" value="no"/> <span class="text-ink text-sm">No</span></label>
+            <label class="radio-option"><input type="radio" name="insurance" value="not_sure"/> <span class="text-ink text-sm">Not sure</span></label>
+          </fieldset>
+
+          <fieldset class="space-y-3">
+            <legend class="block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim mb-3">Preferred time</legend>
+            <label class="radio-option"><input type="radio" name="preferred_time" value="morning" required/> <span class="text-ink text-sm">Morning</span></label>
+            <label class="radio-option"><input type="radio" name="preferred_time" value="afternoon"/> <span class="text-ink text-sm">Afternoon</span></label>
+            <label class="radio-option"><input type="radio" name="preferred_time" value="evening"/> <span class="text-ink text-sm">Evening</span></label>
+            <label class="radio-option"><input type="radio" name="preferred_time" value="any"/> <span class="text-ink text-sm">Any time</span></label>
+          </fieldset>
+
+          <button class="btn-primary w-full" type="submit" id="qualify-submit">Submit answers</button>
+          <p id="qualify-error" class="text-red-400 text-sm text-center hidden"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-base-deep border-t border-line">
+  <div class="max-w-7xl mx-auto px-8 py-10 text-center">
+    <p class="text-ink-faint text-xs">Demo site by Entropia Ventures.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var WEBHOOK_URL = 'https://hook.us2.make.com/kduuoyny784zkc7r58zppxn49uungsrn';
+  var SECRET = 'e00d3263f0b8242c52775e49';
+
+  var params = new URLSearchParams(window.location.search);
+  var leadId = params.get('lead');
+
+  var form = document.getElementById('qualify-form');
+  var panel = document.getElementById('qualify-panel');
+  var missingLead = document.getElementById('missing-lead');
+  var errorEl = document.getElementById('qualify-error');
+  var submitBtn = document.getElementById('qualify-submit');
+
+  if (!leadId) {
+    form.classList.add('hidden');
+    missingLead.classList.remove('hidden');
+    return;
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    errorEl.classList.add('hidden');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+
+    var formData = new FormData(form);
+    var payload = {
+      event: 'qualify',
+      secret: SECRET,
+      lead_id: leadId,
+      urgency: formData.get('urgency'),
+      insurance: formData.get('insurance'),
+      preferred_time: formData.get('preferred_time')
+    };
+
+    fetch(WEBHOOK_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    }).then(function (res) {
+      if (!res.ok) { throw new Error('Request failed with status ' + res.status); }
+      showSuccess();
+    }).catch(function (err) {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Submit answers';
+      errorEl.textContent = 'Something went wrong sending your answers. Please try again.';
+      errorEl.classList.remove('hidden');
+    });
+  });
+
+  function showSuccess() {
+    panel.innerHTML =
+      '<div class="text-center">' +
+      '<h2 class="font-serif text-2xl text-ink mb-3">Got it. Dr. Rivera\'s office is preparing your estimate now. You will get it by email in about a minute.</h2>' +
+      '</div>';
+  }
+})();
+</script>
+</body>
+</html>
