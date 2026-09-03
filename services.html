@@ -168,23 +168,37 @@
           </div>
         </div>
 
-        <div id="demo-shell" class="grid grid-cols-1 lg:grid-cols-[220px_minmax(0,1fr)_minmax(0,1fr)] gap-10" hidden>
-          <div class="hidden lg:block">
+        <div id="demo-shell" class="demo-shell" hidden>
+          <div class="hidden lg:block demo-rail-col">
             <ol id="demo-rail-list" class="demo-rail-list"></ol>
           </div>
-          <div id="demo-mobile-steps" class="demo-mobile-steps flex lg:hidden gap-1 mb-8 overflow-x-auto" aria-hidden="true"></div>
+          <div id="demo-mobile-steps" class="demo-mobile-steps flex lg:hidden gap-1 mb-6 overflow-x-auto" aria-hidden="true"></div>
 
-          <div class="demo-phone-frame">
-            <div class="demo-phone-bezel">
-              <div class="demo-phone-status">
-                <span id="demo-phone-company" class="demo-phone-company"></span>
+          <div class="demo-phone-col">
+            <div id="demo-phone-wrap" class="demo-phone-wrap">
+              <div class="demo-phone-frame">
+                <div class="demo-phone-island" aria-hidden="true"></div>
+                <div class="demo-phone-screen">
+                  <div class="demo-phone-status">
+                    <span id="demo-phone-company" class="demo-phone-company"></span>
+                  </div>
+                  <div class="demo-phone-body">
+                    <div id="demo-timer-wrap" class="demo-timer-wrap" hidden>
+                      <p id="demo-timer-value" class="demo-timer-value">Time to first reply · 0:00</p>
+                    </div>
+                    <div id="demo-messages" class="demo-messages" aria-live="polite"></div>
+                    <div id="demo-ending" class="demo-ending" hidden>
+                      <div id="demo-ending-lines"></div>
+                      <div class="demo-ending-actions">
+                        <a href="/contact" class="btn-primary btn-compact">Get your free audit</a>
+                        <button id="demo-ending-again" type="button" class="btn-secondary btn-compact">Run it again as a different trade</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="demo-chip-row" class="demo-chip-row"></div>
+                </div>
+                <div class="demo-phone-home" aria-hidden="true"></div>
               </div>
-              <div id="demo-timer-wrap" class="demo-timer-wrap" hidden>
-                <p class="text-[11px] uppercase tracking-[0.15em] text-ink-faint mb-1">Time to first reply</p>
-                <p id="demo-timer-value" class="font-serif text-4xl text-gold">0:00</p>
-              </div>
-              <div id="demo-messages" class="demo-messages" aria-live="polite"></div>
-              <div id="demo-chip-row" class="demo-chip-row"></div>
             </div>
           </div>
 
@@ -216,14 +230,6 @@
               <p class="demo-slot-label">Report</p>
               <div id="demo-report" class="demo-report-inner" data-placeholder="Monthly report"></div>
             </div>
-          </div>
-        </div>
-
-        <div id="demo-ending" class="demo-ending" hidden>
-          <div id="demo-ending-lines"></div>
-          <div class="flex flex-col sm:flex-row gap-4 mt-8">
-            <a href="/contact" class="btn-primary">Get your free audit</a>
-            <button id="demo-ending-again" type="button" class="btn-secondary">Run it again as a different trade</button>
           </div>
         </div>
 

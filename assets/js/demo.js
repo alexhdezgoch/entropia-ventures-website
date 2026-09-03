@@ -43,6 +43,7 @@
   var endingEl = document.getElementById('demo-ending');
   var endingLinesEl = document.getElementById('demo-ending-lines');
   var endingAgainBtn = document.getElementById('demo-ending-again');
+  var phoneWrapEl = document.getElementById('demo-phone-wrap');
 
   var required = [
     setupEl, shellEl, tradeChipsEl, sourceChipsEl, nameInput, startBtn,
@@ -95,6 +96,45 @@
     try {
       window.localStorage.setItem('ev_demo_last_trade', id);
     } catch (e) { /* private mode / disabled storage — ignore */ }
+  }
+
+  // ---- phone scale (fit the frame within the viewport, no page scroll) ----
+  var PHONE_W = 390;
+  var PHONE_H = 740;
+  function updatePhoneScale() {
+    if (!phoneWrapEl) { return; }
+    var isLg = false;
+    try { isLg = window.matchMedia('(min-width: 1024px)').matches; } catch (e) { /* ignore */ }
+    var scale;
+    if (isLg) {
+      scale = (window.innerHeight - 140) / PHONE_H;
+    } else {
+      scale = (window.innerWidth - 32) / PHONE_W;
+    }
+    if (!isFinite(scale) || scale <= 0) { scale = 1; }
+    scale = Math.min(1, scale);
+    phoneWrapEl.style.setProperty('--phone-scale', String(scale));
+    phoneWrapEl.style.width = (PHONE_W * scale) + 'px';
+    phoneWrapEl.style.height = (PHONE_H * scale) + 'px';
+  }
+  window.addEventListener('resize', updatePhoneScale);
+
+  // ---- scroll the demo shell under the sticky nav once, on Start ----
+  function scrollShellIntoView() {
+    if (!shellEl) { return; }
+    var run = function () {
+      var navOffset = 96;
+      var rect = shellEl.getBoundingClientRect();
+      var top = window.pageYOffset + rect.top - navOffset;
+      if (window.scrollTo) {
+        try {
+          window.scrollTo({ top: top, behavior: reduceMotion ? 'auto' : 'smooth' });
+        } catch (e) {
+          window.scrollTo(0, top);
+        }
+      }
+    };
+    if (window.requestAnimationFrame) { window.requestAnimationFrame(run); } else { run(); }
   }
 
   // ---- DOM helpers ----
@@ -422,8 +462,8 @@
     });
     clear(chipRowEl);
     timerWrap.hidden = true;
+    messagesEl.hidden = true;
     endingEl.hidden = false;
-    endingEl.scrollIntoView({ block: 'nearest' });
   }
 
   // ---- flow ----
@@ -436,12 +476,14 @@
     setupEl.hidden = true;
     shellEl.hidden = false;
     endingEl.hidden = true;
+    messagesEl.hidden = false;
     clear(messagesEl);
     clear(chipRowEl);
     timerWrap.hidden = true;
     resetDashboard();
     buildChecklist(session.trade);
     setActiveStage(0, false);
+    scrollShellIntoView();
 
     runS01();
   }
@@ -456,9 +498,9 @@
   function runS02Timer() {
     setActiveStage(1, false);
     timerWrap.hidden = false;
-    timerValue.textContent = '0:00';
+    timerValue.textContent = 'Time to first reply · 0:00';
     if (TIMER_DURATION === 0) {
-      timerValue.textContent = '0:07';
+      timerValue.textContent = 'Time to first reply · 0:07';
       wait(0, runS02Message);
       return;
     }
@@ -468,7 +510,7 @@
       var elapsed = ts - start;
       var pct = Math.min(1, elapsed / TIMER_DURATION);
       var seconds = Math.min(7, Math.round(pct * 7));
-      timerValue.textContent = '0:0' + seconds;
+      timerValue.textContent = 'Time to first reply · 0:0' + seconds;
       if (pct < 1) {
         window.requestAnimationFrame(frame);
       } else {
@@ -582,6 +624,7 @@
     clearPending();
     session = null;
     endingEl.hidden = true;
+    messagesEl.hidden = false;
     shellEl.hidden = true;
     setupEl.hidden = false;
     clear(messagesEl);
@@ -651,5 +694,6 @@
   buildSetup();
   shellEl.hidden = true;
   endingEl.hidden = true;
+  updatePhoneScale();
   section.classList.add('js-demo-ready');
 })();

@@ -26,18 +26,18 @@
   .demo-name-input:focus { @apply outline-none border-gold; }
 
   /* ---- Stage rail (desktop) ---- */
-  .demo-rail-list { @apply flex flex-col gap-8 sticky top-28; }
-  .demo-rail-item { @apply border-l-2 border-line pl-4 py-1 transition-colors; }
+  .demo-rail-list { @apply flex flex-col gap-3; }
+  .demo-rail-item { @apply border-l-2 border-line pl-3 py-0.5 transition-colors; }
   .demo-rail-item.is-active { @apply border-gold; }
   .demo-rail-item.is-complete { @apply border-gold/40; }
-  .demo-rail-num { @apply block font-serif text-lg text-ink-faint leading-none mb-1; }
-  .demo-rail-item.is-complete .demo-rail-num { @apply text-ink-dim; }
+  .demo-rail-num { @apply block font-serif text-base text-ink-faint leading-none mb-0.5; }
+  .demo-rail-item.is-complete .demo-rail-num { @apply text-ink; }
   .demo-rail-item.is-active .demo-rail-num { @apply text-gold; }
-  .demo-rail-heading { @apply text-sm text-ink-faint leading-snug; }
+  .demo-rail-heading { @apply text-xs text-ink-faint leading-snug; }
   .demo-rail-item.is-active .demo-rail-heading,
   .demo-rail-item.is-complete .demo-rail-heading { @apply text-ink-dim; }
   .demo-rail-item.is-active .demo-rail-heading { @apply text-ink; }
-  .demo-rail-replaces { @apply text-xs text-ink-faint italic mt-2 leading-relaxed max-w-[200px]; }
+  .demo-rail-replaces { @apply text-xs text-ink-faint italic mt-1 leading-relaxed max-w-[200px]; }
 
   /* ---- Mobile horizontal step strip (<lg) ---- */
   .demo-mobile-steps { @apply border-b border-line pb-4; }
@@ -45,26 +45,122 @@
   .demo-step.is-active { @apply border-gold bg-gold text-base-deep font-medium; }
   .demo-step.is-complete { @apply border-gold/40 text-gold; }
 
-  /* ---- Phone frame ---- */
-  .demo-phone-frame {
-    @apply border border-line mx-auto w-full flex flex-col overflow-hidden;
-    max-width: 420px;
-    min-height: 520px;
+  /* ---- Demo shell: rail / phone / dashboard, one viewport on lg ---- */
+  .demo-shell {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+    align-items: start;
   }
   @media (min-width: 1024px) {
-    .demo-phone-frame { width: 360px; max-width: 360px; min-height: 640px; }
+    .demo-shell {
+      grid-template-columns: minmax(200px, 240px) 390px 1fr;
+      grid-template-rows: minmax(0, 1fr);
+      gap: 2.5rem;
+      height: min(740px, calc(100vh - 140px));
+    }
   }
-  .demo-phone-bezel { @apply bg-base-deep flex flex-col flex-1 overflow-hidden; margin: 6px; }
-  .demo-phone-status { @apply px-4 py-3 border-b border-line text-center flex-shrink-0; }
-  .demo-phone-company { @apply text-[11px] uppercase tracking-[0.15em] text-ink-faint font-medium; }
-  .demo-timer-wrap { @apply px-6 pt-8 text-center; }
-  .demo-messages { @apply flex-1 overflow-y-auto px-4 py-4 flex flex-col gap-4 min-h-0; }
-  .demo-bubble { @apply max-w-[80%] px-4 py-2.5 text-[15px] leading-relaxed; }
-  .demo-bubble-system { @apply self-start bg-surface-2 text-ink; }
-  .demo-bubble-customer { @apply self-end border border-gold/50 bg-gold/5 text-ink; }
-  .demo-typing { @apply flex items-center gap-1 py-3 px-4 self-start; }
+  .demo-phone-col { @apply flex justify-center; min-height: 0; }
+  .demo-rail-col { min-height: 0; overflow-y: auto; }
+
+  /* ---- Phone frame: iPhone look, light screen ---- */
+  .demo-phone-wrap {
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .demo-phone-frame {
+    position: relative;
+    width: 390px;
+    height: 740px;
+    box-sizing: border-box;
+    background: #0b0f0d;
+    border: 1px solid theme('colors.line');
+    border-radius: 48px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    transform: scale(var(--phone-scale, 1));
+    transform-origin: top left;
+  }
+  .demo-phone-island {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 34px;
+    background: #000;
+    border-radius: 20px;
+    z-index: 5;
+  }
+  .demo-phone-home {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 134px;
+    height: 5px;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 5;
+  }
+  .demo-phone-screen {
+    flex: 1;
+    min-height: 0;
+    background: #f2f2f7;
+    border-radius: 38px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .demo-phone-status {
+    flex-shrink: 0;
+    background: #ffffff;
+    border-bottom: 1px solid #d1d1d6;
+    text-align: center;
+    padding: 50px 16px 12px;
+  }
+  .demo-phone-company {
+    font-family: -apple-system, "SF Pro Text", Inter, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #111111;
+  }
+  .demo-phone-body {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .demo-timer-wrap { flex-shrink: 0; padding: 8px 16px 0; text-align: center; }
+  .demo-timer-value {
+    font-family: -apple-system, "SF Pro Text", Inter, sans-serif;
+    font-size: 12px;
+    color: #8e8e93;
+  }
+  .demo-messages {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    padding: 16px 14px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .demo-bubble {
+    max-width: 78%;
+    padding: 9px 14px;
+    font-family: -apple-system, "SF Pro Text", Inter, sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+    border-radius: 18px;
+  }
+  .demo-bubble-system { align-self: flex-start; background: #e9e9eb; color: #111111; }
+  .demo-bubble-customer { align-self: flex-end; background: #C9A84C; color: #111111; }
+  .demo-typing { display: flex; align-items: center; gap: 4px; align-self: flex-start; padding: 11px 16px; }
   .demo-typing-dot {
-    @apply w-1.5 h-1.5 rounded-full bg-ink-faint inline-block;
+    width: 6px; height: 6px; border-radius: 50%; display: inline-block;
+    background: #8e8e93;
     animation: demo-typing-bounce 1.2s infinite ease-in-out;
   }
   .demo-typing-dot:nth-child(2) { animation-delay: 0.15s; }
@@ -73,83 +169,138 @@
     0%, 80%, 100% { opacity: 0.3; }
     40% { opacity: 1; }
   }
-  .demo-chip-row { @apply flex flex-wrap gap-2 px-4 py-4 border-t border-line flex-shrink-0; }
-  .demo-chip {
-    @apply inline-flex items-center min-h-[40px] border border-line bg-base-deep text-ink text-[11px] uppercase tracking-[0.15em] font-medium px-3 py-2 transition-colors;
+  .demo-chip-row {
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 14px;
+    background: #ffffff;
+    border-top: 1px solid #d1d1d6;
+    max-height: 96px;
+    overflow-y: auto;
   }
-  .demo-chip:hover { @apply border-gold text-gold-bright bg-gold/10; }
+  .demo-chip {
+    display: inline-flex;
+    align-items: center;
+    min-height: 36px;
+    border-radius: 999px;
+    border: 1px solid #c7c7cc;
+    background: #ffffff;
+    color: #111111;
+    font-family: -apple-system, "SF Pro Text", Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 14px;
+    transition: border-color 0.2s ease, color 0.2s ease;
+  }
+  .demo-chip:hover, .demo-chip:focus-visible { border-color: #C9A84C; color: #8a7434; }
   .demo-chip:focus-visible { outline: 2px solid #C9A84C; outline-offset: 2px; }
-  .demo-setup-chip { @apply min-h-[40px]; }
-  .demo-setup-chip:hover { @apply bg-gold/10; }
+
+  /* ---- Ending card (renders inside the phone screen) ---- */
+  .demo-ending {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+    padding: 24px 18px;
+    overflow-y: auto;
+  }
+  .demo-ending-line {
+    font-family: -apple-system, "SF Pro Text", Inter, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #111111;
+    line-height: 1.4;
+  }
+  .demo-ending-actions { display: flex; flex-direction: column; gap: 10px; }
+  .demo-ending-actions .btn-compact {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    font-size: 10px;
+  }
 
   /* ---- Owner dashboard ---- */
-  .demo-dashboard { @apply bg-surface border border-line p-6 md:p-8 flex flex-col gap-5; min-height: 520px; }
-  @media (min-width: 1024px) {
-    .demo-dashboard { min-height: 640px; }
+  .demo-dashboard {
+    @apply bg-surface border border-line flex flex-col gap-1.5;
+    padding: 0.75rem;
+    overflow-y: auto;
   }
-  .demo-slot { @apply border border-line p-5; }
-  .demo-slot-label { @apply text-[11px] uppercase tracking-[0.15em] text-ink-faint font-medium mb-3; }
-  .demo-slot-empty { @apply border-dashed; }
-  .demo-slot-empty-text { @apply text-sm text-ink-faint italic; }
+  @media (min-width: 1024px) {
+    .demo-dashboard { height: 100%; padding: 0.875rem; }
+  }
+  .demo-slot { @apply bg-surface-2 border border-line p-2.5; }
+  .demo-slot-label { @apply text-[10px] uppercase tracking-[0.12em] text-ink-dim font-medium mb-1; }
+  .demo-slot-empty { @apply border-dashed border-line/60; }
+  .demo-slot-empty-text { @apply text-xs text-ink-faint italic; }
 
-  .demo-lead-card-inner { @apply border border-gold/40 bg-base-deep px-4 py-3; }
+  .demo-lead-card-inner { @apply border border-gold/40 bg-base-deep px-3 py-2; }
   .demo-lead-name { @apply text-sm text-ink font-medium; }
-  .demo-lead-meta { @apply text-xs text-ink-faint mt-1; }
+  .demo-lead-meta { @apply text-xs text-ink mt-0.5; }
   .demo-consent { @apply text-gold; }
 
-  .demo-checklist { @apply flex flex-col gap-2; }
-  .demo-checklist-row { @apply flex items-center gap-3 text-sm; }
+  .demo-checklist { @apply flex flex-col gap-1; }
+  .demo-checklist-row { @apply flex items-center gap-2 text-xs; }
   .demo-checklist-pending { @apply text-ink-faint; }
-  .demo-checklist-done { @apply text-ink-dim; }
+  .demo-checklist-done { @apply text-ink; }
   .demo-checklist-weak { @apply text-ink-dim; }
   .demo-check { @apply w-4 text-center flex-shrink-0; }
   .demo-checklist-done .demo-check { @apply text-gold; }
   .demo-checklist-weak .demo-check { @apply text-ink-faint; }
 
   .demo-qualified-stamp {
-    @apply inline-block self-start border border-gold bg-gold/10 text-gold text-[11px] uppercase tracking-[0.2em] font-medium px-4 py-2 mt-3;
+    @apply inline-block self-start border border-gold bg-gold/10 text-gold text-[10px] uppercase tracking-[0.15em] font-medium px-3 py-1 mt-1.5;
   }
 
   .demo-assignment-inner { @apply text-sm text-ink; }
   .demo-status-badge {
-    @apply inline-flex self-start items-center gap-1.5 text-[11px] uppercase tracking-[0.15em] font-medium text-emerald-400 mt-3;
+    @apply inline-flex self-start items-center gap-1.5 text-[10px] uppercase tracking-[0.15em] font-medium text-emerald-400 mt-1.5;
   }
   .demo-status-badge::before {
     content: '';
     @apply w-1.5 h-1.5 rounded-full bg-emerald-400;
   }
 
-  .demo-calendar-inner { @apply border border-line bg-base-deep px-4 py-3; }
-  .demo-calendar-label { @apply text-xs text-ink-faint uppercase tracking-[0.1em]; }
-  .demo-calendar-slot { @apply text-sm text-ink mt-1; }
+  .demo-calendar-inner { @apply border border-line bg-base-deep px-3 py-2; }
+  .demo-calendar-label { @apply text-xs text-ink-dim uppercase tracking-[0.1em]; }
+  .demo-calendar-slot { @apply text-sm text-ink mt-0.5; }
   .demo-gold { @apply text-gold; }
 
-  .demo-followup { @apply border border-line bg-base-deep px-4 py-3 flex flex-col gap-2 mt-3; }
-  .demo-followup-heading { @apply text-xs uppercase tracking-[0.1em] text-ink-faint mb-1; }
-  .demo-followup-row { @apply text-sm text-ink-dim; }
-  .demo-followup-timing { @apply text-ink-faint; }
+  .demo-followup { @apply border border-line bg-base-deep px-3 py-2 flex flex-col gap-1 mt-1.5; }
+  .demo-followup-heading { @apply text-xs uppercase tracking-[0.1em] text-ink-dim mb-0.5; }
+  .demo-followup-row { @apply text-xs text-ink; }
+  .demo-followup-timing { @apply text-ink-dim; }
 
   .demo-pipeline-board {
-    @apply grid gap-2 overflow-x-auto;
-    grid-template-columns: repeat(auto-fit, minmax(76px, 1fr));
+    @apply grid gap-1 overflow-x-auto;
+    grid-template-columns: repeat(auto-fit, minmax(58px, 1fr));
   }
-  .demo-pipeline-col { @apply border border-line bg-base-deep p-2 min-h-[64px] relative; }
+  .demo-pipeline-col { @apply border border-line bg-base-deep p-1 min-h-[34px] relative; }
   .demo-pipeline-col[data-col="Won"],
   .demo-pipeline-col[data-col="Nurture"] { @apply border-gold/30; }
-  .demo-pipeline-col-label { @apply text-[9px] uppercase tracking-[0.1em] text-ink-faint mb-2 block leading-tight; }
+  .demo-pipeline-col-label {
+    @apply text-[8px] uppercase tracking-[0.05em] text-ink-dim mb-0.5 block leading-none whitespace-nowrap overflow-hidden;
+    text-overflow: ellipsis;
+  }
   .demo-pipeline-card {
-    @apply border border-gold/40 bg-surface-2 text-[10px] text-ink px-2 py-1.5 transition-all duration-500 break-words;
+    @apply border border-gold/40 bg-surface-2 text-[9px] text-ink px-1.5 py-0.5 transition-all duration-500 break-words;
   }
 
-  .demo-report-line { @apply text-sm text-ink-dim leading-relaxed mb-4; }
-  .demo-report-chart { @apply w-full h-auto max-w-[200px]; }
+  .demo-report-line { @apply text-[11px] text-ink leading-snug mb-1.5; }
+  .demo-report-chart { @apply w-full h-auto max-w-[110px]; }
   .demo-chart-bar { @apply fill-line; transform-box: fill-box; transform-origin: bottom; }
   .demo-chart-bar-weak { fill: #C9A84C; stroke: #ffe08f; stroke-width: 2; }
   .demo-report-chart-labels {
-    @apply flex justify-between text-[9px] uppercase tracking-[0.05em] text-ink-faint max-w-[200px] mt-2;
+    @apply flex text-[7px] uppercase tracking-[0.02em] text-ink-dim max-w-[110px] mt-1;
   }
-
-  /* ---- Ending card ---- */
-  .demo-ending { @apply bg-surface border border-line p-8 md:p-12 mt-16 md:mt-20 max-w-2xl; }
-  .demo-ending-line { @apply font-serif text-2xl md:text-3xl text-ink leading-snug; }
+  .demo-report-chart-labels span {
+    flex: 1;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0 1px;
+  }
 }
