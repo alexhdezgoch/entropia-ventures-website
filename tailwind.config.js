@@ -5,6 +5,7 @@ module.exports = {
     './*.html',
     './blog/**/*.html',
     './audits/**/*.html',
+    './demo/**/*.html',
     './scripts/prerender-audits.js',
     './assets/js/*.js',
   ],

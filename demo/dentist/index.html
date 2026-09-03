@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<title>Bright Smile Dental | Houston, TX</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/assets/css/site.css"/>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; }
+  .btn-primary {
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+    background: #C9A84C; color: #00130d;
+    text-transform: uppercase; letter-spacing: 0.15em; font-size: 11px; font-weight: 500;
+    padding: 0.9rem 1.75rem;
+    transition: background 0.2s ease, transform 0.1s ease;
+    border: none; cursor: pointer;
+  }
+  .btn-primary:hover { background: #ffe08f; }
+  .btn-primary:active { transform: scale(0.95); }
+  .btn-primary:disabled { opacity: 0.6; cursor: not-allowed; }
+  input:focus, select:focus { outline: none; box-shadow: 0 0 0 2px rgba(201,168,76,0.6); }
+  :focus-visible { outline: 2px solid #C9A84C; outline-offset: 2px; }
+</style>
+</head>
+<body class="bg-base text-ink font-sans selection:bg-gold/30">
+
+<!-- Nav -->
+<nav class="fixed top-0 inset-x-0 z-50 bg-base/80 backdrop-blur-xl border-b border-line">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
+    <span class="font-serif italic text-2xl text-ink tracking-tight">Bright Smile Dental</span>
+    <span class="hidden md:block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim">Houston, TX</span>
+  </div>
+</nav>
+
+<main class="pt-32 pb-24">
+
+  <!-- HERO -->
+  <section class="relative bg-base pt-12 pb-16 md:pb-20">
+    <div class="max-w-5xl mx-auto px-8 text-center">
+      <p class="text-[11px] uppercase tracking-[0.2em] font-medium text-gold flex items-center justify-center gap-3 mb-6">
+        <span class="w-1.5 h-1.5 rounded-full bg-gold"></span>
+        New Patients Welcome
+      </p>
+      <h1 class="font-serif text-4xl md:text-6xl leading-[1.1] text-ink">A calm, modern dental office in Houston.</h1>
+      <p class="mt-6 max-w-2xl mx-auto text-lg text-ink-dim font-light leading-relaxed">Cleanings, whitening, and implants. Dr. Rivera's office responds fast so you know what to expect before you walk in.</p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="bg-surface border-y border-line py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div>
+        <h2 class="font-serif text-xl text-ink mb-2">Cleaning</h2>
+        <p class="text-ink-dim text-sm font-light leading-relaxed">Routine cleanings and checkups, in and out in under an hour.</p>
+      </div>
+      <div>
+        <h2 class="font-serif text-xl text-ink mb-2">Whitening</h2>
+        <p class="text-ink-dim text-sm font-light leading-relaxed">In-office whitening with visible results the same day.</p>
+      </div>
+      <div>
+        <h2 class="font-serif text-xl text-ink mb-2">Implants</h2>
+        <p class="text-ink-dim text-sm font-light leading-relaxed">Full implant consults, from first exam to final crown.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST LINE -->
+  <section class="py-10">
+    <div class="max-w-3xl mx-auto px-8 text-center">
+      <p class="text-ink-dim text-sm">Most requests get a reply within minutes, not days.</p>
+    </div>
+  </section>
+
+  <!-- REQUEST FORM -->
+  <section id="request" class="py-8 md:py-16">
+    <div class="max-w-xl mx-auto px-8">
+      <div class="bg-surface border border-line p-8" id="form-panel">
+        <h2 class="font-serif text-2xl text-ink mb-2">Request an appointment</h2>
+        <p class="text-ink-dim text-sm mb-8">Tell us what you need. We'll follow up right away.</p>
+
+        <form id="lead-form" class="space-y-6">
+          <div class="space-y-2">
+            <label for="lead-name" class="block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim">Name</label>
+            <input id="lead-name" class="w-full bg-base border border-line text-ink placeholder:text-ink-faint focus:border-gold px-4 py-3" name="name" placeholder="Your full name" type="text" required/>
+          </div>
+          <div class="space-y-2">
+            <label for="lead-email" class="block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim">Email</label>
+            <input id="lead-email" class="w-full bg-base border border-line text-ink placeholder:text-ink-faint focus:border-gold px-4 py-3" name="email" placeholder="you@email.com" type="email" required/>
+          </div>
+          <div class="space-y-2">
+            <label for="lead-phone" class="block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim">Phone</label>
+            <input id="lead-phone" class="w-full bg-base border border-line text-ink placeholder:text-ink-faint focus:border-gold px-4 py-3" name="phone" placeholder="+1 (555) 000-0000" type="tel" required/>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-2">
+              <label for="lead-reason" class="block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim">Reason for visit</label>
+              <select id="lead-reason" class="w-full bg-base border border-line text-ink focus:border-gold px-4 py-3" name="reason" required>
+                <option value="" disabled selected>Select one</option>
+                <option value="cleaning">Cleaning</option>
+                <option value="whitening">Whitening</option>
+                <option value="implant">Implant</option>
+                <option value="emergency">Emergency</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="space-y-2">
+              <label for="lead-time" class="block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim">Preferred time</label>
+              <select id="lead-time" class="w-full bg-base border border-line text-ink focus:border-gold px-4 py-3" name="preferred_time" required>
+                <option value="" disabled selected>Select one</option>
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+                <option value="any">Any time</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn-primary w-full" type="submit" id="lead-submit">Request appointment</button>
+          <p id="lead-error" class="text-red-400 text-sm text-center hidden"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-base-deep border-t border-line">
+  <div class="max-w-7xl mx-auto px-8 py-10 text-center">
+    <p class="text-ink-faint text-xs">Demo site by Entropia Ventures.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var WEBHOOK_URL = 'https://hook.us2.make.com/kduuoyny784zkc7r58zppxn49uungsrn';
+  var SECRET = 'e00d3263f0b8242c52775e49';
+
+  function makeLeadId() {
+    var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    var out = '';
+    for (var i = 0; i < 6; i++) {
+      out += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    return 'BSD-' + out;
+  }
+
+  function formatTimer(ms) {
+    var totalSeconds = Math.floor(ms / 1000);
+    var mm = Math.floor(totalSeconds / 60);
+    var ss = totalSeconds % 60;
+    return (mm < 10 ? '0' + mm : mm) + ':' + (ss < 10 ? '0' + ss : ss);
+  }
+
+  var form = document.getElementById('lead-form');
+  var panel = document.getElementById('form-panel');
+  var errorEl = document.getElementById('lead-error');
+  var submitBtn = document.getElementById('lead-submit');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    errorEl.classList.add('hidden');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+
+    var name = document.getElementById('lead-name').value.trim();
+    var email = document.getElementById('lead-email').value.trim();
+    var phone = document.getElementById('lead-phone').value.trim();
+    var reason = document.getElementById('lead-reason').value;
+    var preferredTime = document.getElementById('lead-time').value;
+    var leadId = makeLeadId();
+    var submittedAt = new Date().toISOString();
+
+    var payload = {
+      event: 'form',
+      secret: SECRET,
+      lead_id: leadId,
+      name: name,
+      email: email,
+      phone: phone,
+      reason: reason,
+      preferred_time: preferredTime,
+      submitted_at: submittedAt
+    };
+
+    fetch(WEBHOOK_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    }).then(function (res) {
+      if (!res.ok) { throw new Error('Request failed with status ' + res.status); }
+      try {
+        window.localStorage.setItem('bsd_lead_id', leadId);
+        window.localStorage.setItem('bsd_submitted_at', submittedAt);
+      } catch (err) {}
+      showSuccess(name, submittedAt);
+    }).catch(function (err) {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Request appointment';
+      errorEl.textContent = 'Something went wrong sending your request. Please try again.';
+      errorEl.classList.remove('hidden');
+    });
+  });
+
+  function showSuccess(name, submittedAtIso) {
+    panel.innerHTML =
+      '<div class="text-center">' +
+      '<h2 class="font-serif text-2xl text-ink mb-3">Thanks ' + escapeHtml(name) + '. Check your email, we just sent you three quick questions.</h2>' +
+      '<p class="text-ink-dim text-sm mb-6">Time since submit</p>' +
+      '<p id="lead-timer" class="font-serif text-4xl text-gold tabular-nums">00:00</p>' +
+      '</div>';
+
+    var timerEl = document.getElementById('lead-timer');
+    var startMs = new Date(submittedAtIso).getTime();
+    function tick() {
+      var elapsed = Date.now() - startMs;
+      timerEl.textContent = formatTimer(elapsed);
+    }
+    tick();
+    setInterval(tick, 1000);
+  }
+
+  function escapeHtml(str) {
+    var div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+})();
+</script>
+</body>
+</html>
