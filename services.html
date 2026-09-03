@@ -181,6 +181,7 @@
                 <div class="demo-phone-screen">
                   <div class="demo-phone-status">
                     <span id="demo-phone-company" class="demo-phone-company"></span>
+                    <span id="demo-phone-datetime" class="demo-phone-datetime"></span>
                   </div>
                   <div class="demo-phone-body">
                     <div id="demo-timer-wrap" class="demo-timer-wrap" hidden>
@@ -189,6 +190,7 @@
                     <div id="demo-messages" class="demo-messages" aria-live="polite"></div>
                     <div id="demo-ending" class="demo-ending" hidden>
                       <div id="demo-ending-lines"></div>
+                      <div id="demo-ending-contrast" class="demo-ending-contrast" aria-hidden="true"></div>
                       <div class="demo-ending-actions">
                         <a href="/contact" class="btn-primary btn-compact">Get your free audit</a>
                         <button id="demo-ending-again" type="button" class="btn-secondary btn-compact">Run it again as a different trade</button>
@@ -203,32 +205,44 @@
           </div>
 
           <div class="demo-dashboard" aria-live="polite">
-            <div class="demo-slot">
-              <p class="demo-slot-label">Lead</p>
-              <div id="demo-lead-card" class="demo-lead-card-inner" data-placeholder="New lead"></div>
+            <div class="demo-dashboard-col demo-dashboard-col-left">
+              <div class="demo-slot">
+                <p class="demo-slot-label">Lead</p>
+                <div id="demo-lead-card" class="demo-lead-card-inner" data-placeholder="New lead"></div>
+                <div id="demo-queue-list" class="demo-queue-list" hidden>
+                  <p class="demo-queue-heading">Also handled while you were typing</p>
+                </div>
+              </div>
+              <div class="demo-slot">
+                <p class="demo-slot-label">Qualifying</p>
+                <ul id="demo-checklist" class="demo-checklist"></ul>
+                <p id="demo-qualified-stamp" class="demo-qualified-stamp" hidden>Qualified</p>
+                <p id="demo-nurture-stamp" class="demo-nurture-stamp" hidden></p>
+              </div>
+              <div class="demo-slot" id="demo-assigned-slot">
+                <p class="demo-slot-label">Assigned</p>
+                <div id="demo-assignment" class="demo-assignment-inner" data-placeholder="Routed to your team"></div>
+                <p id="demo-status-badge" class="demo-status-badge" hidden></p>
+              </div>
             </div>
-            <div class="demo-slot">
-              <p class="demo-slot-label">Qualifying</p>
-              <ul id="demo-checklist" class="demo-checklist"></ul>
-              <p id="demo-qualified-stamp" class="demo-qualified-stamp" hidden>Qualified</p>
-            </div>
-            <div class="demo-slot">
-              <p class="demo-slot-label">Assigned</p>
-              <div id="demo-assignment" class="demo-assignment-inner" data-placeholder="Routed to your team"></div>
-              <p id="demo-status-badge" class="demo-status-badge" hidden></p>
-            </div>
-            <div class="demo-slot">
-              <p class="demo-slot-label">Calendar</p>
-              <div id="demo-calendar" class="demo-calendar-inner" data-placeholder="Calendar"></div>
-              <div id="demo-followup" class="demo-followup" hidden></div>
-            </div>
-            <div class="demo-slot">
-              <p class="demo-slot-label">Pipeline</p>
-              <div id="demo-pipeline" class="demo-pipeline-inner" data-placeholder="Pipeline board"></div>
-            </div>
-            <div class="demo-slot">
-              <p class="demo-slot-label">Report</p>
-              <div id="demo-report" class="demo-report-inner" data-placeholder="Monthly report"></div>
+            <div class="demo-dashboard-col demo-dashboard-col-right">
+              <div class="demo-slot demo-slot-activity">
+                <p class="demo-slot-label">System activity</p>
+                <ol id="demo-activity-list" class="demo-activity-list"></ol>
+              </div>
+              <div class="demo-slot">
+                <p class="demo-slot-label">Calendar</p>
+                <div id="demo-calendar" class="demo-calendar-inner" data-placeholder="Calendar"></div>
+                <div id="demo-followup" class="demo-followup" hidden></div>
+              </div>
+              <div class="demo-slot">
+                <p class="demo-slot-label">Pipeline</p>
+                <div id="demo-pipeline" class="demo-pipeline-inner" data-placeholder="Pipeline board"></div>
+              </div>
+              <div class="demo-slot">
+                <p class="demo-slot-label">Report</p>
+                <div id="demo-report" class="demo-report-inner" data-placeholder="Monthly report"></div>
+              </div>
             </div>
           </div>
         </div>

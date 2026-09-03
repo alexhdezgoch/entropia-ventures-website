@@ -25,6 +25,7 @@
   var nameInput = document.getElementById('demo-name-input');
   var startBtn = document.getElementById('demo-start-btn');
   var phoneCompanyEl = document.getElementById('demo-phone-company');
+  var phoneDatetimeEl = document.getElementById('demo-phone-datetime');
   var railList = document.getElementById('demo-rail-list');
   var mobileSteps = document.getElementById('demo-mobile-steps');
   var timerWrap = document.getElementById('demo-timer-wrap');
@@ -32,8 +33,11 @@
   var messagesEl = document.getElementById('demo-messages');
   var chipRowEl = document.getElementById('demo-chip-row');
   var leadCardEl = document.getElementById('demo-lead-card');
+  var queueListEl = document.getElementById('demo-queue-list');
   var checklistEl = document.getElementById('demo-checklist');
   var qualifiedStampEl = document.getElementById('demo-qualified-stamp');
+  var nurtureStampEl = document.getElementById('demo-nurture-stamp');
+  var assignedSlotEl = document.getElementById('demo-assigned-slot');
   var assignmentEl = document.getElementById('demo-assignment');
   var statusBadgeEl = document.getElementById('demo-status-badge');
   var calendarEl = document.getElementById('demo-calendar');
@@ -42,15 +46,17 @@
   var reportEl = document.getElementById('demo-report');
   var endingEl = document.getElementById('demo-ending');
   var endingLinesEl = document.getElementById('demo-ending-lines');
+  var endingContrastEl = document.getElementById('demo-ending-contrast');
   var endingAgainBtn = document.getElementById('demo-ending-again');
   var phoneWrapEl = document.getElementById('demo-phone-wrap');
+  var activityListEl = document.getElementById('demo-activity-list');
 
   var required = [
     setupEl, shellEl, tradeChipsEl, sourceChipsEl, nameInput, startBtn,
     phoneCompanyEl, railList, mobileSteps, timerWrap, timerValue, messagesEl, chipRowEl,
     leadCardEl, checklistEl, qualifiedStampEl, assignmentEl, statusBadgeEl,
     calendarEl, followupEl, pipelineEl, reportEl, endingEl, endingLinesEl,
-    endingAgainBtn
+    endingAgainBtn, activityListEl
   ];
   for (var i = 0; i < required.length; i++) {
     if (!required[i]) { return; }
@@ -62,14 +68,24 @@
     reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   } catch (e) { /* matchMedia unsupported — proceed with motion */ }
 
+  var GSAP = (!reduceMotion && window.gsap) ? window.gsap : null;
+
   var TYPING_MIN = reduceMotion ? 0 : 500;
   var TYPING_MAX = reduceMotion ? 0 : 900;
   var STAGE_PAUSE = reduceMotion ? 0 : 500;
+  var DISQUALIFY_PAUSE = reduceMotion ? 0 : 1200;
   var TIMER_DURATION = reduceMotion ? 0 : 2500;
+  var ACTIVITY_STAGGER_MIN = reduceMotion ? 0 : 250;
+  var ACTIVITY_STAGGER_MAX = reduceMotion ? 0 : 400;
+  var ACTIVITY_MAX_VISIBLE = 8;
 
   function typingDelay() {
     if (TYPING_MAX === 0) { return 0; }
     return TYPING_MIN + Math.floor(Math.random() * (TYPING_MAX - TYPING_MIN));
+  }
+  function activityStagger() {
+    if (ACTIVITY_STAGGER_MAX === 0) { return 0; }
+    return ACTIVITY_STAGGER_MIN + Math.floor(Math.random() * (ACTIVITY_STAGGER_MAX - ACTIVITY_STAGGER_MIN));
   }
 
   var pendingTimeouts = [];
@@ -152,6 +168,22 @@
     if (btn) { btn.focus(); }
   }
 
+  // ---- tiny template substitution: {token} -> dict[token] ----
+  function fmt(str, dict) {
+    return str.replace(/\{(\w+)\}/g, function (m, key) {
+      return Object.prototype.hasOwnProperty.call(dict, key) ? String(dict[key]) : m;
+    });
+  }
+
+  var NEXT_DAY = { Mon: 'Tue', Tue: 'Wed', Wed: 'Thu', Thu: 'Fri', Fri: 'Mon' };
+  var DAY_FULL = {
+    Mon: 'Monday', Tue: 'Tuesday', Wed: 'Wednesday', Thu: 'Thursday', Fri: 'Friday',
+    Today: 'today', Tomorrow: 'tomorrow'
+  };
+  function fullDay(dayPart) {
+    return DAY_FULL[dayPart] || dayPart;
+  }
+
   // ---- session state ----
   var session = null;
   var RAIL_STAGE_COUNT = 8;
@@ -162,7 +194,8 @@
       source: DATA.sources[sourceId],
       name: name || DATA.shared.setup.namePlaceholder,
       answers: [],
-      stageIndex: 0
+      stageIndex: 0,
+      bookedSlot: null
     };
   }
 
@@ -212,18 +245,73 @@
     });
   }
 
+  // ---- card "goes active" flourish: gold border sweep + 2px lift ----
+  function pulseCardActive(node) {
+    if (!node) { return; }
+    node.classList.add('is-active-card');
+    wait(reduceMotion ? 0 : 900, function () {
+      node.classList.remove('is-active-card');
+    });
+  }
+
+  // ---- phone header date/time (S3) ----
+  function setPhoneDatetime(text) {
+    if (!phoneDatetimeEl) { return; }
+    if (reduceMotion || !GSAP) {
+      phoneDatetimeEl.textContent = text;
+      return;
+    }
+    GSAP.to(phoneDatetimeEl, {
+      y: -6, opacity: 0, duration: 0.14, ease: 'power1.in',
+      onComplete: function () {
+        phoneDatetimeEl.textContent = text;
+        GSAP.fromTo(phoneDatetimeEl, { y: 6, opacity: 0 }, { y: 0, opacity: 1, duration: 0.18, ease: 'power2.out' });
+      }
+    });
+  }
+
+  function addThreadStamp(text) {
+    var stamp = el('p', 'demo-thread-stamp', text);
+    messagesEl.appendChild(stamp);
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+  }
+
   // ---- phone bubbles ----
+  function animateBubbleIn(bubble, fromRight) {
+    if (reduceMotion || !GSAP) { return; }
+    GSAP.fromTo(bubble,
+      { scale: 0.92, y: 8, opacity: 0 },
+      { scale: 1, y: 0, opacity: 1, duration: 0.26, ease: 'power2.out' }
+    );
+  }
   function appendSystemBubble(text) {
     var bubble = el('div', 'demo-bubble demo-bubble-system');
     bubble.appendChild(el('p', null, text));
     messagesEl.appendChild(bubble);
     messagesEl.scrollTop = messagesEl.scrollHeight;
+    animateBubbleIn(bubble, false);
   }
   function appendCustomerBubble(text) {
     var bubble = el('div', 'demo-bubble demo-bubble-customer');
     bubble.appendChild(el('p', null, text));
     messagesEl.appendChild(bubble);
     messagesEl.scrollTop = messagesEl.scrollHeight;
+    animateBubbleIn(bubble, true);
+  }
+  function appendHumanBubble(teamMember, text) {
+    var initials = teamMember.split(' ').map(function (p) { return p.charAt(0); }).join('').slice(0, 2).toUpperCase();
+    var wrap = el('div', 'demo-bubble-human-wrap');
+    var avatar = el('div', 'demo-bubble-human-avatar', initials);
+    var col = el('div', 'demo-bubble-human-col');
+    col.appendChild(el('p', 'demo-bubble-human-sender', teamMember));
+    var bubble = el('div', 'demo-bubble demo-bubble-system demo-bubble-human');
+    bubble.appendChild(el('p', null, text));
+    col.appendChild(bubble);
+    wrap.appendChild(avatar);
+    wrap.appendChild(col);
+    messagesEl.appendChild(wrap);
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+    animateBubbleIn(bubble, false);
   }
   function appendTypingIndicator(cb) {
     var indicator = el('div', 'demo-bubble demo-bubble-system demo-typing');
@@ -248,15 +336,34 @@
   // ---- chip rendering ----
   function renderChips(options, onPick) {
     clear(chipRowEl);
-    options.forEach(function (opt) {
+    options.forEach(function (opt, idx) {
       var btn = el('button', 'demo-chip', opt.text);
       btn.type = 'button';
+      if (GSAP) {
+        GSAP.fromTo(btn, { y: 10, opacity: 0 }, { y: 0, opacity: 1, duration: 0.22, ease: 'power2.out', delay: idx * 0.04 });
+      }
       btn.addEventListener('click', function () {
         clear(chipRowEl);
         onPick(opt);
       });
       chipRowEl.appendChild(btn);
     });
+    focusFirst(chipRowEl);
+  }
+
+  // ---- Continue gate: nothing advances until tapped ----
+  function renderContinueGate(cb) {
+    clear(chipRowEl);
+    var btn = el('button', 'demo-chip demo-chip-continue', 'Continue');
+    btn.type = 'button';
+    if (GSAP) {
+      GSAP.fromTo(btn, { y: 10, opacity: 0 }, { y: 0, opacity: 1, duration: 0.24, ease: 'power2.out' });
+    }
+    btn.addEventListener('click', function () {
+      clear(chipRowEl);
+      cb();
+    });
+    chipRowEl.appendChild(btn);
     focusFirst(chipRowEl);
   }
 
@@ -273,15 +380,24 @@
 
   function resetDashboard() {
     showPlaceholder(leadCardEl);
+    if (queueListEl) {
+      queueListEl.hidden = true;
+      var kept = queueListEl.querySelector('.demo-queue-heading');
+      clear(queueListEl);
+      if (kept) { queueListEl.appendChild(kept); }
+    }
     clear(checklistEl);
     qualifiedStampEl.hidden = true;
+    if (nurtureStampEl) { nurtureStampEl.hidden = true; }
     showPlaceholder(assignmentEl);
     statusBadgeEl.hidden = true;
+    statusBadgeEl.classList.remove('is-warn');
     showPlaceholder(calendarEl);
     followupEl.hidden = true;
     clear(followupEl);
     showPlaceholder(pipelineEl);
     showPlaceholder(reportEl);
+    if (activityListEl) { clear(activityListEl); }
   }
 
   function showLeadCard(name, source) {
@@ -297,6 +413,31 @@
     leadCardEl.appendChild(title);
     leadCardEl.appendChild(meta);
     leadCardEl.hidden = false;
+  }
+
+  // ---- lead queue (S5): other leads arrive while the visitor plays ----
+  function showQueueEntry(entry) {
+    if (!queueListEl || !DATA.shared.queue) { return; }
+    queueListEl.hidden = false;
+    var pill = el('div', 'demo-queue-pill');
+    var label = el('span', null, entry.text);
+    var replied = el('span', 'demo-queue-pill-replied', 'replied 0:07');
+    pill.appendChild(label);
+    pill.appendChild(replied);
+    queueListEl.appendChild(pill);
+    if (GSAP) {
+      GSAP.fromTo(pill, { x: 24, opacity: 0 }, { x: 0, opacity: 1, duration: 0.28, ease: 'power2.out' });
+    }
+    wait(reduceMotion ? 0 : 800, function () {
+      replied.classList.add('is-shown');
+    });
+  }
+  var queueIndex = 0;
+  function advanceQueue() {
+    if (!DATA.shared.queue) { return; }
+    if (queueIndex >= DATA.shared.queue.length) { return; }
+    showQueueEntry(DATA.shared.queue[queueIndex]);
+    queueIndex++;
   }
 
   function buildChecklist(trade) {
@@ -319,12 +460,33 @@
     row.classList.add(isWeak ? 'demo-checklist-weak' : 'demo-checklist-done');
     var mark = row.querySelector('.demo-check');
     var text = row.querySelector('.demo-check-text');
-    mark.textContent = isWeak ? '–' : '✓';
+    mark.textContent = isWeak ? '⚠' : '✓';
     text.textContent = isWeak ? 'Not a fit today' : label;
+    if (GSAP) {
+      GSAP.fromTo(mark, { scale: 1.4 }, { scale: 1, duration: 0.3, ease: 'power2.out' });
+    }
   }
 
   function showQualifiedStamp() {
     qualifiedStampEl.hidden = false;
+    if (GSAP) {
+      GSAP.fromTo(qualifiedStampEl,
+        { scale: 1.3, rotate: -3, opacity: 0 },
+        { scale: 1, rotate: 0, opacity: 1, duration: 0.3, ease: 'back.out(1.7)' }
+      );
+    }
+  }
+
+  function showNurtureStamp(trade) {
+    if (!nurtureStampEl) { return; }
+    nurtureStampEl.textContent = trade.nurtureStamp;
+    nurtureStampEl.hidden = false;
+    if (GSAP) {
+      GSAP.fromTo(nurtureStampEl,
+        { scale: 1.3, rotate: -3, opacity: 0 },
+        { scale: 1, rotate: 0, opacity: 1, duration: 0.3, ease: 'back.out(1.7)' }
+      );
+    }
   }
 
   function showAssignment(trade) {
@@ -333,7 +495,28 @@
     assignmentEl.appendChild(el('p', null, 'Assigned: ' + trade.teamMember + ' · responded in 0:07'));
     assignmentEl.hidden = false;
     statusBadgeEl.hidden = false;
+    statusBadgeEl.classList.remove('is-warn');
     statusBadgeEl.textContent = 'On time';
+    pulseCardActive(assignedSlotEl);
+  }
+
+  // ---- escalation beat (s04): On time (green) -> Escalated (amber) -> Owned (green) ----
+  function runEscalation(trade, cb) {
+    var teamFirst = trade.teamMember.split(' ')[0];
+    logActivity(fmt(DATA.shared.activity.s04[0], { teamMember: trade.teamMember }));
+    wait(reduceMotion ? 150 : 1000, function () {
+      statusBadgeEl.classList.add('is-warn');
+      statusBadgeEl.textContent = 'Escalated';
+      pulseCardActive(assignedSlotEl);
+      logActivity(fmt(DATA.shared.activity.s04[1], { teamFirstName: teamFirst, owner: trade.owner }));
+      wait(reduceMotion ? 100 : 700, function () {
+        statusBadgeEl.classList.remove('is-warn');
+        statusBadgeEl.textContent = 'Owned by ' + trade.owner;
+        pulseCardActive(assignedSlotEl);
+        logActivity(fmt(DATA.shared.activity.s04[2], { owner: trade.owner }));
+        wait(STAGE_PAUSE, cb);
+      });
+    });
   }
 
   function showCalendarPending(trade) {
@@ -353,6 +536,7 @@
     calendarEl.appendChild(label);
     calendarEl.appendChild(value);
     calendarEl.hidden = false;
+    pulseCardActive(calendarEl.closest('.demo-slot'));
   }
 
   function showFollowupThread(trade) {
@@ -370,7 +554,16 @@
 
   function moveCard(board, card, colName) {
     var target = board.querySelector('[data-col="' + colName + '"]');
-    if (card && target && card.parentNode !== target) {
+    if (!card || !target || card.parentNode === target) { return; }
+    if (GSAP && !reduceMotion) {
+      var before = card.getBoundingClientRect();
+      card.parentNode.removeChild(card);
+      target.appendChild(card);
+      var after = card.getBoundingClientRect();
+      var dx = before.left - after.left;
+      var dy = before.top - after.top;
+      GSAP.fromTo(card, { x: dx, y: dy }, { x: 0, y: 0, duration: 0.45, ease: 'power2.inOut' });
+    } else {
       card.parentNode.removeChild(card);
       target.appendChild(card);
     }
@@ -452,14 +645,88 @@
     reportEl.hidden = false;
   }
 
+  // ---- system activity feed (C2) ----
+  var activityQueue = [];
+  var activityRunning = false;
+  function logActivity(text, kind) {
+    activityQueue.push({ text: text, kind: kind || 'default' });
+    runActivityQueue();
+  }
+  function logActivityBatch(lines, kind) {
+    lines.forEach(function (line) { logActivity(line, kind); });
+  }
+  function runActivityQueue() {
+    if (activityRunning) { return; }
+    activityRunning = true;
+    step();
+    function step() {
+      if (activityQueue.length === 0) { activityRunning = false; return; }
+      var item = activityQueue.shift();
+      appendActivityRow(item.text, item.kind);
+      wait(activityStagger(), step);
+    }
+  }
+  function appendActivityRow(text, kind) {
+    var row = el('li', 'demo-activity-row', text);
+    if (kind === 'good') { row.classList.add('is-status-good'); }
+    if (kind === 'warn') { row.classList.add('is-status-warn'); }
+    activityListEl.appendChild(row);
+    if (GSAP) {
+      GSAP.fromTo(row, { opacity: 0, x: -4 }, { opacity: 1, x: 0, duration: 0.22, ease: 'power2.out' });
+    }
+    var rows = activityListEl.querySelectorAll('.demo-activity-row');
+    if (rows.length > ACTIVITY_MAX_VISIBLE) {
+      var extra = rows.length - ACTIVITY_MAX_VISIBLE;
+      for (var i = 0; i < extra; i++) {
+        var old = rows[i];
+        if (GSAP) {
+          GSAP.to(old, { opacity: 0, y: -8, duration: 0.25, onComplete: function (node) {
+            return function () { if (node.parentNode) { node.parentNode.removeChild(node); } };
+          }(old) });
+        } else if (old.parentNode) {
+          old.parentNode.removeChild(old);
+        }
+      }
+    }
+    activityListEl.scrollTop = activityListEl.scrollHeight;
+  }
+
   // ---- ending ----
-  function showEnding(kind) {
+  function renderEndingContrast(kind, ctx) {
+    if (!endingContrastEl) { return; }
+    clear(endingContrastEl);
+    var data = DATA.shared.endings[kind];
+    if (!data || !data.usually || !data.withSystem) { return; }
+    var usuallyCol = el('div', 'demo-ending-contrast-col demo-ending-contrast-usually');
+    usuallyCol.appendChild(el('p', 'demo-ending-contrast-col-label', 'Usually'));
+    var usuallyLines = data.usually.map(function (line) {
+      var p = el('p', 'demo-ending-contrast-line', line);
+      usuallyCol.appendChild(p);
+      return p;
+    });
+    var systemCol = el('div', 'demo-ending-contrast-col demo-ending-contrast-system');
+    systemCol.appendChild(el('p', 'demo-ending-contrast-col-label', 'With the system'));
+    data.withSystem.forEach(function (line) {
+      systemCol.appendChild(el('p', 'demo-ending-contrast-line', fmt(line, ctx)));
+    });
+    endingContrastEl.appendChild(usuallyCol);
+    endingContrastEl.appendChild(systemCol);
+    wait(reduceMotion ? 0 : 300, function () {
+      usuallyLines.forEach(function (p, idx) {
+        wait(reduceMotion ? 0 : idx * 150, function () { p.classList.add('is-struck'); });
+      });
+    });
+  }
+
+  function showEnding(kind, ctx) {
     setActiveStage(RAIL_STAGE_COUNT, true);
     clear(endingLinesEl);
-    var lines = DATA.shared.endings[kind];
+    var data = DATA.shared.endings[kind];
+    var lines = data.lines || data;
     lines.forEach(function (line) {
       endingLinesEl.appendChild(el('p', 'demo-ending-line', line));
     });
+    renderEndingContrast(kind, ctx || {});
     clear(chipRowEl);
     timerWrap.hidden = true;
     messagesEl.hidden = true;
@@ -472,6 +739,8 @@
     session = newSession(tradeId, sourceId, name);
     writeLastTrade(tradeId);
     phoneCompanyEl.textContent = session.trade.company;
+    setPhoneDatetime('Tue 4:12 pm');
+    queueIndex = 0;
 
     setupEl.hidden = true;
     shellEl.hidden = false;
@@ -492,6 +761,10 @@
     setActiveStage(0, false);
     var escapedName = session.name;
     showLeadCard(escapedName, session.source);
+    pulseCardActive(leadCardEl.closest('.demo-slot'));
+    logActivityBatch(
+      DATA.shared.activity.s01.map(function (t) { return fmt(t, { sourceLabel: session.source.label }); })
+    );
     wait(STAGE_PAUSE, runS02Timer);
   }
 
@@ -522,6 +795,7 @@
 
   function runS02Message() {
     timerWrap.hidden = true;
+    logActivityBatch(DATA.shared.activity.s02);
     sayThen(session.source.openingLine, function () {
       askQuestion(0);
     });
@@ -531,6 +805,7 @@
     var trade = session.trade;
     var q = trade.questions[qIndex];
     setActiveStage(qIndex === 0 ? 1 : 2, false);
+    if (qIndex === 1) { advanceQueue(); }
     sayThen(q.text, function () {
       renderChips(q.answers, function (answer) {
         handleAnswer(qIndex, answer);
@@ -542,46 +817,85 @@
     session.answers[qIndex] = answer;
     appendCustomerBubble(answer.text);
     sayThen(answer.ack, function () {
-      tickChecklistRow(qIndex, answer.label, answer.weak);
       if (answer.weak) {
-        runNurtureEnding();
+        runDisqualifyMoment(qIndex, answer);
         return;
       }
+      tickChecklistRow(qIndex, answer.label, false);
+      pulseCardActive(checklistEl.closest('.demo-slot'));
       var nextIndex = qIndex + 1;
       if (nextIndex < session.trade.questions.length) {
         askQuestion(nextIndex);
       } else {
         showQualifiedStamp();
+        var trade = session.trade;
+        logActivityBatch(
+          DATA.shared.activity.s03.map(function (t) { return fmt(t, { shortName: trade.shortName }); })
+        );
+        logActivity(DATA.shared.activity.s03Qualified, 'good');
         wait(STAGE_PAUSE, runS04);
       }
     });
   }
 
-  function runNurtureEnding() {
+  // ---- C1: disqualification is a moment, gated behind Continue ----
+  function runDisqualifyMoment(qIndex, answer) {
     var trade = session.trade;
-    showNurturePipeline(trade, session.name);
-    sayThen(trade.nurtureLine, function () {
-      showEnding('nurture');
+    wait(DISQUALIFY_PAUSE, function () {
+      tickChecklistRow(qIndex, answer.label, true);
+      pulseCardActive(checklistEl.closest('.demo-slot'));
+      logActivityBatch(
+        DATA.shared.activity.s03.map(function (t) { return fmt(t, { shortName: trade.shortName }); })
+      );
+      logActivity(DATA.shared.activity.s03Weak, 'warn');
+      wait(reduceMotion ? 0 : 300, function () {
+        showNurtureStamp(trade);
+        showNurturePipeline(trade, session.name);
+        logActivityBatch(DATA.shared.activity.weak, 'warn');
+        wait(STAGE_PAUSE, function () {
+          addThreadStamp('Later that day');
+          appendSystemBubble(trade.nurtureLine);
+          renderContinueGate(function () {
+            showEnding('nurture', { resource: trade.resourceLabel });
+          });
+        });
+      });
     });
   }
 
   function runS04() {
     setActiveStage(3, false);
     showAssignment(session.trade);
-    wait(STAGE_PAUSE, runS05);
+    runEscalation(session.trade, runS05);
   }
 
   function runS05() {
     setActiveStage(4, false);
     var trade = session.trade;
     showCalendarPending(trade);
+    advanceQueue();
     var options = trade.slots.map(function (s) { return { text: s, kind: 'slot' }; });
     options.push({ text: DATA.shared.buttons.notNow, kind: 'notNow' });
     renderChips(options, function (opt) {
       appendCustomerBubble(opt.text);
       if (opt.kind === 'slot') {
+        session.bookedSlot = opt.text;
         sayThen(trade.bookedConfirmation, function () {
           showCalendarBooked(trade, opt.text);
+          var dayPart = opt.text.split(' ')[0];
+          var reminderTime = dayPart + ' 8:00 am';
+          logActivityBatch(
+            DATA.shared.activity.s05.map(function (t) {
+              return fmt(t, { slot: opt.text, reminderTime: reminderTime });
+            })
+          );
+          setPhoneDatetime(opt.text);
+          addThreadStamp(opt.text);
+          appendHumanBubble(trade.teamMember, fmt(trade.humanLine, {
+            name: session.name,
+            day: fullDay(dayPart)
+          }));
+          logActivity(fmt(DATA.shared.activity.handoff, { teamMember: trade.teamMember }));
           runS07('booked');
         });
       } else {
@@ -594,9 +908,11 @@
     setActiveStage(5, false);
     var trade = session.trade;
     showFollowupThread(trade);
+    logActivityBatch(DATA.shared.activity.s06.slice(0, 2));
     var idx = 0;
     function next() {
       if (idx >= trade.followUp.length) {
+        logActivity(DATA.shared.activity.s06[2]);
         runS07('followUp');
         return;
       }
@@ -610,14 +926,34 @@
 
   function runS07(endingKind) {
     setActiveStage(6, false);
+    advanceQueue();
     showPipeline(session.trade, session.name);
+    var trade = session.trade;
+    var slot = session.bookedSlot || trade.slots[0];
+    var dayPart = slot.split(' ')[0];
+    var nextDay = NEXT_DAY[dayPart] || 'Later';
+    var milestoneCol = trade.pipelineColumns[2];
+    logActivityBatch(
+      DATA.shared.activity.s07.map(function (t) {
+        return fmt(t, { slot: slot, teamMember: trade.teamMember, milestoneCol: milestoneCol, nextDay: nextDay });
+      })
+    );
     wait(reduceMotion ? 200 : 1800, function () { runS08(endingKind); });
   }
 
   function runS08(endingKind) {
     setActiveStage(7, false);
     showReport(session.trade);
-    wait(STAGE_PAUSE, function () { showEnding(endingKind); });
+    logActivityBatch(
+      DATA.shared.activity.s08.map(function (t) { return fmt(t, { owner: session.trade.owner }); })
+    );
+    wait(STAGE_PAUSE, function () {
+      var trade = session.trade;
+      var slot = session.bookedSlot || trade.slots[0];
+      renderContinueGate(function () {
+        showEnding(endingKind, { slot: slot, teamMember: trade.teamMember, resource: trade.resourceLabel });
+      });
+    });
   }
 
   function resetToSetup() {

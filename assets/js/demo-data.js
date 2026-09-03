@@ -69,20 +69,62 @@
       again: 'Run it again as a different trade'
     },
     endings: {
-      booked: [
-        'That’s the whole thing, start to finish.',
-        'It runs the same way on every lead, day or night.'
-      ],
-      followUp: [
-        'This lead almost went quiet.',
-        'A follow-up brought it back.'
-      ],
-      nurture: [
-        'Not every lead is a fit today.',
-        'The system still keeps it on file for later.'
-      ]
+      booked: {
+        lines: [
+          'That’s the whole thing, start to finish.',
+          'It runs the same way on every lead, day or night.'
+        ],
+        usually: ['Voicemail', 'Callback Thursday', 'Already hired someone'],
+        withSystem: ['Replied in 0:07', 'Booked {slot}', '{teamMember} closed it Fri']
+      },
+      followUp: {
+        lines: [
+          'This lead almost went quiet.',
+          'A follow-up brought it back.'
+        ],
+        usually: ['Went quiet', 'No follow-up sent', 'Lead assumed dead'],
+        withSystem: ['Automatic follow-up', 'Lead replied Day 9', 'Booked after follow-up']
+      },
+      nurture: {
+        lines: [
+          'Not every lead is a fit today.',
+          'The system still keeps it on file for later.'
+        ],
+        usually: ['Chased anyway', 'Wasted a site visit', 'No record kept'],
+        withSystem: ['Flagged as low fit', 'No {resource} time spent', 'Kept on file for later']
+      }
     },
-    noJsIntro: 'Here’s how one lead moves through the system, start to finish.'
+    noJsIntro: 'Here’s how one lead moves through the system, start to finish.',
+    activity: {
+      s01: ['4:12 pm · Lead captured from {sourceLabel}', '4:12 pm · Text consent recorded'],
+      s02: ['4:12 pm · Replied in 0:07'],
+      s03: ['4:13 pm · Scored against {shortName} rules'],
+      s03Qualified: 'Qualified',
+      s03Weak: 'Low fit',
+      weak: ['4:13 pm · Low fit · nurture sequence scheduled', 'Day 30 · Check-in text scheduled'],
+      s04: [
+        '4:13 pm · Alert sent to {teamMember}’s phone',
+        '4:21 pm · No reply from {teamFirstName} · escalated to {owner}',
+        '4:22 pm · {owner} acknowledged'
+      ],
+      s05: ['4:24 pm · Booked {slot}', 'Reminder scheduled {reminderTime}'],
+      s06: [
+        'Day 2, 10:00 am · Follow-up 1 sent',
+        'Day 5, 3:00 pm · Follow-up 2 sent',
+        'Day 9 · Lead replied · booking reopened'
+      ],
+      s07: [
+        '{slot} · Visit completed · {teamMember} moved card to {milestoneCol}',
+        '{nextDay} · {teamMember} marked Won'
+      ],
+      s08: ['Month end · Report sent to {owner}'],
+      handoff: '{teamMember} took over the thread'
+    },
+    queue: [
+      { text: 'New · Website form · Ana P.' },
+      { text: 'New · Instagram DM · Luis O.' },
+      { text: 'New · Missed call · Kim T.' }
+    ]
   };
 
   var sources = {
@@ -160,7 +202,11 @@
       ],
       pipelineColumns: ['New', 'Contacted', 'Quoted', 'Booked', 'Job scheduled', 'Won'],
       reportLine: 'Lawn care leads mostly stall between the quote and the follow-up call.',
-      nurtureLine: 'Outside our service area for now — we’ll keep Hill Country in mind if that changes.'
+      nurtureLine: 'Outside our service area for now — we’ll keep Hill Country in mind if that changes.',
+      resourceLabel: 'crew',
+      shortName: 'landscaping',
+      nurtureStamp: 'Low fit · routed to nurture · no crew time spent',
+      humanLine: 'Hi {name}, Rosa here. See you {day}, I’ll text when I’m on my way.'
     },
 
     roofing: {
@@ -206,7 +252,11 @@
       ],
       pipelineColumns: ['New', 'Contacted', 'Inspected', 'Quoted', 'Booked', 'Won'],
       reportLine: 'Roofing leads usually leak between the inspection and the signed estimate.',
-      nurtureLine: 'Outside our service area for now — we’ll keep Lone Star in mind if that changes.'
+      nurtureLine: 'Outside our service area for now — we’ll keep Lone Star in mind if that changes.',
+      resourceLabel: 'crew',
+      shortName: 'roofing',
+      nurtureStamp: 'Low fit · routed to nurture · no crew time spent',
+      humanLine: 'Hi {name}, Marcus here. See you {day} — I’ll call before I head over.'
     },
 
     law: {
@@ -252,7 +302,11 @@
       ],
       pipelineColumns: ['New', 'Contacted', 'Consultation booked', 'Retained', 'Won'],
       reportLine: 'Immigration and injury leads mostly stall waiting on the consultation booking.',
-      nurtureLine: 'Just gathering information for now — we’ll follow up when you’re ready to talk.'
+      nurtureLine: 'Just gathering information for now — we’ll follow up when you’re ready to talk.',
+      resourceLabel: 'attorney',
+      shortName: 'law firm',
+      nurtureStamp: 'Low fit · routed to nurture · no attorney time spent',
+      humanLine: 'Hi {name}, David here. See you {day} for your consultation.'
     },
 
     hvac: {
@@ -298,7 +352,11 @@
       ],
       pipelineColumns: ['New', 'Contacted', 'Diagnosed', 'Quoted', 'Booked', 'Won'],
       reportLine: 'HVAC leads usually leak between the diagnosis and the scheduled repair.',
-      nurtureLine: 'Just planning ahead for now — we’ll follow up when you’re ready to move on it.'
+      nurtureLine: 'Just planning ahead for now — we’ll follow up when you’re ready to move on it.',
+      resourceLabel: 'technician',
+      shortName: 'HVAC',
+      nurtureStamp: 'Low fit · routed to nurture · no technician time spent',
+      humanLine: 'Hi {name}, Priya here. See you {day} — I’ll text when I’m on my way.'
     },
 
     dentist: {
@@ -344,7 +402,11 @@
       ],
       pipelineColumns: ['New', 'Contacted', 'Insurance checked', 'Booked', 'Seen', 'Won'],
       reportLine: 'New patient leads mostly stall between first contact and booking the appointment.',
-      nurtureLine: 'Just comparing offices for now — we’ll follow up before your next cleaning is due.'
+      nurtureLine: 'Just comparing offices for now — we’ll follow up before your next cleaning is due.',
+      resourceLabel: 'chair',
+      shortName: 'dental',
+      nurtureStamp: 'Low fit · routed to nurture · no chair time spent',
+      humanLine: 'Hi {name}, Jenny here. See you {day} — reply here if anything changes.'
     }
   };
 
