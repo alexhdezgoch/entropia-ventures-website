@@ -58,7 +58,9 @@
       nameLabel: 'Your name',
       namePlaceholder: 'Miguel',
       startButton: 'Start the demo',
-      helper: 'Play the customer. Watch the dashboard respond live.'
+      helper: 'Play the customer. Watch the dashboard respond live.',
+      simulationNote: 'Simulation. No messages are sent.',
+      companyLabel: 'Your business name'
     },
     timer: {
       label: 'Time to first reply'
@@ -124,7 +126,19 @@
       { text: 'New · Website form · Ana P.' },
       { text: 'New · Instagram DM · Luis O.' },
       { text: 'New · Missed call · Kim T.' }
-    ]
+    ],
+    tabs: {
+      customer: 'Customer',
+      dashboard: 'Your dashboard'
+    },
+    alerts: {
+      app: 'LEAD SYSTEM',
+      time: 'now',
+      newLeadTitle: 'New lead — {firstName}',
+      newLeadBody: '{serviceAnswer} · {areaAnswer}. Tap to claim.',
+      unclaimedTitle: 'Unclaimed lead',
+      unclaimedBody: '{teamMember} hasn’t replied · escalated to {owner}.'
+    }
   };
 
   var sources = {
@@ -202,7 +216,7 @@
       ],
       pipelineColumns: ['New', 'Contacted', 'Quoted', 'Booked', 'Job scheduled', 'Won'],
       reportLine: 'Lawn care leads mostly stall between the quote and the follow-up call.',
-      nurtureLine: 'Outside our service area for now — we’ll keep Hill Country in mind if that changes.',
+      nurtureLine: 'Outside our service area for now — we’ll keep you in mind if that changes.',
       resourceLabel: 'crew',
       shortName: 'landscaping',
       nurtureStamp: 'Low fit · routed to nurture · no crew time spent',
@@ -252,7 +266,7 @@
       ],
       pipelineColumns: ['New', 'Contacted', 'Inspected', 'Quoted', 'Booked', 'Won'],
       reportLine: 'Roofing leads usually leak between the inspection and the signed estimate.',
-      nurtureLine: 'Outside our service area for now — we’ll keep Lone Star in mind if that changes.',
+      nurtureLine: 'Outside our service area for now — we’ll keep you in mind if that changes.',
       resourceLabel: 'crew',
       shortName: 'roofing',
       nurtureStamp: 'Low fit · routed to nurture · no crew time spent',
@@ -352,7 +366,7 @@
       ],
       pipelineColumns: ['New', 'Contacted', 'Diagnosed', 'Quoted', 'Booked', 'Won'],
       reportLine: 'HVAC leads usually leak between the diagnosis and the scheduled repair.',
-      nurtureLine: 'Just planning ahead for now — we’ll follow up when you’re ready to move on it.',
+      nurtureLine: 'Just planning ahead for now — we’ll follow up when you’re ready.',
       resourceLabel: 'technician',
       shortName: 'HVAC',
       nurtureStamp: 'Low fit · routed to nurture · no technician time spent',

@@ -50,6 +50,16 @@
   var endingAgainBtn = document.getElementById('demo-ending-again');
   var phoneWrapEl = document.getElementById('demo-phone-wrap');
   var activityListEl = document.getElementById('demo-activity-list');
+  var companyInput = document.getElementById('demo-company-input');
+  var simulationNoteEl = document.getElementById('demo-simulation-note');
+  var mobileTabsEl = document.getElementById('demo-mobile-tabs');
+  var tabCustomerBtn = document.getElementById('demo-tab-customer');
+  var tabDashboardBtn = document.getElementById('demo-tab-dashboard');
+  var tabBadgeEl = document.getElementById('demo-tab-badge');
+  var tabBadgeCountEl = document.getElementById('demo-tab-badge-count');
+  var tickerEl = document.getElementById('demo-ticker');
+  var alertDashboardEl = document.getElementById('demo-alert-dashboard');
+  var alertPhoneEl = document.getElementById('demo-alert-phone');
 
   var required = [
     setupEl, shellEl, tradeChipsEl, sourceChipsEl, nameInput, startBtn,
@@ -113,6 +123,16 @@
       window.localStorage.setItem('ev_demo_last_trade', id);
     } catch (e) { /* private mode / disabled storage — ignore */ }
   }
+  function readLastCompany() {
+    try {
+      return window.localStorage.getItem('ev_demo_last_company');
+    } catch (e) { return null; }
+  }
+  function writeLastCompany(name) {
+    try {
+      window.localStorage.setItem('ev_demo_last_company', name || '');
+    } catch (e) { /* private mode / disabled storage — ignore */ }
+  }
 
   // ---- phone scale (fit the frame within the viewport, no page scroll) ----
   var PHONE_W = 390;
@@ -169,9 +189,14 @@
   }
 
   // ---- tiny template substitution: {token} -> dict[token] ----
+  // {company} resolves from the active session (personalized business name,
+  // falling back to the trade's fictional company) unless a call site passes
+  // its own `company` key.
   function fmt(str, dict) {
     return str.replace(/\{(\w+)\}/g, function (m, key) {
-      return Object.prototype.hasOwnProperty.call(dict, key) ? String(dict[key]) : m;
+      if (dict && Object.prototype.hasOwnProperty.call(dict, key)) { return String(dict[key]); }
+      if (key === 'company' && session) { return session.company; }
+      return m;
     });
   }
 
@@ -188,11 +213,13 @@
   var session = null;
   var RAIL_STAGE_COUNT = 8;
 
-  function newSession(tradeId, sourceId, name) {
+  function newSession(tradeId, sourceId, name, company) {
+    var trade = DATA.trades[tradeId];
     return {
-      trade: DATA.trades[tradeId],
+      trade: trade,
       source: DATA.sources[sourceId],
       name: name || DATA.shared.setup.namePlaceholder,
+      company: company || trade.company,
       answers: [],
       stageIndex: 0,
       bookedSlot: null
@@ -504,10 +531,14 @@
   function runEscalation(trade, cb) {
     var teamFirst = trade.teamMember.split(' ')[0];
     logActivity(fmt(DATA.shared.activity.s04[0], { teamMember: trade.teamMember }));
-    wait(reduceMotion ? 150 : 1000, function () {
+    wait(reduceMotion ? 150 : 1200, function () {
       statusBadgeEl.classList.add('is-warn');
       statusBadgeEl.textContent = 'Escalated';
       pulseCardActive(assignedSlotEl);
+      showOwnerAlert(
+        DATA.shared.alerts.unclaimedTitle,
+        fmt(DATA.shared.alerts.unclaimedBody, { teamMember: trade.teamMember, owner: trade.owner })
+      );
       logActivity(fmt(DATA.shared.activity.s04[1], { teamFirstName: teamFirst, owner: trade.owner }));
       wait(reduceMotion ? 100 : 700, function () {
         statusBadgeEl.classList.remove('is-warn');
@@ -689,6 +720,92 @@
       }
     }
     activityListEl.scrollTop = activityListEl.scrollHeight;
+    updateTicker(text);
+    bumpDashboardBadge();
+  }
+
+  // ---- mobile tabs (below lg): Customer / Your dashboard ----
+  var mobileTab = 'customer';
+  var dashboardBadgeCount = 0;
+  function setMobileTab(tab) {
+    mobileTab = tab;
+    if (shellEl) { shellEl.setAttribute('data-mobile-tab', tab); }
+    if (tabCustomerBtn) {
+      tabCustomerBtn.classList.toggle('is-active', tab === 'customer');
+      tabCustomerBtn.setAttribute('aria-selected', tab === 'customer' ? 'true' : 'false');
+    }
+    if (tabDashboardBtn) {
+      tabDashboardBtn.classList.toggle('is-active', tab === 'dashboard');
+      tabDashboardBtn.setAttribute('aria-selected', tab === 'dashboard' ? 'true' : 'false');
+    }
+    if (tab === 'dashboard') { clearDashboardBadge(); }
+  }
+  function clearDashboardBadge() {
+    dashboardBadgeCount = 0;
+    if (tabBadgeEl) { tabBadgeEl.hidden = true; }
+    if (tabBadgeCountEl) { tabBadgeCountEl.textContent = ''; }
+  }
+  function bumpDashboardBadge() {
+    if (!tabBadgeEl || !tabBadgeCountEl) { return; }
+    if (mobileTab !== 'customer') { return; }
+    dashboardBadgeCount++;
+    tabBadgeEl.hidden = false;
+    tabBadgeCountEl.textContent = dashboardBadgeCount + ' new';
+    var dot = tabBadgeEl.querySelector('.demo-tab-dot');
+    if (dot && GSAP) {
+      GSAP.fromTo(dot, { scale: 1 }, { scale: 1.4, duration: 0.25, yoyo: true, repeat: 1, ease: 'power1.inOut' });
+    }
+  }
+  function updateTicker(text) {
+    if (!tickerEl) { return; }
+    tickerEl.textContent = text;
+    if (reduceMotion) { tickerEl.classList.add('is-shown'); return; }
+    tickerEl.classList.remove('is-shown');
+    void tickerEl.offsetWidth; /* force reflow so the fade-in retriggers */
+    tickerEl.classList.add('is-shown');
+  }
+  function maybeAutoSwitchToDashboard() {
+    var isMobile = false;
+    try { isMobile = !window.matchMedia('(min-width: 1024px)').matches; } catch (e) { /* ignore */ }
+    if (isMobile && mobileTab === 'customer') { setMobileTab('dashboard'); }
+  }
+  if (tabCustomerBtn) { tabCustomerBtn.addEventListener('click', function () { setMobileTab('customer'); }); }
+  if (tabDashboardBtn) { tabDashboardBtn.addEventListener('click', function () { setMobileTab('dashboard'); }); }
+
+  // ---- owner lock-screen alerts (C at s04: new lead + escalation) ----
+  function removeAlertCard(card) {
+    if (card && card.parentNode) { card.parentNode.removeChild(card); }
+  }
+  function showOwnerAlert(title, body) {
+    var isDesktop = false;
+    try { isDesktop = window.matchMedia('(min-width: 1024px)').matches; } catch (e) { /* ignore */ }
+    var anchor = isDesktop ? alertDashboardEl : alertPhoneEl;
+    if (!anchor) { return; }
+    var card = el('div', 'demo-alert-card');
+    card.setAttribute('role', 'status');
+    var icon = el('div', 'demo-alert-icon', 'LC');
+    icon.setAttribute('aria-hidden', 'true');
+    var bodyWrap = el('div', 'demo-alert-body');
+    var appLine = el('p', 'demo-alert-appline');
+    appLine.appendChild(document.createTextNode(DATA.shared.alerts.app));
+    appLine.appendChild(el('span', 'demo-alert-time', DATA.shared.alerts.time));
+    bodyWrap.appendChild(appLine);
+    bodyWrap.appendChild(el('p', 'demo-alert-title', title));
+    bodyWrap.appendChild(el('p', 'demo-alert-text', body));
+    card.appendChild(icon);
+    card.appendChild(bodyWrap);
+    anchor.appendChild(card);
+    if (reduceMotion || !GSAP) {
+      wait(2800, function () { removeAlertCard(card); });
+      return;
+    }
+    GSAP.fromTo(card, { y: -24, opacity: 0 }, { y: 0, opacity: 1, duration: 0.32, ease: 'power3.out' });
+    wait(2800, function () {
+      GSAP.to(card, {
+        y: -12, opacity: 0, duration: 0.22, ease: 'power2.in',
+        onComplete: function () { removeAlertCard(card); }
+      });
+    });
   }
 
   // ---- ending ----
@@ -720,6 +837,7 @@
 
   function showEnding(kind, ctx) {
     setActiveStage(RAIL_STAGE_COUNT, true);
+    maybeAutoSwitchToDashboard();
     clear(endingLinesEl);
     var data = DATA.shared.endings[kind];
     var lines = data.lines || data;
@@ -734,13 +852,17 @@
   }
 
   // ---- flow ----
-  function startDemo(tradeId, sourceId, name) {
+  function startDemo(tradeId, sourceId, name, company) {
     clearPending();
-    session = newSession(tradeId, sourceId, name);
+    session = newSession(tradeId, sourceId, name, company);
     writeLastTrade(tradeId);
-    phoneCompanyEl.textContent = session.trade.company;
+    writeLastCompany(company);
+    phoneCompanyEl.textContent = session.company;
     setPhoneDatetime('Tue 4:12 pm');
     queueIndex = 0;
+    setMobileTab('customer');
+    clearDashboardBadge();
+    if (tickerEl) { tickerEl.textContent = ''; tickerEl.classList.remove('is-shown'); }
 
     setupEl.hidden = true;
     shellEl.hidden = false;
@@ -854,7 +976,7 @@
         logActivityBatch(DATA.shared.activity.weak, 'warn');
         wait(STAGE_PAUSE, function () {
           addThreadStamp('Later that day');
-          appendSystemBubble(trade.nurtureLine);
+          appendSystemBubble(fmt(trade.nurtureLine, {}));
           renderContinueGate(function () {
             showEnding('nurture', { resource: trade.resourceLabel });
           });
@@ -865,8 +987,16 @@
 
   function runS04() {
     setActiveStage(3, false);
-    showAssignment(session.trade);
-    runEscalation(session.trade, runS05);
+    var trade = session.trade;
+    showAssignment(trade);
+    var firstName = session.name.split(' ')[0];
+    var serviceAnswer = session.answers[0] ? session.answers[0].text : '';
+    var areaAnswer = session.answers[1] ? session.answers[1].text : '';
+    showOwnerAlert(
+      fmt(DATA.shared.alerts.newLeadTitle, { firstName: firstName }),
+      fmt(DATA.shared.alerts.newLeadBody, { serviceAnswer: serviceAnswer, areaAnswer: areaAnswer })
+    );
+    runEscalation(trade, runS05);
   }
 
   function runS05() {
@@ -988,9 +1118,17 @@
         });
         btn.classList.add('is-selected');
         btn.setAttribute('aria-pressed', 'true');
+        if (companyInput) { companyInput.placeholder = DATA.trades[id].company; }
       });
       tradeChipsEl.appendChild(btn);
     });
+
+    if (companyInput) {
+      companyInput.placeholder = DATA.trades[selectedTrade].company;
+      var lastCompany = readLastCompany();
+      if (lastCompany) { companyInput.value = lastCompany; }
+    }
+    if (simulationNoteEl) { simulationNoteEl.textContent = DATA.shared.setup.simulationNote; }
 
     var sourceIds = Object.keys(DATA.sources);
     sourceIds.forEach(function (id, idx) {
@@ -1020,10 +1158,30 @@
     var tradeId = currentSelection(tradeChipsEl, 'data-trade-id') || Object.keys(DATA.trades)[0];
     var sourceId = currentSelection(sourceChipsEl, 'data-source-id') || Object.keys(DATA.sources)[0];
     var name = (nameInput.value || '').trim().slice(0, 40) || DATA.shared.setup.namePlaceholder;
-    startDemo(tradeId, sourceId, name);
+    var company = companyInput ? (companyInput.value || '').trim().slice(0, 40) : '';
+    startDemo(tradeId, sourceId, name, company);
   });
 
   endingAgainBtn.addEventListener('click', resetToSetup);
+
+  // ---- arriving with #journey: scroll under the sticky nav, focus the first trade chip ----
+  function handleJourneyHash() {
+    if (window.location.hash !== '#journey') { return; }
+    wait(reduceMotion ? 0 : 60, function () {
+      var navOffset = 96;
+      var rect = section.getBoundingClientRect();
+      var top = window.pageYOffset + rect.top - navOffset;
+      if (window.scrollTo) {
+        try {
+          window.scrollTo({ top: top, behavior: reduceMotion ? 'auto' : 'smooth' });
+        } catch (e) {
+          window.scrollTo(0, top);
+        }
+      }
+      var firstChip = tradeChipsEl.querySelector('.demo-setup-chip');
+      if (firstChip) { firstChip.focus(); }
+    });
+  }
 
   // ---- boot ----
   buildRail();
@@ -1031,5 +1189,7 @@
   shellEl.hidden = true;
   endingEl.hidden = true;
   updatePhoneScale();
+  setMobileTab('customer');
   section.classList.add('js-demo-ready');
+  handleJourneyHash();
 })();

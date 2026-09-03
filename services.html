@@ -141,7 +141,7 @@
   </section>
 
   <!-- 2. THE JOURNEY -->
-  <section id="journey" class="relative bg-base py-24 md:py-40 overflow-hidden">
+  <section id="journey" class="relative bg-base py-24 md:py-40">
     <div class="max-w-7xl mx-auto px-8 reveal-group mb-16 md:mb-20">
       <p class="reveal text-[11px] uppercase tracking-[0.2em] font-medium text-gold flex items-center gap-3 mb-6">
         <span class="w-1.5 h-1.5 rounded-full bg-gold pulse-dot"></span>
@@ -162,10 +162,13 @@
           <div id="demo-source-chips" class="flex flex-wrap gap-2 mb-8"></div>
           <label for="demo-name-input" class="block text-[11px] uppercase tracking-[0.15em] text-ink-faint font-medium mb-3">Your name</label>
           <input id="demo-name-input" type="text" placeholder="Miguel" maxlength="40" class="demo-name-input bg-base-deep border border-line text-ink px-4 py-3 mb-6 w-full max-w-xs" />
+          <label for="demo-company-input" id="demo-company-label" class="block text-[11px] uppercase tracking-[0.15em] text-ink-faint font-medium mb-3">Your business name <span class="normal-case tracking-normal text-ink-faint/70">(optional)</span></label>
+          <input id="demo-company-input" type="text" maxlength="40" class="demo-name-input bg-base-deep border border-line text-ink px-4 py-3 mb-6 w-full max-w-xs" />
           <div class="flex flex-col sm:flex-row sm:items-center gap-4">
             <button id="demo-start-btn" type="button" class="btn-primary">Start the demo</button>
             <p class="text-ink-faint text-sm">Play the customer. Watch the dashboard respond live.</p>
           </div>
+          <p id="demo-simulation-note" class="text-ink-faint text-xs mt-3"></p>
         </div>
 
         <div id="demo-shell" class="demo-shell" hidden>
@@ -174,11 +177,20 @@
           </div>
           <div id="demo-mobile-steps" class="demo-mobile-steps flex lg:hidden gap-1 mb-6 overflow-x-auto" aria-hidden="true"></div>
 
-          <div class="demo-phone-col">
+          <div id="demo-mobile-tabs" class="demo-mobile-tabs lg:hidden" role="tablist" aria-label="Demo view">
+            <button id="demo-tab-customer" class="demo-tab is-active" role="tab" type="button" aria-selected="true" aria-controls="demo-panel-customer">Customer</button>
+            <button id="demo-tab-dashboard" class="demo-tab" role="tab" type="button" aria-selected="false" aria-controls="demo-panel-dashboard">
+              <span>Your dashboard</span>
+              <span id="demo-tab-badge" class="demo-tab-badge" hidden><span class="demo-tab-dot" aria-hidden="true"></span><span id="demo-tab-badge-count"></span></span>
+            </button>
+          </div>
+
+          <div class="demo-phone-col" id="demo-panel-customer" role="tabpanel" aria-labelledby="demo-tab-customer" tabindex="0">
             <div id="demo-phone-wrap" class="demo-phone-wrap">
               <div class="demo-phone-frame">
                 <div class="demo-phone-island" aria-hidden="true"></div>
                 <div class="demo-phone-screen">
+                  <div id="demo-alert-phone" class="demo-alert-anchor demo-alert-anchor-phone" aria-live="polite"></div>
                   <div class="demo-phone-status">
                     <span id="demo-phone-company" class="demo-phone-company"></span>
                     <span id="demo-phone-datetime" class="demo-phone-datetime"></span>
@@ -202,9 +214,11 @@
                 <div class="demo-phone-home" aria-hidden="true"></div>
               </div>
             </div>
+            <p id="demo-ticker" class="demo-ticker lg:hidden" aria-hidden="true"></p>
           </div>
 
-          <div class="demo-dashboard" aria-live="polite">
+          <div class="demo-dashboard" id="demo-panel-dashboard" role="tabpanel" aria-labelledby="demo-tab-dashboard" tabindex="0" aria-live="polite">
+            <div id="demo-alert-dashboard" class="demo-alert-anchor demo-alert-anchor-dashboard" aria-live="polite"></div>
             <div class="demo-dashboard-col demo-dashboard-col-left">
               <div class="demo-slot">
                 <p class="demo-slot-label">Lead</p>

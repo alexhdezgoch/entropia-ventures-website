@@ -60,8 +60,112 @@
       height: min(740px, calc(100vh - 140px));
     }
   }
-  .demo-phone-col { @apply flex justify-center; min-height: 0; }
+  .demo-phone-col { @apply flex flex-col items-center; min-height: 0; }
   .demo-rail-col { min-height: 0; overflow-y: auto; }
+
+  /* ---- Mobile tabs: Customer / Your dashboard (below lg) ---- */
+  .demo-mobile-tabs {
+    display: flex;
+    position: sticky;
+    top: 4.5rem;
+    z-index: 25;
+    background: theme('colors.base');
+    border-bottom: 1px solid theme('colors.line');
+    margin-bottom: 1.25rem;
+  }
+  .demo-tab {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-height: 44px;
+    @apply text-[11px] uppercase tracking-[0.15em] font-medium text-ink-faint;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+  .demo-tab.is-active { @apply text-gold-bright; border-bottom-color: #C9A84C; }
+  .demo-tab:focus-visible { outline: 2px solid #C9A84C; outline-offset: -2px; }
+  .demo-tab-badge { display: inline-flex; align-items: center; gap: 4px; }
+  .demo-tab-dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: #C9A84C;
+    display: inline-block;
+  }
+  #demo-tab-badge-count { font-size: 10px; color: #C9A84C; }
+
+  @media (max-width: 1023.98px) {
+    #demo-shell[data-mobile-tab="customer"] .demo-dashboard { display: none; }
+    #demo-shell[data-mobile-tab="dashboard"] .demo-phone-col { display: none; }
+  }
+
+  /* ---- Mobile activity ticker under the phone ---- */
+  .demo-ticker {
+    @apply text-ink-faint text-xs;
+    margin-top: 10px;
+    min-height: 1.1em;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .demo-ticker.is-shown { opacity: 1; }
+
+  /* ---- Owner lock-screen alerts ---- */
+  .demo-alert-anchor { position: absolute; z-index: 40; pointer-events: none; }
+  .demo-alert-anchor-dashboard { top: 8px; right: 8px; width: 240px; max-width: calc(100% - 16px); }
+  .demo-alert-anchor-phone { top: 6px; left: 6px; right: 6px; }
+  .demo-alert-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    background: rgba(20, 20, 22, 0.92);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    border-radius: 18px;
+    padding: 10px 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  }
+  .demo-alert-icon {
+    flex-shrink: 0;
+    width: 22px; height: 22px;
+    border-radius: 6px;
+    background: #C9A84C;
+    color: #14140f;
+    font-family: -apple-system, "SF Pro Text", Inter, sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .demo-alert-body { min-width: 0; }
+  .demo-alert-appline {
+    display: flex; align-items: center; gap: 6px;
+    font-family: -apple-system, "SF Pro Text", Inter, sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: rgba(255, 255, 255, 0.55);
+    margin: 0 0 1px;
+  }
+  .demo-alert-time { text-transform: none; letter-spacing: 0; }
+  .demo-alert-title {
+    font-family: -apple-system, "SF Pro Text", Inter, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.3;
+    margin: 0;
+  }
+  .demo-alert-text {
+    font-family: -apple-system, "SF Pro Text", Inter, sans-serif;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.3;
+    margin: 1px 0 0;
+  }
 
   /* ---- Phone frame: iPhone look, light screen ---- */
   .demo-phone-wrap {
@@ -105,6 +209,7 @@
     z-index: 5;
   }
   .demo-phone-screen {
+    position: relative;
     flex: 1;
     min-height: 0;
     background: #f2f2f7;
@@ -309,6 +414,7 @@
   /* ---- Owner dashboard ---- */
   .demo-dashboard {
     @apply bg-surface border border-line;
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
