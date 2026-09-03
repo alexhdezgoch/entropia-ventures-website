@@ -183,10 +183,8 @@
           <input type="hidden" name="_next" value="https://entropia.ventures/thankyou.html"/>
           <input type="hidden" name="_captcha" value="true"/>
           <input type="hidden" name="_subject" value="[EVW-2609] Free audit request — contact page"/>
-          <input type="hidden" name="_template" value="table"/>
           <input type="hidden" name="site_code" value="EVW-2609"/>
           <input type="hidden" name="form_id" value="contact-page"/>
-          <input type="hidden" name="page_url" value="" id="contact-page-url"/>
           <input type="hidden" name="demo_trade" value="" id="contact-demo-trade"/>
           <input type="hidden" name="demo_business" value="" id="contact-demo-business"/>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -199,15 +197,9 @@
               <input id="contact-company" class="w-full bg-surface border border-line text-ink placeholder:text-ink-faint focus:border-gold px-4 py-3" name="company" placeholder="Company name" type="text" required/>
             </div>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="space-y-2">
-              <label for="contact-email" class="block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim">Email</label>
-              <input id="contact-email" class="w-full bg-surface border border-line text-ink placeholder:text-ink-faint focus:border-gold px-4 py-3" name="email" placeholder="name@company.com" type="email" required/>
-            </div>
-            <div class="space-y-2">
-              <label for="contact-website" class="block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim">Website</label>
-              <input id="contact-website" class="w-full bg-surface border border-line text-ink placeholder:text-ink-faint focus:border-gold px-4 py-3" name="website" placeholder="https://yourbusiness.com" type="url" required/>
-            </div>
+          <div class="space-y-2">
+            <label for="contact-email" class="block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim">Email</label>
+            <input id="contact-email" class="w-full bg-surface border border-line text-ink placeholder:text-ink-faint focus:border-gold px-4 py-3" name="email" placeholder="name@company.com" type="email" required/>
           </div>
           <div class="space-y-2">
             <label for="contact-phone" class="block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim">Phone / WhatsApp <span class="normal-case text-ink-faint">(optional)</span></label>
@@ -219,7 +211,7 @@
           </div>
           <div class="space-y-2">
             <label for="contact-message" class="block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim">What happens when a lead calls or fills your form today?</label>
-            <textarea id="contact-message" class="w-full bg-surface border border-line text-ink placeholder:text-ink-faint focus:border-gold px-4 py-3 resize-none" name="message" placeholder="Walk us through it" rows="4"></textarea>
+            <textarea id="contact-message" class="w-full bg-surface border border-line text-ink placeholder:text-ink-faint focus:border-gold px-4 py-3 resize-none" name="message" placeholder="What happens when a lead calls or fills your form today? Add your website if you want us to look at it." rows="4"></textarea>
           </div>
           <button class="btn-primary w-full" type="submit">Request your free audit</button>
           <p class="text-ink-faint text-xs text-center">By submitting you agree to our <a href="/privacy" class="text-gold hover:text-gold-bright transition-colors">Privacy Policy</a> and <a href="/terms" class="text-gold hover:text-gold-bright transition-colors">Terms</a>.</p>
@@ -343,10 +335,6 @@
 </script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  try {
-    var pageUrlEl = document.getElementById('contact-page-url');
-    if (pageUrlEl) pageUrlEl.value = location.href;
-  } catch (e) {}
   try {
     var trade = window.localStorage.getItem('ev_demo_last_trade');
     var tradeEl = document.getElementById('contact-demo-trade');
