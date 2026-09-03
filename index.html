@@ -823,7 +823,13 @@
         <form action="https://formsubmit.co/alex@entropia.ventures" method="POST" class="space-y-6">
           <input type="hidden" name="_next" value="https://entropia.ventures/thankyou.html"/>
           <input type="hidden" name="_captcha" value="true"/>
-          <input type="hidden" name="_subject" value="Lead Conversion System inquiry"/>
+          <input type="hidden" name="_subject" value="[EVW-2609] Free audit request — homepage"/>
+          <input type="hidden" name="_template" value="table"/>
+          <input type="hidden" name="site_code" value="EVW-2609"/>
+          <input type="hidden" name="form_id" value="homepage-contact"/>
+          <input type="hidden" name="page_url" value="" id="index-page-url"/>
+          <input type="hidden" name="demo_trade" value="" id="index-demo-trade"/>
+          <input type="hidden" name="demo_business" value="" id="index-demo-business"/>
           <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="space-y-2">
@@ -1231,6 +1237,24 @@
     });
   });
 })();
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  try {
+    var pageUrlEl = document.getElementById('index-page-url');
+    if (pageUrlEl) pageUrlEl.value = location.href;
+  } catch (e) {}
+  try {
+    var trade = window.localStorage.getItem('ev_demo_last_trade');
+    var tradeEl = document.getElementById('index-demo-trade');
+    if (tradeEl) tradeEl.value = trade || '';
+  } catch (e) {}
+  try {
+    var business = window.localStorage.getItem('ev_demo_last_company');
+    var businessEl = document.getElementById('index-demo-business');
+    if (businessEl) businessEl.value = business || '';
+  } catch (e) {}
+});
 </script>
 </body>
 </html>
