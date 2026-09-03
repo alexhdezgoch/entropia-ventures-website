@@ -26,6 +26,16 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://entropia.ventures/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://entropia.ventures/terms</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://entropia.ventures/blog/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

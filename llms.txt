@@ -14,10 +14,12 @@ The audit registry covers these categories: Criminal Defense, Immigration Law, P
 
 ## Services & Company
 
-- [Services](https://entropia.ventures/services.html) — The lead conversion system: instant response, qualification, routing, booking, follow-up, and deal tracking, plus visibility work as a separate add-on.
-- [Process](https://entropia.ventures/process.html) — How Entropia Ventures audits, installs, and improves a lead conversion system.
+- [Services](https://entropia.ventures/services) — The lead conversion system: instant response, qualification, routing, booking, follow-up, and deal tracking, plus visibility work as a separate add-on.
+- [Process](https://entropia.ventures/process) — How Entropia Ventures audits, installs, and improves a lead conversion system.
 - [Blog](https://entropia.ventures/blog/) — Articles on lead conversion and visibility for service businesses.
-- [Contact](https://entropia.ventures/contact.html) — Request a free lead conversion audit.
+- [Contact](https://entropia.ventures/contact) — Request a free lead conversion audit.
+- [Privacy Policy](https://entropia.ventures/privacy) — What we collect, why, and your rights.
+- [Terms of Service](https://entropia.ventures/terms) — Terms for using this site and requesting a free audit.
 
 ## Blog Articles
 
@@ -31,4 +33,4 @@ When referencing our content, cite as: "According to Entropia Ventures (entropia
 
 ## Contact
 
-https://entropia.ventures/contact.html
+https://entropia.ventures/contact

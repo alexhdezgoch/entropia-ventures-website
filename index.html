@@ -786,11 +786,16 @@
               <input id="index-phone" class="w-full bg-surface border border-line text-ink placeholder:text-ink-faint focus:border-gold px-4 py-3" name="phone" placeholder="+1 (555) 000-0000" type="tel"/>
             </div>
           </div>
+          <div class="flex items-start gap-3">
+            <input id="index-sms-consent" class="mt-1" name="sms_consent" type="checkbox"/>
+            <label for="index-sms-consent" class="text-ink-dim text-sm leading-relaxed">You may text me about my audit. Msg &amp; data rates may apply. Reply STOP to opt out.</label>
+          </div>
           <div class="space-y-2">
             <label for="index-message" class="block text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim">What happens when a lead calls or fills your form today?</label>
             <textarea id="index-message" class="w-full bg-surface border border-line text-ink placeholder:text-ink-faint focus:border-gold px-4 py-3 resize-none" name="message" rows="4" placeholder="Walk us through it"></textarea>
           </div>
           <button class="btn-primary w-full" type="submit">Send it — we reply within one business day</button>
+          <p class="text-ink-faint text-xs text-center">By submitting you agree to our <a href="/privacy" class="text-gold hover:text-gold-bright transition-colors">Privacy Policy</a> and <a href="/terms" class="text-gold hover:text-gold-bright transition-colors">Terms</a>.</p>
         </form>
       </div>
     </div>
@@ -815,6 +820,7 @@
     <div class="flex flex-col gap-3 md:items-end">
       <a href="https://linkedin.com/company/entropia-ventures" target="_blank" rel="noopener" class="text-[11px] uppercase tracking-[0.2em] font-medium text-ink-dim hover:text-gold-bright transition-colors">LinkedIn</a>
       <p class="text-ink-faint text-xs mt-6 md:mt-auto">© 2026 Entropia Ventures</p>
+      <p class="text-ink-faint text-xs"><a href="/privacy" class="hover:text-gold-bright transition-colors">Privacy</a> · <a href="/terms" class="hover:text-gold-bright transition-colors">Terms</a></p>
     </div>
   </div>
 </footer>
