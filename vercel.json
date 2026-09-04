@@ -4,6 +4,14 @@
     {
       "source": "/p/:id",
       "destination": "https://alejandros-mac-mini.tail30d0d0.ts.net/webhook/dental-intake?event=proposal&lead_id=:id"
+    },
+    {
+      "source": "/api/demo/dentist",
+      "destination": "https://alejandros-mac-mini.tail30d0d0.ts.net/webhook/dental-intake"
+    },
+    {
+      "source": "/b/:id/:slot",
+      "destination": "https://alejandros-mac-mini.tail30d0d0.ts.net/webhook/dental-intake?event=book&lead_id=:id&slot=:slot"
     }
   ],
   "redirects": [
